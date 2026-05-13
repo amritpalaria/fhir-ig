@@ -21,7 +21,15 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\attachment-314e.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 60
+  },
+  {
+    "outputFile": "StructureDefinition-attachment-helperFile.json",
+    "fshName": "AttachmentHelperFile",
+    "fshType": "Extension",
+    "fshFile": "extensions\\attachment-helperfile.fsh",
+    "startLine": 1,
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-attachment-inlineDataSavedAsFile.json",

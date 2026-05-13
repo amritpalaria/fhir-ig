@@ -20,6 +20,13 @@
   "name" : "Attachment314e"
 },
 {
+  "id" : "attachment-helperFile",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/attachment-helperFile",
+  "version" : "1.0.0",
+  "name" : "AttachmentHelperFile"
+},
+{
   "id" : "attachment-inlineDataSavedAsFile",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile",

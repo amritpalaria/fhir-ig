@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "attachment-helperFile",
+  "url": "http://314e.com/fhir/StructureDefinition/attachment-helperFile",
+  "name": "AttachmentHelperFile",
+  "title": "Attachment Helper File",
+  "status": "draft",
+  "description": "Provides the path or filename of a helper/supporting file associated\nwith an Attachment.\n\nThis extension is intended for scenarios in which the consumer of\nthe attachment requires an auxiliary/helper file in order to correctly\ninterpret, process, transform, or render the attachment content.\n\nExamples include:\n- XSLT files associated with XML documents\n- Schema files\n- Rendering templates\n- Transformation scripts\n- Supporting metadata files",
+  "purpose": "Supports association of auxiliary/helper files required for proper\ninterpretation or processing of an attachment.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Attachment",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Attachment Helper File",
+        "definition": "Provides the path or filename of a helper/supporting file associated\nwith an Attachment.\n\nThis extension is intended for scenarios in which the consumer of\nthe attachment requires an auxiliary/helper file in order to correctly\ninterpret, process, transform, or render the attachment content.\n\nExamples include:\n- XSLT files associated with XML documents\n- Schema files\n- Rendering templates\n- Transformation scripts\n- Supporting metadata files"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/attachment-helperFile"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Path or filename of associated helper/supporting file",
+        "definition": "Specifies the path, filename, or storage reference of a helper/supporting\nfile associated with the attachment.",
+        "comment": "The interpretation and usage of the helper file is dependent upon\nthe attachment content type and consuming application.",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

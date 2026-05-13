@@ -26,6 +26,11 @@ This extension allows multiple tags to be associated with an
 Attachment for workflow, classification, indexing, or retrieval
 purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Attachment.extension:helperFile","Attachment.extension","helperFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-helperFile]]} {[]}
+","Helper file associated with the attachment","Provides the path or filename of an auxiliary/helper file required
+for interpretation, transformation, rendering, or processing of
+the attachment content.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Attachment.contentType","Attachment.contentType","","","",0,1,"","","Y","code {[]} {[]}
 ","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","ED.2+ED.3/RP.2+RP.3. Note conversion may be needed if old style values are being used","./mediaType, ./charset"

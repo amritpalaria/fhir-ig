@@ -11,7 +11,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-13T11:15:06+05:30",
+  "date" : "2026-05-13T15:29:14+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -700,6 +700,18 @@
       },
       "name" : "Annotation Attachment",
       "description" : "Provides an attachment-based representation of annotation or note\ncontent when the annotation is not represented as inline plain text.\n\nThis extension supports scenarios in which annotation content is\nstored externally as an attachment rather than directly populated\nwithin Annotation.text.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/attachment-helperFile"
+      },
+      "name" : "Attachment Helper File",
+      "description" : "Provides the path or filename of a helper/supporting file associated\nwith an Attachment.\n\nThis extension is intended for scenarios in which the consumer of\nthe attachment requires an auxiliary/helper file in order to correctly\ninterpret, process, transform, or render the attachment content.\n\nExamples include:\n- XSLT files associated with XML documents\n- Schema files\n- Rendering templates\n- Transformation scripts\n- Supporting metadata files",
       "exampleBoolean" : false
     },
     {

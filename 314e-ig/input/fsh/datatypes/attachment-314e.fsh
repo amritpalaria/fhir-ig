@@ -45,10 +45,21 @@ Reference/path to the externally stored attachment content.
 // Extension slices
 * extension contains
     AttachmentInlineDataSavedAsFile named inlineDataSavedAsFile 0..1 and
-    AttachmentTag named tag 0..*
+    AttachmentTag named tag 0..* and
+    AttachmentHelperFile named helperFile 0..1
 
 * extension[inlineDataSavedAsFile] ^short =
     "Indicates originally-inline content externalized into object storage"
 
 * extension[tag] ^short =
     "Semantic categorization tag associated with the attachment"
+
+* extension[helperFile] ^short =
+    "Helper file associated with the attachment"
+
+* extension[helperFile] ^definition = """
+Provides the path or filename of an auxiliary/helper file required
+for interpretation, transformation, rendering, or processing of
+the attachment content.
+"""
+

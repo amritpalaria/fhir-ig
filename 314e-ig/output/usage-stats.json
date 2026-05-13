@@ -11,6 +11,13 @@
       ]
     },
     {
+      "url": "http://314e.com/fhir/StructureDefinition/attachment-helperFile",
+      "title": "Attachment Helper File",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile",
       "title": "Attachment Inline Data Saved As File",
       "types": [
@@ -50,6 +57,9 @@
   "usage": {
     "http://314e.com/fhir/StructureDefinition/annotation-attachment": [
       "Annotation"
+    ],
+    "http://314e.com/fhir/StructureDefinition/attachment-helperFile": [
+      "Attachment"
     ],
     "http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile": [
       "Attachment"

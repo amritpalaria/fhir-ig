@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
   "name" : "Attachment314e",
   "title" : "314e Attachment",
   "status" : "draft",
-  "date" : "2026-05-13T11:15:06+05:30",
+  "date" : "2026-05-13T15:29:14+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -84,6 +84,19 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
       "type" : [{
         "code" : "Extension",
         "profile" : ["http://314e.com/fhir/StructureDefinition/attachment-tag"]
+      }]
+    },
+    {
+      "id" : "Attachment.extension:helperFile",
+      "path" : "Attachment.extension",
+      "sliceName" : "helperFile",
+      "short" : "Helper file associated with the attachment",
+      "definition" : "Provides the path or filename of an auxiliary/helper file required\nfor interpretation, transformation, rendering, or processing of\nthe attachment content.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/attachment-helperFile"]
       }]
     },
     {

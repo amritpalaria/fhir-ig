@@ -17,6 +17,7 @@
 ### Extensions
 
 * [Annotation Attachment](en/StructureDefinition-annotation-attachment.md)
+* [Attachment Helper File](en/StructureDefinition-attachment-helperFile.md)
 * [Attachment Inline Data Saved As File](en/StructureDefinition-attachment-inlineDataSavedAsFile.md)
 * [Attachment Tag](en/StructureDefinition-attachment-tag.md)
 * [Quantity Quantity String](en/StructureDefinition-quantity-quantityString.md)

@@ -66,6 +66,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/attachment-helperFile"
+        },
+        "name": "Attachment Helper File",
+        "description": "Provides the path or filename of a helper/supporting file associated\nwith an Attachment.\n\nThis extension is intended for scenarios in which the consumer of\nthe attachment requires an auxiliary/helper file in order to correctly\ninterpret, process, transform, or render the attachment content.\n\nExamples include:\n- XSLT files associated with XML documents\n- Schema files\n- Rendering templates\n- Transformation scripts\n- Supporting metadata files",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/attachment-inlineDataSavedAsFile"
         },
         "name": "Attachment Inline Data Saved As File",

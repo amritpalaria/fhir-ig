@@ -3,6 +3,7 @@
 [Quantity314e]: StructureDefinition-quantity-314e.html
 [Reference314e]: StructureDefinition-reference-314e.html
 [AnnotationAttachment]: StructureDefinition-annotation-attachment.html
+[AttachmentHelperFile]: StructureDefinition-attachment-helperFile.html
 [AttachmentInlineDataSavedAsFile]: StructureDefinition-attachment-inlineDataSavedAsFile.html
 [AttachmentTag]: StructureDefinition-attachment-tag.html
 [QuantityQuantityString]: StructureDefinition-quantity-quantityString.html

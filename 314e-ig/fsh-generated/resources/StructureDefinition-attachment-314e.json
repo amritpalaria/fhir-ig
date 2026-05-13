@@ -48,6 +48,23 @@
         ]
       },
       {
+        "id": "Attachment.extension:helperFile",
+        "path": "Attachment.extension",
+        "sliceName": "helperFile",
+        "short": "Helper file associated with the attachment",
+        "definition": "Provides the path or filename of an auxiliary/helper file required\nfor interpretation, transformation, rendering, or processing of\nthe attachment content.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/attachment-helperFile"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Attachment.data",
         "path": "Attachment.data",
         "short": "Inline attachment data is prohibited",

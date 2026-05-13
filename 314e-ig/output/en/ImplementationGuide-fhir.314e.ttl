@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-13T11:15:06+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-13T15:29:14+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -1479,6 +1479,27 @@
        ] ;
        fhir:name [ fhir:v "Annotation Attachment" ] ;
        fhir:description [ fhir:v "Provides an attachment-based representation of annotation or note\ncontent when the annotation is not represented as inline plain text.\n\nThis extension supports scenarios in which annotation content is\nstored externally as an attachment rather than directly populated\nwithin Annotation.text." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/attachment-helperFile> ;
+         fhir:reference [ fhir:v "StructureDefinition/attachment-helperFile" ]
+       ] ;
+       fhir:name [ fhir:v "Attachment Helper File" ] ;
+       fhir:description [ fhir:v "Provides the path or filename of a helper/supporting file associated\nwith an Attachment.\n\nThis extension is intended for scenarios in which the consumer of\nthe attachment requires an auxiliary/helper file in order to correctly\ninterpret, process, transform, or render the attachment content.\n\nExamples include:\n- XSLT files associated with XML documents\n- Schema files\n- Rendering templates\n- Transformation scripts\n- Supporting metadata files" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

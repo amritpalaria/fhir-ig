@@ -70,6 +70,11 @@ This extension allows multiple tags to be associated with an
 Attachment for workflow, classification, indexing, or retrieval
 purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"attachment-314e","Attachment.extension:helperFile","Attachment.extension","helperFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-helperFile]]} {[]}
+","Helper file associated with the attachment","Provides the path or filename of an auxiliary/helper file required
+for interpretation, transformation, rendering, or processing of
+the attachment content.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "attachment-314e","Attachment.contentType","Attachment.contentType","","","",0,1,"","","Y","code {[]} {[]}
 ","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -96,6 +101,35 @@ and referenced using Attachment.url.","The base64-encoded data SHALL be expresse
 "
 "attachment-314e","Attachment.creation","Attachment.creation","","","",0,1,"","","Y","dateTime {[]} {[]}
 ","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"attachment-helperFile","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Attachment Helper File","Provides the path or filename of a helper/supporting file associated
+with an Attachment.
+
+This extension is intended for scenarios in which the consumer of
+the attachment requires an auxiliary/helper file in order to correctly
+interpret, process, transform, or render the attachment content.
+
+Examples include:
+- XSLT files associated with XML documents
+- Schema files
+- Rendering templates
+- Transformation scripts
+- Supporting metadata files","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"attachment-helperFile","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"attachment-helperFile","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"attachment-helperFile","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://314e.com/fhir/StructureDefinition/attachment-helperFile""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"attachment-helperFile","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","string {[]} {[]}
+","Path or filename of associated helper/supporting file","Specifies the path, filename, or storage reference of a helper/supporting
+file associated with the attachment.","The interpretation and usage of the helper file is dependent upon
+the attachment content type and consuming application.","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "attachment-inlineDataSavedAsFile","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Attachment Inline Data Saved As File","Indicates that the Attachment content was originally available
