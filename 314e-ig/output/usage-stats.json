@@ -1,0 +1,107 @@
+{
+  "package": "fhir.314e",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/annotation-attachment",
+      "title": "Annotation Attachment",
+      "types": [
+        "Attachment"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile",
+      "title": "Attachment Inline Data Saved As File",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/attachment-tag",
+      "title": "Attachment Tag",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/quantity-quantityString",
+      "title": "Quantity Quantity String",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/quantity-valueString",
+      "title": "Quantity Value String",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/reference-context",
+      "title": "Reference Context",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {},
+  "usage": {
+    "http://314e.com/fhir/StructureDefinition/annotation-attachment": [
+      "Annotation"
+    ],
+    "http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile": [
+      "Attachment"
+    ],
+    "http://314e.com/fhir/StructureDefinition/attachment-tag": [
+      "Attachment"
+    ],
+    "http://314e.com/fhir/StructureDefinition/quantity-quantityString": [
+      "Quantity"
+    ],
+    "http://314e.com/fhir/StructureDefinition/quantity-valueString": [
+      "Quantity.value"
+    ],
+    "http://314e.com/fhir/StructureDefinition/reference-context": [
+      "Reference"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/quantity-precision": [
+      "Quantity.value"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ]
+  }
+}

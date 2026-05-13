@@ -1,0 +1,82 @@
+[
+  {
+    "outputFile": "StructureDefinition-annotation-314e.json",
+    "fshName": "Annotation314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\annotation-314e.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-annotation-attachment.json",
+    "fshName": "AnnotationAttachment",
+    "fshType": "Extension",
+    "fshFile": "extensions\\annotation-attachment.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
+    "outputFile": "StructureDefinition-attachment-314e.json",
+    "fshName": "Attachment314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\attachment-314e.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "StructureDefinition-attachment-inlineDataSavedAsFile.json",
+    "fshName": "AttachmentInlineDataSavedAsFile",
+    "fshType": "Extension",
+    "fshFile": "extensions\\attachment-inlinedatasavedasfile.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-attachment-tag.json",
+    "fshName": "AttachmentTag",
+    "fshType": "Extension",
+    "fshFile": "extensions\\attachment-tag.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-quantity-314e.json",
+    "fshName": "Quantity314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\quantity-314e.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-quantity-quantityString.json",
+    "fshName": "QuantityQuantityString",
+    "fshType": "Extension",
+    "fshFile": "extensions\\quantity-quantitystring.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-quantity-valueString.json",
+    "fshName": "QuantityValueString",
+    "fshType": "Extension",
+    "fshFile": "extensions\\quantity-valuestring.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-reference-314e.json",
+    "fshName": "Reference314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\reference-314e.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-reference-context.json",
+    "fshName": "ReferenceContext",
+    "fshType": "Extension",
+    "fshFile": "extensions\\reference-context.fsh",
+    "startLine": 1,
+    "endLine": 36
+  }
+]

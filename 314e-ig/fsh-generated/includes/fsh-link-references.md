@@ -1,0 +1,10 @@
+[Annotation314e]: StructureDefinition-annotation-314e.html
+[Attachment314e]: StructureDefinition-attachment-314e.html
+[Quantity314e]: StructureDefinition-quantity-314e.html
+[Reference314e]: StructureDefinition-reference-314e.html
+[AnnotationAttachment]: StructureDefinition-annotation-attachment.html
+[AttachmentInlineDataSavedAsFile]: StructureDefinition-attachment-inlineDataSavedAsFile.html
+[AttachmentTag]: StructureDefinition-attachment-tag.html
+[QuantityQuantityString]: StructureDefinition-quantity-quantityString.html
+[QuantityValueString]: StructureDefinition-quantity-valueString.html
+[ReferenceContext]: StructureDefinition-reference-context.html

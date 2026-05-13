@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "quantity-valueString",
+  "url": "http://314e.com/fhir/StructureDefinition/quantity-valueString",
+  "name": "QuantityValueString",
+  "title": "Quantity Value String",
+  "status": "draft",
+  "description": "A string/ textual representation associated with Quantity.value.\n\nIn scenarios where the ‘value’ of Quantity datatype cannot be expressed as a numerical value \neven though a distinct unit can be represented in the ‘unit’ element, this \nextension SHALL be used on the value field of Quantity.\n\nThe presence of this extension does not alter the numeric semantics\nof Quantity.value. \n\nApplications performing calculations SHALL use the actual decimal\nvalue of Quantity.value rather than the string carried in this extension.\n\nApplications should preserve synchronization between Quantity.value\nand this extension if either representation is modified.",
+  "purpose": "Allows representation of a quantity value as string.\n\nSupports preservation of the original source representation of a quantity value for \ndisplay or audit purposes.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Quantity.value",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Quantity Value String",
+        "definition": "A string/ textual representation associated with Quantity.value.\n\nIn scenarios where the ‘value’ of Quantity datatype cannot be expressed as a numerical value \neven though a distinct unit can be represented in the ‘unit’ element, this \nextension SHALL be used on the value field of Quantity.\n\nThe presence of this extension does not alter the numeric semantics\nof Quantity.value. \n\nApplications performing calculations SHALL use the actual decimal\nvalue of Quantity.value rather than the string carried in this extension.\n\nApplications should preserve synchronization between Quantity.value\nand this extension if either representation is modified."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/quantity-valueString"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Original textual representation of Quantity.value",
+        "definition": "Carries the original source lexical representation of only the quantity value.",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

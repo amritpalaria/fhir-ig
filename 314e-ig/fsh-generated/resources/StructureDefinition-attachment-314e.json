@@ -1,0 +1,66 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "attachment-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/attachment-314e",
+  "name": "Attachment314e",
+  "title": "314e Attachment",
+  "status": "draft",
+  "description": "A constrained Attachment datatype profile in which Attachment.data\nSHALL never be populated.\n\nAll attachment content SHALL be externalized into object storage\nand referenced using Attachment.url.\n\nIf content originated as inline data/blob content and was later\nsaved externally, the extension\nattachment-inlineDataSavedAsFile SHALL be used to indicate this.",
+  "purpose": "Provides a consistent attachment handling strategy in which\nbinary payloads are always externally stored and referenced.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Attachment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Attachment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Attachment.extension:inlineDataSavedAsFile",
+        "path": "Attachment.extension",
+        "sliceName": "inlineDataSavedAsFile",
+        "short": "Indicates originally-inline content externalized into object storage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Attachment.extension:tag",
+        "path": "Attachment.extension",
+        "sliceName": "tag",
+        "short": "Semantic categorization tag associated with the attachment",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/attachment-tag"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Attachment.data",
+        "path": "Attachment.data",
+        "short": "Inline attachment data is prohibited",
+        "definition": "Inline binary data SHALL NOT be populated.\n\nAttachment content SHALL instead be persisted externally\nand referenced using Attachment.url.",
+        "max": "0"
+      },
+      {
+        "id": "Attachment.url",
+        "path": "Attachment.url",
+        "short": "Object storage path or external attachment location",
+        "definition": "Reference/path to the externally stored attachment content.",
+        "min": 1
+      }
+    ]
+  }
+}

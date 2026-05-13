@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "annotation-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/annotation-314e",
+  "name": "Annotation314e",
+  "title": "314e Annotation",
+  "status": "draft",
+  "description": "A constrained Annotation datatype profile supporting attachment-\nbased annotation content through the annotation-attachment extension.\n\nThis profile enables annotation or note content to be represented\nusing externally stored attachments in addition to standard inline\nAnnotation.text content.",
+  "purpose": "Supports annotation workflows in which note/comment content may\nbe externally stored and referenced through attachments.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Annotation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Annotation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Annotation.extension:attachment",
+        "path": "Annotation.extension",
+        "sliceName": "attachment",
+        "short": "Attachment-based annotation content",
+        "definition": "Provides attachment-backed annotation or note content.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/annotation-attachment"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.314e",
+  "url": "http://314e.com/fhir/ig/ImplementationGuide/fhir.314e",
+  "version": "1.0.0",
+  "name": "IG314e",
+  "title": "314e FHIR Implementation Guide",
+  "status": "draft",
+  "publisher": "314e",
+  "contact": [
+    {
+      "name": "314e",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://314e.com"
+        }
+      ]
+    }
+  ],
+  "packageId": "fhir.314e",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/annotation-314e"
+        },
+        "name": "314e Annotation",
+        "description": "A constrained Annotation datatype profile supporting attachment-\nbased annotation content through the annotation-attachment extension.\n\nThis profile enables annotation or note content to be represented\nusing externally stored attachments in addition to standard inline\nAnnotation.text content.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/attachment-314e"
+        },
+        "name": "314e Attachment",
+        "description": "A constrained Attachment datatype profile in which Attachment.data\nSHALL never be populated.\n\nAll attachment content SHALL be externalized into object storage\nand referenced using Attachment.url.\n\nIf content originated as inline data/blob content and was later\nsaved externally, the extension\nattachment-inlineDataSavedAsFile SHALL be used to indicate this.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/quantity-314e"
+        },
+        "name": "314e Quantity",
+        "description": "An extended Quantity datatype supporting precision metadata and alternate textual representations.\n\nThis profile SHALL be used so that the data can be faithfully represented in the following scenarios:<br/>\n1. The quantity value, such as a vital sign reading or a lab result value, is limited to a defined number of digits \nafter the decimal in the source and this precision needs to be recorded with the value.<br/>\n2. The display-oriented or source-oriented textual representation of a quantity needs to be recorded, either in addition \nto the computable elements or because the original representation cannot be separated into distinct value and unit.<br/>\n3. The original source representation of a quantity value needs to be preserved, either because the original \nrepresentation of value cannot be converted to numeric or for display or audit purposes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/reference-314e"
+        },
+        "name": "314e Reference",
+        "description": "A constrained Reference datatype profile supporting semantic\nqualification of references using the reference-context extension.\n\nThis profile enables references to carry additional information\nabout the role, capacity, purpose, or contextual meaning of\nthe referenced resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/annotation-attachment"
+        },
+        "name": "Annotation Attachment",
+        "description": "Provides an attachment-based representation of annotation or note\ncontent when the annotation is not represented as inline plain text.\n\nThis extension supports scenarios in which annotation content is\nstored externally as an attachment rather than directly populated\nwithin Annotation.text.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/attachment-inlineDataSavedAsFile"
+        },
+        "name": "Attachment Inline Data Saved As File",
+        "description": "Indicates that the Attachment content was originally available\nas inline data/blob content but has been externalized and saved\nas a file in object storage, with the Attachment.url carrying\nthe storage location.\n\nIf this extension is absent, the content SHALL be assumed to\nhave originated as an external file rather than inline data.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/attachment-tag"
+        },
+        "name": "Attachment Tag",
+        "description": "A categorization or tagging label associated with an Attachment.\n\nThis extension allows multiple tags to be associated with an\nAttachment for workflow, classification, indexing, or retrieval\npurposes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/quantity-quantityString"
+        },
+        "name": "Quantity Quantity String",
+        "description": "A string representation of Quantity. \n\nThis extension preserves the original lexical representation of a quantity. \nAdditionally, in scenarios where FHIR requires Quantity datatype but the source data \ncannot be represented as distinct value and unit, this extension \nSHALL be utilized.\n\nThis extension is intended for preservation of textual rendering and does not replace \nthe computable Quantity elements.\n\nApplications should preserve synchronization between the computable Quantity content\nand this extension if either representation is modified.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/quantity-valueString"
+        },
+        "name": "Quantity Value String",
+        "description": "A string/ textual representation associated with Quantity.value.\n\nIn scenarios where the ‘value’ of Quantity datatype cannot be expressed as a numerical value \neven though a distinct unit can be represented in the ‘unit’ element, this \nextension SHALL be used on the value field of Quantity.\n\nThe presence of this extension does not alter the numeric semantics\nof Quantity.value. \n\nApplications performing calculations SHALL use the actual decimal\nvalue of Quantity.value rather than the string carried in this extension.\n\nApplications should preserve synchronization between Quantity.value\nand this extension if either representation is modified.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/reference-context"
+        },
+        "name": "Reference Context",
+        "description": "Provides additional semantic context describing the role,\ncapacity, purpose, or functional meaning of a Reference.\n\nThis extension is intended for use in situations where the\nbase FHIR element is broadly defined and the precise meaning\nor role of the referenced resource requires further clarification.\n\nFor example, the performer element of an Observation may\nreference practitioners participating in different capacities\nsuch as technician, phlebotomist, or pathologist.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2026+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "STU1"
+      },
+      {
+        "code": "path-logo",
+        "value": "images/314e-logo.png"
+      }
+    ]
+  }
+}

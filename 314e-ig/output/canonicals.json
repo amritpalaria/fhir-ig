@@ -1,0 +1,77 @@
+[{
+  "id" : "annotation-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/annotation-314e",
+  "version" : "1.0.0",
+  "name" : "Annotation314e"
+},
+{
+  "id" : "annotation-attachment",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/annotation-attachment",
+  "version" : "1.0.0",
+  "name" : "AnnotationAttachment"
+},
+{
+  "id" : "attachment-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/attachment-314e",
+  "version" : "1.0.0",
+  "name" : "Attachment314e"
+},
+{
+  "id" : "attachment-inlineDataSavedAsFile",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile",
+  "version" : "1.0.0",
+  "name" : "AttachmentInlineDataSavedAsFile"
+},
+{
+  "id" : "attachment-tag",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/attachment-tag",
+  "version" : "1.0.0",
+  "name" : "AttachmentTag"
+},
+{
+  "id" : "quantity-quantityString",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/quantity-quantityString",
+  "version" : "1.0.0",
+  "name" : "QuantityQuantityString"
+},
+{
+  "id" : "quantity-valueString",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/quantity-valueString",
+  "version" : "1.0.0",
+  "name" : "QuantityValueString"
+},
+{
+  "id" : "reference-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/reference-314e",
+  "version" : "1.0.0",
+  "name" : "Reference314e"
+},
+{
+  "id" : "reference-context",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/reference-context",
+  "version" : "1.0.0",
+  "name" : "ReferenceContext"
+},
+{
+  "id" : "fhir.314e",
+  "type" : "ImplementationGuide",
+  "url" : "http://314e.com/fhir/ig/ImplementationGuide/fhir.314e",
+  "version" : "1.0.0",
+  "name" : "IG314e"
+},
+{
+  "id" : "quantity-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/quantity-314e",
+  "version" : "1.0.0",
+  "name" : "Quantity314e"
+}]

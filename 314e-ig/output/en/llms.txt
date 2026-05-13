@@ -1,0 +1,28 @@
+# fhir.314e#1.0.0: 314e FHIR Implementation Guide(en)
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### Complex-type Profiles
+
+* [314e Annotation](StructureDefinition-annotation-314e.md)
+* [314e Attachment](StructureDefinition-attachment-314e.md)
+* [314e Quantity](StructureDefinition-quantity-314e.md)
+* [314e Reference](StructureDefinition-reference-314e.md)
+
+### Extensions
+
+* [Annotation Attachment](StructureDefinition-annotation-attachment.md)
+* [Attachment Inline Data Saved As File](StructureDefinition-attachment-inlineDataSavedAsFile.md)
+* [Attachment Tag](StructureDefinition-attachment-tag.md)
+* [Quantity Quantity String](StructureDefinition-quantity-quantityString.md)
+* [Quantity Value String](StructureDefinition-quantity-valueString.md)
+* [Reference Context](StructureDefinition-reference-context.md)
+
+### ImplementationGuides
+
+* [314e FHIR Implementation Guide](ImplementationGuide-fhir.314e.md)

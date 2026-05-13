@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "quantity-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/quantity-314e",
+  "name": "Quantity314e",
+  "title": "314e Quantity",
+  "status": "draft",
+  "description": "An extended Quantity datatype supporting precision metadata and alternate textual representations.\n\nThis profile SHALL be used so that the data can be faithfully represented in the following scenarios:<br/>\n1. The quantity value, such as a vital sign reading or a lab result value, is limited to a defined number of digits \nafter the decimal in the source and this precision needs to be recorded with the value.<br/>\n2. The display-oriented or source-oriented textual representation of a quantity needs to be recorded, either in addition \nto the computable elements or because the original representation cannot be separated into distinct value and unit.<br/>\n3. The original source representation of a quantity value needs to be preserved, either because the original \nrepresentation of value cannot be converted to numeric or for display or audit purposes.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Quantity",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Quantity",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Quantity.extension:quantityString",
+        "path": "Quantity.extension",
+        "sliceName": "quantityString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/quantity-quantityString"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Quantity.value.extension",
+        "path": "Quantity.value.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Quantity.value.extension:precision",
+        "path": "Quantity.value.extension",
+        "sliceName": "precision",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/quantity-precision"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Quantity.value.extension:valueString",
+        "path": "Quantity.value.extension",
+        "sliceName": "valueString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/quantity-valueString"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

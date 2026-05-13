@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "reference-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/reference-314e",
+  "name": "Reference314e",
+  "title": "314e Reference",
+  "status": "draft",
+  "description": "A constrained Reference datatype profile supporting semantic\nqualification of references using the reference-context extension.\n\nThis profile enables references to carry additional information\nabout the role, capacity, purpose, or contextual meaning of\nthe referenced resource.",
+  "purpose": "Supports semantically qualified references in scenarios where\nFHIR reference elements are intentionally broad or ambiguous.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Reference",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Reference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Reference.extension:context",
+        "path": "Reference.extension",
+        "sliceName": "context",
+        "short": "Semantic role or contextual meaning of the reference",
+        "definition": "Provides additional semantic qualification for the reference,\nincluding role, capacity, or contextual purpose.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-context"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
