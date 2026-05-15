@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-13T15:29:14+05:30"/>
+  <date value="2026-05-15T09:21:03+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -494,7 +494,7 @@
         <reference value="StructureDefinition/attachment-314e"/>
       </reference>
       <name value="314e Attachment"/>
-      <description value="A constrained Attachment datatype profile in which Attachment.data&#xA;SHALL never be populated.&#xA;&#xA;All attachment content SHALL be externalized into object storage&#xA;and referenced using Attachment.url.&#xA;&#xA;If content originated as inline data/blob content and was later&#xA;saved externally, the extension&#xA;attachment-inlineDataSavedAsFile SHALL be used to indicate this."/>
+      <description value="A constrained Attachment datatype profile in which Attachment.data&#xA;SHALL never be populated.&#xA;&#xA;All attachment content SHALL be externalized into object storage&#xA;and referenced using Attachment.url.&#xA;&#xA;If attachment content originated as inline data/blob content&#xA;and was subsequently externalized into object storage, the&#xA;Attachment SHALL carry the tag&#xA;'inline-data-externalized-to-file' using the attachment-tag&#xA;extension."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -546,21 +546,32 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/attachment-inlineDataSavedAsFile"/>
+        <reference value="StructureDefinition/attachment-tag"/>
       </reference>
-      <name value="Attachment Inline Data Saved As File"/>
-      <description value="Indicates that the Attachment content was originally available&#xA;as inline data/blob content but has been externalized and saved&#xA;as a file in object storage, with the Attachment.url carrying&#xA;the storage location.&#xA;&#xA;If this extension is absent, the content SHALL be assumed to&#xA;have originated as an external file rather than inline data."/>
+      <name value="Attachment Tag"/>
+      <description value="A categorization or semantic tag associated with an Attachment.&#xA;&#xA;This extension allows multiple tags to be associated with an&#xA;Attachment for workflow, classification, indexing, retrieval,&#xA;processing, or application behavior purposes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/attachment-tag"/>
+        <reference value="CodeSystem/attachment-tag"/>
       </reference>
-      <name value="Attachment Tag"/>
-      <description value="A categorization or tagging label associated with an Attachment.&#xA;&#xA;This extension allows multiple tags to be associated with an&#xA;Attachment for workflow, classification, indexing, or retrieval&#xA;purposes."/>
+      <name value="Attachment Tag CodeSystem"/>
+      <description value="Codes used for semantic tagging and categorization of attachments."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/attachment-tag"/>
+      </reference>
+      <name value="Attachment Tag ValueSet"/>
+      <description value="Standard semantic tags used for categorization and workflow&#xA;qualification of attachments."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

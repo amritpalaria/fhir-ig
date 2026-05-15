@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-quantity-314e.csv
   "name" : "Quantity314e",
   "title" : "314e Quantity",
   "status" : "draft",
-  "date" : "2026-05-13T15:29:14+05:30",
+  "date" : "2026-05-15T09:21:03+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -75,6 +75,8 @@ Other representations of profile: [CSV](../StructureDefinition-quantity-314e.csv
       "id" : "Quantity.extension:quantityString",
       "path" : "Quantity.extension",
       "sliceName" : "quantityString",
+      "short" : "Original or display-oriented textual representation of the full quantity",
+      "definition" : "Provides the original, source-oriented, or display-oriented textual\nrepresentation of the complete quantity, including value and unit.\n\nThis extension is intended for situations in which:\n- the original quantity representation cannot be cleanly decomposed\n  into computable Quantity elements,\n- the original source representation must be preserved for audit,\n  fidelity, or display purposes,\n- or the display representation differs from the computable form.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -98,6 +100,8 @@ Other representations of profile: [CSV](../StructureDefinition-quantity-314e.csv
       "id" : "Quantity.value.extension:precision",
       "path" : "Quantity.value.extension",
       "sliceName" : "precision",
+      "short" : "Explicit precision of the numeric quantity value",
+      "definition" : "Explicit precision of the numeric quantity value.\n\nThis represents the number of significant decimal places intended\nfor the quantity value, irrespective of how many decimal places\nare explicitly present in the decimal representation itself.\n\nThe presence of this extension does not alter the underlying\nnumeric value or computation semantics.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -109,6 +113,8 @@ Other representations of profile: [CSV](../StructureDefinition-quantity-314e.csv
       "id" : "Quantity.value.extension:valueString",
       "path" : "Quantity.value.extension",
       "sliceName" : "valueString",
+      "short" : "Original or display-oriented textual representation of the numeric value",
+      "definition" : "Provides the original, source-oriented, or display-oriented textual\nrepresentation of the numeric quantity value component.\n\nThis extension may be used when:\n- the original formatting of the numeric value must be preserved,\n- the numeric representation contains significant formatting,\n- the value cannot be faithfully represented as a computable decimal,\n- or the original source representation is needed for display,\n  audit, or traceability purposes.",
       "min" : 0,
       "max" : "1",
       "type" : [{

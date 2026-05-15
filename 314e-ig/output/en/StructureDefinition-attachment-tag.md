@@ -2,9 +2,9 @@
 
 ## Extension: Attachment Tag 
 
-A categorization or tagging label associated with an Attachment.
+A categorization or semantic tag associated with an Attachment.
 
-This extension allows multiple tags to be associated with an Attachment for workflow, classification, indexing, or retrieval purposes.
+This extension allows multiple tags to be associated with an Attachment for workflow, classification, indexing, retrieval, processing, or application behavior purposes.
 
 **Context of Use**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-tag.cs
   "name" : "AttachmentTag",
   "title" : "Attachment Tag",
   "status" : "draft",
-  "date" : "2026-05-13T15:29:14+05:30",
+  "date" : "2026-05-15T09:21:03+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-tag.cs
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "A categorization or tagging label associated with an Attachment.\n\nThis extension allows multiple tags to be associated with an\nAttachment for workflow, classification, indexing, or retrieval\npurposes.",
+  "description" : "A categorization or semantic tag associated with an Attachment.\n\nThis extension allows multiple tags to be associated with an\nAttachment for workflow, classification, indexing, retrieval,\nprocessing, or application behavior purposes.",
   "purpose" : "Supports semantic tagging and categorization of attachments.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-tag.cs
       "id" : "Extension",
       "path" : "Extension",
       "short" : "Attachment Tag",
-      "definition" : "A categorization or tagging label associated with an Attachment.\n\nThis extension allows multiple tags to be associated with an\nAttachment for workflow, classification, indexing, or retrieval\npurposes."
+      "definition" : "A categorization or semantic tag associated with an Attachment.\n\nThis extension allows multiple tags to be associated with an\nAttachment for workflow, classification, indexing, retrieval,\nprocessing, or application behavior purposes."
     },
     {
       "id" : "Extension.extension",
@@ -83,12 +83,16 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-tag.cs
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
-      "short" : "Categorization tag for the attachment",
-      "definition" : "Represents a semantic classification, workflow label,\nor categorization tag associated with the attachment.",
+      "short" : "Semantic categorization tag for the attachment",
+      "definition" : "Represents a semantic classification, workflow label,\nbehavioral indicator, or categorization tag associated\nwith the attachment.",
       "min" : 1,
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://314e.com/fhir/ValueSet/attachment-tag"
+      }
     }]
   }
 }

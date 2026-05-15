@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-13T15:29:14+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-15T09:21:03+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -1415,7 +1415,7 @@
          fhir:reference [ fhir:v "StructureDefinition/attachment-314e" ]
        ] ;
        fhir:name [ fhir:v "314e Attachment" ] ;
-       fhir:description [ fhir:v "A constrained Attachment datatype profile in which Attachment.data\nSHALL never be populated.\n\nAll attachment content SHALL be externalized into object storage\nand referenced using Attachment.url.\n\nIf content originated as inline data/blob content and was later\nsaved externally, the extension\nattachment-inlineDataSavedAsFile SHALL be used to indicate this." ] ;
+       fhir:description [ fhir:v "A constrained Attachment datatype profile in which Attachment.data\nSHALL never be populated.\n\nAll attachment content SHALL be externalized into object storage\nand referenced using Attachment.url.\n\nIf attachment content originated as inline data/blob content\nand was subsequently externalized into object storage, the\nAttachment SHALL carry the tag\n'inline-data-externalized-to-file' using the attachment-tag\nextension." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1516,11 +1516,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/StructureDefinition/attachment-inlineDataSavedAsFile> ;
-         fhir:reference [ fhir:v "StructureDefinition/attachment-inlineDataSavedAsFile" ]
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/attachment-tag> ;
+         fhir:reference [ fhir:v "StructureDefinition/attachment-tag" ]
        ] ;
-       fhir:name [ fhir:v "Attachment Inline Data Saved As File" ] ;
-       fhir:description [ fhir:v "Indicates that the Attachment content was originally available\nas inline data/blob content but has been externalized and saved\nas a file in object storage, with the Attachment.url carrying\nthe storage location.\n\nIf this extension is absent, the content SHALL be assumed to\nhave originated as an external file rather than inline data." ] ;
+       fhir:name [ fhir:v "Attachment Tag" ] ;
+       fhir:description [ fhir:v "A categorization or semantic tag associated with an Attachment.\n\nThis extension allows multiple tags to be associated with an\nAttachment for workflow, classification, indexing, retrieval,\nprocessing, or application behavior purposes." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1533,15 +1533,36 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:extension"
+           fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/StructureDefinition/attachment-tag> ;
-         fhir:reference [ fhir:v "StructureDefinition/attachment-tag" ]
+         fhir:l <http://314e.com/fhir/ig/CodeSystem/attachment-tag> ;
+         fhir:reference [ fhir:v "CodeSystem/attachment-tag" ]
        ] ;
-       fhir:name [ fhir:v "Attachment Tag" ] ;
-       fhir:description [ fhir:v "A categorization or tagging label associated with an Attachment.\n\nThis extension allows multiple tags to be associated with an\nAttachment for workflow, classification, indexing, or retrieval\npurposes." ] ;
+       fhir:name [ fhir:v "Attachment Tag CodeSystem" ] ;
+       fhir:description [ fhir:v "Codes used for semantic tagging and categorization of attachments." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/ValueSet/attachment-tag> ;
+         fhir:reference [ fhir:v "ValueSet/attachment-tag" ]
+       ] ;
+       fhir:name [ fhir:v "Attachment Tag ValueSet" ] ;
+       fhir:description [ fhir:v "Standard semantic tags used for categorization and workflow\nqualification of attachments." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

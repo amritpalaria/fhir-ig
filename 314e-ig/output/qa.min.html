@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 24, warn = 18, info = 2-->
+<!-- broken links = 11, errors = 26, warn = 23, info = 2-->
 <head>
   <title>IG314e : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,12 +47,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for IG314e</h1>
- <p>Generated Wed May 13 15:31:24 IST 2026, FHIR version 4.0.1 for fhir.314e#1.0.0 (canonical = <a href="http://314e.com/fhir/ig">http://314e.com/fhir/ig</a> (<a href="http://314e.com/fhir/ig/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri May 15 09:23:19 IST 2026, FHIR version 4.0.1 for fhir.314e#1.0.0 (canonical = <a href="http://314e.com/fhir/ig">http://314e.com/fhir/ig</a> (<a href="http://314e.com/fhir/ig/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.2.7</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.314e, Canonical = http://314e.com/fhir/ig</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Language Info:</td><td>Stated Languages: n/a. IG Resource Lang: en. 1 of 12 (8%) of resources have a language. <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-resource-language-policy">Population Policy</a>: NONE</td></tr>
+ <tr><td>Language Info:</td><td>Stated Languages: n/a. IG Resource Lang: en. 1 of 13 (7%) of resources have a language. <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-resource-language-policy">Population Policy</a>: NONE</td></tr>
  <tr><td><a href="https://confluence.hl7.org/spaces/FHIR/pages/144970227/IG+Publication+Request+Documentation">Publication Request</a>:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
@@ -69,7 +69,7 @@
  <tr><td>Related IGs:</td><td>n/a</td></tr>
  <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
  <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
- <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a>, <a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Draft Dependencies:</td><td><ul>
@@ -88,14 +88,17 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 24, warn = 18, info = 2, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 26, warn = 23, info = 2, broken links = 11, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>11</b></td><td><b>8</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_CodeSystem-attachment-tag"><b>C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-attachment-tag</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_ImplementationGuide-fhir.314e"><b>C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ImplementationGuide-fhir.314e</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -111,9 +114,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_StructureDefinition-attachment-helperFile"><b>C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-helperFile</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_StructureDefinition-attachment-inlineDataSavedAsFile"><b>C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-inlineDataSavedAsFile</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_StructureDefinition-attachment-tag"><b>C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-tag</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -133,12 +133,60 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    <tr style="background-color: #ffcccc">
      <td><a href="#C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_StructureDefinition-reference-context"><b>C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-reference-context</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_ValueSet-attachment-tag"><b>C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-attachment-tag</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile-definitions.html#l239">en\StructureDefinition-attachment-inlineDataSavedAsFile-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 168, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-attachment-inlineDataSavedAsFile-examples.html' for &quot;Examples&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile-mappings.html#l239">en\StructureDefinition-attachment-inlineDataSavedAsFile-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 168, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-attachment-inlineDataSavedAsFile-examples.html' for &quot;Examples&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile-testing.html#l239">en\StructureDefinition-attachment-inlineDataSavedAsFile-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 168, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-attachment-inlineDataSavedAsFile-examples.html' for &quot;Examples&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile.html#l239">en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 167, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-attachment-inlineDataSavedAsFile-examples.html' for &quot;Examples&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/script at Line 326, column 352</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript '// 30caeada-92d2-45b'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/script at Line 385, column 352</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript '// 30caeada-92d2-45b'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/script at Line 546, column 352</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript '// 30caeada-92d2-45b'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>output\en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/script at Line 601, column 352</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript '// 30caeada-92d2-45b'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile.html#l1348">en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 723, column 41</a></b></td><td><b>error</b></td><td><b>The link '../StructureDefinition-attachment-inlineDataSavedAsFile.csv' for &quot;CSV&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile.html#l1348">en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 723, column 120</a></b></td><td><b>error</b></td><td><b>The link '../StructureDefinition-attachment-inlineDataSavedAsFile.xlsx' for &quot;Excel&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile.html#l1348">en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 723, column 202</a></b></td><td><b>error</b></td><td><b>The link '../StructureDefinition-attachment-inlineDataSavedAsFile.sch' for &quot;Schematron&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile.profile.history.html#l239">en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 168, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-attachment-inlineDataSavedAsFile-examples.html' for &quot;Examples&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile.profile.json.html#l238">en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 171, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-attachment-inlineDataSavedAsFile-examples.html' for &quot;Examples&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile.profile.ttl.html#l238">en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 171, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-attachment-inlineDataSavedAsFile-examples.html' for &quot;Examples&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="en\StructureDefinition-attachment-inlineDataSavedAsFile.profile.xml.html#l238">en\StructureDefinition-attachment-inlineDataSavedAsFile&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 171, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-attachment-inlineDataSavedAsFile-examples.html' for &quot;Examples&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_CHECK_FAILED</span></td>
+   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
    </tr>
@@ -153,9 +201,28 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
 </table>
 <hr/>
+<a name="C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_CodeSystem-attachment-tag"> </a>
+<h2><a href="CodeSystem-attachment-tag.html">fsh-generated\resources\CodeSystem-attachment-tag.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem&#8203;.where(url = 'http:&#8203;/&#8203;/314e&#8203;.com&#8203;/fhir&#8203;/CodeSystem&#8203;/attachment-tag')</b></td><td><b>error</b></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-attachment-tag.json - the canonical URL (http://314e.com/fhir/ig/CodeSystem/attachment-tag) does not match the URL (http://314e.com/fhir/CodeSystem/attachment-tag). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c3450)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\CodeSystem-attachment-tag</b></td><td><b>error</b></td><td><b>URL Mismatch http://314e.com/fhir/ig/CodeSystem/attachment-tag vs http://314e.com/fhir/CodeSystem/attachment-tag</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+</table>
+<hr/>
 <a name="C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_ImplementationGuide-fhir.314e"> </a>
-<h2><a href="index.html">fsh-generated\resources\ImplementationGuide-fhir.314e.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/fhir.314e: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+<h2><a href="index.html">fsh-generated\resources\ImplementationGuide-fhir.314e.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>ImplementationGuide/fhir.314e: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -179,8 +246,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 </table>
 <hr/>
 <a name="C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_StructureDefinition-annotation-314e"> </a>
-<h2><a href="StructureDefinition-annotation-314e.html">fsh-generated\resources\StructureDefinition-annotation-314e.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-annotation-314e.html">fsh-generated\resources\StructureDefinition-annotation-314e.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -198,8 +265,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 </table>
 <hr/>
 <a name="C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_StructureDefinition-annotation-attachment"> </a>
-<h2><a href="StructureDefinition-annotation-attachment.html">fsh-generated\resources\StructureDefinition-annotation-attachment.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-annotation-attachment.html">fsh-generated\resources\StructureDefinition-annotation-attachment.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -217,8 +284,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 </table>
 <hr/>
 <a name="C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_StructureDefinition-attachment-314e"> </a>
-<h2><a href="StructureDefinition-attachment-314e.html">fsh-generated\resources\StructureDefinition-attachment-314e.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-attachment-314e.html">fsh-generated\resources\StructureDefinition-attachment-314e.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -228,7 +295,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/314e&#8203;.com&#8203;/fhir&#8203;/StructureDefinition&#8203;/attachment-314e')</b></td><td><b>error</b></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-314e.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/attachment-314e) does not match the URL (http://314e.com/fhir/StructureDefinition/attachment-314e). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td><td>--</td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[7]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c27945)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c25603)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/314e&#8203;.com&#8203;/fhir&#8203;/StructureDefinition&#8203;/attachment-314e')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this data type profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
@@ -239,8 +306,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 </table>
 <hr/>
 <a name="C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_StructureDefinition-attachment-helperFile"> </a>
-<h2><a href="StructureDefinition-attachment-helperFile.html">fsh-generated\resources\StructureDefinition-attachment-helperFile.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-attachment-helperFile.html">fsh-generated\resources\StructureDefinition-attachment-helperFile.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -254,25 +321,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated\resources\StructureDefinition-attachment-helperFile</b></td><td><b>error</b></td><td><b>URL Mismatch http://314e.com/fhir/ig/StructureDefinition/attachment-helperFile vs http://314e.com/fhir/StructureDefinition/attachment-helperFile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_StructureDefinition-attachment-inlineDataSavedAsFile"> </a>
-<h2><a href="StructureDefinition-attachment-inlineDataSavedAsFile.html">fsh-generated\resources\StructureDefinition-attachment-inlineDataSavedAsFile.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/314e&#8203;.com&#8203;/fhir&#8203;/StructureDefinition&#8203;/attachment-inlineDataSavedAsFile')</b></td><td><b>error</b></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-inlineDataSavedAsFile.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/attachment-inlineDataSavedAsFile) does not match the URL (http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td><td>--</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/314e&#8203;.com&#8203;/fhir&#8203;/StructureDefinition&#8203;/attachment-inlineDataSavedAsFile')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated\resources\StructureDefinition-attachment-inlineDataSavedAsFile</b></td><td><b>error</b></td><td><b>URL Mismatch http://314e.com/fhir/ig/StructureDefinition/attachment-inlineDataSavedAsFile vs http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
    </tr>
 </table>
 <hr/>
@@ -304,13 +352,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[7]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c27803)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/quantity-precision'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/quantity-precision' to 'http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[7]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c27885)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/quantity-precision'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/quantity-precision' to 'http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c30422)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c30356)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c35512)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/quantity-precision'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/quantity-precision' to 'http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c36435)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/quantity-precision'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/quantity-precision' to 'http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/314e&#8203;.com&#8203;/fhir&#8203;/ig&#8203;/StructureDefinition&#8203;/quantity-314e')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this data type profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
@@ -392,10 +440,37 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>fsh-generated\resources\StructureDefinition-reference-context</b></td><td><b>error</b></td><td><b>URL Mismatch http://314e.com/fhir/ig/StructureDefinition/reference-context vs http://314e.com/fhir/StructureDefinition/reference-context</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
    </tr>
 </table>
+<hr/>
+<a name="C__Users_amrit.palaria_Documents_code_IG_314e-ig_fsh-generated_resources_ValueSet-attachment-tag"> </a>
+<h2><a href="ValueSet-attachment-tag.html">fsh-generated\resources\ValueSet-attachment-tag.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(url = 'http:&#8203;/&#8203;/314e&#8203;.com&#8203;/fhir&#8203;/ValueSet&#8203;/attachment-tag')</b></td><td><b>error</b></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-attachment-tag.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/attachment-tag) does not match the URL (http://314e.com/fhir/ValueSet/attachment-tag). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1066)</b></td><td><b>warning</b></td><td><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated\resources\ValueSet-attachment-tag</b></td><td><b>error</b></td><td><b>URL Mismatch http://314e.com/fhir/ig/ValueSet/attachment-tag vs http://314e.com/fhir/ValueSet/attachment-tag</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+</table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="CODESYSTEM_SHAREABLE_MISSING"> </a>
+<h2>CODESYSTEM_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-attachment-tag.html">fsh-generated\resources\CodeSystem-attachment-tag.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td><td>--</td>
+   </tr>
+</table>
 <hr/>
 <a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
 <h2>MSG_DEPENDS_ON_DEPRECATED</h2>
@@ -417,6 +492,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 <h2>RESOURCE_CANONICAL_MISMATCH</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-attachment-tag.html">fsh-generated\resources\CodeSystem-attachment-tag.json</a></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-attachment-tag.json - the canonical URL (http://314e.com/fhir/ig/CodeSystem/attachment-tag) does not match the URL (http://314e.com/fhir/CodeSystem/attachment-tag). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-annotation-314e.html">fsh-generated\resources\StructureDefinition-annotation-314e.json</a></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-annotation-314e.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/annotation-314e) does not match the URL (http://314e.com/fhir/StructureDefinition/annotation-314e). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
    </tr>
    <tr style="background-color: #ffeeee">
@@ -427,9 +505,6 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-attachment-helperFile.html">fsh-generated\resources\StructureDefinition-attachment-helperFile.json</a></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-helperFile.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/attachment-helperFile) does not match the URL (http://314e.com/fhir/StructureDefinition/attachment-helperFile). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-attachment-inlineDataSavedAsFile.html">fsh-generated\resources\StructureDefinition-attachment-inlineDataSavedAsFile.json</a></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-inlineDataSavedAsFile.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/attachment-inlineDataSavedAsFile) does not match the URL (http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-attachment-tag.html">fsh-generated\resources\StructureDefinition-attachment-tag.json</a></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-tag.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/attachment-tag) does not match the URL (http://314e.com/fhir/StructureDefinition/attachment-tag). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
@@ -445,6 +520,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-reference-context.html">fsh-generated\resources\StructureDefinition-reference-context.json</a></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-reference-context.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/reference-context) does not match the URL (http://314e.com/fhir/StructureDefinition/reference-context). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-attachment-tag.html">fsh-generated\resources\ValueSet-attachment-tag.json</a></td><td><b>Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-attachment-tag.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/attachment-tag) does not match the URL (http://314e.com/fhir/ValueSet/attachment-tag). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
    </tr>
 </table>
 <hr/>

@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AttachmentTagVS",
+  "id": "attachment-tag",
+  "title": "Attachment Tag ValueSet",
+  "description": "Standard semantic tags used for categorization and workflow\nqualification of attachments.",
+  "url": "http://314e.com/fhir/ValueSet/attachment-tag",
+  "compose": {
+    "include": [
+      {
+        "system": "http://314e.com/fhir/CodeSystem/attachment-tag"
+      }
+    ]
+  }
+}

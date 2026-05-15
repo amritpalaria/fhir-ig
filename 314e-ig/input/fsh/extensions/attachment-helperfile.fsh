@@ -26,18 +26,19 @@ Supports association of auxiliary/helper files required for proper
 interpretation or processing of an attachment.
 """
 
-* value[x] only string
-* valueString 1..1
+* value[x] only url
+* valueUrl 1..1
 
-* valueString ^short =
-    "Path or filename of associated helper/supporting file"
+* valueUrl ^short =
+    "Path, locator or filename of associated helper/supporting file"
 
-* valueString ^definition = """
-Specifies the path, filename, or storage reference of a helper/supporting
-file associated with the attachment.
+* valueUrl ^definition = """
+Specifies the path, locator, storage reference,
+or URL of a helper/supporting file associated
+with the attachment.
 """
 
-* valueString ^comment = """
+* valueUrl ^comment = """
 The interpretation and usage of the helper file is dependent upon
 the attachment content type and consuming application.
 """

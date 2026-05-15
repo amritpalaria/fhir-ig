@@ -1,3 +1,4 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
+http://314e.com/fhir/CodeSystem/attachment-tag,1.0.0,active,,AttachmentTagCS,Attachment Tag CodeSystem,"Codes used for semantic tagging and categorization of attachments.","ValueSet/attachment-tag"
 http://hl7.org/fhir/quantity-comparator,4.0.1,active,"2.16.840.1.113883.4.642.4.60",QuantityComparator,QuantityComparator,"How the Quantity should be understood and represented.","ValueSet/quantity-comparator"
 http://hl7.org/fhir/resource-types,4.0.1,active,,ResourceType,ResourceType,"One of the resource types defined as part of this version of FHIR.","ValueSet/resource-types"

@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:Attachment</sch:title>
     <sch:rule context="f:Attachment">
-      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/attachment-helperFile']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/attachment-helperFile': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:data) &lt;= 0">data: maximum cardinality of 'data' is 0</sch:assert>
       <sch:assert test="count(f:url) &gt;= 1">url: minimum cardinality of 'url' is 1</sch:assert>

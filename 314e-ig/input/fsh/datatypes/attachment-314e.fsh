@@ -9,9 +9,11 @@ SHALL never be populated.
 All attachment content SHALL be externalized into object storage
 and referenced using Attachment.url.
 
-If content originated as inline data/blob content and was later
-saved externally, the extension
-attachment-inlineDataSavedAsFile SHALL be used to indicate this.
+If attachment content originated as inline data/blob content
+and was subsequently externalized into object storage, the
+Attachment SHALL carry the tag
+'inline-data-externalized-to-file' using the attachment-tag
+extension.
 """
 
 * ^url = "http://314e.com/fhir/StructureDefinition/attachment-314e"
@@ -39,17 +41,15 @@ and referenced using Attachment.url.
 * url ^short = "Object storage path or external attachment location"
 
 * url ^definition = """
-Reference/path to the externally stored attachment content.
+Reference/path to the externally stored attachment content. Inline binary data in 
+Attachment.data SHALL NOT be populated. Inline content SHALL instead be persisted 
+externally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.
 """
 
 // Extension slices
 * extension contains
-    AttachmentInlineDataSavedAsFile named inlineDataSavedAsFile 0..1 and
     AttachmentTag named tag 0..* and
     AttachmentHelperFile named helperFile 0..1
-
-* extension[inlineDataSavedAsFile] ^short =
-    "Indicates originally-inline content externalized into object storage"
 
 * extension[tag] ^short =
     "Semantic categorization tag associated with the attachment"

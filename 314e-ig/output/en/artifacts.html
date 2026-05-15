@@ -146,6 +146,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>
          <a href="#2">Structures: Extension Definitions</a>
       </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
    </ul>
 </div>
 <div xmlns="http://www.w3.org/1999/xhtml"
@@ -191,9 +197,11 @@ SHALL never be populated.</p>
 <p>All attachment content SHALL be externalized into object storage
 and referenced using Attachment.url.</p>
 
-<p>If content originated as inline data/blob content and was later
-saved externally, the extension
-attachment-inlineDataSavedAsFile SHALL be used to indicate this.</p>
+<p>If attachment content originated as inline data/blob content
+and was subsequently externalized into object storage, the
+Attachment SHALL carry the tag
+'inline-data-externalized-to-file' using the attachment-tag
+extension.</p>
 </td>
          </tr>
          <tr>
@@ -288,24 +296,6 @@ interpret, process, transform, or render the attachment content.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-attachment-inlineDataSavedAsFile.html"
-                  title="StructureDefinition/attachment-inlineDataSavedAsFile">
-                  <span title="StructureDefinition/attachment-inlineDataSavedAsFile">Attachment Inline Data Saved As File
-</span>
-               </a>
-            </td>
-            <td>
-<p>Indicates that the Attachment content was originally available
-as inline data/blob content but has been externalized and saved
-as a file in object storage, with the Attachment.url carrying
-the storage location.</p>
-
-<p>If this extension is absent, the content SHALL be assumed to
-have originated as an external file rather than inline data.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-attachment-tag.html"
                   title="StructureDefinition/attachment-tag">
                   <span title="StructureDefinition/attachment-tag">Attachment Tag
@@ -313,11 +303,11 @@ have originated as an external file rather than inline data.</p>
                </a>
             </td>
             <td>
-<p>A categorization or tagging label associated with an Attachment.</p>
+<p>A categorization or semantic tag associated with an Attachment.</p>
 
 <p>This extension allows multiple tags to be associated with an
-Attachment for workflow, classification, indexing, or retrieval
-purposes.</p>
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes.</p>
 </td>
          </tr>
          <tr>
@@ -391,6 +381,45 @@ such as technician, phlebotomist, or pathologist.</p>
          </tr>
       </tbody>
    </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-attachment-tag.html" title="ValueSet/attachment-tag">
+                  <span title="ValueSet/attachment-tag">Attachment Tag ValueSet
+</span>
+               </a>
+            </td>
+            <td>
+<p>Standard semantic tags used for categorization and workflow
+qualification of attachments.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-attachment-tag.html" title="CodeSystem/attachment-tag">
+                  <span title="CodeSystem/attachment-tag">Attachment Tag CodeSystem
+</span>
+               </a>
+            </td>
+            <td>
+<p>Codes used for semantic tagging and categorization of attachments.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -418,8 +447,8 @@ such as technician, phlebotomist, or pathologist.</p>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-13 15:29:00 +0530">
-    2026-05-13
+  <span title="2026-05-15 09:21:00 +0530">
+    2026-05-15
   </span>
 
           <br/>

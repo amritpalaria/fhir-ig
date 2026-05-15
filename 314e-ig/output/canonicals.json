@@ -1,4 +1,11 @@
 [{
+  "id" : "attachment-tag",
+  "type" : "CodeSystem",
+  "url" : "http://314e.com/fhir/CodeSystem/attachment-tag",
+  "version" : "1.0.0",
+  "name" : "AttachmentTagCS"
+},
+{
   "id" : "annotation-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/annotation-314e",
@@ -25,13 +32,6 @@
   "url" : "http://314e.com/fhir/StructureDefinition/attachment-helperFile",
   "version" : "1.0.0",
   "name" : "AttachmentHelperFile"
-},
-{
-  "id" : "attachment-inlineDataSavedAsFile",
-  "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile",
-  "version" : "1.0.0",
-  "name" : "AttachmentInlineDataSavedAsFile"
 },
 {
   "id" : "attachment-tag",
@@ -67,6 +67,13 @@
   "url" : "http://314e.com/fhir/StructureDefinition/reference-context",
   "version" : "1.0.0",
   "name" : "ReferenceContext"
+},
+{
+  "id" : "attachment-tag",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ValueSet/attachment-tag",
+  "version" : "1.0.0",
+  "name" : "AttachmentTagVS"
 },
 {
   "id" : "fhir.314e",

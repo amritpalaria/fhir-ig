@@ -4,8 +4,9 @@
 [Reference314e]: StructureDefinition-reference-314e.html
 [AnnotationAttachment]: StructureDefinition-annotation-attachment.html
 [AttachmentHelperFile]: StructureDefinition-attachment-helperFile.html
-[AttachmentInlineDataSavedAsFile]: StructureDefinition-attachment-inlineDataSavedAsFile.html
 [AttachmentTag]: StructureDefinition-attachment-tag.html
+[AttachmentTagCS]: CodeSystem-attachment-tag.html
+[AttachmentTagVS]: ValueSet-attachment-tag.html
 [QuantityQuantityString]: StructureDefinition-quantity-quantityString.html
 [QuantityValueString]: StructureDefinition-quantity-valueString.html
 [ReferenceContext]: StructureDefinition-reference-context.html

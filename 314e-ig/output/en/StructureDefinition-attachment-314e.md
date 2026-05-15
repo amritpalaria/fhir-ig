@@ -5,7 +5,7 @@
  
 A constrained Attachment datatype profile in which Attachment.data SHALL never be populated. 
 All attachment content SHALL be externalized into object storage and referenced using Attachment.url. 
-If content originated as inline data/blob content and was later saved externally, the extension attachment-inlineDataSavedAsFile SHALL be used to indicate this. 
+If attachment content originated as inline data/blob content and was subsequently externalized into object storage, the Attachment SHALL carry the tag 'inline-data-externalized-to-file' using the attachment-tag extension. 
 
 **Usages:**
 
@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
   "name" : "Attachment314e",
   "title" : "314e Attachment",
   "status" : "draft",
-  "date" : "2026-05-13T15:29:14+05:30",
+  "date" : "2026-05-15T09:21:03+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "A constrained Attachment datatype profile in which Attachment.data\nSHALL never be populated.\n\nAll attachment content SHALL be externalized into object storage\nand referenced using Attachment.url.\n\nIf content originated as inline data/blob content and was later\nsaved externally, the extension\nattachment-inlineDataSavedAsFile SHALL be used to indicate this.",
+  "description" : "A constrained Attachment datatype profile in which Attachment.data\nSHALL never be populated.\n\nAll attachment content SHALL be externalized into object storage\nand referenced using Attachment.url.\n\nIf attachment content originated as inline data/blob content\nand was subsequently externalized into object storage, the\nAttachment SHALL carry the tag\n'inline-data-externalized-to-file' using the attachment-tag\nextension.",
   "purpose" : "Provides a consistent attachment handling strategy in which\nbinary payloads are always externally stored and referenced.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -63,18 +63,6 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Attachment.extension:inlineDataSavedAsFile",
-      "path" : "Attachment.extension",
-      "sliceName" : "inlineDataSavedAsFile",
-      "short" : "Indicates originally-inline content externalized into object storage",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile"]
-      }]
-    },
-    {
       "id" : "Attachment.extension:tag",
       "path" : "Attachment.extension",
       "sliceName" : "tag",
@@ -110,7 +98,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
       "id" : "Attachment.url",
       "path" : "Attachment.url",
       "short" : "Object storage path or external attachment location",
-      "definition" : "Reference/path to the externally stored attachment content.",
+      "definition" : "Reference/path to the externally stored attachment content. Inline binary data in \nAttachment.data SHALL NOT be populated. Inline content SHALL instead be persisted \nexternally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.",
       "min" : 1
     }]
   }

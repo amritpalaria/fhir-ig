@@ -4,8 +4,25 @@
 
 * [Home](index.md)
 * [Artifacts Summary](artifacts.md)
+* [](StructureDefinition-attachment-inlineDataSavedAsFile-definitions.md)
+* [](StructureDefinition-attachment-inlineDataSavedAsFile-mappings.md)
+* [](StructureDefinition-attachment-inlineDataSavedAsFile-testing.md)
+* [](StructureDefinition-attachment-inlineDataSavedAsFile.ai.md)
+* [](StructureDefinition-attachment-inlineDataSavedAsFile.md)
+* [](StructureDefinition-attachment-inlineDataSavedAsFile.profile.history.md)
+* [](StructureDefinition-attachment-inlineDataSavedAsFile.profile.json.md)
+* [](StructureDefinition-attachment-inlineDataSavedAsFile.profile.ttl.md)
+* [](StructureDefinition-attachment-inlineDataSavedAsFile.profile.xml.md)
 
 ## Resources
+
+### CodeSystems
+
+* [Attachment Tag CodeSystem](CodeSystem-attachment-tag.md)
+
+### ValueSets
+
+* [Attachment Tag ValueSet](ValueSet-attachment-tag.md)
 
 ### Complex-type Profiles
 
@@ -18,7 +35,6 @@
 
 * [Annotation Attachment](StructureDefinition-annotation-attachment.md)
 * [Attachment Helper File](StructureDefinition-attachment-helperFile.md)
-* [Attachment Inline Data Saved As File](StructureDefinition-attachment-inlineDataSavedAsFile.md)
 * [Attachment Tag](StructureDefinition-attachment-tag.md)
 * [Quantity Quantity String](StructureDefinition-quantity-quantityString.md)
 * [Quantity Value String](StructureDefinition-quantity-valueString.md)

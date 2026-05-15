@@ -1,3 +1,10 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "http://314e.com/fhir/CodeSystem/attachment-tag",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "AttachmentTagCS",
+    "title" : "Attachment Tag CodeSystem",
+    "description" : "Codes used for semantic tagging and categorization of attachments."
+  }]
 }

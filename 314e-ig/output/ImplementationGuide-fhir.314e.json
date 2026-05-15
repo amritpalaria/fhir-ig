@@ -11,7 +11,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-13T15:29:14+05:30",
+  "date" : "2026-05-15T09:21:03+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -663,7 +663,7 @@
         "reference" : "StructureDefinition/attachment-314e"
       },
       "name" : "314e Attachment",
-      "description" : "A constrained Attachment datatype profile in which Attachment.data\nSHALL never be populated.\n\nAll attachment content SHALL be externalized into object storage\nand referenced using Attachment.url.\n\nIf content originated as inline data/blob content and was later\nsaved externally, the extension\nattachment-inlineDataSavedAsFile SHALL be used to indicate this.",
+      "description" : "A constrained Attachment datatype profile in which Attachment.data\nSHALL never be populated.\n\nAll attachment content SHALL be externalized into object storage\nand referenced using Attachment.url.\n\nIf attachment content originated as inline data/blob content\nand was subsequently externalized into object storage, the\nAttachment SHALL carry the tag\n'inline-data-externalized-to-file' using the attachment-tag\nextension.",
       "exampleBoolean" : false
     },
     {
@@ -720,22 +720,34 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/attachment-inlineDataSavedAsFile"
+        "reference" : "StructureDefinition/attachment-tag"
       },
-      "name" : "Attachment Inline Data Saved As File",
-      "description" : "Indicates that the Attachment content was originally available\nas inline data/blob content but has been externalized and saved\nas a file in object storage, with the Attachment.url carrying\nthe storage location.\n\nIf this extension is absent, the content SHALL be assumed to\nhave originated as an external file rather than inline data.",
+      "name" : "Attachment Tag",
+      "description" : "A categorization or semantic tag associated with an Attachment.\n\nThis extension allows multiple tags to be associated with an\nAttachment for workflow, classification, indexing, retrieval,\nprocessing, or application behavior purposes.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/attachment-tag"
+        "reference" : "CodeSystem/attachment-tag"
       },
-      "name" : "Attachment Tag",
-      "description" : "A categorization or tagging label associated with an Attachment.\n\nThis extension allows multiple tags to be associated with an\nAttachment for workflow, classification, indexing, or retrieval\npurposes.",
+      "name" : "Attachment Tag CodeSystem",
+      "description" : "Codes used for semantic tagging and categorization of attachments.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/attachment-tag"
+      },
+      "name" : "Attachment Tag ValueSet",
+      "description" : "Standard semantic tags used for categorization and workflow\nqualification of attachments.",
       "exampleBoolean" : false
     },
     {

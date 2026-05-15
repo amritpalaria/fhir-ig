@@ -1,3 +1,11 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "http://314e.com/fhir/ValueSet/attachment-tag",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "AttachmentTagVS",
+    "title" : "Attachment Tag ValueSet",
+    "description" : "Standard semantic tags used for categorization and workflow\nqualification of attachments.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/attachment-tag"]
+  }]
 }

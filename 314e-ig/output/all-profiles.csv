@@ -54,21 +54,12 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"attachment-314e","Attachment.extension:inlineDataSavedAsFile","Attachment.extension","inlineDataSavedAsFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile]]} {[]}
-","Indicates originally-inline content externalized into object storage","Indicates that the Attachment content was originally available
-as inline data/blob content but has been externalized and saved
-as a file in object storage, with the Attachment.url carrying
-the storage location.
-
-If this extension is absent, the content SHALL be assumed to
-have originated as an external file rather than inline data.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "attachment-314e","Attachment.extension:tag","Attachment.extension","tag","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-tag]]} {[]}
-","Semantic categorization tag associated with the attachment","A categorization or tagging label associated with an Attachment.
+","Semantic categorization tag associated with the attachment","A categorization or semantic tag associated with an Attachment.
 
 This extension allows multiple tags to be associated with an
-Attachment for workflow, classification, indexing, or retrieval
-purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "attachment-314e","Attachment.extension:helperFile","Attachment.extension","helperFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-helperFile]]} {[]}
 ","Helper file associated with the attachment","Provides the path or filename of an auxiliary/helper file required
@@ -88,7 +79,9 @@ Attachment content SHALL instead be persisted externally
 and referenced using Attachment.url.","The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON.","The data needs to able to be transmitted inline.","","","","","","","",,,,,"",,,,"Attachment.data",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "attachment-314e","Attachment.url","Attachment.url","","","",1,1,"","","Y","url {[]} {[]}
-","Object storage path or external attachment location","Reference/path to the externally stored attachment content.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Object storage path or external attachment location","Reference/path to the externally stored attachment content. Inline binary data in 
+Attachment.data SHALL NOT be populated. Inline content SHALL instead be persisted 
+externally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "attachment-314e","Attachment.size","Attachment.size","","","",0,1,"","","Y","unsignedInt {[]} {[]}
 ","Number of bytes of content (if url provided)","The number of bytes of data that make up this attachment (before base64 encoding, if that is done).","The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.","Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.","","","","","","","",,,,,"",,,,"Attachment.size",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -126,39 +119,18 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "attachment-helperFile","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://314e.com/fhir/StructureDefinition/attachment-helperFile""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"attachment-helperFile","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","string {[]} {[]}
-","Path or filename of associated helper/supporting file","Specifies the path, filename, or storage reference of a helper/supporting
-file associated with the attachment.","The interpretation and usage of the helper file is dependent upon
+"attachment-helperFile","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","url {[]} {[]}
+","Path, locator or filename of associated helper/supporting file","Specifies the path, locator, storage reference,
+or URL of a helper/supporting file associated
+with the attachment.","The interpretation and usage of the helper file is dependent upon
 the attachment content type and consuming application.","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"attachment-inlineDataSavedAsFile","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Attachment Inline Data Saved As File","Indicates that the Attachment content was originally available
-as inline data/blob content but has been externalized and saved
-as a file in object storage, with the Attachment.url carrying
-the storage location.
-
-If this extension is absent, the content SHALL be assumed to
-have originated as an external file rather than inline data.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"attachment-inlineDataSavedAsFile","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"attachment-inlineDataSavedAsFile","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"attachment-inlineDataSavedAsFile","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://314e.com/fhir/StructureDefinition/attachment-inlineDataSavedAsFile""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"attachment-inlineDataSavedAsFile","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","boolean {[]} {[]}
-","Whether inline content was externalized to object storage","True indicates that the content was originally available as
-inline data/blob content and was saved as a file in object storage.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
 "attachment-tag","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Attachment Tag","A categorization or tagging label associated with an Attachment.
+","Attachment Tag","A categorization or semantic tag associated with an Attachment.
 
 This extension allows multiple tags to be associated with an
-Attachment for workflow, classification, indexing, or retrieval
-purposes.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "attachment-tag","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -170,8 +142,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "attachment-tag","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://314e.com/fhir/StructureDefinition/attachment-tag""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "attachment-tag","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Categorization tag for the attachment","Represents a semantic classification, workflow label,
-or categorization tag associated with the attachment.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Semantic categorization tag for the attachment","Represents a semantic classification, workflow label,
+behavioral indicator, or categorization tag associated
+with the attachment.","","","","","","","","","",,"extensible","","http://314e.com/fhir/ValueSet/attachment-tag","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "quantity-314e","Quantity","Quantity","","","",0,*,"","","","null {[]} {[]}
 ","A measured or measurable amount","A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.","The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.","","","","","","","","",,,,,"",,,,"Quantity",0,*,"ele-1
@@ -185,18 +158,15 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "quantity-314e","Quantity.extension:quantityString","Quantity.extension","quantityString","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/quantity-quantityString]]} {[]}
-","Quantity Quantity String","A string representation of Quantity. 
+","Original or display-oriented textual representation of the full quantity","Provides the original, source-oriented, or display-oriented textual
+representation of the complete quantity, including value and unit.
 
-This extension preserves the original lexical representation of a quantity. 
-Additionally, in scenarios where FHIR requires Quantity datatype but the source data 
-cannot be represented as distinct value and unit, this extension 
-SHALL be utilized.
-
-This extension is intended for preservation of textual rendering and does not replace 
-the computable Quantity elements.
-
-Applications should preserve synchronization between the computable Quantity content
-and this extension if either representation is modified.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+This extension is intended for situations in which:
+- the original quantity representation cannot be cleanly decomposed
+  into computable Quantity elements,
+- the original source representation must be preserved for audit,
+  fidelity, or display purposes,
+- or the display representation differs from the computable form.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "quantity-314e","Quantity.value","Quantity.value","","","",0,1,"","","Y","decimal {[]} {[]}
 ","Numerical value (with implicit precision)","The value of the measured amount. The value includes an implicit precision in the presentation of the value.","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -208,23 +178,25 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "quantity-314e","Quantity.value.extension:precision","Quantity.value.extension","precision","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/quantity-precision]]} {[]}
-","Explicit precision (number of significant decimal places)","Explicit precision of the number. This is the number of significant decimal places after the decimal point, irrespective of how many are actually present in the explicitly represented decimal.","The presence of this extension does not change conformance expectations with regard to rendering and calculations that use the number - these are still based on the raw decimal value. Applications that perform calculations SHALL ensure that this extension is removed or updated to the correct precision value if the number is changed. Applications should consider using the exponential form (e.g. 2.10e3) on the raw decimal to manage significant figures, but should be mindful of human display when doing so.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Explicit precision of the numeric quantity value","Explicit precision of the numeric quantity value.
+
+This represents the number of significant decimal places intended
+for the quantity value, irrespective of how many decimal places
+are explicitly present in the decimal representation itself.
+
+The presence of this extension does not alter the underlying
+numeric value or computation semantics.","The presence of this extension does not change conformance expectations with regard to rendering and calculations that use the number - these are still based on the raw decimal value. Applications that perform calculations SHALL ensure that this extension is removed or updated to the correct precision value if the number is changed. Applications should consider using the exponential form (e.g. 2.10e3) on the raw decimal to manage significant figures, but should be mindful of human display when doing so.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "quantity-314e","Quantity.value.extension:valueString","Quantity.value.extension","valueString","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/quantity-valueString]]} {[]}
-","Quantity Value String","A string/ textual representation associated with Quantity.value.
+","Original or display-oriented textual representation of the numeric value","Provides the original, source-oriented, or display-oriented textual
+representation of the numeric quantity value component.
 
-In scenarios where the ‘value’ of Quantity datatype cannot be expressed as a numerical value 
-even though a distinct unit can be represented in the ‘unit’ element, this 
-extension SHALL be used on the value field of Quantity.
-
-The presence of this extension does not alter the numeric semantics
-of Quantity.value. 
-
-Applications performing calculations SHALL use the actual decimal
-value of Quantity.value rather than the string carried in this extension.
-
-Applications should preserve synchronization between Quantity.value
-and this extension if either representation is modified.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+This extension may be used when:
+- the original formatting of the numeric value must be preserved,
+- the numeric representation contains significant formatting,
+- the value cannot be faithfully represented as a computable decimal,
+- or the original source representation is needed for display,
+  audit, or traceability purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "quantity-314e","Quantity.value.value","Quantity.value.value","","","",0,1,"","","","decimal {[]} {[]}

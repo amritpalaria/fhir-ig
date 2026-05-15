@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-helper
   "name" : "AttachmentHelperFile",
   "title" : "Attachment Helper File",
   "status" : "draft",
-  "date" : "2026-05-13T15:29:14+05:30",
+  "date" : "2026-05-15T09:21:03+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -91,12 +91,12 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-helper
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
-      "short" : "Path or filename of associated helper/supporting file",
-      "definition" : "Specifies the path, filename, or storage reference of a helper/supporting\nfile associated with the attachment.",
+      "short" : "Path, locator or filename of associated helper/supporting file",
+      "definition" : "Specifies the path, locator, storage reference,\nor URL of a helper/supporting file associated\nwith the attachment.",
       "comment" : "The interpretation and usage of the helper file is dependent upon\nthe attachment content type and consuming application.",
       "min" : 1,
       "type" : [{
-        "code" : "string"
+        "code" : "url"
       }]
     }]
   }
