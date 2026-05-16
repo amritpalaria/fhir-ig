@@ -14,7 +14,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-16T07:30:07+05:30",
+  "date" : "2026-05-16T10:04:42+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -673,6 +673,42 @@
       },
       "name" : "314e Attachment",
       "description" : "A constrained Attachment datatype profile in which Attachment.data\nSHALL never be populated.\n\nAll attachment content SHALL be externalized into object storage\nand referenced using Attachment.url.\n\nIf attachment content originated as inline data/blob content\nand was subsequently externalized into object storage, the\nAttachment SHALL carry the tag\n'inline-data-externalized-to-file' using the attachment-tag\nextension.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/procedure-category-broad-314e"
+      },
+      "name" : "314e Broad Procedure Categories",
+      "description" : "Broad top-level procedure categories.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/procedure-category-314e"
+      },
+      "name" : "314e Procedure Category CodeSystem",
+      "description" : "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/procedure-category-subcategory-314e"
+      },
+      "name" : "314e Procedure Subcategories",
+      "description" : "Procedure subcategories used for more granular\noperational classification.",
       "exampleBoolean" : false
     },
     {

@@ -18,17 +18,46 @@ Provides a standardized and semantically categorized ServiceRequest
 profile for clinical workflows.
 """
 
-// Require category
+// ======================================================
+// CATEGORY
+// ======================================================
+
+// One required broad operational category
 * category 1..*
 
-* category from ServiceRequestCategory314eVS (required)
-
 * category ^short =
-    "High-level category classification for the requested service"
+    "Operational procedure/service categories"
 
 * category ^definition = """
-Categorizes the requested service into a standardized
-high-level clinical service domain.
+Broad and optional subcategory classifications used
+for workflow, routing, analytics, and operational
+grouping of ServiceRequest resources.
+"""
+
+// Broad category slice
+* category contains broadCategory 1..1
+
+* category[broadCategory] from ProcedureCategoryBroad314eVS (required)
+
+* category[broadCategory] ^short =
+    "Required broad procedure/service category"
+
+* category[broadCategory] ^definition = """
+Top-level operational classification of the requested
+service or procedure.
+"""
+
+// Optional subcategory slice
+* category contains subCategory 0..1
+
+* category[subCategory] from ProcedureCategorySubcategory314eVS (required)
+
+* category[subCategory] ^short =
+    "Optional detailed subcategory"
+
+* category[subCategory] ^definition = """
+More granular operational sub-classification of the
+requested service or procedure.
 """
 
 // Use 314e Reference profile where applicable

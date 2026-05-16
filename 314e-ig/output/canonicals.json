@@ -13,6 +13,13 @@
   "name" : "ObservationTagCS"
 },
 {
+  "id" : "procedure-category-314e",
+  "type" : "CodeSystem",
+  "url" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+  "version" : "1.0.0",
+  "name" : "ProcedureCategory314eCS"
+},
+{
   "id" : "annotation-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/annotation-314e",
@@ -116,6 +123,20 @@
   "url" : "http://314e.com/fhir/ValueSet/observation-tag",
   "version" : "1.0.0",
   "name" : "ObservationTagVS"
+},
+{
+  "id" : "procedure-category-broad-314e",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ValueSet/procedure-category-broad-314e",
+  "version" : "1.0.0",
+  "name" : "ProcedureCategoryBroad314eVS"
+},
+{
+  "id" : "procedure-category-subcategory-314e",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e",
+  "version" : "1.0.0",
+  "name" : "ProcedureCategorySubcategory314eVS"
 },
 {
   "id" : "servicerequest-category-314e",

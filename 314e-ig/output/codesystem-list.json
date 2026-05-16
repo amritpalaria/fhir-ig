@@ -14,5 +14,13 @@
     "name" : "ObservationTagCS",
     "title" : "Observation Tag CodeSystem",
     "description" : "Codes used to qualify DiagnosticReport and Observation resources\nwithin hierarchical parent-child result/report structures."
+  },
+  {
+    "url" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ProcedureCategory314eCS",
+    "title" : "314e Procedure Category CodeSystem",
+    "description" : "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources."
   }]
 }

@@ -1,0 +1,93 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ProcedureCategoryBroad314eVS",
+  "id": "procedure-category-broad-314e",
+  "title": "314e Broad Procedure Categories",
+  "description": "Broad top-level procedure categories.",
+  "url": "http://314e.com/fhir/ValueSet/procedure-category-broad-314e",
+  "compose": {
+    "include": [
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "LAB"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "IMG"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "FNP"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "SUR"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "TIN"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "RHB"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "CBE"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "CNS"
+          }
+        ]
+      }
+    ]
+  }
+}

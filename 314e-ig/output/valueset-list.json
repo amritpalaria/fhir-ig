@@ -18,6 +18,24 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/observation-tag"]
   },
   {
+    "url" : "http://314e.com/fhir/ValueSet/procedure-category-broad-314e",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "ProcedureCategoryBroad314eVS",
+    "title" : "314e Broad Procedure Categories",
+    "description" : "Broad top-level procedure categories.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"]
+  },
+  {
+    "url" : "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "ProcedureCategorySubcategory314eVS",
+    "title" : "314e Procedure Subcategories",
+    "description" : "Procedure subcategories used for more granular\noperational classification.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"]
+  },
+  {
     "url" : "http://314e.com/fhir/ValueSet/servicerequest-category-314e",
     "version" : "1.0.0",
     "status" : "active",

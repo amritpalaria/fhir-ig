@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="procedure-category-broad-314e"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet procedure-category-broad-314e</b></p><a name="procedure-category-broad-314e"> </a><a name="hcprocedure-category-broad-314e"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="CodeSystem-procedure-category-314e.html"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span> where concept  is-a <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-LAB">LAB</a></li><li>Include codes from<a href="CodeSystem-procedure-category-314e.html"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span> where concept  is-a <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-IMG">IMG</a></li><li>Include codes from<a href="CodeSystem-procedure-category-314e.html"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span> where concept  is-a <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-FNP">FNP</a></li><li>Include codes from<a href="CodeSystem-procedure-category-314e.html"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span> where concept  is-a <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-SUR">SUR</a></li><li>Include codes from<a href="CodeSystem-procedure-category-314e.html"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span> where concept  is-a <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-TIN">TIN</a></li><li>Include codes from<a href="CodeSystem-procedure-category-314e.html"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span> where concept  is-a <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-RHB">RHB</a></li><li>Include codes from<a href="CodeSystem-procedure-category-314e.html"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span> where concept  is-a <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-CBE">CBE</a></li><li>Include codes from<a href="CodeSystem-procedure-category-314e.html"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span> where concept  is-a <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-CNS">CNS</a></li></ul></div>
+  </text>
+  <url value="http://314e.com/fhir/ValueSet/procedure-category-broad-314e"/>
+  <version value="1.0.0"/>
+  <name value="ProcedureCategoryBroad314eVS"/>
+  <title value="314e Broad Procedure Categories"/>
+  <status value="draft"/>
+  <date value="2026-05-16T10:04:42+05:30"/>
+  <publisher value="314e"/>
+  <contact>
+    <name value="314e"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://314e.com"/>
+    </telecom>
+  </contact>
+  <description value="Broad top-level procedure categories."/>
+  <compose>
+    <include>
+      <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="LAB"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="IMG"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="FNP"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="SUR"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="TIN"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="RHB"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="CBE"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="CNS"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

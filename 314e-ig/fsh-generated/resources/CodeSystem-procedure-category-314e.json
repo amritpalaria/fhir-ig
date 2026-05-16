@@ -1,0 +1,207 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ProcedureCategory314eCS",
+  "id": "procedure-category-314e",
+  "title": "314e Procedure Category CodeSystem",
+  "description": "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources.",
+  "url": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+  "concept": [
+    {
+      "code": "LAB",
+      "display": "Laboratory Medicine (In-Vitro)",
+      "concept": [
+        {
+          "code": "CHEM",
+          "display": "Hematology & Chemistry"
+        },
+        {
+          "code": "PATH",
+          "display": "Pathology & Cytology"
+        },
+        {
+          "code": "MICV",
+          "display": "Microbiology & Virology"
+        },
+        {
+          "code": "BBTM",
+          "display": "Transfusion Medicine / Blood Bank"
+        },
+        {
+          "code": "GEND",
+          "display": "Molecular Diagnostics & Genetics"
+        }
+      ]
+    },
+    {
+      "code": "IMG",
+      "display": "Diagnostic Imaging (Anatomical)",
+      "concept": [
+        {
+          "code": "RRXG",
+          "display": "Routine Radiology"
+        },
+        {
+          "code": "ACSI",
+          "display": "Advanced Cross-Sectional"
+        },
+        {
+          "code": "CATH",
+          "display": "Interventional Radiology & Cath Lab Imaging"
+        },
+        {
+          "code": "NUCM",
+          "display": "Nuclear Medicine"
+        },
+        {
+          "code": "MEDP",
+          "display": "Medical Photography"
+        }
+      ]
+    },
+    {
+      "code": "FNP",
+      "display": "Functional & Physiological Studies",
+      "concept": [
+        {
+          "code": "CARD",
+          "display": "Cardiology"
+        },
+        {
+          "code": "NEUS",
+          "display": "Neurology & Sleep"
+        },
+        {
+          "code": "PULM",
+          "display": "Pulmonary"
+        },
+        {
+          "code": "AUDV",
+          "display": "Audiology & Vestibular"
+        },
+        {
+          "code": "GIFN",
+          "display": "Gastroenterology Functional"
+        }
+      ]
+    },
+    {
+      "code": "SUR",
+      "display": "Invasive & Surgical Procedures",
+      "concept": [
+        {
+          "code": "ORSU",
+          "display": "Operative & Major Surgical Procedures"
+        },
+        {
+          "code": "ENDO",
+          "display": "Endoscopic Procedures"
+        },
+        {
+          "code": "MSUR",
+          "display": "Bedside & Minor Invasive Procedures"
+        }
+      ]
+    },
+    {
+      "code": "TIN",
+      "display": "Therapeutics & Infusion Services",
+      "concept": [
+        {
+          "code": "IONC",
+          "display": "Infusion Oncology"
+        },
+        {
+          "code": "RONC",
+          "display": "Radiation Oncology"
+        },
+        {
+          "code": "BLDT",
+          "display": "Renal & Blood Therapies"
+        },
+        {
+          "code": "INFU",
+          "display": "Specialty Infusions"
+        },
+        {
+          "code": "MEDA",
+          "display": "Bedside & General Medication Administration"
+        }
+      ]
+    },
+    {
+      "code": "RHB",
+      "display": "Rehabilitative, Supportive & Physical Medicine",
+      "concept": [
+        {
+          "code": "PHYT",
+          "display": "Physical Therapy"
+        },
+        {
+          "code": "OCCT",
+          "display": "Occupational Therapy"
+        },
+        {
+          "code": "SPLP",
+          "display": "Speech-Language Pathology"
+        },
+        {
+          "code": "RSPT",
+          "display": "Respiratory Therapy"
+        },
+        {
+          "code": "PALC",
+          "display": "Palliative & Comfort Care Regimens"
+        }
+      ]
+    },
+    {
+      "code": "CBE",
+      "display": "Cognitive, Behavioral & Education Services",
+      "concept": [
+        {
+          "code": "WELL",
+          "display": "Preventive & Wellness Education"
+        },
+        {
+          "code": "PSYC",
+          "display": "Psychological & Mental Health Counseling"
+        },
+        {
+          "code": "GENC",
+          "display": "Genetic & Familial Counseling"
+        },
+        {
+          "code": "MEDC",
+          "display": "Medication and Device Compliance Education"
+        }
+      ]
+    },
+    {
+      "code": "CNS",
+      "display": "Clinical Consultations & Care Coordination",
+      "concept": [
+        {
+          "code": "SPEC",
+          "display": "Specialist Consultations & Referrals"
+        },
+        {
+          "code": "NURS",
+          "display": "Nursing & Bedside Care Orders"
+        },
+        {
+          "code": "SDOH",
+          "display": "Social & Community Care Services"
+        },
+        {
+          "code": "DIST",
+          "display": "Discharge & Transitional Care Management"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "count": 44
+}

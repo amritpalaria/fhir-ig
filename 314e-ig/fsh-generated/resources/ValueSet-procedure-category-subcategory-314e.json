@@ -1,0 +1,93 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ProcedureCategorySubcategory314eVS",
+  "id": "procedure-category-subcategory-314e",
+  "title": "314e Procedure Subcategories",
+  "description": "Procedure subcategories used for more granular\noperational classification.",
+  "url": "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e",
+  "compose": {
+    "include": [
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "LAB"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "IMG"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "FNP"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "SUR"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "TIN"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "RHB"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "CBE"
+          }
+        ]
+      },
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "CNS"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-16T07:30:07+05:30"/>
+  <date value="2026-05-16T10:04:42+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -500,6 +500,39 @@
       </reference>
       <name value="314e Attachment"/>
       <description value="A constrained Attachment datatype profile in which Attachment.data&#xA;SHALL never be populated.&#xA;&#xA;All attachment content SHALL be externalized into object storage&#xA;and referenced using Attachment.url.&#xA;&#xA;If attachment content originated as inline data/blob content&#xA;and was subsequently externalized into object storage, the&#xA;Attachment SHALL carry the tag&#xA;'inline-data-externalized-to-file' using the attachment-tag&#xA;extension."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/procedure-category-broad-314e"/>
+      </reference>
+      <name value="314e Broad Procedure Categories"/>
+      <description value="Broad top-level procedure categories."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/procedure-category-314e"/>
+      </reference>
+      <name value="314e Procedure Category CodeSystem"/>
+      <description value="Hierarchical procedure categories used for operational,&#xA;workflow, and semantic classification of Procedure resources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/procedure-category-subcategory-314e"/>
+      </reference>
+      <name value="314e Procedure Subcategories"/>
+      <description value="Procedure subcategories used for more granular&#xA;operational classification."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

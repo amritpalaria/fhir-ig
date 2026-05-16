@@ -21,6 +21,30 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/observation-tag"]
   },
   {
+    "url" : "http://314e.com/fhir/ValueSet/procedure-category-broad-314e",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "ProcedureCategoryBroad314eVS",
+    "title" : "314e Broad Procedure Categories",
+    "description" : "Broad top-level procedure categories.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"],
+    "uses" : {
+    },
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+  },
+  {
+    "url" : "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "ProcedureCategorySubcategory314eVS",
+    "title" : "314e Procedure Subcategories",
+    "description" : "Procedure subcategories used for more granular\noperational classification.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"],
+    "uses" : {
+    },
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+  },
+  {
     "url" : "http://314e.com/fhir/ValueSet/servicerequest-category-314e",
     "version" : "1.0.0",
     "status" : "active",
@@ -28,9 +52,6 @@
     "title" : "314e ServiceRequest Category ValueSet",
     "description" : "Required high-level category classifications for 314e\nServiceRequest resources.",
     "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074",
-    "http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+    "http://snomed.info/sct"]
   }]
 }

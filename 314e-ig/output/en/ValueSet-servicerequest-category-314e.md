@@ -7,7 +7,7 @@ Required high-level category classifications for 314e ServiceRequest resources.
 
  **References** 
 
-* [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
@@ -32,7 +32,7 @@ Required high-level category classifications for 314e ServiceRequest resources.
   "name" : "ServiceRequestCategory314eVS",
   "title" : "314e ServiceRequest Category ValueSet",
   "status" : "active",
-  "date" : "2026-05-16T07:30:07+05:30",
+  "date" : "2026-05-16T10:04:42+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

@@ -16,6 +16,14 @@
     "endLine": 26
   },
   {
+    "outputFile": "CodeSystem-procedure-category-314e.json",
+    "fshName": "ProcedureCategory314eCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems\\procedure-category-cs.fsh",
+    "startLine": 1,
+    "endLine": 105
+  },
+  {
     "outputFile": "StructureDefinition-annotation-314e.json",
     "fshName": "Annotation314e",
     "fshType": "Profile",
@@ -117,7 +125,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\servicerequest-314e.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 76
   },
   {
     "outputFile": "StructureDefinition-simplequantity-314e.json",
@@ -142,6 +150,22 @@
     "fshFile": "valuesets\\observation-tag-vs.fsh",
     "startLine": 1,
     "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-procedure-category-broad-314e.json",
+    "fshName": "ProcedureCategoryBroad314eVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\procedure-category-vs.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "ValueSet-procedure-category-subcategory-314e.json",
+    "fshName": "ProcedureCategorySubcategory314eVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\procedure-subcategory-vs.fsh",
+    "startLine": 1,
+    "endLine": 33
   },
   {
     "outputFile": "ValueSet-servicerequest-category-314e.json",

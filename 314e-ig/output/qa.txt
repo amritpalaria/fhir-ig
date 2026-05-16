@@ -1,12 +1,13 @@
 IG314e : Validation Results
 =========================================
 
-err = 41, warn = 28, info = 7
+err = 47, warn = 31, info = 7
 IG Publisher Version: 2.2.7
-Generated Sat May 16 07:49:24 IST 2026. FHIR version 4.0.1 for fhir.314e#1.0.0 (canonical = http://314e.com/fhir/ig)
+Generated Sat May 16 10:08:14 IST 2026. FHIR version 4.0.1 for fhir.314e#1.0.0 (canonical = http://314e.com/fhir/ig)
  Build Errors : 0 / 4 / 0
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-attachment-tag : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-observation-tag : 2 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-procedure-category-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ImplementationGuide-fhir.314e : 4 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-annotation-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-annotation-attachment : 2 / 1 / 1
@@ -24,6 +25,8 @@ Generated Sat May 16 07:49:24 IST 2026. FHIR version 4.0.1 for fhir.314e#1.0.0 (
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-simplequantity-314e : 2 / 3 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-attachment-tag : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-observation-tag : 2 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-broad-314e : 2 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-subcategory-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-servicerequest-category-314e : 3 / 1 / 5
 </table>
 == n/a ==
@@ -39,6 +42,10 @@ ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\
 ERROR: CodeSystem.where(url = 'http://314e.com/fhir/CodeSystem/observation-tag'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-observation-tag.json - the canonical URL (http://314e.com/fhir/ig/CodeSystem/observation-tag) does not match the URL (http://314e.com/fhir/CodeSystem/observation-tag). Use the special-url parameter if you really mean for it not to match
 WARNING: CodeSystem/observation-tag: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-observation-tag: URL Mismatch http://314e.com/fhir/ig/CodeSystem/observation-tag vs http://314e.com/fhir/CodeSystem/observation-tag
+== fsh-generated\resources\CodeSystem-procedure-category-314e.json ==
+ERROR: CodeSystem.where(url = 'http://314e.com/fhir/CodeSystem/procedure-category-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-procedure-category-314e.json - the canonical URL (http://314e.com/fhir/ig/CodeSystem/procedure-category-314e) does not match the URL (http://314e.com/fhir/CodeSystem/procedure-category-314e). Use the special-url parameter if you really mean for it not to match
+WARNING: CodeSystem/procedure-category-314e: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-procedure-category-314e: URL Mismatch http://314e.com/fhir/ig/CodeSystem/procedure-category-314e vs http://314e.com/fhir/CodeSystem/procedure-category-314e
 == fsh-generated\resources\ImplementationGuide-fhir.314e.json ==
 WARNING: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ImplementationGuide-fhir.314e: Unknown Parameters: [path-logo=images/314e-logo.png]
 ERROR: ImplementationGuide/fhir.314e: ImplementationGuide.definition.extension[2].extension[0].value.ofType(string): The System URI could not be determined for the code 'path-logo' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2'
@@ -114,6 +121,14 @@ ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\
 ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/observation-tag'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-observation-tag.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/observation-tag) does not match the URL (http://314e.com/fhir/ValueSet/observation-tag). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/observation-tag: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-observation-tag: URL Mismatch http://314e.com/fhir/ig/ValueSet/observation-tag vs http://314e.com/fhir/ValueSet/observation-tag
+== fsh-generated\resources\ValueSet-procedure-category-broad-314e.json ==
+ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/procedure-category-broad-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-broad-314e.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/procedure-category-broad-314e) does not match the URL (http://314e.com/fhir/ValueSet/procedure-category-broad-314e). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/procedure-category-broad-314e: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-broad-314e: URL Mismatch http://314e.com/fhir/ig/ValueSet/procedure-category-broad-314e vs http://314e.com/fhir/ValueSet/procedure-category-broad-314e
+== fsh-generated\resources\ValueSet-procedure-category-subcategory-314e.json ==
+ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-subcategory-314e.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/procedure-category-subcategory-314e) does not match the URL (http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/procedure-category-subcategory-314e: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-subcategory-314e: URL Mismatch http://314e.com/fhir/ig/ValueSet/procedure-category-subcategory-314e vs http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e
 == fsh-generated\resources\ValueSet-servicerequest-category-314e.json ==
 ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/servicerequest-category-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-servicerequest-category-314e.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/servicerequest-category-314e) does not match the URL (http://314e.com/fhir/ValueSet/servicerequest-category-314e). Use the special-url parameter if you really mean for it not to match
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://terminology.hl7.org/CodeSystem/v2-0074 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.5.0), 3.0.0 (hl7.terminology.r4#7.1.0)

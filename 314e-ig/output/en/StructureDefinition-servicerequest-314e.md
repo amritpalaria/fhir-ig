@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
   "name" : "ServiceRequest314e",
   "title" : "314e ServiceRequest",
   "status" : "draft",
-  "date" : "2026-05-16T07:30:07+05:30",
+  "date" : "2026-05-16T10:04:42+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -119,12 +119,34 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
     {
       "id" : "ServiceRequest.category",
       "path" : "ServiceRequest.category",
-      "short" : "High-level category classification for the requested service",
-      "definition" : "Categorizes the requested service into a standardized\nhigh-level clinical service domain.",
+      "short" : "Operational procedure/service categories",
+      "definition" : "Broad and optional subcategory classifications used\nfor workflow, routing, analytics, and operational\ngrouping of ServiceRequest resources.",
+      "min" : 1
+    },
+    {
+      "id" : "ServiceRequest.category:broadCategory",
+      "path" : "ServiceRequest.category",
+      "sliceName" : "broadCategory",
+      "short" : "Required broad procedure/service category",
+      "definition" : "Top-level operational classification of the requested\nservice or procedure.",
       "min" : 1,
+      "max" : "1",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://314e.com/fhir/ValueSet/servicerequest-category-314e"
+        "valueSet" : "http://314e.com/fhir/ValueSet/procedure-category-broad-314e"
+      }
+    },
+    {
+      "id" : "ServiceRequest.category:subCategory",
+      "path" : "ServiceRequest.category",
+      "sliceName" : "subCategory",
+      "short" : "Optional detailed subcategory",
+      "definition" : "More granular operational sub-classification of the\nrequested service or procedure.",
+      "min" : 0,
+      "max" : "1",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e"
       }
     },
     {

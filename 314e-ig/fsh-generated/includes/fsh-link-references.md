@@ -1,5 +1,8 @@
 [Annotation314e]: StructureDefinition-annotation-314e.html
 [Attachment314e]: StructureDefinition-attachment-314e.html
+[ProcedureCategoryBroad314eVS]: ValueSet-procedure-category-broad-314e.html
+[ProcedureCategory314eCS]: CodeSystem-procedure-category-314e.html
+[ProcedureCategorySubcategory314eVS]: ValueSet-procedure-category-subcategory-314e.html
 [Quantity314e]: StructureDefinition-quantity-314e.html
 [Range314e]: StructureDefinition-range-314e.html
 [Ratio314e]: StructureDefinition-ratio-314e.html

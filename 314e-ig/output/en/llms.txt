@@ -11,11 +11,14 @@
 
 * [Attachment Tag CodeSystem](CodeSystem-attachment-tag.md)
 * [Observation Tag CodeSystem](CodeSystem-observation-tag.md)
+* [314e Procedure Category CodeSystem](CodeSystem-procedure-category-314e.md)
 
 ### ValueSets
 
 * [Attachment Tag ValueSet](ValueSet-attachment-tag.md)
 * [Observation Tag ValueSet](ValueSet-observation-tag.md)
+* [314e Broad Procedure Categories](ValueSet-procedure-category-broad-314e.md)
+* [314e Procedure Subcategories](ValueSet-procedure-category-subcategory-314e.md)
 * [314e ServiceRequest Category ValueSet](ValueSet-servicerequest-category-314e.md)
 
 ### Complex-type Profiles
