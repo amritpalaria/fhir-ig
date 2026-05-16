@@ -25,7 +25,10 @@ are explicitly present in the decimal representation itself.
 The presence of this extension does not alter the underlying
 numeric value or computation semantics.
 
-The original textual representation of value may additionally
+The original textual representation of the full quantity may 
+be preserved using the valueString extension.
+
+The original textual representation of just the quantity value may additionally
 be preserved using the valueString extension.","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","SN.2  / CQ - N/A","PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"
 "Quantity.value.id","Quantity.value.id","","","",0,1,"","","","string {[]} {[]}
@@ -46,20 +49,8 @@ if the numeric value changes.","","","","","","","","",,,,,"",,,,"Element.extens
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A","n/a"
 "Quantity.value.extension:valueString","Quantity.value.extension","valueString","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/quantity-valueString]]} {[]}
-","Original or display-oriented textual representation of the numeric value","A string/ textual representation associated with Quantity.value.
-
-In scenarios where the ‘value’ of Quantity datatype cannot be expressed as a numerical value 
-even though a distinct unit can be represented in the ‘unit’ element, this 
-extension SHALL be used on the value field of Quantity.
-
-The presence of this extension does not alter the numeric semantics
-of Quantity.value. 
-
-Applications performing calculations SHALL use the actual decimal
-value of Quantity.value rather than the string carried in this extension.
-
-Applications should preserve synchronization between Quantity.value
-and this extension if either representation is modified.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Original or display-oriented textual representation of the value","Original textual representation of the quantity value
+as received from the source system.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Quantity.value.value","Quantity.value.value","","","",0,1,"","","","decimal {[]} {[]}
 ","Primitive value for decimal","The actual value","","","","","","","","","",,,,,"",,,,"decimal.value",0,1,"",""

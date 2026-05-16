@@ -1,4 +1,4 @@
-Profile: Decimal314e
+Profile: decimal314e
 Parent: decimal
 Id: decimal-314e
 Title: "314e decimal"

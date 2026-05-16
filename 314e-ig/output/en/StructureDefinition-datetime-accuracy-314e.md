@@ -2,7 +2,7 @@
 
 ## Extension: 314e Date/Time Accuracy 
 
-Specifies the accuracy or exactness of a dateTime value when only some portion of the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.
+Specifies the accuracy or exactness of a dateTime value when only some part of the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.
 
 This extension is intended to explicitly communicate the accuracy of a dateTime value, such as full timestamp, year-only, year-month, date-only, or none.
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-accuracy
   "title" : "314e Date/Time Accuracy",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-accuracy
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "Specifies the accuracy or exactness of a dateTime value when only some portion of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+  "description" : "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-accuracy
       "id" : "Extension",
       "path" : "Extension",
       "short" : "314e Date/Time Accuracy",
-      "definition" : "Specifies the accuracy or exactness of a dateTime value when only some portion of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC."
+      "definition" : "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC."
     },
     {
       "id" : "Extension.extension",
@@ -90,8 +90,8 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-accuracy
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
-      "short" : "Meaningful usable precision of the dateTime value",
-      "definition" : "Indicates the precision that is verified as clinically exact or accurate.\nExamples include year-only, month-level, date-level,\nfull timestamp precision or none.",
+      "short" : "Precision level of the exact/ accurate part of dateTime value",
+      "definition" : "Indicates the precision level that is verified as clinically exact or accurate.\nExamples include year-only, month-level, date-level,\nfull timestamp precision or none.",
       "min" : 1,
       "type" : [{
         "code" : "code"

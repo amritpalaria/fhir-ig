@@ -2,9 +2,8 @@ Extension: DateTimePrecision314e
 Id: datetime-precision-314e
 Title: "314e Date/Time Precision"
 Description: """
-Specifies the meaningful precision of a dateTime value when the base
-FHIR dateTime datatype permits greater precision than is actually known,
-verified, or clinically usable.
+Specifies the meaningful/ usable precision of a dateTime value when the 
+datatype syntactically permits greater precision than is actually known or clinically usable.
 
 This extension is intended to explicitly communicate the usable precision
 of a dateTime value, such as year-only, year-month, date-only, or
@@ -26,17 +25,17 @@ All dateTime values in the 314e implementation guide SHALL be stored in UTC.
 
 * valueCode from TimePrecisionUnitsVS314E (required)
 
-* valueCode ^short = "Meaningful usable precision of the dateTime value"
+* valueCode ^short = "Known/ usable precision of the dateTime value"
 * valueCode ^definition = """
-Indicates the precision that is clinically, operationally,
-or semantically meaningful for the associated dateTime value.
+Indicates the precision that is operationally
+or semantically meaningful/ usable for the associated dateTime value.
 Examples include year-only, month-level, date-level,
 or full timestamp precision.
 """
 
 * . ^short = "Usable precision of a dateTime value"
 * . ^definition = """
-This extension communicates the meaningful precision of a dateTime value
+This extension communicates the meaningful and usable precision of a dateTime value
 when the datatype syntactically allows more precision than is actually known
 or appropriate to use.
 
@@ -46,6 +45,6 @@ For example:
 - Only month/year may be clinically relevant
 
 This extension SHALL NOT alter the actual dateTime value itself,
-but instead clarifies the degree of confidence or precision
+but instead clarifies the degree of precision
 associated with the recorded value.
 """

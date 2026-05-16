@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "time-precision-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/time-precision-314e",
+  "version": "1.0.0",
+  "name": "TimePrecision314e",
+  "title": "314e Time Precision",
+  "status": "active",
+  "experimental": false,
+  "publisher": "314e",
+  "description": "Specifies the meaningful/ usable precision of a time value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a time value.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "time"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Usable precision of a time value",
+        "definition": "This extension communicates the meaningful and usable precision of a time value\nwhen the datatype syntactically allows more precision than is actually known\nor appropriate to use.\n\nThis extension SHALL NOT alter the actual time value itself,\nbut instead clarifies the degree of precision\nassociated with the recorded value."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/time-precision-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Known/ usable precision of the time value",
+        "definition": "Indicates the precision that is operationally\nor semantically meaningful/ usable for the associated time value.",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://314e.com/fhir/ValueSet/time-precision-units"
+        }
+      }
+    ]
+  }
+}

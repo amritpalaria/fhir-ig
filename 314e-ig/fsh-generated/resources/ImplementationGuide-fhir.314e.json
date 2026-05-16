@@ -77,7 +77,7 @@
           "reference": "StructureDefinition/datetime-accuracy-314e"
         },
         "name": "314e Date/Time Accuracy",
-        "description": "Specifies the accuracy or exactness of a dateTime value when only some portion of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+        "description": "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC.",
         "exampleBoolean": false
       },
       {
@@ -85,7 +85,7 @@
           "reference": "StructureDefinition/datetime-precision-314e"
         },
         "name": "314e Date/Time Precision",
-        "description": "Specifies the meaningful precision of a dateTime value when the base\nFHIR dateTime datatype permits greater precision than is actually known,\nverified, or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+        "description": "Specifies the meaningful/ usable precision of a dateTime value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC.",
         "exampleBoolean": false
       },
       {
@@ -93,7 +93,7 @@
           "reference": "StructureDefinition/datetime-314e"
         },
         "name": "314e dateTime",
-        "description": "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is verifiable or usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf the date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
+        "description": "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
         "exampleBoolean": false
       },
       {
@@ -194,10 +194,34 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/time-314e"
+        },
+        "name": "314e time",
+        "description": "314e profile of the FHIR time primitive datatype - a time during the day, \nin the format hh:mm:ss. There is no date specified. \nSeconds must be provided due to schema type constraints but may be zero-filled \nand may be ignored at receiver discretion. The time \"24:00\" SHALL NOT be used. \nA time zone SHALL NOT be present. Times can be converted to a Duration since midnight.\n\nIf only a smaller degree of precision than syntactically recorded is usable\n(for example, only hour and minute are known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-precision-314e\n\nIf all or part of the usable time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/time-accuracy-314e"
+        },
+        "name": "314e Time Accuracy",
+        "description": "Specifies the accuracy or exactness of a time value when only some part of \nthe known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a time value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/time-accuracy-units-vs"
         },
         "name": "314e Time Exactness Units ValueSet",
         "description": "Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/time-precision-314e"
+        },
+        "name": "314e Time Precision",
+        "description": "Specifies the meaningful/ usable precision of a time value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a time value.",
         "exampleBoolean": false
       },
       {
@@ -221,7 +245,7 @@
           "reference": "StructureDefinition/timing-314e"
         },
         "name": "314e Timing",
-        "description": "314e profile of the FHIR Timing datatype.\n\nUses 314e date/time related datatypes\nincluding DateTime314e, Period314e, and Quantity314e.",
+        "description": "Describes the occurrence of an event that may occur multiple times. Timing schedules are used \nfor specifying when events are expected or requested to occur and may also be used to represent \nthe summary of a past or ongoing event. For simplicity, the definitions of Timing components \nare expressed as 'future' events, but such components can also be used to describe historic or ongoing events.\n\nA Timing schedule can be a list of events and/or criteria for when the event happens, which can \nbe expressed in a structured form and/or as a code. When both event and a repeating specification \nare provided, the list of events should be understood as an interpretation of the information in the repeat structure.\n\nNote: The Timing data type allows modifier extensions.\n\n314e profile of the FHIR Timing datatype uses 314e datatype profiles \nincluding DateTime314e, Period314e, CodeableConcept314e and Quantity314e.",
         "exampleBoolean": false
       },
       {

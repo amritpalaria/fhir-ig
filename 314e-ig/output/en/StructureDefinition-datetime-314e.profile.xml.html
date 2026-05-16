@@ -208,7 +208,7 @@ XML Profile
           
 
             as of 
-2026-05-16
+2026-05-17
 
           
         
@@ -243,10 +243,10 @@ it SHALL be UTC ('Z').&quot; class=&quot;constraint&quot;&gt;datetime314e-utc&lt
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#StructureDefinition.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://314e.com/fhir/ig/StructureDefinition/datetime-314e&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DateTime314e&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;dateTime314e&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;314e dateTime&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-05-16T16:45:26+05:30&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-05-17T00:25:02+05:30&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;314e&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;314e&quot;/&gt;
@@ -260,13 +260,13 @@ it SHALL be UTC ('Z').&quot; class=&quot;constraint&quot;&gt;datetime314e-utc&lt
 
 All dateTime values SHALL be stored in UTC.
 
-If only a smaller degree of precision is verifiable or usable
+If only a smaller degree of precision is usable
 (for example, only the date portion is known),
 the following extension SHALL be used:
 
 http://314e.com/fhir/StructureDefinition/datetime-precision-314e
 
-If the date/time value is approximate rather than exact,
+If all or part of the usable date/time value is approximate rather than exact,
 the following extension SHALL be used:
 
 https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator&quot;/&gt;
@@ -387,8 +387,8 @@ it SHALL be UTC ('Z').&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;timePrecision&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Usable precision of the dateTime value&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specifies the degree of precision that is usable,
-reliable, or verifiable for the dateTime value.
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specifies the degree of precision that is meaningful, usable
+or reliable for the dateTime value.
 
 Example:
 - year
@@ -436,7 +436,7 @@ Example:
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indicates the precision that is verified as clinically exact or accurate&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specifies the accuracy or exactness of a dateTime value when only some portion of 
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specifies the accuracy or exactness of a dateTime value when only some part of 
 the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. 
 Examples include year-only, month-level, date-level, full timestamp precision or none.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -531,8 +531,8 @@ it SHALL be UTC ('Z').&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.sliceName">sliceName</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;timePrecision&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Usable precision of the dateTime value&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specifies the degree of precision that is usable,
-reliable, or verifiable for the dateTime value.
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specifies the degree of precision that is meaningful, usable
+or reliable for the dateTime value.
 
 Example:
 - year
@@ -554,7 +554,7 @@ Example:
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indicates the precision that is verified as clinically exact or accurate&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specifies the accuracy or exactness of a dateTime value when only some portion of 
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Specifies the accuracy or exactness of a dateTime value when only some part of 
 the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. 
 Examples include year-only, month-level, date-level, full timestamp precision or none.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -602,8 +602,8 @@ Examples include year-only, month-level, date-level, full timestamp precision or
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-16 16:45:00 +0530">
-    2026-05-16
+  <span title="2026-05-17 00:25:00 +0530">
+    2026-05-17
   </span>
 
           <br/>

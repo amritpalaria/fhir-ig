@@ -21,7 +21,7 @@ be externally stored and referenced through attachments.
 * authorReference only Reference314e
 * authorReference only Reference(Practitioner or Patient or RelatedPerson or Organization)
 
-* time only DateTime314e
+* time only dateTime314e
 
 * time ^short =
     "Annotation time in UTC with precision support"

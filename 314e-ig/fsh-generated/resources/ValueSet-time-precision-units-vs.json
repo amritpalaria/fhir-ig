@@ -18,7 +18,7 @@
         "system": "http://314e.com/fhir/CodeSystem/time-precision-units",
         "concept": [
           {
-            "code": "n"
+            "code": "none"
           }
         ]
       }

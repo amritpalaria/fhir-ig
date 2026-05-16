@@ -5,9 +5,9 @@
  
 314e profile of the FHIR dateTime primitive datatype. 
 All dateTime values SHALL be stored in UTC. 
-If only a smaller degree of precision is verifiable or usable (for example, only the date portion is known), the following extension SHALL be used: 
+If only a smaller degree of precision is usable (for example, only the date portion is known), the following extension SHALL be used: 
 http://314e.com/fhir/StructureDefinition/datetime-precision-314e 
-If the date/time value is approximate rather than exact, the following extension SHALL be used: 
+If all or part of the usable date/time value is approximate rather than exact, the following extension SHALL be used: 
 https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator 
 
 **Usages:**
@@ -34,10 +34,10 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-314e.csv
   "id" : "datetime-314e",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/datetime-314e",
   "version" : "1.0.0",
-  "name" : "DateTime314e",
+  "name" : "dateTime314e",
   "title" : "314e dateTime",
   "status" : "active",
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-314e.csv
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is verifiable or usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf the date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
+  "description" : "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
   "fhirVersion" : "4.0.1",
   "kind" : "primitive-type",
   "abstract" : false,
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-314e.csv
       "path" : "dateTime.extension",
       "sliceName" : "timePrecision",
       "short" : "Usable precision of the dateTime value",
-      "definition" : "Specifies the degree of precision that is usable,\nreliable, or verifiable for the dateTime value.\n\nExample:\n- year\n- month\n- date\n- minute\n- second",
+      "definition" : "Specifies the degree of precision that is meaningful, usable\nor reliable for the dateTime value.\n\nExample:\n- year\n- month\n- date\n- minute\n- second",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -95,7 +95,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-314e.csv
       "path" : "dateTime.extension",
       "sliceName" : "accuracyIndicator",
       "short" : "Indicates the precision that is verified as clinically exact or accurate",
-      "definition" : "Specifies the accuracy or exactness of a dateTime value when only some portion of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. \nExamples include year-only, month-level, date-level, full timestamp precision or none.",
+      "definition" : "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. \nExamples include year-only, month-level, date-level, full timestamp precision or none.",
       "min" : 0,
       "max" : "1",
       "type" : [{

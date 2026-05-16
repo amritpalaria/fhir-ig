@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-16T16:45:26+05:30"/>
+  <date value="2026-05-17T00:25:02+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -543,7 +543,7 @@
         <reference value="StructureDefinition/datetime-accuracy-314e"/>
       </reference>
       <name value="314e Date/Time Accuracy"/>
-      <description value="Specifies the accuracy or exactness of a dateTime value when only some portion of &#xA;the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.&#xA;&#xA;This extension is intended to explicitly communicate the accuracy&#xA;of a dateTime value, such as full timestamp, year-only, year-month, date-only, or&#xA;none.&#xA;&#xA;For example:&#xA;- A birth year and month may be known exactly but the day might be an estimate&#xA;- Only the date may be verifiable as accurate with the time being approximate&#xA;&#xA;Note: All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
+      <description value="Specifies the accuracy or exactness of a dateTime value when only some part of &#xA;the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.&#xA;&#xA;This extension is intended to explicitly communicate the accuracy&#xA;of a dateTime value, such as full timestamp, year-only, year-month, date-only, or&#xA;none.&#xA;&#xA;For example:&#xA;- A birth year and month may be known exactly but the day might be an estimate&#xA;- Only the date may be verifiable as accurate with the time being approximate&#xA;&#xA;Note: All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -554,7 +554,7 @@
         <reference value="StructureDefinition/datetime-precision-314e"/>
       </reference>
       <name value="314e Date/Time Precision"/>
-      <description value="Specifies the meaningful precision of a dateTime value when the base&#xA;FHIR dateTime datatype permits greater precision than is actually known,&#xA;verified, or clinically usable.&#xA;&#xA;This extension is intended to explicitly communicate the usable precision&#xA;of a dateTime value, such as year-only, year-month, date-only, or&#xA;full timestamp precision.&#xA;&#xA;All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
+      <description value="Specifies the meaningful/ usable precision of a dateTime value when the &#xA;datatype syntactically permits greater precision than is actually known or clinically usable.&#xA;&#xA;This extension is intended to explicitly communicate the usable precision&#xA;of a dateTime value, such as year-only, year-month, date-only, or&#xA;full timestamp precision.&#xA;&#xA;All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -565,7 +565,7 @@
         <reference value="StructureDefinition/datetime-314e"/>
       </reference>
       <name value="314e dateTime"/>
-      <description value="314e profile of the FHIR dateTime primitive datatype.&#xA;&#xA;All dateTime values SHALL be stored in UTC.&#xA;&#xA;If only a smaller degree of precision is verifiable or usable&#xA;(for example, only the date portion is known),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/datetime-precision-314e&#xA;&#xA;If the date/time value is approximate rather than exact,&#xA;the following extension SHALL be used:&#xA;&#xA;https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator"/>
+      <description value="314e profile of the FHIR dateTime primitive datatype.&#xA;&#xA;All dateTime values SHALL be stored in UTC.&#xA;&#xA;If only a smaller degree of precision is usable&#xA;(for example, only the date portion is known),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/datetime-precision-314e&#xA;&#xA;If all or part of the usable date/time value is approximate rather than exact,&#xA;the following extension SHALL be used:&#xA;&#xA;https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -702,6 +702,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:primitive-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/time-314e"/>
+      </reference>
+      <name value="314e time"/>
+      <description value="314e profile of the FHIR time primitive datatype - a time during the day, &#xA;in the format hh:mm:ss. There is no date specified. &#xA;Seconds must be provided due to schema type constraints but may be zero-filled &#xA;and may be ignored at receiver discretion. The time &quot;24:00&quot; SHALL NOT be used. &#xA;A time zone SHALL NOT be present. Times can be converted to a Duration since midnight.&#xA;&#xA;If only a smaller degree of precision than syntactically recorded is usable&#xA;(for example, only hour and minute are known),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/time-precision-314e&#xA;&#xA;If all or part of the usable time value is approximate rather than exact,&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/time-accuracy-314e"/>
+      </reference>
+      <name value="314e Time Accuracy"/>
+      <description value="Specifies the accuracy or exactness of a time value when only some part of &#xA;the known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.&#xA;&#xA;This extension is intended to explicitly communicate the accuracy&#xA;of a time value."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -709,6 +731,17 @@
       </reference>
       <name value="314e Time Exactness Units ValueSet"/>
       <description value="Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/time-precision-314e"/>
+      </reference>
+      <name value="314e Time Precision"/>
+      <description value="Specifies the meaningful/ usable precision of a time value when the &#xA;datatype syntactically permits greater precision than is actually known or clinically usable.&#xA;&#xA;This extension is intended to explicitly communicate the usable precision&#xA;of a time value."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -741,7 +774,7 @@
         <reference value="StructureDefinition/timing-314e"/>
       </reference>
       <name value="314e Timing"/>
-      <description value="314e profile of the FHIR Timing datatype.&#xA;&#xA;Uses 314e date/time related datatypes&#xA;including DateTime314e, Period314e, and Quantity314e."/>
+      <description value="Describes the occurrence of an event that may occur multiple times. Timing schedules are used &#xA;for specifying when events are expected or requested to occur and may also be used to represent &#xA;the summary of a past or ongoing event. For simplicity, the definitions of Timing components &#xA;are expressed as 'future' events, but such components can also be used to describe historic or ongoing events.&#xA;&#xA;A Timing schedule can be a list of events and/or criteria for when the event happens, which can &#xA;be expressed in a structured form and/or as a code. When both event and a repeating specification &#xA;are provided, the list of events should be understood as an interpretation of the information in the repeat structure.&#xA;&#xA;Note: The Timing data type allows modifier extensions.&#xA;&#xA;314e profile of the FHIR Timing datatype uses 314e datatype profiles &#xA;including DateTime314e, Period314e, CodeableConcept314e and Quantity314e."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

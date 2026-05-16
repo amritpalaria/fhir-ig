@@ -33,11 +33,11 @@
       "display": "months"
     },
     {
-      "code": "y",
+      "code": "a",
       "display": "years"
     },
     {
-      "code": "n",
+      "code": "none",
       "display": "none"
     }
   ],

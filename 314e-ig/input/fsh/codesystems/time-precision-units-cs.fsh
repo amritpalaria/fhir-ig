@@ -14,5 +14,5 @@ Description: "Time precision units used to indicate the actual precision of a da
 * #h "hours"
 * #d "days"
 * #mo "months"
-* #y "years"
-* #n "none"
+* #a "years"
+* #none "none"

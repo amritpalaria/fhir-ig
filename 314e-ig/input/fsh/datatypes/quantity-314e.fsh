@@ -32,7 +32,7 @@ This extension is intended for situations in which:
 """
 
 // Allow extensions on Quantity.value primitive
-* value only Decimal314e
+* value only decimal314e
 
 * value ^short =
     "Numerical value with explicit precision support"

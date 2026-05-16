@@ -12,7 +12,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet time-precision-units-vs</b></p><a name=\"time-precision-units-vs\"> </a><a name=\"hctime-precision-units-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-time-precision-units-cs.html\"><code>http://314e.com/fhir/CodeSystem/time-precision-units</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"CodeSystem-time-precision-units-cs.html\"><code>http://314e.com/fhir/CodeSystem/time-precision-units</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-time-precision-units-cs.html#time-precision-units-cs-n\">n</a></td><td style=\"color: #cccccc\">none</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet time-precision-units-vs</b></p><a name=\"time-precision-units-vs\"> </a><a name=\"hctime-precision-units-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-time-precision-units-cs.html\"><code>http://314e.com/fhir/CodeSystem/time-precision-units</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"CodeSystem-time-precision-units-cs.html\"><code>http://314e.com/fhir/CodeSystem/time-precision-units</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-time-precision-units-cs.html#time-precision-units-cs-none\">none</a></td><td style=\"color: #cccccc\">none</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://314e.com/fhir/ValueSet/time-precision-units"^^xsd:anyURI ;
@@ -23,7 +23,7 @@
   fhir:title [ fhir:v "314e Time Precision Units ValueSet"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-05-16T16:45:26+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-17T00:25:02+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -46,7 +46,7 @@
          fhir:l <http://314e.com/fhir/CodeSystem/time-precision-units>
        ] ;
        fhir:concept ( [
-         fhir:code [ fhir:v "n" ]
+         fhir:code [ fhir:v "none" ]
        ] )
      ] )
   ] . # 

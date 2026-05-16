@@ -132,6 +132,20 @@
   "name" : "SimpleQuantity314e"
 },
 {
+  "id" : "time-accuracy-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/time-accuracy-314e",
+  "version" : "1.0.0",
+  "name" : "TimeAccuracy314e"
+},
+{
+  "id" : "time-precision-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/time-precision-314e",
+  "version" : "1.0.0",
+  "name" : "TimePrecision314e"
+},
+{
   "id" : "attachment-tag",
   "type" : "ValueSet",
   "url" : "http://314e.com/fhir/ValueSet/attachment-tag",
@@ -199,14 +213,14 @@
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/datetime-314e",
   "version" : "1.0.0",
-  "name" : "DateTime314e"
+  "name" : "dateTime314e"
 },
 {
   "id" : "decimal-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/decimal-314e",
   "version" : "1.0.0",
-  "name" : "Decimal314e"
+  "name" : "decimal314e"
 },
 {
   "id" : "duration-314e",
@@ -235,6 +249,13 @@
   "url" : "http://314e.com/fhir/ig/StructureDefinition/quantity-314e",
   "version" : "1.0.0",
   "name" : "Quantity314e"
+},
+{
+  "id" : "time-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/time-314e",
+  "version" : "1.0.0",
+  "name" : "time314e"
 },
 {
   "id" : "timing-314e",

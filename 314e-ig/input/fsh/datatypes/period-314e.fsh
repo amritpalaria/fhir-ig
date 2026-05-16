@@ -16,13 +16,13 @@ including UTC normalization and precision handling.
 // START
 // ======================================================
 
-* start only DateTime314e
+* start only dateTime314e
 
 * start ^short =
-    "Starting time with UTC normalization and precision support"
+    "Starting time with UTC normalization, precision support and inclusive boundary"
 
 * start ^definition = """
-Starting time for the period.
+The start of the period. The boundary is inclusive.
 
 All timestamps SHALL be represented in UTC.
 Additional extensions may be used to indicate
@@ -33,13 +33,15 @@ usable precision or approximate values.
 // END
 // ======================================================
 
-* end only DateTime314e
+* end only dateTime314e
 
 * end ^short =
-    "Ending time with UTC normalization and precision support"
+    "Ending time with UTC normalization, precision support and inclusive boundary"
 
 * end ^definition = """
-End time for the period.
+The end of the period.  The boundary is inclusive. If the end of the period is missing, it 
+means no end was known or planned at the time the instance was created. The start may be in 
+the past, and the end date in the future, which means that period is expected/planned to end at that time.
 
 All timestamps SHALL be represented in UTC.
 Additional extensions may be used to indicate

@@ -31,6 +31,18 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Reference.identifier",
+        "path": "Reference.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"
+            ]
+          }
+        ]
       }
     ]
   }

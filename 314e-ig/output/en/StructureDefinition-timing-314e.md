@@ -3,8 +3,10 @@
 ## Data Type Profile: 314e Timing 
 
  
-314e profile of the FHIR Timing datatype. 
-Uses 314e date/time related datatypes including DateTime314e, Period314e, and Quantity314e. 
+Describes the occurrence of an event that may occur multiple times. Timing schedules are used for specifying when events are expected or requested to occur and may also be used to represent the summary of a past or ongoing event. For simplicity, the definitions of Timing components are expressed as 'future' events, but such components can also be used to describe historic or ongoing events. 
+A Timing schedule can be a list of events and/or criteria for when the event happens, which can be expressed in a structured form and/or as a code. When both event and a repeating specification are provided, the list of events should be understood as an interpretation of the information in the repeat structure. 
+Note: The Timing data type allows modifier extensions. 
+314e profile of the FHIR Timing datatype uses 314e datatype profiles including DateTime314e, Period314e, CodeableConcept314e and Quantity314e. 
 
 **Usages:**
 
@@ -33,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-timing-314e.csv),
   "name" : "Timing314e",
   "title" : "314e Timing",
   "status" : "active",
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -42,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-timing-314e.csv),
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "314e profile of the FHIR Timing datatype.\n\nUses 314e date/time related datatypes\nincluding DateTime314e, Period314e, and Quantity314e.",
+  "description" : "Describes the occurrence of an event that may occur multiple times. Timing schedules are used \nfor specifying when events are expected or requested to occur and may also be used to represent \nthe summary of a past or ongoing event. For simplicity, the definitions of Timing components \nare expressed as 'future' events, but such components can also be used to describe historic or ongoing events.\n\nA Timing schedule can be a list of events and/or criteria for when the event happens, which can \nbe expressed in a structured form and/or as a code. When both event and a repeating specification \nare provided, the list of events should be understood as an interpretation of the information in the repeat structure.\n\nNote: The Timing data type allows modifier extensions.\n\n314e profile of the FHIR Timing datatype uses 314e datatype profiles \nincluding DateTime314e, Period314e, CodeableConcept314e and Quantity314e.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",
@@ -67,7 +69,7 @@ Other representations of profile: [CSV](../StructureDefinition-timing-314e.csv),
     {
       "id" : "Timing.event",
       "path" : "Timing.event",
-      "short" : "Scheduled event time in UTC",
+      "short" : "When the event occurs, in UTC",
       "type" : [{
         "code" : "dateTime",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
@@ -90,9 +92,52 @@ Other representations of profile: [CSV](../StructureDefinition-timing-314e.csv),
       }]
     },
     {
-      "id" : "Timing.repeat.offset",
-      "path" : "Timing.repeat.offset",
-      "short" : "Minutes from event with standard FHIR semantics"
+      "id" : "Timing.repeat.duration",
+      "path" : "Timing.repeat.duration",
+      "type" : [{
+        "code" : "decimal",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/decimal-314e"]
+      }]
+    },
+    {
+      "id" : "Timing.repeat.durationMax",
+      "path" : "Timing.repeat.durationMax",
+      "type" : [{
+        "code" : "decimal",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/decimal-314e"]
+      }]
+    },
+    {
+      "id" : "Timing.repeat.period",
+      "path" : "Timing.repeat.period",
+      "type" : [{
+        "code" : "decimal",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/decimal-314e"]
+      }]
+    },
+    {
+      "id" : "Timing.repeat.periodMax",
+      "path" : "Timing.repeat.periodMax",
+      "type" : [{
+        "code" : "decimal",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/decimal-314e"]
+      }]
+    },
+    {
+      "id" : "Timing.repeat.timeOfDay",
+      "path" : "Timing.repeat.timeOfDay",
+      "type" : [{
+        "code" : "time",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/time-314e"]
+      }]
+    },
+    {
+      "id" : "Timing.code",
+      "path" : "Timing.code",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
     }]
   }
 }

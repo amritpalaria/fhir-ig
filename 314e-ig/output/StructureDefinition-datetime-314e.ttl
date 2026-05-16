@@ -18,10 +18,10 @@
      fhir:l <http://314e.com/fhir/ig/StructureDefinition/datetime-314e>
   ] ; # 
   fhir:version [ fhir:v "1.0.0"] ; # 
-  fhir:name [ fhir:v "DateTime314e"] ; # 
+  fhir:name [ fhir:v "dateTime314e"] ; # 
   fhir:title [ fhir:v "314e dateTime"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-16T16:45:26+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-17T00:25:02+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -30,7 +30,7 @@
        fhir:value [ fhir:v "http://314e.com" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is verifiable or usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf the date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator"] ; # 
+  fhir:description [ fhir:v "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:kind [ fhir:v "primitive-type"] ; # 
   fhir:abstract [ fhir:v false] ; # 
@@ -174,7 +174,7 @@
        fhir:path [ fhir:v "dateTime.extension" ] ;
        fhir:sliceName [ fhir:v "timePrecision" ] ;
        fhir:short [ fhir:v "Usable precision of the dateTime value" ] ;
-       fhir:definition [ fhir:v "Specifies the degree of precision that is usable,\nreliable, or verifiable for the dateTime value.\n\nExample:\n- year\n- month\n- date\n- minute\n- second" ] ;
+       fhir:definition [ fhir:v "Specifies the degree of precision that is meaningful, usable\nor reliable for the dateTime value.\n\nExample:\n- year\n- month\n- date\n- minute\n- second" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -221,7 +221,7 @@
        fhir:path [ fhir:v "dateTime.extension" ] ;
        fhir:sliceName [ fhir:v "accuracyIndicator" ] ;
        fhir:short [ fhir:v "Indicates the precision that is verified as clinically exact or accurate" ] ;
-       fhir:definition [ fhir:v "Specifies the accuracy or exactness of a dateTime value when only some portion of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. \nExamples include year-only, month-level, date-level, full timestamp precision or none." ] ;
+       fhir:definition [ fhir:v "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. \nExamples include year-only, month-level, date-level, full timestamp precision or none." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -336,7 +336,7 @@
        fhir:path [ fhir:v "dateTime.extension" ] ;
        fhir:sliceName [ fhir:v "timePrecision" ] ;
        fhir:short [ fhir:v "Usable precision of the dateTime value" ] ;
-       fhir:definition [ fhir:v "Specifies the degree of precision that is usable,\nreliable, or verifiable for the dateTime value.\n\nExample:\n- year\n- month\n- date\n- minute\n- second" ] ;
+       fhir:definition [ fhir:v "Specifies the degree of precision that is meaningful, usable\nor reliable for the dateTime value.\n\nExample:\n- year\n- month\n- date\n- minute\n- second" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [
@@ -354,7 +354,7 @@
        fhir:path [ fhir:v "dateTime.extension" ] ;
        fhir:sliceName [ fhir:v "accuracyIndicator" ] ;
        fhir:short [ fhir:v "Indicates the precision that is verified as clinically exact or accurate" ] ;
-       fhir:definition [ fhir:v "Specifies the accuracy or exactness of a dateTime value when only some portion of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. \nExamples include year-only, month-level, date-level, full timestamp precision or none." ] ;
+       fhir:definition [ fhir:v "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. \nExamples include year-only, month-level, date-level, full timestamp precision or none." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:type ( [

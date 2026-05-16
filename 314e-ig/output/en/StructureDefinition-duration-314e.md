@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-duration-314e.csv
   "name" : "Duration314e",
   "title" : "314e Duration",
   "status" : "active",
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -69,39 +69,39 @@ Other representations of profile: [CSV](../StructureDefinition-duration-314e.csv
       "path" : "Duration"
     },
     {
-      "id" : "Duration.extension:valueString",
+      "id" : "Duration.extension:quantityString",
       "path" : "Duration.extension",
-      "sliceName" : "valueString",
+      "sliceName" : "quantityString",
       "short" : "Original textual representation of the duration",
       "definition" : "Original textual representation of the duration\nas received from the source system.",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/quantity-valueString"]
+        "profile" : ["http://314e.com/fhir/StructureDefinition/quantity-quantityString"]
       }]
     },
     {
       "id" : "Duration.value",
       "path" : "Duration.value",
       "short" : "Numerical value with explicit precision support",
-      "definition" : "The value of the measured amount.\n\nWhenever precision is needed, precision metadata SHALL \nbe explicitly represented using the quantityPrecision extension on the 314e decimal profile. \nThe quantityPrecision extension represents the number of significant decimal places intended\nfor the quantity value, irrespective of how many decimal places\nare explicitly present in the decimal representation itself.\nThe presence of this extension does not alter the underlying\nnumeric value or computation semantics.\n\nThe original textual representation of value may additionally\nbe preserved using the valueString extension.",
+      "definition" : "The value of the measured amount.\n\nWhenever precision is needed, precision metadata SHALL \nbe explicitly represented using the quantityPrecision extension on the 314e decimal profile. \nThe quantityPrecision extension represents the number of significant decimal places intended\nfor the duration value, irrespective of how many decimal places\nare explicitly present in the decimal representation itself.\nThe presence of this extension does not alter the underlying\nnumeric value or computation semantics.\n\nThe original textual representation of the full duration quantity may \nbe preserved using the valueString extension.\n\nThe original textual representation of just the duration value may additionally\nbe preserved using the valueString extension.",
       "type" : [{
         "code" : "decimal",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/decimal-314e"]
       }]
     },
     {
-      "id" : "Duration.value.extension:quantityString",
+      "id" : "Duration.value.extension:valueString",
       "path" : "Duration.value.extension",
-      "sliceName" : "quantityString",
-      "short" : "Original textual representation of the quantity value",
-      "definition" : "Original textual representation of the duration quantity value\nas received from the source system.",
+      "sliceName" : "valueString",
+      "short" : "Original textual representation of the duration value",
+      "definition" : "Original textual representation of the duration value\nas received from the source system.",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/quantity-quantityString"]
+        "profile" : ["http://314e.com/fhir/StructureDefinition/quantity-valueString"]
       }]
     }]
   }

@@ -5,8 +5,8 @@
 [Coding314e]: StructureDefinition-coding-314e.html
 [DateTimeAccuracy314e]: StructureDefinition-datetime-accuracy-314e.html
 [DateTimePrecision314e]: StructureDefinition-datetime-precision-314e.html
-[DateTime314e]: StructureDefinition-datetime-314e.html
-[Decimal314e]: StructureDefinition-decimal-314e.html
+[dateTime314e]: StructureDefinition-datetime-314e.html
+[decimal314e]: StructureDefinition-decimal-314e.html
 [Duration314e]: StructureDefinition-duration-314e.html
 [Identifier314e]: StructureDefinition-identifier-314e.html
 [Period314e]: StructureDefinition-period-314e.html
@@ -18,7 +18,10 @@
 [Reference314e]: StructureDefinition-reference-314e.html
 [ServiceRequest314e]: StructureDefinition-servicerequest-314e.html
 [SimpleQuantity314e]: StructureDefinition-simplequantity-314e.html
+[time314e]: StructureDefinition-time-314e.html
+[TimeAccuracy314e]: StructureDefinition-time-accuracy-314e.html
 [TimeAccuracyUnitsVS314E]: ValueSet-time-accuracy-units-vs.html
+[TimePrecision314e]: StructureDefinition-time-precision-314e.html
 [TimePrecisionUnits314E]: CodeSystem-time-precision-units-cs.html
 [TimePrecisionUnitsVS314E]: ValueSet-time-precision-units-vs.html
 [Timing314e]: StructureDefinition-timing-314e.html

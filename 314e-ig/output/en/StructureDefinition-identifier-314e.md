@@ -11,7 +11,7 @@ Example: acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifi
 
 **Usages:**
 
-* This DataType Profile is not used by any profiles in this Implementation Guide
+* Use this DataType Profile: [314e Reference](StructureDefinition-reference-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/identifier-314e)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-identifier-314e.c
   "name" : "Identifier314e",
   "title" : "314e Identifier",
   "status" : "active",
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -89,8 +89,10 @@ Other representations of profile: [CSV](../StructureDefinition-identifier-314e.c
     {
       "id" : "Identifier.type",
       "path" : "Identifier.type",
-      "short" : "Description of identifier category",
-      "definition" : "A coded type for the identifier that can be used to determine\nwhich identifier to use for a specific purpose."
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
     },
     {
       "id" : "Identifier.system",
@@ -119,17 +121,6 @@ Other representations of profile: [CSV](../StructureDefinition-identifier-314e.c
       "type" : [{
         "code" : "Period",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/period-314e"]
-      }]
-    },
-    {
-      "id" : "Identifier.assigner",
-      "path" : "Identifier.assigner",
-      "short" : "Organization or entity issuing the identifier",
-      "definition" : "Organization or entity responsible for issuing\nor managing the identifier.",
-      "type" : [{
-        "code" : "Reference",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
       }]
     }]
   }

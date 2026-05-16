@@ -2,7 +2,7 @@ Extension: DateTimeAccuracy314e
 Id: datetime-accuracy-314e
 Title: "314e Date/Time Accuracy"
 Description: """
-Specifies the accuracy or exactness of a dateTime value when only some portion of 
+Specifies the accuracy or exactness of a dateTime value when only some part of 
 the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.
 
 This extension is intended to explicitly communicate the accuracy
@@ -29,9 +29,9 @@ Note: All dateTime values in the 314e implementation guide SHALL be stored in UT
 
 * valueCode from TimeAccuracyUnitsVS314E (required)
 
-* valueCode ^short = "Meaningful usable precision of the dateTime value"
+* valueCode ^short = "Precision level of the exact/ accurate part of dateTime value"
 * valueCode ^definition = """
-Indicates the precision that is verified as clinically exact or accurate.
+Indicates the precision level that is verified as clinically exact or accurate.
 Examples include year-only, month-level, date-level,
 full timestamp precision or none.
 """

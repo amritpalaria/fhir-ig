@@ -200,7 +200,7 @@
           
 
             as of 
-2026-05-16
+2026-05-17
 
           
         
@@ -255,7 +255,10 @@ are explicitly present in the decimal representation itself.
 The presence of this extension does not alter the underlying
 numeric value or computation semantics.
 
-The original textual representation of value may additionally
+The original textual representation of the full quantity may 
+be preserved using the valueString extension.
+
+The original textual representation of just the quantity value may additionally
 be preserved using the valueString extension.">value</a><a name="Quantity.value"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
 <div>SN.2  / CQ - N/A</div></td>
@@ -281,20 +284,8 @@ in the decimal value itself.">extension:quantityPrecision</a><a name="Quantity.v
 <div>N/A</div></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
 <div>n/a</div></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="acbb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1124.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-simplequantity-314e-definitions.html#Quantity.value.extension:valueString" title="Slice valueString: A string/ textual representation associated with Quantity.value.
-
-In scenarios where the ‘value’ of Quantity datatype cannot be expressed as a numerical value 
-even though a distinct unit can be represented in the ‘unit’ element, this 
-extension SHALL be used on the value field of Quantity.
-
-The presence of this extension does not alter the numeric semantics
-of Quantity.value. 
-
-Applications performing calculations SHALL use the actual decimal
-value of Quantity.value rather than the string carried in this extension.
-
-Applications should preserve synchronization between Quantity.value
-and this extension if either representation is modified.">extension:valueString</a><a name="Quantity.value.extension.3"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="acbb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1124.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-simplequantity-314e-definitions.html#Quantity.value.extension:valueString" title="Slice valueString: Original textual representation of the quantity value
+as received from the source system.">extension:valueString</a><a name="Quantity.value.extension.3"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
 <div></div></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
@@ -359,8 +350,8 @@ and this extension if either representation is modified.">extension:valueString<
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-16 16:45:00 +0530">
-    2026-05-16
+  <span title="2026-05-17 00:25:00 +0530">
+    2026-05-17
   </span>
 
           <br/>

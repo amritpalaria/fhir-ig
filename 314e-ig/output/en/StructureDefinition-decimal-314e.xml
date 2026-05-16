@@ -11,10 +11,10 @@
   </text>
   <url value="http://314e.com/fhir/ig/StructureDefinition/decimal-314e"/>
   <version value="1.0.0"/>
-  <name value="Decimal314e"/>
+  <name value="decimal314e"/>
   <title value="314e decimal"/>
   <status value="active"/>
-  <date value="2026-05-16T16:45:26+05:30"/>
+  <date value="2026-05-17T00:25:02+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>

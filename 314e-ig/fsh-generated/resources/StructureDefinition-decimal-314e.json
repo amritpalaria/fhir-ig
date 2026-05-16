@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "decimal-314e",
   "url": "http://314e.com/fhir/ig/StructureDefinition/decimal-314e",
-  "name": "Decimal314e",
+  "name": "decimal314e",
   "title": "314e decimal",
   "status": "active",
   "description": "314e profile of the FHIR decimal primitive datatype.\n\nSupports explicit precision representation using:\n\nhttp://hl7.org/fhir/StructureDefinition/quantity-precision\n\nThis extension specifies the intended or known precision\nof the decimal value independently of the actual lexical form.",

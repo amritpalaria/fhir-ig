@@ -16,7 +16,7 @@ Severity: #error
 // PROFILE
 // ======================================================
 
-Profile: DateTime314e
+Profile: dateTime314e
 Parent: dateTime
 Id: datetime-314e
 Title: "314e dateTime"
@@ -25,13 +25,13 @@ Description: """
 
 All dateTime values SHALL be stored in UTC.
 
-If only a smaller degree of precision is verifiable or usable
+If only a smaller degree of precision is usable
 (for example, only the date portion is known),
 the following extension SHALL be used:
 
 http://314e.com/fhir/StructureDefinition/datetime-precision-314e
 
-If the date/time value is approximate rather than exact,
+If all or part of the usable date/time value is approximate rather than exact,
 the following extension SHALL be used:
 
 https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator
@@ -52,8 +52,8 @@ https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator
     "Usable precision of the dateTime value"
 
 * extension[timePrecision] ^definition = """
-Specifies the degree of precision that is usable,
-reliable, or verifiable for the dateTime value.
+Specifies the degree of precision that is meaningful, usable
+or reliable for the dateTime value.
 
 Example:
 - year
@@ -74,7 +74,7 @@ Example:
     "Indicates the precision that is verified as clinically exact or accurate"
 
 * extension[accuracyIndicator] ^definition = """
-Specifies the accuracy or exactness of a dateTime value when only some portion of 
+Specifies the accuracy or exactness of a dateTime value when only some part of 
 the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. 
 Examples include year-only, month-level, date-level, full timestamp precision or none.
 """

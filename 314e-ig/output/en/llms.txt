@@ -4,20 +4,6 @@
 
 * [Home](index.md)
 * [Artifacts Summary](artifacts.md)
-* [](CodeSystem-attachment-tag-testing.md)
-* [](CodeSystem-attachment-tag.ai.md)
-* [](CodeSystem-attachment-tag.change.history.md)
-* [](CodeSystem-attachment-tag.md)
-* [](CodeSystem-attachment-tag.json.md)
-* [](CodeSystem-attachment-tag.ttl.md)
-* [](CodeSystem-attachment-tag.xml.md)
-* [](ValueSet-observation-tag-testing.md)
-* [](ValueSet-observation-tag.ai.md)
-* [](ValueSet-observation-tag.change.history.md)
-* [](ValueSet-observation-tag.md)
-* [](ValueSet-observation-tag.json.md)
-* [](ValueSet-observation-tag.ttl.md)
-* [](ValueSet-observation-tag.xml.md)
 
 ## Resources
 
@@ -57,6 +43,7 @@
 
 * [314e dateTime](StructureDefinition-datetime-314e.md)
 * [314e decimal](StructureDefinition-decimal-314e.md)
+* [314e time](StructureDefinition-time-314e.md)
 
 ### Resource Profiles
 
@@ -72,6 +59,8 @@
 * [Quantity Quantity String](StructureDefinition-quantity-quantityString.md)
 * [Quantity Value String](StructureDefinition-quantity-valueString.md)
 * [Reference Context](StructureDefinition-reference-context.md)
+* [314e Time Accuracy](StructureDefinition-time-accuracy-314e.md)
+* [314e Time Precision](StructureDefinition-time-precision-314e.md)
 
 ### ImplementationGuides
 

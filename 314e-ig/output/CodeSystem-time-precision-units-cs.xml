@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="time-precision-units-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem time-precision-units-cs</b></p><a name="time-precision-units-cs"> </a><a name="hctime-precision-units-cs"> </a><p>This  code system <code>http://314e.com/fhir/CodeSystem/time-precision-units</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ms<a name="time-precision-units-cs-ms"> </a></td><td>milliseconds</td></tr><tr><td style="white-space:nowrap">s<a name="time-precision-units-cs-s"> </a></td><td>seconds</td></tr><tr><td style="white-space:nowrap">min<a name="time-precision-units-cs-min"> </a></td><td>minutes</td></tr><tr><td style="white-space:nowrap">h<a name="time-precision-units-cs-h"> </a></td><td>hours</td></tr><tr><td style="white-space:nowrap">d<a name="time-precision-units-cs-d"> </a></td><td>days</td></tr><tr><td style="white-space:nowrap">mo<a name="time-precision-units-cs-mo"> </a></td><td>months</td></tr><tr><td style="white-space:nowrap">y<a name="time-precision-units-cs-y"> </a></td><td>years</td></tr><tr><td style="white-space:nowrap">n<a name="time-precision-units-cs-n"> </a></td><td>none</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem time-precision-units-cs</b></p><a name="time-precision-units-cs"> </a><a name="hctime-precision-units-cs"> </a><p>This  code system <code>http://314e.com/fhir/CodeSystem/time-precision-units</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ms<a name="time-precision-units-cs-ms"> </a></td><td>milliseconds</td></tr><tr><td style="white-space:nowrap">s<a name="time-precision-units-cs-s"> </a></td><td>seconds</td></tr><tr><td style="white-space:nowrap">min<a name="time-precision-units-cs-min"> </a></td><td>minutes</td></tr><tr><td style="white-space:nowrap">h<a name="time-precision-units-cs-h"> </a></td><td>hours</td></tr><tr><td style="white-space:nowrap">d<a name="time-precision-units-cs-d"> </a></td><td>days</td></tr><tr><td style="white-space:nowrap">mo<a name="time-precision-units-cs-mo"> </a></td><td>months</td></tr><tr><td style="white-space:nowrap">a<a name="time-precision-units-cs-a"> </a></td><td>years</td></tr><tr><td style="white-space:nowrap">none<a name="time-precision-units-cs-none"> </a></td><td>none</td></tr></table></div>
   </text>
   <url value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
   <version value="1.0.0"/>
@@ -11,7 +11,7 @@
   <title value="314e Time Precision Units"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-05-16T16:45:26+05:30"/>
+  <date value="2026-05-17T00:25:02+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -48,11 +48,11 @@
     <display value="months"/>
   </concept>
   <concept>
-    <code value="y"/>
+    <code value="a"/>
     <display value="years"/>
   </concept>
   <concept>
-    <code value="n"/>
+    <code value="none"/>
     <display value="none"/>
   </concept>
 </CodeSystem>

@@ -2,7 +2,7 @@
 
 ## Extension: 314e Date/Time Precision 
 
-Specifies the meaningful precision of a dateTime value when the base FHIR dateTime datatype permits greater precision than is actually known, verified, or clinically usable.
+Specifies the meaningful/ usable precision of a dateTime value when the datatype syntactically permits greater precision than is actually known or clinically usable.
 
 This extension is intended to explicitly communicate the usable precision of a dateTime value, such as year-only, year-month, date-only, or full timestamp precision.
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-precisio
   "title" : "314e Date/Time Precision",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-precisio
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "Specifies the meaningful precision of a dateTime value when the base\nFHIR dateTime datatype permits greater precision than is actually known,\nverified, or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+  "description" : "Specifies the meaningful/ usable precision of a dateTime value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-precisio
       "id" : "Extension",
       "path" : "Extension",
       "short" : "Usable precision of a dateTime value",
-      "definition" : "This extension communicates the meaningful precision of a dateTime value\nwhen the datatype syntactically allows more precision than is actually known\nor appropriate to use.\n\nFor example:\n- A birth year may be known without exact date\n- Only the date may be verified without time\n- Only month/year may be clinically relevant\n\nThis extension SHALL NOT alter the actual dateTime value itself,\nbut instead clarifies the degree of confidence or precision\nassociated with the recorded value."
+      "definition" : "This extension communicates the meaningful and usable precision of a dateTime value\nwhen the datatype syntactically allows more precision than is actually known\nor appropriate to use.\n\nFor example:\n- A birth year may be known without exact date\n- Only the date may be verified without time\n- Only month/year may be clinically relevant\n\nThis extension SHALL NOT alter the actual dateTime value itself,\nbut instead clarifies the degree of precision\nassociated with the recorded value."
     },
     {
       "id" : "Extension.extension",
@@ -85,8 +85,8 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-precisio
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
-      "short" : "Meaningful usable precision of the dateTime value",
-      "definition" : "Indicates the precision that is clinically, operationally,\nor semantically meaningful for the associated dateTime value.\nExamples include year-only, month-level, date-level,\nor full timestamp precision.",
+      "short" : "Known/ usable precision of the dateTime value",
+      "definition" : "Indicates the precision that is operationally\nor semantically meaningful/ usable for the associated dateTime value.\nExamples include year-only, month-level, date-level,\nor full timestamp precision.",
       "min" : 1,
       "type" : [{
         "code" : "code"

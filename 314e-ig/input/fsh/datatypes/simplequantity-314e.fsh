@@ -21,7 +21,7 @@ representation of the complete quantity, including value and unit.
 """
 
 // Primitive decimal extensions
-* value only Decimal314e
+* value only decimal314e
 
 * value ^short =
     "Numerical value with explicit precision support"
@@ -37,7 +37,10 @@ are explicitly present in the decimal representation itself.
 The presence of this extension does not alter the underlying
 numeric value or computation semantics.
 
-The original textual representation of value may additionally
+The original textual representation of the full quantity may 
+be preserved using the valueString extension.
+
+The original textual representation of just the quantity value may additionally
 be preserved using the valueString extension.
 """
 
@@ -45,7 +48,12 @@ be preserved using the valueString extension.
     QuantityValueString named valueString 0..1
 
 * value.extension[valueString] ^short =
-    "Original or display-oriented textual representation of the numeric value"
+    "Original or display-oriented textual representation of the value"
+
+* value.extension[valueString] ^definition = """
+Original textual representation of the quantity value
+as received from the source system.
+"""
 
 // comparator prohibited by SimpleQuantity semantics
 * comparator 0..0

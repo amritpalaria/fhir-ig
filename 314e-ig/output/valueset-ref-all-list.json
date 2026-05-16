@@ -54,6 +54,7 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
+    "StructureDefinition-time-accuracy-314e.html" : "314e Time Accuracy",
     "StructureDefinition-datetime-accuracy-314e.html" : "314e Date/Time Accuracy"
   },
   {
@@ -66,7 +67,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision"
+    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision",
+    "StructureDefinition-time-precision-314e.html" : "314e Time Precision"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -208,8 +210,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.59"],
     "uses" : {
     },
-    "StructureDefinition-simplequantity-314e.html" : "314e SimpleQuantity",
     "StructureDefinition-duration-314e.html" : "314e Duration",
+    "StructureDefinition-simplequantity-314e.html" : "314e SimpleQuantity",
     "StructureDefinition-quantity-314e.html" : "314e Quantity"
   },
   {

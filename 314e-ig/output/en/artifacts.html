@@ -455,10 +455,19 @@ precision metadata and alternate textual representations.</p>
                </a>
             </td>
             <td>
-<p>314e profile of the FHIR Timing datatype.</p>
+<p>Describes the occurrence of an event that may occur multiple times. Timing schedules are used 
+for specifying when events are expected or requested to occur and may also be used to represent 
+the summary of a past or ongoing event. For simplicity, the definitions of Timing components 
+are expressed as 'future' events, but such components can also be used to describe historic or ongoing events.</p>
 
-<p>Uses 314e date/time related datatypes
-including DateTime314e, Period314e, and Quantity314e.</p>
+<p>A Timing schedule can be a list of events and/or criteria for when the event happens, which can 
+be expressed in a structured form and/or as a code. When both event and a repeating specification 
+are provided, the list of events should be understood as an interpretation of the information in the repeat structure.</p>
+
+<p>Note: The Timing data type allows modifier extensions.</p>
+
+<p>314e profile of the FHIR Timing datatype uses 314e datatype profiles 
+including DateTime314e, Period314e, CodeableConcept314e and Quantity314e.</p>
 </td>
          </tr>
          <tr>
@@ -474,13 +483,13 @@ including DateTime314e, Period314e, and Quantity314e.</p>
 
 <p>All dateTime values SHALL be stored in UTC.</p>
 
-<p>If only a smaller degree of precision is verifiable or usable
+<p>If only a smaller degree of precision is usable
 (for example, only the date portion is known),
 the following extension SHALL be used:</p>
 
 <p>http://314e.com/fhir/StructureDefinition/datetime-precision-314e</p>
 
-<p>If the date/time value is approximate rather than exact,
+<p>If all or part of the usable date/time value is approximate rather than exact,
 the following extension SHALL be used:</p>
 
 <p>https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator</p>
@@ -505,6 +514,33 @@ the following extension SHALL be used:</p>
 of the decimal value independently of the actual lexical form.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-time-314e.html"
+                  title="StructureDefinition/time-314e">
+                  <span title="StructureDefinition/time-314e">314e time
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e profile of the FHIR time primitive datatype - a time during the day, 
+in the format hh:mm:ss. There is no date specified. 
+Seconds must be provided due to schema type constraints but may be zero-filled 
+and may be ignored at receiver discretion. The time "24:00" SHALL NOT be used. 
+A time zone SHALL NOT be present. Times can be converted to a Duration since midnight.</p>
+
+<p>If only a smaller degree of precision than syntactically recorded is usable
+(for example, only hour and minute are known),
+the following extension SHALL be used:</p>
+
+<p>http://314e.com/fhir/StructureDefinition/time-precision-314e</p>
+
+<p>If all or part of the usable time value is approximate rather than exact,
+the following extension SHALL be used:</p>
+
+<p>http://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="3"> </a>
@@ -522,7 +558,7 @@ of the decimal value independently of the actual lexical form.</p>
                </a>
             </td>
             <td>
-<p>Specifies the accuracy or exactness of a dateTime value when only some portion of 
+<p>Specifies the accuracy or exactness of a dateTime value when only some part of 
 the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.</p>
 
 <p>This extension is intended to explicitly communicate the accuracy
@@ -547,15 +583,46 @@ none.</p>
                </a>
             </td>
             <td>
-<p>Specifies the meaningful precision of a dateTime value when the base
-FHIR dateTime datatype permits greater precision than is actually known,
-verified, or clinically usable.</p>
+<p>Specifies the meaningful/ usable precision of a dateTime value when the 
+datatype syntactically permits greater precision than is actually known or clinically usable.</p>
 
 <p>This extension is intended to explicitly communicate the usable precision
 of a dateTime value, such as year-only, year-month, date-only, or
 full timestamp precision.</p>
 
 <p>All dateTime values in the 314e implementation guide SHALL be stored in UTC.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-time-accuracy-314e.html"
+                  title="StructureDefinition/time-accuracy-314e">
+                  <span title="StructureDefinition/time-accuracy-314e">314e Time Accuracy
+</span>
+               </a>
+            </td>
+            <td>
+<p>Specifies the accuracy or exactness of a time value when only some part of 
+the known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.</p>
+
+<p>This extension is intended to explicitly communicate the accuracy
+of a time value.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-time-precision-314e.html"
+                  title="StructureDefinition/time-precision-314e">
+                  <span title="StructureDefinition/time-precision-314e">314e Time Precision
+</span>
+               </a>
+            </td>
+            <td>
+<p>Specifies the meaningful/ usable precision of a time value when the 
+datatype syntactically permits greater precision than is actually known or clinically usable.</p>
+
+<p>This extension is intended to explicitly communicate the usable precision
+of a time value.</p>
 </td>
          </tr>
          <tr>
@@ -857,8 +924,8 @@ within hierarchical parent-child result/report structures.</p>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-16 16:45:00 +0530">
-    2026-05-16
+  <span title="2026-05-17 00:25:00 +0530">
+    2026-05-17
   </span>
 
           <br/>

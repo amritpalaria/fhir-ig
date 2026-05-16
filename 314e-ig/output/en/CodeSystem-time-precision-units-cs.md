@@ -28,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "314e Time Precision Units",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -65,11 +65,11 @@ This Code system is referenced in the definition of the following value sets:
     "display" : "months"
   },
   {
-    "code" : "y",
+    "code" : "a",
     "display" : "years"
   },
   {
-    "code" : "n",
+    "code" : "none",
     "display" : "none"
   }]
 }

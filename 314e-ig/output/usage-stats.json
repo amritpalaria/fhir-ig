@@ -58,6 +58,20 @@
       "types": [
         "CodeableConcept"
       ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/time-accuracy-314e",
+      "title": "314e Time Accuracy",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/time-precision-314e",
+      "title": "314e Time Precision",
+      "types": [
+        "code"
+      ]
     }
   ],
   "profiles": {
@@ -85,15 +99,21 @@
       "dateTime"
     ],
     "http://314e.com/fhir/StructureDefinition/quantity-quantityString": [
-      "Duration.value",
+      "Duration",
       "Quantity"
     ],
     "http://314e.com/fhir/StructureDefinition/quantity-valueString": [
-      "Duration",
+      "Duration.value",
       "Quantity.value"
     ],
     "http://314e.com/fhir/StructureDefinition/reference-context": [
       "Reference"
+    ],
+    "http://314e.com/fhir/StructureDefinition/time-accuracy-314e": [
+      "time"
+    ],
+    "http://314e.com/fhir/StructureDefinition/time-precision-314e": [
+      "time"
     ],
     "http://hl7.org/fhir/StructureDefinition/codeOptions|7.0.2": [
       "ServiceRequest.code"

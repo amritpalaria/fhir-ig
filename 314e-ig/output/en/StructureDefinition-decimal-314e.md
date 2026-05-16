@@ -10,7 +10,7 @@ This extension specifies the intended or known precision of the decimal value in
 
 **Usages:**
 
-* Use this Primitive Type Profile: [314e Duration](StructureDefinition-duration-314e.md), [314e Quantity](StructureDefinition-quantity-314e.md) and [314e SimpleQuantity](StructureDefinition-simplequantity-314e.md)
+* Use this Primitive Type Profile: [314e Duration](StructureDefinition-duration-314e.md), [314e Quantity](StructureDefinition-quantity-314e.md), [314e SimpleQuantity](StructureDefinition-simplequantity-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/decimal-314e)
 
@@ -32,10 +32,10 @@ Other representations of profile: [CSV](../StructureDefinition-decimal-314e.csv)
   "id" : "decimal-314e",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/decimal-314e",
   "version" : "1.0.0",
-  "name" : "Decimal314e",
+  "name" : "decimal314e",
   "title" : "314e decimal",
   "status" : "active",
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

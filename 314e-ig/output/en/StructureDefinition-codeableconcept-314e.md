@@ -15,7 +15,7 @@ Example: acme-epic-Observation-lab-code-Glucose-InternalCode
 
 **Usages:**
 
-* Use this DataType Profile: [Attachment Tag](StructureDefinition-attachment-tag.md) and [Reference Context](StructureDefinition-reference-context.md)
+* Use this DataType Profile: [Attachment Tag](StructureDefinition-attachment-tag.md), [314e Identifier](StructureDefinition-identifier-314e.md), [Reference Context](StructureDefinition-reference-context.md) and [314e Timing](StructureDefinition-timing-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/codeableconcept-314e)
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-codeableconcept-3
   "name" : "CodeableConcept314e",
   "title" : "314e CodeableConcept",
   "status" : "active",
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

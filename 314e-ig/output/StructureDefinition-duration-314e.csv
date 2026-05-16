@@ -9,7 +9,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Duration.extension:valueString","Duration.extension","valueString","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/quantity-valueString]]} {[]}
+"Duration.extension:quantityString","Duration.extension","quantityString","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/quantity-quantityString]]} {[]}
 ","Original textual representation of the duration","Original textual representation of the duration
 as received from the source system.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -19,12 +19,15 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Whenever precision is needed, precision metadata SHALL 
 be explicitly represented using the quantityPrecision extension on the 314e decimal profile. 
 The quantityPrecision extension represents the number of significant decimal places intended
-for the quantity value, irrespective of how many decimal places
+for the duration value, irrespective of how many decimal places
 are explicitly present in the decimal representation itself.
 The presence of this extension does not alter the underlying
 numeric value or computation semantics.
 
-The original textual representation of value may additionally
+The original textual representation of the full duration quantity may 
+be preserved using the valueString extension.
+
+The original textual representation of just the duration value may additionally
 be preserved using the valueString extension.","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value","SN.2  / CQ - N/A"
 "Duration.value.id","Duration.value.id","","","",0,1,"","","","string {[]} {[]}
@@ -44,8 +47,8 @@ that this extension is updated appropriately
 if the numeric value changes.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Duration.value.extension:quantityString","Duration.value.extension","quantityString","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/quantity-quantityString]]} {[]}
-","Original textual representation of the quantity value","Original textual representation of the duration quantity value
+"Duration.value.extension:valueString","Duration.value.extension","valueString","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/quantity-valueString]]} {[]}
+","Original textual representation of the duration value","Original textual representation of the duration value
 as received from the source system.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Duration.value.value","Duration.value.value","","","",0,1,"","","","decimal {[]} {[]}

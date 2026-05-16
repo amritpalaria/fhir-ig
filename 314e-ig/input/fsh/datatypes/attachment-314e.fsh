@@ -46,7 +46,7 @@ Attachment.data SHALL NOT be populated. Inline content SHALL instead be persiste
 externally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.
 """
 
-* creation only DateTime314e
+* creation only dateTime314e
 
 // Extension slices
 * extension contains

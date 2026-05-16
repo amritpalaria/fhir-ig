@@ -89,7 +89,7 @@
   },
   {
     "outputFile": "StructureDefinition-datetime-314e.json",
-    "fshName": "DateTime314e",
+    "fshName": "dateTime314e",
     "fshType": "Profile",
     "fshFile": "datatypes\\datetime-314e.fsh",
     "startLine": 19,
@@ -109,11 +109,11 @@
     "fshType": "Extension",
     "fshFile": "extensions\\datetime-precision.fsh",
     "startLine": 1,
-    "endLine": 38
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-decimal-314e.json",
-    "fshName": "Decimal314e",
+    "fshName": "decimal314e",
     "fshType": "Profile",
     "fshFile": "datatypes\\decimal-314e.fsh",
     "startLine": 1,
@@ -125,7 +125,7 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\duration-314e.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-identifier-314e.json",
@@ -133,7 +133,7 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\identifier-314e.fsh",
     "startLine": 28,
-    "endLine": 125
+    "endLine": 101
   },
   {
     "outputFile": "StructureDefinition-period-314e.json",
@@ -189,7 +189,7 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\reference-314e.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-reference-context.json",
@@ -213,7 +213,31 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\simplequantity-314e.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 59
+  },
+  {
+    "outputFile": "StructureDefinition-time-314e.json",
+    "fshName": "time314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\time-314e.fsh",
+    "startLine": 1,
+    "endLine": 57
+  },
+  {
+    "outputFile": "StructureDefinition-time-accuracy-314e.json",
+    "fshName": "TimeAccuracy314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\time-exactness.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-time-precision-314e.json",
+    "fshName": "TimePrecision314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\time-precision.fsh",
+    "startLine": 1,
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-timing-314e.json",
@@ -221,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\timing-314e.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 40
   },
   {
     "outputFile": "ValueSet-attachment-tag.json",

@@ -8,4 +8,4 @@ Description: "Allowed precision units for dateTime, time, and instant precision 
 * ^experimental = false
 
 * include codes from system TimePrecisionUnits314E
-* exclude TimePrecisionUnits314E#n
+* exclude TimePrecisionUnits314E#none

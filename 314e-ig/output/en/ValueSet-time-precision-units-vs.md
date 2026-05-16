@@ -8,6 +8,7 @@ Allowed precision units for dateTime, time, and instant precision indicators.
  **References** 
 
 * [314e Date/Time Precision](StructureDefinition-datetime-precision-314e.md)
+* [314e Time Precision](StructureDefinition-time-precision-314e.md)
 
 ### Logical Definition (CLD)
 
@@ -33,7 +34,7 @@ Allowed precision units for dateTime, time, and instant precision indicators.
   "title" : "314e Time Precision Units ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -50,7 +51,7 @@ Allowed precision units for dateTime, time, and instant precision indicators.
     "exclude" : [{
       "system" : "http://314e.com/fhir/CodeSystem/time-precision-units",
       "concept" : [{
-        "code" : "n"
+        "code" : "none"
       }]
     }]
   }

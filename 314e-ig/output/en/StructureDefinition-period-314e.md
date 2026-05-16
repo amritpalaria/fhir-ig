@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-period-314e.csv),
   "name" : "Period314e",
   "title" : "314e Period",
   "status" : "active",
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -63,8 +63,8 @@ Other representations of profile: [CSV](../StructureDefinition-period-314e.csv),
     "element" : [{
       "id" : "Period.start",
       "path" : "Period.start",
-      "short" : "Starting time with UTC normalization and precision support",
-      "definition" : "Starting time for the period.\n\nAll timestamps SHALL be represented in UTC.\nAdditional extensions may be used to indicate\nusable precision or approximate values.",
+      "short" : "Starting time with UTC normalization, precision support and inclusive boundary",
+      "definition" : "The start of the period. The boundary is inclusive.\n\nAll timestamps SHALL be represented in UTC.\nAdditional extensions may be used to indicate\nusable precision or approximate values.",
       "type" : [{
         "code" : "dateTime",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
@@ -73,8 +73,8 @@ Other representations of profile: [CSV](../StructureDefinition-period-314e.csv),
     {
       "id" : "Period.end",
       "path" : "Period.end",
-      "short" : "Ending time with UTC normalization and precision support",
-      "definition" : "End time for the period.\n\nAll timestamps SHALL be represented in UTC.\nAdditional extensions may be used to indicate\nusable precision or approximate values.",
+      "short" : "Ending time with UTC normalization, precision support and inclusive boundary",
+      "definition" : "The end of the period.  The boundary is inclusive. If the end of the period is missing, it \nmeans no end was known or planned at the time the instance was created. The start may be in \nthe past, and the end date in the future, which means that period is expected/planned to end at that time.\n\nAll timestamps SHALL be represented in UTC.\nAdditional extensions may be used to indicate\nusable precision or approximate values.",
       "type" : [{
         "code" : "dateTime",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]

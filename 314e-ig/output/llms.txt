@@ -4,20 +4,6 @@
 
 * [Home](en/index.md)
 * [Artifacts Summary](en/artifacts.md)
-* [](en/CodeSystem-attachment-tag-testing.md)
-* [](en/CodeSystem-attachment-tag.ai.md)
-* [](en/CodeSystem-attachment-tag.change.history.md)
-* [](en/CodeSystem-attachment-tag.md)
-* [](en/CodeSystem-attachment-tag.json.md)
-* [](en/CodeSystem-attachment-tag.ttl.md)
-* [](en/CodeSystem-attachment-tag.xml.md)
-* [](en/ValueSet-observation-tag-testing.md)
-* [](en/ValueSet-observation-tag.ai.md)
-* [](en/ValueSet-observation-tag.change.history.md)
-* [](en/ValueSet-observation-tag.md)
-* [](en/ValueSet-observation-tag.json.md)
-* [](en/ValueSet-observation-tag.ttl.md)
-* [](en/ValueSet-observation-tag.xml.md)
 
 ## Resources
 
@@ -57,6 +43,7 @@
 
 * [314e dateTime](en/StructureDefinition-datetime-314e.md)
 * [314e decimal](en/StructureDefinition-decimal-314e.md)
+* [314e time](en/StructureDefinition-time-314e.md)
 
 ### Resource Profiles
 
@@ -72,6 +59,8 @@
 * [Quantity Quantity String](en/StructureDefinition-quantity-quantityString.md)
 * [Quantity Value String](en/StructureDefinition-quantity-valueString.md)
 * [Reference Context](en/StructureDefinition-reference-context.md)
+* [314e Time Accuracy](en/StructureDefinition-time-accuracy-314e.md)
+* [314e Time Precision](en/StructureDefinition-time-precision-314e.md)
 
 ### ImplementationGuides
 

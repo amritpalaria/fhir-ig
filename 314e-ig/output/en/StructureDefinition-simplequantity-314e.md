@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-simplequantity-31
   "name" : "SimpleQuantity314e",
   "title" : "314e SimpleQuantity",
   "status" : "draft",
-  "date" : "2026-05-16T16:45:26+05:30",
+  "date" : "2026-05-17T00:25:02+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](../StructureDefinition-simplequantity-31
       "id" : "Quantity.value",
       "path" : "Quantity.value",
       "short" : "Numerical value with explicit precision support",
-      "definition" : "The value of the measured amount.\n\nWhenever precision is needed, precision metadata SHALL \nbe explicitly represented using the quantityPrecision extension on the 314e decimal profile. \nThe quantityPrecision extension represents the number of significant decimal places intended\nfor the quantity value, irrespective of how many decimal places\nare explicitly present in the decimal representation itself.\nThe presence of this extension does not alter the underlying\nnumeric value or computation semantics.\n\nThe original textual representation of value may additionally\nbe preserved using the valueString extension.",
+      "definition" : "The value of the measured amount.\n\nWhenever precision is needed, precision metadata SHALL \nbe explicitly represented using the quantityPrecision extension on the 314e decimal profile. \nThe quantityPrecision extension represents the number of significant decimal places intended\nfor the quantity value, irrespective of how many decimal places\nare explicitly present in the decimal representation itself.\nThe presence of this extension does not alter the underlying\nnumeric value or computation semantics.\n\nThe original textual representation of the full quantity may \nbe preserved using the valueString extension.\n\nThe original textual representation of just the quantity value may additionally\nbe preserved using the valueString extension.",
       "type" : [{
         "code" : "decimal",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/decimal-314e"]
@@ -86,7 +86,8 @@ Other representations of profile: [CSV](../StructureDefinition-simplequantity-31
       "id" : "Quantity.value.extension:valueString",
       "path" : "Quantity.value.extension",
       "sliceName" : "valueString",
-      "short" : "Original or display-oriented textual representation of the numeric value",
+      "short" : "Original or display-oriented textual representation of the value",
+      "definition" : "Original textual representation of the quantity value\nas received from the source system.",
       "min" : 0,
       "max" : "1",
       "type" : [{

@@ -96,30 +96,6 @@ If Identifier.value is populated,
 Identifier.system SHALL also be populated.
 """
 
-// ======================================================
-// TYPE
-// ======================================================
-
-* type ^short =
-    "Description of identifier category"
-
-* type ^definition = """
-A coded type for the identifier that can be used to determine
-which identifier to use for a specific purpose.
-"""
-
-// ======================================================
-// ASSIGNER
-// ======================================================
-
-* assigner only Reference314e
-
-* assigner ^short =
-    "Organization or entity issuing the identifier"
-
-* assigner ^definition = """
-Organization or entity responsible for issuing
-or managing the identifier.
-"""
+* type only CodeableConcept314e
 
 * period only Period314e
