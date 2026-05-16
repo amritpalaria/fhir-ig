@@ -1,5 +1,5 @@
 ValueSet: ObservationTagVS
-Id: observation-tag
+Id: observation-tag-vs
 Title: "Observation Tag ValueSet"
 Description: """
 Semantic tags used in meta.tag to qualify DiagnosticReport and

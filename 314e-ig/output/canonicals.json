@@ -1,5 +1,5 @@
 [{
-  "id" : "attachment-tag",
+  "id" : "attachment-tag-cs",
   "type" : "CodeSystem",
   "url" : "http://314e.com/fhir/CodeSystem/attachment-tag",
   "version" : "1.0.0",
@@ -18,6 +18,13 @@
   "url" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
   "version" : "1.0.0",
   "name" : "ProcedureCategory314eCS"
+},
+{
+  "id" : "time-precision-units-cs",
+  "type" : "CodeSystem",
+  "url" : "http://314e.com/fhir/CodeSystem/time-precision-units",
+  "version" : "1.0.0",
+  "name" : "TimePrecisionUnits314E"
 },
 {
   "id" : "annotation-314e",
@@ -53,6 +60,20 @@
   "url" : "http://314e.com/fhir/StructureDefinition/attachment-tag",
   "version" : "1.0.0",
   "name" : "AttachmentTag"
+},
+{
+  "id" : "datetime-accuracy-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/datetime-accuracy-314e",
+  "version" : "1.0.0",
+  "name" : "DateTimeAccuracy314e"
+},
+{
+  "id" : "datetime-precision-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/datetime-precision-314e",
+  "version" : "1.0.0",
+  "name" : "DateTimePrecision314e"
 },
 {
   "id" : "quantity-quantityString",
@@ -118,7 +139,7 @@
   "name" : "AttachmentTagVS"
 },
 {
-  "id" : "observation-tag",
+  "id" : "observation-tag-vs",
   "type" : "ValueSet",
   "url" : "http://314e.com/fhir/ValueSet/observation-tag",
   "version" : "1.0.0",
@@ -137,6 +158,20 @@
   "url" : "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e",
   "version" : "1.0.0",
   "name" : "ProcedureCategorySubcategory314eVS"
+},
+{
+  "id" : "time-accuracy-units-vs",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ValueSet/time-accuracy-units",
+  "version" : "1.0.0",
+  "name" : "TimeAccuracyUnitsVS314E"
+},
+{
+  "id" : "time-precision-units-vs",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ValueSet/time-precision-units",
+  "version" : "1.0.0",
+  "name" : "TimePrecisionUnitsVS314E"
 },
 {
   "id" : "fhir.314e",
@@ -160,6 +195,27 @@
   "name" : "Coding314e"
 },
 {
+  "id" : "datetime-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/datetime-314e",
+  "version" : "1.0.0",
+  "name" : "DateTime314e"
+},
+{
+  "id" : "decimal-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/decimal-314e",
+  "version" : "1.0.0",
+  "name" : "Decimal314e"
+},
+{
+  "id" : "duration-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/duration-314e",
+  "version" : "1.0.0",
+  "name" : "Duration314e"
+},
+{
   "id" : "identifier-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/identifier-314e",
@@ -167,9 +223,23 @@
   "name" : "Identifier314e"
 },
 {
+  "id" : "period-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/period-314e",
+  "version" : "1.0.0",
+  "name" : "Period314e"
+},
+{
   "id" : "quantity-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/quantity-314e",
   "version" : "1.0.0",
   "name" : "Quantity314e"
+},
+{
+  "id" : "timing-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/timing-314e",
+  "version" : "1.0.0",
+  "name" : "Timing314e"
 }]

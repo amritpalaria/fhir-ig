@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationTagVS",
+  "id": "observation-tag-vs",
+  "title": "Observation Tag ValueSet",
+  "description": "Semantic tags used in meta.tag to qualify DiagnosticReport and\nObservation resources participating in hierarchical parent-child\nresource structures.",
+  "url": "http://314e.com/fhir/ValueSet/observation-tag",
+  "compose": {
+    "include": [
+      {
+        "system": "http://314e.com/fhir/CodeSystem/observation-tag"
+      }
+    ]
+  }
+}

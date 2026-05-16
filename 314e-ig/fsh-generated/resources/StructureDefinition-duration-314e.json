@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "duration-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/duration-314e",
+  "name": "Duration314e",
+  "title": "314e Duration",
+  "status": "active",
+  "description": "314e profile of the FHIR Duration datatype.\n\nDerived from FHIR Duration and incorporates\n314e Quantity datatype behavior including:\n\n- quantity precision support\n- quantity string support\n- value string support",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Duration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Duration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Duration.extension:valueString",
+        "path": "Duration.extension",
+        "sliceName": "valueString",
+        "short": "Original textual representation of the duration",
+        "definition": "Original textual representation of the duration\nas received from the source system.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/quantity-valueString"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Duration.value",
+        "path": "Duration.value",
+        "short": "Numerical value with explicit precision support",
+        "definition": "The value of the measured amount.\n\nWhenever precision is needed, precision metadata SHALL \nbe explicitly represented using the quantityPrecision extension on the 314e decimal profile. \nThe quantityPrecision extension represents the number of significant decimal places intended\nfor the quantity value, irrespective of how many decimal places\nare explicitly present in the decimal representation itself.\nThe presence of this extension does not alter the underlying\nnumeric value or computation semantics.\n\nThe original textual representation of value may additionally\nbe preserved using the valueString extension.",
+        "type": [
+          {
+            "code": "decimal",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/decimal-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Duration.value.extension:quantityString",
+        "path": "Duration.value.extension",
+        "sliceName": "quantityString",
+        "short": "Original textual representation of the quantity value",
+        "definition": "Original textual representation of the duration quantity value\nas received from the source system.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/quantity-quantityString"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

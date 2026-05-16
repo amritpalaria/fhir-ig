@@ -17,7 +17,7 @@ Context: Attachment
 Supports semantic tagging and categorization of attachments.
 """
 
-* value[x] only CodeableConcept
+* value[x] only CodeableConcept314e
 * valueCodeableConcept 1..1
 
 * valueCodeableConcept from AttachmentTagVS (extensible)

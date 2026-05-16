@@ -1,5 +1,5 @@
 CodeSystem: AttachmentTagCS
-Id: attachment-tag
+Id: attachment-tag-cs
 Title: "Attachment Tag CodeSystem"
 Description: """
 Codes used for semantic tagging and categorization of attachments.

@@ -43,5 +43,29 @@
     "uses" : {
     },
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+  },
+  {
+    "url" : "http://314e.com/fhir/ValueSet/time-accuracy-units",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TimeAccuracyUnitsVS314E",
+    "title" : "314e Time Exactness Units ValueSet",
+    "description" : "Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
+    "uses" : {
+    },
+    "StructureDefinition-datetime-accuracy-314e.html" : "314e Date/Time Accuracy"
+  },
+  {
+    "url" : "http://314e.com/fhir/ValueSet/time-precision-units",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TimePrecisionUnitsVS314E",
+    "title" : "314e Time Precision Units ValueSet",
+    "description" : "Allowed precision units for dateTime, time, and instant precision indicators.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
+    "uses" : {
+    },
+    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision"
   }]
 }

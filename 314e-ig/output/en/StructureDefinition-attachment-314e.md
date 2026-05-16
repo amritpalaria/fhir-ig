@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
   "name" : "Attachment314e",
   "title" : "314e Attachment",
   "status" : "draft",
-  "date" : "2026-05-16T13:10:22+05:30",
+  "date" : "2026-05-16T16:45:26+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -100,6 +100,14 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
       "short" : "Object storage path or external attachment location",
       "definition" : "Reference/path to the externally stored attachment content. Inline binary data in \nAttachment.data SHALL NOT be populated. Inline content SHALL instead be persisted \nexternally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.",
       "min" : 1
+    },
+    {
+      "id" : "Attachment.creation",
+      "path" : "Attachment.creation",
+      "type" : [{
+        "code" : "dateTime",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
+      }]
     }]
   }
 }

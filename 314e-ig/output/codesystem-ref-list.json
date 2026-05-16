@@ -19,7 +19,7 @@
     "description" : "Codes used to qualify DiagnosticReport and Observation resources\nwithin hierarchical parent-child result/report structures.",
     "uses" : {
     },
-    "ValueSet-observation-tag.html" : "Observation Tag ValueSet"
+    "ValueSet-observation-tag-vs.html" : "Observation Tag ValueSet"
   },
   {
     "url" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
@@ -30,7 +30,19 @@
     "description" : "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources.",
     "uses" : {
     },
-    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories",
-    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories"
+    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories",
+    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories"
+  },
+  {
+    "url" : "http://314e.com/fhir/CodeSystem/time-precision-units",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TimePrecisionUnits314E",
+    "title" : "314e Time Precision Units",
+    "description" : "Time precision units used to indicate the actual precision of a dateTime, time, or instant value.",
+    "uses" : {
+    },
+    "ValueSet-time-accuracy-units-vs.html" : "314e Time Exactness Units ValueSet",
+    "ValueSet-time-precision-units-vs.html" : "314e Time Precision Units ValueSet"
   }]
 }

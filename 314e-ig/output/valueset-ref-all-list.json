@@ -45,6 +45,30 @@
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
+    "url" : "http://314e.com/fhir/ValueSet/time-accuracy-units",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TimeAccuracyUnitsVS314E",
+    "title" : "314e Time Exactness Units ValueSet",
+    "description" : "Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
+    "uses" : {
+    },
+    "StructureDefinition-datetime-accuracy-314e.html" : "314e Date/Time Accuracy"
+  },
+  {
+    "url" : "http://314e.com/fhir/ValueSet/time-precision-units",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TimePrecisionUnitsVS314E",
+    "title" : "314e Time Precision Units ValueSet",
+    "description" : "Allowed precision units for dateTime, time, and instant precision indicators.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
+    "uses" : {
+    },
+    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/body-site",
     "version" : "4.0.1",
     "status" : "draft",
@@ -57,6 +81,35 @@
     "uses" : {
     },
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DaysOfWeek",
+    "title" : "DaysOfWeek",
+    "description" : "The days of the week.",
+    "systems" : ["http://hl7.org/fhir/days-of-week"],
+    "oids" : ["2.16.840.1.113883.4.642.3.512"],
+    "sources" : ["2.16.840.1.113883.4.642.3.512"],
+    "uses" : {
+    },
+    "StructureDefinition-timing-314e.html" : "314e Timing"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/event-timing",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "EventTiming",
+    "title" : "EventTiming",
+    "description" : "Real world event relating to the schedule.",
+    "systems" : ["http://hl7.org/fhir/event-timing",
+    "http://terminology.hl7.org/CodeSystem/v3-TimingEvent"],
+    "oids" : ["2.16.840.1.113883.4.642.3.75"],
+    "sources" : ["2.16.840.1.113883.4.642.3.75"],
+    "uses" : {
+    },
+    "StructureDefinition-timing-314e.html" : "314e Timing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -155,8 +208,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.59"],
     "uses" : {
     },
-    "StructureDefinition-quantity-314e.html" : "314e Quantity",
-    "StructureDefinition-simplequantity-314e.html" : "314e SimpleQuantity"
+    "StructureDefinition-simplequantity-314e.html" : "314e SimpleQuantity",
+    "StructureDefinition-duration-314e.html" : "314e Duration",
+    "StructureDefinition-quantity-314e.html" : "314e Quantity"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -241,6 +295,34 @@
     "uses" : {
     },
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "TimingAbbreviation",
+    "title" : "TimingAbbreviation",
+    "description" : "Code for a known / defined timing pattern.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation"],
+    "oids" : ["2.16.840.1.113883.4.642.3.78"],
+    "sources" : ["2.16.840.1.113883.4.642.3.78"],
+    "uses" : {
+    },
+    "StructureDefinition-timing-314e.html" : "314e Timing"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/units-of-time",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "UnitsOfTime",
+    "title" : "UnitsOfTime",
+    "description" : "A unit of time (units from UCUM).",
+    "systems" : ["http://unitsofmeasure.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.77"],
+    "sources" : ["2.16.840.1.113883.4.642.3.77"],
+    "uses" : {
+    },
+    "StructureDefinition-timing-314e.html" : "314e Timing"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code",

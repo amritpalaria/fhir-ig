@@ -48,6 +48,6 @@ externally, referenced using this url element, and tagged as 'inline-data-extern
 "Attachment.title","Attachment.title","","","",0,1,"","","Y","string {[]} {[]}
 ","Label to display in place of the data","A label or set of text to display in place of the data.","","Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Official Corporate Logo""/>","","",,,,,"",,,,"Attachment.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./title/data"
-"Attachment.creation","Attachment.creation","","","",0,1,"","","Y","dateTime {[]} {[]}
+"Attachment.creation","Attachment.creation","","","",0,1,"","","Y","dateTime {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/datetime-314e]]} {[]}
 ","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A (needs data type R3 proposal)"

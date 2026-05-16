@@ -1,0 +1,47 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "period-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/period-314e",
+  "name": "Period314e",
+  "title": "314e Period",
+  "status": "active",
+  "description": "314e profile of the FHIR Period datatype.\n\nAll dateTime values within the Period SHALL conform\nto the 314e DateTime profile requirements,\nincluding UTC normalization and precision handling.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Period",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Period",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Period.start",
+        "path": "Period.start",
+        "short": "Starting time with UTC normalization and precision support",
+        "definition": "Starting time for the period.\n\nAll timestamps SHALL be represented in UTC.\nAdditional extensions may be used to indicate\nusable precision or approximate values.",
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Period.end",
+        "path": "Period.end",
+        "short": "Ending time with UTC normalization and precision support",
+        "definition": "End time for the period.\n\nAll timestamps SHALL be represented in UTC.\nAdditional extensions may be used to indicate\nusable precision or approximate values.",
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

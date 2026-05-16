@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-identifier-314e.c
   "name" : "Identifier314e",
   "title" : "314e Identifier",
   "status" : "active",
-  "date" : "2026-05-16T13:10:22+05:30",
+  "date" : "2026-05-16T16:45:26+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -112,6 +112,14 @@ Other representations of profile: [CSV](../StructureDefinition-identifier-314e.c
       "short" : "The identifier value",
       "definition" : "The portion of the identifier typically relevant to the user\nand which is unique within the context of the system.",
       "comment" : "If Identifier.value is populated,\nIdentifier.system SHALL also be populated."
+    },
+    {
+      "id" : "Identifier.period",
+      "path" : "Identifier.period",
+      "type" : [{
+        "code" : "Period",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/period-314e"]
+      }]
     },
     {
       "id" : "Identifier.assigner",

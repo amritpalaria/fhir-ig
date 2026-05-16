@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-annotation-314e.c
   "name" : "Annotation314e",
   "title" : "314e Annotation",
   "status" : "draft",
-  "date" : "2026-05-16T13:10:22+05:30",
+  "date" : "2026-05-16T16:45:26+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -76,6 +76,43 @@ Other representations of profile: [CSV](../StructureDefinition-annotation-314e.c
       "type" : [{
         "code" : "Extension",
         "profile" : ["http://314e.com/fhir/StructureDefinition/annotation-attachment"]
+      }]
+    },
+    {
+      "id" : "Annotation.author[x]",
+      "path" : "Annotation.author[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Annotation.author[x]:authorReference",
+      "path" : "Annotation.author[x]",
+      "sliceName" : "authorReference",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+        "http://hl7.org/fhir/StructureDefinition/Organization"]
+      }]
+    },
+    {
+      "id" : "Annotation.time",
+      "path" : "Annotation.time",
+      "short" : "Annotation time in UTC with precision support",
+      "definition" : "Date/time when the annotation was made.\n\nAll timestamps SHALL be represented in UTC.\nPrecision and approximation extensions may be used.",
+      "type" : [{
+        "code" : "dateTime",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
       }]
     }]
   }

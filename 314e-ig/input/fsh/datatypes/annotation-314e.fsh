@@ -18,6 +18,21 @@ Supports annotation workflows in which note/comment content may
 be externally stored and referenced through attachments.
 """
 
+* authorReference only Reference314e
+* authorReference only Reference(Practitioner or Patient or RelatedPerson or Organization)
+
+* time only DateTime314e
+
+* time ^short =
+    "Annotation time in UTC with precision support"
+
+* time ^definition = """
+Date/time when the annotation was made.
+
+All timestamps SHALL be represented in UTC.
+Precision and approximation extensions may be used.
+"""
+
 * extension contains
     AnnotationAttachment named attachment 0..1
 

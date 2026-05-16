@@ -7,7 +7,7 @@ Codes used to qualify DiagnosticReport and Observation resources within hierarch
 
 This Code system is referenced in the definition of the following value sets:
 
-* [ObservationTagVS](ValueSet-observation-tag.md)
+* [ObservationTagVS](ValueSet-observation-tag-vs.md)
 
 -------
 
@@ -26,7 +26,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "ObservationTagCS",
   "title" : "Observation Tag CodeSystem",
   "status" : "active",
-  "date" : "2026-05-16T13:10:22+05:30",
+  "date" : "2026-05-16T16:45:26+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

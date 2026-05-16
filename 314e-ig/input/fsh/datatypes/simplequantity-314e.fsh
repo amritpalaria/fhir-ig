@@ -21,12 +21,28 @@ representation of the complete quantity, including value and unit.
 """
 
 // Primitive decimal extensions
-* value.extension contains
-    http://hl7.org/fhir/StructureDefinition/quantity-precision named precision 0..1 and
-    QuantityValueString named valueString 0..1
+* value only Decimal314e
 
-* value.extension[precision] ^short =
-    "Explicit precision of the numeric quantity value"
+* value ^short =
+    "Numerical value with explicit precision support"
+    
+* value ^definition = """
+The value of the measured amount.
+
+Whenever precision is needed, precision metadata SHALL 
+be explicitly represented using the quantityPrecision extension on the 314e decimal profile. 
+The quantityPrecision extension represents the number of significant decimal places intended
+for the quantity value, irrespective of how many decimal places
+are explicitly present in the decimal representation itself.
+The presence of this extension does not alter the underlying
+numeric value or computation semantics.
+
+The original textual representation of value may additionally
+be preserved using the valueString extension.
+"""
+
+* value.extension contains
+    QuantityValueString named valueString 0..1
 
 * value.extension[valueString] ^short =
     "Original or display-oriented textual representation of the numeric value"

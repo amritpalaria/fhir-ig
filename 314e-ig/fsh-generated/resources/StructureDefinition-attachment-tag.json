@@ -45,7 +45,10 @@
         "min": 1,
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
           }
         ],
         "binding": {

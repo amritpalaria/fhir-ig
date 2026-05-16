@@ -64,6 +64,18 @@
         "comment": "If Identifier.value is populated,\nIdentifier.system SHALL also be populated."
       },
       {
+        "id": "Identifier.period",
+        "path": "Identifier.period",
+        "type": [
+          {
+            "code": "Period",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/period-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Identifier.assigner",
         "path": "Identifier.assigner",
         "short": "Organization or entity issuing the identifier",

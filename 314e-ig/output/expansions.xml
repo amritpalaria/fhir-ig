@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="779d130e-42be-4b0b-b96b-50978b8f6f6d"/>
+  <id value="58306cba-56c2-4f5b-bac7-3d963b1d9dd6"/>
   <meta>
-    <lastUpdated value="2026-05-16T13:10:22.081+05:30"/>
+    <lastUpdated value="2026-05-16T16:45:26.130+05:30"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-attachment-tag.html">codesystem Attachment Tag CodeSystem v1.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-attachment-tag-cs.html">codesystem Attachment Tag CodeSystem v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://314e.com/fhir/CodeSystem/attachment-tag|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
@@ -48,7 +48,7 @@
                   <code>http://314e.com/fhir/CodeSystem/attachment-tag</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-attachment-tag.html#attachment-tag-inline-data-externalized-to-file">inline-data-externalized-to-file</a>
+                  <a href="CodeSystem-attachment-tag-cs.html#attachment-tag-cs-inline-data-externalized-to-file">inline-data-externalized-to-file</a>
                 </td>
                 <td>Inline data externalized and saved as file</td>
                 <td>
@@ -80,7 +80,7 @@ originated as an external file rather than inline data.</p>
                   <code>http://314e.com/fhir/CodeSystem/attachment-tag</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-attachment-tag.html#attachment-tag-duplicate">duplicate</a>
+                  <a href="CodeSystem-attachment-tag-cs.html#attachment-tag-cs-duplicate">duplicate</a>
                 </td>
                 <td>Duplicate of another attachment on the same element</td>
                 <td>
@@ -109,7 +109,7 @@ different content types.</p>
                   <code>http://314e.com/fhir/CodeSystem/attachment-tag</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-attachment-tag.html#attachment-tag-hidden">hidden</a>
+                  <a href="CodeSystem-attachment-tag-cs.html#attachment-tag-cs-hidden">hidden</a>
                 </td>
                 <td>Hidden from application use</td>
                 <td>
@@ -141,10 +141,10 @@ multiple copies of equivalent content are available.</p>
         <name value="AttachmentTagVS"/>
         <title value="Attachment Tag ValueSet"/>
         <status value="active"/>
-        <date value="2026-05-16T13:10:22+05:30"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:63dea4ff-56a2-41f8-b9cb-e31fc1ec5a18"/>
-          <timestamp value="2026-05-16T13:11:39+05:30"/>
+          <identifier value="urn:uuid:45599203-972e-4b2f-9ff6-1d1bbb5ca406"/>
+          <timestamp value="2026-05-16T16:47:40+05:30"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -195,7 +195,7 @@ multiple copies of equivalent content are available.</p>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-attachment-tag.html">codesystem Attachment Tag CodeSystem v1.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-attachment-tag-cs.html">codesystem Attachment Tag CodeSystem v1.0.0 (CodeSystem)</a>
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://314e.com/fhir/CodeSystem/attachment-tag|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
@@ -228,7 +228,7 @@ multiple copies of equivalent content are available.</p>
                   <code>http://314e.com/fhir/CodeSystem/attachment-tag</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-attachment-tag.html#attachment-tag-inline-data-externalized-to-file">inline-data-externalized-to-file</a>
+                  <a href="CodeSystem-attachment-tag-cs.html#attachment-tag-cs-inline-data-externalized-to-file">inline-data-externalized-to-file</a>
                 </td>
                 <td>Inline data externalized and saved as file</td>
                 <td>
@@ -260,7 +260,7 @@ originated as an external file rather than inline data.</p>
                   <code>http://314e.com/fhir/CodeSystem/attachment-tag</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-attachment-tag.html#attachment-tag-duplicate">duplicate</a>
+                  <a href="CodeSystem-attachment-tag-cs.html#attachment-tag-cs-duplicate">duplicate</a>
                 </td>
                 <td>Duplicate of another attachment on the same element</td>
                 <td>
@@ -289,7 +289,7 @@ different content types.</p>
                   <code>http://314e.com/fhir/CodeSystem/attachment-tag</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-attachment-tag.html#attachment-tag-hidden">hidden</a>
+                  <a href="CodeSystem-attachment-tag-cs.html#attachment-tag-cs-hidden">hidden</a>
                 </td>
                 <td>Hidden from application use</td>
                 <td>
@@ -321,10 +321,10 @@ multiple copies of equivalent content are available.</p>
         <name value="AttachmentTagVS"/>
         <title value="Attachment Tag ValueSet"/>
         <status value="active"/>
-        <date value="2026-05-16T13:10:22+05:30"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:63dea4ff-56a2-41f8-b9cb-e31fc1ec5a18"/>
-          <timestamp value="2026-05-16T13:11:39+05:30"/>
+          <identifier value="urn:uuid:45599203-972e-4b2f-9ff6-1d1bbb5ca406"/>
+          <timestamp value="2026-05-16T16:47:40+05:30"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -465,10 +465,10 @@ resource bears a result or report.</p>
         <name value="ObservationTagVS"/>
         <title value="Observation Tag ValueSet"/>
         <status value="active"/>
-        <date value="2026-05-16T13:10:22+05:30"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:c74cc7fa-1e1c-45fa-8ec9-9989cc370fae"/>
-          <timestamp value="2026-05-16T13:11:39+05:30"/>
+          <identifier value="urn:uuid:862317c3-214c-4899-942a-1d7ed88f469a"/>
+          <timestamp value="2026-05-16T16:47:40+05:30"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -604,10 +604,10 @@ resource bears a result or report.</p>
         <name value="ObservationTagVS"/>
         <title value="Observation Tag ValueSet"/>
         <status value="active"/>
-        <date value="2026-05-16T13:10:22+05:30"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:c74cc7fa-1e1c-45fa-8ec9-9989cc370fae"/>
-          <timestamp value="2026-05-16T13:11:39+05:30"/>
+          <identifier value="urn:uuid:862317c3-214c-4899-942a-1d7ed88f469a"/>
+          <timestamp value="2026-05-16T16:47:40+05:30"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -856,10 +856,10 @@ resource bears a result or report.</p>
         <name value="ProcedureCategoryBroad314eVS"/>
         <title value="314e Broad Procedure Categories"/>
         <status value="draft"/>
-        <date value="2026-05-16T13:10:22+05:30"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:68419f25-9c5a-46ff-9e9f-4b413e995774"/>
-          <timestamp value="2026-05-16T13:11:39+05:30"/>
+          <identifier value="urn:uuid:43296feb-a41f-480e-a3fb-26d45ab06f9b"/>
+          <timestamp value="2026-05-16T16:47:41+05:30"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -1138,10 +1138,10 @@ resource bears a result or report.</p>
         <name value="ProcedureCategoryBroad314eVS"/>
         <title value="314e Broad Procedure Categories"/>
         <status value="draft"/>
-        <date value="2026-05-16T13:10:22+05:30"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:68419f25-9c5a-46ff-9e9f-4b413e995774"/>
-          <timestamp value="2026-05-16T13:11:39+05:30"/>
+          <identifier value="urn:uuid:43296feb-a41f-480e-a3fb-26d45ab06f9b"/>
+          <timestamp value="2026-05-16T16:47:41+05:30"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -2008,10 +2008,10 @@ resource bears a result or report.</p>
         <name value="ProcedureCategorySubcategory314eVS"/>
         <title value="314e Procedure Subcategories"/>
         <status value="draft"/>
-        <date value="2026-05-16T13:10:22+05:30"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:c66f4354-d5ec-4ebd-a0b6-684ad5c3fb6f"/>
-          <timestamp value="2026-05-16T13:11:40+05:30"/>
+          <identifier value="urn:uuid:b5e4c453-3555-4937-9412-2b9983e19727"/>
+          <timestamp value="2026-05-16T16:47:41+05:30"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -3018,10 +3018,10 @@ resource bears a result or report.</p>
         <name value="ProcedureCategorySubcategory314eVS"/>
         <title value="314e Procedure Subcategories"/>
         <status value="draft"/>
-        <date value="2026-05-16T13:10:22+05:30"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:c66f4354-d5ec-4ebd-a0b6-684ad5c3fb6f"/>
-          <timestamp value="2026-05-16T13:11:40+05:30"/>
+          <identifier value="urn:uuid:b5e4c453-3555-4937-9412-2b9983e19727"/>
+          <timestamp value="2026-05-16T16:47:41+05:30"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -3223,6 +3223,1044 @@ resource bears a result or report.</p>
             <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
             <code value="DIST"/>
             <display value="Discharge &amp; Transitional Care Management"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://314e.com/fhir/ValueSet/time-accuracy-units"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-time-precision-units-cs.html">codesystem 314e Time Precision Units v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://314e.com/fhir/CodeSystem/time-precision-units|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 8 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-ms"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-ms">ms</a>
+                </td>
+                <td>milliseconds</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ms&quot;, &quot;display&quot;: &quot;milliseconds&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ms&quot;&gt;&lt;display value=&quot;milliseconds&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-s"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-s">s</a>
+                </td>
+                <td>seconds</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;s&quot;, &quot;display&quot;: &quot;seconds&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;s&quot;&gt;&lt;display value=&quot;seconds&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-min"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-min">min</a>
+                </td>
+                <td>minutes</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;min&quot;, &quot;display&quot;: &quot;minutes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;min&quot;&gt;&lt;display value=&quot;minutes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-h"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-h">h</a>
+                </td>
+                <td>hours</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;h&quot;, &quot;display&quot;: &quot;hours&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;h&quot;&gt;&lt;display value=&quot;hours&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-d"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-d">d</a>
+                </td>
+                <td>days</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;d&quot;, &quot;display&quot;: &quot;days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;d&quot;&gt;&lt;display value=&quot;days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-mo"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-mo">mo</a>
+                </td>
+                <td>months</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;mo&quot;, &quot;display&quot;: &quot;months&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;mo&quot;&gt;&lt;display value=&quot;months&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-y"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-y">y</a>
+                </td>
+                <td>years</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;y&quot;, &quot;display&quot;: &quot;years&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;y&quot;&gt;&lt;display value=&quot;years&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-n"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-n">n</a>
+                </td>
+                <td>none</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;n&quot;, &quot;display&quot;: &quot;none&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;n&quot;&gt;&lt;display value=&quot;none&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://314e.com/fhir/ValueSet/time-accuracy-units"/>
+        <version value="1.0.0"/>
+        <name value="TimeAccuracyUnitsVS314E"/>
+        <title value="314e Time Exactness Units ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
+        <expansion>
+          <identifier value="urn:uuid:7536acc3-7ab0-428c-adf2-fc0d7e6e0421"/>
+          <timestamp value="2026-05-16T16:47:41+05:30"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://314e.com/fhir/CodeSystem/time-precision-units|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="ms"/>
+            <display value="milliseconds"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="s"/>
+            <display value="seconds"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="min"/>
+            <display value="minutes"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="h"/>
+            <display value="hours"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="d"/>
+            <display value="days"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="mo"/>
+            <display value="months"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="y"/>
+            <display value="years"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="n"/>
+            <display value="none"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://314e.com/fhir/ValueSet/time-accuracy-units"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-time-precision-units-cs.html">codesystem 314e Time Precision Units v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://314e.com/fhir/CodeSystem/time-precision-units|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 8 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-ms"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-ms">ms</a>
+                </td>
+                <td>milliseconds</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ms&quot;, &quot;display&quot;: &quot;milliseconds&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ms&quot;&gt;&lt;display value=&quot;milliseconds&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-s"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-s">s</a>
+                </td>
+                <td>seconds</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;s&quot;, &quot;display&quot;: &quot;seconds&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;s&quot;&gt;&lt;display value=&quot;seconds&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-min"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-min">min</a>
+                </td>
+                <td>minutes</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;min&quot;, &quot;display&quot;: &quot;minutes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;min&quot;&gt;&lt;display value=&quot;minutes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-h"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-h">h</a>
+                </td>
+                <td>hours</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;h&quot;, &quot;display&quot;: &quot;hours&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;h&quot;&gt;&lt;display value=&quot;hours&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-d"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-d">d</a>
+                </td>
+                <td>days</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;d&quot;, &quot;display&quot;: &quot;days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;d&quot;&gt;&lt;display value=&quot;days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-mo"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-mo">mo</a>
+                </td>
+                <td>months</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;mo&quot;, &quot;display&quot;: &quot;months&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;mo&quot;&gt;&lt;display value=&quot;months&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-y"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-y">y</a>
+                </td>
+                <td>years</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;y&quot;, &quot;display&quot;: &quot;years&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;y&quot;&gt;&lt;display value=&quot;years&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-n"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-n">n</a>
+                </td>
+                <td>none</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;n&quot;, &quot;display&quot;: &quot;none&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;n&quot;&gt;&lt;display value=&quot;none&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://314e.com/fhir/ValueSet/time-accuracy-units"/>
+        <version value="1.0.0"/>
+        <name value="TimeAccuracyUnitsVS314E"/>
+        <title value="314e Time Exactness Units ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
+        <expansion>
+          <identifier value="urn:uuid:7536acc3-7ab0-428c-adf2-fc0d7e6e0421"/>
+          <timestamp value="2026-05-16T16:47:41+05:30"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://314e.com/fhir/CodeSystem/time-precision-units|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="ms"/>
+            <display value="milliseconds"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="s"/>
+            <display value="seconds"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="min"/>
+            <display value="minutes"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="h"/>
+            <display value="hours"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="d"/>
+            <display value="days"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="mo"/>
+            <display value="months"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="y"/>
+            <display value="years"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="n"/>
+            <display value="none"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://314e.com/fhir/ValueSet/time-precision-units"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-time-precision-units-cs.html">codesystem 314e Time Precision Units v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://314e.com/fhir/CodeSystem/time-precision-units|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-ms"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-ms">ms</a>
+                </td>
+                <td>milliseconds</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ms&quot;, &quot;display&quot;: &quot;milliseconds&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ms&quot;&gt;&lt;display value=&quot;milliseconds&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-s"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-s">s</a>
+                </td>
+                <td>seconds</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;s&quot;, &quot;display&quot;: &quot;seconds&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;s&quot;&gt;&lt;display value=&quot;seconds&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-min"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-min">min</a>
+                </td>
+                <td>minutes</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;min&quot;, &quot;display&quot;: &quot;minutes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;min&quot;&gt;&lt;display value=&quot;minutes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-h"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-h">h</a>
+                </td>
+                <td>hours</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;h&quot;, &quot;display&quot;: &quot;hours&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;h&quot;&gt;&lt;display value=&quot;hours&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-d"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-d">d</a>
+                </td>
+                <td>days</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;d&quot;, &quot;display&quot;: &quot;days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;d&quot;&gt;&lt;display value=&quot;days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-mo"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-mo">mo</a>
+                </td>
+                <td>months</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;mo&quot;, &quot;display&quot;: &quot;months&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;mo&quot;&gt;&lt;display value=&quot;months&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-y"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-y">y</a>
+                </td>
+                <td>years</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;y&quot;, &quot;display&quot;: &quot;years&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;y&quot;&gt;&lt;display value=&quot;years&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://314e.com/fhir/ValueSet/time-precision-units"/>
+        <version value="1.0.0"/>
+        <name value="TimePrecisionUnitsVS314E"/>
+        <title value="314e Time Precision Units ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
+        <expansion>
+          <identifier value="urn:uuid:1d6f53ca-4f9d-448e-8077-fada09b14aa9"/>
+          <timestamp value="2026-05-16T16:47:41+05:30"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://314e.com/fhir/CodeSystem/time-precision-units|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="ms"/>
+            <display value="milliseconds"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="s"/>
+            <display value="seconds"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="min"/>
+            <display value="minutes"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="h"/>
+            <display value="hours"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="d"/>
+            <display value="days"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="mo"/>
+            <display value="months"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="y"/>
+            <display value="years"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://314e.com/fhir/ValueSet/time-precision-units"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-time-precision-units-cs.html">codesystem 314e Time Precision Units v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://314e.com/fhir/CodeSystem/time-precision-units|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-ms"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-ms">ms</a>
+                </td>
+                <td>milliseconds</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ms&quot;, &quot;display&quot;: &quot;milliseconds&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ms&quot;&gt;&lt;display value=&quot;milliseconds&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-s"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-s">s</a>
+                </td>
+                <td>seconds</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;s&quot;, &quot;display&quot;: &quot;seconds&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;s&quot;&gt;&lt;display value=&quot;seconds&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-min"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-min">min</a>
+                </td>
+                <td>minutes</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;min&quot;, &quot;display&quot;: &quot;minutes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;min&quot;&gt;&lt;display value=&quot;minutes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-h"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-h">h</a>
+                </td>
+                <td>hours</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;h&quot;, &quot;display&quot;: &quot;hours&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;h&quot;&gt;&lt;display value=&quot;hours&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-d"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-d">d</a>
+                </td>
+                <td>days</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;d&quot;, &quot;display&quot;: &quot;days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;d&quot;&gt;&lt;display value=&quot;days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-mo"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-mo">mo</a>
+                </td>
+                <td>months</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;mo&quot;, &quot;display&quot;: &quot;months&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;mo&quot;&gt;&lt;display value=&quot;months&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/time-precision-units-y"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/time-precision-units</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-y">y</a>
+                </td>
+                <td>years</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;y&quot;, &quot;display&quot;: &quot;years&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/time-precision-units&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;y&quot;&gt;&lt;display value=&quot;years&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://314e.com/fhir/ValueSet/time-precision-units"/>
+        <version value="1.0.0"/>
+        <name value="TimePrecisionUnitsVS314E"/>
+        <title value="314e Time Precision Units ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-05-16T16:45:26+05:30"/>
+        <expansion>
+          <identifier value="urn:uuid:1d6f53ca-4f9d-448e-8077-fada09b14aa9"/>
+          <timestamp value="2026-05-16T16:47:41+05:30"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://314e.com/fhir/CodeSystem/time-precision-units|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="ms"/>
+            <display value="milliseconds"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="s"/>
+            <display value="seconds"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="min"/>
+            <display value="minutes"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="h"/>
+            <display value="hours"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="d"/>
+            <display value="days"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="mo"/>
+            <display value="months"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+            <code value="y"/>
+            <display value="years"/>
           </contains>
         </expansion>
       </ValueSet>

@@ -7,7 +7,7 @@ A 314e-constrained Range datatype using 314e SimpleQuantity profiles.
 
 **Usages:**
 
-* This DataType Profile is not used by any profiles in this Implementation Guide
+* Use this DataType Profile: [314e Timing](StructureDefinition-timing-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/range-314e)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-range-314e.csv), 
   "name" : "Range314e",
   "title" : "314e Range",
   "status" : "draft",
-  "date" : "2026-05-16T13:10:22+05:30",
+  "date" : "2026-05-16T16:45:26+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

@@ -3,14 +3,14 @@
   "id" : "attachment-tag",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet attachment-tag</b></p><a name=\"attachment-tag\"> </a><a name=\"hcattachment-tag\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-attachment-tag.html\"><code>http://314e.com/fhir/CodeSystem/attachment-tag</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet attachment-tag</b></p><a name=\"attachment-tag\"> </a><a name=\"hcattachment-tag\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-attachment-tag-cs.html\"><code>http://314e.com/fhir/CodeSystem/attachment-tag</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
   },
   "url" : "http://314e.com/fhir/ValueSet/attachment-tag",
   "version" : "1.0.0",
   "name" : "AttachmentTagVS",
   "title" : "Attachment Tag ValueSet",
   "status" : "active",
-  "date" : "2026-05-16T13:10:22+05:30",
+  "date" : "2026-05-16T16:45:26+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

@@ -34,5 +34,23 @@
     "title" : "314e Procedure Subcategories",
     "description" : "Procedure subcategories used for more granular\noperational classification.",
     "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"]
+  },
+  {
+    "url" : "http://314e.com/fhir/ValueSet/time-accuracy-units",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TimeAccuracyUnitsVS314E",
+    "title" : "314e Time Exactness Units ValueSet",
+    "description" : "Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"]
+  },
+  {
+    "url" : "http://314e.com/fhir/ValueSet/time-precision-units",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TimePrecisionUnitsVS314E",
+    "title" : "314e Time Precision Units ValueSet",
+    "description" : "Allowed precision units for dateTime, time, and instant precision indicators.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"]
   }]
 }

@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://314e.com/fhir/ig/CodeSystem/time-precision-units-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "time-precision-units-cs"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem time-precision-units-cs</b></p><a name=\"time-precision-units-cs\"> </a><a name=\"hctime-precision-units-cs\"> </a><p>This  code system <code>http://314e.com/fhir/CodeSystem/time-precision-units</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ms<a name=\"time-precision-units-cs-ms\"> </a></td><td>milliseconds</td></tr><tr><td style=\"white-space:nowrap\">s<a name=\"time-precision-units-cs-s\"> </a></td><td>seconds</td></tr><tr><td style=\"white-space:nowrap\">min<a name=\"time-precision-units-cs-min\"> </a></td><td>minutes</td></tr><tr><td style=\"white-space:nowrap\">h<a name=\"time-precision-units-cs-h\"> </a></td><td>hours</td></tr><tr><td style=\"white-space:nowrap\">d<a name=\"time-precision-units-cs-d\"> </a></td><td>days</td></tr><tr><td style=\"white-space:nowrap\">mo<a name=\"time-precision-units-cs-mo\"> </a></td><td>months</td></tr><tr><td style=\"white-space:nowrap\">y<a name=\"time-precision-units-cs-y\"> </a></td><td>years</td></tr><tr><td style=\"white-space:nowrap\">n<a name=\"time-precision-units-cs-n\"> </a></td><td>none</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://314e.com/fhir/CodeSystem/time-precision-units"^^xsd:anyURI ;
+     fhir:l <http://314e.com/fhir/CodeSystem/time-precision-units>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "TimePrecisionUnits314E"] ; # 
+  fhir:title [ fhir:v "314e Time Precision Units"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-16T16:45:26+05:30"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "314e"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "314e" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://314e.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Time precision units used to indicate the actual precision of a dateTime, time, or instant value."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ms" ] ;
+     fhir:display [ fhir:v "milliseconds" ]
+  ] [
+     fhir:code [ fhir:v "s" ] ;
+     fhir:display [ fhir:v "seconds" ]
+  ] [
+     fhir:code [ fhir:v "min" ] ;
+     fhir:display [ fhir:v "minutes" ]
+  ] [
+     fhir:code [ fhir:v "h" ] ;
+     fhir:display [ fhir:v "hours" ]
+  ] [
+     fhir:code [ fhir:v "d" ] ;
+     fhir:display [ fhir:v "days" ]
+  ] [
+     fhir:code [ fhir:v "mo" ] ;
+     fhir:display [ fhir:v "months" ]
+  ] [
+     fhir:code [ fhir:v "y" ] ;
+     fhir:display [ fhir:v "years" ]
+  ] [
+     fhir:code [ fhir:v "n" ] ;
+     fhir:display [ fhir:v "none" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

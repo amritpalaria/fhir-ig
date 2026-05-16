@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TimePrecisionUnitsVS314E",
+  "id": "time-precision-units-vs",
+  "title": "314e Time Precision Units ValueSet",
+  "description": "Allowed precision units for dateTime, time, and instant precision indicators.",
+  "url": "http://314e.com/fhir/ValueSet/time-precision-units",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://314e.com/fhir/CodeSystem/time-precision-units"
+      }
+    ],
+    "exclude": [
+      {
+        "system": "http://314e.com/fhir/CodeSystem/time-precision-units",
+        "concept": [
+          {
+            "code": "n"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "observation-tag-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet observation-tag-vs</b></p><a name=\"observation-tag-vs\"> </a><a name=\"hcobservation-tag-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-observation-tag.html\"><code>http://314e.com/fhir/CodeSystem/observation-tag</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "http://314e.com/fhir/ValueSet/observation-tag",
+  "version" : "1.0.0",
+  "name" : "ObservationTagVS",
+  "title" : "Observation Tag ValueSet",
+  "status" : "active",
+  "date" : "2026-05-16T16:45:26+05:30",
+  "publisher" : "314e",
+  "contact" : [{
+    "name" : "314e",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://314e.com"
+    }]
+  }],
+  "description" : "Semantic tags used in meta.tag to qualify DiagnosticReport and\nObservation resources participating in hierarchical parent-child\nresource structures.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://314e.com/fhir/CodeSystem/observation-tag"
+    }]
+  }
+}

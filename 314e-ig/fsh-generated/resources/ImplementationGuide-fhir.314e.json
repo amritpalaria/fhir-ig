@@ -74,10 +74,58 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/datetime-accuracy-314e"
+        },
+        "name": "314e Date/Time Accuracy",
+        "description": "Specifies the accuracy or exactness of a dateTime value when only some portion of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/datetime-precision-314e"
+        },
+        "name": "314e Date/Time Precision",
+        "description": "Specifies the meaningful precision of a dateTime value when the base\nFHIR dateTime datatype permits greater precision than is actually known,\nverified, or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/datetime-314e"
+        },
+        "name": "314e dateTime",
+        "description": "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is verifiable or usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf the date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/decimal-314e"
+        },
+        "name": "314e decimal",
+        "description": "314e profile of the FHIR decimal primitive datatype.\n\nSupports explicit precision representation using:\n\nhttp://hl7.org/fhir/StructureDefinition/quantity-precision\n\nThis extension specifies the intended or known precision\nof the decimal value independently of the actual lexical form.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/duration-314e"
+        },
+        "name": "314e Duration",
+        "description": "314e profile of the FHIR Duration datatype.\n\nDerived from FHIR Duration and incorporates\n314e Quantity datatype behavior including:\n\n- quantity precision support\n- quantity string support\n- value string support",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/identifier-314e"
         },
         "name": "314e Identifier",
         "description": "314e profile of the FHIR Identifier datatype.\n\nThis profile requires Identifier.system whenever\nIdentifier.value is populated.\n\nFor customer-specific or internally defined identifiers,\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample:\nacme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/period-314e"
+        },
+        "name": "314e Period",
+        "description": "314e profile of the FHIR Period datatype.\n\nAll dateTime values within the Period SHALL conform\nto the 314e DateTime profile requirements,\nincluding UTC normalization and precision handling.",
         "exampleBoolean": false
       },
       {
@@ -146,6 +194,38 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/time-accuracy-units-vs"
+        },
+        "name": "314e Time Exactness Units ValueSet",
+        "description": "Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/time-precision-units-cs"
+        },
+        "name": "314e Time Precision Units",
+        "description": "Time precision units used to indicate the actual precision of a dateTime, time, or instant value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/time-precision-units-vs"
+        },
+        "name": "314e Time Precision Units ValueSet",
+        "description": "Allowed precision units for dateTime, time, and instant precision indicators.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/timing-314e"
+        },
+        "name": "314e Timing",
+        "description": "314e profile of the FHIR Timing datatype.\n\nUses 314e date/time related datatypes\nincluding DateTime314e, Period314e, and Quantity314e.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/annotation-attachment"
         },
         "name": "Annotation Attachment",
@@ -170,7 +250,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/attachment-tag"
+          "reference": "CodeSystem/attachment-tag-cs"
         },
         "name": "Attachment Tag CodeSystem",
         "description": "Codes used for semantic tagging and categorization of attachments.",
@@ -194,7 +274,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/observation-tag"
+          "reference": "ValueSet/observation-tag-vs"
         },
         "name": "Observation Tag ValueSet",
         "description": "Semantic tags used in meta.tag to qualify DiagnosticReport and\nObservation resources participating in hierarchical parent-child\nresource structures.",

@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-reference-context
   "name" : "ReferenceContext",
   "title" : "Reference Context",
   "status" : "draft",
-  "date" : "2026-05-16T13:10:22+05:30",
+  "date" : "2026-05-16T16:45:26+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -90,7 +90,8 @@ Other representations of profile: [CSV](../StructureDefinition-reference-context
       "comment" : "The interpretation of the reference-context extension is dependent\nupon the semantics of the containing element.",
       "min" : 1,
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
       }]
     }]
   }

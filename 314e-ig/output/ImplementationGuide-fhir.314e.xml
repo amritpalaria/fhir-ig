@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-16T13:10:22+05:30"/>
+  <date value="2026-05-16T16:45:26+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -37,7 +37,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_us_qicore">
     <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
@@ -537,6 +537,61 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/datetime-accuracy-314e"/>
+      </reference>
+      <name value="314e Date/Time Accuracy"/>
+      <description value="Specifies the accuracy or exactness of a dateTime value when only some portion of &#xA;the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.&#xA;&#xA;This extension is intended to explicitly communicate the accuracy&#xA;of a dateTime value, such as full timestamp, year-only, year-month, date-only, or&#xA;none.&#xA;&#xA;For example:&#xA;- A birth year and month may be known exactly but the day might be an estimate&#xA;- Only the date may be verifiable as accurate with the time being approximate&#xA;&#xA;Note: All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/datetime-precision-314e"/>
+      </reference>
+      <name value="314e Date/Time Precision"/>
+      <description value="Specifies the meaningful precision of a dateTime value when the base&#xA;FHIR dateTime datatype permits greater precision than is actually known,&#xA;verified, or clinically usable.&#xA;&#xA;This extension is intended to explicitly communicate the usable precision&#xA;of a dateTime value, such as year-only, year-month, date-only, or&#xA;full timestamp precision.&#xA;&#xA;All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:primitive-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/datetime-314e"/>
+      </reference>
+      <name value="314e dateTime"/>
+      <description value="314e profile of the FHIR dateTime primitive datatype.&#xA;&#xA;All dateTime values SHALL be stored in UTC.&#xA;&#xA;If only a smaller degree of precision is verifiable or usable&#xA;(for example, only the date portion is known),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/datetime-precision-314e&#xA;&#xA;If the date/time value is approximate rather than exact,&#xA;the following extension SHALL be used:&#xA;&#xA;https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:primitive-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/decimal-314e"/>
+      </reference>
+      <name value="314e decimal"/>
+      <description value="314e profile of the FHIR decimal primitive datatype.&#xA;&#xA;Supports explicit precision representation using:&#xA;&#xA;http://hl7.org/fhir/StructureDefinition/quantity-precision&#xA;&#xA;This extension specifies the intended or known precision&#xA;of the decimal value independently of the actual lexical form."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/duration-314e"/>
+      </reference>
+      <name value="314e Duration"/>
+      <description value="314e profile of the FHIR Duration datatype.&#xA;&#xA;Derived from FHIR Duration and incorporates&#xA;314e Quantity datatype behavior including:&#xA;&#xA;- quantity precision support&#xA;- quantity string support&#xA;- value string support"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -544,6 +599,17 @@
       </reference>
       <name value="314e Identifier"/>
       <description value="314e profile of the FHIR Identifier datatype.&#xA;&#xA;This profile requires Identifier.system whenever&#xA;Identifier.value is populated.&#xA;&#xA;For customer-specific or internally defined identifiers,&#xA;Identifier.system SHALL follow the naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier&#xA;&#xA;Example:&#xA;acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/period-314e"/>
+      </reference>
+      <name value="314e Period"/>
+      <description value="314e profile of the FHIR Period datatype.&#xA;&#xA;All dateTime values within the Period SHALL conform&#xA;to the 314e DateTime profile requirements,&#xA;including UTC normalization and precision handling."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -636,6 +702,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/time-accuracy-units-vs"/>
+      </reference>
+      <name value="314e Time Exactness Units ValueSet"/>
+      <description value="Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/time-precision-units-cs"/>
+      </reference>
+      <name value="314e Time Precision Units"/>
+      <description value="Time precision units used to indicate the actual precision of a dateTime, time, or instant value."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/time-precision-units-vs"/>
+      </reference>
+      <name value="314e Time Precision Units ValueSet"/>
+      <description value="Allowed precision units for dateTime, time, and instant precision indicators."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/timing-314e"/>
+      </reference>
+      <name value="314e Timing"/>
+      <description value="314e profile of the FHIR Timing datatype.&#xA;&#xA;Uses 314e date/time related datatypes&#xA;including DateTime314e, Period314e, and Quantity314e."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -672,7 +782,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/attachment-tag"/>
+        <reference value="CodeSystem/attachment-tag-cs"/>
       </reference>
       <name value="Attachment Tag CodeSystem"/>
       <description value="Codes used for semantic tagging and categorization of attachments."/>
@@ -705,7 +815,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/observation-tag"/>
+        <reference value="ValueSet/observation-tag-vs"/>
       </reference>
       <name value="Observation Tag ValueSet"/>
       <description value="Semantic tags used in meta.tag to qualify DiagnosticReport and&#xA;Observation resources participating in hierarchical parent-child&#xA;resource structures."/>

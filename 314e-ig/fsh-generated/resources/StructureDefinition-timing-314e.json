@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "timing-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/timing-314e",
+  "name": "Timing314e",
+  "title": "314e Timing",
+  "status": "active",
+  "description": "314e profile of the FHIR Timing datatype.\n\nUses 314e date/time related datatypes\nincluding DateTime314e, Period314e, and Quantity314e.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Timing",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Timing",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Timing.event",
+        "path": "Timing.event",
+        "short": "Scheduled event time in UTC",
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Timing.repeat.bounds[x]",
+        "path": "Timing.repeat.bounds[x]",
+        "type": [
+          {
+            "code": "Duration",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/duration-314e"
+            ]
+          },
+          {
+            "code": "Range",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/range-314e"
+            ]
+          },
+          {
+            "code": "Period",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/period-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Timing.repeat.offset",
+        "path": "Timing.repeat.offset",
+        "short": "Minutes from event with standard FHIR semantics"
+      }
+    ]
+  }
+}

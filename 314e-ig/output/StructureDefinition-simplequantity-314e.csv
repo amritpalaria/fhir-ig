@@ -14,8 +14,19 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Original or display-oriented textual representation of the full quantity","Provides the original, source-oriented, or display-oriented textual
 representation of the complete quantity, including value and unit.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Quantity.value","Quantity.value","","","",0,1,"","","Y","decimal {[]} {[]}
-","Numerical value (with implicit precision)","The value of the measured amount. The value includes an implicit precision in the presentation of the value.","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Quantity.value","Quantity.value","","","",0,1,"","","Y","decimal {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/decimal-314e]]} {[]}
+","Numerical value with explicit precision support","The value of the measured amount.
+
+Whenever precision is needed, precision metadata SHALL 
+be explicitly represented using the quantityPrecision extension on the 314e decimal profile. 
+The quantityPrecision extension represents the number of significant decimal places intended
+for the quantity value, irrespective of how many decimal places
+are explicitly present in the decimal representation itself.
+The presence of this extension does not alter the underlying
+numeric value or computation semantics.
+
+The original textual representation of value may additionally
+be preserved using the valueString extension.","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","SN.2  / CQ - N/A","PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"
 "Quantity.value.id","Quantity.value.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -23,8 +34,16 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Quantity.value.extension:precision","Quantity.value.extension","precision","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/quantity-precision]]} {[]}
-","Explicit precision of the numeric quantity value","Explicit precision of the number. This is the number of significant decimal places after the decimal point, irrespective of how many are actually present in the explicitly represented decimal.","The presence of this extension does not change conformance expectations with regard to rendering and calculations that use the number - these are still based on the raw decimal value. Applications that perform calculations SHALL ensure that this extension is removed or updated to the correct precision value if the number is changed. Applications should consider using the exponential form (e.g. 2.10e3) on the raw decimal to manage significant figures, but should be mindful of human display when doing so.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Quantity.value.extension:quantityPrecision","Quantity.value.extension","quantityPrecision","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/quantity-precision]]} {[]}
+","Explicit precision of the decimal value","Explicit precision of the number.
+
+This represents the intended or known number
+of significant decimal places irrespective
+of how many are explicitly represented
+in the decimal value itself.","Applications performing calculations SHALL ensure
+that this extension is updated appropriately
+if the numeric value changes.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A","n/a"
 "Quantity.value.extension:valueString","Quantity.value.extension","valueString","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/quantity-valueString]]} {[]}
 ","Original or display-oriented textual representation of the numeric value","A string/ textual representation associated with Quantity.value.
@@ -40,8 +59,7 @@ Applications performing calculations SHALL use the actual decimal
 value of Quantity.value rather than the string carried in this extension.
 
 Applications should preserve synchronization between Quantity.value
-and this extension if either representation is modified.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+and this extension if either representation is modified.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Quantity.value.value","Quantity.value.value","","","",0,1,"","","","decimal {[]} {[]}
 ","Primitive value for decimal","The actual value","","","","","","","","","",,,,,"",,,,"decimal.value",0,1,"",""

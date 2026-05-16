@@ -38,7 +38,7 @@ the following naming convention SHALL be used:
 and which is unique within the context of the system.","If Identifier.value is populated,
 Identifier.system SHALL also be populated.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.1 / EI.1","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)","./Value"
-"Identifier.period","Identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
+"Identifier.period","Identifier.period","","","",0,1,"","","Y","Period {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/period-314e]]} {[]}
 ","Time period when id is/was valid for use","Time period during which identifier is/was valid for use.","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.7 + CX.8","Role.effectiveTime or implied by context","./StartDate and ./EndDate"
 "Identifier.assigner","Identifier.assigner","","","",0,1,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}

@@ -22,5 +22,13 @@
     "name" : "ProcedureCategory314eCS",
     "title" : "314e Procedure Category CodeSystem",
     "description" : "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources."
+  },
+  {
+    "url" : "http://314e.com/fhir/CodeSystem/time-precision-units",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TimePrecisionUnits314E",
+    "title" : "314e Time Precision Units",
+    "description" : "Time precision units used to indicate the actual precision of a dateTime, time, or instant value."
   }]
 }

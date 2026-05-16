@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="time-precision-units-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet time-precision-units-vs</b></p><a name="time-precision-units-vs"> </a><a name="hctime-precision-units-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-time-precision-units-cs.html"><code>http://314e.com/fhir/CodeSystem/time-precision-units</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="CodeSystem-time-precision-units-cs.html"><code>http://314e.com/fhir/CodeSystem/time-precision-units</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-time-precision-units-cs.html#time-precision-units-cs-n">n</a></td><td style="color: #cccccc">none</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://314e.com/fhir/ValueSet/time-precision-units"/>
+  <version value="1.0.0"/>
+  <name value="TimePrecisionUnitsVS314E"/>
+  <title value="314e Time Precision Units ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-05-16T16:45:26+05:30"/>
+  <publisher value="314e"/>
+  <contact>
+    <name value="314e"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://314e.com"/>
+    </telecom>
+  </contact>
+  <description value="Allowed precision units for dateTime, time, and instant precision indicators."/>
+  <compose>
+    <include>
+      <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+    </include>
+    <exclude>
+      <system value="http://314e.com/fhir/CodeSystem/time-precision-units"/>
+      <concept>
+        <code value="n"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

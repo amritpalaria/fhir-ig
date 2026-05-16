@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TimePrecisionUnits314E",
+  "id": "time-precision-units-cs",
+  "title": "314e Time Precision Units",
+  "description": "Time precision units used to indicate the actual precision of a dateTime, time, or instant value.",
+  "url": "http://314e.com/fhir/CodeSystem/time-precision-units",
+  "concept": [
+    {
+      "code": "ms",
+      "display": "milliseconds"
+    },
+    {
+      "code": "s",
+      "display": "seconds"
+    },
+    {
+      "code": "min",
+      "display": "minutes"
+    },
+    {
+      "code": "h",
+      "display": "hours"
+    },
+    {
+      "code": "d",
+      "display": "days"
+    },
+    {
+      "code": "mo",
+      "display": "months"
+    },
+    {
+      "code": "y",
+      "display": "years"
+    },
+    {
+      "code": "n",
+      "display": "none"
+    }
+  ],
+  "experimental": false,
+  "count": 8
+}

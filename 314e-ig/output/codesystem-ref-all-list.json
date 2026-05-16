@@ -19,7 +19,7 @@
     "description" : "Codes used to qualify DiagnosticReport and Observation resources\nwithin hierarchical parent-child result/report structures.",
     "uses" : {
     },
-    "ValueSet-observation-tag.html" : "Observation Tag ValueSet"
+    "ValueSet-observation-tag-vs.html" : "Observation Tag ValueSet"
   },
   {
     "url" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
@@ -30,8 +30,44 @@
     "description" : "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources.",
     "uses" : {
     },
-    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories",
-    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories"
+    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories",
+    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories"
+  },
+  {
+    "url" : "http://314e.com/fhir/CodeSystem/time-precision-units",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "TimePrecisionUnits314E",
+    "title" : "314e Time Precision Units",
+    "description" : "Time precision units used to indicate the actual precision of a dateTime, time, or instant value.",
+    "uses" : {
+    },
+    "ValueSet-time-accuracy-units-vs.html" : "314e Time Exactness Units ValueSet",
+    "ValueSet-time-precision-units-vs.html" : "314e Time Precision Units ValueSet"
+  },
+  {
+    "url" : "http://hl7.org/fhir/days-of-week",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DaysOfWeek",
+    "title" : "DaysOfWeek",
+    "description" : "The days of the week.",
+    "oids" : ["2.16.840.1.113883.4.642.4.513"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+  },
+  {
+    "url" : "http://hl7.org/fhir/event-timing",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "EventTiming",
+    "title" : "EventTiming",
+    "description" : "Real world event relating to the schedule.",
+    "oids" : ["2.16.840.1.113883.4.642.4.76"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
   },
   {
     "url" : "http://hl7.org/fhir/identifier-use",
@@ -163,13 +199,13 @@
     "uses" : {
     },
     "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
     "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
     "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
     "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
     "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes"
+    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -184,6 +220,18 @@
     "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
   },
   {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "GTSAbbreviation",
+    "title" : "GTSAbbreviation",
+    "description" : "*Open Issue:* It appears that the printnames are suboptimal and should be improved for many of the existing codes.",
+    "oids" : ["2.16.840.1.113883.5.1022"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-timing-abbreviation.html" : "TimingAbbreviation"
+  },
+  {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
     "version" : "4.0.0",
     "status" : "active",
@@ -194,6 +242,30 @@
     "uses" : {
     },
     "http://terminology.hl7.org/7.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "TimingEvent",
+    "title" : "TimingEvent",
+    "description" : "**** MISSING DESCRIPTION ****",
+    "oids" : ["2.16.840.1.113883.5.139"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+  },
+  {
+    "url" : "http://unitsofmeasure.org",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "UCUM",
+    "title" : "Unified Code for Units of Measure (UCUM)",
+    "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+    "oids" : ["2.16.840.1.113883.6.8"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime"
   },
   {
     "url" : "http://www.ada.org/cdt",

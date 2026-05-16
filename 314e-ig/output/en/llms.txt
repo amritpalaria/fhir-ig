@@ -4,21 +4,38 @@
 
 * [Home](index.md)
 * [Artifacts Summary](artifacts.md)
+* [](CodeSystem-attachment-tag-testing.md)
+* [](CodeSystem-attachment-tag.ai.md)
+* [](CodeSystem-attachment-tag.change.history.md)
+* [](CodeSystem-attachment-tag.md)
+* [](CodeSystem-attachment-tag.json.md)
+* [](CodeSystem-attachment-tag.ttl.md)
+* [](CodeSystem-attachment-tag.xml.md)
+* [](ValueSet-observation-tag-testing.md)
+* [](ValueSet-observation-tag.ai.md)
+* [](ValueSet-observation-tag.change.history.md)
+* [](ValueSet-observation-tag.md)
+* [](ValueSet-observation-tag.json.md)
+* [](ValueSet-observation-tag.ttl.md)
+* [](ValueSet-observation-tag.xml.md)
 
 ## Resources
 
 ### CodeSystems
 
-* [Attachment Tag CodeSystem](CodeSystem-attachment-tag.md)
+* [Attachment Tag CodeSystem](CodeSystem-attachment-tag-cs.md)
 * [Observation Tag CodeSystem](CodeSystem-observation-tag.md)
 * [314e Procedure Category CodeSystem](CodeSystem-procedure-category-314e.md)
+* [314e Time Precision Units](CodeSystem-time-precision-units-cs.md)
 
 ### ValueSets
 
 * [Attachment Tag ValueSet](ValueSet-attachment-tag.md)
-* [Observation Tag ValueSet](ValueSet-observation-tag.md)
+* [Observation Tag ValueSet](ValueSet-observation-tag-vs.md)
 * [314e Broad Procedure Categories](ValueSet-procedure-category-broad-314e.md)
 * [314e Procedure Subcategories](ValueSet-procedure-category-subcategory-314e.md)
+* [314e Time Exactness Units ValueSet](ValueSet-time-accuracy-units-vs.md)
+* [314e Time Precision Units ValueSet](ValueSet-time-precision-units-vs.md)
 
 ### Complex-type Profiles
 
@@ -26,12 +43,20 @@
 * [314e Attachment](StructureDefinition-attachment-314e.md)
 * [314e CodeableConcept](StructureDefinition-codeableconcept-314e.md)
 * [314e Coding](StructureDefinition-coding-314e.md)
+* [314e Duration](StructureDefinition-duration-314e.md)
 * [314e Identifier](StructureDefinition-identifier-314e.md)
+* [314e Period](StructureDefinition-period-314e.md)
 * [314e Quantity](StructureDefinition-quantity-314e.md)
 * [314e Range](StructureDefinition-range-314e.md)
 * [314e Ratio](StructureDefinition-ratio-314e.md)
 * [314e Reference](StructureDefinition-reference-314e.md)
 * [314e SimpleQuantity](StructureDefinition-simplequantity-314e.md)
+* [314e Timing](StructureDefinition-timing-314e.md)
+
+### Primitive-type Profiles
+
+* [314e dateTime](StructureDefinition-datetime-314e.md)
+* [314e decimal](StructureDefinition-decimal-314e.md)
 
 ### Resource Profiles
 
@@ -42,6 +67,8 @@
 * [Annotation Attachment](StructureDefinition-annotation-attachment.md)
 * [Attachment Helper File](StructureDefinition-attachment-helperFile.md)
 * [Attachment Tag](StructureDefinition-attachment-tag.md)
+* [314e Date/Time Accuracy](StructureDefinition-datetime-accuracy-314e.md)
+* [314e Date/Time Precision](StructureDefinition-datetime-precision-314e.md)
 * [Quantity Quantity String](StructureDefinition-quantity-quantityString.md)
 * [Quantity Value String](StructureDefinition-quantity-valueString.md)
 * [Reference Context](StructureDefinition-reference-context.md)

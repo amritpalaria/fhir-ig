@@ -22,7 +22,7 @@ Allows fine-grained semantic qualification of references
 where the underlying FHIR element definition is intentionally broad.
 """
 
-* value[x] only CodeableConcept
+* value[x] only CodeableConcept314e
 * valueCodeableConcept 1..1
 
 * valueCodeableConcept ^short =
