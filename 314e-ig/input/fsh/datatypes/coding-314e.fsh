@@ -58,6 +58,20 @@ Generated code: "blood-culture"
 
 Whenever either code or display is populated, system SHALL
 also be populated.
+
+This data type supports:
+- standard terminology codings
+- optional customer-specific internal codings
+Internal codings are used to preserve customer, EHR,
+workflow, and source-system-native semantic classifications and source system fidelity.
+
+Any coding system intended to represent an internal coding
+system SHALL follow the required naming convention:
+
+[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode
+
+Example:
+acme-epic-Observation-lab-code-Glucose-InternalCode
 """
 
 * ^status = #active
@@ -88,10 +102,10 @@ workflow, and source-system-native semantic classifications and source system fi
 Any coding system intended to represent an internal coding
 system SHALL follow the required naming convention:
 
-[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode
+[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode
 
 Example:
-acme-epic-Observation-lab-code-glucose-InternalCode"""
+acme-epic-Observation-lab-code-Glucose-InternalCode"""
 // ======================================================
 // EXAMPLE
 // ======================================================

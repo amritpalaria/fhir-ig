@@ -41,7 +41,7 @@ Identifier.system SHALL follow the naming convention:
 [customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier
 
 Example:
-acme-epic-Patient--identifier-MRN-InternalIdentifier
+acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier
 """
 
 * ^status = #active

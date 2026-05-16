@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "Identifier314e"] ; # 
   fhir:title [ fhir:v "314e Identifier"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-16T12:58:39+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T13:10:22+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -31,7 +31,7 @@
        fhir:value [ fhir:v "http://314e.com" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "314e profile of the FHIR Identifier datatype.\n\nThis profile requires Identifier.system whenever\nIdentifier.value is populated.\n\nFor customer-specific or internally defined identifiers,\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample:\nacme-epic-Patient--identifier-MRN-InternalIdentifier"] ; # 
+  fhir:description [ fhir:v "314e profile of the FHIR Identifier datatype.\n\nThis profile requires Identifier.system whenever\nIdentifier.value is populated.\n\nFor customer-specific or internally defined identifiers,\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample:\nacme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "v2" ] ;

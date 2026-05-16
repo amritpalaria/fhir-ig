@@ -15,10 +15,10 @@ workflow, and source-system-native semantic classifications and source system fi
 Any coding system intended to represent an internal coding
 system SHALL follow the required naming convention:
 
-[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode
+[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode
 
 Example:
-acme-epic-Observation-lab-code-glucose-InternalCode
+acme-epic-Observation-lab-code-Glucose-InternalCode
 """
 
 * ^status = #active
@@ -81,7 +81,7 @@ Human-readable representation of the internal code.
 // ======================================================
 
 * coding[internalCode].system ^example.label =
-    "Internal Coding System Example"
+    "Internal Coding System"
 
 * coding[internalCode].system ^example.valueUri =
     "acme-epic-Observation-lab-code-Glucose-InternalCode"

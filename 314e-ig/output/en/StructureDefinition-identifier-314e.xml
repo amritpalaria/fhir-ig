@@ -29,7 +29,7 @@ or managing the identifier.">assigner</a><a name="Identifier.assigner"> </a></td
   <name value="Identifier314e"/>
   <title value="314e Identifier"/>
   <status value="active"/>
-  <date value="2026-05-16T12:58:39+05:30"/>
+  <date value="2026-05-16T13:10:22+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -38,7 +38,7 @@ or managing the identifier.">assigner</a><a name="Identifier.assigner"> </a></td
       <value value="http://314e.com"/>
     </telecom>
   </contact>
-  <description value="314e profile of the FHIR Identifier datatype.&#xA;&#xA;This profile requires Identifier.system whenever&#xA;Identifier.value is populated.&#xA;&#xA;For customer-specific or internally defined identifiers,&#xA;Identifier.system SHALL follow the naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier&#xA;&#xA;Example:&#xA;acme-epic-Patient--identifier-MRN-InternalIdentifier"/>
+  <description value="314e profile of the FHIR Identifier datatype.&#xA;&#xA;This profile requires Identifier.system whenever&#xA;Identifier.value is populated.&#xA;&#xA;For customer-specific or internally defined identifiers,&#xA;Identifier.system SHALL follow the naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier&#xA;&#xA;Example:&#xA;acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>

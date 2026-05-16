@@ -12,6 +12,13 @@ If source data lacks a formal coded value but provides textual display content, 
  
 Example: Display: "Blood Culture" Generated code: "blood-culture" 
 Whenever either code or display is populated, system SHALL also be populated. 
+This data type supports: 
+* standard terminology codings
+* optional customer-specific internal codings Internal codings are used to preserve customer, EHR, workflow, and source-system-native semantic classifications and source system fidelity.
+ 
+Any coding system intended to represent an internal coding system SHALL follow the required naming convention: 
+[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode 
+Example: acme-epic-Observation-lab-code-Glucose-InternalCode 
 
 **Usages:**
 
@@ -40,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-coding-314e.csv),
   "name" : "Coding314e",
   "title" : "314e Coding",
   "status" : "active",
-  "date" : "2026-05-16T12:58:39+05:30",
+  "date" : "2026-05-16T13:10:22+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -49,7 +56,7 @@ Other representations of profile: [CSV](../StructureDefinition-coding-314e.csv),
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "314e profile of the FHIR Coding datatype.\n\nThis profile strengthens semantic interoperability expectations\naround population of system, code, and display.\n\nWhen display is populated, code SHALL also be populated.\n\nIf source data lacks a formal coded value but provides textual\ndisplay content, implementers SHOULD generate a surrogate code\nusing the display text transformed as follows:\n- convert all letters to lower case\n- replace spaces with hyphens\n\nExample:\nDisplay: \"Blood Culture\"\nGenerated code: \"blood-culture\"\n\nWhenever either code or display is populated, system SHALL\nalso be populated.",
+  "description" : "314e profile of the FHIR Coding datatype.\n\nThis profile strengthens semantic interoperability expectations\naround population of system, code, and display.\n\nWhen display is populated, code SHALL also be populated.\n\nIf source data lacks a formal coded value but provides textual\ndisplay content, implementers SHOULD generate a surrogate code\nusing the display text transformed as follows:\n- convert all letters to lower case\n- replace spaces with hyphens\n\nExample:\nDisplay: \"Blood Culture\"\nGenerated code: \"blood-culture\"\n\nWhenever either code or display is populated, system SHALL\nalso be populated.\n\nThis data type supports:\n- standard terminology codings\n- optional customer-specific internal codings\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",
@@ -94,7 +101,7 @@ Other representations of profile: [CSV](../StructureDefinition-coding-314e.csv),
       "id" : "Coding.system",
       "path" : "Coding.system",
       "short" : "Terminology system URI or constrained-format internal code-system identifier",
-      "definition" : "The identification of the code system that defines the meaning of the symbol in the code. \n\nSupports:\n- standard terminology codings\n- optional customer-specific internal codings\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-glucose-InternalCode",
+      "definition" : "The identification of the code system that defines the meaning of the symbol in the code. \n\nSupports:\n- standard terminology codings\n- optional customer-specific internal codings\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode",
       "example" : [{
         "label" : "Internal Coding System",
         "valueUri" : "acme-epic-Observation-lab-code-Glucose-InternalCode"

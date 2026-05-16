@@ -7,7 +7,7 @@
 This profile requires Identifier.system whenever Identifier.value is populated. 
 For customer-specific or internally defined identifiers, Identifier.system SHALL follow the naming convention: 
 [customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier 
-Example: acme-epic-Patient–identifier-MRN-InternalIdentifier 
+Example: acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-identifier-314e.c
   "name" : "Identifier314e",
   "title" : "314e Identifier",
   "status" : "active",
-  "date" : "2026-05-16T12:58:39+05:30",
+  "date" : "2026-05-16T13:10:22+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-identifier-314e.c
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "314e profile of the FHIR Identifier datatype.\n\nThis profile requires Identifier.system whenever\nIdentifier.value is populated.\n\nFor customer-specific or internally defined identifiers,\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample:\nacme-epic-Patient--identifier-MRN-InternalIdentifier",
+  "description" : "314e profile of the FHIR Identifier datatype.\n\nThis profile requires Identifier.system whenever\nIdentifier.value is populated.\n\nFor customer-specific or internally defined identifiers,\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample:\nacme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",

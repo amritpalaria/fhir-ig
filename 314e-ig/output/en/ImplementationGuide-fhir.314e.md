@@ -14,7 +14,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-16T12:58:39+05:30",
+  "date" : "2026-05-16T13:10:22+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -696,7 +696,7 @@
         "reference" : "StructureDefinition/codeableconcept-314e"
       },
       "name" : "314e CodeableConcept",
-      "description" : "314e profile of the FHIR CodeableConcept datatype.\n\nThis profile supports:\n- standard terminology codings\n- optional customer-specific internal codings\n\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-glucose-InternalCode",
+      "description" : "314e profile of the FHIR CodeableConcept datatype.\n\nThis profile supports:\n- standard terminology codings\n- optional customer-specific internal codings\n\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode",
       "exampleBoolean" : false
     },
     {
@@ -708,7 +708,7 @@
         "reference" : "StructureDefinition/coding-314e"
       },
       "name" : "314e Coding",
-      "description" : "314e profile of the FHIR Coding datatype.\n\nThis profile strengthens semantic interoperability expectations\naround population of system, code, and display.\n\nWhen display is populated, code SHALL also be populated.\n\nIf source data lacks a formal coded value but provides textual\ndisplay content, implementers SHOULD generate a surrogate code\nusing the display text transformed as follows:\n- convert all letters to lower case\n- replace spaces with hyphens\n\nExample:\nDisplay: \"Blood Culture\"\nGenerated code: \"blood-culture\"\n\nWhenever either code or display is populated, system SHALL\nalso be populated.",
+      "description" : "314e profile of the FHIR Coding datatype.\n\nThis profile strengthens semantic interoperability expectations\naround population of system, code, and display.\n\nWhen display is populated, code SHALL also be populated.\n\nIf source data lacks a formal coded value but provides textual\ndisplay content, implementers SHOULD generate a surrogate code\nusing the display text transformed as follows:\n- convert all letters to lower case\n- replace spaces with hyphens\n\nExample:\nDisplay: \"Blood Culture\"\nGenerated code: \"blood-culture\"\n\nWhenever either code or display is populated, system SHALL\nalso be populated.\n\nThis data type supports:\n- standard terminology codings\n- optional customer-specific internal codings\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode",
       "exampleBoolean" : false
     },
     {
@@ -720,7 +720,7 @@
         "reference" : "StructureDefinition/identifier-314e"
       },
       "name" : "314e Identifier",
-      "description" : "314e profile of the FHIR Identifier datatype.\n\nThis profile requires Identifier.system whenever\nIdentifier.value is populated.\n\nFor customer-specific or internally defined identifiers,\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample:\nacme-epic-Patient--identifier-MRN-InternalIdentifier",
+      "description" : "314e profile of the FHIR Identifier datatype.\n\nThis profile requires Identifier.system whenever\nIdentifier.value is populated.\n\nFor customer-specific or internally defined identifiers,\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample:\nacme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier",
       "exampleBoolean" : false
     },
     {

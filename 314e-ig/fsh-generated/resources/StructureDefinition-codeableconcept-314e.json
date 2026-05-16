@@ -5,7 +5,7 @@
   "name": "CodeableConcept314e",
   "title": "314e CodeableConcept",
   "status": "active",
-  "description": "314e profile of the FHIR CodeableConcept datatype.\n\nThis profile supports:\n- standard terminology codings\n- optional customer-specific internal codings\n\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-glucose-InternalCode",
+  "description": "314e profile of the FHIR CodeableConcept datatype.\n\nThis profile supports:\n- standard terminology codings\n- optional customer-specific internal codings\n\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -48,13 +48,7 @@
         "id": "CodeableConcept.coding:internalCode.system",
         "path": "CodeableConcept.coding.system",
         "short": "Internal code system identifier with required format",
-        "definition": "Internal customer-specific code system identifier.\n\nAny coding intended to represent an internal coding\nsystem SHALL use the following format:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode",
-        "example": [
-          {
-            "label": "Internal Coding System Example",
-            "valueUri": "acme-epic-Observation-lab-code-Glucose-InternalCode"
-          }
-        ]
+        "definition": "Internal customer-specific code system identifier.\n\nAny coding intended to represent an internal coding\nsystem SHALL use the following format:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode"
       },
       {
         "id": "CodeableConcept.coding:internalCode.code",

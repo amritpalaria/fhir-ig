@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-simplequantity-31
   "name" : "SimpleQuantity314e",
   "title" : "314e SimpleQuantity",
   "status" : "draft",
-  "date" : "2026-05-16T12:58:39+05:30",
+  "date" : "2026-05-16T13:10:22+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

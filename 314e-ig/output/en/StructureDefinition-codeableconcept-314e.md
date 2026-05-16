@@ -10,8 +10,8 @@ This profile supports:
  
 Internal codings are used to preserve customer, EHR, workflow, and source-system-native semantic classifications and source system fidelity. 
 Any coding system intended to represent an internal coding system SHALL follow the required naming convention: 
-[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode 
-Example: acme-epic-Observation-lab-code-glucose-InternalCode 
+[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode 
+Example: acme-epic-Observation-lab-code-Glucose-InternalCode 
 
 **Usages:**
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-codeableconcept-3
   "name" : "CodeableConcept314e",
   "title" : "314e CodeableConcept",
   "status" : "active",
-  "date" : "2026-05-16T12:58:39+05:30",
+  "date" : "2026-05-16T13:10:22+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-codeableconcept-3
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "314e profile of the FHIR CodeableConcept datatype.\n\nThis profile supports:\n- standard terminology codings\n- optional customer-specific internal codings\n\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-glucose-InternalCode",
+  "description" : "314e profile of the FHIR CodeableConcept datatype.\n\nThis profile supports:\n- standard terminology codings\n- optional customer-specific internal codings\n\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "v2",
@@ -104,11 +104,7 @@ Other representations of profile: [CSV](../StructureDefinition-codeableconcept-3
       "id" : "CodeableConcept.coding:internalCode.system",
       "path" : "CodeableConcept.coding.system",
       "short" : "Internal code system identifier with required format",
-      "definition" : "Internal customer-specific code system identifier.\n\nAny coding intended to represent an internal coding\nsystem SHALL use the following format:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode",
-      "example" : [{
-        "label" : "Internal Coding System Example",
-        "valueUri" : "acme-epic-Observation-lab-code-Glucose-InternalCode"
-      }]
+      "definition" : "Internal customer-specific code system identifier.\n\nAny coding intended to represent an internal coding\nsystem SHALL use the following format:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode"
     },
     {
       "id" : "CodeableConcept.coding:internalCode.code",

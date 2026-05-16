@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-16T12:58:39+05:30"/>
+  <date value="2026-05-16T13:10:22+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -521,7 +521,7 @@
         <reference value="StructureDefinition/codeableconcept-314e"/>
       </reference>
       <name value="314e CodeableConcept"/>
-      <description value="314e profile of the FHIR CodeableConcept datatype.&#xA;&#xA;This profile supports:&#xA;- standard terminology codings&#xA;- optional customer-specific internal codings&#xA;&#xA;Internal codings are used to preserve customer, EHR,&#xA;workflow, and source-system-native semantic classifications and source system fidelity.&#xA;&#xA;Any coding system intended to represent an internal coding&#xA;system SHALL follow the required naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode&#xA;&#xA;Example:&#xA;acme-epic-Observation-lab-code-glucose-InternalCode"/>
+      <description value="314e profile of the FHIR CodeableConcept datatype.&#xA;&#xA;This profile supports:&#xA;- standard terminology codings&#xA;- optional customer-specific internal codings&#xA;&#xA;Internal codings are used to preserve customer, EHR,&#xA;workflow, and source-system-native semantic classifications and source system fidelity.&#xA;&#xA;Any coding system intended to represent an internal coding&#xA;system SHALL follow the required naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode&#xA;&#xA;Example:&#xA;acme-epic-Observation-lab-code-Glucose-InternalCode"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -532,7 +532,7 @@
         <reference value="StructureDefinition/coding-314e"/>
       </reference>
       <name value="314e Coding"/>
-      <description value="314e profile of the FHIR Coding datatype.&#xA;&#xA;This profile strengthens semantic interoperability expectations&#xA;around population of system, code, and display.&#xA;&#xA;When display is populated, code SHALL also be populated.&#xA;&#xA;If source data lacks a formal coded value but provides textual&#xA;display content, implementers SHOULD generate a surrogate code&#xA;using the display text transformed as follows:&#xA;- convert all letters to lower case&#xA;- replace spaces with hyphens&#xA;&#xA;Example:&#xA;Display: &quot;Blood Culture&quot;&#xA;Generated code: &quot;blood-culture&quot;&#xA;&#xA;Whenever either code or display is populated, system SHALL&#xA;also be populated."/>
+      <description value="314e profile of the FHIR Coding datatype.&#xA;&#xA;This profile strengthens semantic interoperability expectations&#xA;around population of system, code, and display.&#xA;&#xA;When display is populated, code SHALL also be populated.&#xA;&#xA;If source data lacks a formal coded value but provides textual&#xA;display content, implementers SHOULD generate a surrogate code&#xA;using the display text transformed as follows:&#xA;- convert all letters to lower case&#xA;- replace spaces with hyphens&#xA;&#xA;Example:&#xA;Display: &quot;Blood Culture&quot;&#xA;Generated code: &quot;blood-culture&quot;&#xA;&#xA;Whenever either code or display is populated, system SHALL&#xA;also be populated.&#xA;&#xA;This data type supports:&#xA;- standard terminology codings&#xA;- optional customer-specific internal codings&#xA;Internal codings are used to preserve customer, EHR,&#xA;workflow, and source-system-native semantic classifications and source system fidelity.&#xA;&#xA;Any coding system intended to represent an internal coding&#xA;system SHALL follow the required naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode&#xA;&#xA;Example:&#xA;acme-epic-Observation-lab-code-Glucose-InternalCode"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -543,7 +543,7 @@
         <reference value="StructureDefinition/identifier-314e"/>
       </reference>
       <name value="314e Identifier"/>
-      <description value="314e profile of the FHIR Identifier datatype.&#xA;&#xA;This profile requires Identifier.system whenever&#xA;Identifier.value is populated.&#xA;&#xA;For customer-specific or internally defined identifiers,&#xA;Identifier.system SHALL follow the naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier&#xA;&#xA;Example:&#xA;acme-epic-Patient--identifier-MRN-InternalIdentifier"/>
+      <description value="314e profile of the FHIR Identifier datatype.&#xA;&#xA;This profile requires Identifier.system whenever&#xA;Identifier.value is populated.&#xA;&#xA;For customer-specific or internally defined identifiers,&#xA;Identifier.system SHALL follow the naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier&#xA;&#xA;Example:&#xA;acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
