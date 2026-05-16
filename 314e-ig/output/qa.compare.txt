@@ -1,7 +1,7 @@
 IG314e : Validation Results
 =========================================
 
-err = 44, warn = 30, info = 4
+err = 45, warn = 34, info = 6
 $--
 Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/fhir/ig)
  Build Errors : 0 / 4 / 0
@@ -14,6 +14,8 @@ Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/f
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-314e : 2 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-helperFile : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-tag : 2 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-codeableconcept-314e : 0 / 3 / 3
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-coding-314e : 1 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-quantity-314e : 0 / 3 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-quantity-quantityString : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-quantity-valueString : 2 / 1 / 1
@@ -72,6 +74,17 @@ ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\
 ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/attachment-tag'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-tag.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/attachment-tag) does not match the URL (http://314e.com/fhir/StructureDefinition/attachment-tag). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/attachment-tag'): The Implementation Guide contains no examples for this extension
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-attachment-tag: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/attachment-tag vs http://314e.com/fhir/StructureDefinition/attachment-tag
+== fsh-generated\resources\StructureDefinition-codeableconcept-314e.json ==
+WARNING: StructureDefinition/codeableconcept-314e: StructureDefinition.snapshot.element[7].example[0].value.ofType(uri): No definition could be found for URL value 'acme-epic-Observation-lab-code-Glucose-InternalCode'
+WARNING: StructureDefinition/codeableconcept-314e: StructureDefinition.differential.element[3].example[0].value.ofType(uri): No definition could be found for URL value 'acme-epic-Observation-lab-code-Glucose-InternalCode'
+INFORMATION: StructureDefinition/codeableconcept-314e: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/codeableconcept-314e: StructureDefinition.snapshot.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated\resources\StructureDefinition-coding-314e.json ==
+ERROR: StructureDefinition/coding-314e: StructureDefinition.snapshot.element[3].constraint[1]: Error in constraint 'coding314e-3' with expression 'coding.where(system.exists())
+  .where(system.endsWith('-InternalCode'))
+  .all(system.matches('^[^-]+-[^-]+-[^-]+-[^-]+-[^-]+-[^-]+-InternalCode$'))': Error evaluating FHIRPath expression: The name 'coding' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/uri] (@char 1)
+WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefinition/coding-314e'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated\resources\StructureDefinition-quantity-314e.json ==
 WARNING: StructureDefinition/quantity-314e: StructureDefinition.snapshot.element[7].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/quantity-precision'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0-cibuild (from hl7.fhir.uv.extensions.r4#5.1.0-snapshot1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/quantity-precision' to 'http://hl7.org/fhir/StructureDefinition/quantity-precision|5.2.0'
 INFORMATION: StructureDefinition/quantity-314e: StructureDefinition.snapshot.element[9].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'

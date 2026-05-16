@@ -64,6 +64,22 @@
     "endLine": 28
   },
   {
+    "outputFile": "StructureDefinition-codeableconcept-314e.json",
+    "fshName": "CodeableConcept314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\codeableconcept-314e.fsh",
+    "startLine": 1,
+    "endLine": 96
+  },
+  {
+    "outputFile": "StructureDefinition-coding-314e.json",
+    "fshName": "Coding314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\coding-314e.fsh",
+    "startLine": 37,
+    "endLine": 102
+  },
+  {
     "outputFile": "StructureDefinition-quantity-314e.json",
     "fshName": "Quantity314e",
     "fshType": "Profile",

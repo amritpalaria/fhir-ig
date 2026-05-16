@@ -146,6 +146,20 @@
   "name" : "IG314e"
 },
 {
+  "id" : "codeableconcept-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e",
+  "version" : "1.0.0",
+  "name" : "CodeableConcept314e"
+},
+{
+  "id" : "coding-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/coding-314e",
+  "version" : "1.0.0",
+  "name" : "Coding314e"
+},
+{
   "id" : "quantity-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/quantity-314e",

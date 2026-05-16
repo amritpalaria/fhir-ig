@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-16T10:41:11+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T12:18:43+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -1445,6 +1445,48 @@
        ] ;
        fhir:name [ fhir:v "314e Broad Procedure Categories" ] ;
        fhir:description [ fhir:v "Top-level operational categories for procedures\nand service requests." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/codeableconcept-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e CodeableConcept" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR CodeableConcept datatype.\n\nThis profile supports:\n- standard terminology codings\n- optional customer-specific internal codings\n\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-glucose-InternalCode" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/coding-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/coding-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Coding" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR Coding datatype.\n\nThis profile strengthens semantic interoperability expectations\naround population of system, code, and display.\n\nWhen display is populated, code SHALL also be populated.\n\nIf source data lacks a formal coded value but provides textual\ndisplay content, implementers SHOULD generate a surrogate code\nusing the display text transformed as follows:\n- convert all letters to lower case\n- replace spaces with hyphens\n\nExample:\nDisplay: \"Blood Culture\"\nGenerated code: \"blood-culture\"\n\nWhenever either code or display is populated, system SHALL\nalso be populated." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
