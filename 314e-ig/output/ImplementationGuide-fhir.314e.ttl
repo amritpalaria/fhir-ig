@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-16T10:04:42+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T10:41:11+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -1444,7 +1444,7 @@
          fhir:reference [ fhir:v "ValueSet/procedure-category-broad-314e" ]
        ] ;
        fhir:name [ fhir:v "314e Broad Procedure Categories" ] ;
-       fhir:description [ fhir:v "Broad top-level procedure categories." ] ;
+       fhir:description [ fhir:v "Top-level operational categories for procedures\nand service requests." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1592,27 +1592,6 @@
        ] ;
        fhir:name [ fhir:v "314e ServiceRequest" ] ;
        fhir:description [ fhir:v "A 314e-constrained ServiceRequest profile derived from\nQI-Core ServiceRequest.\n\nThis profile requires classification of the requested service\nusing standardized high-level service categories and uses\n314e datatype profiles where applicable." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/ValueSet/servicerequest-category-314e> ;
-         fhir:reference [ fhir:v "ValueSet/servicerequest-category-314e" ]
-       ] ;
-       fhir:name [ fhir:v "314e ServiceRequest Category ValueSet" ] ;
-       fhir:description [ fhir:v "Required high-level category classifications for 314e\nServiceRequest resources." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

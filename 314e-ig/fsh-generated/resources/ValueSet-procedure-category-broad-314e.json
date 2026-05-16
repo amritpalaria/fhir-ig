@@ -4,87 +4,44 @@
   "name": "ProcedureCategoryBroad314eVS",
   "id": "procedure-category-broad-314e",
   "title": "314e Broad Procedure Categories",
-  "description": "Broad top-level procedure categories.",
+  "description": "Top-level operational categories for procedures\nand service requests.",
   "url": "http://314e.com/fhir/ValueSet/procedure-category-broad-314e",
   "compose": {
     "include": [
       {
         "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-        "filter": [
+        "concept": [
           {
-            "property": "concept",
-            "op": "is-a",
-            "value": "LAB"
-          }
-        ]
-      },
-      {
-        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-        "filter": [
+            "code": "LAB",
+            "display": "Laboratory Medicine (In-Vitro)"
+          },
           {
-            "property": "concept",
-            "op": "is-a",
-            "value": "IMG"
-          }
-        ]
-      },
-      {
-        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-        "filter": [
+            "code": "IMG",
+            "display": "Diagnostic Imaging (Anatomical)"
+          },
           {
-            "property": "concept",
-            "op": "is-a",
-            "value": "FNP"
-          }
-        ]
-      },
-      {
-        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-        "filter": [
+            "code": "FNP",
+            "display": "Functional & Physiological Studies"
+          },
           {
-            "property": "concept",
-            "op": "is-a",
-            "value": "SUR"
-          }
-        ]
-      },
-      {
-        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-        "filter": [
+            "code": "SUR",
+            "display": "Invasive & Surgical Procedures"
+          },
           {
-            "property": "concept",
-            "op": "is-a",
-            "value": "TIN"
-          }
-        ]
-      },
-      {
-        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-        "filter": [
+            "code": "TIN",
+            "display": "Therapeutics & Infusion Services"
+          },
           {
-            "property": "concept",
-            "op": "is-a",
-            "value": "RHB"
-          }
-        ]
-      },
-      {
-        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-        "filter": [
+            "code": "RHB",
+            "display": "Rehabilitative, Supportive & Physical Medicine"
+          },
           {
-            "property": "concept",
-            "op": "is-a",
-            "value": "CBE"
-          }
-        ]
-      },
-      {
-        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-        "filter": [
+            "code": "CBE",
+            "display": "Cognitive, Behavioral & Education Services"
+          },
           {
-            "property": "concept",
-            "op": "is-a",
-            "value": "CNS"
+            "code": "CNS",
+            "display": "Clinical Consultations & Care Coordination"
           }
         ]
       }

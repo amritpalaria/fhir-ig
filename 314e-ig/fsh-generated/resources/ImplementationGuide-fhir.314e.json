@@ -53,7 +53,7 @@
           "reference": "ValueSet/procedure-category-broad-314e"
         },
         "name": "314e Broad Procedure Categories",
-        "description": "Broad top-level procedure categories.",
+        "description": "Top-level operational categories for procedures\nand service requests.",
         "exampleBoolean": false
       },
       {
@@ -110,14 +110,6 @@
         },
         "name": "314e ServiceRequest",
         "description": "A 314e-constrained ServiceRequest profile derived from\nQI-Core ServiceRequest.\n\nThis profile requires classification of the requested service\nusing standardized high-level service categories and uses\n314e datatype profiles where applicable.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/servicerequest-category-314e"
-        },
-        "name": "314e ServiceRequest Category ValueSet",
-        "description": "Required high-level category classifications for 314e\nServiceRequest resources.",
         "exampleBoolean": false
       },
       {

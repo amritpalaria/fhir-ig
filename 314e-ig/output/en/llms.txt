@@ -19,7 +19,6 @@
 * [Observation Tag ValueSet](ValueSet-observation-tag.md)
 * [314e Broad Procedure Categories](ValueSet-procedure-category-broad-314e.md)
 * [314e Procedure Subcategories](ValueSet-procedure-category-subcategory-314e.md)
-* [314e ServiceRequest Category ValueSet](ValueSet-servicerequest-category-314e.md)
 
 ### Complex-type Profiles
 

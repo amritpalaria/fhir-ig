@@ -3,7 +3,7 @@
 ## ValueSet: 314e Broad Procedure Categories 
 
  
-Broad top-level procedure categories. 
+Top-level operational categories for procedures and service requests. 
 
  **References** 
 
@@ -32,7 +32,7 @@ Broad top-level procedure categories.
   "name" : "ProcedureCategoryBroad314eVS",
   "title" : "314e Broad Procedure Categories",
   "status" : "draft",
-  "date" : "2026-05-16T10:04:42+05:30",
+  "date" : "2026-05-16T10:41:11+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -41,70 +41,41 @@ Broad top-level procedure categories.
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "Broad top-level procedure categories.",
+  "description" : "Top-level operational categories for procedures\nand service requests.",
   "compose" : {
     "include" : [{
       "system" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "LAB"
-      }]
-    },
-    {
-      "system" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "IMG"
-      }]
-    },
-    {
-      "system" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "FNP"
-      }]
-    },
-    {
-      "system" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "SUR"
-      }]
-    },
-    {
-      "system" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "TIN"
-      }]
-    },
-    {
-      "system" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "RHB"
-      }]
-    },
-    {
-      "system" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "CBE"
-      }]
-    },
-    {
-      "system" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "CNS"
+      "concept" : [{
+        "code" : "LAB",
+        "display" : "Laboratory Medicine (In-Vitro)"
+      },
+      {
+        "code" : "IMG",
+        "display" : "Diagnostic Imaging (Anatomical)"
+      },
+      {
+        "code" : "FNP",
+        "display" : "Functional & Physiological Studies"
+      },
+      {
+        "code" : "SUR",
+        "display" : "Invasive & Surgical Procedures"
+      },
+      {
+        "code" : "TIN",
+        "display" : "Therapeutics & Infusion Services"
+      },
+      {
+        "code" : "RHB",
+        "display" : "Rehabilitative, Supportive & Physical Medicine"
+      },
+      {
+        "code" : "CBE",
+        "display" : "Cognitive, Behavioral & Education Services"
+      },
+      {
+        "code" : "CNS",
+        "display" : "Clinical Consultations & Care Coordination"
       }]
     }]
   }

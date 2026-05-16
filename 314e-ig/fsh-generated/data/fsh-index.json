@@ -21,7 +21,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems\\procedure-category-cs.fsh",
     "startLine": 1,
-    "endLine": 105
+    "endLine": 177
   },
   {
     "outputFile": "StructureDefinition-annotation-314e.json",
@@ -155,9 +155,9 @@
     "outputFile": "ValueSet-procedure-category-broad-314e.json",
     "fshName": "ProcedureCategoryBroad314eVS",
     "fshType": "ValueSet",
-    "fshFile": "valuesets\\procedure-category-vs.fsh",
+    "fshFile": "valuesets\\procedure-category-broad-vs.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 33
   },
   {
     "outputFile": "ValueSet-procedure-category-subcategory-314e.json",
@@ -166,13 +166,5 @@
     "fshFile": "valuesets\\procedure-subcategory-vs.fsh",
     "startLine": 1,
     "endLine": 33
-  },
-  {
-    "outputFile": "ValueSet-servicerequest-category-314e.json",
-    "fshName": "ServiceRequestCategory314eVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets\\servicerequest-category-vs.fsh",
-    "startLine": 1,
-    "endLine": 42
   }
 ]

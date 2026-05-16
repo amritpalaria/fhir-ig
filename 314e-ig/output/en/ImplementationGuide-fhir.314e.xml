@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-16T10:04:42+05:30"/>
+  <date value="2026-05-16T10:41:11+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -510,7 +510,7 @@
         <reference value="ValueSet/procedure-category-broad-314e"/>
       </reference>
       <name value="314e Broad Procedure Categories"/>
-      <description value="Broad top-level procedure categories."/>
+      <description value="Top-level operational categories for procedures&#xA;and service requests."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -588,17 +588,6 @@
       </reference>
       <name value="314e ServiceRequest"/>
       <description value="A 314e-constrained ServiceRequest profile derived from&#xA;QI-Core ServiceRequest.&#xA;&#xA;This profile requires classification of the requested service&#xA;using standardized high-level service categories and uses&#xA;314e datatype profiles where applicable."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/servicerequest-category-314e"/>
-      </reference>
-      <name value="314e ServiceRequest Category ValueSet"/>
-      <description value="Required high-level category classifications for 314e&#xA;ServiceRequest resources."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

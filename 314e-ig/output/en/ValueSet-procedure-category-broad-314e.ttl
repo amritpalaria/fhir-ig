@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "procedure-category-broad-314e"] ; # 
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet procedure-category-broad-314e</b></p><a name=\"procedure-category-broad-314e\"> </a><a name=\"hcprocedure-category-broad-314e\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where concept  is-a <a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-LAB\">LAB</a></li><li>Include codes from<a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where concept  is-a <a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-IMG\">IMG</a></li><li>Include codes from<a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where concept  is-a <a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-FNP\">FNP</a></li><li>Include codes from<a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where concept  is-a <a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-SUR\">SUR</a></li><li>Include codes from<a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where concept  is-a <a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-TIN\">TIN</a></li><li>Include codes from<a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where concept  is-a <a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-RHB\">RHB</a></li><li>Include codes from<a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where concept  is-a <a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-CBE\">CBE</a></li><li>Include codes from<a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span> where concept  is-a <a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-CNS\">CNS</a></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet procedure-category-broad-314e</b></p><a name=\"procedure-category-broad-314e\"> </a><a name=\"hcprocedure-category-broad-314e\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-LAB\">LAB</a></td><td>Laboratory Medicine (In-Vitro)</td><td>Laboratory diagnostic services</td></tr><tr><td><a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-IMG\">IMG</a></td><td>Diagnostic Imaging (Anatomical)</td><td>Anatomical imaging procedures</td></tr><tr><td><a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-FNP\">FNP</a></td><td>Functional &amp; Physiological Studies</td><td>Functional and physiological diagnostic procedures</td></tr><tr><td><a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-SUR\">SUR</a></td><td>Invasive &amp; Surgical Procedures</td><td>Invasive and surgical clinical procedures</td></tr><tr><td><a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-TIN\">TIN</a></td><td>Therapeutics &amp; Infusion Services</td><td>Therapeutic and infusion-based treatment services</td></tr><tr><td><a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-RHB\">RHB</a></td><td>Rehabilitative, Supportive &amp; Physical Medicine</td><td>Rehabilitative and supportive therapeutic services</td></tr><tr><td><a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-CBE\">CBE</a></td><td>Cognitive, Behavioral &amp; Education Services</td><td>Cognitive, behavioral, counseling, and educational services</td></tr><tr><td><a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-CNS\">CNS</a></td><td>Clinical Consultations &amp; Care Coordination</td><td>Consultation, coordination, referral, and transitional care services</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://314e.com/fhir/ValueSet/procedure-category-broad-314e"^^xsd:anyURI ;
@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "ProcedureCategoryBroad314eVS"] ; # 
   fhir:title [ fhir:v "314e Broad Procedure Categories"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-16T10:04:42+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T10:41:11+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -31,87 +31,37 @@
        fhir:value [ fhir:v "http://314e.com" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Broad top-level procedure categories."] ; # 
+  fhir:description [ fhir:v "Top-level operational categories for procedures\nand service requests."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [
          fhir:v "http://314e.com/fhir/CodeSystem/procedure-category-314e"^^xsd:anyURI ;
          fhir:l <http://314e.com/fhir/CodeSystem/procedure-category-314e>
        ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "LAB" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://314e.com/fhir/CodeSystem/procedure-category-314e"^^xsd:anyURI ;
-         fhir:l <http://314e.com/fhir/CodeSystem/procedure-category-314e>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "IMG" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://314e.com/fhir/CodeSystem/procedure-category-314e"^^xsd:anyURI ;
-         fhir:l <http://314e.com/fhir/CodeSystem/procedure-category-314e>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "FNP" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://314e.com/fhir/CodeSystem/procedure-category-314e"^^xsd:anyURI ;
-         fhir:l <http://314e.com/fhir/CodeSystem/procedure-category-314e>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "SUR" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://314e.com/fhir/CodeSystem/procedure-category-314e"^^xsd:anyURI ;
-         fhir:l <http://314e.com/fhir/CodeSystem/procedure-category-314e>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "TIN" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://314e.com/fhir/CodeSystem/procedure-category-314e"^^xsd:anyURI ;
-         fhir:l <http://314e.com/fhir/CodeSystem/procedure-category-314e>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "RHB" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://314e.com/fhir/CodeSystem/procedure-category-314e"^^xsd:anyURI ;
-         fhir:l <http://314e.com/fhir/CodeSystem/procedure-category-314e>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "CBE" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://314e.com/fhir/CodeSystem/procedure-category-314e"^^xsd:anyURI ;
-         fhir:l <http://314e.com/fhir/CodeSystem/procedure-category-314e>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "concept" ] ;
-         fhir:op [ fhir:v "is-a" ] ;
-         fhir:value [ fhir:v "CNS" ]
+       fhir:concept ( [
+         fhir:code [ fhir:v "LAB" ] ;
+         fhir:display [ fhir:v "Laboratory Medicine (In-Vitro)" ]
+       ] [
+         fhir:code [ fhir:v "IMG" ] ;
+         fhir:display [ fhir:v "Diagnostic Imaging (Anatomical)" ]
+       ] [
+         fhir:code [ fhir:v "FNP" ] ;
+         fhir:display [ fhir:v "Functional & Physiological Studies" ]
+       ] [
+         fhir:code [ fhir:v "SUR" ] ;
+         fhir:display [ fhir:v "Invasive & Surgical Procedures" ]
+       ] [
+         fhir:code [ fhir:v "TIN" ] ;
+         fhir:display [ fhir:v "Therapeutics & Infusion Services" ]
+       ] [
+         fhir:code [ fhir:v "RHB" ] ;
+         fhir:display [ fhir:v "Rehabilitative, Supportive & Physical Medicine" ]
+       ] [
+         fhir:code [ fhir:v "CBE" ] ;
+         fhir:display [ fhir:v "Cognitive, Behavioral & Education Services" ]
+       ] [
+         fhir:code [ fhir:v "CNS" ] ;
+         fhir:display [ fhir:v "Clinical Consultations & Care Coordination" ]
        ] )
      ] )
   ] . # 

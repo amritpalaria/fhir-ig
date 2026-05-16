@@ -8,7 +8,6 @@
 [Ratio314e]: StructureDefinition-ratio-314e.html
 [Reference314e]: StructureDefinition-reference-314e.html
 [ServiceRequest314e]: StructureDefinition-servicerequest-314e.html
-[ServiceRequestCategory314eVS]: ValueSet-servicerequest-category-314e.html
 [SimpleQuantity314e]: StructureDefinition-simplequantity-314e.html
 [AnnotationAttachment]: StructureDefinition-annotation-attachment.html
 [AttachmentHelperFile]: StructureDefinition-attachment-helperFile.html

@@ -1,9 +1,9 @@
 IG314e : Validation Results
 =========================================
 
-err = 47, warn = 31, info = 7
+err = 44, warn = 30, info = 4
 IG Publisher Version: 2.2.7
-Generated Sat May 16 10:08:14 IST 2026. FHIR version 4.0.1 for fhir.314e#1.0.0 (canonical = http://314e.com/fhir/ig)
+Generated Sat May 16 10:44:35 IST 2026. FHIR version 4.0.1 for fhir.314e#1.0.0 (canonical = http://314e.com/fhir/ig)
  Build Errors : 0 / 4 / 0
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-attachment-tag : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-observation-tag : 2 / 1 / 1
@@ -25,9 +25,8 @@ Generated Sat May 16 10:08:14 IST 2026. FHIR version 4.0.1 for fhir.314e#1.0.0 (
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-simplequantity-314e : 2 / 3 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-attachment-tag : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-observation-tag : 2 / 1 / 1
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-broad-314e : 2 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-broad-314e : 2 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-subcategory-314e : 2 / 1 / 1
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-servicerequest-category-314e : 3 / 1 / 5
 </table>
 == n/a ==
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -123,18 +122,10 @@ WARNING: ValueSet/observation-tag: ValueSet: Published value sets SHOULD conform
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-observation-tag: URL Mismatch http://314e.com/fhir/ig/ValueSet/observation-tag vs http://314e.com/fhir/ValueSet/observation-tag
 == fsh-generated\resources\ValueSet-procedure-category-broad-314e.json ==
 ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/procedure-category-broad-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-broad-314e.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/procedure-category-broad-314e) does not match the URL (http://314e.com/fhir/ValueSet/procedure-category-broad-314e). Use the special-url parameter if you really mean for it not to match
+INFORMATION: ValueSet/procedure-category-broad-314e: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Functional & Physiological Studies' for http://314e.com/fhir/CodeSystem/procedure-category-314e#FNP. Valid display is 'Functional & Physiological Studies (Non-Invasive)' (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
 WARNING: ValueSet/procedure-category-broad-314e: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-broad-314e: URL Mismatch http://314e.com/fhir/ig/ValueSet/procedure-category-broad-314e vs http://314e.com/fhir/ValueSet/procedure-category-broad-314e
 == fsh-generated\resources\ValueSet-procedure-category-subcategory-314e.json ==
 ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-subcategory-314e.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/procedure-category-subcategory-314e) does not match the URL (http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/procedure-category-subcategory-314e: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-subcategory-314e: URL Mismatch http://314e.com/fhir/ig/ValueSet/procedure-category-subcategory-314e vs http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e
-== fsh-generated\resources\ValueSet-servicerequest-category-314e.json ==
-ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/servicerequest-category-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-servicerequest-category-314e.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/servicerequest-category-314e) does not match the URL (http://314e.com/fhir/ValueSet/servicerequest-category-314e). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://terminology.hl7.org/CodeSystem/v2-0074 to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#6.5.0), 3.0.0 (hl7.terminology.r4#7.1.0)
-INFORMATION: ValueSet/servicerequest-category-314e: ValueSet.compose.include[1].concept[1]: Wrong Display Name 'Physiological study' for http://snomed.info/sct#252416005. Valid display is one of 2 choices: 'Histopathology test' (en) or 'Histopathology test (procedure)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-INFORMATION: ValueSet/servicerequest-category-314e: ValueSet.compose.include[1].concept[4]: Wrong Display Name 'Rehabilitation procedure' for http://snomed.info/sct#385805005. Valid display is one of 6 choices: 'Diabetic care education (regime/therapy)' (en), 'Diabetic care education' (en), 'Teach diabetic care' (en), 'Diabetic care education (procedure)' (en), 'Health education - diabetes (regime/therapy)' (en) or 'Health education - diabetes' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-INFORMATION: ValueSet/servicerequest-category-314e: ValueSet.compose.include[1].concept[5]: Wrong Display Name 'Patient education and counseling' for http://snomed.info/sct#311401005. Valid display is one of 3 choices: 'Patient education' (en), 'Patient education (procedure)' (en) or 'Patient education (regime/therapy)' (en) (for the language(s) 'en, en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-ERROR: ValueSet/servicerequest-category-314e: ValueSet.compose.include[1].concept[6]: The code '409035000' is not valid in the system http://snomed.info/sct (Unknown code '409035000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-WARNING: ValueSet/servicerequest-category-314e: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-servicerequest-category-314e: URL Mismatch http://314e.com/fhir/ig/ValueSet/servicerequest-category-314e vs http://314e.com/fhir/ValueSet/servicerequest-category-314e

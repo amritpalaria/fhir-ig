@@ -139,13 +139,6 @@
   "name" : "ProcedureCategorySubcategory314eVS"
 },
 {
-  "id" : "servicerequest-category-314e",
-  "type" : "ValueSet",
-  "url" : "http://314e.com/fhir/ValueSet/servicerequest-category-314e",
-  "version" : "1.0.0",
-  "name" : "ServiceRequestCategory314eVS"
-},
-{
   "id" : "fhir.314e",
   "type" : "ImplementationGuide",
   "url" : "http://314e.com/fhir/ig/ImplementationGuide/fhir.314e",

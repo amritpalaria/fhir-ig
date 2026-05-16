@@ -12,7 +12,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem procedure-category-314e</b></p><a name=\"procedure-category-314e\"> </a><a name=\"hcprocedure-category-314e\"> </a><p>This case-sensitive code system <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">LAB<a name=\"procedure-category-314e-LAB\"> </a></td><td>Laboratory Medicine (In-Vitro)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  CHEM<a name=\"procedure-category-314e-CHEM\"> </a></td><td>Hematology &amp; Chemistry</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PATH<a name=\"procedure-category-314e-PATH\"> </a></td><td>Pathology &amp; Cytology</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MICV<a name=\"procedure-category-314e-MICV\"> </a></td><td>Microbiology &amp; Virology</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  BBTM<a name=\"procedure-category-314e-BBTM\"> </a></td><td>Transfusion Medicine / Blood Bank</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  GEND<a name=\"procedure-category-314e-GEND\"> </a></td><td>Molecular Diagnostics &amp; Genetics</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">IMG<a name=\"procedure-category-314e-IMG\"> </a></td><td>Diagnostic Imaging (Anatomical)</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  RRXG<a name=\"procedure-category-314e-RRXG\"> </a></td><td>Routine Radiology</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ACSI<a name=\"procedure-category-314e-ACSI\"> </a></td><td>Advanced Cross-Sectional</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  CATH<a name=\"procedure-category-314e-CATH\"> </a></td><td>Interventional Radiology &amp; Cath Lab Imaging</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NUCM<a name=\"procedure-category-314e-NUCM\"> </a></td><td>Nuclear Medicine</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MEDP<a name=\"procedure-category-314e-MEDP\"> </a></td><td>Medical Photography</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">FNP<a name=\"procedure-category-314e-FNP\"> </a></td><td>Functional &amp; Physiological Studies</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  CARD<a name=\"procedure-category-314e-CARD\"> </a></td><td>Cardiology</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NEUS<a name=\"procedure-category-314e-NEUS\"> </a></td><td>Neurology &amp; Sleep</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PULM<a name=\"procedure-category-314e-PULM\"> </a></td><td>Pulmonary</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  AUDV<a name=\"procedure-category-314e-AUDV\"> </a></td><td>Audiology &amp; Vestibular</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  GIFN<a name=\"procedure-category-314e-GIFN\"> </a></td><td>Gastroenterology Functional</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">SUR<a name=\"procedure-category-314e-SUR\"> </a></td><td>Invasive &amp; Surgical Procedures</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ORSU<a name=\"procedure-category-314e-ORSU\"> </a></td><td>Operative &amp; Major Surgical Procedures</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ENDO<a name=\"procedure-category-314e-ENDO\"> </a></td><td>Endoscopic Procedures</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MSUR<a name=\"procedure-category-314e-MSUR\"> </a></td><td>Bedside &amp; Minor Invasive Procedures</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">TIN<a name=\"procedure-category-314e-TIN\"> </a></td><td>Therapeutics &amp; Infusion Services</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  IONC<a name=\"procedure-category-314e-IONC\"> </a></td><td>Infusion Oncology</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  RONC<a name=\"procedure-category-314e-RONC\"> </a></td><td>Radiation Oncology</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  BLDT<a name=\"procedure-category-314e-BLDT\"> </a></td><td>Renal &amp; Blood Therapies</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  INFU<a name=\"procedure-category-314e-INFU\"> </a></td><td>Specialty Infusions</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MEDA<a name=\"procedure-category-314e-MEDA\"> </a></td><td>Bedside &amp; General Medication Administration</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">RHB<a name=\"procedure-category-314e-RHB\"> </a></td><td>Rehabilitative, Supportive &amp; Physical Medicine</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PHYT<a name=\"procedure-category-314e-PHYT\"> </a></td><td>Physical Therapy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  OCCT<a name=\"procedure-category-314e-OCCT\"> </a></td><td>Occupational Therapy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  SPLP<a name=\"procedure-category-314e-SPLP\"> </a></td><td>Speech-Language Pathology</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  RSPT<a name=\"procedure-category-314e-RSPT\"> </a></td><td>Respiratory Therapy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PALC<a name=\"procedure-category-314e-PALC\"> </a></td><td>Palliative &amp; Comfort Care Regimens</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">CBE<a name=\"procedure-category-314e-CBE\"> </a></td><td>Cognitive, Behavioral &amp; Education Services</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  WELL<a name=\"procedure-category-314e-WELL\"> </a></td><td>Preventive &amp; Wellness Education</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PSYC<a name=\"procedure-category-314e-PSYC\"> </a></td><td>Psychological &amp; Mental Health Counseling</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  GENC<a name=\"procedure-category-314e-GENC\"> </a></td><td>Genetic &amp; Familial Counseling</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MEDC<a name=\"procedure-category-314e-MEDC\"> </a></td><td>Medication and Device Compliance Education</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">CNS<a name=\"procedure-category-314e-CNS\"> </a></td><td>Clinical Consultations &amp; Care Coordination</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  SPEC<a name=\"procedure-category-314e-SPEC\"> </a></td><td>Specialist Consultations &amp; Referrals</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NURS<a name=\"procedure-category-314e-NURS\"> </a></td><td>Nursing &amp; Bedside Care Orders</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  SDOH<a name=\"procedure-category-314e-SDOH\"> </a></td><td>Social &amp; Community Care Services</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  DIST<a name=\"procedure-category-314e-DIST\"> </a></td><td>Discharge &amp; Transitional Care Management</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem procedure-category-314e</b></p><a name=\"procedure-category-314e\"> </a><a name=\"hcprocedure-category-314e\"> </a><p>This case-sensitive code system <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">LAB<a name=\"procedure-category-314e-LAB\"> </a></td><td>Laboratory Medicine (In-Vitro)</td><td>Laboratory diagnostic services</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  CHEM<a name=\"procedure-category-314e-CHEM\"> </a></td><td>Hematology &amp; Chemistry</td><td>Blood counts, routine panels</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PATH<a name=\"procedure-category-314e-PATH\"> </a></td><td>Pathology &amp; Cytology</td><td>Biopsies, cell blocks, smears</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MICV<a name=\"procedure-category-314e-MICV\"> </a></td><td>Microbiology &amp; Virology</td><td>Cultures, PCR tests, stains</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  BBTM<a name=\"procedure-category-314e-BBTM\"> </a></td><td>Transfusion Medicine / Blood Bank</td><td>Cross-matches, antibody screens</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  GEND<a name=\"procedure-category-314e-GEND\"> </a></td><td>Molecular Diagnostics &amp; Genetics</td><td>Gene sequencing, karyotyping</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">IMG<a name=\"procedure-category-314e-IMG\"> </a></td><td>Diagnostic Imaging (Anatomical)</td><td>Anatomical imaging procedures</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  RRXG<a name=\"procedure-category-314e-RRXG\"> </a></td><td>Routine Radiology</td><td>Plain X-Rays, Mammography</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ACSI<a name=\"procedure-category-314e-ACSI\"> </a></td><td>Advanced Cross-Sectional</td><td>CT Scans, MRIs</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  CATH<a name=\"procedure-category-314e-CATH\"> </a></td><td>Interventional Radiology &amp; Cath Lab Imaging</td><td>Angiography, Fluoroscopy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NUCM<a name=\"procedure-category-314e-NUCM\"> </a></td><td>Nuclear Medicine</td><td>PET Scans, SPECT Scans, Bone Scintigraphy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MEDP<a name=\"procedure-category-314e-MEDP\"> </a></td><td>Medical Photography</td><td>Dermatology, Ophthalmology retinal photos</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">FNP<a name=\"procedure-category-314e-FNP\"> </a></td><td>Functional &amp; Physiological Studies (Non-Invasive)</td><td>Functional and physiological diagnostic procedures</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  CARD<a name=\"procedure-category-314e-CARD\"> </a></td><td>Cardiology</td><td>EKGs, Holter monitors, Stress tests</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NEUS<a name=\"procedure-category-314e-NEUS\"> </a></td><td>Neurology &amp; Sleep</td><td>EEGs, EMGs, Polysomnography</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PULM<a name=\"procedure-category-314e-PULM\"> </a></td><td>Pulmonary</td><td>PFTs, Spirometry, Blood Gas tracings</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  AUDV<a name=\"procedure-category-314e-AUDV\"> </a></td><td>Audiology &amp; Vestibular</td><td>Audiograms, Tympanometry, VNG balance tests</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  GIFN<a name=\"procedure-category-314e-GIFN\"> </a></td><td>Gastroenterology Functional</td><td>Manometry, 24-hr pH monitoring</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">SUR<a name=\"procedure-category-314e-SUR\"> </a></td><td>Invasive &amp; Surgical Procedures</td><td>Invasive and surgical clinical procedures</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ORSU<a name=\"procedure-category-314e-ORSU\"> </a></td><td>Operative &amp; Major Surgical Procedures</td><td>OR surgeries, day surgeries</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ENDO<a name=\"procedure-category-314e-ENDO\"> </a></td><td>Endoscopic Procedures</td><td>GI scopes, Bronchoscopy, Cystoscopy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MSUR<a name=\"procedure-category-314e-MSUR\"> </a></td><td>Bedside &amp; Minor Invasive Procedures</td><td>Lumbar punctures, Paracentesis</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">TIN<a name=\"procedure-category-314e-TIN\"> </a></td><td>Therapeutics &amp; Infusion Services</td><td>Therapeutic and infusion-based treatment services</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  IONC<a name=\"procedure-category-314e-IONC\"> </a></td><td>Infusion Oncology</td><td>Chemotherapy, Immunotherapy biologics</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  RONC<a name=\"procedure-category-314e-RONC\"> </a></td><td>Radiation Oncology</td><td>External beam radiation, Brachytherapy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  BLDT<a name=\"procedure-category-314e-BLDT\"> </a></td><td>Renal &amp; Blood Therapies</td><td>Hemodialysis, Peritoneal dialysis, Apheresis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  INFU<a name=\"procedure-category-314e-INFU\"> </a></td><td>Specialty Infusions</td><td>IV Antibiotics, Iron infusions, Pain pumps</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MEDA<a name=\"procedure-category-314e-MEDA\"> </a></td><td>Bedside &amp; General Medication Administration</td><td>General medication administration activities</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">RHB<a name=\"procedure-category-314e-RHB\"> </a></td><td>Rehabilitative, Supportive &amp; Physical Medicine</td><td>Rehabilitative and supportive therapeutic services</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PHYT<a name=\"procedure-category-314e-PHYT\"> </a></td><td>Physical Therapy</td><td>Gross motor, mobility, wound care</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  OCCT<a name=\"procedure-category-314e-OCCT\"> </a></td><td>Occupational Therapy</td><td>Fine motor, cognitive/ADL adaptations</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  SPLP<a name=\"procedure-category-314e-SPLP\"> </a></td><td>Speech-Language Pathology</td><td>Swallowing studies, cognitive speech</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  RSPT<a name=\"procedure-category-314e-RSPT\"> </a></td><td>Respiratory Therapy</td><td>Ventilator weaning, chest physiotherapy</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PALC<a name=\"procedure-category-314e-PALC\"> </a></td><td>Palliative &amp; Comfort Care Regimens</td><td>Symptom optimization, end-of-life care</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">CBE<a name=\"procedure-category-314e-CBE\"> </a></td><td>Cognitive, Behavioral &amp; Education Services</td><td>Cognitive, behavioral, counseling, and educational services</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  WELL<a name=\"procedure-category-314e-WELL\"> </a></td><td>Preventive &amp; Wellness Education</td><td>Diet tracking, smoking cessation, lactation support</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PSYC<a name=\"procedure-category-314e-PSYC\"> </a></td><td>Psychological &amp; Mental Health Counseling</td><td>Psychotherapy, grief counseling, CBT</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  GENC<a name=\"procedure-category-314e-GENC\"> </a></td><td>Genetic &amp; Familial Counseling</td><td>Pre-implantation counseling, oncology risk mapping</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  MEDC<a name=\"procedure-category-314e-MEDC\"> </a></td><td>Medication and Device Compliance Education</td><td>Inhaler mechanics training, anticoagulant compliance</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">CNS<a name=\"procedure-category-314e-CNS\"> </a></td><td>Clinical Consultations &amp; Care Coordination</td><td>Consultation, coordination, referral, and transitional care services</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  SPEC<a name=\"procedure-category-314e-SPEC\"> </a></td><td>Specialist Consultations &amp; Referrals</td><td>Referral and specialist consultation workflows</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NURS<a name=\"procedure-category-314e-NURS\"> </a></td><td>Nursing &amp; Bedside Care Orders</td><td>Non-surgical clinical tasks executed by nursing staff</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  SDOH<a name=\"procedure-category-314e-SDOH\"> </a></td><td>Social &amp; Community Care Services</td><td>SDOH referrals including housing and food security</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  DIST<a name=\"procedure-category-314e-DIST\"> </a></td><td>Discharge &amp; Transitional Care Management</td><td>Discharge planning and transitional care coordination</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://314e.com/fhir/CodeSystem/procedure-category-314e"^^xsd:anyURI ;
@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "ProcedureCategory314eCS"] ; # 
   fhir:title [ fhir:v "314e Procedure Category CodeSystem"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-16T10:04:42+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T10:41:11+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -39,142 +39,186 @@
   fhir:concept ( [
      fhir:code [ fhir:v "LAB" ] ;
      fhir:display [ fhir:v "Laboratory Medicine (In-Vitro)" ] ;
+     fhir:definition [ fhir:v "Laboratory diagnostic services" ] ;
      fhir:concept ( [
        fhir:code [ fhir:v "CHEM" ] ;
-       fhir:display [ fhir:v "Hematology & Chemistry" ]
+       fhir:display [ fhir:v "Hematology & Chemistry" ] ;
+       fhir:definition [ fhir:v "Blood counts, routine panels" ]
      ] [
        fhir:code [ fhir:v "PATH" ] ;
-       fhir:display [ fhir:v "Pathology & Cytology" ]
+       fhir:display [ fhir:v "Pathology & Cytology" ] ;
+       fhir:definition [ fhir:v "Biopsies, cell blocks, smears" ]
      ] [
        fhir:code [ fhir:v "MICV" ] ;
-       fhir:display [ fhir:v "Microbiology & Virology" ]
+       fhir:display [ fhir:v "Microbiology & Virology" ] ;
+       fhir:definition [ fhir:v "Cultures, PCR tests, stains" ]
      ] [
        fhir:code [ fhir:v "BBTM" ] ;
-       fhir:display [ fhir:v "Transfusion Medicine / Blood Bank" ]
+       fhir:display [ fhir:v "Transfusion Medicine / Blood Bank" ] ;
+       fhir:definition [ fhir:v "Cross-matches, antibody screens" ]
      ] [
        fhir:code [ fhir:v "GEND" ] ;
-       fhir:display [ fhir:v "Molecular Diagnostics & Genetics" ]
+       fhir:display [ fhir:v "Molecular Diagnostics & Genetics" ] ;
+       fhir:definition [ fhir:v "Gene sequencing, karyotyping" ]
      ] )
   ] [
      fhir:code [ fhir:v "IMG" ] ;
      fhir:display [ fhir:v "Diagnostic Imaging (Anatomical)" ] ;
+     fhir:definition [ fhir:v "Anatomical imaging procedures" ] ;
      fhir:concept ( [
        fhir:code [ fhir:v "RRXG" ] ;
-       fhir:display [ fhir:v "Routine Radiology" ]
+       fhir:display [ fhir:v "Routine Radiology" ] ;
+       fhir:definition [ fhir:v "Plain X-Rays, Mammography" ]
      ] [
        fhir:code [ fhir:v "ACSI" ] ;
-       fhir:display [ fhir:v "Advanced Cross-Sectional" ]
+       fhir:display [ fhir:v "Advanced Cross-Sectional" ] ;
+       fhir:definition [ fhir:v "CT Scans, MRIs" ]
      ] [
        fhir:code [ fhir:v "CATH" ] ;
-       fhir:display [ fhir:v "Interventional Radiology & Cath Lab Imaging" ]
+       fhir:display [ fhir:v "Interventional Radiology & Cath Lab Imaging" ] ;
+       fhir:definition [ fhir:v "Angiography, Fluoroscopy" ]
      ] [
        fhir:code [ fhir:v "NUCM" ] ;
-       fhir:display [ fhir:v "Nuclear Medicine" ]
+       fhir:display [ fhir:v "Nuclear Medicine" ] ;
+       fhir:definition [ fhir:v "PET Scans, SPECT Scans, Bone Scintigraphy" ]
      ] [
        fhir:code [ fhir:v "MEDP" ] ;
-       fhir:display [ fhir:v "Medical Photography" ]
+       fhir:display [ fhir:v "Medical Photography" ] ;
+       fhir:definition [ fhir:v "Dermatology, Ophthalmology retinal photos" ]
      ] )
   ] [
      fhir:code [ fhir:v "FNP" ] ;
-     fhir:display [ fhir:v "Functional & Physiological Studies" ] ;
+     fhir:display [ fhir:v "Functional & Physiological Studies (Non-Invasive)" ] ;
+     fhir:definition [ fhir:v "Functional and physiological diagnostic procedures" ] ;
      fhir:concept ( [
        fhir:code [ fhir:v "CARD" ] ;
-       fhir:display [ fhir:v "Cardiology" ]
+       fhir:display [ fhir:v "Cardiology" ] ;
+       fhir:definition [ fhir:v "EKGs, Holter monitors, Stress tests" ]
      ] [
        fhir:code [ fhir:v "NEUS" ] ;
-       fhir:display [ fhir:v "Neurology & Sleep" ]
+       fhir:display [ fhir:v "Neurology & Sleep" ] ;
+       fhir:definition [ fhir:v "EEGs, EMGs, Polysomnography" ]
      ] [
        fhir:code [ fhir:v "PULM" ] ;
-       fhir:display [ fhir:v "Pulmonary" ]
+       fhir:display [ fhir:v "Pulmonary" ] ;
+       fhir:definition [ fhir:v "PFTs, Spirometry, Blood Gas tracings" ]
      ] [
        fhir:code [ fhir:v "AUDV" ] ;
-       fhir:display [ fhir:v "Audiology & Vestibular" ]
+       fhir:display [ fhir:v "Audiology & Vestibular" ] ;
+       fhir:definition [ fhir:v "Audiograms, Tympanometry, VNG balance tests" ]
      ] [
        fhir:code [ fhir:v "GIFN" ] ;
-       fhir:display [ fhir:v "Gastroenterology Functional" ]
+       fhir:display [ fhir:v "Gastroenterology Functional" ] ;
+       fhir:definition [ fhir:v "Manometry, 24-hr pH monitoring" ]
      ] )
   ] [
      fhir:code [ fhir:v "SUR" ] ;
      fhir:display [ fhir:v "Invasive & Surgical Procedures" ] ;
+     fhir:definition [ fhir:v "Invasive and surgical clinical procedures" ] ;
      fhir:concept ( [
        fhir:code [ fhir:v "ORSU" ] ;
-       fhir:display [ fhir:v "Operative & Major Surgical Procedures" ]
+       fhir:display [ fhir:v "Operative & Major Surgical Procedures" ] ;
+       fhir:definition [ fhir:v "OR surgeries, day surgeries" ]
      ] [
        fhir:code [ fhir:v "ENDO" ] ;
-       fhir:display [ fhir:v "Endoscopic Procedures" ]
+       fhir:display [ fhir:v "Endoscopic Procedures" ] ;
+       fhir:definition [ fhir:v "GI scopes, Bronchoscopy, Cystoscopy" ]
      ] [
        fhir:code [ fhir:v "MSUR" ] ;
-       fhir:display [ fhir:v "Bedside & Minor Invasive Procedures" ]
+       fhir:display [ fhir:v "Bedside & Minor Invasive Procedures" ] ;
+       fhir:definition [ fhir:v "Lumbar punctures, Paracentesis" ]
      ] )
   ] [
      fhir:code [ fhir:v "TIN" ] ;
      fhir:display [ fhir:v "Therapeutics & Infusion Services" ] ;
+     fhir:definition [ fhir:v "Therapeutic and infusion-based treatment services" ] ;
      fhir:concept ( [
        fhir:code [ fhir:v "IONC" ] ;
-       fhir:display [ fhir:v "Infusion Oncology" ]
+       fhir:display [ fhir:v "Infusion Oncology" ] ;
+       fhir:definition [ fhir:v "Chemotherapy, Immunotherapy biologics" ]
      ] [
        fhir:code [ fhir:v "RONC" ] ;
-       fhir:display [ fhir:v "Radiation Oncology" ]
+       fhir:display [ fhir:v "Radiation Oncology" ] ;
+       fhir:definition [ fhir:v "External beam radiation, Brachytherapy" ]
      ] [
        fhir:code [ fhir:v "BLDT" ] ;
-       fhir:display [ fhir:v "Renal & Blood Therapies" ]
+       fhir:display [ fhir:v "Renal & Blood Therapies" ] ;
+       fhir:definition [ fhir:v "Hemodialysis, Peritoneal dialysis, Apheresis" ]
      ] [
        fhir:code [ fhir:v "INFU" ] ;
-       fhir:display [ fhir:v "Specialty Infusions" ]
+       fhir:display [ fhir:v "Specialty Infusions" ] ;
+       fhir:definition [ fhir:v "IV Antibiotics, Iron infusions, Pain pumps" ]
      ] [
        fhir:code [ fhir:v "MEDA" ] ;
-       fhir:display [ fhir:v "Bedside & General Medication Administration" ]
+       fhir:display [ fhir:v "Bedside & General Medication Administration" ] ;
+       fhir:definition [ fhir:v "General medication administration activities" ]
      ] )
   ] [
      fhir:code [ fhir:v "RHB" ] ;
      fhir:display [ fhir:v "Rehabilitative, Supportive & Physical Medicine" ] ;
+     fhir:definition [ fhir:v "Rehabilitative and supportive therapeutic services" ] ;
      fhir:concept ( [
        fhir:code [ fhir:v "PHYT" ] ;
-       fhir:display [ fhir:v "Physical Therapy" ]
+       fhir:display [ fhir:v "Physical Therapy" ] ;
+       fhir:definition [ fhir:v "Gross motor, mobility, wound care" ]
      ] [
        fhir:code [ fhir:v "OCCT" ] ;
-       fhir:display [ fhir:v "Occupational Therapy" ]
+       fhir:display [ fhir:v "Occupational Therapy" ] ;
+       fhir:definition [ fhir:v "Fine motor, cognitive/ADL adaptations" ]
      ] [
        fhir:code [ fhir:v "SPLP" ] ;
-       fhir:display [ fhir:v "Speech-Language Pathology" ]
+       fhir:display [ fhir:v "Speech-Language Pathology" ] ;
+       fhir:definition [ fhir:v "Swallowing studies, cognitive speech" ]
      ] [
        fhir:code [ fhir:v "RSPT" ] ;
-       fhir:display [ fhir:v "Respiratory Therapy" ]
+       fhir:display [ fhir:v "Respiratory Therapy" ] ;
+       fhir:definition [ fhir:v "Ventilator weaning, chest physiotherapy" ]
      ] [
        fhir:code [ fhir:v "PALC" ] ;
-       fhir:display [ fhir:v "Palliative & Comfort Care Regimens" ]
+       fhir:display [ fhir:v "Palliative & Comfort Care Regimens" ] ;
+       fhir:definition [ fhir:v "Symptom optimization, end-of-life care" ]
      ] )
   ] [
      fhir:code [ fhir:v "CBE" ] ;
      fhir:display [ fhir:v "Cognitive, Behavioral & Education Services" ] ;
+     fhir:definition [ fhir:v "Cognitive, behavioral, counseling, and educational services" ] ;
      fhir:concept ( [
        fhir:code [ fhir:v "WELL" ] ;
-       fhir:display [ fhir:v "Preventive & Wellness Education" ]
+       fhir:display [ fhir:v "Preventive & Wellness Education" ] ;
+       fhir:definition [ fhir:v "Diet tracking, smoking cessation, lactation support" ]
      ] [
        fhir:code [ fhir:v "PSYC" ] ;
-       fhir:display [ fhir:v "Psychological & Mental Health Counseling" ]
+       fhir:display [ fhir:v "Psychological & Mental Health Counseling" ] ;
+       fhir:definition [ fhir:v "Psychotherapy, grief counseling, CBT" ]
      ] [
        fhir:code [ fhir:v "GENC" ] ;
-       fhir:display [ fhir:v "Genetic & Familial Counseling" ]
+       fhir:display [ fhir:v "Genetic & Familial Counseling" ] ;
+       fhir:definition [ fhir:v "Pre-implantation counseling, oncology risk mapping" ]
      ] [
        fhir:code [ fhir:v "MEDC" ] ;
-       fhir:display [ fhir:v "Medication and Device Compliance Education" ]
+       fhir:display [ fhir:v "Medication and Device Compliance Education" ] ;
+       fhir:definition [ fhir:v "Inhaler mechanics training, anticoagulant compliance" ]
      ] )
   ] [
      fhir:code [ fhir:v "CNS" ] ;
      fhir:display [ fhir:v "Clinical Consultations & Care Coordination" ] ;
+     fhir:definition [ fhir:v "Consultation, coordination, referral, and transitional care services" ] ;
      fhir:concept ( [
        fhir:code [ fhir:v "SPEC" ] ;
-       fhir:display [ fhir:v "Specialist Consultations & Referrals" ]
+       fhir:display [ fhir:v "Specialist Consultations & Referrals" ] ;
+       fhir:definition [ fhir:v "Referral and specialist consultation workflows" ]
      ] [
        fhir:code [ fhir:v "NURS" ] ;
-       fhir:display [ fhir:v "Nursing & Bedside Care Orders" ]
+       fhir:display [ fhir:v "Nursing & Bedside Care Orders" ] ;
+       fhir:definition [ fhir:v "Non-surgical clinical tasks executed by nursing staff" ]
      ] [
        fhir:code [ fhir:v "SDOH" ] ;
-       fhir:display [ fhir:v "Social & Community Care Services" ]
+       fhir:display [ fhir:v "Social & Community Care Services" ] ;
+       fhir:definition [ fhir:v "SDOH referrals including housing and food security" ]
      ] [
        fhir:code [ fhir:v "DIST" ] ;
-       fhir:display [ fhir:v "Discharge & Transitional Care Management" ]
+       fhir:display [ fhir:v "Discharge & Transitional Care Management" ] ;
+       fhir:definition [ fhir:v "Discharge planning and transitional care coordination" ]
      ] )
   ] ) . # 
 
