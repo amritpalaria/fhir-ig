@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "observation-tag",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem observation-tag</b></p><a name=\"observation-tag\"> </a><a name=\"hcobservation-tag\"> </a><p>This case-sensitive code system <code>http://314e.com/fhir/CodeSystem/observation-tag</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">super-resource<a name=\"observation-tag-super-resource\"> </a></td><td>Top-level resource with no parents of its own</td><td><div><p>Indicates that, within the hierarchy of resources created through\nparent-child relationships, this resource occupies the top level\nand itself has no parent resource.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">unresulted<a name=\"observation-tag-unresulted\"> </a></td><td>Unresulted</td><td><div><p>Indicates that neither this resource nor any recursive descendant\nresource bears a result or report.</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "http://314e.com/fhir/CodeSystem/observation-tag",
+  "version" : "1.0.0",
+  "name" : "ObservationTagCS",
+  "title" : "Observation Tag CodeSystem",
+  "status" : "active",
+  "date" : "2026-05-16T07:30:07+05:30",
+  "publisher" : "314e",
+  "contact" : [{
+    "name" : "314e",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://314e.com"
+    }]
+  }],
+  "description" : "Codes used to qualify DiagnosticReport and Observation resources\nwithin hierarchical parent-child result/report structures.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "super-resource",
+    "display" : "Top-level resource with no parents of its own",
+    "definition" : "Indicates that, within the hierarchy of resources created through\nparent-child relationships, this resource occupies the top level\nand itself has no parent resource."
+  },
+  {
+    "code" : "unresulted",
+    "display" : "Unresulted",
+    "definition" : "Indicates that neither this resource nor any recursive descendant\nresource bears a result or report."
+  }]
+}

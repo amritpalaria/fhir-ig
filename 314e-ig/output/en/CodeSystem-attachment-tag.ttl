@@ -12,7 +12,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem attachment-tag</b></p><a name=\"attachment-tag\"> </a><a name=\"hcattachment-tag\"> </a><p>This case-sensitive code system <code>http://314e.com/fhir/CodeSystem/attachment-tag</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">inline-data-externalized-to-file<a name=\"attachment-tag-inline-data-externalized-to-file\"> </a></td><td>Inline data externalized to and saved as file</td><td><div><p>Indicates that the Attachment content was originally available\nas inline data/blob content but has been externalized and saved\nas a file in object storage, with the Attachment.url carrying\nthe storage location.</p>\n<p>If this tag is absent, the content SHALL be assumed to have\noriginated as an external file rather than inline data.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">duplicate<a name=\"attachment-tag-duplicate\"> </a></td><td>Duplicate of another attachment on the same element</td><td><div><p>Indicates that this attachment was created as a duplicate of the\ncontent in another attachment on the same element for some reason,\nfor example because the same content needed to be stored as two\ndifferent content types.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">hidden<a name=\"attachment-tag-hidden\"> </a></td><td>Hidden from application use</td><td><div><p>Indicates to the consumer application that this attachment should\nnot be used even though it exists in the data.</p>\n<p>This may be used to identify the preferred/usable attachment when\nmultiple copies of equivalent content are available.</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem attachment-tag</b></p><a name=\"attachment-tag\"> </a><a name=\"hcattachment-tag\"> </a><p>This case-sensitive code system <code>http://314e.com/fhir/CodeSystem/attachment-tag</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">inline-data-externalized-to-file<a name=\"attachment-tag-inline-data-externalized-to-file\"> </a></td><td>Inline data externalized and saved as file</td><td><div><p>Indicates that the Attachment content was originally available\nas inline data/blob content but has been externalized and saved\nas a file in object storage, with the Attachment.url carrying\nthe storage location.</p>\n<p>If this tag is absent, the content SHALL be assumed to have\noriginated as an external file rather than inline data.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">duplicate<a name=\"attachment-tag-duplicate\"> </a></td><td>Duplicate of another attachment on the same element</td><td><div><p>Indicates that this attachment was created as a duplicate of the\ncontent in another attachment on the same element for some reason,\nfor example because the same content needed to be stored as two\ndifferent content types.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">hidden<a name=\"attachment-tag-hidden\"> </a></td><td>Hidden from application use</td><td><div><p>Indicates to the consumer application that this attachment should\nnot be used even though it exists in the data.</p>\n<p>This may be used to identify the preferred/usable attachment when\nmultiple copies of equivalent content are available.</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://314e.com/fhir/CodeSystem/attachment-tag"^^xsd:anyURI ;
@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "AttachmentTagCS"] ; # 
   fhir:title [ fhir:v "Attachment Tag CodeSystem"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-15T09:21:03+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T07:30:07+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -37,7 +37,7 @@
   fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "inline-data-externalized-to-file" ] ;
-     fhir:display [ fhir:v "Inline data externalized to and saved as file" ] ;
+     fhir:display [ fhir:v "Inline data externalized and saved as file" ] ;
      fhir:definition [ fhir:v "Indicates that the Attachment content was originally available\nas inline data/blob content but has been externalized and saved\nas a file in object storage, with the Attachment.url carrying\nthe storage location.\n\nIf this tag is absent, the content SHALL be assumed to have\noriginated as an external file rather than inline data." ]
   ] [
      fhir:code [ fhir:v "duplicate" ] ;

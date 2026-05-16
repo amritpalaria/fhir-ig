@@ -11,7 +11,7 @@ Codes used for semantic tagging and categorization of attachments.
 * ^content = #complete
 
 * #inline-data-externalized-to-file
-    "Inline data externalized to and saved as file"
+    "Inline data externalized and saved as file"
 
 * #inline-data-externalized-to-file ^definition = """
 Indicates that the Attachment content was originally available

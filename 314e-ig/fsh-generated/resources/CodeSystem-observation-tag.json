@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ObservationTagCS",
+  "id": "observation-tag",
+  "title": "Observation Tag CodeSystem",
+  "description": "Codes used to qualify DiagnosticReport and Observation resources\nwithin hierarchical parent-child result/report structures.",
+  "url": "http://314e.com/fhir/CodeSystem/observation-tag",
+  "concept": [
+    {
+      "code": "super-resource",
+      "display": "Top-level resource with no parents of its own",
+      "definition": "Indicates that, within the hierarchy of resources created through\nparent-child relationships, this resource occupies the top level\nand itself has no parent resource."
+    },
+    {
+      "code": "unresulted",
+      "display": "Unresulted",
+      "definition": "Indicates that neither this resource nor any recursive descendant\nresource bears a result or report."
+    }
+  ],
+  "caseSensitive": true,
+  "count": 2
+}

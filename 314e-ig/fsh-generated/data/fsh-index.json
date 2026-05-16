@@ -8,6 +8,14 @@
     "endLine": 39
   },
   {
+    "outputFile": "CodeSystem-observation-tag.json",
+    "fshName": "ObservationTagCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems\\observation-tag-cs.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
     "outputFile": "StructureDefinition-annotation-314e.json",
     "fshName": "Annotation314e",
     "fshType": "Profile",
@@ -72,6 +80,22 @@
     "endLine": 28
   },
   {
+    "outputFile": "StructureDefinition-range-314e.json",
+    "fshName": "Range314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\range-314e.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-ratio-314e.json",
+    "fshName": "Ratio314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\ratio-314e.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
     "outputFile": "StructureDefinition-reference-314e.json",
     "fshName": "Reference314e",
     "fshType": "Profile",
@@ -88,11 +112,43 @@
     "endLine": 36
   },
   {
+    "outputFile": "StructureDefinition-servicerequest-314e.json",
+    "fshName": "ServiceRequest314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\servicerequest-314e.fsh",
+    "startLine": 1,
+    "endLine": 47
+  },
+  {
+    "outputFile": "StructureDefinition-simplequantity-314e.json",
+    "fshName": "SimpleQuantity314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\simplequantity-314e.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
     "outputFile": "ValueSet-attachment-tag.json",
     "fshName": "AttachmentTagVS",
     "fshType": "ValueSet",
     "fshFile": "valuesets\\attachment-tag-vs.fsh",
     "startLine": 1,
     "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-observation-tag.json",
+    "fshName": "ObservationTagVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\observation-tag-vs.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-servicerequest-category-314e.json",
+    "fshName": "ServiceRequestCategory314eVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\servicerequest-category-vs.fsh",
+    "startLine": 1,
+    "endLine": 42
   }
 ]

@@ -15,7 +15,7 @@ This profile SHALL be used so that the data can be faithfully represented in the
 
 **Usages:**
 
-* This DataType Profile is not used by any profiles in this Implementation Guide
+* Use this DataType Profile: [314e Ratio](StructureDefinition-ratio-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/quantity-314e)
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-quantity-314e.csv
   "name" : "Quantity314e",
   "title" : "314e Quantity",
   "status" : "draft",
-  "date" : "2026-05-15T09:21:03+05:30",
+  "date" : "2026-05-16T07:30:07+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

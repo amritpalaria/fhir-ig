@@ -16,7 +16,7 @@ Applications should preserve synchronization between the computable Quantity con
 
 **Usages:**
 
-* Use this Extension: [314e Quantity](StructureDefinition-quantity-314e.md)
+* Use this Extension: [314e Quantity](StructureDefinition-quantity-314e.md) and [314e SimpleQuantity](StructureDefinition-simplequantity-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/quantity-quantityString)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-quantity-quantity
   "name" : "QuantityQuantityString",
   "title" : "Quantity Quantity String",
   "status" : "draft",
-  "date" : "2026-05-15T09:21:03+05:30",
+  "date" : "2026-05-16T07:30:07+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

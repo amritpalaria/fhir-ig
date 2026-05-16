@@ -6,6 +6,13 @@
   "name" : "AttachmentTagCS"
 },
 {
+  "id" : "observation-tag",
+  "type" : "CodeSystem",
+  "url" : "http://314e.com/fhir/CodeSystem/observation-tag",
+  "version" : "1.0.0",
+  "name" : "ObservationTagCS"
+},
+{
   "id" : "annotation-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/annotation-314e",
@@ -55,6 +62,20 @@
   "name" : "QuantityValueString"
 },
 {
+  "id" : "range-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/range-314e",
+  "version" : "1.0.0",
+  "name" : "Range314e"
+},
+{
+  "id" : "ratio-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/ratio-314e",
+  "version" : "1.0.0",
+  "name" : "Ratio314e"
+},
+{
   "id" : "reference-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/reference-314e",
@@ -69,11 +90,39 @@
   "name" : "ReferenceContext"
 },
 {
+  "id" : "servicerequest-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
+  "version" : "1.0.0",
+  "name" : "ServiceRequest314e"
+},
+{
+  "id" : "simplequantity-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/simplequantity-314e",
+  "version" : "1.0.0",
+  "name" : "SimpleQuantity314e"
+},
+{
   "id" : "attachment-tag",
   "type" : "ValueSet",
   "url" : "http://314e.com/fhir/ValueSet/attachment-tag",
   "version" : "1.0.0",
   "name" : "AttachmentTagVS"
+},
+{
+  "id" : "observation-tag",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ValueSet/observation-tag",
+  "version" : "1.0.0",
+  "name" : "ObservationTagVS"
+},
+{
+  "id" : "servicerequest-category-314e",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ValueSet/servicerequest-category-314e",
+  "version" : "1.0.0",
+  "name" : "ServiceRequestCategory314eVS"
 },
 {
   "id" : "fhir.314e",

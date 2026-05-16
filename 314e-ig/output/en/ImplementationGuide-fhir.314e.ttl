@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-15T09:21:03+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T07:30:07+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -70,6 +70,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "5.2.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_qicore" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.qicore" ] ;
+     fhir:version [ fhir:v "7.0.2" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1453,11 +1461,116 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/range-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/range-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Range" ] ;
+       fhir:description [ fhir:v "A 314e-constrained Range datatype using 314e\nSimpleQuantity profiles." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/ratio-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/ratio-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Ratio" ] ;
+       fhir:description [ fhir:v "A 314e-constrained Ratio datatype using 314e Quantity profiles." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/reference-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/reference-314e" ]
        ] ;
        fhir:name [ fhir:v "314e Reference" ] ;
        fhir:description [ fhir:v "A constrained Reference datatype profile supporting semantic\nqualification of references using the reference-context extension.\n\nThis profile enables references to carry additional information\nabout the role, capacity, purpose, or contextual meaning of\nthe referenced resource." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/servicerequest-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/servicerequest-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e ServiceRequest" ] ;
+       fhir:description [ fhir:v "A 314e-constrained ServiceRequest profile derived from\nQI-Core ServiceRequest.\n\nThis profile requires classification of the requested service\nusing standardized high-level service categories and uses\n314e datatype profiles where applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/ValueSet/servicerequest-category-314e> ;
+         fhir:reference [ fhir:v "ValueSet/servicerequest-category-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e ServiceRequest Category ValueSet" ] ;
+       fhir:description [ fhir:v "Required high-level category classifications for 314e\nServiceRequest resources." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/simplequantity-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/simplequantity-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e SimpleQuantity" ] ;
+       fhir:description [ fhir:v "A 314e-constrained SimpleQuantity datatype supporting\nprecision metadata and alternate textual representations." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1563,6 +1676,48 @@
        ] ;
        fhir:name [ fhir:v "Attachment Tag ValueSet" ] ;
        fhir:description [ fhir:v "Standard semantic tags used for categorization and workflow\nqualification of attachments." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/CodeSystem/observation-tag> ;
+         fhir:reference [ fhir:v "CodeSystem/observation-tag" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Tag CodeSystem" ] ;
+       fhir:description [ fhir:v "Codes used to qualify DiagnosticReport and Observation resources\nwithin hierarchical parent-child result/report structures." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/ValueSet/observation-tag> ;
+         fhir:reference [ fhir:v "ValueSet/observation-tag" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Tag ValueSet" ] ;
+       fhir:description [ fhir:v "Semantic tags used in meta.tag to qualify DiagnosticReport and\nObservation resources participating in hierarchical parent-child\nresource structures." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

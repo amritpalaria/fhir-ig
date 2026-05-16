@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="attachment-tag"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem attachment-tag</b></p><a name="attachment-tag"> </a><a name="hcattachment-tag"> </a><p>This case-sensitive code system <code>http://314e.com/fhir/CodeSystem/attachment-tag</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">inline-data-externalized-to-file<a name="attachment-tag-inline-data-externalized-to-file"> </a></td><td>Inline data externalized to and saved as file</td><td><div><p>Indicates that the Attachment content was originally available
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem attachment-tag</b></p><a name="attachment-tag"> </a><a name="hcattachment-tag"> </a><p>This case-sensitive code system <code>http://314e.com/fhir/CodeSystem/attachment-tag</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">inline-data-externalized-to-file<a name="attachment-tag-inline-data-externalized-to-file"> </a></td><td>Inline data externalized and saved as file</td><td><div><p>Indicates that the Attachment content was originally available
 as inline data/blob content but has been externalized and saved
 as a file in object storage, with the Attachment.url carrying
 the storage location.</p>
@@ -24,7 +24,7 @@ multiple copies of equivalent content are available.</p>
   <name value="AttachmentTagCS"/>
   <title value="Attachment Tag CodeSystem"/>
   <status value="active"/>
-  <date value="2026-05-15T09:21:03+05:30"/>
+  <date value="2026-05-16T07:30:07+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -39,7 +39,7 @@ multiple copies of equivalent content are available.</p>
   <count value="3"/>
   <concept>
     <code value="inline-data-externalized-to-file"/>
-    <display value="Inline data externalized to and saved as file"/>
+    <display value="Inline data externalized and saved as file"/>
     <definition value="Indicates that the Attachment content was originally available&#xA;as inline data/blob content but has been externalized and saved&#xA;as a file in object storage, with the Attachment.url carrying&#xA;the storage location.&#xA;&#xA;If this tag is absent, the content SHALL be assumed to have&#xA;originated as an external file rather than inline data."/>
   </concept>
   <concept>

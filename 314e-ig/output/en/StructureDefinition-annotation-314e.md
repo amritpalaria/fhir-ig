@@ -8,7 +8,7 @@ This profile enables annotation or note content to be represented using external
 
 **Usages:**
 
-* This DataType Profile is not used by any profiles in this Implementation Guide
+* Use this DataType Profile: [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/annotation-314e)
 
@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-annotation-314e.c
   "name" : "Annotation314e",
   "title" : "314e Annotation",
   "status" : "draft",
-  "date" : "2026-05-15T09:21:03+05:30",
+  "date" : "2026-05-16T07:30:07+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

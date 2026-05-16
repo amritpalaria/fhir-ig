@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://314e.com/fhir/ig/ValueSet/servicerequest-category-314e> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "servicerequest-category-314e"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet servicerequest-category-314e</b></p><a name=\"servicerequest-category-314e\"> </a><a name=\"hcservicerequest-category-314e\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v2-0074.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0074</code></a><span title=\"Version is explicitly stated to be 3.0.0\"> version ?3.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v2-0074.html#v2-0074-LAB\">LAB</a></td><td>Laboratory</td><td>Laboratory</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/363679005\">363679005</a></td><td>Imaging</td></tr><tr><td><a href=\"http://snomed.info/id/252416005\">252416005</a></td><td>Physiological study</td></tr><tr><td><a href=\"http://snomed.info/id/387713003\">387713003</a></td><td>Surgical procedure</td></tr><tr><td><a href=\"http://snomed.info/id/277132007\">277132007</a></td><td>Therapeutic procedure</td></tr><tr><td><a href=\"http://snomed.info/id/385805005\">385805005</a></td><td>Rehabilitation procedure</td></tr><tr><td><a href=\"http://snomed.info/id/311401005\">311401005</a></td><td>Patient education and counseling</td></tr><tr><td><a href=\"http://snomed.info/id/409035000\">409035000</a></td><td>Provider-to-provider consultation</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://314e.com/fhir/ValueSet/servicerequest-category-314e"^^xsd:anyURI ;
+     fhir:l <http://314e.com/fhir/ValueSet/servicerequest-category-314e>
+  ] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ServiceRequestCategory314eVS"] ; # 
+  fhir:title [ fhir:v "314e ServiceRequest Category ValueSet"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-05-16T07:30:07+05:30"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "314e"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "314e" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://314e.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Required high-level category classifications for 314e\nServiceRequest resources."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0074>
+       ] ;
+       fhir:version [ fhir:v "3.0.0" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LAB" ] ;
+         fhir:display [ fhir:v "Laboratory" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "363679005" ] ;
+         fhir:display [ fhir:v "Imaging" ]
+       ] [
+         fhir:code [ fhir:v "252416005" ] ;
+         fhir:display [ fhir:v "Physiological study" ]
+       ] [
+         fhir:code [ fhir:v "387713003" ] ;
+         fhir:display [ fhir:v "Surgical procedure" ]
+       ] [
+         fhir:code [ fhir:v "277132007" ] ;
+         fhir:display [ fhir:v "Therapeutic procedure" ]
+       ] [
+         fhir:code [ fhir:v "385805005" ] ;
+         fhir:display [ fhir:v "Rehabilitation procedure" ]
+       ] [
+         fhir:code [ fhir:v "311401005" ] ;
+         fhir:display [ fhir:v "Patient education and counseling" ]
+       ] [
+         fhir:code [ fhir:v "409035000" ] ;
+         fhir:display [ fhir:v "Provider-to-provider consultation" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

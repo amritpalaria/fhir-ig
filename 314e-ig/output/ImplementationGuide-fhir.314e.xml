@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-15T09:21:03+05:30"/>
+  <date value="2026-05-16T07:30:07+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -38,6 +38,11 @@
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_qicore">
+    <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="7.0.2"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -513,10 +518,65 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/range-314e"/>
+      </reference>
+      <name value="314e Range"/>
+      <description value="A 314e-constrained Range datatype using 314e&#xA;SimpleQuantity profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ratio-314e"/>
+      </reference>
+      <name value="314e Ratio"/>
+      <description value="A 314e-constrained Ratio datatype using 314e Quantity profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/reference-314e"/>
       </reference>
       <name value="314e Reference"/>
       <description value="A constrained Reference datatype profile supporting semantic&#xA;qualification of references using the reference-context extension.&#xA;&#xA;This profile enables references to carry additional information&#xA;about the role, capacity, purpose, or contextual meaning of&#xA;the referenced resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/servicerequest-314e"/>
+      </reference>
+      <name value="314e ServiceRequest"/>
+      <description value="A 314e-constrained ServiceRequest profile derived from&#xA;QI-Core ServiceRequest.&#xA;&#xA;This profile requires classification of the requested service&#xA;using standardized high-level service categories and uses&#xA;314e datatype profiles where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/servicerequest-category-314e"/>
+      </reference>
+      <name value="314e ServiceRequest Category ValueSet"/>
+      <description value="Required high-level category classifications for 314e&#xA;ServiceRequest resources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/simplequantity-314e"/>
+      </reference>
+      <name value="314e SimpleQuantity"/>
+      <description value="A 314e-constrained SimpleQuantity datatype supporting&#xA;precision metadata and alternate textual representations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -572,6 +632,28 @@
       </reference>
       <name value="Attachment Tag ValueSet"/>
       <description value="Standard semantic tags used for categorization and workflow&#xA;qualification of attachments."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/observation-tag"/>
+      </reference>
+      <name value="Observation Tag CodeSystem"/>
+      <description value="Codes used to qualify DiagnosticReport and Observation resources&#xA;within hierarchical parent-child result/report structures."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/observation-tag"/>
+      </reference>
+      <name value="Observation Tag ValueSet"/>
+      <description value="Semantic tags used in meta.tag to qualify DiagnosticReport and&#xA;Observation resources participating in hierarchical parent-child&#xA;resource structures."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

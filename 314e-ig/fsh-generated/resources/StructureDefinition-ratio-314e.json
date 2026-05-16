@@ -1,0 +1,45 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ratio-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/ratio-314e",
+  "name": "Ratio314e",
+  "title": "314e Ratio",
+  "status": "draft",
+  "description": "A 314e-constrained Ratio datatype using 314e Quantity profiles.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Ratio",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Ratio",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Ratio.numerator",
+        "path": "Ratio.numerator",
+        "short": "Numerator using 314e Quantity",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/quantity-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Ratio.denominator",
+        "path": "Ratio.denominator",
+        "short": "Denominator using 314e Quantity",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/quantity-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

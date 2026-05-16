@@ -1,2 +1,4 @@
 URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
 http://314e.com/fhir/ValueSet/attachment-tag,1.0.0,active,,AttachmentTagVS,Attachment Tag ValueSet,"Standard semantic tags used for categorization and workflow qualification of attachments.",,"Internal"
+http://314e.com/fhir/ValueSet/observation-tag,1.0.0,active,,ObservationTagVS,Observation Tag ValueSet,"Semantic tags used in meta.tag to qualify DiagnosticReport and Observation resources participating in hierarchical parent-child resource structures.",,"Internal"
+http://314e.com/fhir/ValueSet/servicerequest-category-314e,1.0.0,active,,ServiceRequestCategory314eVS,314e ServiceRequest Category ValueSet,"Required high-level category classifications for 314e ServiceRequest resources.",,"THO (V2),SCT"

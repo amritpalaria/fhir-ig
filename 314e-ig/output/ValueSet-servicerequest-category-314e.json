@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "servicerequest-category-314e",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet servicerequest-category-314e</b></p><a name=\"servicerequest-category-314e\"> </a><a name=\"hcservicerequest-category-314e\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v2-0074.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0074</code></a><span title=\"Version is explicitly stated to be 3.0.0\"> version &#x1F4CD;3.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.1.0/CodeSystem-v2-0074.html#v2-0074-LAB\">LAB</a></td><td>Laboratory</td><td>Laboratory</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/363679005\">363679005</a></td><td>Imaging</td></tr><tr><td><a href=\"http://snomed.info/id/252416005\">252416005</a></td><td>Physiological study</td></tr><tr><td><a href=\"http://snomed.info/id/387713003\">387713003</a></td><td>Surgical procedure</td></tr><tr><td><a href=\"http://snomed.info/id/277132007\">277132007</a></td><td>Therapeutic procedure</td></tr><tr><td><a href=\"http://snomed.info/id/385805005\">385805005</a></td><td>Rehabilitation procedure</td></tr><tr><td><a href=\"http://snomed.info/id/311401005\">311401005</a></td><td>Patient education and counseling</td></tr><tr><td><a href=\"http://snomed.info/id/409035000\">409035000</a></td><td>Provider-to-provider consultation</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://314e.com/fhir/ValueSet/servicerequest-category-314e",
+  "version" : "1.0.0",
+  "name" : "ServiceRequestCategory314eVS",
+  "title" : "314e ServiceRequest Category ValueSet",
+  "status" : "active",
+  "date" : "2026-05-16T07:30:07+05:30",
+  "publisher" : "314e",
+  "contact" : [{
+    "name" : "314e",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://314e.com"
+    }]
+  }],
+  "description" : "Required high-level category classifications for 314e\nServiceRequest resources.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "version" : "3.0.0",
+      "concept" : [{
+        "code" : "LAB",
+        "display" : "Laboratory"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "363679005",
+        "display" : "Imaging"
+      },
+      {
+        "code" : "252416005",
+        "display" : "Physiological study"
+      },
+      {
+        "code" : "387713003",
+        "display" : "Surgical procedure"
+      },
+      {
+        "code" : "277132007",
+        "display" : "Therapeutic procedure"
+      },
+      {
+        "code" : "385805005",
+        "display" : "Rehabilitation procedure"
+      },
+      {
+        "code" : "311401005",
+        "display" : "Patient education and counseling"
+      },
+      {
+        "code" : "409035000",
+        "display" : "Provider-to-provider consultation"
+      }]
+    }]
+  }
+}

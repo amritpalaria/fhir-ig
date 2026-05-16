@@ -1,0 +1,303 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "servicerequest-314e",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-primaryCodePath",
+      "valueString": "code"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+      "valueString": "ServiceRequest"
+    }
+  ],
+  "url": "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
+  "name": "ServiceRequest314e",
+  "title": "314e ServiceRequest",
+  "status": "draft",
+  "description": "A 314e-constrained ServiceRequest profile derived from\nQI-Core ServiceRequest.\n\nThis profile requires classification of the requested service\nusing standardized high-level service categories and uses\n314e datatype profiles where applicable.",
+  "purpose": "Provides a standardized and semantically categorized ServiceRequest\nprofile for clinical workflows.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.basedOn",
+        "path": "ServiceRequest.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CarePlan",
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+              "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.replaces",
+        "path": "ServiceRequest.replaces",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.category",
+        "path": "ServiceRequest.category",
+        "short": "High-level category classification for the requested service",
+        "definition": "Categorizes the requested service into a standardized\nhigh-level clinical service domain.",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://314e.com/fhir/ValueSet/servicerequest-category-314e"
+        }
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitionerrole",
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization",
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient",
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-relatedperson",
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-device",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+            ],
+            "_targetProfile": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+                    "valueBoolean": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+                    "valueBoolean": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+                    "valueBoolean": false
+                  }
+                ]
+              },
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer",
+        "path": "ServiceRequest.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.reasonReference",
+        "path": "ServiceRequest.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis",
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns",
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-diagnosticreport-note",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-simple-observation"
+            ],
+            "_targetProfile": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+                    "valueBoolean": true
+                  }
+                ]
+              },
+              null,
+              null,
+              null
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.insurance",
+        "path": "ServiceRequest.insurance",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Coverage",
+              "http://hl7.org/fhir/StructureDefinition/ClaimResponse"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.supportingInfo",
+        "path": "ServiceRequest.supportingInfo",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.specimen",
+        "path": "ServiceRequest.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.note",
+        "path": "ServiceRequest.note",
+        "type": [
+          {
+            "code": "Annotation",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/annotation-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

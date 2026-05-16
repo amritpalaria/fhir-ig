@@ -4,32 +4,33 @@
 
 * [Home](en/index.md)
 * [Artifacts Summary](en/artifacts.md)
-* [](en/StructureDefinition-attachment-inlineDataSavedAsFile-definitions.md)
-* [](en/StructureDefinition-attachment-inlineDataSavedAsFile-mappings.md)
-* [](en/StructureDefinition-attachment-inlineDataSavedAsFile-testing.md)
-* [](en/StructureDefinition-attachment-inlineDataSavedAsFile.ai.md)
-* [](en/StructureDefinition-attachment-inlineDataSavedAsFile.md)
-* [](en/StructureDefinition-attachment-inlineDataSavedAsFile.profile.history.md)
-* [](en/StructureDefinition-attachment-inlineDataSavedAsFile.profile.json.md)
-* [](en/StructureDefinition-attachment-inlineDataSavedAsFile.profile.ttl.md)
-* [](en/StructureDefinition-attachment-inlineDataSavedAsFile.profile.xml.md)
 
 ## Resources
 
 ### CodeSystems
 
 * [Attachment Tag CodeSystem](en/CodeSystem-attachment-tag.md)
+* [Observation Tag CodeSystem](en/CodeSystem-observation-tag.md)
 
 ### ValueSets
 
 * [Attachment Tag ValueSet](en/ValueSet-attachment-tag.md)
+* [Observation Tag ValueSet](en/ValueSet-observation-tag.md)
+* [314e ServiceRequest Category ValueSet](en/ValueSet-servicerequest-category-314e.md)
 
 ### Complex-type Profiles
 
 * [314e Annotation](en/StructureDefinition-annotation-314e.md)
 * [314e Attachment](en/StructureDefinition-attachment-314e.md)
 * [314e Quantity](en/StructureDefinition-quantity-314e.md)
+* [314e Range](en/StructureDefinition-range-314e.md)
+* [314e Ratio](en/StructureDefinition-ratio-314e.md)
 * [314e Reference](en/StructureDefinition-reference-314e.md)
+* [314e SimpleQuantity](en/StructureDefinition-simplequantity-314e.md)
+
+### Resource Profiles
+
+* [314e ServiceRequest](en/StructureDefinition-servicerequest-314e.md)
 
 ### Extensions
 

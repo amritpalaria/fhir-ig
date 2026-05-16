@@ -75,6 +75,10 @@ title: 314e FHIR Implementation Guide
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+dependencies:
+  hl7.fhir.us.qicore:
+    version: 7.0.2
+    
 parameters:
   path-logo: images/314e-logo.png
 

@@ -6,5 +6,13 @@
     "name" : "AttachmentTagCS",
     "title" : "Attachment Tag CodeSystem",
     "description" : "Codes used for semantic tagging and categorization of attachments."
+  },
+  {
+    "url" : "http://314e.com/fhir/CodeSystem/observation-tag",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ObservationTagCS",
+    "title" : "Observation Tag CodeSystem",
+    "description" : "Codes used to qualify DiagnosticReport and Observation resources\nwithin hierarchical parent-child result/report structures."
   }]
 }

@@ -11,7 +11,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-15T09:21:03+05:30",
+  "date" : "2026-05-16T07:30:07+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -42,6 +42,12 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.2.0"
+  },
+  {
+    "id" : "hl7_fhir_us_qicore",
+    "uri" : "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore",
+    "packageId" : "hl7.fhir.us.qicore",
+    "version" : "7.0.2"
   }],
   "definition" : {
     "extension" : [{
@@ -684,10 +690,70 @@
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/range-314e"
+      },
+      "name" : "314e Range",
+      "description" : "A 314e-constrained Range datatype using 314e\nSimpleQuantity profiles.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ratio-314e"
+      },
+      "name" : "314e Ratio",
+      "description" : "A 314e-constrained Ratio datatype using 314e Quantity profiles.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/reference-314e"
       },
       "name" : "314e Reference",
       "description" : "A constrained Reference datatype profile supporting semantic\nqualification of references using the reference-context extension.\n\nThis profile enables references to carry additional information\nabout the role, capacity, purpose, or contextual meaning of\nthe referenced resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/servicerequest-314e"
+      },
+      "name" : "314e ServiceRequest",
+      "description" : "A 314e-constrained ServiceRequest profile derived from\nQI-Core ServiceRequest.\n\nThis profile requires classification of the requested service\nusing standardized high-level service categories and uses\n314e datatype profiles where applicable.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/servicerequest-category-314e"
+      },
+      "name" : "314e ServiceRequest Category ValueSet",
+      "description" : "Required high-level category classifications for 314e\nServiceRequest resources.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/simplequantity-314e"
+      },
+      "name" : "314e SimpleQuantity",
+      "description" : "A 314e-constrained SimpleQuantity datatype supporting\nprecision metadata and alternate textual representations.",
       "exampleBoolean" : false
     },
     {
@@ -748,6 +814,30 @@
       },
       "name" : "Attachment Tag ValueSet",
       "description" : "Standard semantic tags used for categorization and workflow\nqualification of attachments.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/observation-tag"
+      },
+      "name" : "Observation Tag CodeSystem",
+      "description" : "Codes used to qualify DiagnosticReport and Observation resources\nwithin hierarchical parent-child result/report structures.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/observation-tag"
+      },
+      "name" : "Observation Tag ValueSet",
+      "description" : "Semantic tags used in meta.tag to qualify DiagnosticReport and\nObservation resources participating in hierarchical parent-child\nresource structures.",
       "exampleBoolean" : false
     },
     {

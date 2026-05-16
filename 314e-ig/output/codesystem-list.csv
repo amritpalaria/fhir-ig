@@ -1,2 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
 http://314e.com/fhir/CodeSystem/attachment-tag,1.0.0,active,,AttachmentTagCS,Attachment Tag CodeSystem,"Codes used for semantic tagging and categorization of attachments.",
+http://314e.com/fhir/CodeSystem/observation-tag,1.0.0,active,,ObservationTagCS,Observation Tag CodeSystem,"Codes used to qualify DiagnosticReport and Observation resources within hierarchical parent-child result/report structures.",

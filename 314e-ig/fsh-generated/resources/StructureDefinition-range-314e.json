@@ -1,0 +1,43 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "range-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/range-314e",
+  "name": "Range314e",
+  "title": "314e Range",
+  "status": "draft",
+  "description": "A 314e-constrained Range datatype using 314e\nSimpleQuantity profiles.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Range",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Range",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Range.low",
+        "path": "Range.low",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/simplequantity-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Range.high",
+        "path": "Range.high",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/simplequantity-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "QuantityValueString"] ; # 
   fhir:title [ fhir:v "Quantity Value String"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-15T09:21:03+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-16T07:30:07+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;

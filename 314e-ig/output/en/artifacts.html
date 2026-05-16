@@ -141,16 +141,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Data Type Profiles</a>
+         <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Structures: Data Type Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -160,6 +163,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      data-fhir="generated">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-servicerequest-314e.html"
+                  title="StructureDefinition/servicerequest-314e">
+                  <span title="StructureDefinition/servicerequest-314e">314e ServiceRequest
+</span>
+               </a>
+            </td>
+            <td>
+<p>A 314e-constrained ServiceRequest profile derived from
+QI-Core ServiceRequest.</p>
+
+<p>This profile requires classification of the requested service
+using standardized high-level service categories and uses
+314e datatype profiles where applicable.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Structures: Data Type Profiles </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -228,6 +256,31 @@ representation of value cannot be converted to numeric or for display or audit p
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-range-314e.html"
+                  title="StructureDefinition/range-314e">
+                  <span title="StructureDefinition/range-314e">314e Range
+</span>
+               </a>
+            </td>
+            <td>
+<p>A 314e-constrained Range datatype using 314e
+SimpleQuantity profiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ratio-314e.html"
+                  title="StructureDefinition/ratio-314e">
+                  <span title="StructureDefinition/ratio-314e">314e Ratio
+</span>
+               </a>
+            </td>
+            <td>
+<p>A 314e-constrained Ratio datatype using 314e Quantity profiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-reference-314e.html"
                   title="StructureDefinition/reference-314e">
                   <span title="StructureDefinition/reference-314e">314e Reference
@@ -243,9 +296,22 @@ about the role, capacity, purpose, or contextual meaning of
 the referenced resource.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-simplequantity-314e.html"
+                  title="StructureDefinition/simplequantity-314e">
+                  <span title="StructureDefinition/simplequantity-314e">314e SimpleQuantity
+</span>
+               </a>
+            </td>
+            <td>
+<p>A 314e-constrained SimpleQuantity datatype supporting
+precision metadata and alternate textual representations.</p>
+</td>
+         </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -381,12 +447,25 @@ such as technician, phlebotomist, or pathologist.</p>
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-servicerequest-category-314e.html"
+                  title="ValueSet/servicerequest-category-314e">
+                  <span title="ValueSet/servicerequest-category-314e">314e ServiceRequest Category ValueSet
+</span>
+               </a>
+            </td>
+            <td>
+<p>Required high-level category classifications for 314e
+ServiceRequest resources.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-attachment-tag.html" title="ValueSet/attachment-tag">
@@ -399,9 +478,22 @@ such as technician, phlebotomist, or pathologist.</p>
 qualification of attachments.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-observation-tag.html" title="ValueSet/observation-tag">
+                  <span title="ValueSet/observation-tag">Observation Tag ValueSet
+</span>
+               </a>
+            </td>
+            <td>
+<p>Semantic tags used in meta.tag to qualify DiagnosticReport and
+Observation resources participating in hierarchical parent-child
+resource structures.</p>
+</td>
+         </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -416,6 +508,19 @@ qualification of attachments.</p>
             </td>
             <td>
 <p>Codes used for semantic tagging and categorization of attachments.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-observation-tag.html"
+                  title="CodeSystem/observation-tag">
+                  <span title="CodeSystem/observation-tag">Observation Tag CodeSystem
+</span>
+               </a>
+            </td>
+            <td>
+<p>Codes used to qualify DiagnosticReport and Observation resources
+within hierarchical parent-child result/report structures.</p>
 </td>
          </tr>
       </tbody>
@@ -447,8 +552,8 @@ qualification of attachments.</p>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-15 09:21:00 +0530">
-    2026-05-15
+  <span title="2026-05-16 07:30:00 +0530">
+    2026-05-16
   </span>
 
           <br/>

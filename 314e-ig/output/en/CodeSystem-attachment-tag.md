@@ -26,7 +26,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "AttachmentTagCS",
   "title" : "Attachment Tag CodeSystem",
   "status" : "active",
-  "date" : "2026-05-15T09:21:03+05:30",
+  "date" : "2026-05-16T07:30:07+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -41,7 +41,7 @@ This Code system is referenced in the definition of the following value sets:
   "count" : 3,
   "concept" : [{
     "code" : "inline-data-externalized-to-file",
-    "display" : "Inline data externalized to and saved as file",
+    "display" : "Inline data externalized and saved as file",
     "definition" : "Indicates that the Attachment content was originally available\nas inline data/blob content but has been externalized and saved\nas a file in object storage, with the Attachment.url carrying\nthe storage location.\n\nIf this tag is absent, the content SHALL be assumed to have\noriginated as an external file rather than inline data."
   },
   {
