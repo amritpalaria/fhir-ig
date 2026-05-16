@@ -295,6 +295,29 @@ also be populated.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-identifier-314e.html"
+                  title="StructureDefinition/identifier-314e">
+                  <span title="StructureDefinition/identifier-314e">314e Identifier
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e profile of the FHIR Identifier datatype.</p>
+
+<p>This profile requires Identifier.system whenever
+Identifier.value is populated.</p>
+
+<p>For customer-specific or internally defined identifiers,
+Identifier.system SHALL follow the naming convention:</p>
+
+<p>[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier</p>
+
+<p>Example:
+acme-epic-Patient–identifier-MRN-InternalIdentifier</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-quantity-314e.html"
                   title="StructureDefinition/quantity-314e">
                   <span title="StructureDefinition/quantity-314e">314e Quantity
@@ -639,7 +662,7 @@ within hierarchical parent-child result/report structures.</p>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-16 12:18:00 +0530">
+  <span title="2026-05-16 12:58:00 +0530">
     2026-05-16
   </span>
 

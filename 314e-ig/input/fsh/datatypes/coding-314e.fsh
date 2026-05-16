@@ -65,8 +65,6 @@ also be populated.
 * obeys coding314e-1
 * obeys coding314e-2
 
-* system obeys coding314e-3
-
 * version ^short = "Version of the system"
 * version ^definition = """
 The version of the code system which was used when choosing
@@ -74,6 +72,35 @@ this code.
 
 The interpretation of version is defined by the code system.
 """
+
+* system obeys coding314e-3
+* system ^short = """
+Terminology system URI or constrained-format internal code-system identifier"""
+* system ^definition = """
+The identification of the code system that defines the meaning of the symbol in the code. 
+
+Supports:
+- standard terminology codings
+- optional customer-specific internal codings
+Internal codings are used to preserve customer, EHR,
+workflow, and source-system-native semantic classifications and source system fidelity.
+
+Any coding system intended to represent an internal coding
+system SHALL follow the required naming convention:
+
+[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode
+
+Example:
+acme-epic-Observation-lab-code-glucose-InternalCode"""
+// ======================================================
+// EXAMPLE
+// ======================================================
+
+* system ^example.label =
+    "Internal Coding System"
+
+* system ^example.valueUri =
+    "acme-epic-Observation-lab-code-Glucose-InternalCode"
 
 * code ^short = "Symbol in syntax defined by the system"
 * code ^definition = """

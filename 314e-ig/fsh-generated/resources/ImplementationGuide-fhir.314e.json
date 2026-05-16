@@ -74,6 +74,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/identifier-314e"
+        },
+        "name": "314e Identifier",
+        "description": "314e profile of the FHIR Identifier datatype.\n\nThis profile requires Identifier.system whenever\nIdentifier.value is populated.\n\nFor customer-specific or internally defined identifiers,\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample:\nacme-epic-Patient--identifier-MRN-InternalIdentifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/procedure-category-314e"
         },
         "name": "314e Procedure Category CodeSystem",

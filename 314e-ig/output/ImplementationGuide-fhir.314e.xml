@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-16T12:18:43+05:30"/>
+  <date value="2026-05-16T12:58:39+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -533,6 +533,17 @@
       </reference>
       <name value="314e Coding"/>
       <description value="314e profile of the FHIR Coding datatype.&#xA;&#xA;This profile strengthens semantic interoperability expectations&#xA;around population of system, code, and display.&#xA;&#xA;When display is populated, code SHALL also be populated.&#xA;&#xA;If source data lacks a formal coded value but provides textual&#xA;display content, implementers SHOULD generate a surrogate code&#xA;using the display text transformed as follows:&#xA;- convert all letters to lower case&#xA;- replace spaces with hyphens&#xA;&#xA;Example:&#xA;Display: &quot;Blood Culture&quot;&#xA;Generated code: &quot;blood-culture&quot;&#xA;&#xA;Whenever either code or display is populated, system SHALL&#xA;also be populated."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/identifier-314e"/>
+      </reference>
+      <name value="314e Identifier"/>
+      <description value="314e profile of the FHIR Identifier datatype.&#xA;&#xA;This profile requires Identifier.system whenever&#xA;Identifier.value is populated.&#xA;&#xA;For customer-specific or internally defined identifiers,&#xA;Identifier.system SHALL follow the naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier&#xA;&#xA;Example:&#xA;acme-epic-Patient--identifier-MRN-InternalIdentifier"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

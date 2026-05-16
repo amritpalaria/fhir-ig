@@ -26,6 +26,7 @@
 * [314e Attachment](en/StructureDefinition-attachment-314e.md)
 * [314e CodeableConcept](en/StructureDefinition-codeableconcept-314e.md)
 * [314e Coding](en/StructureDefinition-coding-314e.md)
+* [314e Identifier](en/StructureDefinition-identifier-314e.md)
 * [314e Quantity](en/StructureDefinition-quantity-314e.md)
 * [314e Range](en/StructureDefinition-range-314e.md)
 * [314e Ratio](en/StructureDefinition-ratio-314e.md)

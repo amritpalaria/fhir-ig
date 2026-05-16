@@ -8,7 +8,8 @@ StructureDefinition-attachment-314e.json           Attachment314e               
 StructureDefinition-attachment-helperFile.json     AttachmentHelperFile                Extension   extensions\attachment-helperfile.fsh       1 - 41
 StructureDefinition-attachment-tag.json            AttachmentTag                       Extension   extensions\attachment-tag.fsh              1 - 28
 StructureDefinition-codeableconcept-314e.json      CodeableConcept314e                 Profile     datatypes\codeableconcept-314e.fsh         1 - 96
-StructureDefinition-coding-314e.json               Coding314e                          Profile     datatypes\coding-314e.fsh                  37 - 102
+StructureDefinition-coding-314e.json               Coding314e                          Profile     datatypes\coding-314e.fsh                  37 - 129
+StructureDefinition-identifier-314e.json           Identifier314e                      Profile     datatypes\identifier-314e.fsh              28 - 120
 StructureDefinition-quantity-314e.json             Quantity314e                        Profile     datatypes\quantity-314e.fsh                1 - 56
 StructureDefinition-quantity-quantityString.json   QuantityQuantityString              Extension   extensions\quantity-quantitystring.fsh     1 - 27
 StructureDefinition-quantity-valueString.json      QuantityValueString                 Extension   extensions\quantity-valuestring.fsh        1 - 28

@@ -160,6 +160,13 @@
   "name" : "Coding314e"
 },
 {
+  "id" : "identifier-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/identifier-314e",
+  "version" : "1.0.0",
+  "name" : "Identifier314e"
+},
+{
   "id" : "quantity-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/quantity-314e",

@@ -32,7 +32,7 @@ Standard semantic tags used for categorization and workflow qualification of att
   "name" : "AttachmentTagVS",
   "title" : "Attachment Tag ValueSet",
   "status" : "active",
-  "date" : "2026-05-16T12:18:43+05:30",
+  "date" : "2026-05-16T12:58:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

@@ -11,7 +11,21 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Coding.system","Coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Terminology system URI or constrained-format internal code-system identifier","The identification of the code system that defines the meaning of the symbol in the code. 
+
+Supports:
+- standard terminology codings
+- optional customer-specific internal codings
+Internal codings are used to preserve customer, EHR,
+workflow, and source-system-native semantic classifications and source system fidelity.
+
+Any coding system intended to represent an internal coding
+system SHALL follow the required naming convention:
+
+[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode
+
+Example:
+acme-epic-Observation-lab-code-glucose-InternalCode","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""acme-epic-Observation-lab-code-Glucose-InternalCode""/>","","",,,,,"",,,,"Coding.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 coding314e-3:Internal coding systems SHALL follow the format:
 
 [customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalCode

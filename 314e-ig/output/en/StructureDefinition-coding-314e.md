@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-coding-314e.csv),
   "name" : "Coding314e",
   "title" : "314e Coding",
   "status" : "active",
-  "date" : "2026-05-16T12:18:43+05:30",
+  "date" : "2026-05-16T12:58:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -93,6 +93,12 @@ Other representations of profile: [CSV](../StructureDefinition-coding-314e.csv),
     {
       "id" : "Coding.system",
       "path" : "Coding.system",
+      "short" : "Terminology system URI or constrained-format internal code-system identifier",
+      "definition" : "The identification of the code system that defines the meaning of the symbol in the code. \n\nSupports:\n- standard terminology codings\n- optional customer-specific internal codings\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[source-specific-string]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-glucose-InternalCode",
+      "example" : [{
+        "label" : "Internal Coding System",
+        "valueUri" : "acme-epic-Observation-lab-code-Glucose-InternalCode"
+      }],
       "constraint" : [{
         "key" : "coding314e-3",
         "severity" : "error",

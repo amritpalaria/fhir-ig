@@ -77,7 +77,15 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\coding-314e.fsh",
     "startLine": 37,
-    "endLine": 102
+    "endLine": 129
+  },
+  {
+    "outputFile": "StructureDefinition-identifier-314e.json",
+    "fshName": "Identifier314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\identifier-314e.fsh",
+    "startLine": 28,
+    "endLine": 120
   },
   {
     "outputFile": "StructureDefinition-quantity-314e.json",

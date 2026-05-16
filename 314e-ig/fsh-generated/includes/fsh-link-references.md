@@ -3,6 +3,7 @@
 [ProcedureCategoryBroad314eVS]: ValueSet-procedure-category-broad-314e.html
 [CodeableConcept314e]: StructureDefinition-codeableconcept-314e.html
 [Coding314e]: StructureDefinition-coding-314e.html
+[Identifier314e]: StructureDefinition-identifier-314e.html
 [ProcedureCategory314eCS]: CodeSystem-procedure-category-314e.html
 [ProcedureCategorySubcategory314eVS]: ValueSet-procedure-category-subcategory-314e.html
 [Quantity314e]: StructureDefinition-quantity-314e.html
