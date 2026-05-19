@@ -12,7 +12,7 @@ https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator
 
 **Usages:**
 
-* Use this Primitive Type Profile: [314e Annotation](StructureDefinition-annotation-314e.md), [314e Attachment](StructureDefinition-attachment-314e.md), [314e Period](StructureDefinition-period-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
+* Use this Primitive Type Profile: [314e Annotation](StructureDefinition-annotation-314e.md), [314e Attachment](StructureDefinition-attachment-314e.md), [314e Non-Microbiology Laboratory Observation](StructureDefinition-observation-lab-nonmicro-314e.md), [314e Period](StructureDefinition-period-314e.md)... Show 2 more, [314e ServiceRequest](StructureDefinition-servicerequest-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/datetime-314e)
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-314e.csv
   "name" : "dateTime314e",
   "title" : "314e dateTime",
   "status" : "active",
-  "date" : "2026-05-17T00:25:02+05:30",
+  "date" : "2026-05-19T06:46:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

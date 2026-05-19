@@ -9,6 +9,10 @@
 [decimal314e]: StructureDefinition-decimal-314e.html
 [Duration314e]: StructureDefinition-duration-314e.html
 [Identifier314e]: StructureDefinition-identifier-314e.html
+[instant314e]: StructureDefinition-instant-314e.html
+[LabCategorySubcategory314eVS]: ValueSet-lab-category-subcategory-314e.html
+[ObservationLabNonMicro314e]: StructureDefinition-observation-lab-nonmicro-314e.html
+[ValueAttachment314e]: StructureDefinition-value-attachment-314e.html
 [Period314e]: StructureDefinition-period-314e.html
 [ProcedureCategory314eCS]: CodeSystem-procedure-category-314e.html
 [ProcedureCategorySubcategory314eVS]: ValueSet-procedure-category-subcategory-314e.html
@@ -16,6 +20,7 @@
 [Range314e]: StructureDefinition-range-314e.html
 [Ratio314e]: StructureDefinition-ratio-314e.html
 [Reference314e]: StructureDefinition-reference-314e.html
+[SampledData314e]: StructureDefinition-sampleddata-314e.html
 [ServiceRequest314e]: StructureDefinition-servicerequest-314e.html
 [SimpleQuantity314e]: StructureDefinition-simplequantity-314e.html
 [time314e]: StructureDefinition-time-314e.html

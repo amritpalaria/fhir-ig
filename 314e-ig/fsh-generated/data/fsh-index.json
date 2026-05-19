@@ -136,6 +136,22 @@
     "endLine": 101
   },
   {
+    "outputFile": "StructureDefinition-instant-314e.json",
+    "fshName": "instant314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\instant-314e.fsh",
+    "startLine": 18,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-observation-lab-nonmicro-314e.json",
+    "fshName": "ObservationLabNonMicro314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\observation-lab-nonmicro-314e.fsh",
+    "startLine": 1,
+    "endLine": 175
+  },
+  {
     "outputFile": "StructureDefinition-period-314e.json",
     "fshName": "Period314e",
     "fshType": "Profile",
@@ -200,12 +216,20 @@
     "endLine": 36
   },
   {
+    "outputFile": "StructureDefinition-sampleddata-314e.json",
+    "fshName": "SampledData314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\sampleddata-314e.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
     "outputFile": "StructureDefinition-servicerequest-314e.json",
     "fshName": "ServiceRequest314e",
     "fshType": "Profile",
     "fshFile": "resources\\servicerequest-314e.fsh",
     "startLine": 1,
-    "endLine": 76
+    "endLine": 144
   },
   {
     "outputFile": "StructureDefinition-simplequantity-314e.json",
@@ -248,10 +272,26 @@
     "endLine": 40
   },
   {
+    "outputFile": "StructureDefinition-value-attachment-314e.json",
+    "fshName": "ValueAttachment314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\observation-value-attachment.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
     "outputFile": "ValueSet-attachment-tag.json",
     "fshName": "AttachmentTagVS",
     "fshType": "ValueSet",
     "fshFile": "valuesets\\attachment-tag-vs.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-lab-category-subcategory-314e.json",
+    "fshName": "LabCategorySubcategory314eVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\lab-subcategory-vs.fsh",
     "startLine": 1,
     "endLine": 12
   },

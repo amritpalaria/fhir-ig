@@ -72,6 +72,13 @@
       "types": [
         "code"
       ]
+    },
+    {
+      "url": "http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e",
+      "title": "314e Observation Value Attachment",
+      "types": [
+        "Attachment"
+      ]
     }
   ],
   "profiles": {
@@ -79,6 +86,12 @@
       {
         "url": "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
         "title": "314e ServiceRequest"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://314e.com/fhir/ig/StructureDefinition/observation-lab-nonmicro-314e",
+        "title": "314e Non-Microbiology Laboratory Observation"
       }
     ]
   },
@@ -96,7 +109,8 @@
       "dateTime"
     ],
     "http://314e.com/fhir/StructureDefinition/datetime-precision-314e": [
-      "dateTime"
+      "dateTime",
+      "instant"
     ],
     "http://314e.com/fhir/StructureDefinition/quantity-quantityString": [
       "Duration",
@@ -114,6 +128,9 @@
     ],
     "http://314e.com/fhir/StructureDefinition/time-precision-314e": [
       "time"
+    ],
+    "http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e": [
+      "Observation"
     ],
     "http://hl7.org/fhir/StructureDefinition/codeOptions|7.0.2": [
       "ServiceRequest.code"
@@ -146,6 +163,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/quantity-precision": [
@@ -155,6 +173,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -182,6 +203,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.differential.element.type.targetProfile",
       "StructureDefinition.snapshot.element",
       "StructureDefinition.snapshot.element.type",

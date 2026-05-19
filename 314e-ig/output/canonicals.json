@@ -153,6 +153,13 @@
   "name" : "AttachmentTagVS"
 },
 {
+  "id" : "lab-category-subcategory-314e",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ValueSet/lab-category-subcategory-314e",
+  "version" : "1.0.0",
+  "name" : "LabCategorySubcategory314eVS"
+},
+{
   "id" : "observation-tag-vs",
   "type" : "ValueSet",
   "url" : "http://314e.com/fhir/ValueSet/observation-tag",
@@ -237,6 +244,20 @@
   "name" : "Identifier314e"
 },
 {
+  "id" : "instant-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/instant-314e",
+  "version" : "1.0.0",
+  "name" : "instant314e"
+},
+{
+  "id" : "observation-lab-nonmicro-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/observation-lab-nonmicro-314e",
+  "version" : "1.0.0",
+  "name" : "ObservationLabNonMicro314e"
+},
+{
   "id" : "period-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/period-314e",
@@ -251,6 +272,13 @@
   "name" : "Quantity314e"
 },
 {
+  "id" : "sampleddata-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/sampleddata-314e",
+  "version" : "1.0.0",
+  "name" : "SampledData314e"
+},
+{
   "id" : "time-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/time-314e",
@@ -263,4 +291,11 @@
   "url" : "http://314e.com/fhir/ig/StructureDefinition/timing-314e",
   "version" : "1.0.0",
   "name" : "Timing314e"
+},
+{
+  "id" : "value-attachment-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e",
+  "version" : "1.0.0",
+  "name" : "ValueAttachment314e"
 }]

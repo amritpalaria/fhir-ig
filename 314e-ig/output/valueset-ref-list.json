@@ -12,6 +12,18 @@
     "StructureDefinition-attachment-tag.html" : "Attachment Tag"
   },
   {
+    "url" : "http://314e.com/fhir/ValueSet/lab-category-subcategory-314e",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "LabCategorySubcategory314eVS",
+    "title" : "314e Lab Subcategories",
+    "description" : "Procedure subcategories of Lab category used for more granular\noperational classification.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"],
+    "uses" : {
+    },
+    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+  },
+  {
     "url" : "http://314e.com/fhir/ValueSet/observation-tag",
     "version" : "1.0.0",
     "status" : "active",
@@ -54,8 +66,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-time-accuracy-314e.html" : "314e Time Accuracy",
-    "StructureDefinition-datetime-accuracy-314e.html" : "314e Date/Time Accuracy"
+    "StructureDefinition-datetime-accuracy-314e.html" : "314e Date/Time Accuracy",
+    "StructureDefinition-time-accuracy-314e.html" : "314e Time Accuracy"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/time-precision-units",
@@ -67,7 +79,7 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision",
-    "StructureDefinition-time-precision-314e.html" : "314e Time Precision"
+    "StructureDefinition-time-precision-314e.html" : "314e Time Precision",
+    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision"
   }]
 }

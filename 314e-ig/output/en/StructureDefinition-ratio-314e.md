@@ -7,7 +7,7 @@ A 314e-constrained Ratio datatype using 314e Quantity profiles.
 
 **Usages:**
 
-* This DataType Profile is not used by any profiles in this Implementation Guide
+* Use this DataType Profile: [314e Non-Microbiology Laboratory Observation](StructureDefinition-observation-lab-nonmicro-314e.md) and [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/ratio-314e)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-ratio-314e.csv), 
   "name" : "Ratio314e",
   "title" : "314e Ratio",
   "status" : "draft",
-  "date" : "2026-05-17T00:25:02+05:30",
+  "date" : "2026-05-19T06:46:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -60,10 +60,6 @@ Other representations of profile: [CSV](../StructureDefinition-ratio-314e.csv), 
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Ratio",
-      "path" : "Ratio"
-    },
-    {
       "id" : "Ratio.numerator",
       "path" : "Ratio.numerator",
       "short" : "Numerator using 314e Quantity",

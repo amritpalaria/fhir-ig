@@ -170,6 +170,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-observation-lab-nonmicro-314e.html"
+                  title="StructureDefinition/observation-lab-nonmicro-314e">
+                  <span title="StructureDefinition/observation-lab-nonmicro-314e">314e Non-Microbiology Laboratory Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e profile for non-microbiology laboratory observations.</p>
+
+<p>This profile derives from the QI Core Laboratory Result Observation profile
+and constrains datatypes to corresponding 314e datatype profiles where applicable.</p>
+
+<p>A required category slice SHALL identify the laboratory subcategory
+using a code from LabCategorySubcategory314eVS.</p>
+
+<p>This profile also supports the ValueAttachment314e extension
+for scenarios where the laboratory result cannot be represented
+using structured Observation.value[x] datatypes or plain text.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-servicerequest-314e.html"
                   title="StructureDefinition/servicerequest-314e">
                   <span title="StructureDefinition/servicerequest-314e">314e ServiceRequest
@@ -435,6 +457,30 @@ the referenced resource.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-sampleddata-314e.html"
+                  title="StructureDefinition/sampleddata-314e">
+                  <span title="StructureDefinition/sampleddata-314e">314e SampledData
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e profile of the FHIR SampledData datatype.</p>
+
+<p>This profile constrains numeric and quantity-related
+elements to corresponding 314e datatype profiles.</p>
+
+<p>SampledData is typically used for:</p>
+<ul>
+  <li>waveforms</li>
+  <li>physiological telemetry</li>
+  <li>ECG traces</li>
+  <li>continuous monitoring streams</li>
+  <li>device-generated measurements</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-simplequantity-314e.html"
                   title="StructureDefinition/simplequantity-314e">
                   <span title="StructureDefinition/simplequantity-314e">314e SimpleQuantity
@@ -516,6 +562,29 @@ of the decimal value independently of the actual lexical form.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-instant-314e.html"
+                  title="StructureDefinition/instant-314e">
+                  <span title="StructureDefinition/instant-314e">314e instant
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e profile of the FHIR instant primitive datatype.</p>
+
+<p>All instant values SHALL be stored in UTC.</p>
+
+<p>An instant represents an exact point in time and therefore
+does not support approximate or estimated accuracy semantics.</p>
+
+<p>If only a smaller degree of precision is usable
+(for example, only minute precision is meaningful),
+the following extension SHALL be used:</p>
+
+<p>http://314e.com/fhir/StructureDefinition/datetime-precision-314e</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-time-314e.html"
                   title="StructureDefinition/time-314e">
                   <span title="StructureDefinition/time-314e">314e time
@@ -591,6 +660,32 @@ of a dateTime value, such as year-only, year-month, date-only, or
 full timestamp precision.</p>
 
 <p>All dateTime values in the 314e implementation guide SHALL be stored in UTC.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-value-attachment-314e.html"
+                  title="StructureDefinition/value-attachment-314e">
+                  <span title="StructureDefinition/value-attachment-314e">314e Observation Value Attachment
+</span>
+               </a>
+            </td>
+            <td>
+<p>Extension used when an Observation result cannot be represented
+using one of the standard structured Observation.value[x]
+datatypes or as plain text.</p>
+
+<p>Typical use cases include:</p>
+<ul>
+  <li>PDF laboratory reports</li>
+  <li>proprietary binary result payloads</li>
+  <li>waveform files</li>
+  <li>image-based interpretations</li>
+  <li>externally generated rendered documents</li>
+  <li>rich formatted diagnostic content</li>
+</ul>
+
+<p>The attachment represents the clinically relevant result payload.</p>
 </td>
          </tr>
          <tr>
@@ -776,6 +871,19 @@ and service requests.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-lab-category-subcategory-314e.html"
+                  title="ValueSet/lab-category-subcategory-314e">
+                  <span title="ValueSet/lab-category-subcategory-314e">314e Lab Subcategories
+</span>
+               </a>
+            </td>
+            <td>
+<p>Procedure subcategories of Lab category used for more granular
+operational classification.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-procedure-category-subcategory-314e.html"
                   title="ValueSet/procedure-category-subcategory-314e">
                   <span title="ValueSet/procedure-category-subcategory-314e">314e Procedure Subcategories
@@ -924,8 +1032,8 @@ within hierarchical parent-child result/report structures.</p>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-17 00:25:00 +0530">
-    2026-05-17
+  <span title="2026-05-19 06:46:00 +0530">
+    2026-05-19
   </span>
 
           <br/>

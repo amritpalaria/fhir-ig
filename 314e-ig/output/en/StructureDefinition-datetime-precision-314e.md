@@ -14,7 +14,7 @@ All dateTime values in the 314e implementation guide SHALL be stored in UTC.
 
 **Usages:**
 
-* Use this Extension: [314e dateTime](StructureDefinition-datetime-314e.md)
+* Use this Extension: [314e dateTime](StructureDefinition-datetime-314e.md) and [314e instant](StructureDefinition-instant-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/datetime-precision-314e)
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-precisio
   "title" : "314e Date/Time Precision",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-17T00:25:02+05:30",
+  "date" : "2026-05-19T06:46:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

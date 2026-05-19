@@ -11,7 +11,7 @@ http://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e
 
 **Usages:**
 
-* Use this Primitive Type Profile: [314e Timing](StructureDefinition-timing-314e.md)
+* Use this Primitive Type Profile: [314e Non-Microbiology Laboratory Observation](StructureDefinition-observation-lab-nonmicro-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/time-314e)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-time-314e.csv), [
   "name" : "time314e",
   "title" : "314e time",
   "status" : "active",
-  "date" : "2026-05-17T00:25:02+05:30",
+  "date" : "2026-05-19T06:46:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -54,10 +54,6 @@ Other representations of profile: [CSV](../StructureDefinition-time-314e.csv), [
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "time",
-      "path" : "time"
-    },
-    {
       "id" : "time.extension",
       "path" : "time.extension",
       "slicing" : {

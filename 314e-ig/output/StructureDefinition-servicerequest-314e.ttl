@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "servicerequest-314e"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition servicerequest-314e</b></p><a name=\"servicerequest-314e\"> </a><a name=\"hcservicerequest-314e\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest\">ServiceRequest</a><a name=\"ServiceRequest\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-servicerequest.html\">QICoreServiceRequest</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A request for a service to be performed</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.basedOn\">basedOn</a><a name=\"ServiceRequest.basedOn\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/careplan.html\">CarePlan</a> | <a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a> | <a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What request fulfills</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.replaces\">replaces</a><a name=\"ServiceRequest.replaces\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What request replaces</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.category\" title=\"Broad and optional subcategory classifications used#xA;for workflow, routing, analytics, and operational#xA;grouping of ServiceRequest resources.\">category</a><a name=\"ServiceRequest.category\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Operational procedure/service categories</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> Slices for category<a name=\"ServiceRequest.category.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.category:broadCategory\" title=\"Slice broadCategory: Top-level operational classification of the requested#xA;service or procedure.\">category:broadCategory</a><a name=\"ServiceRequest.category.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Required broad procedure/service category<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-procedure-category-broad-314e.html\" title=\"http://314e.com/fhir/ValueSet/procedure-category-broad-314e\" class=\"binding\">314e Broad Procedure Categories</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.category:subCategory\" title=\"Slice subCategory: More granular operational sub-classification of the#xA;requested service or procedure.\">category:subCategory</a><a name=\"ServiceRequest.category.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Optional detailed subcategory<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-procedure-category-subcategory-314e.html\" title=\"http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e\" class=\"binding\">314e Procedure Subcategories</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.subject\">subject</a><a name=\"ServiceRequest.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-patient.html\">QICore Patient</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) Individual or Entity the service is ordered for</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.encounter\">encounter</a><a name=\"ServiceRequest.encounter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-encounter.html\">QICore Encounter</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Encounter in which the request was created</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.requester\">requester</a><a name=\"ServiceRequest.requester\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-practitioner.html\">QICore Practitioner</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-practitionerrole.html\">QICore PractitionerRole</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-organization.html\">QICore Organization</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-patient.html\">QICore Patient</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-relatedperson.html\">QICore RelatedPerson</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-device.html\">QICore Device</a> | <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-implantable-device.html\">US Core Implantable Device Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who/what is requesting service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.performer\">performer</a><a name=\"ServiceRequest.performer\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a> | <a href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a> | <a href=\"http://hl7.org/fhir/R4/careteam.html\">CareTeam</a> | <a href=\"http://hl7.org/fhir/R4/healthcareservice.html\">HealthcareService</a> | <a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a> | <a href=\"http://hl7.org/fhir/R4/device.html\">Device</a> | <a href=\"http://hl7.org/fhir/R4/relatedperson.html\">RelatedPerson</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Requested performer</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.reasonReference\">reasonReference</a><a name=\"ServiceRequest.reasonReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-condition-encounter-diagnosis.html\">QICore Condition Encounter Diagnosis</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-condition-problems-health-concerns.html\">QICore Condition Problems Health Concerns</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-diagnosticreport-note.html\">QICore DiagnosticReport Profile for Report and Note Exchange</a> | <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-documentreference.html\">US Core DocumentReference Profile</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-simple-observation.html\">QICore Simple Observation</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) Explanation/Justification for service or service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.insurance\">insurance</a><a name=\"ServiceRequest.insurance\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/coverage.html\">Coverage</a> | <a href=\"http://hl7.org/fhir/R4/claimresponse.html\">ClaimResponse</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Associated insurance coverage</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.supportingInfo\">supportingInfo</a><a name=\"ServiceRequest.supportingInfo\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/resource.html\">Resource</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Additional clinical information</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.specimen\">specimen</a><a name=\"ServiceRequest.specimen\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/specimen.html\">Specimen</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Procedure Samples</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.note\">note</a><a name=\"ServiceRequest.note\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-annotation-314e.html\" title=\"Annotation\">Annotation314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Comments</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition servicerequest-314e</b></p><a name=\"servicerequest-314e\"> </a><a name=\"hcservicerequest-314e\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest\">ServiceRequest</a><a name=\"ServiceRequest\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-servicerequest.html\">QICoreServiceRequest</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A request for a service to be performed</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.identifier\">Slices for identifier</a><a name=\"ServiceRequest.identifier\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-identifier-314e.html\" title=\"Identifier\">Identifier314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Identifiers assigned to this order</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:$this</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck125.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.identifier:internalIdentifier\" title=\"Slice internalIdentifier: Customer-specific or internally defined identifier#xA;used within local workflows, source systems,#xA;or operational environments.#xA;#xA;Identifier.system SHALL follow the naming convention:#xA;#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier#xA;#xA;Example of Identifier.system for internal identifier:#xA;acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier\">identifier:internalIdentifier</a><a name=\"ServiceRequest.identifier.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Customer-specific internal identifier whose system SHALL follow the mandated 314e naming convention<br/></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.identifier:internalIdentifier.system\">system</a><a name=\"ServiceRequest.identifier.system\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The namespace for the identifier value</span><br/><span style=\"font-weight:bold\">Example Internal ServiceRequest accession identifier system: </span><span style=\"color: darkgreen\">acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier</span><br/><span style=\"font-weight:bold\">Example Internal Identifier System for Patient: </span><span style=\"color: darkgreen\">acme-epic-Patient--identifier-MRN-InternalIdentifier</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.basedOn\">basedOn</a><a name=\"ServiceRequest.basedOn\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/careplan.html\">CarePlan</a> | <a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a> | <a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What request fulfills</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.replaces\">replaces</a><a name=\"ServiceRequest.replaces\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What request replaces</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.requisition\">requisition</a><a name=\"ServiceRequest.requisition\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-identifier-314e.html\" title=\"Identifier\">Identifier314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Composite Request ID</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.category\" title=\"Broad and optional subcategory classifications used#xA;for workflow, routing, analytics, and operational#xA;grouping of ServiceRequest resources.\">category</a><a name=\"ServiceRequest.category\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-codeableconcept-314e.html\" title=\"CodeableConcept\">CodeableConcept314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Operational procedure/service categories</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> Slices for category<a name=\"ServiceRequest.category.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.category:us-core\" title=\"Slice us-core\">category:us-core</a><a name=\"ServiceRequest.category.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-codeableconcept-314e.html\" title=\"CodeableConcept\">CodeableConcept314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Classification of service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.category:broadCategory\" title=\"Slice broadCategory: Top-level operational classification of the requested#xA;service or procedure.\">category:broadCategory</a><a name=\"ServiceRequest.category.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Required broad procedure/service category<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-procedure-category-broad-314e.html\" title=\"http://314e.com/fhir/ValueSet/procedure-category-broad-314e\" class=\"binding\">314e Broad Procedure Categories</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.category:subCategory\" title=\"Slice subCategory: More granular operational sub-classification of the#xA;requested service or procedure.\">category:subCategory</a><a name=\"ServiceRequest.category.5\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Optional detailed subcategory<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-procedure-category-subcategory-314e.html\" title=\"http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e\" class=\"binding\">314e Procedure Subcategories</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.code\">code</a><a name=\"ServiceRequest.code\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-codeableconcept-314e.html\" title=\"CodeableConcept\">CodeableConcept314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) What is being requested/ordered</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.orderDetail\">orderDetail</a><a name=\"ServiceRequest.orderDetail\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-codeableconcept-314e.html\" title=\"CodeableConcept\">CodeableConcept314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Additional order information</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.quantity[x]\">Slices for quantity[x]</a><a name=\"ServiceRequest.quantity_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a><span style=\"opacity: 0.5; font-style: italic\">, </span><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Ratio\">Ratio</a><span style=\"opacity: 0.5; font-style: italic\">, </span><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Range\">Range</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Service amount</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by type:$this</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.quantity[x]:quantityQuantity\" title=\"Slice quantityQuantity\">quantity[x]:quantityQuantity</a><a name=\"ServiceRequest.quantity_x_.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-quantity-314e.html\" title=\"Quantity\">Quantity314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Service amount</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.quantity[x]:quantityRange\" title=\"Slice quantityRange\">quantity[x]:quantityRange</a><a name=\"ServiceRequest.quantity_x_.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-range-314e.html\" title=\"Range\">Range314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Service amount</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.quantity[x]:quantityRatio\" title=\"Slice quantityRatio\">quantity[x]:quantityRatio</a><a name=\"ServiceRequest.quantity_x_.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ratio-314e.html\" title=\"Ratio\">Ratio314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Service amount</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.subject\">subject</a><a name=\"ServiceRequest.subject\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-patient.html\">QICore Patient</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) Individual or Entity the service is ordered for</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.encounter\">encounter</a><a name=\"ServiceRequest.encounter\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-encounter.html\">QICore Encounter</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Encounter in which the request was created</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.occurrence[x]\">Slices for occurrence[x]</a><a name=\"ServiceRequest.occurrence_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a><span style=\"opacity: 0.5; font-style: italic\">, </span><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a><span style=\"opacity: 0.5; font-style: italic\">, </span><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Timing\">Timing</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">(QI) When service should occur</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by type:$this</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.occurrence[x]:occurrenceDateTime\" title=\"Slice occurrenceDateTime\">occurrence[x]:occurrenceDateTime</a><a name=\"ServiceRequest.occurrence_x_.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-datetime-314e.html\" title=\"dateTime\">dateTime314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) When service should occur</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck134.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.occurrence[x]:occurrencePeriod\" title=\"Slice occurrencePeriod\">occurrence[x]:occurrencePeriod</a><a name=\"ServiceRequest.occurrence_x_.3\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-period-314e.html\" title=\"Period\">Period314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) When service should occur</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.occurrence[x]:occurrenceTiming\" title=\"Slice occurrenceTiming\">occurrence[x]:occurrenceTiming</a><a name=\"ServiceRequest.occurrence_x_.4\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-timing-314e.html\" title=\"Timing\">Timing314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) When service should occur</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck13.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic; font-style: italic\" href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.asNeeded[x]\">Slices for asNeeded[x]</a><a name=\"ServiceRequest.asNeeded_x_\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"opacity: 0.5; font-style: italic\">0</span><span style=\"opacity: 0.5; font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a><span style=\"opacity: 0.5; font-style: italic\">, </span><a style=\"opacity: 0.5; font-style: italic; opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Preconditions for service</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by type:$this</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck124.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.asNeeded[x]:asNeededCodeableConcept\" title=\"Slice asNeededCodeableConcept\">asNeeded[x]:asNeededCodeableConcept</a><a name=\"ServiceRequest.asNeeded_x_.2\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-codeableconcept-314e.html\" title=\"CodeableConcept\">CodeableConcept314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Preconditions for service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.authoredOn\">authoredOn</a><a name=\"ServiceRequest.authoredOn\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-datetime-314e.html\" title=\"dateTime\">dateTime314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) Date request signed</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.requester\">requester</a><a name=\"ServiceRequest.requester\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-practitioner.html\">QICore Practitioner</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-practitionerrole.html\">QICore PractitionerRole</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-organization.html\">QICore Organization</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-patient.html\">QICore Patient</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-relatedperson.html\">QICore RelatedPerson</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-device.html\">QICore Device</a> | <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-implantable-device.html\">US Core Implantable Device Profile</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who/what is requesting service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.performerType\">performerType</a><a name=\"ServiceRequest.performerType\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-codeableconcept-314e.html\" title=\"CodeableConcept\">CodeableConcept314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Performer role</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.performer\">performer</a><a name=\"ServiceRequest.performer\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a> | <a href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a> | <a href=\"http://hl7.org/fhir/R4/careteam.html\">CareTeam</a> | <a href=\"http://hl7.org/fhir/R4/healthcareservice.html\">HealthcareService</a> | <a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a> | <a href=\"http://hl7.org/fhir/R4/device.html\">Device</a> | <a href=\"http://hl7.org/fhir/R4/relatedperson.html\">RelatedPerson</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Requested performer</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.reasonCode\">reasonCode</a><a name=\"ServiceRequest.reasonCode\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-codeableconcept-314e.html\" title=\"CodeableConcept\">CodeableConcept314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) Explanation/Justification for procedure or service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.reasonReference\">reasonReference</a><a name=\"ServiceRequest.reasonReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-condition-encounter-diagnosis.html\">QICore Condition Encounter Diagnosis</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-condition-problems-health-concerns.html\">QICore Condition Problems Health Concerns</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-diagnosticreport-note.html\">QICore DiagnosticReport Profile for Report and Note Exchange</a> | <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-documentreference.html\">US Core DocumentReference Profile</a> | <a href=\"http://hl7.org/fhir/us/qicore/STU7.0.2/StructureDefinition-qicore-simple-observation.html\">QICore Simple Observation</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">(QI) Explanation/Justification for service or service</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.insurance\">insurance</a><a name=\"ServiceRequest.insurance\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/coverage.html\">Coverage</a> | <a href=\"http://hl7.org/fhir/R4/claimresponse.html\">ClaimResponse</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Associated insurance coverage</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.supportingInfo\">supportingInfo</a><a name=\"ServiceRequest.supportingInfo\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/resource.html\">Resource</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Additional clinical information</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.specimen\">specimen</a><a name=\"ServiceRequest.specimen\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-reference-314e.html\" title=\"314e Reference\">Reference314e</a>(<a href=\"http://hl7.org/fhir/R4/specimen.html\">Specimen</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Procedure Samples</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.bodySite\">bodySite</a><a name=\"ServiceRequest.bodySite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-codeableconcept-314e.html\" title=\"CodeableConcept\">CodeableConcept314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Location on Body</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-servicerequest-314e-definitions.html#ServiceRequest.note\">note</a><a name=\"ServiceRequest.note\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-annotation-314e.html\" title=\"Annotation\">Annotation314e</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Comments</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
@@ -58,7 +58,7 @@
   fhir:name [ fhir:v "ServiceRequest314e"] ; # 
   fhir:title [ fhir:v "314e ServiceRequest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-17T00:25:02+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-19T06:46:39+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -564,8 +564,68 @@
      ] [
        fhir:id [ fhir:v "ServiceRequest.identifier" ] ;
        fhir:path [ fhir:v "ServiceRequest.identifier" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
        fhir:short [ fhir:v "Identifiers assigned to this order" ] ;
        fhir:definition [ fhir:v "Identifiers assigned to this order instance by the orderer and/or the receiver and/or order fulfiller." ] ;
+       fhir:comment [ fhir:v "The identifier.type element is used to distinguish between the identifiers assigned by the orderer (known as the 'Placer' in HL7 v2) and the producer of the observations in response to the order (known as the 'Filler' in HL7 v2).  For further discussion and examples see the resource notes section below." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "ServiceRequest.identifier" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/identifier-314e>
+         ] )
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "workflow" ] ;
+         fhir:map [ fhir:v "Request.identifier" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "FiveWs.identifier" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "ORC.2, ORC.3, RF1-6 / RF1-11," ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".identifier" ]
+       ] [
+         fhir:identity [ fhir:v "quick" ] ;
+         fhir:map [ fhir:v "ClinicalStatement.identifier" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier" ] ;
+       fhir:sliceName [ fhir:v "internalIdentifier" ] ;
+       fhir:short [ fhir:v "Customer-specific internal identifier whose system SHALL follow the mandated 314e naming convention" ] ;
+       fhir:definition [ fhir:v "Customer-specific or internally defined identifier\nused within local workflows, source systems,\nor operational environments.\n\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample of Identifier.system for internal identifier:\nacme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier" ] ;
        fhir:comment [ fhir:v "The identifier.type element is used to distinguish between the identifiers assigned by the orderer (known as the 'Placer' in HL7 v2) and the producer of the observations in response to the order (known as the 'Filler' in HL7 v2).  For further discussion and examples see the resource notes section below." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
@@ -608,6 +668,415 @@
        ] [
          fhir:identity [ fhir:v "quick" ] ;
          fhir:map [ fhir:v "ClinicalStatement.identifier" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier.id" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "Unique id for inter-element referencing" ] ;
+       fhir:definition [ fhir:v "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "string"^^xsd:anyURI ;
+             fhir:l fhir:string
+           ]
+         ] ) ;
+         fhir:code [
+           fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhirpath/System.String>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier.extension" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Extension"^^xsd:anyURI ;
+           fhir:l fhir:Extension
+         ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier.use" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier.use" ] ;
+       fhir:short [ fhir:v "usual | official | temp | secondary | old (If known)" ] ;
+       fhir:definition [ fhir:v "The purpose of this identifier." ] ;
+       fhir:comment [ fhir:v "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary." ] ;
+       fhir:requirements [ fhir:v "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Identifier.use" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v true ] ;
+       fhir:isModifierReason [ fhir:v "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one." ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
+           fhir:value [
+             a fhir:String ;
+             fhir:v "IdentifierUse"
+           ]
+         ] ) ;
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "Identifies the purpose for this identifier, if known ." ] ;
+         fhir:valueSet [
+           fhir:v "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/identifier-use?version=4.0.1>
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "Role.code or implied by context" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier.type" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier.type" ] ;
+       fhir:short [ fhir:v "Description of identifier" ] ;
+       fhir:definition [ fhir:v "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose." ] ;
+       fhir:comment [ fhir:v "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type." ] ;
+       fhir:requirements [ fhir:v "Allows users to make use of identifiers when the identifier system is not known." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Identifier.type" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
+           fhir:value [
+             a fhir:String ;
+             fhir:v "IdentifierType"
+           ]
+         ] ) ;
+         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:description [ fhir:v "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." ] ;
+         fhir:valueSet [
+           fhir:v "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/identifier-type?version=4.0.1>
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "CX.5" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "Role.code or implied by context" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier.system" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier.system" ] ;
+       fhir:short [ fhir:v "The namespace for the identifier value" ] ;
+       fhir:definition [ fhir:v "Establishes the namespace for the value - that is, a URL that describes a set values that are unique." ] ;
+       fhir:comment [ fhir:v "Identifier.system is always case sensitive." ] ;
+       fhir:requirements [ fhir:v "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Identifier.system" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "uri"^^xsd:anyURI ;
+           fhir:l fhir:uri
+         ]
+       ] ) ;
+       fhir:example ( [
+         fhir:label [ fhir:v "General" ] ;
+         fhir:value [
+           a fhir:Uri ;
+           fhir:v "http://www.acme.com/identifiers/patient"^^xsd:anyURI ;
+           fhir:l <http://www.acme.com/identifiers/patient>
+         ]
+       ] [
+         fhir:label [ fhir:v "Internal ServiceRequest accession identifier system" ] ;
+         fhir:value [
+           a fhir:Uri ;
+           fhir:v "acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier"^^xsd:anyURI ;
+           fhir:l fhir:acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier
+         ]
+       ] [
+         fhir:label [ fhir:v "Internal Identifier System for Patient" ] ;
+         fhir:value [
+           a fhir:Uri ;
+           fhir:v "acme-epic-Patient--identifier-MRN-InternalIdentifier"^^xsd:anyURI ;
+           fhir:l fhir:acme-epic-Patient--identifier-MRN-InternalIdentifier
+         ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "CX.4 / EI-2-4" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "II.root or Role.id.root" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "./IdentifierType" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier.value" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier.value" ] ;
+       fhir:short [ fhir:v "The value that is unique" ] ;
+       fhir:definition [ fhir:v "The portion of the identifier typically relevant to the user and which is unique within the context of the system." ] ;
+       fhir:comment [ fhir:v "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Identifier.value" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] ) ;
+       fhir:example ( [
+         fhir:label [ fhir:v "General" ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "123456"
+         ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "CX.1 / EI.1" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "./Value" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier.period" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier.period" ] ;
+       fhir:short [ fhir:v "Time period when id is/was valid for use" ] ;
+       fhir:definition [ fhir:v "Time period during which identifier is/was valid for use." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Identifier.period" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "CX.7 + CX.8" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "Role.effectiveTime or implied by context" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "./StartDate and ./EndDate" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier.assigner" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier.assigner" ] ;
+       fhir:short [ fhir:v "Organization that issued id (may be just text)" ] ;
+       fhir:definition [ fhir:v "Organization that issued/manages the identifier." ] ;
+       fhir:comment [ fhir:v "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Identifier.assigner" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization?version=4.0.1>
+         ] )
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "CX.4 / (CX.4,CX.9,CX.10)" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "./IdentifierIssuingAuthority" ]
        ] )
      ] [
        fhir:id [ fhir:v "ServiceRequest.instantiatesCanonical" ] ;
@@ -825,7 +1294,11 @@
          fhir:code [
            fhir:v "Identifier"^^xsd:anyURI ;
            fhir:l fhir:Identifier
-         ]
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/identifier-314e>
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1028,7 +1501,11 @@
          fhir:code [
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
-         ]
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1091,7 +1568,11 @@
          fhir:code [
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
-         ]
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1372,7 +1853,11 @@
          fhir:code [
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
-         ]
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
        ] ) ;
        fhir:condition ( [ fhir:v "srq-1" ] ) ;
        fhir:constraint ( [
@@ -1682,7 +2167,11 @@
          fhir:code [
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
-         ]
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
        ] ) ;
        fhir:condition ( [ fhir:v "prr-1" ] ) ;
        fhir:constraint ( [
@@ -1729,6 +2218,14 @@
      ] [
        fhir:id [ fhir:v "ServiceRequest.quantity[x]" ] ;
        fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v false ] ;
+         fhir:rules [ fhir:v "closed" ]
+       ] ;
        fhir:short [ fhir:v "Service amount" ] ;
        fhir:definition [ fhir:v "An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction)." ] ;
        fhir:requirements [ fhir:v "When ordering a service the number of service items may need to be specified separately from the the service item." ] ;
@@ -1754,6 +2251,138 @@
            fhir:v "Range"^^xsd:anyURI ;
            fhir:l fhir:Range
          ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "NTE" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".quantity" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.quantity[x]:quantityQuantity" ] ;
+       fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+       fhir:sliceName [ fhir:v "quantityQuantity" ] ;
+       fhir:short [ fhir:v "Service amount" ] ;
+       fhir:definition [ fhir:v "An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction)." ] ;
+       fhir:requirements [ fhir:v "When ordering a service the number of service items may need to be specified separately from the the service item." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Quantity"^^xsd:anyURI ;
+           fhir:l fhir:Quantity
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/quantity-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/quantity-314e>
+         ] )
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "NTE" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".quantity" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.quantity[x]:quantityRange" ] ;
+       fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+       fhir:sliceName [ fhir:v "quantityRange" ] ;
+       fhir:short [ fhir:v "Service amount" ] ;
+       fhir:definition [ fhir:v "An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction)." ] ;
+       fhir:requirements [ fhir:v "When ordering a service the number of service items may need to be specified separately from the the service item." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Range"^^xsd:anyURI ;
+           fhir:l fhir:Range
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/StructureDefinition/range-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/range-314e>
+         ] )
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "NTE" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".quantity" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.quantity[x]:quantityRatio" ] ;
+       fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+       fhir:sliceName [ fhir:v "quantityRatio" ] ;
+       fhir:short [ fhir:v "Service amount" ] ;
+       fhir:definition [ fhir:v "An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction)." ] ;
+       fhir:requirements [ fhir:v "When ordering a service the number of service items may need to be specified separately from the the service item." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Ratio"^^xsd:anyURI ;
+           fhir:l fhir:Ratio
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/StructureDefinition/ratio-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/ratio-314e>
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -1914,6 +2543,14 @@
          ]
        ] ) ;
        fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v false ] ;
+         fhir:rules [ fhir:v "closed" ]
+       ] ;
        fhir:short [ fhir:v "(QI) When service should occur" ] ;
        fhir:definition [ fhir:v "The date/time at which the requested service should occur." ] ;
        fhir:alias ( [ fhir:v "schedule" ] ) ;
@@ -2010,8 +2647,247 @@
          fhir:map [ fhir:v "Procedure.procedureSchedule" ]
        ] )
      ] [
+       fhir:id [ fhir:v "ServiceRequest.occurrence[x]:occurrenceDateTime" ] ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement>
+         ] ;
+         fhir:value [
+           a fhir:Boolean ;
+           fhir:v true
+         ]
+       ] ) ;
+       fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+       fhir:sliceName [ fhir:v "occurrenceDateTime" ] ;
+       fhir:short [ fhir:v "(QI) When service should occur" ] ;
+       fhir:definition [ fhir:v "The date/time at which the requested service should occur." ] ;
+       fhir:alias ( [ fhir:v "schedule" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
+         ] ) ;
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/datetime-314e>
+         ] )
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "workflow" ] ;
+         fhir:map [ fhir:v "Request.occurrence[x]" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "FiveWs.planned" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "TQ1/TQ2, OBR-7/OBR-8" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".effectiveTime" ]
+       ] [
+         fhir:identity [ fhir:v "quick" ] ;
+         fhir:map [ fhir:v "Procedure.procedureSchedule" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.occurrence[x]:occurrencePeriod" ] ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement>
+         ] ;
+         fhir:value [
+           a fhir:Boolean ;
+           fhir:v true
+         ]
+       ] ) ;
+       fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+       fhir:sliceName [ fhir:v "occurrencePeriod" ] ;
+       fhir:short [ fhir:v "(QI) When service should occur" ] ;
+       fhir:definition [ fhir:v "The date/time at which the requested service should occur." ] ;
+       fhir:alias ( [ fhir:v "schedule" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
+         ] [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
+         ] ) ;
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/period-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/period-314e>
+         ] )
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "workflow" ] ;
+         fhir:map [ fhir:v "Request.occurrence[x]" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "FiveWs.planned" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "TQ1/TQ2, OBR-7/OBR-8" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".effectiveTime" ]
+       ] [
+         fhir:identity [ fhir:v "quick" ] ;
+         fhir:map [ fhir:v "Procedure.procedureSchedule" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.occurrence[x]:occurrenceTiming" ] ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement>
+         ] ;
+         fhir:value [
+           a fhir:Boolean ;
+           fhir:v true
+         ]
+       ] ) ;
+       fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+       fhir:sliceName [ fhir:v "occurrenceTiming" ] ;
+       fhir:short [ fhir:v "(QI) When service should occur" ] ;
+       fhir:definition [ fhir:v "The date/time at which the requested service should occur." ] ;
+       fhir:alias ( [ fhir:v "schedule" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
+         ] ) ;
+         fhir:code [
+           fhir:v "Timing"^^xsd:anyURI ;
+           fhir:l fhir:Timing
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/timing-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/timing-314e>
+         ] )
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:mustSupport [ fhir:v true ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "workflow" ] ;
+         fhir:map [ fhir:v "Request.occurrence[x]" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "FiveWs.planned" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "TQ1/TQ2, OBR-7/OBR-8" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".effectiveTime" ]
+       ] [
+         fhir:identity [ fhir:v "quick" ] ;
+         fhir:map [ fhir:v "Procedure.procedureSchedule" ]
+       ] )
+     ] [
        fhir:id [ fhir:v "ServiceRequest.asNeeded[x]" ] ;
        fhir:path [ fhir:v "ServiceRequest.asNeeded[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v false ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
        fhir:short [ fhir:v "Preconditions for service" ] ;
        fhir:definition [ fhir:v "If a CodeableConcept is present, it indicates the pre-condition for performing the service.  For example \"pain\", \"on flare-up\", etc." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -2031,6 +2907,67 @@
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
          ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:isSummary [ fhir:v true ] ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName>
+           ] ;
+           fhir:value [
+             a fhir:String ;
+             fhir:v "ProcedureAsNeededReason"
+           ]
+         ] ) ;
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:description [ fhir:v "A coded concept identifying the pre-condition that should hold prior to performing a procedure.  For example \"pain\", \"on flare-up\", etc." ] ;
+         fhir:valueSet [
+           fhir:v "http://hl7.org/fhir/ValueSet/medication-as-needed-reason"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/ValueSet/medication-as-needed-reason>
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "boolean: precondition.negationInd (inversed - so negationInd = true means asNeeded=false CodeableConcept: precondition.observationEventCriterion[code=\"Assertion\"].value" ]
+       ] [
+         fhir:identity [ fhir:v "quick" ] ;
+         fhir:map [ fhir:v "Proposal.prnReason.reason" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.asNeeded[x]:asNeededCodeableConcept" ] ;
+       fhir:path [ fhir:v "ServiceRequest.asNeeded[x]" ] ;
+       fhir:sliceName [ fhir:v "asNeededCodeableConcept" ] ;
+       fhir:short [ fhir:v "Preconditions for service" ] ;
+       fhir:definition [ fhir:v "If a CodeableConcept is present, it indicates the pre-condition for performing the service.  For example \"pain\", \"on flare-up\", etc." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "ServiceRequest.asNeeded[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2097,7 +3034,11 @@
          fhir:code [
            fhir:v "dateTime"^^xsd:anyURI ;
            fhir:l fhir:dateTime
-         ]
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/datetime-314e>
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2283,7 +3224,11 @@
          fhir:code [
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
-         ]
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2538,7 +3483,11 @@
          fhir:code [
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
-         ]
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -2846,7 +3795,11 @@
          fhir:code [
            fhir:v "CodeableConcept"^^xsd:anyURI ;
            fhir:l fhir:CodeableConcept
-         ]
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
        ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
@@ -3028,6 +3981,52 @@
        fhir:id [ fhir:v "ServiceRequest" ] ;
        fhir:path [ fhir:v "ServiceRequest" ]
      ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/identifier-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier" ] ;
+       fhir:sliceName [ fhir:v "internalIdentifier" ] ;
+       fhir:short [ fhir:v "Customer-specific internal identifier whose system SHALL follow the mandated 314e naming convention" ] ;
+       fhir:definition [ fhir:v "Customer-specific or internally defined identifier\nused within local workflows, source systems,\nor operational environments.\n\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample of Identifier.system for internal identifier:\nacme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ]
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.identifier:internalIdentifier.system" ] ;
+       fhir:path [ fhir:v "ServiceRequest.identifier.system" ] ;
+       fhir:example ( [
+         fhir:label [ fhir:v "Internal ServiceRequest accession identifier system" ] ;
+         fhir:value [
+           a fhir:Uri ;
+           fhir:v "acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier"^^xsd:anyURI ;
+           fhir:l fhir:acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier
+         ]
+       ] [
+         fhir:label [ fhir:v "Internal Identifier System for Patient" ] ;
+         fhir:value [
+           a fhir:Uri ;
+           fhir:v "acme-epic-Patient--identifier-MRN-InternalIdentifier"^^xsd:anyURI ;
+           fhir:l fhir:acme-epic-Patient--identifier-MRN-InternalIdentifier
+         ]
+       ] )
+     ] [
        fhir:id [ fhir:v "ServiceRequest.basedOn" ] ;
        fhir:path [ fhir:v "ServiceRequest.basedOn" ] ;
        fhir:type ( [
@@ -3068,11 +4067,48 @@
          ] )
        ] )
      ] [
+       fhir:id [ fhir:v "ServiceRequest.requisition" ] ;
+       fhir:path [ fhir:v "ServiceRequest.requisition" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/identifier-314e>
+         ] )
+       ] )
+     ] [
        fhir:id [ fhir:v "ServiceRequest.category" ] ;
        fhir:path [ fhir:v "ServiceRequest.category" ] ;
        fhir:short [ fhir:v "Operational procedure/service categories" ] ;
        fhir:definition [ fhir:v "Broad and optional subcategory classifications used\nfor workflow, routing, analytics, and operational\ngrouping of ServiceRequest resources." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.category:us-core" ] ;
+       fhir:path [ fhir:v "ServiceRequest.category" ] ;
+       fhir:sliceName [ fhir:v "us-core" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
+       ] )
      ] [
        fhir:id [ fhir:v "ServiceRequest.category:broadCategory" ] ;
        fhir:path [ fhir:v "ServiceRequest.category" ] ;
@@ -3103,6 +4139,91 @@
            fhir:l <http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e>
          ]
        ]
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.code" ] ;
+       fhir:path [ fhir:v "ServiceRequest.code" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.orderDetail" ] ;
+       fhir:path [ fhir:v "ServiceRequest.orderDetail" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.quantity[x]" ] ;
+       fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v false ] ;
+         fhir:rules [ fhir:v "open" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.quantity[x]:quantityQuantity" ] ;
+       fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+       fhir:sliceName [ fhir:v "quantityQuantity" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Quantity"^^xsd:anyURI ;
+           fhir:l fhir:Quantity
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/quantity-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/quantity-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.quantity[x]:quantityRange" ] ;
+       fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+       fhir:sliceName [ fhir:v "quantityRange" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Range"^^xsd:anyURI ;
+           fhir:l fhir:Range
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/StructureDefinition/range-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/range-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.quantity[x]:quantityRatio" ] ;
+       fhir:path [ fhir:v "ServiceRequest.quantity[x]" ] ;
+       fhir:sliceName [ fhir:v "quantityRatio" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Ratio"^^xsd:anyURI ;
+           fhir:l fhir:Ratio
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/StructureDefinition/ratio-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/ratio-314e>
+         ] )
+       ] )
      ] [
        fhir:id [ fhir:v "ServiceRequest.subject" ] ;
        fhir:path [ fhir:v "ServiceRequest.subject" ] ;
@@ -3135,6 +4256,144 @@
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+       fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v false ] ;
+         fhir:rules [ fhir:v "open" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.occurrence[x]:occurrenceDateTime" ] ;
+       fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+       fhir:sliceName [ fhir:v "occurrenceDateTime" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
+         ] ) ;
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/datetime-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.occurrence[x]:occurrencePeriod" ] ;
+       fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+       fhir:sliceName [ fhir:v "occurrencePeriod" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
+         ] [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
+         ] ) ;
+         fhir:code [
+           fhir:v "Period"^^xsd:anyURI ;
+           fhir:l fhir:Period
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/period-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/period-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.occurrence[x]:occurrenceTiming" ] ;
+       fhir:path [ fhir:v "ServiceRequest.occurrence[x]" ] ;
+       fhir:sliceName [ fhir:v "occurrenceTiming" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement>
+           ] ;
+           fhir:value [
+             a fhir:Boolean ;
+             fhir:v true
+           ]
+         ] ) ;
+         fhir:code [
+           fhir:v "Timing"^^xsd:anyURI ;
+           fhir:l fhir:Timing
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/timing-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/timing-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.asNeeded[x]" ] ;
+       fhir:path [ fhir:v "ServiceRequest.asNeeded[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v false ] ;
+         fhir:rules [ fhir:v "open" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.asNeeded[x]:asNeededCodeableConcept" ] ;
+       fhir:path [ fhir:v "ServiceRequest.asNeeded[x]" ] ;
+       fhir:sliceName [ fhir:v "asNeededCodeableConcept" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.authoredOn" ] ;
+       fhir:path [ fhir:v "ServiceRequest.authoredOn" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/datetime-314e>
          ] )
        ] )
      ] [
@@ -3233,6 +4492,19 @@
          ] )
        ] )
      ] [
+       fhir:id [ fhir:v "ServiceRequest.performerType" ] ;
+       fhir:path [ fhir:v "ServiceRequest.performerType" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
+         ] )
+       ] )
+     ] [
        fhir:id [ fhir:v "ServiceRequest.performer" ] ;
        fhir:path [ fhir:v "ServiceRequest.performer" ] ;
        fhir:type ( [
@@ -3268,6 +4540,19 @@
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.reasonCode" ] ;
+       fhir:path [ fhir:v "ServiceRequest.reasonCode" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
          ] )
        ] )
      ] [
@@ -3371,6 +4656,19 @@
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Specimen"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Specimen>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "ServiceRequest.bodySite" ] ;
+       fhir:path [ fhir:v "ServiceRequest.bodySite" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ] ;
+         fhir:profile ( [
+           fhir:v "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e>
          ] )
        ] )
      ] [

@@ -1,0 +1,22 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"instant","instant","","","",0,*,"","","","null {[]} {[]}
+","Primitive Type instant","An instant in time - known at least to the second","Note: This is intended for where precisely observed times are required, typically system logs etc., and not human-reported times - for them, see date and dateTime (which can be as precise as instant, but is not required to be) below. Time zone is always required","","","","","","","","",,,,,"",,,,"instant",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+instant314e-utc:instant values SHALL always be expressed in UTC ('Z'). {matches('^([0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z)$')}"
+"instant.id","instant.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"instant.extension","instant.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"instant.extension:timePrecision","instant.extension","timePrecision","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/datetime-precision-314e]]} {[]}
+","Usable precision of the instant value","Specifies the degree of precision that is meaningful,
+usable or reliable for the instant value.
+
+Examples include:
+- minute
+- second
+- millisecond","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"instant.value","instant.value","","","",0,1,"","","","instant {[]} {[]}
+","Primitive value for instant","The actual value","","","","","","","","","",,,,,"",,,,"instant.value",0,1,"",""

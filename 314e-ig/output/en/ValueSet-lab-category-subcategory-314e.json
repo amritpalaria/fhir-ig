@@ -1,0 +1,34 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "lab-category-subcategory-314e",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet lab-category-subcategory-314e</b></p><a name=\"lab-category-subcategory-314e\"> </a><a name=\"hclab-category-subcategory-314e\"> </a><ul><li>Include codes from<a href=\"CodeSystem-procedure-category-314e.html\"><code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span> where concept  descends from <a href=\"CodeSystem-procedure-category-314e.html#procedure-category-314e-LAB\">LAB</a></li></ul></div>"
+  },
+  "url" : "http://314e.com/fhir/ValueSet/lab-category-subcategory-314e",
+  "version" : "1.0.0",
+  "name" : "LabCategorySubcategory314eVS",
+  "title" : "314e Lab Subcategories",
+  "status" : "draft",
+  "date" : "2026-05-19T06:46:39+05:30",
+  "publisher" : "314e",
+  "contact" : [{
+    "name" : "314e",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://314e.com"
+    }]
+  }],
+  "description" : "Procedure subcategories of Lab category used for more granular\noperational classification.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "LAB"
+      }]
+    }]
+  }
+}

@@ -17,6 +17,7 @@
 ### ValueSets
 
 * [Attachment Tag ValueSet](en/ValueSet-attachment-tag.md)
+* [314e Lab Subcategories](en/ValueSet-lab-category-subcategory-314e.md)
 * [Observation Tag ValueSet](en/ValueSet-observation-tag-vs.md)
 * [314e Broad Procedure Categories](en/ValueSet-procedure-category-broad-314e.md)
 * [314e Procedure Subcategories](en/ValueSet-procedure-category-subcategory-314e.md)
@@ -36,6 +37,7 @@
 * [314e Range](en/StructureDefinition-range-314e.md)
 * [314e Ratio](en/StructureDefinition-ratio-314e.md)
 * [314e Reference](en/StructureDefinition-reference-314e.md)
+* [314e SampledData](en/StructureDefinition-sampleddata-314e.md)
 * [314e SimpleQuantity](en/StructureDefinition-simplequantity-314e.md)
 * [314e Timing](en/StructureDefinition-timing-314e.md)
 
@@ -43,10 +45,12 @@
 
 * [314e dateTime](en/StructureDefinition-datetime-314e.md)
 * [314e decimal](en/StructureDefinition-decimal-314e.md)
+* [314e instant](en/StructureDefinition-instant-314e.md)
 * [314e time](en/StructureDefinition-time-314e.md)
 
 ### Resource Profiles
 
+* [314e Non-Microbiology Laboratory Observation](en/StructureDefinition-observation-lab-nonmicro-314e.md)
 * [314e ServiceRequest](en/StructureDefinition-servicerequest-314e.md)
 
 ### Extensions
@@ -61,6 +65,7 @@
 * [Reference Context](en/StructureDefinition-reference-context.md)
 * [314e Time Accuracy](en/StructureDefinition-time-accuracy-314e.md)
 * [314e Time Precision](en/StructureDefinition-time-precision-314e.md)
+* [314e Observation Value Attachment](en/StructureDefinition-value-attachment-314e.md)
 
 ### ImplementationGuides
 

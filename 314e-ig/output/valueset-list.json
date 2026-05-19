@@ -9,6 +9,15 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/attachment-tag"]
   },
   {
+    "url" : "http://314e.com/fhir/ValueSet/lab-category-subcategory-314e",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "LabCategorySubcategory314eVS",
+    "title" : "314e Lab Subcategories",
+    "description" : "Procedure subcategories of Lab category used for more granular\noperational classification.",
+    "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"]
+  },
+  {
     "url" : "http://314e.com/fhir/ValueSet/observation-tag",
     "version" : "1.0.0",
     "status" : "active",

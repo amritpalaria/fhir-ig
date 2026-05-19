@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "LabCategorySubcategory314eVS",
+  "id": "lab-category-subcategory-314e",
+  "title": "314e Lab Subcategories",
+  "description": "Procedure subcategories of Lab category used for more granular\noperational classification.",
+  "url": "http://314e.com/fhir/ValueSet/lab-category-subcategory-314e",
+  "compose": {
+    "include": [
+      {
+        "system": "http://314e.com/fhir/CodeSystem/procedure-category-314e",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "LAB"
+          }
+        ]
+      }
+    ]
+  }
+}

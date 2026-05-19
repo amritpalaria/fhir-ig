@@ -1,7 +1,7 @@
 IG314e : Validation Results
 =========================================
 
-err = 60, warn = 51, info = 8
+err = 63, warn = 65, info = 13
 $--
 Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/fhir/ig)
  Build Errors : 0 / 4 / 0
@@ -23,6 +23,8 @@ Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/f
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-decimal-314e : 0 / 3 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-duration-314e : 0 / 2 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-identifier-314e : 0 / 5 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-instant-314e : 1 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-lab-nonmicro-314e : 0 / 5 / 4
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-period-314e : 0 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-quantity-314e : 0 / 2 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-quantity-quantityString : 2 / 1 / 1
@@ -31,13 +33,16 @@ Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/f
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-ratio-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-reference-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-reference-context : 2 / 1 / 1
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-servicerequest-314e : 2 / 1 / 2
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-sampleddata-314e : 0 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-servicerequest-314e : 2 / 5 / 4
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-simplequantity-314e : 2 / 2 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-time-314e : 0 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-time-accuracy-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-time-precision-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-timing-314e : 0 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-value-attachment-314e : 0 / 2 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-attachment-tag : 2 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-lab-category-subcategory-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-observation-tag-vs : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-broad-314e : 2 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-subcategory-314e : 2 / 1 / 1
@@ -129,6 +134,18 @@ WARNING: StructureDefinition/identifier-314e: StructureDefinition.snapshot.eleme
 WARNING: StructureDefinition/identifier-314e: StructureDefinition.differential.element[2].example[0].value.ofType(uri): No definition could be found for URL value 'acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier'
 WARNING: StructureDefinition/identifier-314e: StructureDefinition.differential.element[2].example[1].value.ofType(uri): No definition could be found for URL value 'acme-epic-Patient--identifier-MRN-InternalIdentifier'
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefinition/identifier-314e'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated\resources\StructureDefinition-instant-314e.json ==
+WARNING: StructureDefinition/instant-314e: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+ERROR: StructureDefinition/instant-314e: StructureDefinition.snapshot.element[0].constraint[1]: Error in constraint 'instant314e-utc' with expression 'matches('^([0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z)$')': Error evaluating FHIRPath expression: The function matches can only be used on string, uri, url, code, id but found [http://hl7.org/fhir/StructureDefinition/instant] (@char 1)
+== fsh-generated\resources\StructureDefinition-observation-lab-nonmicro-314e.json ==
+WARNING: StructureDefinition/observation-lab-nonmicro-314e: StructureDefinition.snapshot.element[24].example[1].value.ofType(uri): No definition could be found for URL value 'acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier'
+WARNING: StructureDefinition/observation-lab-nonmicro-314e: StructureDefinition.snapshot.element[24].example[2].value.ofType(uri): No definition could be found for URL value 'acme-epic-Patient--identifier-MRN-InternalIdentifier'
+WARNING: StructureDefinition/observation-lab-nonmicro-314e: StructureDefinition.differential.element[5].example[0].value.ofType(uri): No definition could be found for URL value 'acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier'
+WARNING: StructureDefinition/observation-lab-nonmicro-314e: StructureDefinition.differential.element[5].example[1].value.ofType(uri): No definition could be found for URL value 'acme-epic-Patient--identifier-MRN-InternalIdentifier'
+INFORMATION: StructureDefinition/observation-lab-nonmicro-314e: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/observation-lab-nonmicro-314e: StructureDefinition.snapshot.element[18].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/observation-lab-nonmicro-314e: StructureDefinition.snapshot.element[31].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefinition/observation-lab-nonmicro-314e'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-period-314e.json ==
 INFORMATION: StructureDefinition/period-314e: StructureDefinition.snapshot.element[0].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefinition/period-314e'): The Implementation Guide contains no examples for this data type profile
@@ -159,9 +176,17 @@ ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\
 ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/reference-context'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-reference-context.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/reference-context) does not match the URL (http://314e.com/fhir/StructureDefinition/reference-context). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/reference-context'): The Implementation Guide contains no examples for this extension
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-reference-context: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/reference-context vs http://314e.com/fhir/StructureDefinition/reference-context
+== fsh-generated\resources\StructureDefinition-sampleddata-314e.json ==
+WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefinition/sampleddata-314e'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated\resources\StructureDefinition-servicerequest-314e.json ==
 ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/servicerequest-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-servicerequest-314e.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/servicerequest-314e) does not match the URL (http://314e.com/fhir/StructureDefinition/servicerequest-314e). Use the special-url parameter if you really mean for it not to match
-INFORMATION: StructureDefinition/servicerequest-314e: StructureDefinition.snapshot.element[17].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/servicerequest-314e: StructureDefinition.snapshot.element[15].example[1].value.ofType(uri): No definition could be found for URL value 'acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier'
+WARNING: StructureDefinition/servicerequest-314e: StructureDefinition.snapshot.element[15].example[2].value.ofType(uri): No definition could be found for URL value 'acme-epic-Patient--identifier-MRN-InternalIdentifier'
+WARNING: StructureDefinition/servicerequest-314e: StructureDefinition.differential.element[3].example[0].value.ofType(uri): No definition could be found for URL value 'acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier'
+WARNING: StructureDefinition/servicerequest-314e: StructureDefinition.differential.element[3].example[1].value.ofType(uri): No definition could be found for URL value 'acme-epic-Patient--identifier-MRN-InternalIdentifier'
+INFORMATION: StructureDefinition/servicerequest-314e: StructureDefinition.differential.element[1].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/servicerequest-314e: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/servicerequest-314e: StructureDefinition.snapshot.element[26].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/servicerequest-314e'): The Implementation Guide contains no examples for this profile
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-servicerequest-314e: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/servicerequest-314e vs http://314e.com/fhir/StructureDefinition/servicerequest-314e
 == fsh-generated\resources\StructureDefinition-simplequantity-314e.json ==
@@ -181,10 +206,17 @@ WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefiniti
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-time-precision-314e: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/time-precision-314e vs http://314e.com/fhir/StructureDefinition/time-precision-314e
 == fsh-generated\resources\StructureDefinition-timing-314e.json ==
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefinition/timing-314e'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated\resources\StructureDefinition-value-attachment-314e.json ==
+WARNING: StructureDefinition/value-attachment-314e: StructureDefinition.context[0]: Review the extension type for value-attachment-314e: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\ValueSet-attachment-tag.json ==
 ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/attachment-tag'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-attachment-tag.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/attachment-tag) does not match the URL (http://314e.com/fhir/ValueSet/attachment-tag). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/attachment-tag: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-attachment-tag: URL Mismatch http://314e.com/fhir/ig/ValueSet/attachment-tag vs http://314e.com/fhir/ValueSet/attachment-tag
+== fsh-generated\resources\ValueSet-lab-category-subcategory-314e.json ==
+ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/lab-category-subcategory-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-lab-category-subcategory-314e.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/lab-category-subcategory-314e) does not match the URL (http://314e.com/fhir/ValueSet/lab-category-subcategory-314e). Use the special-url parameter if you really mean for it not to match
+WARNING: ValueSet/lab-category-subcategory-314e: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-lab-category-subcategory-314e: URL Mismatch http://314e.com/fhir/ig/ValueSet/lab-category-subcategory-314e vs http://314e.com/fhir/ValueSet/lab-category-subcategory-314e
 == fsh-generated\resources\ValueSet-observation-tag-vs.json ==
 ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/observation-tag'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-observation-tag-vs.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/observation-tag-vs) does not match the URL (http://314e.com/fhir/ValueSet/observation-tag). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/observation-tag-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

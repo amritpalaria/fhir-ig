@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sampleddata-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/sampleddata-314e",
+  "name": "SampledData314e",
+  "title": "314e SampledData",
+  "status": "active",
+  "description": "314e profile of the FHIR SampledData datatype.\n\nThis profile constrains numeric and quantity-related\nelements to corresponding 314e datatype profiles.\n\nSampledData is typically used for:\n- waveforms\n- physiological telemetry\n- ECG traces\n- continuous monitoring streams\n- device-generated measurements",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "SampledData",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/SampledData",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "SampledData.origin",
+        "path": "SampledData.origin",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/simplequantity-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SampledData.period",
+        "path": "SampledData.period",
+        "type": [
+          {
+            "code": "decimal",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/decimal-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SampledData.factor",
+        "path": "SampledData.factor",
+        "type": [
+          {
+            "code": "decimal",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/decimal-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SampledData.lowerLimit",
+        "path": "SampledData.lowerLimit",
+        "type": [
+          {
+            "code": "decimal",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/decimal-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SampledData.upperLimit",
+        "path": "SampledData.upperLimit",
+        "type": [
+          {
+            "code": "decimal",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/decimal-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

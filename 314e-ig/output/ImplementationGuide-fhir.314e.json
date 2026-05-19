@@ -11,7 +11,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-17T00:25:02+05:30",
+  "date" : "2026-05-19T06:46:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -783,6 +783,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:primitive-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/instant-314e"
+      },
+      "name" : "314e instant",
+      "description" : "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/lab-category-subcategory-314e"
+      },
+      "name" : "314e Lab Subcategories",
+      "description" : "Procedure subcategories of Lab category used for more granular\noperational classification.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-lab-nonmicro-314e"
+      },
+      "name" : "314e Non-Microbiology Laboratory Observation",
+      "description" : "314e profile for non-microbiology laboratory observations.\n\nThis profile derives from the QI Core Laboratory Result Observation profile\nand constrains datatypes to corresponding 314e datatype profiles where applicable.\n\nA required category slice SHALL identify the laboratory subcategory\nusing a code from LabCategorySubcategory314eVS.\n\nThis profile also supports the ValueAttachment314e extension\nfor scenarios where the laboratory result cannot be represented\nusing structured Observation.value[x] datatypes or plain text.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/value-attachment-314e"
+      },
+      "name" : "314e Observation Value Attachment",
+      "description" : "Extension used when an Observation result cannot be represented\nusing one of the standard structured Observation.value[x]\ndatatypes or as plain text.\n\nTypical use cases include:\n- PDF laboratory reports\n- proprietary binary result payloads\n- waveform files\n- image-based interpretations\n- externally generated rendered documents\n- rich formatted diagnostic content\n\nThe attachment represents the clinically relevant result payload.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -862,6 +910,18 @@
       },
       "name" : "314e Reference",
       "description" : "A constrained Reference datatype profile supporting semantic\nqualification of references using the reference-context extension.\n\nThis profile enables references to carry additional information\nabout the role, capacity, purpose, or contextual meaning of\nthe referenced resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/sampleddata-314e"
+      },
+      "name" : "314e SampledData",
+      "description" : "314e profile of the FHIR SampledData datatype.\n\nThis profile constrains numeric and quantity-related\nelements to corresponding 314e datatype profiles.\n\nSampledData is typically used for:\n- waveforms\n- physiological telemetry\n- ECG traces\n- continuous monitoring streams\n- device-generated measurements",
       "exampleBoolean" : false
     },
     {

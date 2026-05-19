@@ -11,7 +11,7 @@ Example: acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifi
 
 **Usages:**
 
-* Use this DataType Profile: [314e Reference](StructureDefinition-reference-314e.md)
+* Use this DataType Profile: [314e Non-Microbiology Laboratory Observation](StructureDefinition-observation-lab-nonmicro-314e.md), [314e Reference](StructureDefinition-reference-314e.md) and [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/identifier-314e)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-identifier-314e.c
   "name" : "Identifier314e",
   "title" : "314e Identifier",
   "status" : "active",
-  "date" : "2026-05-17T00:25:02+05:30",
+  "date" : "2026-05-19T06:46:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

@@ -7,6 +7,7 @@ Hierarchical procedure categories used for operational, workflow, and semantic c
 
 This Code system is referenced in the definition of the following value sets:
 
+* [LabCategorySubcategory314eVS](ValueSet-lab-category-subcategory-314e.md)
 * [ProcedureCategoryBroad314eVS](ValueSet-procedure-category-broad-314e.md)
 * [ProcedureCategorySubcategory314eVS](ValueSet-procedure-category-subcategory-314e.md)
 
@@ -27,7 +28,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "ProcedureCategory314eCS",
   "title" : "314e Procedure Category CodeSystem",
   "status" : "active",
-  "date" : "2026-05-17T00:25:02+05:30",
+  "date" : "2026-05-19T06:46:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

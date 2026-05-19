@@ -19,10 +19,47 @@ profile for clinical workflows.
 """
 
 // ======================================================
+// INTERNAL IDENTIFIER SLICE
+// ======================================================
+
+* identifier only Identifier314e
+* identifier 0..*
+
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.rules = #open
+
+* identifier contains internalIdentifier 0..*
+* identifier[internalIdentifier] only Identifier314e
+
+* identifier[internalIdentifier] ^short =
+    "Customer-specific internal identifier whose system SHALL follow the mandated 314e naming convention"
+
+* identifier[internalIdentifier] ^definition = """
+Customer-specific or internally defined identifier
+used within local workflows, source systems,
+or operational environments.
+
+Identifier.system SHALL follow the naming convention:
+
+[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier
+
+Example of Identifier.system for internal identifier:
+acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier
+"""
+
+* identifier[internalIdentifier].system ^example[0].label =
+    "Internal ServiceRequest accession identifier system"
+
+* identifier[internalIdentifier].system ^example[0].valueUri =
+    "acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier"
+
+// ======================================================
 // CATEGORY
 // ======================================================
 
 // One required broad operational category
+* category only CodeableConcept314e
 * category 1..*
 
 * category ^short =
@@ -36,7 +73,7 @@ grouping of ServiceRequest resources.
 
 // Broad category slice
 * category contains broadCategory 1..1
-
+* category[broadCategory] only CodeableConcept314e
 * category[broadCategory] from ProcedureCategoryBroad314eVS (required)
 
 * category[broadCategory] ^short =
@@ -49,7 +86,7 @@ service or procedure.
 
 // Optional subcategory slice
 * category contains subCategory 0..1
-
+* category[subCategory] only CodeableConcept314e
 * category[subCategory] from ProcedureCategorySubcategory314eVS (required)
 
 * category[subCategory] ^short =
@@ -60,7 +97,11 @@ More granular operational sub-classification of the
 requested service or procedure.
 """
 
-// Use 314e Reference profile where applicable
+// ======================================================
+// 314e DATATYPE CONSTRAINTS
+// ======================================================
+
+// References
 * subject only Reference314e
 * encounter only Reference314e
 * requester only Reference314e
@@ -72,5 +113,35 @@ requested service or procedure.
 * replaces only Reference314e
 * reasonReference only Reference314e
 
-// Use 314e Annotation profile
+// Identifiers
+* identifier only Identifier314e
+* requisition only Identifier314e
+
+// CodeableConcepts
+* code only CodeableConcept314e
+* orderDetail only CodeableConcept314e
+* reasonCode only CodeableConcept314e
+* bodySite only CodeableConcept314e
+* performerType only CodeableConcept314e
+* asNeededCodeableConcept only CodeableConcept314e
+
+// dateTime
+* authoredOn only dateTime314e
+* occurrenceDateTime only dateTime314e
+
+// Period
+* occurrencePeriod only Period314e
+
+// Timing
+* occurrenceTiming only Timing314e
+
+// Quantity / Range / Ratio
+* quantityQuantity only Quantity314e
+* quantityRange only Range314e
+* quantityRatio only Ratio314e
+
+// Annotation
 * note only Annotation314e
+
+
+

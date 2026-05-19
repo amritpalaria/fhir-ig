@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="69778bcf-4b84-4276-a9b0-69a91ed2afab"/>
+  <id value="cc93ce10-dbfe-4d56-acf6-fd343450c5b4"/>
   <meta>
-    <lastUpdated value="2026-05-17T00:25:02.519+05:30"/>
+    <lastUpdated value="2026-05-19T06:46:39.588+05:30"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -141,10 +141,10 @@ multiple copies of equivalent content are available.</p>
         <name value="AttachmentTagVS"/>
         <title value="Attachment Tag ValueSet"/>
         <status value="active"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:28ff83db-f513-4f82-bf28-17b951ddff17"/>
-          <timestamp value="2026-05-17T00:26:34+05:30"/>
+          <identifier value="urn:uuid:3a7299c8-0f3c-4b6a-99b5-fc4f0e14fe43"/>
+          <timestamp value="2026-05-19T06:49:03+05:30"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -321,10 +321,10 @@ multiple copies of equivalent content are available.</p>
         <name value="AttachmentTagVS"/>
         <title value="Attachment Tag ValueSet"/>
         <status value="active"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:28ff83db-f513-4f82-bf28-17b951ddff17"/>
-          <timestamp value="2026-05-17T00:26:34+05:30"/>
+          <identifier value="urn:uuid:3a7299c8-0f3c-4b6a-99b5-fc4f0e14fe43"/>
+          <timestamp value="2026-05-19T06:49:03+05:30"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -361,6 +361,414 @@ multiple copies of equivalent content are available.</p>
             <system value="http://314e.com/fhir/CodeSystem/attachment-tag"/>
             <code value="hidden"/>
             <display value="Hidden from application use"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://314e.com/fhir/ValueSet/lab-category-subcategory-314e"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-procedure-category-314e.html">codesystem 314e Procedure Category CodeSystem v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://314e.com/fhir/CodeSystem/procedure-category-314e|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-CHEM"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-CHEM">CHEM</a>
+                </td>
+                <td>Hematology &amp; Chemistry</td>
+                <td>Blood counts, routine panels</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;CHEM&quot;, &quot;display&quot;: &quot;Hematology &amp; Chemistry&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;CHEM&quot;&gt;&lt;display value=&quot;Hematology &amp;amp; Chemistry&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-PATH"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-PATH">PATH</a>
+                </td>
+                <td>Pathology &amp; Cytology</td>
+                <td>Biopsies, cell blocks, smears</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;PATH&quot;, &quot;display&quot;: &quot;Pathology &amp; Cytology&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;PATH&quot;&gt;&lt;display value=&quot;Pathology &amp;amp; Cytology&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-MICV"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-MICV">MICV</a>
+                </td>
+                <td>Microbiology &amp; Virology</td>
+                <td>Cultures, PCR tests, stains</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;MICV&quot;, &quot;display&quot;: &quot;Microbiology &amp; Virology&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;MICV&quot;&gt;&lt;display value=&quot;Microbiology &amp;amp; Virology&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-BBTM"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-BBTM">BBTM</a>
+                </td>
+                <td>Transfusion Medicine / Blood Bank</td>
+                <td>Cross-matches, antibody screens</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;BBTM&quot;, &quot;display&quot;: &quot;Transfusion Medicine / Blood Bank&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;BBTM&quot;&gt;&lt;display value=&quot;Transfusion Medicine / Blood Bank&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-GEND"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-GEND">GEND</a>
+                </td>
+                <td>Molecular Diagnostics &amp; Genetics</td>
+                <td>Gene sequencing, karyotyping</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;GEND&quot;, &quot;display&quot;: &quot;Molecular Diagnostics &amp; Genetics&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;GEND&quot;&gt;&lt;display value=&quot;Molecular Diagnostics &amp;amp; Genetics&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://314e.com/fhir/ValueSet/lab-category-subcategory-314e"/>
+        <version value="1.0.0"/>
+        <name value="LabCategorySubcategory314eVS"/>
+        <title value="314e Lab Subcategories"/>
+        <status value="draft"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
+        <expansion>
+          <identifier value="urn:uuid:b86ccb25-3c9d-48ab-9149-d163f8a7d733"/>
+          <timestamp value="2026-05-19T06:48:38+05:30"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://314e.com/fhir/CodeSystem/procedure-category-314e|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="CHEM"/>
+            <display value="Hematology &amp; Chemistry"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="PATH"/>
+            <display value="Pathology &amp; Cytology"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="MICV"/>
+            <display value="Microbiology &amp; Virology"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="BBTM"/>
+            <display value="Transfusion Medicine / Blood Bank"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="GEND"/>
+            <display value="Molecular Diagnostics &amp; Genetics"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://314e.com/fhir/ValueSet/lab-category-subcategory-314e"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-procedure-category-314e.html">codesystem 314e Procedure Category CodeSystem v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://314e.com/fhir/CodeSystem/procedure-category-314e|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-CHEM"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-CHEM">CHEM</a>
+                </td>
+                <td>Hematology &amp; Chemistry</td>
+                <td>Blood counts, routine panels</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;CHEM&quot;, &quot;display&quot;: &quot;Hematology &amp; Chemistry&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;CHEM&quot;&gt;&lt;display value=&quot;Hematology &amp;amp; Chemistry&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-PATH"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-PATH">PATH</a>
+                </td>
+                <td>Pathology &amp; Cytology</td>
+                <td>Biopsies, cell blocks, smears</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;PATH&quot;, &quot;display&quot;: &quot;Pathology &amp; Cytology&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;PATH&quot;&gt;&lt;display value=&quot;Pathology &amp;amp; Cytology&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-MICV"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-MICV">MICV</a>
+                </td>
+                <td>Microbiology &amp; Virology</td>
+                <td>Cultures, PCR tests, stains</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;MICV&quot;, &quot;display&quot;: &quot;Microbiology &amp; Virology&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;MICV&quot;&gt;&lt;display value=&quot;Microbiology &amp;amp; Virology&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-BBTM"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-BBTM">BBTM</a>
+                </td>
+                <td>Transfusion Medicine / Blood Bank</td>
+                <td>Cross-matches, antibody screens</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;BBTM&quot;, &quot;display&quot;: &quot;Transfusion Medicine / Blood Bank&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;BBTM&quot;&gt;&lt;display value=&quot;Transfusion Medicine / Blood Bank&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://314e.com/fhir/CodeSystem/procedure-category-314e-GEND"> </a>
+                  <code>http://314e.com/fhir/CodeSystem/procedure-category-314e</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-procedure-category-314e.html#procedure-category-314e-GEND">GEND</a>
+                </td>
+                <td>Molecular Diagnostics &amp; Genetics</td>
+                <td>Gene sequencing, karyotyping</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;GEND&quot;, &quot;display&quot;: &quot;Molecular Diagnostics &amp; Genetics&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://314e.com/fhir/CodeSystem/procedure-category-314e&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;GEND&quot;&gt;&lt;display value=&quot;Molecular Diagnostics &amp;amp; Genetics&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://314e.com/fhir/ValueSet/lab-category-subcategory-314e"/>
+        <version value="1.0.0"/>
+        <name value="LabCategorySubcategory314eVS"/>
+        <title value="314e Lab Subcategories"/>
+        <status value="draft"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
+        <expansion>
+          <identifier value="urn:uuid:b86ccb25-3c9d-48ab-9149-d163f8a7d733"/>
+          <timestamp value="2026-05-19T06:48:38+05:30"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://314e.com/fhir/CodeSystem/procedure-category-314e|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="CHEM"/>
+            <display value="Hematology &amp; Chemistry"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="PATH"/>
+            <display value="Pathology &amp; Cytology"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="MICV"/>
+            <display value="Microbiology &amp; Virology"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="BBTM"/>
+            <display value="Transfusion Medicine / Blood Bank"/>
+          </contains>
+          <contains>
+            <system value="http://314e.com/fhir/CodeSystem/procedure-category-314e"/>
+            <code value="GEND"/>
+            <display value="Molecular Diagnostics &amp; Genetics"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -465,10 +873,10 @@ resource bears a result or report.</p>
         <name value="ObservationTagVS"/>
         <title value="Observation Tag ValueSet"/>
         <status value="active"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:8e6f80bb-07f2-4cf9-96e1-2549d5902a0b"/>
-          <timestamp value="2026-05-17T00:26:34+05:30"/>
+          <identifier value="urn:uuid:7ae4f8fb-9e9c-409d-af74-ec9768c84955"/>
+          <timestamp value="2026-05-19T06:49:03+05:30"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -604,10 +1012,10 @@ resource bears a result or report.</p>
         <name value="ObservationTagVS"/>
         <title value="Observation Tag ValueSet"/>
         <status value="active"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:8e6f80bb-07f2-4cf9-96e1-2549d5902a0b"/>
-          <timestamp value="2026-05-17T00:26:34+05:30"/>
+          <identifier value="urn:uuid:7ae4f8fb-9e9c-409d-af74-ec9768c84955"/>
+          <timestamp value="2026-05-19T06:49:03+05:30"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -856,10 +1264,10 @@ resource bears a result or report.</p>
         <name value="ProcedureCategoryBroad314eVS"/>
         <title value="314e Broad Procedure Categories"/>
         <status value="draft"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:fd16310c-2664-427b-a8bf-5c471f47bd77"/>
-          <timestamp value="2026-05-17T00:26:34+05:30"/>
+          <identifier value="urn:uuid:6027014c-72cf-4951-9fbe-19ea61dcaf9b"/>
+          <timestamp value="2026-05-19T06:49:03+05:30"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -1138,10 +1546,10 @@ resource bears a result or report.</p>
         <name value="ProcedureCategoryBroad314eVS"/>
         <title value="314e Broad Procedure Categories"/>
         <status value="draft"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:fd16310c-2664-427b-a8bf-5c471f47bd77"/>
-          <timestamp value="2026-05-17T00:26:34+05:30"/>
+          <identifier value="urn:uuid:6027014c-72cf-4951-9fbe-19ea61dcaf9b"/>
+          <timestamp value="2026-05-19T06:49:03+05:30"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -2008,10 +2416,10 @@ resource bears a result or report.</p>
         <name value="ProcedureCategorySubcategory314eVS"/>
         <title value="314e Procedure Subcategories"/>
         <status value="draft"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:fc28a7e8-5d9c-4204-b5a5-73acddc6886e"/>
-          <timestamp value="2026-05-17T00:26:34+05:30"/>
+          <identifier value="urn:uuid:51d99f1c-71ec-4fa4-9243-347cdf08bd9a"/>
+          <timestamp value="2026-05-19T06:49:03+05:30"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -3018,10 +3426,10 @@ resource bears a result or report.</p>
         <name value="ProcedureCategorySubcategory314eVS"/>
         <title value="314e Procedure Subcategories"/>
         <status value="draft"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:fc28a7e8-5d9c-4204-b5a5-73acddc6886e"/>
-          <timestamp value="2026-05-17T00:26:34+05:30"/>
+          <identifier value="urn:uuid:51d99f1c-71ec-4fa4-9243-347cdf08bd9a"/>
+          <timestamp value="2026-05-19T06:49:03+05:30"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -3430,10 +3838,10 @@ resource bears a result or report.</p>
         <title value="314e Time Exactness Units ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:71cb23c1-f514-44bf-879b-54afe5a90b6a"/>
-          <timestamp value="2026-05-17T00:26:35+05:30"/>
+          <identifier value="urn:uuid:6515219b-2133-4d69-98b8-bf92a01a7594"/>
+          <timestamp value="2026-05-19T06:49:04+05:30"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -3702,10 +4110,10 @@ resource bears a result or report.</p>
         <title value="314e Time Exactness Units ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:71cb23c1-f514-44bf-879b-54afe5a90b6a"/>
-          <timestamp value="2026-05-17T00:26:35+05:30"/>
+          <identifier value="urn:uuid:6515219b-2133-4d69-98b8-bf92a01a7594"/>
+          <timestamp value="2026-05-19T06:49:04+05:30"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -3954,10 +4362,10 @@ resource bears a result or report.</p>
         <title value="314e Time Precision Units ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:7294abb5-1934-46e3-8237-5bad2f06314c"/>
-          <timestamp value="2026-05-17T00:26:35+05:30"/>
+          <identifier value="urn:uuid:3db0e7e2-da34-49fc-8c84-60eb25d5a444"/>
+          <timestamp value="2026-05-19T06:49:04+05:30"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -4201,10 +4609,10 @@ resource bears a result or report.</p>
         <title value="314e Time Precision Units ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-05-17T00:25:02+05:30"/>
+        <date value="2026-05-19T06:46:39+05:30"/>
         <expansion>
-          <identifier value="urn:uuid:7294abb5-1934-46e3-8237-5bad2f06314c"/>
-          <timestamp value="2026-05-17T00:26:35+05:30"/>
+          <identifier value="urn:uuid:3db0e7e2-da34-49fc-8c84-60eb25d5a444"/>
+          <timestamp value="2026-05-19T06:49:04+05:30"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>

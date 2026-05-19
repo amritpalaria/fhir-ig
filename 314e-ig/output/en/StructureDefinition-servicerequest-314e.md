@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
   "name" : "ServiceRequest314e",
   "title" : "314e ServiceRequest",
   "status" : "draft",
-  "date" : "2026-05-17T00:25:02+05:30",
+  "date" : "2026-05-19T06:46:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -97,6 +97,42 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
       "path" : "ServiceRequest"
     },
     {
+      "id" : "ServiceRequest.identifier",
+      "path" : "ServiceRequest.identifier",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/identifier-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.identifier:internalIdentifier",
+      "path" : "ServiceRequest.identifier",
+      "sliceName" : "internalIdentifier",
+      "short" : "Customer-specific internal identifier whose system SHALL follow the mandated 314e naming convention",
+      "definition" : "Customer-specific or internally defined identifier\nused within local workflows, source systems,\nor operational environments.\n\nIdentifier.system SHALL follow the naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier\n\nExample of Identifier.system for internal identifier:\nacme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "ServiceRequest.identifier:internalIdentifier.system",
+      "path" : "ServiceRequest.identifier.system",
+      "example" : [{
+        "label" : "Internal ServiceRequest accession identifier system",
+        "valueUri" : "acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier"
+      },
+      {
+        "label" : "Internal Identifier System for Patient",
+        "valueUri" : "acme-epic-Patient--identifier-MRN-InternalIdentifier"
+      }]
+    },
+    {
       "id" : "ServiceRequest.basedOn",
       "path" : "ServiceRequest.basedOn",
       "type" : [{
@@ -117,11 +153,32 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
       }]
     },
     {
+      "id" : "ServiceRequest.requisition",
+      "path" : "ServiceRequest.requisition",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/identifier-314e"]
+      }]
+    },
+    {
       "id" : "ServiceRequest.category",
       "path" : "ServiceRequest.category",
       "short" : "Operational procedure/service categories",
       "definition" : "Broad and optional subcategory classifications used\nfor workflow, routing, analytics, and operational\ngrouping of ServiceRequest resources.",
-      "min" : 1
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.category:us-core",
+      "path" : "ServiceRequest.category",
+      "sliceName" : "us-core",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
     },
     {
       "id" : "ServiceRequest.category:broadCategory",
@@ -150,6 +207,67 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
       }
     },
     {
+      "id" : "ServiceRequest.code",
+      "path" : "ServiceRequest.code",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.orderDetail",
+      "path" : "ServiceRequest.orderDetail",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.quantity[x]",
+      "path" : "ServiceRequest.quantity[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "ServiceRequest.quantity[x]:quantityQuantity",
+      "path" : "ServiceRequest.quantity[x]",
+      "sliceName" : "quantityQuantity",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/quantity-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.quantity[x]:quantityRange",
+      "path" : "ServiceRequest.quantity[x]",
+      "sliceName" : "quantityRange",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Range",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/range-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.quantity[x]:quantityRatio",
+      "path" : "ServiceRequest.quantity[x]",
+      "sliceName" : "quantityRatio",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Ratio",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/ratio-314e"]
+      }]
+    },
+    {
       "id" : "ServiceRequest.subject",
       "path" : "ServiceRequest.subject",
       "type" : [{
@@ -165,6 +283,98 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
         "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.occurrence[x]",
+      "path" : "ServiceRequest.occurrence[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "ServiceRequest.occurrence[x]:occurrenceDateTime",
+      "path" : "ServiceRequest.occurrence[x]",
+      "sliceName" : "occurrenceDateTime",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+          "valueBoolean" : true
+        }],
+        "code" : "dateTime",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.occurrence[x]:occurrencePeriod",
+      "path" : "ServiceRequest.occurrence[x]",
+      "sliceName" : "occurrencePeriod",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+          "valueBoolean" : true
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+          "valueBoolean" : true
+        }],
+        "code" : "Period",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/period-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.occurrence[x]:occurrenceTiming",
+      "path" : "ServiceRequest.occurrence[x]",
+      "sliceName" : "occurrenceTiming",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+          "valueBoolean" : true
+        }],
+        "code" : "Timing",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/timing-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.asNeeded[x]",
+      "path" : "ServiceRequest.asNeeded[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "ServiceRequest.asNeeded[x]:asNeededCodeableConcept",
+      "path" : "ServiceRequest.asNeeded[x]",
+      "sliceName" : "asNeededCodeableConcept",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.authoredOn",
+      "path" : "ServiceRequest.authoredOn",
+      "type" : [{
+        "code" : "dateTime",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
       }]
     },
     {
@@ -220,6 +430,14 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
       }]
     },
     {
+      "id" : "ServiceRequest.performerType",
+      "path" : "ServiceRequest.performerType",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
       "id" : "ServiceRequest.performer",
       "path" : "ServiceRequest.performer",
       "type" : [{
@@ -233,6 +451,14 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
         "http://hl7.org/fhir/StructureDefinition/Patient",
         "http://hl7.org/fhir/StructureDefinition/Device",
         "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.reasonCode",
+      "path" : "ServiceRequest.reasonCode",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
       }]
     },
     {
@@ -289,6 +515,14 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Specimen"]
+      }]
+    },
+    {
+      "id" : "ServiceRequest.bodySite",
+      "path" : "ServiceRequest.bodySite",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
       }]
     },
     {

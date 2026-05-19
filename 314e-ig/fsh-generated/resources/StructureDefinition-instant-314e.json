@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "instant-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/instant-314e",
+  "name": "instant314e",
+  "title": "314e instant",
+  "status": "active",
+  "description": "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e",
+  "fhirVersion": "4.0.1",
+  "kind": "primitive-type",
+  "abstract": false,
+  "type": "instant",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/instant",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "instant",
+        "path": "instant",
+        "constraint": [
+          {
+            "key": "instant314e-utc",
+            "severity": "error",
+            "human": "instant values SHALL always be expressed in UTC ('Z').",
+            "expression": "matches('^([0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\\\.[0-9]+)?Z)$')",
+            "source": "http://314e.com/fhir/ig/StructureDefinition/instant-314e"
+          }
+        ]
+      },
+      {
+        "id": "instant.extension",
+        "path": "instant.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "instant.extension:timePrecision",
+        "path": "instant.extension",
+        "sliceName": "timePrecision",
+        "short": "Usable precision of the instant value",
+        "definition": "Specifies the degree of precision that is meaningful,\nusable or reliable for the instant value.\n\nExamples include:\n- minute\n- second\n- millisecond",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/datetime-precision-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

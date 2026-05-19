@@ -9,7 +9,7 @@ If attachment content originated as inline data/blob content and was subsequentl
 
 **Usages:**
 
-* Use this DataType Profile: [Annotation Attachment](StructureDefinition-annotation-attachment.md)
+* Use this DataType Profile: [Annotation Attachment](StructureDefinition-annotation-attachment.md) and [314e Observation Value Attachment](StructureDefinition-value-attachment-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/attachment-314e)
 
@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
   "name" : "Attachment314e",
   "title" : "314e Attachment",
   "status" : "draft",
-  "date" : "2026-05-17T00:25:02+05:30",
+  "date" : "2026-05-19T06:46:39+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

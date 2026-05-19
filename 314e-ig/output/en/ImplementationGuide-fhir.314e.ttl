@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-17T00:25:02+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-19T06:46:39+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -1625,6 +1625,90 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:primitive-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/instant-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/instant-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e instant" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/ValueSet/lab-category-subcategory-314e> ;
+         fhir:reference [ fhir:v "ValueSet/lab-category-subcategory-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Lab Subcategories" ] ;
+       fhir:description [ fhir:v "Procedure subcategories of Lab category used for more granular\noperational classification." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-lab-nonmicro-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-lab-nonmicro-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Non-Microbiology Laboratory Observation" ] ;
+       fhir:description [ fhir:v "314e profile for non-microbiology laboratory observations.\n\nThis profile derives from the QI Core Laboratory Result Observation profile\nand constrains datatypes to corresponding 314e datatype profiles where applicable.\n\nA required category slice SHALL identify the laboratory subcategory\nusing a code from LabCategorySubcategory314eVS.\n\nThis profile also supports the ValueAttachment314e extension\nfor scenarios where the laboratory result cannot be represented\nusing structured Observation.value[x] datatypes or plain text." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/value-attachment-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Observation Value Attachment" ] ;
+       fhir:description [ fhir:v "Extension used when an Observation result cannot be represented\nusing one of the standard structured Observation.value[x]\ndatatypes or as plain text.\n\nTypical use cases include:\n- PDF laboratory reports\n- proprietary binary result payloads\n- waveform files\n- image-based interpretations\n- externally generated rendered documents\n- rich formatted diagnostic content\n\nThe attachment represents the clinically relevant result payload." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -1760,6 +1844,27 @@
        ] ;
        fhir:name [ fhir:v "314e Reference" ] ;
        fhir:description [ fhir:v "A constrained Reference datatype profile supporting semantic\nqualification of references using the reference-context extension.\n\nThis profile enables references to carry additional information\nabout the role, capacity, purpose, or contextual meaning of\nthe referenced resource." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/sampleddata-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/sampleddata-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e SampledData" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR SampledData datatype.\n\nThis profile constrains numeric and quantity-related\nelements to corresponding 314e datatype profiles.\n\nSampledData is typically used for:\n- waveforms\n- physiological telemetry\n- ECG traces\n- continuous monitoring streams\n- device-generated measurements" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
