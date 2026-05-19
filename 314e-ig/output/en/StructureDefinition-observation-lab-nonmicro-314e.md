@@ -51,7 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-observation-lab-n
   "name" : "ObservationLabNonMicro314e",
   "title" : "314e Non-Microbiology Laboratory Observation",
   "status" : "active",
-  "date" : "2026-05-19T06:46:39+05:30",
+  "date" : "2026-05-19T11:54:54+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -149,7 +149,11 @@ Other representations of profile: [CSV](../StructureDefinition-observation-lab-n
       "short" : "Customer-specific internal identifier whose system SHALL follow the 314e internal naming convention",
       "definition" : "Customer-specific or internally defined identifier.\n\nIdentifier.system SHALL follow the mandated 314e naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalIdentifier\n\nExample:\nacme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier",
       "min" : 0,
-      "max" : "*"
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/identifier-314e"]
+      }]
     },
     {
       "id" : "Observation.identifier:internalIdentifier.system",
@@ -157,10 +161,6 @@ Other representations of profile: [CSV](../StructureDefinition-observation-lab-n
       "example" : [{
         "label" : "Internal laboratory accession identifier system",
         "valueUri" : "acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier"
-      },
-      {
-        "label" : "Internal Identifier System for Patient",
-        "valueUri" : "acme-epic-Patient--identifier-MRN-InternalIdentifier"
       }]
     },
     {
@@ -217,6 +217,10 @@ Other representations of profile: [CSV](../StructureDefinition-observation-lab-n
       "definition" : "Required laboratory category/subcategory classification\nfor the non-microbiology laboratory observation.\n\nThe code SHALL be drawn from LabCategorySubcategory314eVS.",
       "min" : 1,
       "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }],
       "binding" : {
         "strength" : "required",
         "valueSet" : "http://314e.com/fhir/ValueSet/lab-category-subcategory-314e"

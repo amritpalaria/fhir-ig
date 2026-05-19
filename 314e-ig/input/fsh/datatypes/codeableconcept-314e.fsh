@@ -24,12 +24,6 @@ acme-epic-Observation-lab-code-Glucose-InternalCode
 * ^status = #active
 
 // ======================================================
-// USE 314e CODING
-// ======================================================
-
-* coding only Coding314e
-
-// ======================================================
 // INTERNAL CODING SLICE
 // ======================================================
 
@@ -39,7 +33,6 @@ acme-epic-Observation-lab-code-Glucose-InternalCode
 
 * coding contains internalCode 0..*
 
-* coding[internalCode] only Coding314e
 * coding[internalCode] ^short =
 """Customer-specific internal coding with required internal code system format"""
 
@@ -75,6 +68,8 @@ Customer-specific or source-system-native code value.
 * coding[internalCode].display ^definition = """
 Human-readable representation of the internal code.
 """
+
+* coding only Coding314e
 
 // ======================================================
 // EXAMPLE

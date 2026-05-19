@@ -22,7 +22,6 @@ using structured Observation.value[x] datatypes or plain text.
 // IDENTIFIERS
 // ======================================================
 
-* identifier only Identifier314e
 * identifier 0..*
 
 * identifier ^slicing.discriminator.type = #pattern
@@ -30,7 +29,6 @@ using structured Observation.value[x] datatypes or plain text.
 * identifier ^slicing.rules = #open
 
 * identifier contains internalIdentifier 0..*
-* identifier[internalIdentifier] only Identifier314e
 
 * identifier[internalIdentifier] ^short =
     "Customer-specific internal identifier whose system SHALL follow the 314e internal naming convention"
@@ -52,6 +50,30 @@ acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier
 * identifier[internalIdentifier].system ^example[0].valueUri =
     "acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier"
 
+* identifier only Identifier314e
+
+// ======================================================
+// CATEGORY SLICE
+// ======================================================
+
+* category contains labSubcategory 1..1
+
+//* category[labSubcategory] only http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e
+
+* category[labSubcategory] from LabCategorySubcategory314eVS (required)
+
+* category[labSubcategory] ^short =
+    "Required laboratory category/subcategory classification"
+
+* category[labSubcategory] ^definition = """
+Required laboratory category/subcategory classification
+for the non-microbiology laboratory observation.
+
+The code SHALL be drawn from LabCategorySubcategory314eVS.
+"""
+
+* category only CodeableConcept314e
+
 // ======================================================
 // REFERENCES
 // ======================================================
@@ -71,7 +93,6 @@ acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier
 // CODEABLE CONCEPTS
 // ======================================================
 
-* category only CodeableConcept314e
 * code only CodeableConcept314e
 * interpretation only CodeableConcept314e
 * bodySite only CodeableConcept314e
@@ -141,26 +162,6 @@ acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier
 * referenceRange.appliesTo only CodeableConcept314e
 * referenceRange.age only Range314e
 * referenceRange.text only string
-
-// ======================================================
-// CATEGORY SLICE
-// ======================================================
-
-* category contains labSubcategory 1..1
-
-* category[labSubcategory] only CodeableConcept314e
-
-* category[labSubcategory] from LabCategorySubcategory314eVS (required)
-
-* category[labSubcategory] ^short =
-    "Required laboratory category/subcategory classification"
-
-* category[labSubcategory] ^definition = """
-Required laboratory category/subcategory classification
-for the non-microbiology laboratory observation.
-
-The code SHALL be drawn from LabCategorySubcategory314eVS.
-"""
 
 // ======================================================
 // VALUE ATTACHMENT EXTENSION

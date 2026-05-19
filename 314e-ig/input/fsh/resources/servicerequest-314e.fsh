@@ -21,8 +21,6 @@ profile for clinical workflows.
 // ======================================================
 // INTERNAL IDENTIFIER SLICE
 // ======================================================
-
-* identifier only Identifier314e
 * identifier 0..*
 
 * identifier ^slicing.discriminator.type = #pattern
@@ -54,12 +52,13 @@ acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier
 * identifier[internalIdentifier].system ^example[0].valueUri =
     "acme-cerner-ServiceRequest-imaging-identifier-AccessionNumber-InternalIdentifier"
 
+* identifier only Identifier314e
+
 // ======================================================
 // CATEGORY
 // ======================================================
 
 // One required broad operational category
-* category only CodeableConcept314e
 * category 1..*
 
 * category ^short =
@@ -73,7 +72,6 @@ grouping of ServiceRequest resources.
 
 // Broad category slice
 * category contains broadCategory 1..1
-* category[broadCategory] only CodeableConcept314e
 * category[broadCategory] from ProcedureCategoryBroad314eVS (required)
 
 * category[broadCategory] ^short =
@@ -86,7 +84,6 @@ service or procedure.
 
 // Optional subcategory slice
 * category contains subCategory 0..1
-* category[subCategory] only CodeableConcept314e
 * category[subCategory] from ProcedureCategorySubcategory314eVS (required)
 
 * category[subCategory] ^short =
@@ -96,6 +93,8 @@ service or procedure.
 More granular operational sub-classification of the
 requested service or procedure.
 """
+
+* category only CodeableConcept314e
 
 // ======================================================
 // 314e DATATYPE CONSTRAINTS
@@ -123,22 +122,23 @@ requested service or procedure.
 * reasonCode only CodeableConcept314e
 * bodySite only CodeableConcept314e
 * performerType only CodeableConcept314e
-* asNeededCodeableConcept only CodeableConcept314e
+* asNeeded[x] only 
+    boolean or
+    CodeableConcept314e
 
 // dateTime
 * authoredOn only dateTime314e
-* occurrenceDateTime only dateTime314e
 
-// Period
-* occurrencePeriod only Period314e
-
-// Timing
-* occurrenceTiming only Timing314e
+* occurrence[x] only 
+    dateTime314e or
+    Period314e or
+    Timing314e
 
 // Quantity / Range / Ratio
-* quantityQuantity only Quantity314e
-* quantityRange only Range314e
-* quantityRatio only Ratio314e
+* quantity[x] only 
+    Quantity314e or
+    Range314e or
+    Ratio314e
 
 // Annotation
 * note only Annotation314e

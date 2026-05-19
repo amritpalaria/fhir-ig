@@ -149,7 +149,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\observation-lab-nonmicro-314e.fsh",
     "startLine": 1,
-    "endLine": 175
+    "endLine": 176
   },
   {
     "outputFile": "StructureDefinition-period-314e.json",

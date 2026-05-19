@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-time-precision-31
   "title" : "314e Time Precision",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-19T06:46:39+05:30",
+  "date" : "2026-05-19T11:54:54+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
