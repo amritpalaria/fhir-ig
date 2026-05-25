@@ -4,6 +4,9 @@
 
 * [Home](en/index.md)
 * [Artifacts Summary](en/artifacts.md)
+* [Extensions](en/extensions.md)
+* [Resource Profiles](en/resource-profiles.md)
+* [Terminology](en/terminology.md)
 
 ## Resources
 

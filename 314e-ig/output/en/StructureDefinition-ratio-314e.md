@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-ratio-314e.csv), 
   "name" : "Ratio314e",
   "title" : "314e Ratio",
   "status" : "draft",
-  "date" : "2026-05-19T11:54:54+05:30",
+  "date" : "2026-05-25T12:07:44+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

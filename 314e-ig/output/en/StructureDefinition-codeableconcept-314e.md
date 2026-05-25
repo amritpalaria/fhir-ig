@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-codeableconcept-3
   "name" : "CodeableConcept314e",
   "title" : "314e CodeableConcept",
   "status" : "active",
-  "date" : "2026-05-19T11:54:54+05:30",
+  "date" : "2026-05-25T12:07:44+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -94,13 +94,21 @@ Other representations of profile: [CSV](../StructureDefinition-codeableconcept-3
       "short" : "Customer-specific internal coding with required internal code system format",
       "definition" : "Optional internal coding used to preserve\nsource-system-native semantics.",
       "min" : 0,
-      "max" : "*"
+      "max" : "*",
+      "type" : [{
+        "code" : "Coding",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/coding-314e"]
+      }]
     },
     {
       "id" : "CodeableConcept.coding:internalCode.system",
       "path" : "CodeableConcept.coding.system",
       "short" : "Internal code system identifier with required format",
-      "definition" : "Internal customer-specific code system identifier.\n\nAny coding intended to represent an internal coding\nsystem SHALL use the following format:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode"
+      "definition" : "Internal customer-specific code system identifier.\n\nAny coding intended to represent an internal coding\nsystem SHALL use the following format:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode",
+      "example" : [{
+        "label" : "Internal Coding System",
+        "valueUri" : "acme-epic-Observation-lab-code-Glucose-InternalCode"
+      }]
     },
     {
       "id" : "CodeableConcept.coding:internalCode.code",

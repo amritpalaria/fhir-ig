@@ -84,7 +84,10 @@ parameters:
 
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Artifacts:
+    Resource Profiles: resource-profiles.html
+    Extensions: extensions.html
+    Terminology: terminology.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

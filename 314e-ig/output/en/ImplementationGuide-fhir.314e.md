@@ -14,7 +14,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-19T11:54:54+05:30",
+  "date" : "2026-05-25T12:07:44+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -1170,6 +1170,33 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "extensions.html"
+        }],
+        "nameUrl" : "extensions.html",
+        "title" : "Extensions",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resource-profiles.html"
+        }],
+        "nameUrl" : "resource-profiles.html",
+        "title" : "Resource Profiles",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "terminology.html"
+        }],
+        "nameUrl" : "terminology.html",
+        "title" : "Terminology",
         "generation" : "markdown"
       }]
     },

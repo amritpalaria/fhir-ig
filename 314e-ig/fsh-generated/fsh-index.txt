@@ -8,7 +8,7 @@ StructureDefinition-annotation-attachment.json          AnnotationAttachment    
 StructureDefinition-attachment-314e.json                Attachment314e                      Profile     datatypes\attachment-314e.fsh                1 - 62
 StructureDefinition-attachment-helperFile.json          AttachmentHelperFile                Extension   extensions\attachment-helperfile.fsh         1 - 41
 StructureDefinition-attachment-tag.json                 AttachmentTag                       Extension   extensions\attachment-tag.fsh                1 - 28
-StructureDefinition-codeableconcept-314e.json           CodeableConcept314e                 Profile     datatypes\codeableconcept-314e.fsh           1 - 96
+StructureDefinition-codeableconcept-314e.json           CodeableConcept314e                 Profile     datatypes\codeableconcept-314e.fsh           1 - 91
 StructureDefinition-coding-314e.json                    Coding314e                          Profile     datatypes\coding-314e.fsh                    37 - 143
 StructureDefinition-datetime-314e.json                  dateTime314e                        Profile     datatypes\datetime-314e.fsh                  19 - 76
 StructureDefinition-datetime-accuracy-314e.json         DateTimeAccuracy314e                Extension   extensions\datetime-exactness.fsh            1 - 33

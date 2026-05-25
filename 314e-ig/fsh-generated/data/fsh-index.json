@@ -77,7 +77,7 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\codeableconcept-314e.fsh",
     "startLine": 1,
-    "endLine": 96
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-coding-314e.json",
