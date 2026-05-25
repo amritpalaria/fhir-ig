@@ -162,77 +162,130 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h1 id="extensions">Extensions</h1>
 
+<p>| Name | Description |
+| :— | :— |
+| <a href="StructureDefinition-annotation-attachment.html">Annotation Attachment</a> | Provides an attachment-based representation of annotation or note
+content when the annotation is not represented as inline plain text.</p>
+
+<p>This extension supports scenarios in which annotation content is
+stored externally as an attachment rather than directly populated
+within Annotation.text. || <a href="StructureDefinition-attachment-helperFile.html">Attachment Helper File</a> | Provides the path or filename of a helper/supporting file associated
+with an Attachment.</p>
+
+<p>This extension is intended for scenarios in which the consumer of
+the attachment requires an auxiliary/helper file in order to correctly
+interpret, process, transform, or render the attachment content.</p>
+
+<p>Examples include:</p>
+<ul>
+  <li>XSLT files associated with XML documents</li>
+  <li>Schema files</li>
+  <li>Rendering templates</li>
+  <li>Transformation scripts</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Supporting metadata files</td>
+          <td> </td>
+          <td><a href="StructureDefinition-attachment-tag.html">Attachment Tag</a></td>
+          <td>A categorization or semantic tag associated with an Attachment.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>This extension allows multiple tags to be associated with an
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes. || <a href="StructureDefinition-datetime-accuracy-314e.html">314e Date/Time Accuracy</a> | Specifies the accuracy or exactness of a dateTime value when only some part of 
+the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.</p>
+
+<p>This extension is intended to explicitly communicate the accuracy
+of a dateTime value, such as full timestamp, year-only, year-month, date-only, or
+none.</p>
+
+<p>For example:</p>
+<ul>
+  <li>A birth year and month may be known exactly but the day might be an estimate</li>
+  <li>Only the date may be verifiable as accurate with the time being approximate</li>
+</ul>
+
+<p>Note: All dateTime values in the 314e implementation guide SHALL be stored in UTC. || <a href="StructureDefinition-datetime-precision-314e.html">314e Date/Time Precision</a> | Specifies the meaningful/ usable precision of a dateTime value when the 
+datatype syntactically permits greater precision than is actually known or clinically usable.</p>
+
+<p>This extension is intended to explicitly communicate the usable precision
+of a dateTime value, such as year-only, year-month, date-only, or
+full timestamp precision.</p>
+
 <table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Name</th>
-      <th style="text-align: left">Description</th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td style="text-align: left"><a href="StructureDefinition-annotation-attachment.html">Annotation Attachment</a></td>
-      <td style="text-align: left">Provides an attachment-based representation of annotation or notecontent when the annotation is not represented as inline plain text.This extension supports scenarios in which annotation content isstored externally as an attachment rather than directly populatedwithin Annotation.text.</td>
-      <td> </td>
-      <td><a href="StructureDefinition-attachment-helperFile.html">Attachment Helper File</a></td>
-      <td>Provides the path or filename of a helper/supporting file associatedwith an Attachment.This extension is intended for scenarios in which the consumer ofthe attachment requires an auxiliary/helper file in order to correctlyinterpret, process, transform, or render the attachment content.Examples include:- XSLT files associated with XML documents- Schema files- Rendering templates- Transformation scripts- Supporting metadata files</td>
-      <td> </td>
-      <td><a href="StructureDefinition-attachment-tag.html">Attachment Tag</a></td>
-      <td>A categorization or semantic tag associated with an Attachment.This extension allows multiple tags to be associated with anAttachment for workflow, classification, indexing, retrieval,processing, or application behavior purposes.</td>
-      <td> </td>
-      <td><a href="StructureDefinition-datetime-accuracy-314e.html">314e Date/Time Accuracy</a></td>
-      <td>Specifies the accuracy or exactness of a dateTime value when only some part of the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.This extension is intended to explicitly communicate the accuracyof a dateTime value, such as full timestamp, year-only, year-month, date-only, ornone.For example:- A birth year and month may be known exactly but the day might be an estimate- Only the date may be verifiable as accurate with the time being approximateNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC.</td>
-      <td> </td>
-      <td><a href="StructureDefinition-datetime-precision-314e.html">314e Date/Time Precision</a></td>
-      <td>Specifies the meaningful/ usable precision of a dateTime value when the datatype syntactically permits greater precision than is actually known or clinically usable.This extension is intended to explicitly communicate the usable precisionof a dateTime value, such as year-only, year-month, date-only, orfull timestamp precision.All dateTime values in the 314e implementation guide SHALL be stored in UTC.</td>
+      <td>All dateTime values in the 314e implementation guide SHALL be stored in UTC.</td>
       <td> </td>
       <td><a href="StructureDefinition-quantity-quantityString.html">Quantity Quantity String</a></td>
-      <td>A string representation of Quantity. This extension preserves the original lexical representation of a quantity. Additionally, in scenarios where FHIR requires Quantity datatype but the source data cannot be represented as distinct value and unit, this extension SHALL be utilized.This extension is intended for preservation of textual rendering and does not replace the computable Quantity elements.Applications should preserve synchronization between the computable Quantity contentand this extension if either representation is modified.</td>
-      <td> </td>
-      <td><a href="StructureDefinition-quantity-valueString.html">Quantity Value String</a></td>
-      <td>A string/ textual representation associated with Quantity.value.In scenarios where the ‘value’ of Quantity datatype cannot be expressed as a numerical value even though a distinct unit can be represented in the ‘unit’ element, this extension SHALL be used on the value field of Quantity.The presence of this extension does not alter the numeric semanticsof Quantity.value. Applications performing calculations SHALL use the actual decimalvalue of Quantity.value rather than the string carried in this extension.Applications should preserve synchronization between Quantity.valueand this extension if either representation is modified.</td>
-      <td> </td>
-      <td><a href="StructureDefinition-reference-context.html">Reference Context</a></td>
-      <td>Provides additional semantic context describing the role,capacity, purpose, or functional meaning of a Reference.This extension is intended for use in situations where thebase FHIR element is broadly defined and the precise meaningor role of the referenced resource requires further clarification.For example, the performer element of an Observation mayreference practitioners participating in different capacitiessuch as technician, phlebotomist, or pathologist.</td>
-      <td> </td>
-      <td><a href="StructureDefinition-time-accuracy-314e.html">314e Time Accuracy</a></td>
-      <td>Specifies the accuracy or exactness of a time value when only some part of the known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.This extension is intended to explicitly communicate the accuracyof a time value.</td>
-      <td> </td>
-      <td><a href="StructureDefinition-time-precision-314e.html">314e Time Precision</a></td>
-      <td>Specifies the meaningful/ usable precision of a time value when the datatype syntactically permits greater precision than is actually known or clinically usable.This extension is intended to explicitly communicate the usable precisionof a time value.</td>
-      <td> </td>
-      <td><a href="StructureDefinition-value-attachment-314e.html">314e Observation Value Attachment</a></td>
-      <td>Extension used when an Observation result cannot be representedusing one of the standard structured Observation.value[x]datatypes or as plain text.Typical use cases include:- PDF laboratory reports- proprietary binary result payloads- waveform files- image-based interpretations- externally generated rendered documents- rich formatted diagnostic contentThe attachment represents the clinically relevant result payload.</td>
+      <td>A string representation of Quantity.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This extension preserves the original lexical representation of a quantity. 
+Additionally, in scenarios where FHIR requires Quantity datatype but the source data 
+cannot be represented as distinct value and unit, this extension 
+SHALL be utilized.</p>
+
+<p>This extension is intended for preservation of textual rendering and does not replace 
+the computable Quantity elements.</p>
+
+<p>Applications should preserve synchronization between the computable Quantity content
+and this extension if either representation is modified. || <a href="StructureDefinition-quantity-valueString.html">Quantity Value String</a> | A string/ textual representation associated with Quantity.value.</p>
+
+<p>In scenarios where the ‘value’ of Quantity datatype cannot be expressed as a numerical value 
+even though a distinct unit can be represented in the ‘unit’ element, this 
+extension SHALL be used on the value field of Quantity.</p>
+
+<p>The presence of this extension does not alter the numeric semantics
+of Quantity.value.</p>
+
+<p>Applications performing calculations SHALL use the actual decimal
+value of Quantity.value rather than the string carried in this extension.</p>
+
+<p>Applications should preserve synchronization between Quantity.value
+and this extension if either representation is modified. || <a href="StructureDefinition-reference-context.html">Reference Context</a> | Provides additional semantic context describing the role,
+capacity, purpose, or functional meaning of a Reference.</p>
+
+<p>This extension is intended for use in situations where the
+base FHIR element is broadly defined and the precise meaning
+or role of the referenced resource requires further clarification.</p>
+
+<p>For example, the performer element of an Observation may
+reference practitioners participating in different capacities
+such as technician, phlebotomist, or pathologist. || <a href="StructureDefinition-time-accuracy-314e.html">314e Time Accuracy</a> | Specifies the accuracy or exactness of a time value when only some part of 
+the known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.</p>
+
+<p>This extension is intended to explicitly communicate the accuracy
+of a time value. || <a href="StructureDefinition-time-precision-314e.html">314e Time Precision</a> | Specifies the meaningful/ usable precision of a time value when the 
+datatype syntactically permits greater precision than is actually known or clinically usable.</p>
+
+<p>This extension is intended to explicitly communicate the usable precision
+of a time value. || <a href="StructureDefinition-value-attachment-314e.html">314e Observation Value Attachment</a> | Extension used when an Observation result cannot be represented
+using one of the standard structured Observation.value[x]
+datatypes or as plain text.</p>
+
+<p>Typical use cases include:</p>
+<ul>
+  <li>PDF laboratory reports</li>
+  <li>proprietary binary result payloads</li>
+  <li>waveform files</li>
+  <li>image-based interpretations</li>
+  <li>externally generated rendered documents</li>
+  <li>rich formatted diagnostic content</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>The attachment represents the clinically relevant result payload.</td>
     </tr>
   </tbody>
 </table>
@@ -265,7 +318,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-25 15:12:00 +0530">
+  <span title="2026-05-25 15:24:00 +0530">
     2026-05-25
   </span>
 

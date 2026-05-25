@@ -6,6 +6,6 @@
 {%- for p in profiles -%}
   {%- assign item = p[1] -%}
   {%- if item.type == "Extension" -%}
-| [{{ item.title }}]({{ item.path }}) | {{ item.description | strip_newlines | escape }} |
+| [{{ item.title }}]({{ item.path }}) | {{ item.description }} |
   {%- endif -%}
 {%- endfor %}
