@@ -1,7 +1,6 @@
 # Resource Profiles
 
-{% assign profiles = site.data.structuredefinitions
-  | where: "kind", "resource" %}
+{% assign profiles = site.data.structuredefinitions %}
 
 <table class="grid">
     <tr>
@@ -11,14 +10,16 @@
 
 {% for p in profiles %}
     {% assign item = p[1] %}
-    <tr>
-        <td>
-            <a href="{{ item.path }}">{{ item.title }}</a>
-        </td>
-        <td>
-            {{ item.description }}
-        </td>
-    </tr>
+    {% if item.kind == "resource" %}
+        <tr>
+            <td>
+                <a href="{{ item.path }}">{{ item.title }}</a>
+            </td>
+            <td>
+                {{ item.description }}
+            </td>
+        </tr>
+    {% endif %}
 {% endfor %}
 
 </table>

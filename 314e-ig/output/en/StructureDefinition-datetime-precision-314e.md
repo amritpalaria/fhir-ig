@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-precisio
   "title" : "314e Date/Time Precision",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T14:14:21+05:30",
+  "date" : "2026-05-25T14:26:28+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
