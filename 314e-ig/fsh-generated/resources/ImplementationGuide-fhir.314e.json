@@ -380,6 +380,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "complex-datatypes.html",
+          "title": "Complex Datatypes",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "extensions.html",
           "title": "Extensions",
           "generation": "markdown"
@@ -387,6 +392,11 @@
         {
           "nameUrl": "resource-profiles.html",
           "title": "Resource Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "simple-datatypes.html",
+          "title": "Simple Datatypes",
           "generation": "markdown"
         },
         {

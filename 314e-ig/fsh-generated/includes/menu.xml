@@ -25,6 +25,12 @@
         <a href="extensions.html">Extensions</a>
       </li>
       <li>
+        <a href="simple-datatypes.html">Primitive Datatypes</a>
+      </li>
+      <li>
+        <a href="complex-datatypes.html">Complex Datatypes</a>
+      </li>
+      <li>
         <a href="terminology.html">Terminology</a>
       </li>
     </ul>

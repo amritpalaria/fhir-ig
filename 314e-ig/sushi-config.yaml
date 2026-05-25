@@ -87,6 +87,8 @@ menu:
   Artifacts:
     Resource Profiles: resource-profiles.html
     Extensions: extensions.html
+    Primitive Datatypes: simple-datatypes.html
+    Complex Datatypes: complex-datatypes.html
     Terminology: terminology.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

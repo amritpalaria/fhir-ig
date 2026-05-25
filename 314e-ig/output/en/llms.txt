@@ -4,8 +4,10 @@
 
 * [Home](index.md)
 * [Artifacts Summary](artifacts.md)
+* [Complex Datatypes](complex-datatypes.md)
 * [Extensions](extensions.md)
 * [Resource Profiles](resource-profiles.md)
+* [Simple Datatypes](simple-datatypes.md)
 * [Terminology](terminology.md)
 
 ## Resources

@@ -3,7 +3,7 @@ IG314e : Validation Results
 
 err = 63, warn = 68, info = 13
 IG Publisher Version: 2.2.7 Out of date - current version is 2.2.8
-Generated Mon May 25 15:53:28 IST 2026. FHIR version 4.0.1 for fhir.314e#1.0.0 (canonical = http://314e.com/fhir/ig)
+Generated Mon May 25 16:40:45 IST 2026. FHIR version 4.0.1 for fhir.314e#1.0.0 (canonical = http://314e.com/fhir/ig)
  Build Errors : 0 / 4 / 0
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-attachment-tag-cs : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-observation-tag : 2 / 1 / 1

@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-25T15:48:57+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-25T16:36:06+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -2315,6 +2315,25 @@
            ] ;
            fhir:value [
              a fhir:Url ;
+             fhir:v "complex-datatypes.html"^^xsd:anyURI ;
+             fhir:l fhir:complex-datatypes.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "complex-datatypes.html"^^xsd:anyURI ;
+           fhir:l fhir:complex-datatypes.html
+         ] ;
+         fhir:title [ fhir:v "Complex Datatypes" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
              fhir:v "extensions.html"^^xsd:anyURI ;
              fhir:l fhir:extensions.html
            ]
@@ -2344,6 +2363,25 @@
            fhir:l fhir:resource-profiles.html
          ] ;
          fhir:title [ fhir:v "Resource Profiles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "simple-datatypes.html"^^xsd:anyURI ;
+             fhir:l fhir:simple-datatypes.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "simple-datatypes.html"^^xsd:anyURI ;
+           fhir:l fhir:simple-datatypes.html
+         ] ;
+         fhir:title [ fhir:v "Simple Datatypes" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

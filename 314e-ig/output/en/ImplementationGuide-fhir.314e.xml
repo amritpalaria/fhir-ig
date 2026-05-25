@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-25T15:48:57+05:30"/>
+  <date value="2026-05-25T16:36:06+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -959,6 +959,14 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="complex-datatypes.html"/>
+        </extension>
+        <nameUrl value="complex-datatypes.html"/>
+        <title value="Complex Datatypes"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="extensions.html"/>
         </extension>
         <nameUrl value="extensions.html"/>
@@ -971,6 +979,14 @@
         </extension>
         <nameUrl value="resource-profiles.html"/>
         <title value="Resource Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="simple-datatypes.html"/>
+        </extension>
+        <nameUrl value="simple-datatypes.html"/>
+        <title value="Simple Datatypes"/>
         <generation value="markdown"/>
       </page>
       <page>

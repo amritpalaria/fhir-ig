@@ -1,8 +1,9 @@
 # Terminology
 
-## Code Systems
+{% assign resources = site.data.resources %}
+{% assign artifacts = site.data.artifacts %}
 
-{% assign cs = site.data.artifacts.CodeSystem %}
+## Code Systems
 
 <table class="grid">
   <tr>
@@ -10,28 +11,34 @@
     <th>Description</th>
   </tr>
 
-{% for c in cs %}
+{% for r in resources %}
+  {% assign item = r[1] %}
+  {% assign current_path = item.path %}
+  {% if artifacts[current_path] == "CodeSystem" %}
   <tr>
-    <td><a href="{{ c.reference }}">{{ c.display }}</a></td>
-    <td>{{ c.description }}</td>
+    <td><a href="{{ item.path }}">{{ item.title }}</a></td>
+    <td>{{ item.description }}</td>
   </tr>
+  {% endif %}
 {% endfor %}
 </table>
 
 ## Value Sets
 
-{% assign vs = site.data.artifacts.ValueSet %}
-
 <table class="grid">
   <tr>
     <th>Name</th>
     <th>Description</th>
   </tr>
 
-{% for v in vs %}
+{% for r in resources %}
+  {% assign item = r[1] %}
+  {% assign current_path = item.path %}
+  {% if artifacts[current_path] == "ValueSet" %}
   <tr>
-    <td><a href="{{ v.reference }}">{{ v.display }}</a></td>
-    <td>{{ v.description }}</td>
+    <td><a href="{{ item.path }}">{{ item.title }}</a></td>
+    <td>{{ item.description }}</td>
   </tr>
+  {% endif %}
 {% endfor %}
 </table>
