@@ -1,6 +1,6 @@
 # Resource Profiles
 
-{% assign profiles = site.data.artifacts.StructureDefinition
+{% assign profiles = site.data.structuredefinitions
   | where: "kind", "resource" %}
 
 <table class="grid">
@@ -13,7 +13,7 @@
     {% assign item = p[1] %}
     <tr>
         <td>
-            <a href="{{ item.reference }}">{{ item.display }}</a>
+            <a href="{{ item.path }}">{{ item.title }}</a>
         </td>
         <td>
             {{ item.description }}
