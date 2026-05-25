@@ -12,7 +12,7 @@
     {% if item.kind == "resource" %}
     <tr>
         <td><a href="{{ item.path }}">{{ item.title }}</a></td>
-        <td>{{ item.description | strip_newlines }}</td>
+        <td>{{ item.description }}</td>
     </tr>
     {% endif %}
 {% endfor %}

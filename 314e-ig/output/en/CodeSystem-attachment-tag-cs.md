@@ -26,7 +26,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "AttachmentTagCS",
   "title" : "Attachment Tag CodeSystem",
   "status" : "active",
-  "date" : "2026-05-25T15:24:41+05:30",
+  "date" : "2026-05-25T15:48:57+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
