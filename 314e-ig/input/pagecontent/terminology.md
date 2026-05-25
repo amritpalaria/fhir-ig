@@ -12,7 +12,7 @@
 
 {% for c in cs %}
   <tr>
-    <td><a href="{{ c.url }}">{{ c.name }}</a></td>
+    <td><a href="{{ c.reference }}">{{ c.display }}</a></td>
     <td>{{ c.description }}</td>
   </tr>
 {% endfor %}
@@ -30,7 +30,7 @@
 
 {% for v in vs %}
   <tr>
-    <td><a href="{{ v.url }}">{{ v.name }}</a></td>
+    <td><a href="{{ v.reference }}">{{ v.display }}</a></td>
     <td>{{ v.description }}</td>
   </tr>
 {% endfor %}

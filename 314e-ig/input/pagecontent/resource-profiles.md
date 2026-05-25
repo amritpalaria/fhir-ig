@@ -12,7 +12,7 @@
 {% for p in profiles %}
   <tr>
     <td>
-      <a href="{{ p.url }}">{{ p.name }}</a>
+      <a href="{{ p.reference }}">{{ p.display }}</a>
     </td>
     <td>
       {{ p.description }}
