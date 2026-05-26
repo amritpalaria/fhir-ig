@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MicroorganismByMethodVS",
+  "id": "microorganism-by-method-vs",
+  "title": "Microorganism by Method",
+  "description": "LOINC methods used to identify microorganisms.",
+  "url": "http://314e.com/fhir/ig/ValueSet/microorganism-by-method-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "11475-1"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "92253-4"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "76346-6"
+          }
+        ]
+      }
+    ]
+  }
+}

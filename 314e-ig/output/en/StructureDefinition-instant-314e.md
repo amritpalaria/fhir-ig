@@ -11,7 +11,7 @@ http://314e.com/fhir/StructureDefinition/datetime-precision-314e
 
 **Usages:**
 
-* Use this Primitive Type Profile: [314e Non-Microbiology Laboratory Observation](StructureDefinition-observation-lab-nonmicro-314e.md)
+* Use this Primitive Type Profile: [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/instant-314e)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-instant-314e.csv)
   "name" : "instant314e",
   "title" : "314e instant",
   "status" : "active",
-  "date" : "2026-05-26T08:48:22+05:30",
+  "date" : "2026-05-26T12:06:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

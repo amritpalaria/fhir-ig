@@ -144,12 +144,36 @@
     "endLine": 51
   },
   {
-    "outputFile": "StructureDefinition-observation-lab-nonmicro-314e.json",
-    "fshName": "ObservationLabNonMicro314e",
+    "outputFile": "StructureDefinition-observation-antimicrobial-susceptibility-314e.json",
+    "fshName": "ObservationAntimicrobialSusceptibility314e",
     "fshType": "Profile",
-    "fshFile": "resources\\observation-lab-nonmicro-314e.fsh",
+    "fshFile": "resources\\observation-antimicrobial-susceptibility-314e.fsh",
     "startLine": 1,
-    "endLine": 174
+    "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-observation-lab-general-314e.json",
+    "fshName": "ObservationLabGeneral314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\observation-lab-general-314e.fsh",
+    "startLine": 1,
+    "endLine": 191
+  },
+  {
+    "outputFile": "StructureDefinition-observation-microbiology-314e.json",
+    "fshName": "ObservationMicrobiology314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\observation-microbiology-314e.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-observation-microorganism-314e.json",
+    "fshName": "ObservationMicroorganism314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\observation-microorganism-314e.fsh",
+    "startLine": 1,
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-period-314e.json",
@@ -280,6 +304,14 @@
     "endLine": 29
   },
   {
+    "outputFile": "ValueSet-antimicrobial-susceptibility-testing-vs.json",
+    "fshName": "AntimicrobialSusceptibilityTestingVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\antimicrobial-susceptibility-testing-vs.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
     "outputFile": "ValueSet-attachment-tag.json",
     "fshName": "AttachmentTagVS",
     "fshType": "ValueSet",
@@ -292,6 +324,14 @@
     "fshName": "LabCategorySubcategory314eVS",
     "fshType": "ValueSet",
     "fshFile": "valuesets\\lab-subcategory-vs.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-microorganism-by-method-vs.json",
+    "fshName": "MicroorganismByMethodVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\microorganism-method-vs.fsh",
     "startLine": 1,
     "endLine": 12
   },

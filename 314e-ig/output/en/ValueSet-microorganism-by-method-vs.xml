@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="microorganism-by-method-vs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet microorganism-by-method-vs</b></p><a name="microorganism-by-method-vs"> </a><a name="hcmicroorganism-by-method-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 11475-1 (Microorganism identified in Specimen by Culture)</li><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 92253-4 (Microorganism identified in Isolate or Specimen by Molecular genetics method)</li><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 76346-6 (Microorganism identified in Isolate by MS.MALDI-TOF)</li></ul></div>
+  </text>
+  <url value="http://314e.com/fhir/ig/ValueSet/microorganism-by-method-vs"/>
+  <version value="1.0.0"/>
+  <name value="MicroorganismByMethodVS"/>
+  <title value="Microorganism by Method"/>
+  <status value="active"/>
+  <date value="2026-05-26T12:06:33+05:30"/>
+  <publisher value="314e"/>
+  <contact>
+    <name value="314e"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://314e.com"/>
+    </telecom>
+  </contact>
+  <description value="LOINC methods used to identify microorganisms."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <filter>
+        <property value="code"/>
+        <op value="="/>
+        <value value="11475-1"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <filter>
+        <property value="code"/>
+        <op value="="/>
+        <value value="92253-4"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <filter>
+        <property value="code"/>
+        <op value="="/>
+        <value value="76346-6"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

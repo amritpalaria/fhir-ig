@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "microorganism-by-method-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet microorganism-by-method-vs</b></p><a name=\"microorganism-by-method-vs\"> </a><a name=\"hcmicroorganism-by-method-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 11475-1 (Microorganism identified in Specimen by Culture)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 92253-4 (Microorganism identified in Isolate or Specimen by Molecular genetics method)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 76346-6 (Microorganism identified in Isolate by MS.MALDI-TOF)</li></ul></div>"
+  },
+  "url" : "http://314e.com/fhir/ig/ValueSet/microorganism-by-method-vs",
+  "version" : "1.0.0",
+  "name" : "MicroorganismByMethodVS",
+  "title" : "Microorganism by Method",
+  "status" : "active",
+  "date" : "2026-05-26T12:06:33+05:30",
+  "publisher" : "314e",
+  "contact" : [{
+    "name" : "314e",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://314e.com"
+    }]
+  }],
+  "description" : "LOINC methods used to identify microorganisms.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "code",
+        "op" : "=",
+        "value" : "11475-1"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "code",
+        "op" : "=",
+        "value" : "92253-4"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "code",
+        "op" : "=",
+        "value" : "76346-6"
+      }]
+    }]
+  }
+}

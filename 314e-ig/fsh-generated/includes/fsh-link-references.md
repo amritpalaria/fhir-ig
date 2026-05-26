@@ -1,4 +1,5 @@
 [Annotation314e]: StructureDefinition-annotation-314e.html
+[ObservationAntimicrobialSusceptibility314e]: StructureDefinition-observation-antimicrobial-susceptibility-314e.html
 [Attachment314e]: StructureDefinition-attachment-314e.html
 [ProcedureCategoryBroad314eVS]: ValueSet-procedure-category-broad-314e.html
 [CodeableConcept314e]: StructureDefinition-codeableconcept-314e.html
@@ -8,10 +9,12 @@
 [dateTime314e]: StructureDefinition-datetime-314e.html
 [decimal314e]: StructureDefinition-decimal-314e.html
 [Duration314e]: StructureDefinition-duration-314e.html
+[ObservationLabGeneral314e]: StructureDefinition-observation-lab-general-314e.html
 [Identifier314e]: StructureDefinition-identifier-314e.html
 [instant314e]: StructureDefinition-instant-314e.html
 [LabCategorySubcategory314eVS]: ValueSet-lab-category-subcategory-314e.html
-[ObservationLabNonMicro314e]: StructureDefinition-observation-lab-nonmicro-314e.html
+[ObservationMicrobiology314e]: StructureDefinition-observation-microbiology-314e.html
+[ObservationMicroorganism314e]: StructureDefinition-observation-microorganism-314e.html
 [ValueAttachment314e]: StructureDefinition-value-attachment-314e.html
 [Period314e]: StructureDefinition-period-314e.html
 [ProcedureCategory314eCS]: CodeSystem-procedure-category-314e.html
@@ -31,10 +34,12 @@
 [TimePrecisionUnitsVS314E]: ValueSet-time-precision-units-vs.html
 [Timing314e]: StructureDefinition-timing-314e.html
 [AnnotationAttachment]: StructureDefinition-annotation-attachment.html
+[AntimicrobialSusceptibilityTestingVS]: ValueSet-antimicrobial-susceptibility-testing-vs.html
 [AttachmentHelperFile]: StructureDefinition-attachment-helperFile.html
 [AttachmentTag]: StructureDefinition-attachment-tag.html
 [AttachmentTagCS]: CodeSystem-attachment-tag-cs.html
 [AttachmentTagVS]: ValueSet-attachment-tag.html
+[MicroorganismByMethodVS]: ValueSet-microorganism-by-method-vs.html
 [ObservationTagCS]: CodeSystem-observation-tag.html
 [ObservationTagVS]: ValueSet-observation-tag-vs.html
 [QuantityQuantityString]: StructureDefinition-quantity-quantityString.html

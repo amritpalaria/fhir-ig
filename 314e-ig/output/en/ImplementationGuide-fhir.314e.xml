@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-26T08:48:22+05:30"/>
+  <date value="2026-05-26T12:06:33+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -493,6 +493,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-antimicrobial-susceptibility-314e"/>
+      </reference>
+      <name value="314e Antimicrobial Susceptibility Observation"/>
+      <description value="314e profile for antimicrobial susceptibility observations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -592,6 +603,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-lab-general-314e"/>
+      </reference>
+      <name value="314e General Laboratory Observation"/>
+      <description value="314e profile for general laboratory observations.&#xA;&#xA;This profile derives from the QI Core Laboratory Result Observation profile&#xA;and constrains datatypes to corresponding 314e datatype profiles where applicable.&#xA;&#xA;A required category slice SHALL identify the laboratory subcategory&#xA;using a code from LabCategorySubcategory314eVS.&#xA;&#xA;This profile also supports the ValueAttachment314e extension&#xA;for scenarios where the laboratory result cannot be represented&#xA;using structured Observation.value[x] datatypes or plain text."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -628,10 +650,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/observation-lab-nonmicro-314e"/>
+        <reference value="StructureDefinition/observation-microbiology-314e"/>
       </reference>
-      <name value="314e Non-Microbiology Laboratory Observation"/>
-      <description value="314e profile for non-microbiology laboratory observations.&#xA;&#xA;This profile derives from the QI Core Laboratory Result Observation profile&#xA;and constrains datatypes to corresponding 314e datatype profiles where applicable.&#xA;&#xA;A required category slice SHALL identify the laboratory subcategory&#xA;using a code from LabCategorySubcategory314eVS.&#xA;&#xA;This profile also supports the ValueAttachment314e extension&#xA;for scenarios where the laboratory result cannot be represented&#xA;using structured Observation.value[x] datatypes or plain text."/>
+      <name value="314e Microbiology Observation"/>
+      <description value="314e profile for microbiology laboratory observations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/observation-microorganism-314e"/>
+      </reference>
+      <name value="314e Microorganism Observation"/>
+      <description value="314e profile for microorganism observations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -845,6 +878,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/antimicrobial-susceptibility-testing-vs"/>
+      </reference>
+      <name value="Antimicrobial Susceptibility Testing"/>
+      <description value="Observation methods for antimicrobial susceptibility testing.&#xA;Includes HL7 v3 ObservationMethod code 0280 and all descendant codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -885,6 +929,17 @@
       </reference>
       <name value="Attachment Tag ValueSet"/>
       <description value="Standard semantic tags used for categorization and workflow&#xA;qualification of attachments."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/microorganism-by-method-vs"/>
+      </reference>
+      <name value="Microorganism by Method"/>
+      <description value="LOINC methods used to identify microorganisms."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -21,8 +21,10 @@
 
 ### ValueSets
 
+* [Antimicrobial Susceptibility Testing](ValueSet-antimicrobial-susceptibility-testing-vs.md)
 * [Attachment Tag ValueSet](ValueSet-attachment-tag.md)
 * [314e Lab Subcategories](ValueSet-lab-category-subcategory-314e.md)
+* [Microorganism by Method](ValueSet-microorganism-by-method-vs.md)
 * [Observation Tag ValueSet](ValueSet-observation-tag-vs.md)
 * [314e Broad Procedure Categories](ValueSet-procedure-category-broad-314e.md)
 * [314e Procedure Subcategories](ValueSet-procedure-category-subcategory-314e.md)
@@ -55,7 +57,10 @@
 
 ### Resource Profiles
 
-* [314e Non-Microbiology Laboratory Observation](StructureDefinition-observation-lab-nonmicro-314e.md)
+* [314e Antimicrobial Susceptibility Observation](StructureDefinition-observation-antimicrobial-susceptibility-314e.md)
+* [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md)
+* [314e Microbiology Observation](StructureDefinition-observation-microbiology-314e.md)
+* [314e Microorganism Observation](StructureDefinition-observation-microorganism-314e.md)
 * [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
 
 ### Extensions

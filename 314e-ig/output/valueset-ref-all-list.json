@@ -21,7 +21,10 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/observation-tag",
@@ -66,8 +69,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-time-accuracy-314e.html" : "314e Time Accuracy",
-    "StructureDefinition-datetime-accuracy-314e.html" : "314e Date/Time Accuracy"
+    "StructureDefinition-datetime-accuracy-314e.html" : "314e Date/Time Accuracy",
+    "StructureDefinition-time-accuracy-314e.html" : "314e Time Accuracy"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/time-precision-units",
@@ -79,8 +82,32 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision",
-    "StructureDefinition-time-precision-314e.html" : "314e Time Precision"
+    "StructureDefinition-time-precision-314e.html" : "314e Time Precision",
+    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision"
+  },
+  {
+    "url" : "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "AntimicrobialSusceptibilityTestingVS",
+    "title" : "Antimicrobial Susceptibility Testing",
+    "description" : "Observation methods for antimicrobial susceptibility testing.\nIncludes HL7 v3 ObservationMethod code 0280 and all descendant codes.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationMethod"],
+    "uses" : {
+    },
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation"
+  },
+  {
+    "url" : "http://314e.com/fhir/ig/ValueSet/microorganism-by-method-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "MicroorganismByMethodVS",
+    "title" : "Microorganism by Method",
+    "description" : "LOINC methods used to identify microorganisms.",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -94,8 +121,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -109,7 +139,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.79"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -123,7 +156,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.5"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -167,8 +203,11 @@
     "uses" : {
     },
     "StructureDefinition-identifier-314e.html" : "314e Identifier",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -183,8 +222,11 @@
     "uses" : {
     },
     "StructureDefinition-identifier-314e.html" : "314e Identifier",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -199,8 +241,11 @@
     "uses" : {
     },
     "StructureDefinition-attachment-314e.html" : "314e Attachment",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -242,7 +287,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.403"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -256,7 +304,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.396"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -270,7 +321,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -284,7 +338,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.395"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -298,7 +355,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.400"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/participant-role",
@@ -326,9 +386,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.59"],
     "uses" : {
     },
-    "StructureDefinition-simplequantity-314e.html" : "314e SimpleQuantity",
     "StructureDefinition-duration-314e.html" : "314e Duration",
-    "StructureDefinition-quantity-314e.html" : "314e Quantity"
+    "StructureDefinition-quantity-314e.html" : "314e Quantity",
+    "StructureDefinition-simplequantity-314e.html" : "314e SimpleQuantity"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -343,7 +403,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.407"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -357,7 +420,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.397"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -431,7 +497,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
@@ -501,7 +570,10 @@
     "sources" : ["2.16.840.1.113883.4.642.40.2.48.6"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code",
@@ -531,7 +603,10 @@
     "sources" : ["2.16.840.1.113883.4.642.40.2.48.24"],
     "uses" : {
     },
-    "StructureDefinition-observation-lab-nonmicro-314e.html" : "314e Non-Microbiology Laboratory Observation"
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code",

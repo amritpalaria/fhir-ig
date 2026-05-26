@@ -96,7 +96,7 @@
     <a href="extensions.html">Extensions</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Datatypes
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Datatype Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -189,14 +189,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-observation-lab-nonmicro-314e.html"
-                  title="StructureDefinition/observation-lab-nonmicro-314e">
-                  <span title="StructureDefinition/observation-lab-nonmicro-314e">314e Non-Microbiology Laboratory Observation
+               <a href="StructureDefinition-observation-antimicrobial-susceptibility-314e.html"
+                  title="StructureDefinition/observation-antimicrobial-susceptibility-314e">
+                  <span title="StructureDefinition/observation-antimicrobial-susceptibility-314e">314e Antimicrobial Susceptibility Observation
 </span>
                </a>
             </td>
             <td>
-<p>314e profile for non-microbiology laboratory observations.</p>
+<p>314e profile for antimicrobial susceptibility observations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-observation-lab-general-314e.html"
+                  title="StructureDefinition/observation-lab-general-314e">
+                  <span title="StructureDefinition/observation-lab-general-314e">314e General Laboratory Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e profile for general laboratory observations.</p>
 
 <p>This profile derives from the QI Core Laboratory Result Observation profile
 and constrains datatypes to corresponding 314e datatype profiles where applicable.</p>
@@ -207,6 +219,30 @@ using a code from LabCategorySubcategory314eVS.</p>
 <p>This profile also supports the ValueAttachment314e extension
 for scenarios where the laboratory result cannot be represented
 using structured Observation.value[x] datatypes or plain text.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-observation-microbiology-314e.html"
+                  title="StructureDefinition/observation-microbiology-314e">
+                  <span title="StructureDefinition/observation-microbiology-314e">314e Microbiology Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e profile for microbiology laboratory observations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-observation-microorganism-314e.html"
+                  title="StructureDefinition/observation-microorganism-314e">
+                  <span title="StructureDefinition/observation-microorganism-314e">314e Microorganism Observation
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e profile for microorganism observations.</p>
 </td>
          </tr>
          <tr>
@@ -940,6 +976,19 @@ operational classification.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-antimicrobial-susceptibility-testing-vs.html"
+                  title="ValueSet/antimicrobial-susceptibility-testing-vs">
+                  <span title="ValueSet/antimicrobial-susceptibility-testing-vs">Antimicrobial Susceptibility Testing
+</span>
+               </a>
+            </td>
+            <td>
+<p>Observation methods for antimicrobial susceptibility testing.
+Includes HL7 v3 ObservationMethod code 0280 and all descendant codes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-attachment-tag.html" title="ValueSet/attachment-tag">
                   <span title="ValueSet/attachment-tag">Attachment Tag ValueSet
 </span>
@@ -948,6 +997,18 @@ operational classification.</p>
             <td>
 <p>Standard semantic tags used for categorization and workflow
 qualification of attachments.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-microorganism-by-method-vs.html"
+                  title="ValueSet/microorganism-by-method-vs">
+                  <span title="ValueSet/microorganism-by-method-vs">Microorganism by Method
+</span>
+               </a>
+            </td>
+            <td>
+<p>LOINC methods used to identify microorganisms.</p>
 </td>
          </tr>
          <tr>
@@ -1051,7 +1112,7 @@ within hierarchical parent-child result/report structures.</p>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-26 08:48:00 +0530">
+  <span title="2026-05-26 12:06:00 +0530">
     2026-05-26
   </span>
 

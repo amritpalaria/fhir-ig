@@ -61,5 +61,23 @@
     "title" : "314e Time Precision Units ValueSet",
     "description" : "Allowed precision units for dateTime, time, and instant precision indicators.",
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"]
+  },
+  {
+    "url" : "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "AntimicrobialSusceptibilityTestingVS",
+    "title" : "Antimicrobial Susceptibility Testing",
+    "description" : "Observation methods for antimicrobial susceptibility testing.\nIncludes HL7 v3 ObservationMethod code 0280 and all descendant codes.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationMethod"]
+  },
+  {
+    "url" : "http://314e.com/fhir/ig/ValueSet/microorganism-by-method-vs",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "MicroorganismByMethodVS",
+    "title" : "Microorganism by Method",
+    "description" : "LOINC methods used to identify microorganisms.",
+    "systems" : ["http://loinc.org"]
   }]
 }

@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "observation-antimicrobial-susceptibility-314e",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-primaryCodePath",
+      "valueString": "code"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+      "valueString": "LaboratoryResultObservation"
+    }
+  ],
+  "url": "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
+  "name": "ObservationAntimicrobialSusceptibility314e",
+  "title": "314e Antimicrobial Susceptibility Observation",
+  "status": "active",
+  "description": "314e profile for antimicrobial susceptibility observations.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:antimicrobialSusceptibilityCode",
+        "path": "Observation.code.coding",
+        "sliceName": "antimicrobialSusceptibilityCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:antimicrobialSusceptibilityCode.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:antimicrobialSusceptibilityCode.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "365705006"
+      },
+      {
+        "id": "Observation.code.coding:antimicrobialSusceptibilityCode.display",
+        "path": "Observation.code.coding.display",
+        "fixedString": "Antimicrobial susceptibility - finding"
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "min": 1
+      },
+      {
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs"
+        }
+      }
+    ]
+  }
+}

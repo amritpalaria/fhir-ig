@@ -30,9 +30,9 @@
     "description" : "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources.",
     "uses" : {
     },
+    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories",
     "ValueSet-lab-category-subcategory-314e.html" : "314e Lab Subcategories",
-    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories",
-    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories"
+    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories"
   },
   {
     "url" : "http://314e.com/fhir/CodeSystem/time-precision-units",
@@ -200,8 +200,9 @@
     "uses" : {
     },
     "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes",
     "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes"
+    "ValueSet-microorganism-by-method-vs.html" : "Microorganism by Method"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -213,16 +214,16 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
     "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles"
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
+    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -308,6 +309,18 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationMethod",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ObservationMethod",
+    "title" : "ObservationMethod",
+    "description" : "A code that provides additional detail about the means or technique used to ascertain the observation.\r\n\r\n*Examples:* Blood pressure measurement method: arterial puncture vs. sphygmomanometer (Riva-Rocci), sitting vs. supine position, etc.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified. Note that the Domain has a full discussion about use of the attribute and constraining that is not appropriate for the code system description. Needs to be improved.",
+    "oids" : ["2.16.840.1.113883.5.84"],
+    "uses" : {
+    },
+    "ValueSet-antimicrobial-susceptibility-testing-vs.html" : "Antimicrobial Susceptibility Testing"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",

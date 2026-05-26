@@ -20,7 +20,7 @@
     <a href="extensions.html">Extensions</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Datatypes
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Datatype Profiles
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">

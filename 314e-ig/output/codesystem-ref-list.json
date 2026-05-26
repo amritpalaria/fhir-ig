@@ -30,9 +30,9 @@
     "description" : "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources.",
     "uses" : {
     },
+    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories",
     "ValueSet-lab-category-subcategory-314e.html" : "314e Lab Subcategories",
-    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories",
-    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories"
+    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories"
   },
   {
     "url" : "http://314e.com/fhir/CodeSystem/time-precision-units",
@@ -45,5 +45,29 @@
     },
     "ValueSet-time-precision-units-vs.html" : "314e Time Precision Units ValueSet",
     "ValueSet-time-accuracy-units-vs.html" : "314e Time Exactness Units ValueSet"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+    "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+    "oids" : ["2.16.840.1.113883.6.1"],
+    "uses" : {
+    },
+    "ValueSet-microorganism-by-method-vs.html" : "Microorganism by Method"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationMethod",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ObservationMethod",
+    "title" : "ObservationMethod",
+    "description" : "A code that provides additional detail about the means or technique used to ascertain the observation.\r\n\r\n*Examples:* Blood pressure measurement method: arterial puncture vs. sphygmomanometer (Riva-Rocci), sitting vs. supine position, etc.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified. Note that the Domain has a full discussion about use of the attribute and constraining that is not appropriate for the code system description. Needs to be improved.",
+    "oids" : ["2.16.840.1.113883.5.84"],
+    "uses" : {
+    },
+    "ValueSet-antimicrobial-susceptibility-testing-vs.html" : "Antimicrobial Susceptibility Testing"
   }]
 }

@@ -14,7 +14,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-26T08:48:22+05:30",
+  "date" : "2026-05-26T12:06:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -666,6 +666,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-antimicrobial-susceptibility-314e"
+      },
+      "name" : "314e Antimicrobial Susceptibility Observation",
+      "description" : "314e profile for antimicrobial susceptibility observations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -774,6 +786,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-lab-general-314e"
+      },
+      "name" : "314e General Laboratory Observation",
+      "description" : "314e profile for general laboratory observations.\n\nThis profile derives from the QI Core Laboratory Result Observation profile\nand constrains datatypes to corresponding 314e datatype profiles where applicable.\n\nA required category slice SHALL identify the laboratory subcategory\nusing a code from LabCategorySubcategory314eVS.\n\nThis profile also supports the ValueAttachment314e extension\nfor scenarios where the laboratory result cannot be represented\nusing structured Observation.value[x] datatypes or plain text.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -813,10 +837,22 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/observation-lab-nonmicro-314e"
+        "reference" : "StructureDefinition/observation-microbiology-314e"
       },
-      "name" : "314e Non-Microbiology Laboratory Observation",
-      "description" : "314e profile for non-microbiology laboratory observations.\n\nThis profile derives from the QI Core Laboratory Result Observation profile\nand constrains datatypes to corresponding 314e datatype profiles where applicable.\n\nA required category slice SHALL identify the laboratory subcategory\nusing a code from LabCategorySubcategory314eVS.\n\nThis profile also supports the ValueAttachment314e extension\nfor scenarios where the laboratory result cannot be represented\nusing structured Observation.value[x] datatypes or plain text.",
+      "name" : "314e Microbiology Observation",
+      "description" : "314e profile for microbiology laboratory observations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/observation-microorganism-314e"
+      },
+      "name" : "314e Microorganism Observation",
+      "description" : "314e profile for microorganism observations.",
       "exampleBoolean" : false
     },
     {
@@ -1050,6 +1086,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/antimicrobial-susceptibility-testing-vs"
+      },
+      "name" : "Antimicrobial Susceptibility Testing",
+      "description" : "Observation methods for antimicrobial susceptibility testing.\nIncludes HL7 v3 ObservationMethod code 0280 and all descendant codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1093,6 +1141,18 @@
       },
       "name" : "Attachment Tag ValueSet",
       "description" : "Standard semantic tags used for categorization and workflow\nqualification of attachments.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/microorganism-by-method-vs"
+      },
+      "name" : "Microorganism by Method",
+      "description" : "LOINC methods used to identify microorganisms.",
       "exampleBoolean" : false
     },
     {

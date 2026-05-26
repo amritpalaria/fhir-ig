@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-26T08:48:22+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-26T12:06:33+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -1415,6 +1415,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-antimicrobial-susceptibility-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-antimicrobial-susceptibility-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Antimicrobial Susceptibility Observation" ] ;
+       fhir:description [ fhir:v "314e profile for antimicrobial susceptibility observations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -1604,6 +1625,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-lab-general-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-lab-general-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e General Laboratory Observation" ] ;
+       fhir:description [ fhir:v "314e profile for general laboratory observations.\n\nThis profile derives from the QI Core Laboratory Result Observation profile\nand constrains datatypes to corresponding 314e datatype profiles where applicable.\n\nA required category slice SHALL identify the laboratory subcategory\nusing a code from LabCategorySubcategory314eVS.\n\nThis profile also supports the ValueAttachment314e extension\nfor scenarios where the laboratory result cannot be represented\nusing structured Observation.value[x] datatypes or plain text." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -1671,11 +1713,32 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-lab-nonmicro-314e> ;
-         fhir:reference [ fhir:v "StructureDefinition/observation-lab-nonmicro-314e" ]
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-microbiology-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-microbiology-314e" ]
        ] ;
-       fhir:name [ fhir:v "314e Non-Microbiology Laboratory Observation" ] ;
-       fhir:description [ fhir:v "314e profile for non-microbiology laboratory observations.\n\nThis profile derives from the QI Core Laboratory Result Observation profile\nand constrains datatypes to corresponding 314e datatype profiles where applicable.\n\nA required category slice SHALL identify the laboratory subcategory\nusing a code from LabCategorySubcategory314eVS.\n\nThis profile also supports the ValueAttachment314e extension\nfor scenarios where the laboratory result cannot be represented\nusing structured Observation.value[x] datatypes or plain text." ] ;
+       fhir:name [ fhir:v "314e Microbiology Observation" ] ;
+       fhir:description [ fhir:v "314e profile for microbiology laboratory observations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-microorganism-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-microorganism-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Microorganism Observation" ] ;
+       fhir:description [ fhir:v "314e profile for microorganism observations." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2087,6 +2150,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs> ;
+         fhir:reference [ fhir:v "ValueSet/antimicrobial-susceptibility-testing-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Antimicrobial Susceptibility Testing" ] ;
+       fhir:description [ fhir:v "Observation methods for antimicrobial susceptibility testing.\nIncludes HL7 v3 ObservationMethod code 0280 and all descendant codes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -2159,6 +2243,27 @@
        ] ;
        fhir:name [ fhir:v "Attachment Tag ValueSet" ] ;
        fhir:description [ fhir:v "Standard semantic tags used for categorization and workflow\nqualification of attachments." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/ValueSet/microorganism-by-method-vs> ;
+         fhir:reference [ fhir:v "ValueSet/microorganism-by-method-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Microorganism by Method" ] ;
+       fhir:description [ fhir:v "LOINC methods used to identify microorganisms." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

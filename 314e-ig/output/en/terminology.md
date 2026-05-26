@@ -17,10 +17,14 @@
 
 ## Value Sets
 
+* Name: [Antimicrobial Susceptibility Testing](ValueSet-antimicrobial-susceptibility-testing-vs.md)
+  * Description: Observation methods for antimicrobial susceptibility testing.Includes HL7 v3 ObservationMethod code 0280 and all descendant codes.
 * Name: [Attachment Tag ValueSet](ValueSet-attachment-tag.md)
   * Description: Standard semantic tags used for categorization and workflowqualification of attachments.
 * Name: [314e Lab Subcategories](ValueSet-lab-category-subcategory-314e.md)
   * Description: Procedure subcategories of Lab category used for more granularoperational classification.
+* Name: [Microorganism by Method](ValueSet-microorganism-by-method-vs.md)
+  * Description: LOINC methods used to identify microorganisms.
 * Name: [Observation Tag ValueSet](ValueSet-observation-tag-vs.md)
   * Description: Semantic tags used in meta.tag to qualify DiagnosticReport andObservation resources participating in hierarchical parent-childresource structures.
 * Name: [314e Broad Procedure Categories](ValueSet-procedure-category-broad-314e.md)

@@ -7,7 +7,7 @@ Procedure subcategories of Lab category used for more granular operational class
 
  **References** 
 
-* [314e Non-Microbiology Laboratory Observation](StructureDefinition-observation-lab-nonmicro-314e.md)
+* [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md)
 
 ### Logical Definition (CLD)
 
@@ -32,7 +32,7 @@ Procedure subcategories of Lab category used for more granular operational class
   "name" : "LabCategorySubcategory314eVS",
   "title" : "314e Lab Subcategories",
   "status" : "draft",
-  "date" : "2026-05-26T08:48:22+05:30",
+  "date" : "2026-05-26T12:06:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

@@ -10,7 +10,7 @@ Note: The Timing data type allows modifier extensions.
 
 **Usages:**
 
-* Use this DataType Profile: [314e Non-Microbiology Laboratory Observation](StructureDefinition-observation-lab-nonmicro-314e.md) and [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
+* Use this DataType Profile: [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md) and [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/timing-314e)
 
@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-timing-314e.csv),
   "name" : "Timing314e",
   "title" : "314e Timing",
   "status" : "active",
-  "date" : "2026-05-26T08:48:22+05:30",
+  "date" : "2026-05-26T12:06:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

@@ -1,0 +1,83 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "observation-microbiology-314e",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-primaryCodePath",
+      "valueString": "code"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+      "valueString": "LaboratoryResultObservation"
+    }
+  ],
+  "url": "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+  "name": "ObservationMicrobiology314e",
+  "title": "314e Microbiology Observation",
+  "status": "active",
+  "description": "314e profile for microbiology laboratory observations.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category:labSubcategory",
+        "path": "Observation.category",
+        "sliceName": "labSubcategory",
+        "short": "Required microbiology classification",
+        "definition": "Required laboratory microbiology test classification\nfor the observation.",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "MICV",
+              "system": "http://314e.com/fhir/CodeSystem/lab-category-subcategory-314e"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.hasMember:childObservation",
+        "path": "Observation.hasMember",
+        "sliceName": "childObservation",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

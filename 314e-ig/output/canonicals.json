@@ -76,6 +76,34 @@
   "name" : "DateTimePrecision314e"
 },
 {
+  "id" : "observation-antimicrobial-susceptibility-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
+  "version" : "1.0.0",
+  "name" : "ObservationAntimicrobialSusceptibility314e"
+},
+{
+  "id" : "observation-lab-general-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+  "version" : "1.0.0",
+  "name" : "ObservationLabGeneral314e"
+},
+{
+  "id" : "observation-microbiology-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+  "version" : "1.0.0",
+  "name" : "ObservationMicrobiology314e"
+},
+{
+  "id" : "observation-microorganism-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+  "version" : "1.0.0",
+  "name" : "ObservationMicroorganism314e"
+},
+{
   "id" : "quantity-quantityString",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/quantity-quantityString",
@@ -251,13 +279,6 @@
   "name" : "instant314e"
 },
 {
-  "id" : "observation-lab-nonmicro-314e",
-  "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/ig/StructureDefinition/observation-lab-nonmicro-314e",
-  "version" : "1.0.0",
-  "name" : "ObservationLabNonMicro314e"
-},
-{
   "id" : "period-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/period-314e",
@@ -298,4 +319,18 @@
   "url" : "http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e",
   "version" : "1.0.0",
   "name" : "ValueAttachment314e"
+},
+{
+  "id" : "antimicrobial-susceptibility-testing-vs",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs",
+  "version" : "1.0.0",
+  "name" : "AntimicrobialSusceptibilityTestingVS"
+},
+{
+  "id" : "microorganism-by-method-vs",
+  "type" : "ValueSet",
+  "url" : "http://314e.com/fhir/ig/ValueSet/microorganism-by-method-vs",
+  "version" : "1.0.0",
+  "name" : "MicroorganismByMethodVS"
 }]

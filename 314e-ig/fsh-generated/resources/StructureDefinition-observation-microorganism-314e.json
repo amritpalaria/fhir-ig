@@ -1,0 +1,88 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "observation-microorganism-314e",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-primaryCodePath",
+      "valueString": "code"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+      "valueString": "LaboratoryResultObservation"
+    }
+  ],
+  "url": "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+  "name": "ObservationMicroorganism314e",
+  "title": "314e Microorganism Observation",
+  "status": "active",
+  "description": "314e profile for microorganism observations.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:microorganismCode",
+        "path": "Observation.code.coding",
+        "sliceName": "microorganismCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:microorganismCode.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding:microorganismCode.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "41852-5"
+      },
+      {
+        "id": "Observation.code.coding:microorganismCode.display",
+        "path": "Observation.code.coding.display",
+        "fixedString": "Microorganism or agent identified in Specimen"
+      },
+      {
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://314e.com/fhir/ig/ValueSet/microorganism-by-method-vs"
+        }
+      },
+      {
+        "id": "Observation.method.coding:internalCode",
+        "path": "Observation.method.coding",
+        "sliceName": "internalCode",
+        "max": "1"
+      },
+      {
+        "id": "Observation.hasMember:antimicrobialSusceptibilityObservation",
+        "path": "Observation.hasMember",
+        "sliceName": "antimicrobialSusceptibilityObservation",
+        "min": 0,
+        "max": "*"
+      }
+    ]
+  }
+}

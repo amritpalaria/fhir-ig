@@ -86,7 +86,7 @@ menu:
   Home: index.html
   Resource Profiles: resource-profiles.html
   Extensions: extensions.html
-  Datatypes:
+  Datatype Profiles:
     Primitive Datatypes: simple-datatypes.html
     Complex Datatypes: complex-datatypes.html
   Terminology: terminology.html

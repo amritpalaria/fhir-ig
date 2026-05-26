@@ -82,16 +82,28 @@
     }
   ],
   "profiles": {
+    "Observation": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
+        "title": "314e Antimicrobial Susceptibility Observation"
+      },
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+        "title": "314e General Laboratory Observation"
+      },
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+        "title": "314e Microbiology Observation"
+      },
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+        "title": "314e Microorganism Observation"
+      }
+    ],
     "ServiceRequest": [
       {
         "url": "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
         "title": "314e ServiceRequest"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "http://314e.com/fhir/ig/StructureDefinition/observation-lab-nonmicro-314e",
-        "title": "314e Non-Microbiology Laboratory Observation"
       }
     ]
   },

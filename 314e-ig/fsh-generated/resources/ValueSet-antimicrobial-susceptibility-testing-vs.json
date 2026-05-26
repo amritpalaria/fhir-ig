@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AntimicrobialSusceptibilityTestingVS",
+  "id": "antimicrobial-susceptibility-testing-vs",
+  "title": "Antimicrobial Susceptibility Testing",
+  "description": "Observation methods for antimicrobial susceptibility testing.\nIncludes HL7 v3 ObservationMethod code 0280 and all descendant codes.",
+  "url": "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationMethod",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "0280"
+          }
+        ]
+      }
+    ]
+  }
+}
