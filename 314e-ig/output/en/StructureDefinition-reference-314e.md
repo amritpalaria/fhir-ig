@@ -8,7 +8,7 @@ This profile enables references to carry additional information about the role, 
 
 **Usages:**
 
-* Use this DataType Profile: [314e Annotation](StructureDefinition-annotation-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md), [314e Microbiology Observation](StructureDefinition-observation-microbiology-314e.md) and [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
+* Use this DataType Profile: [314e Annotation](StructureDefinition-annotation-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md), [314e Microbiology Observation](StructureDefinition-observation-microbiology-314e.md), [314e Microorganism Observation](StructureDefinition-observation-microorganism-314e.md) and [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/reference-314e)
 
@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-reference-314e.cs
   "name" : "Reference314e",
   "title" : "314e Reference",
   "status" : "draft",
-  "date" : "2026-05-26T12:06:33+05:30",
+  "date" : "2026-05-26T19:54:55+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

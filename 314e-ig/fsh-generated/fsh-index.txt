@@ -18,9 +18,9 @@ StructureDefinition-duration-314e.json                                  Duration
 StructureDefinition-identifier-314e.json                                Identifier314e                              Profile     datatypes\identifier-314e.fsh                                28 - 101
 StructureDefinition-instant-314e.json                                   instant314e                                 Profile     datatypes\instant-314e.fsh                                   18 - 51
 StructureDefinition-observation-antimicrobial-susceptibility-314e.json  ObservationAntimicrobialSusceptibility314e  Profile     resources\observation-antimicrobial-susceptibility-314e.fsh  1 - 30
-StructureDefinition-observation-lab-general-314e.json                   ObservationLabGeneral314e                   Profile     resources\observation-lab-general-314e.fsh                   1 - 191
-StructureDefinition-observation-microbiology-314e.json                  ObservationMicrobiology314e                 Profile     resources\observation-microbiology-314e.fsh                  1 - 38
-StructureDefinition-observation-microorganism-314e.json                 ObservationMicroorganism314e                Profile     resources\observation-microorganism-314e.fsh                 1 - 41
+StructureDefinition-observation-lab-general-314e.json                   ObservationLabGeneral314e                   Profile     resources\observation-lab-general-314e.fsh                   1 - 190
+StructureDefinition-observation-microbiology-314e.json                  ObservationMicrobiology314e                 Profile     resources\observation-microbiology-314e.fsh                  1 - 39
+StructureDefinition-observation-microorganism-314e.json                 ObservationMicroorganism314e                Profile     resources\observation-microorganism-314e.fsh                 1 - 42
 StructureDefinition-period-314e.json                                    Period314e                                  Profile     datatypes\period-314e.fsh                                    1 - 41
 StructureDefinition-quantity-314e.json                                  Quantity314e                                Profile     datatypes\quantity-314e.fsh                                  1 - 61
 StructureDefinition-quantity-quantityString.json                        QuantityQuantityString                      Extension   extensions\quantity-quantitystring.fsh                       1 - 27

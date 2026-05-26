@@ -157,7 +157,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\observation-lab-general-314e.fsh",
     "startLine": 1,
-    "endLine": 191
+    "endLine": 190
   },
   {
     "outputFile": "StructureDefinition-observation-microbiology-314e.json",
@@ -165,7 +165,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\observation-microbiology-314e.fsh",
     "startLine": 1,
-    "endLine": 38
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-observation-microorganism-314e.json",
@@ -173,7 +173,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\observation-microorganism-314e.fsh",
     "startLine": 1,
-    "endLine": 41
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-period-314e.json",

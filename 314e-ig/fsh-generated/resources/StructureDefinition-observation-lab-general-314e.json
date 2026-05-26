@@ -634,9 +634,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation",
-              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-              "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
+              "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e"
             ]
           }
         ]

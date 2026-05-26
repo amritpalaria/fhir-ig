@@ -30,9 +30,9 @@
     "description" : "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources.",
     "uses" : {
     },
-    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories",
     "ValueSet-lab-category-subcategory-314e.html" : "314e Lab Subcategories",
-    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories"
+    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories",
+    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories"
   },
   {
     "url" : "http://314e.com/fhir/CodeSystem/time-precision-units",

@@ -81,7 +81,18 @@
         "path": "Observation.hasMember",
         "sliceName": "antimicrobialSusceptibilityObservation",
         "min": 0,
-        "max": "*"
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e"
+            ]
+          }
+        ]
       }
     ]
   }

@@ -7,7 +7,7 @@
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Refer to this Profile: [314e Microorganism Observation](StructureDefinition-observation-microorganism-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/observation-antimicrobial-susceptibility-314e)
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](../StructureDefinition-observation-antim
   "name" : "ObservationAntimicrobialSusceptibility314e",
   "title" : "314e Antimicrobial Susceptibility Observation",
   "status" : "active",
-  "date" : "2026-05-26T12:06:33+05:30",
+  "date" : "2026-05-26T19:54:55+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

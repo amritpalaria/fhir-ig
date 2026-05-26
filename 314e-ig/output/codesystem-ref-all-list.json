@@ -30,9 +30,9 @@
     "description" : "Hierarchical procedure categories used for operational,\nworkflow, and semantic classification of Procedure resources.",
     "uses" : {
     },
-    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories",
     "ValueSet-lab-category-subcategory-314e.html" : "314e Lab Subcategories",
-    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories"
+    "ValueSet-procedure-category-broad-314e.html" : "314e Broad Procedure Categories",
+    "ValueSet-procedure-category-subcategory-314e.html" : "314e Procedure Subcategories"
   },
   {
     "url" : "http://314e.com/fhir/CodeSystem/time-precision-units",
@@ -199,10 +199,10 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+    "ValueSet-microorganism-by-method-vs.html" : "Microorganism by Method",
     "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-laboratory-test-codes.html" : "US Core Laboratory Test Codes",
-    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-    "ValueSet-microorganism-by-method-vs.html" : "Microorganism by Method"
+    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -214,16 +214,16 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
+    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
     "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
     "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
     "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
     "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
-    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods"
+    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -259,8 +259,8 @@
     "oids" : ["2.16.840.1.113883.4.642.1.1125"],
     "uses" : {
     },
-    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-clinical-result-observation-category.html" : "US Core Clinical Result Observation Category",
-    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
+    "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-clinical-result-observation-category.html" : "US Core Clinical Result Observation Category"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",

@@ -95,14 +95,13 @@ The code SHALL be drawn from LabCategorySubcategory314eVS.
 * hasMember ^slicing.discriminator.type = #profile
 * hasMember ^slicing.discriminator.path = "resolve()"
 * hasMember ^slicing.rules = #open
+* hasMember only Reference314e  // has to be before the slice assignments - otherwise it overwrites slice assignments
 
 * hasMember contains childObservation 0..*
-
 * hasMember[childObservation] only Reference(Observation)
-* hasMember[childObservation] ^type.targetProfile[0] =
+* hasMember[childObservation] ^type.targetProfile =
     "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e"
-    
-* hasMember only Reference314e
+
 
 // ======================================================
 // CODEABLE CONCEPTS

@@ -11,6 +11,7 @@ This profile also supports the ValueAttachment314e extension for scenarios where
 **Usages:**
 
 * Derived from this Profile: [314e Microbiology Observation](StructureDefinition-observation-microbiology-314e.md)
+* Refer to this Profile: [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/observation-lab-general-314e)
 
@@ -51,7 +52,7 @@ Other representations of profile: [CSV](../StructureDefinition-observation-lab-g
   "name" : "ObservationLabGeneral314e",
   "title" : "314e General Laboratory Observation",
   "status" : "active",
-  "date" : "2026-05-26T12:06:33+05:30",
+  "date" : "2026-05-26T19:54:55+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -522,9 +523,7 @@ Other representations of profile: [CSV](../StructureDefinition-observation-lab-g
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation",
-        "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
-        "http://hl7.org/fhir/StructureDefinition/MolecularSequence"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/observation-lab-general-314e"]
       }]
     },
     {

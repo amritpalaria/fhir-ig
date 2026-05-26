@@ -30,9 +30,10 @@ for the observation.
 // HAS MEMBER SLICING
 // ======================================================
 
-* hasMember 0..*
 * hasMember only Reference(Observation)
-* hasMember ^type.targetProfile[0] =
+* hasMember ^type.targetProfile =
     "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e"
 
-* hasMember only Reference314e
+//* hasMember[childObservation] only Reference(Observation)
+* hasMember[childObservation] ^type.targetProfile =
+    "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e"

@@ -48,7 +48,7 @@ Other representations of profile: [CSV](../StructureDefinition-observation-micro
   "name" : "ObservationMicroorganism314e",
   "title" : "314e Microorganism Observation",
   "status" : "active",
-  "date" : "2026-05-26T12:06:33+05:30",
+  "date" : "2026-05-26T19:54:55+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -148,7 +148,12 @@ Other representations of profile: [CSV](../StructureDefinition-observation-micro
       "path" : "Observation.hasMember",
       "sliceName" : "antimicrobialSusceptibilityObservation",
       "min" : 0,
-      "max" : "*"
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e"]
+      }]
     }]
   }
 }

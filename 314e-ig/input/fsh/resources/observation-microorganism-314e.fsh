@@ -23,13 +23,14 @@ Description: """
 // ======================================================
 // HAS MEMBER
 // ======================================================
+//* hasMember only Reference314e  // has to be before the slice assignments - otherwise it overwrites slice assignments
 
 * hasMember contains antimicrobialSusceptibilityObservation 0..*
-
-* hasMember[antimicrobialSusceptibilityObservation] ^type.targetProfile[0] =
+* hasMember[antimicrobialSusceptibilityObservation] only Reference(ObservationMicrobiology314e)
+* hasMember[antimicrobialSusceptibilityObservation] ^type.targetProfile =
     "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e"
     
-* hasMember only Reference314e
+//* hasMember only Reference314e
 
 // ======================================================
 // METHOD
