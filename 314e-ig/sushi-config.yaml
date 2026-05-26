@@ -84,12 +84,12 @@ parameters:
 
 menu:
   Home: index.html
-  Artifacts:
-    Resource Profiles: resource-profiles.html
-    Extensions: extensions.html
+  Resource Profiles: resource-profiles.html
+  Extensions: extensions.html
+  Datatypes:
     Primitive Datatypes: simple-datatypes.html
     Complex Datatypes: complex-datatypes.html
-    Terminology: terminology.html
+  Terminology: terminology.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

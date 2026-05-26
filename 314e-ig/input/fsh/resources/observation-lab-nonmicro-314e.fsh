@@ -58,8 +58,6 @@ acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier
 
 * category contains labSubcategory 1..1
 
-//* category[labSubcategory] only http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e
-
 * category[labSubcategory] from LabCategorySubcategory314eVS (required)
 
 * category[labSubcategory] ^short =

@@ -17,7 +17,7 @@ StructureDefinition-decimal-314e.json                   decimal314e             
 StructureDefinition-duration-314e.json                  Duration314e                        Profile     datatypes\duration-314e.fsh                  1 - 66
 StructureDefinition-identifier-314e.json                Identifier314e                      Profile     datatypes\identifier-314e.fsh                28 - 101
 StructureDefinition-instant-314e.json                   instant314e                         Profile     datatypes\instant-314e.fsh                   18 - 51
-StructureDefinition-observation-lab-nonmicro-314e.json  ObservationLabNonMicro314e          Profile     resources\observation-lab-nonmicro-314e.fsh  1 - 176
+StructureDefinition-observation-lab-nonmicro-314e.json  ObservationLabNonMicro314e          Profile     resources\observation-lab-nonmicro-314e.fsh  1 - 174
 StructureDefinition-period-314e.json                    Period314e                          Profile     datatypes\period-314e.fsh                    1 - 41
 StructureDefinition-quantity-314e.json                  Quantity314e                        Profile     datatypes\quantity-314e.fsh                  1 - 61
 StructureDefinition-quantity-quantityString.json        QuantityQuantityString              Extension   extensions\quantity-quantitystring.fsh       1 - 27

@@ -43,7 +43,7 @@
     "description" : "Time precision units used to indicate the actual precision of a dateTime, time, or instant value.",
     "uses" : {
     },
-    "ValueSet-time-accuracy-units-vs.html" : "314e Time Exactness Units ValueSet",
-    "ValueSet-time-precision-units-vs.html" : "314e Time Precision Units ValueSet"
+    "ValueSet-time-precision-units-vs.html" : "314e Time Precision Units ValueSet",
+    "ValueSet-time-accuracy-units-vs.html" : "314e Time Exactness Units ValueSet"
   }]
 }

@@ -13,26 +13,26 @@
   <li>
     <a href="index.html">Home</a>
   </li>
+  <li>
+    <a href="resource-profiles.html">Resource Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Datatypes
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="resource-profiles.html">Resource Profiles</a>
-      </li>
-      <li>
-        <a href="extensions.html">Extensions</a>
-      </li>
       <li>
         <a href="simple-datatypes.html">Primitive Datatypes</a>
       </li>
       <li>
         <a href="complex-datatypes.html">Complex Datatypes</a>
       </li>
-      <li>
-        <a href="terminology.html">Terminology</a>
-      </li>
     </ul>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
   </li>
 </ul>
