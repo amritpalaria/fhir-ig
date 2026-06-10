@@ -29,7 +29,7 @@ If only a smaller degree of precision is usable
 (for example, only the date portion is known),
 the following extension SHALL be used:
 
-http://314e.com/fhir/StructureDefinition/datetime-precision-314e
+http://314e.com/fhir/StructureDefinition/datetime-precision
 
 If all or part of the usable date/time value is approximate rather than exact,
 the following extension SHALL be used:
@@ -46,7 +46,7 @@ https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator
 // ======================================================
 
 * extension contains
-    DateTimePrecision314e named timePrecision 0..1
+    DateTimePrecision named timePrecision 0..1
 
 * extension[timePrecision] ^short =
     "Usable precision of the dateTime value"
@@ -68,7 +68,7 @@ Example:
 // ======================================================
 
 * extension contains
-    DateTimeAccuracy314e named accuracyIndicator 0..1
+    DateTimeAccuracy named accuracyIndicator 0..1
 
 * extension[accuracyIndicator] ^short =
     "Indicates the precision that is verified as clinically exact or accurate"

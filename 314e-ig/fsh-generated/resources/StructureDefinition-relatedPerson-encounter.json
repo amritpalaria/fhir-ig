@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "relatedPerson-encounter",
+  "url": "http://314e.com/fhir/StructureDefinition/relatedPerson-encounter",
+  "name": "RelatedPersonEncounter",
+  "title": "Related Person Encounter",
+  "status": "active",
+  "description": "Applied at the root level of the RelatedPerson resource. References the\nencounter with which a related person is associated.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "RelatedPerson",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Related Person Encounter",
+        "definition": "Applied at the root level of the RelatedPerson resource. References the\nencounter with which a related person is associated."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/relatedPerson-encounter"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Encounter associated with the related person",
+        "definition": "Reference to the Encounter resource with which this related person is associated.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -22,7 +22,7 @@ Example: acme-epic-Observation-lab-code-Glucose-InternalCode
 
 **Usages:**
 
-* Use this DataType Profile: [314e CodeableConcept](StructureDefinition-codeableconcept-314e.md)
+* Use this DataType Profile: [314e CodeableConcept](StructureDefinition-codeableconcept-314e.md), [314e DocumentReference](StructureDefinition-documentreference-314e.md) and [314e Encounter](StructureDefinition-encounter-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/coding-314e)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-coding-314e.csv),
   "name" : "Coding314e",
   "title" : "314e Coding",
   "status" : "active",
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

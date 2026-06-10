@@ -28,10 +28,40 @@
       "version": "7.0.2",
       "uri": "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore",
       "id": "hl7_fhir_us_qicore"
+    },
+    {
+      "packageId": "hl7.fhir.us.core",
+      "version": "7.0.0",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
     }
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/address-314e"
+        },
+        "name": "314e Address",
+        "description": "314e profile of the FHIR Address datatype.\n\nThis profile constrains the period element to use the 314e Period profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/age-314e"
+        },
+        "name": "314e Age",
+        "description": "314e profile of the FHIR Age datatype.\n\nAge is a constrained Quantity used to express a duration of elapsed time,\ntypically of a human being as read from a clinical record.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/allergyintolerance-314e"
+        },
+        "name": "314e AllergyIntolerance",
+        "description": "314e-constrained AllergyIntolerance profile derived from QI-Core AllergyIntolerance.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/annotation-314e"
@@ -66,6 +96,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/careplan-314e"
+        },
+        "name": "314e CarePlan",
+        "description": "314e-constrained CarePlan profile derived from QI-Core CarePlan.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/codeableconcept-314e"
         },
         "name": "314e CodeableConcept",
@@ -82,18 +120,34 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/datetime-accuracy-314e"
+          "reference": "StructureDefinition/condition-314e"
         },
-        "name": "314e Date/Time Accuracy",
-        "description": "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+        "name": "314e Condition",
+        "description": "314e-constrained Condition profile derived from R4B Condition.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/datetime-precision-314e"
+          "reference": "StructureDefinition/condition-diagnosis-314e"
         },
-        "name": "314e Date/Time Precision",
-        "description": "Specifies the meaningful/ usable precision of a dateTime value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+        "name": "314e Condition Encounter Diagnosis",
+        "description": "314e-constrained Condition profile for encounter diagnoses, derived from\nQI-Core Condition Encounter Diagnosis.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/condition-problem-healthconcern-314e"
+        },
+        "name": "314e Condition Problems Health Concerns",
+        "description": "314e-constrained Condition profile for problems and health concerns, derived\nfrom QI-Core Condition Problems Health Concerns.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/contactpoint-314e"
+        },
+        "name": "314e ContactPoint",
+        "description": "314e profile of the FHIR ContactPoint datatype.\n\nThis profile constrains the period element to use the 314e Period profile.",
         "exampleBoolean": false
       },
       {
@@ -101,7 +155,7 @@
           "reference": "StructureDefinition/datetime-314e"
         },
         "name": "314e dateTime",
-        "description": "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
+        "description": "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
         "exampleBoolean": false
       },
       {
@@ -114,10 +168,58 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/diagnosticreport-314e"
+        },
+        "name": "314e DiagnosticReport",
+        "description": "314e-constrained DiagnosticReport profile derived from R4B DiagnosticReport.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/diagnosticreport-lab-314e"
+        },
+        "name": "314e DiagnosticReport Laboratory Results",
+        "description": "314e-constrained DiagnosticReport profile for laboratory results reporting,\nderived from QI-Core DiagnosticReport Profile for Laboratory Results Reporting.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/diagnosticreport-notereport-314e"
+        },
+        "name": "314e DiagnosticReport Note and Report",
+        "description": "314e-constrained DiagnosticReport profile for report and note exchange,\nderived from QI-Core DiagnosticReport Profile for Report and Note Exchange.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/documentreference-314e"
+        },
+        "name": "314e DocumentReference",
+        "description": "314e-constrained DocumentReference profile derived from QI-Core DocumentReference.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/duration-314e"
         },
         "name": "314e Duration",
         "description": "314e profile of the FHIR Duration datatype.\n\nDerived from FHIR Duration and incorporates\n314e Quantity datatype behavior including:\n\n- quantity precision support\n- quantity string support\n- value string support",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/encounter-314e"
+        },
+        "name": "314e Encounter",
+        "description": "314e-constrained Encounter profile derived from QI-Core Encounter.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/episodeofcare-314e"
+        },
+        "name": "314e Episode Of Care",
+        "description": "314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
@@ -130,6 +232,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/humanname-314e"
+        },
+        "name": "314e HumanName",
+        "description": "314e profile of the FHIR HumanName datatype.\n\nThis profile constrains the period element to use the 314e Period profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/identifier-314e"
         },
         "name": "314e Identifier",
@@ -138,10 +248,18 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/immunization-314e"
+        },
+        "name": "314e Immunization",
+        "description": "314e-constrained Immunization profile derived from QI-Core Immunization.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/instant-314e"
         },
         "name": "314e instant",
-        "description": "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e",
+        "description": "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision",
         "exampleBoolean": false
       },
       {
@@ -170,10 +288,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/value-attachment-314e"
+          "reference": "StructureDefinition/observation-314e"
         },
-        "name": "314e Observation Value Attachment",
-        "description": "Extension used when an Observation result cannot be represented\nusing one of the standard structured Observation.value[x]\ndatatypes or as plain text.\n\nTypical use cases include:\n- PDF laboratory reports\n- proprietary binary result payloads\n- waveform files\n- image-based interpretations\n- externally generated rendered documents\n- rich formatted diagnostic content\n\nThe attachment represents the clinically relevant result payload.",
+        "name": "314e Observation",
+        "description": "314e-constrained Observation profile derived from QI-Core Simple Observation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-314e"
+        },
+        "name": "314e Patient",
+        "description": "314e-constrained Patient profile derived from QI-Core Patient.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
@@ -182,6 +308,14 @@
         },
         "name": "314e Period",
         "description": "314e profile of the FHIR Period datatype.\n\nAll dateTime values within the Period SHALL conform\nto the 314e DateTime profile requirements,\nincluding UTC normalization and precision handling.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-314e"
+        },
+        "name": "314e Practitioner",
+        "description": "314e-constrained Practitioner profile derived from QI-Core Practitioner.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
@@ -234,6 +368,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/relatedperson-314e"
+        },
+        "name": "314e RelatedPerson",
+        "description": "314e-constrained RelatedPerson profile derived from QI-Core RelatedPerson.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/sampleddata-314e"
         },
         "name": "314e SampledData",
@@ -258,18 +400,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/time-314e"
+          "reference": "StructureDefinition/specimen-314e"
         },
-        "name": "314e time",
-        "description": "314e profile of the FHIR time primitive datatype - a time during the day, \nin the format hh:mm:ss. There is no date specified. \nSeconds must be provided due to schema type constraints but may be zero-filled \nand may be ignored at receiver discretion. The time \"24:00\" SHALL NOT be used. \nA time zone SHALL NOT be present. Times can be converted to a Duration since midnight.\n\nIf only a smaller degree of precision than syntactically recorded is usable\n(for example, only hour and minute are known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-precision-314e\n\nIf all or part of the usable time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e",
+        "name": "314e Specimen",
+        "description": "314e-constrained Specimen profile derived from US Core Specimen.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/time-accuracy-314e"
+          "reference": "StructureDefinition/time-314e"
         },
-        "name": "314e Time Accuracy",
-        "description": "Specifies the accuracy or exactness of a time value when only some part of \nthe known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a time value.",
+        "name": "314e time",
+        "description": "314e profile of the FHIR time primitive datatype - a time during the day, \nin the format hh:mm:ss. There is no date specified. \nSeconds must be provided due to schema type constraints but may be zero-filled \nand may be ignored at receiver discretion. The time \"24:00\" SHALL NOT be used. \nA time zone SHALL NOT be present. Times can be converted to a Duration since midnight.\n\nIf only a smaller degree of precision than syntactically recorded is usable\n(for example, only hour and minute are known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-precision\n\nIf all or part of the usable time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-accuracy",
         "exampleBoolean": false
       },
       {
@@ -278,14 +420,6 @@
         },
         "name": "314e Time Exactness Units ValueSet",
         "description": "Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/time-precision-314e"
-        },
-        "name": "314e Time Precision",
-        "description": "Specifies the meaningful/ usable precision of a time value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a time value.",
         "exampleBoolean": false
       },
       {
@@ -362,6 +496,86 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/carePlan-activity-targetDateTime"
+        },
+        "name": "Care Plan Activity Target Date Time",
+        "description": "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nStandard FHIR CarePlan.activity has no dedicated target date field separate\nfrom scheduledTiming or scheduledPeriod.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/carePlan-targetDateTime"
+        },
+        "name": "Care Plan Target Date Time",
+        "description": "Applied at the root level of the CarePlan resource. Specifies the intended\nor expected target date-time for completion, review, or achievement of the\ncare plan or care plan objective.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cosigner"
+        },
+        "name": "Cosigner",
+        "description": "Identifies an individual who reviewed, verified, or co-signed the associated\nclinical document, note, order, or healthcare record.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/datetime-accuracy"
+        },
+        "name": "Date/Time Accuracy",
+        "description": "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/datetime-precision"
+        },
+        "name": "Date/Time Precision",
+        "description": "Specifies the meaningful/ usable precision of a dateTime value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/documentReference-author-dictationDateTime"
+        },
+        "name": "Document Reference Author Dictation Date Time",
+        "description": "Applied to the author element of a DocumentReference resource. Captures\nthe exact date and time when the author dictated the document.\n\nThis information is not available in the standard FHIR DocumentReference\nresource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/documentReference-context-cosigner"
+        },
+        "name": "Document Reference Context Cosigner",
+        "description": "Applied to the context section of a DocumentReference resource. Captures the\nco-signer of the document — a person who has jointly signed or authenticated\nthe document alongside the primary author.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/documentReference-context-dictationDateTime"
+        },
+        "name": "Document Reference Context Dictation Date Time",
+        "description": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.\n\nStandard FHIR DocumentReference context has no dictation timestamp field.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/documentReference-context-reportDateTime"
+        },
+        "name": "Document Reference Context Report Date Time",
+        "description": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time.\n\nStandard FHIR DocumentReference has no report release timestamp field.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/element-additionalInfo"
+        },
+        "name": "Element Additional Info",
+        "description": "Applied to any FHIR element. Carries additional information associated\nwith a specific FHIR element that is not represented by the standard\nelement definition.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/microorganism-by-method-vs"
         },
         "name": "Microorganism by Method",
@@ -386,6 +600,54 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/observation-value-attachment"
+        },
+        "name": "Observation Value Attachment",
+        "description": "Extension used when an Observation result cannot be represented\nusing one of the standard structured Observation.value[x]\ndatatypes or as plain text.\n\nTypical use cases include:\n- PDF laboratory reports\n- proprietary binary result payloads\n- waveform files\n- image-based interpretations\n- externally generated rendered documents\n- rich formatted diagnostic content\n\nThe attachment represents the clinically relevant result payload.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-affiliation"
+        },
+        "name": "Patient Affiliation",
+        "description": "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.\n\nStandard FHIR Patient has no affiliation field.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-employmentStatus"
+        },
+        "name": "Patient Employment Status",
+        "description": "Applied at the root level of the Patient resource. Stores the patient's\ncurrent employment status or occupation.\n\nThis is a custom field added to the Patient record to capture what the\npatient does for work or their current employment situation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-mothersName"
+        },
+        "name": "Patient Mother's Name",
+        "description": "Applied directly at the root level of the Patient resource to store\nthe mother's name of the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-pharmacies"
+        },
+        "name": "Patient Pharmacies",
+        "description": "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance. Standard FHIR Patient has no pharmacy preference field.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-preferredGenderPronoun"
+        },
+        "name": "Patient Preferred Gender Pronoun",
+        "description": "Applied directly at the root level of the Patient resource to store the\npatient's preferred gender pronoun.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/quantity-quantityString"
         },
         "name": "Quantity Quantity String",
@@ -406,6 +668,54 @@
         },
         "name": "Reference Context",
         "description": "Provides additional semantic context describing the role,\ncapacity, purpose, or functional meaning of a Reference.\n\nThis extension is intended for use in situations where the\nbase FHIR element is broadly defined and the precise meaning\nor role of the referenced resource requires further clarification.\n\nFor example, the performer element of an Observation may\nreference practitioners participating in different capacities\nsuch as technician, phlebotomist, or pathologist.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/relatedPerson-encounter"
+        },
+        "name": "Related Person Encounter",
+        "description": "Applied at the root level of the RelatedPerson resource. References the\nencounter with which a related person is associated.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/resource-additionalInfo"
+        },
+        "name": "Resource Additional Info",
+        "description": "Applied at the root level of any resource. Used to capture supplementary\nor non-standard information related to a FHIR resource that is not\nrepresented by the core FHIR elements or existing profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/resource-episode"
+        },
+        "name": "Resource Episode",
+        "description": "Applied directly at the root level of clinical resources to store an\nEpisodeOfCare reference.\n\nThis extension links a resource to its associated episode of care when\nthat association is not otherwise expressible through standard FHIR elements.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/resource-lastEditedUser"
+        },
+        "name": "Resource Last Edited User",
+        "description": "Applied at the root level of clinical resources. Stores the reference of the\nperson who last edited or modified the resource.\n\nStandard FHIR resources generally have no \"last edited by\" field — only\nrecorder (who first recorded it) and asserter (who asserted it clinically).\nThis extension captures an audit trail entry for the most recent editor.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/time-accuracy"
+        },
+        "name": "Time Accuracy",
+        "description": "Specifies the accuracy or exactness of a time value when only some part of \nthe known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a time value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/time-precision"
+        },
+        "name": "Time Precision",
+        "description": "Specifies the meaningful/ usable precision of a time value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a time value.",
         "exampleBoolean": false
       }
     ],

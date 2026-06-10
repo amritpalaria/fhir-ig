@@ -6,13 +6,13 @@
 314e profile of the FHIR dateTime primitive datatype. 
 All dateTime values SHALL be stored in UTC. 
 If only a smaller degree of precision is usable (for example, only the date portion is known), the following extension SHALL be used: 
-http://314e.com/fhir/StructureDefinition/datetime-precision-314e 
+http://314e.com/fhir/StructureDefinition/datetime-precision 
 If all or part of the usable date/time value is approximate rather than exact, the following extension SHALL be used: 
 https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator 
 
 **Usages:**
 
-* Use this Primitive Type Profile: [314e Annotation](StructureDefinition-annotation-314e.md), [314e Attachment](StructureDefinition-attachment-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md), [314e Period](StructureDefinition-period-314e.md)... Show 2 more, [314e ServiceRequest](StructureDefinition-servicerequest-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
+* Use this Primitive Type Profile: [314e AllergyIntolerance](StructureDefinition-allergyintolerance-314e.md), [314e Annotation](StructureDefinition-annotation-314e.md), [314e Attachment](StructureDefinition-attachment-314e.md), [Care Plan Activity Target Date Time](StructureDefinition-carePlan-activity-targetDateTime.md)... Show 17 more, [Care Plan Target Date Time](StructureDefinition-carePlan-targetDateTime.md), [314e Condition](StructureDefinition-condition-314e.md), [314e Condition Encounter Diagnosis](StructureDefinition-condition-diagnosis-314e.md), [314e Condition Problems Health Concerns](StructureDefinition-condition-problem-healthconcern-314e.md), [314e DiagnosticReport](StructureDefinition-diagnosticreport-314e.md), [314e DiagnosticReport Laboratory Results](StructureDefinition-diagnosticreport-lab-314e.md), [314e DiagnosticReport Note and Report](StructureDefinition-diagnosticreport-notereport-314e.md), [Document Reference Author Dictation Date Time](StructureDefinition-documentReference-author-dictationDateTime.md), [Document Reference Context Dictation Date Time](StructureDefinition-documentReference-context-dictationDateTime.md), [Document Reference Context Report Date Time](StructureDefinition-documentReference-context-reportDateTime.md), [314e Immunization](StructureDefinition-immunization-314e.md), [314e Observation](StructureDefinition-observation-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md), [314e Period](StructureDefinition-period-314e.md), [314e ServiceRequest](StructureDefinition-servicerequest-314e.md), [314e Specimen](StructureDefinition-specimen-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/datetime-314e)
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-314e.csv
   "name" : "dateTime314e",
   "title" : "314e dateTime",
   "status" : "active",
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-314e.csv
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
+  "description" : "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
   "fhirVersion" : "4.0.1",
   "kind" : "primitive-type",
   "abstract" : false,
@@ -87,7 +87,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-314e.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/datetime-precision-314e"]
+        "profile" : ["http://314e.com/fhir/StructureDefinition/datetime-precision"]
       }]
     },
     {
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](../StructureDefinition-datetime-314e.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/datetime-accuracy-314e"]
+        "profile" : ["http://314e.com/fhir/StructureDefinition/datetime-accuracy"]
       }]
     }]
   }

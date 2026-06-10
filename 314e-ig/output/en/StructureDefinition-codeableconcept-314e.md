@@ -15,7 +15,7 @@ Example: acme-epic-Observation-lab-code-Glucose-InternalCode
 
 **Usages:**
 
-* Use this DataType Profile: [Attachment Tag](StructureDefinition-attachment-tag.md), [314e Identifier](StructureDefinition-identifier-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md), [Reference Context](StructureDefinition-reference-context.md)... Show 2 more, [314e ServiceRequest](StructureDefinition-servicerequest-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
+* Use this DataType Profile: [314e AllergyIntolerance](StructureDefinition-allergyintolerance-314e.md), [Attachment Tag](StructureDefinition-attachment-tag.md), [314e CarePlan](StructureDefinition-careplan-314e.md), [314e Condition](StructureDefinition-condition-314e.md)... Show 22 more, [314e Condition Encounter Diagnosis](StructureDefinition-condition-diagnosis-314e.md), [314e Condition Problems Health Concerns](StructureDefinition-condition-problem-healthconcern-314e.md), [314e DiagnosticReport](StructureDefinition-diagnosticreport-314e.md), [314e DiagnosticReport Laboratory Results](StructureDefinition-diagnosticreport-lab-314e.md), [314e DiagnosticReport Note and Report](StructureDefinition-diagnosticreport-notereport-314e.md), [314e DocumentReference](StructureDefinition-documentreference-314e.md), [314e Encounter](StructureDefinition-encounter-314e.md), [314e Episode Of Care](StructureDefinition-episodeofcare-314e.md), [314e Identifier](StructureDefinition-identifier-314e.md), [314e Immunization](StructureDefinition-immunization-314e.md), [314e Observation](StructureDefinition-observation-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md), [314e Patient](StructureDefinition-patient-314e.md), [Patient Affiliation](StructureDefinition-patient-affiliation.md), [Patient Employment Status](StructureDefinition-patient-employmentStatus.md), [Patient Preferred Gender Pronoun](StructureDefinition-patient-preferredGenderPronoun.md), [314e Practitioner](StructureDefinition-practitioner-314e.md), [Reference Context](StructureDefinition-reference-context.md), [314e RelatedPerson](StructureDefinition-relatedperson-314e.md), [314e ServiceRequest](StructureDefinition-servicerequest-314e.md), [314e Specimen](StructureDefinition-specimen-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/codeableconcept-314e)
 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-codeableconcept-3
   "name" : "CodeableConcept314e",
   "title" : "314e CodeableConcept",
   "status" : "active",
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

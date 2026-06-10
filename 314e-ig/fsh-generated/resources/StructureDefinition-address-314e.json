@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "address-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/address-314e",
+  "name": "Address314e",
+  "title": "314e Address",
+  "status": "active",
+  "description": "314e profile of the FHIR Address datatype.\n\nThis profile constrains the period element to use the 314e Period profile.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Address",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Address",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Address.period",
+        "path": "Address.period",
+        "type": [
+          {
+            "code": "Period",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/period-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

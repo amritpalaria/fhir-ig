@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "patient-preferredGenderPronoun",
+  "url": "http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun",
+  "name": "PatientPreferredGenderPronoun",
+  "title": "Patient Preferred Gender Pronoun",
+  "status": "active",
+  "description": "Applied directly at the root level of the Patient resource to store the\npatient's preferred gender pronoun.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Patient",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Patient Preferred Gender Pronoun",
+        "definition": "Applied directly at the root level of the Patient resource to store the\npatient's preferred gender pronoun."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Patient's preferred gender pronoun",
+        "definition": "The patient's preferred gender pronoun as communicated by the patient\nor their representative.",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

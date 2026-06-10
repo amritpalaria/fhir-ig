@@ -1,6 +1,6 @@
-Extension: TimePrecision314e
-Id: time-precision-314e
-Title: "314e Time Precision"
+Extension: TimePrecision
+Id: time-precision
+Title: "Time Precision"
 Description: """
 Specifies the meaningful/ usable precision of a time value when the 
 datatype syntactically permits greater precision than is actually known or clinically usable.
@@ -9,7 +9,7 @@ This extension is intended to explicitly communicate the usable precision
 of a time value.
 """
 
-* ^url = "http://314e.com/fhir/StructureDefinition/time-precision-314e"
+* ^url = "http://314e.com/fhir/StructureDefinition/time-precision"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

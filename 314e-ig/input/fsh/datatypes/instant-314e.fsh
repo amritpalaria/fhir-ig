@@ -31,7 +31,7 @@ If only a smaller degree of precision is usable
 (for example, only minute precision is meaningful),
 the following extension SHALL be used:
 
-http://314e.com/fhir/StructureDefinition/datetime-precision-314e
+http://314e.com/fhir/StructureDefinition/datetime-precision
 """
 
 * ^status = #active
@@ -43,7 +43,7 @@ http://314e.com/fhir/StructureDefinition/datetime-precision-314e
 // ======================================================
 
 * extension contains
-    DateTimePrecision314e named timePrecision 0..1
+    DateTimePrecision named timePrecision 0..1
 
 * extension[timePrecision] ^short =
     "Usable precision of the instant value"

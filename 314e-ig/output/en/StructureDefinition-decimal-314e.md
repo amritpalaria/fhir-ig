@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-decimal-314e.csv)
   "name" : "decimal314e",
   "title" : "314e decimal",
   "status" : "active",
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -53,10 +53,6 @@ Other representations of profile: [CSV](../StructureDefinition-decimal-314e.csv)
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "decimal",
-      "path" : "decimal"
-    },
-    {
       "id" : "decimal.extension",
       "path" : "decimal.extension",
       "slicing" : {

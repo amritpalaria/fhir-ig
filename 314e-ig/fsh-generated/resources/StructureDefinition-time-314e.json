@@ -5,7 +5,7 @@
   "name": "time314e",
   "title": "314e time",
   "status": "active",
-  "description": "314e profile of the FHIR time primitive datatype - a time during the day, \nin the format hh:mm:ss. There is no date specified. \nSeconds must be provided due to schema type constraints but may be zero-filled \nand may be ignored at receiver discretion. The time \"24:00\" SHALL NOT be used. \nA time zone SHALL NOT be present. Times can be converted to a Duration since midnight.\n\nIf only a smaller degree of precision than syntactically recorded is usable\n(for example, only hour and minute are known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-precision-314e\n\nIf all or part of the usable time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e",
+  "description": "314e profile of the FHIR time primitive datatype - a time during the day, \nin the format hh:mm:ss. There is no date specified. \nSeconds must be provided due to schema type constraints but may be zero-filled \nand may be ignored at receiver discretion. The time \"24:00\" SHALL NOT be used. \nA time zone SHALL NOT be present. Times can be converted to a Duration since midnight.\n\nIf only a smaller degree of precision than syntactically recorded is usable\n(for example, only hour and minute are known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-precision\n\nIf all or part of the usable time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-accuracy",
   "fhirVersion": "4.0.1",
   "kind": "primitive-type",
   "abstract": false,
@@ -40,7 +40,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://314e.com/fhir/StructureDefinition/time-precision-314e"
+              "http://314e.com/fhir/StructureDefinition/time-precision"
             ]
           }
         ]
@@ -57,7 +57,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://314e.com/fhir/StructureDefinition/time-accuracy-314e"
+              "http://314e.com/fhir/StructureDefinition/time-accuracy"
             ]
           }
         ]

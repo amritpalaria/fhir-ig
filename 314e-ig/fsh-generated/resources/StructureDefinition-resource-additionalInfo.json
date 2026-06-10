@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "resource-additionalInfo",
+  "url": "http://314e.com/fhir/StructureDefinition/resource-additionalInfo",
+  "name": "ResourceAdditionalInfo",
+  "title": "Resource Additional Info",
+  "status": "active",
+  "description": "Applied at the root level of any resource. Used to capture supplementary\nor non-standard information related to a FHIR resource that is not\nrepresented by the core FHIR elements or existing profiles.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "DomainResource",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Resource Additional Info",
+        "definition": "Applied at the root level of any resource. Used to capture supplementary\nor non-standard information related to a FHIR resource that is not\nrepresented by the core FHIR elements or existing profiles."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/resource-additionalInfo"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Reference to supplementary information for this resource",
+        "definition": "Reference to an Observation resource that carries supplementary or\nnon-standard information associated with this resource that cannot be\nrepresented through standard FHIR elements or existing profiles.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

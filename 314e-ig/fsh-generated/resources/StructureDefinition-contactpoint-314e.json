@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "contactpoint-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/contactpoint-314e",
+  "name": "ContactPoint314e",
+  "title": "314e ContactPoint",
+  "status": "active",
+  "description": "314e profile of the FHIR ContactPoint datatype.\n\nThis profile constrains the period element to use the 314e Period profile.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "ContactPoint",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ContactPoint",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ContactPoint.period",
+        "path": "ContactPoint.period",
+        "type": [
+          {
+            "code": "Period",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/period-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

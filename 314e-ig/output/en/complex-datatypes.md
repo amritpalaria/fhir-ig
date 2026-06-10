@@ -4,6 +4,10 @@
 
 # Complex Datatypes
 
+* Name: [314e Address](StructureDefinition-address-314e.md)
+  * Description: 314e profile of the FHIR Address datatype. This profile constrains the period element to use the 314e Period profile.
+* Name: [314e Age](StructureDefinition-age-314e.md)
+  * Description: 314e profile of the FHIR Age datatype. Age is a constrained Quantity used to express a duration of elapsed time, typically of a human being as read from a clinical record.
 * Name: [314e Annotation](StructureDefinition-annotation-314e.md)
   * Description: A constrained Annotation datatype profile supporting attachment- based annotation content through the annotation-attachment extension. This profile enables annotation or note content to be represented using externally stored attachments in addition to standard inline Annotation.text content.
 * Name: [314e Attachment](StructureDefinition-attachment-314e.md)
@@ -12,8 +16,12 @@
   * Description: 314e profile of the FHIR CodeableConcept datatype. This profile supports: - standard terminology codings - optional customer-specific internal codings Internal codings are used to preserve customer, EHR, workflow, and source-system-native semantic classifications and source system fidelity. Any coding system intended to represent an internal coding system SHALL follow the required naming convention: [customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode Example: acme-epic-Observation-lab-code-Glucose-InternalCode
 * Name: [314e Coding](StructureDefinition-coding-314e.md)
   * Description: 314e profile of the FHIR Coding datatype. This profile strengthens semantic interoperability expectations around population of system, code, and display. When display is populated, code SHALL also be populated. If source data lacks a formal coded value but provides textual display content, implementers SHOULD generate a surrogate code using the display text transformed as follows: - convert all letters to lower case - replace spaces with hyphens Example: Display: "Blood Culture" Generated code: "blood-culture" Whenever either code or display is populated, system SHALL also be populated. This data type supports: - standard terminology codings - optional customer-specific internal codings Internal codings are used to preserve customer, EHR, workflow, and source-system-native semantic classifications and source system fidelity. Any coding system intended to represent an internal coding system SHALL follow the required naming convention: [customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode Example: acme-epic-Observation-lab-code-Glucose-InternalCode
+* Name: [314e ContactPoint](StructureDefinition-contactpoint-314e.md)
+  * Description: 314e profile of the FHIR ContactPoint datatype. This profile constrains the period element to use the 314e Period profile.
 * Name: [314e Duration](StructureDefinition-duration-314e.md)
   * Description: 314e profile of the FHIR Duration datatype. Derived from FHIR Duration and incorporates 314e Quantity datatype behavior including: - quantity precision support - quantity string support - value string support
+* Name: [314e HumanName](StructureDefinition-humanname-314e.md)
+  * Description: 314e profile of the FHIR HumanName datatype. This profile constrains the period element to use the 314e Period profile.
 * Name: [314e Identifier](StructureDefinition-identifier-314e.md)
   * Description: 314e profile of the FHIR Identifier datatype. This profile requires Identifier.system whenever Identifier.value is populated. For customer-specific or internally defined identifiers, Identifier.system SHALL follow the naming convention: [customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier Example: acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier
 * Name: [314e Period](StructureDefinition-period-314e.md)

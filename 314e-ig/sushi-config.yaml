@@ -78,6 +78,8 @@ title: 314e FHIR Implementation Guide
 dependencies:
   hl7.fhir.us.qicore:
     version: 7.0.2
+  hl7.fhir.us.core:
+    version: 7.0.0
     
 parameters:
   path-logo: images/314e-logo.png

@@ -32,6 +32,30 @@
     "endLine": 18
   },
   {
+    "outputFile": "StructureDefinition-address-314e.json",
+    "fshName": "Address314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\address-314e.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-age-314e.json",
+    "fshName": "Age314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\age-314e.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-allergyintolerance-314e.json",
+    "fshName": "AllergyIntolerance314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\allergyintolerance-314e.fsh",
+    "startLine": 1,
+    "endLine": 61
+  },
+  {
     "outputFile": "StructureDefinition-annotation-314e.json",
     "fshName": "Annotation314e",
     "fshType": "Profile",
@@ -72,6 +96,30 @@
     "endLine": 28
   },
   {
+    "outputFile": "StructureDefinition-carePlan-activity-targetDateTime.json",
+    "fshName": "CarePlanActivityTargetDateTime",
+    "fshType": "Extension",
+    "fshFile": "extensions\\careplan-activity-targetdatetime.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-carePlan-targetDateTime.json",
+    "fshName": "CarePlanTargetDateTime",
+    "fshType": "Extension",
+    "fshFile": "extensions\\careplan-targetdatetime.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-careplan-314e.json",
+    "fshName": "CarePlan314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\careplan-314e.fsh",
+    "startLine": 1,
+    "endLine": 76
+  },
+  {
     "outputFile": "StructureDefinition-codeableconcept-314e.json",
     "fshName": "CodeableConcept314e",
     "fshType": "Profile",
@@ -88,6 +136,46 @@
     "endLine": 143
   },
   {
+    "outputFile": "StructureDefinition-condition-314e.json",
+    "fshName": "Condition314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\condition-314e.fsh",
+    "startLine": 1,
+    "endLine": 59
+  },
+  {
+    "outputFile": "StructureDefinition-condition-diagnosis-314e.json",
+    "fshName": "ConditionDiagnosis314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\condition-diagnosis-314e.fsh",
+    "startLine": 1,
+    "endLine": 60
+  },
+  {
+    "outputFile": "StructureDefinition-condition-problem-healthconcern-314e.json",
+    "fshName": "ConditionProblemHealthConcern314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\condition-problem-healthconcern-314e.fsh",
+    "startLine": 1,
+    "endLine": 60
+  },
+  {
+    "outputFile": "StructureDefinition-contactpoint-314e.json",
+    "fshName": "ContactPoint314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\contactpoint-314e.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-cosigner.json",
+    "fshName": "Cosigner",
+    "fshType": "Extension",
+    "fshFile": "extensions\\cosigner.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
     "outputFile": "StructureDefinition-datetime-314e.json",
     "fshName": "dateTime314e",
     "fshType": "Profile",
@@ -96,16 +184,16 @@
     "endLine": 76
   },
   {
-    "outputFile": "StructureDefinition-datetime-accuracy-314e.json",
-    "fshName": "DateTimeAccuracy314e",
+    "outputFile": "StructureDefinition-datetime-accuracy.json",
+    "fshName": "DateTimeAccuracy",
     "fshType": "Extension",
     "fshFile": "extensions\\datetime-exactness.fsh",
     "startLine": 1,
     "endLine": 33
   },
   {
-    "outputFile": "StructureDefinition-datetime-precision-314e.json",
-    "fshName": "DateTimePrecision314e",
+    "outputFile": "StructureDefinition-datetime-precision.json",
+    "fshName": "DateTimePrecision",
     "fshType": "Extension",
     "fshFile": "extensions\\datetime-precision.fsh",
     "startLine": 1,
@@ -120,12 +208,108 @@
     "endLine": 37
   },
   {
+    "outputFile": "StructureDefinition-diagnosticreport-314e.json",
+    "fshName": "DiagnosticReport314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\diagnosticreport-314e.fsh",
+    "startLine": 1,
+    "endLine": 44
+  },
+  {
+    "outputFile": "StructureDefinition-diagnosticreport-lab-314e.json",
+    "fshName": "DiagnosticReportLab314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\diagnosticreport-lab-314e.fsh",
+    "startLine": 1,
+    "endLine": 45
+  },
+  {
+    "outputFile": "StructureDefinition-diagnosticreport-notereport-314e.json",
+    "fshName": "DiagnosticReportNoteReport314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\diagnosticreport-notereport-314e.fsh",
+    "startLine": 1,
+    "endLine": 45
+  },
+  {
+    "outputFile": "StructureDefinition-documentReference-author-dictationDateTime.json",
+    "fshName": "DocumentReferenceAuthorDictationDateTime",
+    "fshType": "Extension",
+    "fshFile": "extensions\\documentreference-author-dictationdatetime.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-documentReference-context-cosigner.json",
+    "fshName": "DocumentReferenceContextCosigner",
+    "fshType": "Extension",
+    "fshFile": "extensions\\documentreference-context-cosigner.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-documentReference-context-dictationDateTime.json",
+    "fshName": "DocumentReferenceContextDictationDateTime",
+    "fshType": "Extension",
+    "fshFile": "extensions\\documentreference-context-dictationdatetime.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-documentReference-context-reportDateTime.json",
+    "fshName": "DocumentReferenceContextReportDateTime",
+    "fshType": "Extension",
+    "fshFile": "extensions\\documentreference-context-reportdatetime.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-documentreference-314e.json",
+    "fshName": "DocumentReference314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\documentreference-314e.fsh",
+    "startLine": 1,
+    "endLine": 80
+  },
+  {
     "outputFile": "StructureDefinition-duration-314e.json",
     "fshName": "Duration314e",
     "fshType": "Profile",
     "fshFile": "datatypes\\duration-314e.fsh",
     "startLine": 1,
     "endLine": 66
+  },
+  {
+    "outputFile": "StructureDefinition-element-additionalInfo.json",
+    "fshName": "ElementAdditionalInfo",
+    "fshType": "Extension",
+    "fshFile": "extensions\\element-additionalinfo.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-encounter-314e.json",
+    "fshName": "Encounter314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\encounter-314e.fsh",
+    "startLine": 1,
+    "endLine": 57
+  },
+  {
+    "outputFile": "StructureDefinition-episodeofcare-314e.json",
+    "fshName": "EpisodeOfCare314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\episodeofcare-314e.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-humanname-314e.json",
+    "fshName": "HumanName314e",
+    "fshType": "Profile",
+    "fshFile": "datatypes\\humanname-314e.fsh",
+    "startLine": 1,
+    "endLine": 13
   },
   {
     "outputFile": "StructureDefinition-identifier-314e.json",
@@ -136,12 +320,28 @@
     "endLine": 101
   },
   {
+    "outputFile": "StructureDefinition-immunization-314e.json",
+    "fshName": "Immunization314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\immunization-314e.fsh",
+    "startLine": 1,
+    "endLine": 65
+  },
+  {
     "outputFile": "StructureDefinition-instant-314e.json",
     "fshName": "instant314e",
     "fshType": "Profile",
     "fshFile": "datatypes\\instant-314e.fsh",
     "startLine": 18,
     "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-observation-314e.json",
+    "fshName": "Observation314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\observation-314e.fsh",
+    "startLine": 1,
+    "endLine": 61
   },
   {
     "outputFile": "StructureDefinition-observation-antimicrobial-susceptibility-314e.json",
@@ -176,12 +376,76 @@
     "endLine": 42
   },
   {
+    "outputFile": "StructureDefinition-observation-value-attachment.json",
+    "fshName": "ObservationValueAttachment",
+    "fshType": "Extension",
+    "fshFile": "extensions\\observation-valueattachment.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-patient-314e.json",
+    "fshName": "Patient314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\patient-314e.fsh",
+    "startLine": 1,
+    "endLine": 68
+  },
+  {
+    "outputFile": "StructureDefinition-patient-affiliation.json",
+    "fshName": "PatientAffiliation",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-affiliation.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-patient-employmentStatus.json",
+    "fshName": "PatientEmploymentStatus",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-employmentstatus.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-patient-mothersName.json",
+    "fshName": "PatientMothersName",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-mothersname.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-patient-pharmacies.json",
+    "fshName": "PatientPharmacies",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-pharmacies.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-patient-preferredGenderPronoun.json",
+    "fshName": "PatientPreferredGenderPronoun",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-preferredgenderpronoun.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
     "outputFile": "StructureDefinition-period-314e.json",
     "fshName": "Period314e",
     "fshType": "Profile",
     "fshFile": "datatypes\\period-314e.fsh",
     "startLine": 1,
     "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-practitioner-314e.json",
+    "fshName": "Practitioner314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\practitioner-314e.fsh",
+    "startLine": 1,
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-quantity-314e.json",
@@ -240,6 +504,46 @@
     "endLine": 36
   },
   {
+    "outputFile": "StructureDefinition-relatedPerson-encounter.json",
+    "fshName": "RelatedPersonEncounter",
+    "fshType": "Extension",
+    "fshFile": "extensions\\relatedperson-encounter.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-relatedperson-314e.json",
+    "fshName": "RelatedPerson314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\relatedperson-314e.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "StructureDefinition-resource-additionalInfo.json",
+    "fshName": "ResourceAdditionalInfo",
+    "fshType": "Extension",
+    "fshFile": "extensions\\resource-additionalinfo.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-resource-episode.json",
+    "fshName": "ResourceEpisode",
+    "fshType": "Extension",
+    "fshFile": "extensions\\resource-episode.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-resource-lastEditedUser.json",
+    "fshName": "ResourceLastEditedUser",
+    "fshType": "Extension",
+    "fshFile": "extensions\\resource-lastediteduser.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
     "outputFile": "StructureDefinition-sampleddata-314e.json",
     "fshName": "SampledData314e",
     "fshType": "Profile",
@@ -264,6 +568,14 @@
     "endLine": 59
   },
   {
+    "outputFile": "StructureDefinition-specimen-314e.json",
+    "fshName": "Specimen314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\specimen-314e.fsh",
+    "startLine": 1,
+    "endLine": 51
+  },
+  {
     "outputFile": "StructureDefinition-time-314e.json",
     "fshName": "time314e",
     "fshType": "Profile",
@@ -272,16 +584,16 @@
     "endLine": 57
   },
   {
-    "outputFile": "StructureDefinition-time-accuracy-314e.json",
-    "fshName": "TimeAccuracy314e",
+    "outputFile": "StructureDefinition-time-accuracy.json",
+    "fshName": "TimeAccuracy",
     "fshType": "Extension",
     "fshFile": "extensions\\time-exactness.fsh",
     "startLine": 1,
     "endLine": 26
   },
   {
-    "outputFile": "StructureDefinition-time-precision-314e.json",
-    "fshName": "TimePrecision314e",
+    "outputFile": "StructureDefinition-time-precision.json",
+    "fshName": "TimePrecision",
     "fshType": "Extension",
     "fshFile": "extensions\\time-precision.fsh",
     "startLine": 1,
@@ -294,14 +606,6 @@
     "fshFile": "datatypes\\timing-314e.fsh",
     "startLine": 1,
     "endLine": 40
-  },
-  {
-    "outputFile": "StructureDefinition-value-attachment-314e.json",
-    "fshName": "ValueAttachment314e",
-    "fshType": "Extension",
-    "fshFile": "extensions\\observation-value-attachment.fsh",
-    "startLine": 1,
-    "endLine": 29
   },
   {
     "outputFile": "ValueSet-antimicrobial-susceptibility-testing-vs.json",

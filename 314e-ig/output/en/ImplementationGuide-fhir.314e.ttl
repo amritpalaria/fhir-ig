@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-26T19:54:55+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-10T16:33:40+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -78,6 +78,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.us.qicore" ] ;
      fhir:version [ fhir:v "7.0.2" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
+     fhir:version [ fhir:v "7.0.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1398,6 +1406,69 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/address-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/address-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Address" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR Address datatype.\n\nThis profile constrains the period element to use the 314e Period profile." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/age-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/age-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Age" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR Age datatype.\n\nAge is a constrained Quantity used to express a duration of elapsed time,\ntypically of a human being as read from a clinical record." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/allergyintolerance-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/allergyintolerance-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e AllergyIntolerance" ] ;
+       fhir:description [ fhir:v "314e-constrained AllergyIntolerance profile derived from QI-Core AllergyIntolerance.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/annotation-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/annotation-314e" ]
        ] ;
@@ -1478,6 +1549,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/careplan-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e CarePlan" ] ;
+       fhir:description [ fhir:v "314e-constrained CarePlan profile derived from QI-Core CarePlan.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -1520,15 +1612,15 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:extension"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/StructureDefinition/datetime-accuracy-314e> ;
-         fhir:reference [ fhir:v "StructureDefinition/datetime-accuracy-314e" ]
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/condition-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-314e" ]
        ] ;
-       fhir:name [ fhir:v "314e Date/Time Accuracy" ] ;
-       fhir:description [ fhir:v "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC." ] ;
+       fhir:name [ fhir:v "314e Condition" ] ;
+       fhir:description [ fhir:v "314e-constrained Condition profile derived from R4B Condition.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1541,15 +1633,57 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:extension"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/StructureDefinition/datetime-precision-314e> ;
-         fhir:reference [ fhir:v "StructureDefinition/datetime-precision-314e" ]
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/condition-diagnosis-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-diagnosis-314e" ]
        ] ;
-       fhir:name [ fhir:v "314e Date/Time Precision" ] ;
-       fhir:description [ fhir:v "Specifies the meaningful/ usable precision of a dateTime value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC." ] ;
+       fhir:name [ fhir:v "314e Condition Encounter Diagnosis" ] ;
+       fhir:description [ fhir:v "314e-constrained Condition profile for encounter diagnoses, derived from\nQI-Core Condition Encounter Diagnosis.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/condition-problem-healthconcern-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/condition-problem-healthconcern-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Condition Problems Health Concerns" ] ;
+       fhir:description [ fhir:v "314e-constrained Condition profile for problems and health concerns, derived\nfrom QI-Core Condition Problems Health Concerns.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/contactpoint-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/contactpoint-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e ContactPoint" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR ContactPoint datatype.\n\nThis profile constrains the period element to use the 314e Period profile." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1570,7 +1704,7 @@
          fhir:reference [ fhir:v "StructureDefinition/datetime-314e" ]
        ] ;
        fhir:name [ fhir:v "314e dateTime" ] ;
-       fhir:description [ fhir:v "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1592,6 +1726,90 @@
        ] ;
        fhir:name [ fhir:v "314e decimal" ] ;
        fhir:description [ fhir:v "314e profile of the FHIR decimal primitive datatype.\n\nSupports explicit precision representation using:\n\nhttp://hl7.org/fhir/StructureDefinition/quantity-precision\n\nThis extension specifies the intended or known precision\nof the decimal value independently of the actual lexical form." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/diagnosticreport-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnosticreport-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e DiagnosticReport" ] ;
+       fhir:description [ fhir:v "314e-constrained DiagnosticReport profile derived from R4B DiagnosticReport.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/diagnosticreport-lab-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnosticreport-lab-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e DiagnosticReport Laboratory Results" ] ;
+       fhir:description [ fhir:v "314e-constrained DiagnosticReport profile for laboratory results reporting,\nderived from QI-Core DiagnosticReport Profile for Laboratory Results Reporting.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/diagnosticreport-notereport-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnosticreport-notereport-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e DiagnosticReport Note and Report" ] ;
+       fhir:description [ fhir:v "314e-constrained DiagnosticReport profile for report and note exchange,\nderived from QI-Core DiagnosticReport Profile for Report and Note Exchange.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/documentreference-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentreference-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e DocumentReference" ] ;
+       fhir:description [ fhir:v "314e-constrained DocumentReference profile derived from QI-Core DocumentReference.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1629,11 +1847,74 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/encounter-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/encounter-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Encounter" ] ;
+       fhir:description [ fhir:v "314e-constrained Encounter profile derived from QI-Core Encounter.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/episodeofcare-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/episodeofcare-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Episode Of Care" ] ;
+       fhir:description [ fhir:v "314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-lab-general-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/observation-lab-general-314e" ]
        ] ;
        fhir:name [ fhir:v "314e General Laboratory Observation" ] ;
        fhir:description [ fhir:v "314e profile for general laboratory observations.\n\nThis profile derives from the QI Core Laboratory Result Observation profile\nand constrains datatypes to corresponding 314e datatype profiles where applicable.\n\nA required category slice SHALL identify the laboratory subcategory\nusing a code from LabCategorySubcategory314eVS.\n\nThis profile also supports the ValueAttachment314e extension\nfor scenarios where the laboratory result cannot be represented\nusing structured Observation.value[x] datatypes or plain text." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/humanname-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/humanname-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e HumanName" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR HumanName datatype.\n\nThis profile constrains the period element to use the 314e Period profile." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1667,6 +1948,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/immunization-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/immunization-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Immunization" ] ;
+       fhir:description [ fhir:v "314e-constrained Immunization profile derived from QI-Core Immunization.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:primitive-type"
          ]
        ] ) ;
@@ -1675,7 +1977,7 @@
          fhir:reference [ fhir:v "StructureDefinition/instant-314e" ]
        ] ;
        fhir:name [ fhir:v "314e instant" ] ;
-       fhir:description [ fhir:v "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1751,15 +2053,36 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:extension"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e> ;
-         fhir:reference [ fhir:v "StructureDefinition/value-attachment-314e" ]
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-314e" ]
        ] ;
-       fhir:name [ fhir:v "314e Observation Value Attachment" ] ;
-       fhir:description [ fhir:v "Extension used when an Observation result cannot be represented\nusing one of the standard structured Observation.value[x]\ndatatypes or as plain text.\n\nTypical use cases include:\n- PDF laboratory reports\n- proprietary binary result payloads\n- waveform files\n- image-based interpretations\n- externally generated rendered documents\n- rich formatted diagnostic content\n\nThe attachment represents the clinically relevant result payload." ] ;
+       fhir:name [ fhir:v "314e Observation" ] ;
+       fhir:description [ fhir:v "314e-constrained Observation profile derived from QI-Core Simple Observation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/patient-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Patient" ] ;
+       fhir:description [ fhir:v "314e-constrained Patient profile derived from QI-Core Patient.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1781,6 +2104,27 @@
        ] ;
        fhir:name [ fhir:v "314e Period" ] ;
        fhir:description [ fhir:v "314e profile of the FHIR Period datatype.\n\nAll dateTime values within the Period SHALL conform\nto the 314e DateTime profile requirements,\nincluding UTC normalization and precision handling." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/practitioner-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/practitioner-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Practitioner" ] ;
+       fhir:description [ fhir:v "314e-constrained Practitioner profile derived from QI-Core Practitioner.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1919,6 +2263,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/relatedperson-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/relatedperson-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e RelatedPerson" ] ;
+       fhir:description [ fhir:v "314e-constrained RelatedPerson profile derived from QI-Core RelatedPerson.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -1982,15 +2347,15 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:primitive-type"
+           fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/StructureDefinition/time-314e> ;
-         fhir:reference [ fhir:v "StructureDefinition/time-314e" ]
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/specimen-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/specimen-314e" ]
        ] ;
-       fhir:name [ fhir:v "314e time" ] ;
-       fhir:description [ fhir:v "314e profile of the FHIR time primitive datatype - a time during the day, \nin the format hh:mm:ss. There is no date specified. \nSeconds must be provided due to schema type constraints but may be zero-filled \nand may be ignored at receiver discretion. The time \"24:00\" SHALL NOT be used. \nA time zone SHALL NOT be present. Times can be converted to a Duration since midnight.\n\nIf only a smaller degree of precision than syntactically recorded is usable\n(for example, only hour and minute are known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-precision-314e\n\nIf all or part of the usable time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e" ] ;
+       fhir:name [ fhir:v "314e Specimen" ] ;
+       fhir:description [ fhir:v "314e-constrained Specimen profile derived from US Core Specimen.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2003,15 +2368,15 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:extension"
+           fhir:v "StructureDefinition:primitive-type"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/StructureDefinition/time-accuracy-314e> ;
-         fhir:reference [ fhir:v "StructureDefinition/time-accuracy-314e" ]
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/time-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/time-314e" ]
        ] ;
-       fhir:name [ fhir:v "314e Time Accuracy" ] ;
-       fhir:description [ fhir:v "Specifies the accuracy or exactness of a time value when only some part of \nthe known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a time value." ] ;
+       fhir:name [ fhir:v "314e time" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR time primitive datatype - a time during the day, \nin the format hh:mm:ss. There is no date specified. \nSeconds must be provided due to schema type constraints but may be zero-filled \nand may be ignored at receiver discretion. The time \"24:00\" SHALL NOT be used. \nA time zone SHALL NOT be present. Times can be converted to a Duration since midnight.\n\nIf only a smaller degree of precision than syntactically recorded is usable\n(for example, only hour and minute are known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-precision\n\nIf all or part of the usable time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-accuracy" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2033,27 +2398,6 @@
        ] ;
        fhir:name [ fhir:v "314e Time Exactness Units ValueSet" ] ;
        fhir:description [ fhir:v "Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://314e.com/fhir/ig/StructureDefinition/time-precision-314e> ;
-         fhir:reference [ fhir:v "StructureDefinition/time-precision-314e" ]
-       ] ;
-       fhir:name [ fhir:v "314e Time Precision" ] ;
-       fhir:description [ fhir:v "Specifies the meaningful/ usable precision of a time value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a time value." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2255,6 +2599,216 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/carePlan-activity-targetDateTime> ;
+         fhir:reference [ fhir:v "StructureDefinition/carePlan-activity-targetDateTime" ]
+       ] ;
+       fhir:name [ fhir:v "Care Plan Activity Target Date Time" ] ;
+       fhir:description [ fhir:v "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nStandard FHIR CarePlan.activity has no dedicated target date field separate\nfrom scheduledTiming or scheduledPeriod." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/carePlan-targetDateTime> ;
+         fhir:reference [ fhir:v "StructureDefinition/carePlan-targetDateTime" ]
+       ] ;
+       fhir:name [ fhir:v "Care Plan Target Date Time" ] ;
+       fhir:description [ fhir:v "Applied at the root level of the CarePlan resource. Specifies the intended\nor expected target date-time for completion, review, or achievement of the\ncare plan or care plan objective." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/cosigner> ;
+         fhir:reference [ fhir:v "StructureDefinition/cosigner" ]
+       ] ;
+       fhir:name [ fhir:v "Cosigner" ] ;
+       fhir:description [ fhir:v "Identifies an individual who reviewed, verified, or co-signed the associated\nclinical document, note, order, or healthcare record." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/datetime-accuracy> ;
+         fhir:reference [ fhir:v "StructureDefinition/datetime-accuracy" ]
+       ] ;
+       fhir:name [ fhir:v "Date/Time Accuracy" ] ;
+       fhir:description [ fhir:v "Specifies the accuracy or exactness of a dateTime value when only some part of \nthe known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a dateTime value, such as full timestamp, year-only, year-month, date-only, or\nnone.\n\nFor example:\n- A birth year and month may be known exactly but the day might be an estimate\n- Only the date may be verifiable as accurate with the time being approximate\n\nNote: All dateTime values in the 314e implementation guide SHALL be stored in UTC." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/datetime-precision> ;
+         fhir:reference [ fhir:v "StructureDefinition/datetime-precision" ]
+       ] ;
+       fhir:name [ fhir:v "Date/Time Precision" ] ;
+       fhir:description [ fhir:v "Specifies the meaningful/ usable precision of a dateTime value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/documentReference-author-dictationDateTime> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentReference-author-dictationDateTime" ]
+       ] ;
+       fhir:name [ fhir:v "Document Reference Author Dictation Date Time" ] ;
+       fhir:description [ fhir:v "Applied to the author element of a DocumentReference resource. Captures\nthe exact date and time when the author dictated the document.\n\nThis information is not available in the standard FHIR DocumentReference\nresource." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/documentReference-context-cosigner> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentReference-context-cosigner" ]
+       ] ;
+       fhir:name [ fhir:v "Document Reference Context Cosigner" ] ;
+       fhir:description [ fhir:v "Applied to the context section of a DocumentReference resource. Captures the\nco-signer of the document — a person who has jointly signed or authenticated\nthe document alongside the primary author." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/documentReference-context-dictationDateTime> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentReference-context-dictationDateTime" ]
+       ] ;
+       fhir:name [ fhir:v "Document Reference Context Dictation Date Time" ] ;
+       fhir:description [ fhir:v "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.\n\nStandard FHIR DocumentReference context has no dictation timestamp field." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/documentReference-context-reportDateTime> ;
+         fhir:reference [ fhir:v "StructureDefinition/documentReference-context-reportDateTime" ]
+       ] ;
+       fhir:name [ fhir:v "Document Reference Context Report Date Time" ] ;
+       fhir:description [ fhir:v "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time.\n\nStandard FHIR DocumentReference has no report release timestamp field." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/element-additionalInfo> ;
+         fhir:reference [ fhir:v "StructureDefinition/element-additionalInfo" ]
+       ] ;
+       fhir:name [ fhir:v "Element Additional Info" ] ;
+       fhir:description [ fhir:v "Applied to any FHIR element. Carries additional information associated\nwith a specific FHIR element that is not represented by the standard\nelement definition." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -2322,6 +2876,132 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-value-attachment> ;
+         fhir:reference [ fhir:v "StructureDefinition/observation-value-attachment" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Value Attachment" ] ;
+       fhir:description [ fhir:v "Extension used when an Observation result cannot be represented\nusing one of the standard structured Observation.value[x]\ndatatypes or as plain text.\n\nTypical use cases include:\n- PDF laboratory reports\n- proprietary binary result payloads\n- waveform files\n- image-based interpretations\n- externally generated rendered documents\n- rich formatted diagnostic content\n\nThe attachment represents the clinically relevant result payload." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/patient-affiliation> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-affiliation" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Affiliation" ] ;
+       fhir:description [ fhir:v "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.\n\nStandard FHIR Patient has no affiliation field." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/patient-employmentStatus> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-employmentStatus" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Employment Status" ] ;
+       fhir:description [ fhir:v "Applied at the root level of the Patient resource. Stores the patient's\ncurrent employment status or occupation.\n\nThis is a custom field added to the Patient record to capture what the\npatient does for work or their current employment situation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/patient-mothersName> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-mothersName" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Mother's Name" ] ;
+       fhir:description [ fhir:v "Applied directly at the root level of the Patient resource to store\nthe mother's name of the patient." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/patient-pharmacies> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-pharmacies" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Pharmacies" ] ;
+       fhir:description [ fhir:v "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance. Standard FHIR Patient has no pharmacy preference field." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/patient-preferredGenderPronoun> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-preferredGenderPronoun" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Preferred Gender Pronoun" ] ;
+       fhir:description [ fhir:v "Applied directly at the root level of the Patient resource to store the\npatient's preferred gender pronoun." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/quantity-quantityString> ;
          fhir:reference [ fhir:v "StructureDefinition/quantity-quantityString" ]
        ] ;
@@ -2369,6 +3049,132 @@
        ] ;
        fhir:name [ fhir:v "Reference Context" ] ;
        fhir:description [ fhir:v "Provides additional semantic context describing the role,\ncapacity, purpose, or functional meaning of a Reference.\n\nThis extension is intended for use in situations where the\nbase FHIR element is broadly defined and the precise meaning\nor role of the referenced resource requires further clarification.\n\nFor example, the performer element of an Observation may\nreference practitioners participating in different capacities\nsuch as technician, phlebotomist, or pathologist." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/relatedPerson-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/relatedPerson-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Related Person Encounter" ] ;
+       fhir:description [ fhir:v "Applied at the root level of the RelatedPerson resource. References the\nencounter with which a related person is associated." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/resource-additionalInfo> ;
+         fhir:reference [ fhir:v "StructureDefinition/resource-additionalInfo" ]
+       ] ;
+       fhir:name [ fhir:v "Resource Additional Info" ] ;
+       fhir:description [ fhir:v "Applied at the root level of any resource. Used to capture supplementary\nor non-standard information related to a FHIR resource that is not\nrepresented by the core FHIR elements or existing profiles." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/resource-episode> ;
+         fhir:reference [ fhir:v "StructureDefinition/resource-episode" ]
+       ] ;
+       fhir:name [ fhir:v "Resource Episode" ] ;
+       fhir:description [ fhir:v "Applied directly at the root level of clinical resources to store an\nEpisodeOfCare reference.\n\nThis extension links a resource to its associated episode of care when\nthat association is not otherwise expressible through standard FHIR elements." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/resource-lastEditedUser> ;
+         fhir:reference [ fhir:v "StructureDefinition/resource-lastEditedUser" ]
+       ] ;
+       fhir:name [ fhir:v "Resource Last Edited User" ] ;
+       fhir:description [ fhir:v "Applied at the root level of clinical resources. Stores the reference of the\nperson who last edited or modified the resource.\n\nStandard FHIR resources generally have no \"last edited by\" field — only\nrecorder (who first recorded it) and asserter (who asserted it clinically).\nThis extension captures an audit trail entry for the most recent editor." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/time-accuracy> ;
+         fhir:reference [ fhir:v "StructureDefinition/time-accuracy" ]
+       ] ;
+       fhir:name [ fhir:v "Time Accuracy" ] ;
+       fhir:description [ fhir:v "Specifies the accuracy or exactness of a time value when only some part of \nthe known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.\n\nThis extension is intended to explicitly communicate the accuracy\nof a time value." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/time-precision> ;
+         fhir:reference [ fhir:v "StructureDefinition/time-precision" ]
+       ] ;
+       fhir:name [ fhir:v "Time Precision" ] ;
+       fhir:description [ fhir:v "Specifies the meaningful/ usable precision of a time value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a time value." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

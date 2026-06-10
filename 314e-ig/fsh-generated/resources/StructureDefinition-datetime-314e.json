@@ -5,7 +5,7 @@
   "name": "dateTime314e",
   "title": "314e dateTime",
   "status": "active",
-  "description": "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
+  "description": "314e profile of the FHIR dateTime primitive datatype.\n\nAll dateTime values SHALL be stored in UTC.\n\nIf only a smaller degree of precision is usable\n(for example, only the date portion is known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision\n\nIf all or part of the usable date/time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttps://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator",
   "fhirVersion": "4.0.1",
   "kind": "primitive-type",
   "abstract": false,
@@ -53,7 +53,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://314e.com/fhir/StructureDefinition/datetime-precision-314e"
+              "http://314e.com/fhir/StructureDefinition/datetime-precision"
             ]
           }
         ]
@@ -70,7 +70,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://314e.com/fhir/StructureDefinition/datetime-accuracy-314e"
+              "http://314e.com/fhir/StructureDefinition/datetime-accuracy"
             ]
           }
         ]

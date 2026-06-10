@@ -8,7 +8,7 @@ This profile enables annotation or note content to be represented using external
 
 **Usages:**
 
-* Use this DataType Profile: [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
+* Use this DataType Profile: [314e AllergyIntolerance](StructureDefinition-allergyintolerance-314e.md), [314e CarePlan](StructureDefinition-careplan-314e.md), [314e Condition](StructureDefinition-condition-314e.md), [314e Condition Encounter Diagnosis](StructureDefinition-condition-diagnosis-314e.md)... Show 5 more, [314e Condition Problems Health Concerns](StructureDefinition-condition-problem-healthconcern-314e.md), [314e Immunization](StructureDefinition-immunization-314e.md), [314e Observation](StructureDefinition-observation-314e.md), [314e ServiceRequest](StructureDefinition-servicerequest-314e.md) and [314e Specimen](StructureDefinition-specimen-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/annotation-314e)
 
@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-annotation-314e.c
   "name" : "Annotation314e",
   "title" : "314e Annotation",
   "status" : "draft",
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -62,10 +62,6 @@ Other representations of profile: [CSV](../StructureDefinition-annotation-314e.c
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Annotation",
-      "path" : "Annotation"
-    },
-    {
       "id" : "Annotation.extension:attachment",
       "path" : "Annotation.extension",
       "sliceName" : "attachment",

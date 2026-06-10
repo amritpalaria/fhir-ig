@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "element-additionalInfo",
+  "url": "http://314e.com/fhir/StructureDefinition/element-additionalInfo",
+  "name": "ElementAdditionalInfo",
+  "title": "Element Additional Info",
+  "status": "active",
+  "description": "Applied to any FHIR element. Carries additional information associated\nwith a specific FHIR element that is not represented by the standard\nelement definition.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Element",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Element Additional Info",
+        "definition": "Applied to any FHIR element. Carries additional information associated\nwith a specific FHIR element that is not represented by the standard\nelement definition."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/element-additionalInfo"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Reference to additional information for this element",
+        "definition": "Reference to an Observation resource that carries additional or non-standard\ninformation associated with a specific FHIR element beyond what the standard\nelement definition supports.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

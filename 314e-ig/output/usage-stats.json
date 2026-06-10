@@ -25,17 +25,115 @@
       ]
     },
     {
-      "url": "http://314e.com/fhir/StructureDefinition/datetime-accuracy-314e",
-      "title": "314e Date/Time Accuracy",
+      "url": "http://314e.com/fhir/StructureDefinition/carePlan-activity-targetDateTime",
+      "title": "Care Plan Activity Target Date Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/carePlan-targetDateTime",
+      "title": "Care Plan Target Date Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/cosigner",
+      "title": "Cosigner",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/datetime-accuracy",
+      "title": "Date/Time Accuracy",
       "types": [
         "code"
       ]
     },
     {
-      "url": "http://314e.com/fhir/StructureDefinition/datetime-precision-314e",
-      "title": "314e Date/Time Precision",
+      "url": "http://314e.com/fhir/StructureDefinition/datetime-precision",
+      "title": "Date/Time Precision",
       "types": [
         "code"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/documentReference-author-dictationDateTime",
+      "title": "Document Reference Author Dictation Date Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner",
+      "title": "Document Reference Context Cosigner",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime",
+      "title": "Document Reference Context Dictation Date Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime",
+      "title": "Document Reference Context Report Date Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/element-additionalInfo",
+      "title": "Element Additional Info",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/observation-valueAttachment",
+      "title": "Observation Value Attachment",
+      "types": [
+        "Attachment"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-affiliation",
+      "title": "Patient Affiliation",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-employmentStatus",
+      "title": "Patient Employment Status",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-mothersName",
+      "title": "Patient Mother\u0027s Name",
+      "types": [
+        "HumanName"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-pharmacies",
+      "title": "Patient Pharmacies",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun",
+      "title": "Patient Preferred Gender Pronoun",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -60,29 +158,118 @@
       ]
     },
     {
-      "url": "http://314e.com/fhir/StructureDefinition/time-accuracy-314e",
-      "title": "314e Time Accuracy",
+      "url": "http://314e.com/fhir/StructureDefinition/relatedPerson-encounter",
+      "title": "Related Person Encounter",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/resource-additionalInfo",
+      "title": "Resource Additional Info",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/resource-lastEditedUser",
+      "title": "Resource Last Edited User",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/time-accuracy",
+      "title": "Time Accuracy",
       "types": [
         "code"
       ]
     },
     {
-      "url": "http://314e.com/fhir/StructureDefinition/time-precision-314e",
-      "title": "314e Time Precision",
+      "url": "http://314e.com/fhir/StructureDefinition/time-precision",
+      "title": "Time Precision",
       "types": [
         "code"
       ]
     },
     {
-      "url": "http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e",
-      "title": "314e Observation Value Attachment",
+      "url": "http://314ecorp.com/fhir/StructureDefinition/resource-episode",
+      "title": "Resource Episode",
       "types": [
-        "Attachment"
+        "Reference"
       ]
     }
   ],
   "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e",
+        "title": "314e AllergyIntolerance"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/careplan-314e",
+        "title": "314e CarePlan"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/condition-314e",
+        "title": "314e Condition"
+      },
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+        "title": "314e Condition Encounter Diagnosis"
+      },
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+        "title": "314e Condition Problems Health Concerns"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/diagnosticreport-314e",
+        "title": "314e DiagnosticReport"
+      },
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e",
+        "title": "314e DiagnosticReport Laboratory Results"
+      },
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
+        "title": "314e DiagnosticReport Note and Report"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/documentreference-314e",
+        "title": "314e DocumentReference"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/encounter-314e",
+        "title": "314e Encounter"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/episodeofcare-314e",
+        "title": "314e Episode Of Care"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/immunization-314e",
+        "title": "314e Immunization"
+      }
+    ],
     "Observation": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/observation-314e",
+        "title": "314e Observation"
+      },
       {
         "url": "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
         "title": "314e Antimicrobial Susceptibility Observation"
@@ -100,10 +287,34 @@
         "title": "314e Microorganism Observation"
       }
     ],
+    "Patient": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/patient-314e",
+        "title": "314e Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+        "title": "314e Practitioner"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+        "title": "314e RelatedPerson"
+      }
+    ],
     "ServiceRequest": [
       {
         "url": "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
         "title": "314e ServiceRequest"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/specimen-314e",
+        "title": "314e Specimen"
       }
     ]
   },
@@ -117,12 +328,48 @@
     "http://314e.com/fhir/StructureDefinition/attachment-tag": [
       "Attachment"
     ],
-    "http://314e.com/fhir/StructureDefinition/datetime-accuracy-314e": [
+    "http://314e.com/fhir/StructureDefinition/carePlan-activity-targetDateTime": [
+      "CarePlan.activity"
+    ],
+    "http://314e.com/fhir/StructureDefinition/carePlan-targetDateTime": [
+      "CarePlan"
+    ],
+    "http://314e.com/fhir/StructureDefinition/datetime-accuracy": [
       "dateTime"
     ],
-    "http://314e.com/fhir/StructureDefinition/datetime-precision-314e": [
+    "http://314e.com/fhir/StructureDefinition/datetime-precision": [
       "dateTime",
       "instant"
+    ],
+    "http://314e.com/fhir/StructureDefinition/documentReference-author-dictationDateTime": [
+      "DocumentReference.author"
+    ],
+    "http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner": [
+      "DocumentReference.context"
+    ],
+    "http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime": [
+      "DocumentReference.context"
+    ],
+    "http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime": [
+      "DocumentReference.context"
+    ],
+    "http://314e.com/fhir/StructureDefinition/observation-valueAttachment": [
+      "Observation"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-affiliation": [
+      "Patient"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-employmentStatus": [
+      "Patient"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-mothersName": [
+      "Patient"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-pharmacies": [
+      "Patient"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun": [
+      "Patient"
     ],
     "http://314e.com/fhir/StructureDefinition/quantity-quantityString": [
       "Duration",
@@ -133,19 +380,49 @@
       "Quantity.value"
     ],
     "http://314e.com/fhir/StructureDefinition/reference-context": [
+      "DocumentReference.author",
       "Reference"
     ],
-    "http://314e.com/fhir/StructureDefinition/time-accuracy-314e": [
+    "http://314e.com/fhir/StructureDefinition/relatedPerson-encounter": [
+      "RelatedPerson"
+    ],
+    "http://314e.com/fhir/StructureDefinition/resource-additionalInfo": [
+      "AllergyIntolerance",
+      "CarePlan",
+      "Condition",
+      "DiagnosticReport",
+      "DocumentReference",
+      "Encounter",
+      "EpisodeOfCare",
+      "Immunization",
+      "Observation",
+      "Patient",
+      "Practitioner",
+      "RelatedPerson",
+      "Specimen"
+    ],
+    "http://314e.com/fhir/StructureDefinition/resource-lastEditedUser": [
+      "AllergyIntolerance",
+      "Condition",
+      "Immunization"
+    ],
+    "http://314e.com/fhir/StructureDefinition/time-accuracy": [
       "time"
     ],
-    "http://314e.com/fhir/StructureDefinition/time-precision-314e": [
+    "http://314e.com/fhir/StructureDefinition/time-precision": [
       "time"
     ],
-    "http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e": [
-      "Observation"
+    "http://314ecorp.com/fhir/StructureDefinition/resource-episode": [
+      "AllergyIntolerance",
+      "Condition",
+      "Immunization"
     ],
     "http://hl7.org/fhir/StructureDefinition/codeOptions|7.0.2": [
+      "Immunization.vaccineCode",
       "ServiceRequest.code"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0-ballot": [
+      "Condition"
     ],
     "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded": [
       "StructureDefinition"
@@ -171,12 +448,20 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type",
-      "StructureDefinition.snapshot.element.type"
+      "StructureDefinition.differential.element.type.targetProfile",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-preferred|5.2.0-ballot": [
+      "Patient.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/quantity-precision": [
       "Duration.value",
@@ -191,6 +476,13 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -210,6 +502,24 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation": [
+      "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.snapshot.element"

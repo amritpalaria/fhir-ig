@@ -13,12 +13,12 @@ If only a smaller degree of precision than syntactically recorded is usable
 (for example, only hour and minute are known),
 the following extension SHALL be used:
 
-http://314e.com/fhir/StructureDefinition/time-precision-314e
+http://314e.com/fhir/StructureDefinition/time-precision
 
 If all or part of the usable time value is approximate rather than exact,
 the following extension SHALL be used:
 
-http://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e
+http://314e.com/fhir/StructureDefinition/time-accuracy
 """
 
 * ^status = #active
@@ -28,7 +28,7 @@ http://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e
 // ======================================================
 
 * extension contains
-    TimePrecision314e named timePrecision 0..1
+    TimePrecision named timePrecision 0..1
 
 * extension[timePrecision] ^short =
     "Usable precision of the time value"
@@ -49,7 +49,7 @@ Example:
 // ======================================================
 
 * extension contains
-    TimeAccuracy314e named accuracyIndicator 0..1
+    TimeAccuracy named accuracyIndicator 0..1
 
 * extension[accuracyIndicator] ^short =
     "Indicates the precision that is verified as clinically exact or accurate"

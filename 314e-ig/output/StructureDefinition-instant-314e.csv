@@ -8,7 +8,7 @@ instant314e-utc:instant values SHALL always be expressed in UTC ('Z'). {matches(
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"instant.extension:timePrecision","instant.extension","timePrecision","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/datetime-precision-314e]]} {[]}
+"instant.extension:timePrecision","instant.extension","timePrecision","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/datetime-precision]]} {[]}
 ","Usable precision of the instant value","Specifies the degree of precision that is meaningful,
 usable or reliable for the instant value.
 

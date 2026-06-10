@@ -1,0 +1,200 @@
+# 314e RelatedPerson - 314e FHIR Implementation Guide v1.0.0
+
+## Resource Profile: 314e RelatedPerson 
+
+ 
+314e-constrained RelatedPerson profile derived from QI-Core RelatedPerson. 
+This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable. 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Implementation Guide
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/relatedperson-314e)
+
+### Formal Views of Profile Content
+
+ [Description Differentials, Snapshots, and other representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-relatedperson-314e.csv), [Excel](../StructureDefinition-relatedperson-314e.xlsx), [Schematron](../StructureDefinition-relatedperson-314e.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "relatedperson-314e",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-primaryCodePath",
+    "valueString" : "relationship"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+    "valueString" : "RelatedPerson"
+  }],
+  "url" : "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+  "version" : "1.0.0",
+  "name" : "RelatedPerson314e",
+  "title" : "314e RelatedPerson",
+  "status" : "active",
+  "date" : "2026-06-10T16:33:40+05:30",
+  "publisher" : "314e",
+  "contact" : [{
+    "name" : "314e",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://314e.com"
+    }]
+  }],
+  "description" : "314e-constrained RelatedPerson profile derived from QI-Core RelatedPerson.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "RelatedPerson",
+  "baseDefinition" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-relatedperson",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "RelatedPerson",
+      "path" : "RelatedPerson"
+    },
+    {
+      "id" : "RelatedPerson.extension",
+      "path" : "RelatedPerson.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "RelatedPerson.extension:encounter",
+      "path" : "RelatedPerson.extension",
+      "sliceName" : "encounter",
+      "short" : "Encounter associated with the related person",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/relatedPerson-encounter"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.extension:additionalInfo",
+      "path" : "RelatedPerson.extension",
+      "sliceName" : "additionalInfo",
+      "short" : "Supplementary information for this resource",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/resource-additionalInfo"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.identifier",
+      "path" : "RelatedPerson.identifier",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/identifier-314e"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.patient",
+      "path" : "RelatedPerson.patient",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.relationship",
+      "path" : "RelatedPerson.relationship",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.name",
+      "path" : "RelatedPerson.name",
+      "type" : [{
+        "code" : "HumanName",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/humanname-314e"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.telecom",
+      "path" : "RelatedPerson.telecom",
+      "type" : [{
+        "code" : "ContactPoint",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/contactpoint-314e"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.address",
+      "path" : "RelatedPerson.address",
+      "type" : [{
+        "code" : "Address",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/address-314e"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.photo",
+      "path" : "RelatedPerson.photo",
+      "type" : [{
+        "code" : "Attachment",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/attachment-314e"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.period",
+      "path" : "RelatedPerson.period",
+      "type" : [{
+        "code" : "Period",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/period-314e"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.communication.language",
+      "path" : "RelatedPerson.communication.language",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    }]
+  }
+}
+
+```

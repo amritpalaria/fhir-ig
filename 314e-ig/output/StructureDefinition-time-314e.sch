@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:time</sch:title>
     <sch:rule context="f:time">
-      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/time-precision-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/time-precision-314e': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/time-accuracy-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/time-accuracy-314e': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/time-precision']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/time-precision': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/time-accuracy']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/time-accuracy': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

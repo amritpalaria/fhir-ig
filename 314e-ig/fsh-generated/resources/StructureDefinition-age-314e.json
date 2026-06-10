@@ -1,0 +1,23 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "age-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/age-314e",
+  "name": "Age314e",
+  "title": "314e Age",
+  "status": "active",
+  "description": "314e profile of the FHIR Age datatype.\n\nAge is a constrained Quantity used to express a duration of elapsed time,\ntypically of a human being as read from a clinical record.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Age",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Age",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Age",
+        "path": "Age"
+      }
+    ]
+  }
+}

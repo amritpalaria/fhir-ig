@@ -182,7 +182,7 @@ The code SHALL be drawn from LabCategorySubcategory314eVS.
 // ======================================================
 
 * extension contains
-    ValueAttachment314e named valueAttachment 0..1
+    ObservationValueAttachment named valueAttachment 0..1
 
 * extension[valueAttachment] ^short =
     "Attachment representation of the observation result"

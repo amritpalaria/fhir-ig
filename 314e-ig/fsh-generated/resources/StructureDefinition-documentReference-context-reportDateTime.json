@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "documentReference-context-reportDateTime",
+  "url": "http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime",
+  "name": "DocumentReferenceContextReportDateTime",
+  "title": "Document Reference Context Report Date Time",
+  "status": "active",
+  "description": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time.\n\nStandard FHIR DocumentReference has no report release timestamp field.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "DocumentReference.context",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Document Reference Context Report Date Time",
+        "definition": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time.\n\nStandard FHIR DocumentReference has no report release timestamp field."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Date and time the finalized report was released",
+        "definition": "The date and time at which the finalized report was made available or\nreleased, distinct from dictation, transcription, or document creation timestamps.",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

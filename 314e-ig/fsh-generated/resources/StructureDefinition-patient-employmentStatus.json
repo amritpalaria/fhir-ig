@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "patient-employmentStatus",
+  "url": "http://314e.com/fhir/StructureDefinition/patient-employmentStatus",
+  "name": "PatientEmploymentStatus",
+  "title": "Patient Employment Status",
+  "status": "active",
+  "description": "Applied at the root level of the Patient resource. Stores the patient's\ncurrent employment status or occupation.\n\nThis is a custom field added to the Patient record to capture what the\npatient does for work or their current employment situation.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Patient",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Patient Employment Status",
+        "definition": "Applied at the root level of the Patient resource. Stores the patient's\ncurrent employment status or occupation.\n\nThis is a custom field added to the Patient record to capture what the\npatient does for work or their current employment situation."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/patient-employmentStatus"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Patient's current employment status",
+        "definition": "Represents the patient's current employment status or occupational\ncategory as recorded in the source system.",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

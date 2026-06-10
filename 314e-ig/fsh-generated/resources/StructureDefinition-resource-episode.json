@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "resource-episode",
+  "url": "http://314ecorp.com/fhir/StructureDefinition/resource-episode",
+  "name": "ResourceEpisode",
+  "title": "Resource Episode",
+  "status": "active",
+  "description": "Applied directly at the root level of clinical resources to store an\nEpisodeOfCare reference.\n\nThis extension links a resource to its associated episode of care when\nthat association is not otherwise expressible through standard FHIR elements.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "DomainResource",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Resource Episode",
+        "definition": "Applied directly at the root level of clinical resources to store an\nEpisodeOfCare reference.\n\nThis extension links a resource to its associated episode of care when\nthat association is not otherwise expressible through standard FHIR elements."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314ecorp.com/fhir/StructureDefinition/resource-episode"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Associated episode of care",
+        "definition": "Reference to the EpisodeOfCare resource with which this resource is associated.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

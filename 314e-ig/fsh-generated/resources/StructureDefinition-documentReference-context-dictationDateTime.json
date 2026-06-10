@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "documentReference-context-dictationDateTime",
+  "url": "http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime",
+  "name": "DocumentReferenceContextDictationDateTime",
+  "title": "Document Reference Context Dictation Date Time",
+  "status": "active",
+  "description": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.\n\nStandard FHIR DocumentReference context has no dictation timestamp field.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "DocumentReference.context",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Document Reference Context Dictation Date Time",
+        "definition": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.\n\nStandard FHIR DocumentReference context has no dictation timestamp field."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Date and time the document content was dictated",
+        "definition": "The date and time at which the clinician dictated the content of this document,\ndistinct from authoring, transcription, or signing timestamps.",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

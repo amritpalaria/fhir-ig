@@ -5,7 +5,7 @@
   "name": "instant314e",
   "title": "314e instant",
   "status": "active",
-  "description": "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e",
+  "description": "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision",
   "fhirVersion": "4.0.1",
   "kind": "primitive-type",
   "abstract": false,
@@ -53,7 +53,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://314e.com/fhir/StructureDefinition/datetime-precision-314e"
+              "http://314e.com/fhir/StructureDefinition/datetime-precision"
             ]
           }
         ]

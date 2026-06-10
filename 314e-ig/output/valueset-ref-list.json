@@ -66,8 +66,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-datetime-accuracy-314e.html" : "314e Date/Time Accuracy",
-    "StructureDefinition-time-accuracy-314e.html" : "314e Time Accuracy"
+    "StructureDefinition-datetime-accuracy.html" : "Date/Time Accuracy",
+    "StructureDefinition-time-accuracy.html" : "Time Accuracy"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/time-precision-units",
@@ -79,8 +79,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-time-precision-314e.html" : "314e Time Precision",
-    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision"
+    "StructureDefinition-time-precision.html" : "Time Precision",
+    "StructureDefinition-datetime-precision.html" : "Date/Time Precision"
   },
   {
     "url" : "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs",

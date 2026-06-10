@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-duration-314e.csv
   "name" : "Duration314e",
   "title" : "314e Duration",
   "status" : "active",
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -65,10 +65,6 @@ Other representations of profile: [CSV](../StructureDefinition-duration-314e.csv
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Duration",
-      "path" : "Duration"
-    },
-    {
       "id" : "Duration.extension:quantityString",
       "path" : "Duration.extension",
       "sliceName" : "quantityString",

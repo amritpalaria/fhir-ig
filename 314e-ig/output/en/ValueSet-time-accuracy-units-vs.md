@@ -7,8 +7,8 @@ Allowed exactness/ accurate precision units for dateTime, time, and instant prec
 
  **References** 
 
-* [314e Date/Time Accuracy](StructureDefinition-datetime-accuracy-314e.md)
-* [314e Time Accuracy](StructureDefinition-time-accuracy-314e.md)
+* [Date/Time Accuracy](StructureDefinition-datetime-accuracy.md)
+* [Time Accuracy](StructureDefinition-time-accuracy.md)
 
 ### Logical Definition (CLD)
 
@@ -34,7 +34,7 @@ Allowed exactness/ accurate precision units for dateTime, time, and instant prec
   "title" : "314e Time Exactness Units ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

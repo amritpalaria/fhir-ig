@@ -1,0 +1,188 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "practitioner-314e",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+      "valueString": "Practitioner"
+    }
+  ],
+  "url": "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+  "name": "Practitioner314e",
+  "title": "314e Practitioner",
+  "status": "active",
+  "description": "314e-constrained Practitioner profile derived from QI-Core Practitioner.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.extension",
+        "path": "Practitioner.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.extension:additionalInfo",
+        "path": "Practitioner.extension",
+        "sliceName": "additionalInfo",
+        "short": "Supplementary information for this resource",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/resource-additionalInfo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier:NPI",
+        "path": "Practitioner.identifier",
+        "sliceName": "NPI",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier:ein",
+        "path": "Practitioner.identifier",
+        "sliceName": "ein",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/humanname-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "type": [
+          {
+            "code": "ContactPoint",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/contactpoint-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/address-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification.identifier",
+        "path": "Practitioner.qualification.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification.issuer",
+        "path": "Practitioner.qualification.issuer",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

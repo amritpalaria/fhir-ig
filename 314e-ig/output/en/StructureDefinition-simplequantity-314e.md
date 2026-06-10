@@ -7,7 +7,7 @@ A 314e-constrained SimpleQuantity datatype supporting precision metadata and alt
 
 **Usages:**
 
-* Use this DataType Profile: [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md), [314e Range](StructureDefinition-range-314e.md) and [314e SampledData](StructureDefinition-sampleddata-314e.md)
+* Use this DataType Profile: [314e CarePlan](StructureDefinition-careplan-314e.md), [314e Immunization](StructureDefinition-immunization-314e.md), [314e Observation](StructureDefinition-observation-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md)... Show 3 more, [314e Range](StructureDefinition-range-314e.md), [314e SampledData](StructureDefinition-sampleddata-314e.md) and [314e Specimen](StructureDefinition-specimen-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/simplequantity-314e)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-simplequantity-31
   "name" : "SimpleQuantity314e",
   "title" : "314e SimpleQuantity",
   "status" : "draft",
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

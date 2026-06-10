@@ -27,6 +27,13 @@
   "name" : "TimePrecisionUnits314E"
 },
 {
+  "id" : "allergyintolerance-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e",
+  "version" : "1.0.0",
+  "name" : "AllergyIntolerance314e"
+},
+{
   "id" : "annotation-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/annotation-314e",
@@ -62,18 +69,158 @@
   "name" : "AttachmentTag"
 },
 {
-  "id" : "datetime-accuracy-314e",
+  "id" : "carePlan-activity-targetDateTime",
   "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/StructureDefinition/datetime-accuracy-314e",
+  "url" : "http://314e.com/fhir/StructureDefinition/carePlan-activity-targetDateTime",
   "version" : "1.0.0",
-  "name" : "DateTimeAccuracy314e"
+  "name" : "CarePlanActivityTargetDateTime"
 },
 {
-  "id" : "datetime-precision-314e",
+  "id" : "carePlan-targetDateTime",
   "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/StructureDefinition/datetime-precision-314e",
+  "url" : "http://314e.com/fhir/StructureDefinition/carePlan-targetDateTime",
   "version" : "1.0.0",
-  "name" : "DateTimePrecision314e"
+  "name" : "CarePlanTargetDateTime"
+},
+{
+  "id" : "careplan-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/careplan-314e",
+  "version" : "1.0.0",
+  "name" : "CarePlan314e"
+},
+{
+  "id" : "condition-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/condition-314e",
+  "version" : "1.0.0",
+  "name" : "Condition314e"
+},
+{
+  "id" : "condition-diagnosis-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+  "version" : "1.0.0",
+  "name" : "ConditionDiagnosis314e"
+},
+{
+  "id" : "condition-problem-healthconcern-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+  "version" : "1.0.0",
+  "name" : "ConditionProblemHealthConcern314e"
+},
+{
+  "id" : "cosigner",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/cosigner",
+  "version" : "1.0.0",
+  "name" : "Cosigner"
+},
+{
+  "id" : "datetime-accuracy",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/datetime-accuracy",
+  "version" : "1.0.0",
+  "name" : "DateTimeAccuracy"
+},
+{
+  "id" : "datetime-precision",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/datetime-precision",
+  "version" : "1.0.0",
+  "name" : "DateTimePrecision"
+},
+{
+  "id" : "diagnosticreport-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/diagnosticreport-314e",
+  "version" : "1.0.0",
+  "name" : "DiagnosticReport314e"
+},
+{
+  "id" : "diagnosticreport-lab-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e",
+  "version" : "1.0.0",
+  "name" : "DiagnosticReportLab314e"
+},
+{
+  "id" : "diagnosticreport-notereport-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
+  "version" : "1.0.0",
+  "name" : "DiagnosticReportNoteReport314e"
+},
+{
+  "id" : "documentReference-author-dictationDateTime",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/documentReference-author-dictationDateTime",
+  "version" : "1.0.0",
+  "name" : "DocumentReferenceAuthorDictationDateTime"
+},
+{
+  "id" : "documentReference-context-cosigner",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner",
+  "version" : "1.0.0",
+  "name" : "DocumentReferenceContextCosigner"
+},
+{
+  "id" : "documentReference-context-dictationDateTime",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime",
+  "version" : "1.0.0",
+  "name" : "DocumentReferenceContextDictationDateTime"
+},
+{
+  "id" : "documentReference-context-reportDateTime",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime",
+  "version" : "1.0.0",
+  "name" : "DocumentReferenceContextReportDateTime"
+},
+{
+  "id" : "documentreference-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/documentreference-314e",
+  "version" : "1.0.0",
+  "name" : "DocumentReference314e"
+},
+{
+  "id" : "element-additionalInfo",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/element-additionalInfo",
+  "version" : "1.0.0",
+  "name" : "ElementAdditionalInfo"
+},
+{
+  "id" : "encounter-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/encounter-314e",
+  "version" : "1.0.0",
+  "name" : "Encounter314e"
+},
+{
+  "id" : "episodeofcare-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/episodeofcare-314e",
+  "version" : "1.0.0",
+  "name" : "EpisodeOfCare314e"
+},
+{
+  "id" : "immunization-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/immunization-314e",
+  "version" : "1.0.0",
+  "name" : "Immunization314e"
+},
+{
+  "id" : "observation-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/observation-314e",
+  "version" : "1.0.0",
+  "name" : "Observation314e"
 },
 {
   "id" : "observation-antimicrobial-susceptibility-314e",
@@ -102,6 +249,62 @@
   "url" : "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
   "version" : "1.0.0",
   "name" : "ObservationMicroorganism314e"
+},
+{
+  "id" : "observation-value-attachment",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/observation-valueAttachment",
+  "version" : "1.0.0",
+  "name" : "ObservationValueAttachment"
+},
+{
+  "id" : "patient-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-314e",
+  "version" : "1.0.0",
+  "name" : "Patient314e"
+},
+{
+  "id" : "patient-affiliation",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-affiliation",
+  "version" : "1.0.0",
+  "name" : "PatientAffiliation"
+},
+{
+  "id" : "patient-employmentStatus",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-employmentStatus",
+  "version" : "1.0.0",
+  "name" : "PatientEmploymentStatus"
+},
+{
+  "id" : "patient-mothersName",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-mothersName",
+  "version" : "1.0.0",
+  "name" : "PatientMothersName"
+},
+{
+  "id" : "patient-pharmacies",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-pharmacies",
+  "version" : "1.0.0",
+  "name" : "PatientPharmacies"
+},
+{
+  "id" : "patient-preferredGenderPronoun",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun",
+  "version" : "1.0.0",
+  "name" : "PatientPreferredGenderPronoun"
+},
+{
+  "id" : "practitioner-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+  "version" : "1.0.0",
+  "name" : "Practitioner314e"
 },
 {
   "id" : "quantity-quantityString",
@@ -146,6 +349,34 @@
   "name" : "ReferenceContext"
 },
 {
+  "id" : "relatedPerson-encounter",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/relatedPerson-encounter",
+  "version" : "1.0.0",
+  "name" : "RelatedPersonEncounter"
+},
+{
+  "id" : "relatedperson-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+  "version" : "1.0.0",
+  "name" : "RelatedPerson314e"
+},
+{
+  "id" : "resource-additionalInfo",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/resource-additionalInfo",
+  "version" : "1.0.0",
+  "name" : "ResourceAdditionalInfo"
+},
+{
+  "id" : "resource-lastEditedUser",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/resource-lastEditedUser",
+  "version" : "1.0.0",
+  "name" : "ResourceLastEditedUser"
+},
+{
   "id" : "servicerequest-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
@@ -160,18 +391,25 @@
   "name" : "SimpleQuantity314e"
 },
 {
-  "id" : "time-accuracy-314e",
+  "id" : "specimen-314e",
   "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/StructureDefinition/time-accuracy-314e",
+  "url" : "http://314e.com/fhir/StructureDefinition/specimen-314e",
   "version" : "1.0.0",
-  "name" : "TimeAccuracy314e"
+  "name" : "Specimen314e"
 },
 {
-  "id" : "time-precision-314e",
+  "id" : "time-accuracy",
   "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/StructureDefinition/time-precision-314e",
+  "url" : "http://314e.com/fhir/StructureDefinition/time-accuracy",
   "version" : "1.0.0",
-  "name" : "TimePrecision314e"
+  "name" : "TimeAccuracy"
+},
+{
+  "id" : "time-precision",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/time-precision",
+  "version" : "1.0.0",
+  "name" : "TimePrecision"
 },
 {
   "id" : "attachment-tag",
@@ -230,6 +468,20 @@
   "name" : "IG314e"
 },
 {
+  "id" : "address-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/address-314e",
+  "version" : "1.0.0",
+  "name" : "Address314e"
+},
+{
+  "id" : "age-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/age-314e",
+  "version" : "1.0.0",
+  "name" : "Age314e"
+},
+{
   "id" : "codeableconcept-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e",
@@ -242,6 +494,13 @@
   "url" : "http://314e.com/fhir/ig/StructureDefinition/coding-314e",
   "version" : "1.0.0",
   "name" : "Coding314e"
+},
+{
+  "id" : "contactpoint-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/contactpoint-314e",
+  "version" : "1.0.0",
+  "name" : "ContactPoint314e"
 },
 {
   "id" : "datetime-314e",
@@ -263,6 +522,13 @@
   "url" : "http://314e.com/fhir/ig/StructureDefinition/duration-314e",
   "version" : "1.0.0",
   "name" : "Duration314e"
+},
+{
+  "id" : "humanname-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/ig/StructureDefinition/humanname-314e",
+  "version" : "1.0.0",
+  "name" : "HumanName314e"
 },
 {
   "id" : "identifier-314e",
@@ -314,13 +580,6 @@
   "name" : "Timing314e"
 },
 {
-  "id" : "value-attachment-314e",
-  "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e",
-  "version" : "1.0.0",
-  "name" : "ValueAttachment314e"
-},
-{
   "id" : "antimicrobial-susceptibility-testing-vs",
   "type" : "ValueSet",
   "url" : "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs",
@@ -333,4 +592,11 @@
   "url" : "http://314e.com/fhir/ig/ValueSet/microorganism-by-method-vs",
   "version" : "1.0.0",
   "name" : "MicroorganismByMethodVS"
+},
+{
+  "id" : "resource-episode",
+  "type" : "StructureDefinition",
+  "url" : "http://314ecorp.com/fhir/StructureDefinition/resource-episode",
+  "version" : "1.0.0",
+  "name" : "ResourceEpisode"
 }]

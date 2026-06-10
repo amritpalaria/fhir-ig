@@ -22,8 +22,8 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
@@ -69,8 +69,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-datetime-accuracy-314e.html" : "314e Date/Time Accuracy",
-    "StructureDefinition-time-accuracy-314e.html" : "314e Time Accuracy"
+    "StructureDefinition-datetime-accuracy.html" : "Date/Time Accuracy",
+    "StructureDefinition-time-accuracy.html" : "Time Accuracy"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/time-precision-units",
@@ -82,8 +82,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-time-precision-314e.html" : "314e Time Precision",
-    "StructureDefinition-datetime-precision-314e.html" : "314e Date/Time Precision"
+    "StructureDefinition-time-precision.html" : "Time Precision",
+    "StructureDefinition-datetime-precision.html" : "Date/Time Precision"
   },
   {
     "url" : "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs",
@@ -110,6 +110,167 @@
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation"
   },
   {
+    "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
+    "version" : "20230715",
+    "status" : "active",
+    "name" : "CVXVaccinesAdministeredVaccineSet",
+    "title" : "CVX Vaccines Administered Vaccine Set",
+    "description" : "",
+    "systems" : ["http://hl7.org/fhir/sid/cvx"],
+    "oids" : ["2.16.840.1.113762.1.4.1010.6"],
+    "sources" : ["2.16.840.1.113762.1.4.1010.6"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.54",
+    "version" : "20221102",
+    "status" : "active",
+    "name" : "SpecimenType",
+    "title" : "Specimen type",
+    "description" : "",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113762.1.4.1099.54"],
+    "sources" : ["2.16.840.1.113762.1.4.1099.54"],
+    "uses" : {
+    },
+    "StructureDefinition-specimen-314e.html" : "314e Specimen"
+  },
+  {
+    "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8",
+    "version" : "20210622",
+    "status" : "active",
+    "name" : "CommonSubstancesForAllergyAndIntoleranceDocumentationIncludingRefutations",
+    "title" : "Common substances for allergy and intolerance documentation including refutations",
+    "description" : "As noted in https://jira.hl7.org/browse/FHIR-32953, Drug class value set changed 2021-06-21 to align with C-CDA member value set 2.16.840.1.113762.1.4.1114.14",
+    "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm",
+    "http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113762.1.4.1186.8"],
+    "sources" : ["2.16.840.1.113762.1.4.1186.8"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/address-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressType",
+    "title" : "AddressType",
+    "description" : "The type of an address (physical / postal).",
+    "systems" : ["http://hl7.org/fhir/address-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.69"],
+    "sources" : ["2.16.840.1.113883.4.642.3.69"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
+    "StructureDefinition-address-314e.html" : "314e Address"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/address-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressUse",
+    "title" : "AddressUse",
+    "description" : "The use of an address.",
+    "systems" : ["http://hl7.org/fhir/address-use"],
+    "oids" : ["2.16.840.1.113883.4.642.3.67"],
+    "sources" : ["2.16.840.1.113883.4.642.3.67"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
+    "StructureDefinition-address-314e.html" : "314e Address"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AdministrativeGender",
+    "title" : "AdministrativeGender",
+    "description" : "The gender of a person used for administrative purposes.",
+    "systems" : ["http://hl7.org/fhir/administrative-gender"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
+    "StructureDefinition-relatedperson-314e.html" : "314e RelatedPerson"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceCategory",
+    "title" : "AllergyIntoleranceCategory",
+    "description" : "Category of an identified substance associated with allergies or intolerances.",
+    "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.133"],
+    "sources" : ["2.16.840.1.113883.4.642.3.133"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceCriticality",
+    "title" : "AllergyIntoleranceCriticality",
+    "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+    "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+    "oids" : ["2.16.840.1.113883.4.642.3.129"],
+    "sources" : ["2.16.840.1.113883.4.642.3.129"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceType",
+    "title" : "AllergyIntoleranceType",
+    "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+    "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.131"],
+    "sources" : ["2.16.840.1.113883.4.642.3.131"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceClinicalStatusCodes",
+    "title" : "AllergyIntolerance Clinical Status Codes",
+    "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceVerificationStatusCodes",
+    "title" : "AllergyIntolerance Verification Status Codes",
+    "description" : "Preferred value set for AllergyIntolerance Verification Status.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/body-site",
     "version" : "4.0.1",
     "status" : "draft",
@@ -121,11 +282,132 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
+    "StructureDefinition-condition-314e.html" : "314e Condition",
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+    "StructureDefinition-specimen-314e.html" : "314e Specimen",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "FacilityTypeCodeValueSet",
+    "title" : "Facility Type Code Value Set",
+    "description" : "This is the code representing the type of organizational setting where the clinical encounter, service, interaction, or treatment occurred. The value set used for Healthcare Facility Type has been defined by HITSP to be the value set reproduced from HITSP C80 Table 2-147.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.67"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PracticeSettingCodeValueSet",
+    "title" : "Practice Setting Code Value Set",
+    "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityKind",
+    "title" : "Care Plan Activity Kind",
+    "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+    "systems" : ["http://hl7.org/fhir/resource-types"],
+    "oids" : ["2.16.840.1.113883.4.642.3.145"],
+    "sources" : ["2.16.840.1.113883.4.642.3.145"],
+    "uses" : {
+    },
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityOutcome",
+    "title" : "Care Plan Activity Outcome",
+    "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.149"],
+    "sources" : ["2.16.840.1.113883.4.642.3.149"],
+    "uses" : {
+    },
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityStatus",
+    "title" : "CarePlanActivityStatus",
+    "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+    "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.146"],
+    "sources" : ["2.16.840.1.113883.4.642.3.146"],
+    "uses" : {
+    },
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanCategory",
+    "title" : "Care Plan Category",
+    "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.148"],
+    "sources" : ["2.16.840.1.113883.4.642.3.148"],
+    "uses" : {
+    },
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanIntent",
+    "title" : "Care Plan Intent",
+    "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+    "systems" : ["http://hl7.org/fhir/request-intent"],
+    "oids" : ["2.16.840.1.113883.4.642.3.150"],
+    "sources" : ["2.16.840.1.113883.4.642.3.150"],
+    "uses" : {
+    },
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTClinicalFindings",
+    "title" : "SNOMED CT Clinical Findings",
+    "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.232"],
+    "sources" : ["2.16.840.1.113883.4.642.3.232"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance",
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -140,9 +422,168 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "systems" : ["http://hl7.org/fhir/composition-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.241"],
+    "sources" : ["2.16.840.1.113883.4.642.3.241"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionCategoryCodes",
+    "title" : "Condition Category Codes",
+    "description" : "Preferred value set for Condition Categories.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.162"],
+    "sources" : ["2.16.840.1.113883.4.642.3.162"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-314e.html" : "314e Condition",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.164"],
+    "sources" : ["2.16.840.1.113883.4.642.3.164"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-314e.html" : "314e Condition",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Condition/Problem/DiagnosisCodes",
+    "title" : "Condition/Problem/Diagnosis Codes",
+    "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.161"],
+    "sources" : ["2.16.840.1.113883.4.642.3.161"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-314e.html" : "314e Condition"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Condition/DiagnosisSeverity",
+    "title" : "Condition/Diagnosis Severity",
+    "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.168"],
+    "sources" : ["2.16.840.1.113883.4.642.3.168"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-314e.html" : "314e Condition",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionStage",
+    "title" : "Condition Stage",
+    "description" : "Example value set for stages of cancer and other conditions.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.170"],
+    "sources" : ["2.16.840.1.113883.4.642.3.170"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-314e.html" : "314e Condition",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionStageType",
+    "title" : "Condition Stage Type",
+    "description" : "Example value set for the type of stages of cancer and other conditions",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.171"],
+    "sources" : ["2.16.840.1.113883.4.642.3.171"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-314e.html" : "314e Condition",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConditionVerificationStatus",
+    "title" : "ConditionVerificationStatus",
+    "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.166"],
+    "sources" : ["2.16.840.1.113883.4.642.3.166"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-314e.html" : "314e Condition",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ContactPointSystem",
+    "title" : "ContactPointSystem",
+    "description" : "Telecommunications form for contact point.",
+    "systems" : ["http://hl7.org/fhir/contact-point-system"],
+    "oids" : ["2.16.840.1.113883.4.642.3.71"],
+    "sources" : ["2.16.840.1.113883.4.642.3.71"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
+    "StructureDefinition-contactpoint-314e.html" : "314e ContactPoint"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ContactPointUse",
+    "title" : "ContactPointUse",
+    "description" : "Use of contact point.",
+    "systems" : ["http://hl7.org/fhir/contact-point-use"],
+    "oids" : ["2.16.840.1.113883.4.642.3.73"],
+    "sources" : ["2.16.840.1.113883.4.642.3.73"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
+    "StructureDefinition-contactpoint-314e.html" : "314e ContactPoint"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -157,8 +598,9 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
@@ -174,6 +616,251 @@
     "uses" : {
     },
     "StructureDefinition-timing-314e.html" : "314e Timing"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosisRole",
+    "title" : "DiagnosisRole",
+    "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+    "oids" : ["2.16.840.1.113883.4.642.3.49"],
+    "sources" : ["2.16.840.1.113883.4.642.3.49"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-episodeofcare-314e.html" : "314e Episode Of Care"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticReportStatus",
+    "title" : "DiagnosticReportStatus",
+    "description" : "The status of the diagnostic report.",
+    "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.235"],
+    "sources" : ["2.16.840.1.113883.4.642.3.235"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticServiceSectionCodes",
+    "title" : "Diagnostic Service Section Codes",
+    "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+    "oids" : ["2.16.840.1.113883.4.642.3.234"],
+    "sources" : ["2.16.840.1.113883.4.642.3.234"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DocumentClassValueSet",
+    "title" : "Document Class Value Set",
+    "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentReferenceStatus",
+    "title" : "DocumentReferenceStatus",
+    "description" : "The status of the document reference.",
+    "systems" : ["http://hl7.org/fhir/document-reference-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.7"],
+    "sources" : ["2.16.840.1.113883.4.642.3.7"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentRelationshipType",
+    "title" : "DocumentRelationshipType",
+    "description" : "The type of relationship between documents.",
+    "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.244"],
+    "sources" : ["2.16.840.1.113883.4.642.3.244"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/duration-units",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "CommonUCUMCodesForDuration",
+    "title" : "Common UCUM Codes for Duration",
+    "description" : "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes",
+    "systems" : ["http://unitsofmeasure.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.61"],
+    "sources" : ["2.16.840.1.113883.4.642.3.61"],
+    "uses" : {
+    },
+    "StructureDefinition-duration-314e.html" : "314e Duration"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AdmitSource",
+    "title" : "Admit source",
+    "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+    "oids" : ["2.16.840.1.113883.4.642.3.257"],
+    "sources" : ["2.16.840.1.113883.4.642.3.257"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Diet",
+    "title" : "Diet",
+    "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+    "oids" : ["2.16.840.1.113883.4.642.3.255"],
+    "sources" : ["2.16.840.1.113883.4.642.3.255"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterLocationStatus",
+    "title" : "EncounterLocationStatus",
+    "description" : "The status of the location.",
+    "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.262"],
+    "sources" : ["2.16.840.1.113883.4.642.3.262"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipantType",
+    "title" : "Participant type",
+    "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/participant-type",
+    "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
+    "oids" : ["2.16.840.1.113883.4.642.3.250"],
+    "sources" : ["2.16.840.1.113883.4.642.3.250"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterReasonCodes",
+    "title" : "Encounter Reason Codes",
+    "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.261"],
+    "sources" : ["2.16.840.1.113883.4.642.3.261"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecialArrangements",
+    "title" : "Special arrangements",
+    "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"],
+    "oids" : ["2.16.840.1.113883.4.642.3.253"],
+    "sources" : ["2.16.840.1.113883.4.642.3.253"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecialCourtesy",
+    "title" : "Special courtesy",
+    "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+    "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"],
+    "oids" : ["2.16.840.1.113883.4.642.3.252"],
+    "sources" : ["2.16.840.1.113883.4.642.3.252"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterStatus",
+    "title" : "EncounterStatus",
+    "description" : "Current state of the encounter.",
+    "systems" : ["http://hl7.org/fhir/encounter-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.246"],
+    "sources" : ["2.16.840.1.113883.4.642.3.246"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/episode-of-care-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EpisodeOfCareStatus",
+    "title" : "EpisodeOfCareStatus",
+    "description" : "The status of the episode of care.",
+    "systems" : ["http://hl7.org/fhir/episode-of-care-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.664"],
+    "sources" : ["2.16.840.1.113883.4.642.3.664"],
+    "uses" : {
+    },
+    "StructureDefinition-episodeofcare-314e.html" : "314e Episode Of Care"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/episodeofcare-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EpisodeOfCareType",
+    "title" : "Episode of care type",
+    "description" : "This example value set defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/episodeofcare-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.666"],
+    "sources" : ["2.16.840.1.113883.4.642.3.666"],
+    "uses" : {
+    },
+    "StructureDefinition-episodeofcare-314e.html" : "314e Episode Of Care"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/event-timing",
@@ -202,12 +889,15 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-identifier-314e.html" : "314e Identifier",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-identifier-314e.html" : "314e Identifier",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -221,12 +911,170 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-identifier-314e.html" : "314e Identifier",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-identifier-314e.html" : "314e Identifier",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationFunctionCodes",
+    "title" : "Immunization Function Codes",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the function a practitioner or organization may play in the immunization event. This value set is provided as a suggestive example.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0443"],
+    "oids" : ["2.16.840.1.113883.4.642.3.995"],
+    "sources" : ["2.16.840.1.113883.4.642.3.995"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-funding-source",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationFundingSource",
+    "title" : "Immunization Funding Source",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-funding-source"],
+    "oids" : ["2.16.840.1.113883.4.642.3.293"],
+    "sources" : ["2.16.840.1.113883.4.642.3.293"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-origin",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationOriginCodes",
+    "title" : "Immunization Origin Codes",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-origin"],
+    "oids" : ["2.16.840.1.113883.4.642.3.296"],
+    "sources" : ["2.16.840.1.113883.4.642.3.296"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-program-eligibility",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationProgramEligibility",
+    "title" : "Immunization Program Eligibility",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"],
+    "oids" : ["2.16.840.1.113883.4.642.3.291"],
+    "sources" : ["2.16.840.1.113883.4.642.3.291"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationReasonCodes",
+    "title" : "Immunization Reason Codes",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was administered. This value set is provided as a suggestive example.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.290"],
+    "sources" : ["2.16.840.1.113883.4.642.3.290"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationRouteCodes",
+    "title" : "Immunization Route Codes",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the administrative routes used during vaccination. This value set is provided as a suggestive example.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"],
+    "oids" : ["2.16.840.1.113883.4.642.3.289"],
+    "sources" : ["2.16.840.1.113883.4.642.3.289"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-site",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CodesForImmunizationSiteOfAdministration",
+    "title" : "Codes for Immunization Site of Administration",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the body site where the vaccination occurred. This value set is provided as a suggestive example.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActSite"],
+    "oids" : ["2.16.840.1.113883.4.642.3.288"],
+    "sources" : ["2.16.840.1.113883.4.642.3.288"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationStatusCodes",
+    "title" : "Immunization Status Codes",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the current status of the administered dose of vaccine.",
+    "systems" : ["http://hl7.org/fhir/event-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.295"],
+    "sources" : ["2.16.840.1.113883.4.642.3.295"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationStatusReasonCodes",
+    "title" : "Immunization Status Reason Codes",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was not administered. This value set is provided as a suggestive example.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason",
+    "http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.992"],
+    "sources" : ["2.16.840.1.113883.4.642.3.992"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-subpotent-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationSubpotentReason",
+    "title" : "Immunization Subpotent Reason",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose is considered to be subpotent. This value set is provided as a suggestive example.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.993"],
+    "sources" : ["2.16.840.1.113883.4.642.3.993"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/immunization-target-disease",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImmunizationTargetDiseaseCodes",
+    "title" : "Immunization Target Disease Codes",
+    "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the disease that the dose is being administered against. This value set is provided as a suggestive example and includes the SNOMED CT concepts from the 64572001 (Disease) hierarchy.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1047"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1047"],
+    "uses" : {
+    },
+    "StructureDefinition-immunization-314e.html" : "314e Immunization"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -240,12 +1088,88 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance",
+    "StructureDefinition-immunization-314e.html" : "314e Immunization",
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-relatedperson-314e.html" : "314e RelatedPerson",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
+    "StructureDefinition-episodeofcare-314e.html" : "314e Episode Of Care",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report",
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-condition-314e.html" : "314e Condition",
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-specimen-314e.html" : "314e Specimen",
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
     "StructureDefinition-attachment-314e.html" : "314e Attachment",
     "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/link-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "LinkType",
+    "title" : "LinkType",
+    "description" : "The type of link between this patient resource and another patient resource.",
+    "systems" : ["http://hl7.org/fhir/link-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.423"],
+    "sources" : ["2.16.840.1.113883.4.642.3.423"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LocationType",
+    "title" : "Location type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/location-physical-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.328"],
+    "sources" : ["2.16.840.1.113883.4.642.3.328"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ManifestationAndSymptomCodes",
+    "title" : "Manifestation and Symptom Codes",
+    "description" : "Example value set for Manifestation and Symptom codes.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.169"],
+    "sources" : ["2.16.840.1.113883.4.642.3.169"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-314e.html" : "314e Condition",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "Marital Status Codes",
+    "title" : "MaritalStatus",
+    "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+    "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"],
+    "oids" : ["2.16.840.1.113883.4.642.3.29"],
+    "sources" : ["2.16.840.1.113883.4.642.3.29"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -262,6 +1186,20 @@
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTMedicationCodes",
+    "title" : "SNOMED CT Medication Codes",
+    "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.375"],
+    "sources" : ["2.16.840.1.113883.4.642.3.375"],
+    "uses" : {
+    },
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
     "version" : "4.0.1",
     "status" : "active",
@@ -273,7 +1211,24 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1024"],
     "uses" : {
     },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference",
     "StructureDefinition-attachment-314e.html" : "314e Attachment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/name-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "NameUse",
+    "title" : "NameUse",
+    "description" : "The use of a human name.",
+    "systems" : ["http://hl7.org/fhir/name-use"],
+    "oids" : ["2.16.840.1.113883.4.642.3.65"],
+    "sources" : ["2.16.840.1.113883.4.642.3.65"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
+    "StructureDefinition-humanname-314e.html" : "314e HumanName"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -288,8 +1243,9 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
@@ -305,8 +1261,9 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
@@ -322,8 +1279,9 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
@@ -339,8 +1297,9 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
@@ -356,8 +1315,9 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
@@ -375,6 +1335,34 @@
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
+    "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PatientContactRelationship",
+    "title" : "Patient Contact Relationship ",
+    "description" : "The nature of the relationship between the patient and the contact person.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProcedureCodes(SNOMEDCT)",
+    "title" : "Procedure Codes (SNOMED CT)",
+    "description" : "Procedure Code: All SNOMED CT procedure codes.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.427"],
+    "sources" : ["2.16.840.1.113883.4.642.3.427"],
+    "uses" : {
+    },
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
     "version" : "4.0.1",
     "status" : "active",
@@ -388,7 +1376,22 @@
     },
     "StructureDefinition-duration-314e.html" : "314e Duration",
     "StructureDefinition-simplequantity-314e.html" : "314e SimpleQuantity",
+    "StructureDefinition-age-314e.html" : "314e Age",
     "StructureDefinition-quantity-314e.html" : "314e Quantity"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AllergyIntoleranceSeverity",
+    "title" : "AllergyIntoleranceSeverity",
+    "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+    "systems" : ["http://hl7.org/fhir/reaction-event-severity"],
+    "oids" : ["2.16.840.1.113883.4.642.3.135"],
+    "sources" : ["2.16.840.1.113883.4.642.3.135"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -404,8 +1407,9 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
@@ -421,9 +1425,39 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "PatientRelationshipType",
+    "title" : "Patient relationship type",
+    "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "http://terminology.hl7.org/CodeSystem/v2-0131"],
+    "oids" : ["2.16.840.1.113883.4.642.3.449"],
+    "sources" : ["2.16.840.1.113883.4.642.3.449"],
+    "uses" : {
+    },
+    "StructureDefinition-relatedperson-314e.html" : "314e RelatedPerson"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LOINCDiagnosticReportCodes",
+    "title" : "LOINC Diagnostic Report Codes",
+    "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.233"],
+    "sources" : ["2.16.840.1.113883.4.642.3.233"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -465,7 +1499,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.111"],
     "uses" : {
     },
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -479,7 +1514,22 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference",
     "StructureDefinition-reference-314e.html" : "314e Reference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTRouteCodes",
+    "title" : "SNOMED CT Route Codes",
+    "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.98"],
+    "sources" : ["2.16.840.1.113883.4.642.3.98"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -498,9 +1548,27 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/service-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ServiceType",
+    "title" : "Service type",
+    "description" : "This value set defines an example set of codes of service-types.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.518"],
+    "sources" : ["2.16.840.1.113883.4.642.3.518"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
@@ -531,6 +1599,76 @@
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRSpecimenCollectionMethod",
+    "title" : "FHIR Specimen Collection Method",
+    "description" : " This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.468"],
+    "sources" : ["2.16.840.1.113883.4.642.3.468"],
+    "uses" : {
+    },
+    "StructureDefinition-specimen-314e.html" : "314e Specimen"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecimenContainerType",
+    "title" : "Specimen Container Type",
+    "description" : "Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008 |Device for body fluid and tissue collection/transfer/processing (physical object)|",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.470"],
+    "sources" : ["2.16.840.1.113883.4.642.3.470"],
+    "uses" : {
+    },
+    "StructureDefinition-specimen-314e.html" : "314e Specimen"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecimenProcessingProcedure",
+    "title" : "Specimen processing procedure",
+    "description" : "The technique that is used to perform the process or preserve the specimen.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0373"],
+    "oids" : ["2.16.840.1.113883.4.642.3.469"],
+    "sources" : ["2.16.840.1.113883.4.642.3.469"],
+    "uses" : {
+    },
+    "StructureDefinition-specimen-314e.html" : "314e Specimen"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecimenStatus",
+    "title" : "SpecimenStatus",
+    "description" : "Codes providing the status/availability of a specimen.",
+    "systems" : ["http://hl7.org/fhir/specimen-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.471"],
+    "sources" : ["2.16.840.1.113883.4.642.3.471"],
+    "uses" : {
+    },
+    "StructureDefinition-specimen-314e.html" : "314e Specimen"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/substance-code",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SubstanceCode",
+    "title" : "Substance Code",
+    "description" : "This value set contains concept codes for specific substances. It includes codes from [SNOMED](http://snomed.info/sct) where concept is-a 105590001 (Substance (substance)) and where concept is-a 373873005 (Pharmaceutical / biologic product (product))",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.473"],
+    "sources" : ["2.16.840.1.113883.4.642.3.473"],
+    "uses" : {
+    },
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
     "version" : "4.0.1",
     "status" : "draft",
@@ -559,6 +1697,20 @@
     "StructureDefinition-timing-314e.html" : "314e Timing"
   },
   {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "LanguageCodesWithLanguageAndOptionallyARegionModifier",
+    "title" : "Language codes with language and optionally a region modifier",
+    "description" : "This value set includes codes from [BCP-47](http://tools.ietf.org/html/bcp47). This value set matches the ONC 2015 Edition LanguageCommunication data element value set within C-CDA to use a 2 character language code if one exists,   and a 3 character code if a 2 character code does not exist. It points back to [RFC 5646](https://tools.ietf.org/html/rfc5646), however only the language codes are required, all other elements are optional.",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.4"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.4"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient"
+  },
+  {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category",
     "version" : "7.0.0",
     "status" : "active",
@@ -571,8 +1723,8 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
@@ -589,7 +1741,80 @@
     "sources" : ["2.16.840.1.113883.4.642.40.2.48.21"],
     "uses" : {
     },
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "USCoreDiagnosticReportCategory",
+    "title" : "US Core Diagnostic Report Category Codes",
+    "description" : "The US Core Diagnostic Report Category Value Set is a 'starter set' of categories supported for fetching and Diagnostic Reports and notes.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.7"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.7"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-report-and-note-codes",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "USCoreNonLaboratoryCodes",
+    "title" : "US Core Non Laboratory Codes",
+    "description" : "This value set includes All LOINC codes defined as type \"clinical,\" therefore excluding laboratory tests, survey instruments, and claims documents. This includes observables such as vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, and cardiac echo, and includes discrete and narrative diagnostic observations and reports.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.8"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.8"],
+    "uses" : {
+    },
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "USCoreDocumentReferenceCategory",
+    "title" : "US Core DocumentReference Category",
+    "description" : "The US Core DocumentReferences Category Value Set is a 'starter set' of categories supported for fetching and storing clinical notes.",
+    "systems" : ["http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.10"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.10"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "USCoreDocumentReferenceType",
+    "title" : "US Core DocumentReference Type",
+    "description" : "The US Core DocumentReference Type Value Set includes all LOINC values whose SCALE is \"Doc\" in the LOINC database and the HL7 v3 Code System NullFlavor concept 'unknown'",
+    "systems" : ["http://loinc.org",
+    "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.11"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.11"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "USCoreEncounterType",
+    "title" : "US Core Encounter Type",
+    "description" : "The type of encounter: a specific code indicating type of service provided. This value set includes codes from SNOMED CT decending from the concept 308335008 (Patient encounter procedure (procedure)) and codes from the Current Procedure and Terminology (CPT) found in the following CPT sections:\n- 99211-99499 E/M - 99500-99600 home health (mainly nonphysician, such as newborn care in home) - 99605-99607 medication management - 98966-98968 non physician telephone services\n(subscription to AMA Required)",
+    "systems" : ["http://www.ama-assn.org/go/cpt", "http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.22"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.22"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes",
@@ -604,9 +1829,39 @@
     "uses" : {
     },
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "NarrativeStatus",
+    "title" : "US Core Narrative Status",
+    "description" : "The US Core Narrative Status Value Set limits the text status for the resource narrative.",
+    "systems" : ["http://hl7.org/fhir/narrative-status"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.12"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.12"],
+    "uses" : {
+    },
+    "StructureDefinition-careplan-314e.html" : "314e CarePlan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-problem-or-health-concern",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "USCoreProblemOrHealthConcern",
+    "title" : "US Core Problem or Health Concern",
+    "description" : "Code set for category codes for *US Core Condition Problems and Health Concerns Profile* consisting of the concepts \"problem\" and \"health-concern\".",
+    "systems" : ["http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+    "http://terminology.hl7.org/CodeSystem/condition-category"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.25"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.25"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code",
@@ -628,6 +1883,20 @@
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-condition-category",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "USCoreScreeningAssessmentConditionCategory",
+    "title" : "US Core Screening Assessment Condition Category",
+    "description" : "Category codes used in the US Core Condition Screening Assessment Profile to help identify the type of USCDI Health Status/Assessment data class being reported.",
+    "systems" : ["http://hl7.org/fhir/us/core/CodeSystem/us-core-category"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.17"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.17"],
+    "uses" : {
+    },
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
+  },
+  {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category",
     "version" : "7.0.0",
     "status" : "active",
@@ -641,6 +1910,171 @@
     "uses" : {
     },
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "USCoreSimpleObservationCategory",
+    "title" : "US Core Simple Observation Category",
+    "description" : "Used to classify the context of a survey, screening or assessment for simple observations and may be used to assist with indexing and searching for appropriate instances.",
+    "systems" : ["http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+    "http://terminology.hl7.org/CodeSystem/observation-category"],
+    "oids" : ["2.16.840.1.113883.4.642.40.2.48.19"],
+    "sources" : ["2.16.840.1.113883.4.642.40.2.48.19"],
+    "uses" : {
+    },
+    "StructureDefinition-observation-314e.html" : "314e Observation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "UspsTwoLetterAlphabeticCodes",
+    "title" : "USPS Two Letter Alphabetic Codes",
+    "description" : "This value set defines two letter USPS alphabetic codes.",
+    "systems" : ["https://www.usps.com/"],
+    "oids" : ["2.16.840.1.113883.4.642.3.40"],
+    "sources" : ["2.16.840.1.113883.4.642.3.40"],
+    "uses" : {
+    },
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/clinical-discharge-disposition",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ClinicalDischargeDisposition",
+    "title" : "Clinical Discharge Disposition",
+    "description" : "This value set defines a set of codes that can be used to where the patient left the hospital. Note that this value set explicitly removes 'oth' (Other) to allow the binding strength to be extensible and therefore allow the exchange of additional concepts without requiring mapping to 'oth.'",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/discharge-disposition"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSReAdmissionIndicator",
+    "title" : "hl7VS-re-admissionIndicator",
+    "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+    "oids" : ["2.16.840.1.113883.21.40"],
+    "sources" : ["2.16.840.1.113883.21.40"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSAdditivePreservative",
+    "title" : "hl7VS-additivePreservative",
+    "description" : "Concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in Version 2 messaging in the SPM segment.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0371"],
+    "oids" : ["2.16.840.1.113883.21.245"],
+    "sources" : ["2.16.840.1.113883.21.245"],
+    "uses" : {
+    },
+    "StructureDefinition-specimen-314e.html" : "314e Specimen"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSSpecimenCondition",
+    "title" : "hl7VS-specimenCondition",
+    "description" : "Concepts of modes or states of being that describe the nature of a specimen.  Used in Version 2 messaging in the SPM segment.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+    "oids" : ["2.16.840.1.113883.21.333"],
+    "sources" : ["2.16.840.1.113883.21.333"],
+    "uses" : {
+    },
+    "StructureDefinition-specimen-314e.html" : "314e Specimen"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSRelevantClincialInformation",
+    "title" : "hl7VS-relevantClincialInformation",
+    "description" : "Value Set of codes that specify additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0916"],
+    "oids" : ["2.16.840.1.113883.21.440"],
+    "sources" : ["2.16.840.1.113883.21.440"],
+    "uses" : {
+    },
+    "StructureDefinition-specimen-314e.html" : "314e Specimen"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+    "version" : "0360",
+    "status" : "active",
+    "name" : "v2.0360.2.7",
+    "title" : "v2 table 0360, Version 2.7",
+    "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+    "uses" : {
+    },
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "v3 Code System ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ActEncounterCode",
+    "title" : "ActEncounterCode",
+    "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+    "oids" : ["2.16.840.1.113883.1.11.13955"],
+    "sources" : ["2.16.840.1.113883.1.11.13955"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ActPriority",
+    "title" : "ActPriority",
+    "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+    "oids" : ["2.16.840.1.113883.1.11.16866"],
+    "sources" : ["2.16.840.1.113883.1.11.16866"],
+    "uses" : {
+    },
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes",
+    "version" : "2.1.0",
+    "status" : "active",
+    "name" : "HL7FormatCodes",
+    "title" : "HL7 ValueSet of Format Codes for use with Document Sharing",
+    "description" : "The HL7-FormatCodes value set is defined to be the set of FormatCode(s) defined by implementation guides published by HL7 and other SDOs. The use of a formatCode from the FormatCodes value set specifies the technical format that a document conforms to. The formatCode is a further specialization more detailed than the mime-type. The formatCode provides sufficient information to allow any potential document content consumer to know if it can process and/or display the content of the document based on the document encoding, structure and template conformance indicated by the formatCode. The set of formatCodes is intended to be extensible. The Content Logical Description is defined intentionally to permit formatCodes defined by other Standards Development Organizations to be added by inclusion of additional formatCode Code Systems.",
+    "systems" : ["http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+    "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes"],
+    "oids" : ["2.16.840.1.113883.11.19752"],
+    "sources" : ["2.16.840.1.113883.11.19752"],
+    "uses" : {
+    },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",

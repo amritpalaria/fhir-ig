@@ -8,7 +8,7 @@
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"time.extension:timePrecision","time.extension","timePrecision","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/time-precision-314e]]} {[]}
+"time.extension:timePrecision","time.extension","timePrecision","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/time-precision]]} {[]}
 ","Usable precision of the time value","Specifies the degree of precision that is meaningful, usable
 or reliable for the time value.
 
@@ -19,7 +19,7 @@ Example:
 - millisecond","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"time.extension:accuracyIndicator","time.extension","accuracyIndicator","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/time-accuracy-314e]]} {[]}
+"time.extension:accuracyIndicator","time.extension","accuracyIndicator","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/time-accuracy]]} {[]}
 ","Indicates the precision that is verified as clinically exact or accurate","Specifies the accuracy or exactness of a time value when only some part of 
 the known/usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.
 

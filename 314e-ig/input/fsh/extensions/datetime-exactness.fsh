@@ -1,6 +1,6 @@
-Extension: DateTimeAccuracy314e
-Id: datetime-accuracy-314e
-Title: "314e Date/Time Accuracy"
+Extension: DateTimeAccuracy
+Id: datetime-accuracy
+Title: "Date/Time Accuracy"
 Description: """
 Specifies the accuracy or exactness of a dateTime value when only some part of 
 the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.
@@ -16,7 +16,7 @@ For example:
 Note: All dateTime values in the 314e implementation guide SHALL be stored in UTC.
 """
 
-* ^url = "http://314e.com/fhir/StructureDefinition/datetime-accuracy-314e"
+* ^url = "http://314e.com/fhir/StructureDefinition/datetime-accuracy"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

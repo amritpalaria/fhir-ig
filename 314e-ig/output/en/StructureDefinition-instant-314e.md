@@ -7,11 +7,11 @@
 All instant values SHALL be stored in UTC. 
 An instant represents an exact point in time and therefore does not support approximate or estimated accuracy semantics. 
 If only a smaller degree of precision is usable (for example, only minute precision is meaningful), the following extension SHALL be used: 
-http://314e.com/fhir/StructureDefinition/datetime-precision-314e 
+http://314e.com/fhir/StructureDefinition/datetime-precision 
 
 **Usages:**
 
-* Use this Primitive Type Profile: [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md)
+* Use this Primitive Type Profile: [314e DiagnosticReport](StructureDefinition-diagnosticreport-314e.md), [314e DiagnosticReport Laboratory Results](StructureDefinition-diagnosticreport-lab-314e.md), [314e DiagnosticReport Note and Report](StructureDefinition-diagnosticreport-notereport-314e.md), [314e DocumentReference](StructureDefinition-documentreference-314e.md)... Show 2 more, [314e Observation](StructureDefinition-observation-314e.md) and [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/instant-314e)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-instant-314e.csv)
   "name" : "instant314e",
   "title" : "314e instant",
   "status" : "active",
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-instant-314e.csv)
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision-314e",
+  "description" : "314e profile of the FHIR instant primitive datatype.\n\nAll instant values SHALL be stored in UTC.\n\nAn instant represents an exact point in time and therefore\ndoes not support approximate or estimated accuracy semantics.\n\nIf only a smaller degree of precision is usable\n(for example, only minute precision is meaningful),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/datetime-precision",
   "fhirVersion" : "4.0.1",
   "kind" : "primitive-type",
   "abstract" : false,
@@ -86,7 +86,7 @@ Other representations of profile: [CSV](../StructureDefinition-instant-314e.csv)
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/datetime-precision-314e"]
+        "profile" : ["http://314e.com/fhir/StructureDefinition/datetime-precision"]
       }]
     }]
   }

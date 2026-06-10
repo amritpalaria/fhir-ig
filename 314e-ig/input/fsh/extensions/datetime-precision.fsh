@@ -1,6 +1,6 @@
-Extension: DateTimePrecision314e
-Id: datetime-precision-314e
-Title: "314e Date/Time Precision"
+Extension: DateTimePrecision
+Id: datetime-precision
+Title: "Date/Time Precision"
 Description: """
 Specifies the meaningful/ usable precision of a dateTime value when the 
 datatype syntactically permits greater precision than is actually known or clinically usable.
@@ -12,7 +12,7 @@ full timestamp precision.
 All dateTime values in the 314e implementation guide SHALL be stored in UTC.
 """
 
-* ^url = "http://314e.com/fhir/StructureDefinition/datetime-precision-314e"
+* ^url = "http://314e.com/fhir/StructureDefinition/datetime-precision"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "humanname-314e",
+  "url": "http://314e.com/fhir/ig/StructureDefinition/humanname-314e",
+  "name": "HumanName314e",
+  "title": "314e HumanName",
+  "status": "active",
+  "description": "314e profile of the FHIR HumanName datatype.\n\nThis profile constrains the period element to use the 314e Period profile.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "HumanName",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/HumanName",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "HumanName.period",
+        "path": "HumanName.period",
+        "type": [
+          {
+            "code": "Period",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/period-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

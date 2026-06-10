@@ -1,0 +1,420 @@
+# 314e Encounter - 314e FHIR Implementation Guide v1.0.0
+
+## Resource Profile: 314e Encounter 
+
+ 
+314e-constrained Encounter profile derived from QI-Core Encounter. 
+This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable. 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Implementation Guide
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/encounter-314e)
+
+### Formal Views of Profile Content
+
+ [Description Differentials, Snapshots, and other representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-encounter-314e.csv), [Excel](../StructureDefinition-encounter-314e.xlsx), [Schematron](../StructureDefinition-encounter-314e.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "encounter-314e",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-primaryCodePath",
+    "valueString" : "type"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+    "valueString" : "Encounter"
+  }],
+  "url" : "http://314e.com/fhir/StructureDefinition/encounter-314e",
+  "version" : "1.0.0",
+  "name" : "Encounter314e",
+  "title" : "314e Encounter",
+  "status" : "active",
+  "date" : "2026-06-10T16:33:40+05:30",
+  "publisher" : "314e",
+  "contact" : [{
+    "name" : "314e",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://314e.com"
+    }]
+  }],
+  "description" : "314e-constrained Encounter profile derived from QI-Core Encounter.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Encounter",
+  "baseDefinition" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Encounter",
+      "path" : "Encounter"
+    },
+    {
+      "id" : "Encounter.extension",
+      "path" : "Encounter.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Encounter.extension:additionalInfo",
+      "path" : "Encounter.extension",
+      "sliceName" : "additionalInfo",
+      "short" : "Supplementary information for this resource",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/resource-additionalInfo"]
+      }]
+    },
+    {
+      "id" : "Encounter.identifier",
+      "path" : "Encounter.identifier",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/identifier-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.class",
+      "path" : "Encounter.class",
+      "type" : [{
+        "code" : "Coding",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/coding-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.type",
+      "path" : "Encounter.type",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.serviceType",
+      "path" : "Encounter.serviceType",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.priority",
+      "path" : "Encounter.priority",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.subject",
+      "path" : "Encounter.subject",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"]
+      }]
+    },
+    {
+      "id" : "Encounter.episodeOfCare",
+      "path" : "Encounter.episodeOfCare",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"]
+      }]
+    },
+    {
+      "id" : "Encounter.basedOn",
+      "path" : "Encounter.basedOn",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"]
+      }]
+    },
+    {
+      "id" : "Encounter.participant.type",
+      "path" : "Encounter.participant.type",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.participant.individual",
+      "path" : "Encounter.participant.individual",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
+        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitionerrole",
+        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-relatedperson"],
+        "_targetProfile" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+            "valueBoolean" : true
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+            "valueBoolean" : false
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+            "valueBoolean" : false
+          }]
+        }]
+      }]
+    },
+    {
+      "id" : "Encounter.appointment",
+      "path" : "Encounter.appointment",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Appointment"]
+      }]
+    },
+    {
+      "id" : "Encounter.period",
+      "path" : "Encounter.period",
+      "type" : [{
+        "code" : "Period",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/period-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.reasonCode",
+      "path" : "Encounter.reasonCode",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.reasonReference",
+      "path" : "Encounter.reasonReference",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns",
+        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis",
+        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure",
+        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-simple-observation",
+        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-immunizationrecommendation"],
+        "_targetProfile" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+            "valueBoolean" : true
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+            "valueBoolean" : true
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+            "valueBoolean" : true
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+            "valueBoolean" : true
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-keyelement",
+            "valueBoolean" : true
+          }]
+        }]
+      }]
+    },
+    {
+      "id" : "Encounter.diagnosis.condition",
+      "path" : "Encounter.diagnosis.condition",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
+        "http://hl7.org/fhir/StructureDefinition/Procedure"]
+      }]
+    },
+    {
+      "id" : "Encounter.diagnosis.use",
+      "path" : "Encounter.diagnosis.use",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.account",
+      "path" : "Encounter.account",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Account"]
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.origin",
+      "path" : "Encounter.hospitalization.origin",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location"]
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.admitSource",
+      "path" : "Encounter.hospitalization.admitSource",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.reAdmission",
+      "path" : "Encounter.hospitalization.reAdmission",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.dietPreference",
+      "path" : "Encounter.hospitalization.dietPreference",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.specialCourtesy",
+      "path" : "Encounter.hospitalization.specialCourtesy",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.specialArrangement",
+      "path" : "Encounter.hospitalization.specialArrangement",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.destination",
+      "path" : "Encounter.hospitalization.destination",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location"]
+      }]
+    },
+    {
+      "id" : "Encounter.hospitalization.dischargeDisposition",
+      "path" : "Encounter.hospitalization.dischargeDisposition",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.location.location",
+      "path" : "Encounter.location.location",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location"]
+      }]
+    },
+    {
+      "id" : "Encounter.location.physicalType",
+      "path" : "Encounter.location.physicalType",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Encounter.serviceProvider",
+      "path" : "Encounter.serviceProvider",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization"]
+      }]
+    },
+    {
+      "id" : "Encounter.partOf",
+      "path" : "Encounter.partOf",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"]
+      }]
+    }]
+  }
+}
+
+```

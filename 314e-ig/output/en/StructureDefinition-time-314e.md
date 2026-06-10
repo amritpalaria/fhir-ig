@@ -5,9 +5,9 @@
  
 314e profile of the FHIR time primitive datatype - a time during the day, in the format hh:mm:ss. There is no date specified. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored at receiver discretion. The time "24:00" SHALL NOT be used. A time zone SHALL NOT be present. Times can be converted to a Duration since midnight. 
 If only a smaller degree of precision than syntactically recorded is usable (for example, only hour and minute are known), the following extension SHALL be used: 
-http://314e.com/fhir/StructureDefinition/time-precision-314e 
+http://314e.com/fhir/StructureDefinition/time-precision 
 If all or part of the usable time value is approximate rather than exact, the following extension SHALL be used: 
-http://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e 
+http://314e.com/fhir/StructureDefinition/time-accuracy 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-time-314e.csv), [
   "name" : "time314e",
   "title" : "314e time",
   "status" : "active",
-  "date" : "2026-05-26T19:54:55+05:30",
+  "date" : "2026-06-10T16:33:40+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-time-314e.csv), [
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "314e profile of the FHIR time primitive datatype - a time during the day, \nin the format hh:mm:ss. There is no date specified. \nSeconds must be provided due to schema type constraints but may be zero-filled \nand may be ignored at receiver discretion. The time \"24:00\" SHALL NOT be used. \nA time zone SHALL NOT be present. Times can be converted to a Duration since midnight.\n\nIf only a smaller degree of precision than syntactically recorded is usable\n(for example, only hour and minute are known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-precision-314e\n\nIf all or part of the usable time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e",
+  "description" : "314e profile of the FHIR time primitive datatype - a time during the day, \nin the format hh:mm:ss. There is no date specified. \nSeconds must be provided due to schema type constraints but may be zero-filled \nand may be ignored at receiver discretion. The time \"24:00\" SHALL NOT be used. \nA time zone SHALL NOT be present. Times can be converted to a Duration since midnight.\n\nIf only a smaller degree of precision than syntactically recorded is usable\n(for example, only hour and minute are known),\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-precision\n\nIf all or part of the usable time value is approximate rather than exact,\nthe following extension SHALL be used:\n\nhttp://314e.com/fhir/StructureDefinition/time-accuracy",
   "fhirVersion" : "4.0.1",
   "kind" : "primitive-type",
   "abstract" : false,
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](../StructureDefinition-time-314e.csv), [
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/time-precision-314e"]
+        "profile" : ["http://314e.com/fhir/StructureDefinition/time-precision"]
       }]
     },
     {
@@ -88,7 +88,7 @@ Other representations of profile: [CSV](../StructureDefinition-time-314e.csv), [
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/time-accuracy-314e"]
+        "profile" : ["http://314e.com/fhir/StructureDefinition/time-accuracy"]
       }]
     }]
   }

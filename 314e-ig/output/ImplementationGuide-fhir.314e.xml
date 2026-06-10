@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-26T19:54:55+05:30"/>
+  <date value="2026-06-10T16:33:40+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -43,6 +43,11 @@
     <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
     <packageId value="hl7.fhir.us.qicore"/>
     <version value="7.0.2"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="7.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -485,6 +490,39 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/address-314e"/>
+      </reference>
+      <name value="314e Address"/>
+      <description value="314e profile of the FHIR Address datatype.&#xA;&#xA;This profile constrains the period element to use the 314e Period profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/age-314e"/>
+      </reference>
+      <name value="314e Age"/>
+      <description value="314e profile of the FHIR Age datatype.&#xA;&#xA;Age is a constrained Quantity used to express a duration of elapsed time,&#xA;typically of a human being as read from a clinical record."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/allergyintolerance-314e"/>
+      </reference>
+      <name value="314e AllergyIntolerance"/>
+      <description value="314e-constrained AllergyIntolerance profile derived from QI-Core AllergyIntolerance.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/annotation-314e"/>
       </reference>
       <name value="314e Annotation"/>
@@ -526,6 +564,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-314e"/>
+      </reference>
+      <name value="314e CarePlan"/>
+      <description value="314e-constrained CarePlan profile derived from QI-Core CarePlan.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -548,24 +597,46 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/datetime-accuracy-314e"/>
+        <reference value="StructureDefinition/condition-314e"/>
       </reference>
-      <name value="314e Date/Time Accuracy"/>
-      <description value="Specifies the accuracy or exactness of a dateTime value when only some part of &#xA;the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.&#xA;&#xA;This extension is intended to explicitly communicate the accuracy&#xA;of a dateTime value, such as full timestamp, year-only, year-month, date-only, or&#xA;none.&#xA;&#xA;For example:&#xA;- A birth year and month may be known exactly but the day might be an estimate&#xA;- Only the date may be verifiable as accurate with the time being approximate&#xA;&#xA;Note: All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
+      <name value="314e Condition"/>
+      <description value="314e-constrained Condition profile derived from R4B Condition.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/datetime-precision-314e"/>
+        <reference value="StructureDefinition/condition-diagnosis-314e"/>
       </reference>
-      <name value="314e Date/Time Precision"/>
-      <description value="Specifies the meaningful/ usable precision of a dateTime value when the &#xA;datatype syntactically permits greater precision than is actually known or clinically usable.&#xA;&#xA;This extension is intended to explicitly communicate the usable precision&#xA;of a dateTime value, such as year-only, year-month, date-only, or&#xA;full timestamp precision.&#xA;&#xA;All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
+      <name value="314e Condition Encounter Diagnosis"/>
+      <description value="314e-constrained Condition profile for encounter diagnoses, derived from&#xA;QI-Core Condition Encounter Diagnosis.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-problem-healthconcern-314e"/>
+      </reference>
+      <name value="314e Condition Problems Health Concerns"/>
+      <description value="314e-constrained Condition profile for problems and health concerns, derived&#xA;from QI-Core Condition Problems Health Concerns.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contactpoint-314e"/>
+      </reference>
+      <name value="314e ContactPoint"/>
+      <description value="314e profile of the FHIR ContactPoint datatype.&#xA;&#xA;This profile constrains the period element to use the 314e Period profile."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -576,7 +647,7 @@
         <reference value="StructureDefinition/datetime-314e"/>
       </reference>
       <name value="314e dateTime"/>
-      <description value="314e profile of the FHIR dateTime primitive datatype.&#xA;&#xA;All dateTime values SHALL be stored in UTC.&#xA;&#xA;If only a smaller degree of precision is usable&#xA;(for example, only the date portion is known),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/datetime-precision-314e&#xA;&#xA;If all or part of the usable date/time value is approximate rather than exact,&#xA;the following extension SHALL be used:&#xA;&#xA;https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator"/>
+      <description value="314e profile of the FHIR dateTime primitive datatype.&#xA;&#xA;All dateTime values SHALL be stored in UTC.&#xA;&#xA;If only a smaller degree of precision is usable&#xA;(for example, only the date portion is known),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/datetime-precision&#xA;&#xA;If all or part of the usable date/time value is approximate rather than exact,&#xA;the following extension SHALL be used:&#xA;&#xA;https://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -588,6 +659,50 @@
       </reference>
       <name value="314e decimal"/>
       <description value="314e profile of the FHIR decimal primitive datatype.&#xA;&#xA;Supports explicit precision representation using:&#xA;&#xA;http://hl7.org/fhir/StructureDefinition/quantity-precision&#xA;&#xA;This extension specifies the intended or known precision&#xA;of the decimal value independently of the actual lexical form."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosticreport-314e"/>
+      </reference>
+      <name value="314e DiagnosticReport"/>
+      <description value="314e-constrained DiagnosticReport profile derived from R4B DiagnosticReport.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosticreport-lab-314e"/>
+      </reference>
+      <name value="314e DiagnosticReport Laboratory Results"/>
+      <description value="314e-constrained DiagnosticReport profile for laboratory results reporting,&#xA;derived from QI-Core DiagnosticReport Profile for Laboratory Results Reporting.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosticreport-notereport-314e"/>
+      </reference>
+      <name value="314e DiagnosticReport Note and Report"/>
+      <description value="314e-constrained DiagnosticReport profile for report and note exchange,&#xA;derived from QI-Core DiagnosticReport Profile for Report and Note Exchange.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentreference-314e"/>
+      </reference>
+      <name value="314e DocumentReference"/>
+      <description value="314e-constrained DocumentReference profile derived from QI-Core DocumentReference.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -606,10 +721,43 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/encounter-314e"/>
+      </reference>
+      <name value="314e Encounter"/>
+      <description value="314e-constrained Encounter profile derived from QI-Core Encounter.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/episodeofcare-314e"/>
+      </reference>
+      <name value="314e Episode Of Care"/>
+      <description value="314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/observation-lab-general-314e"/>
       </reference>
       <name value="314e General Laboratory Observation"/>
       <description value="314e profile for general laboratory observations.&#xA;&#xA;This profile derives from the QI Core Laboratory Result Observation profile&#xA;and constrains datatypes to corresponding 314e datatype profiles where applicable.&#xA;&#xA;A required category slice SHALL identify the laboratory subcategory&#xA;using a code from LabCategorySubcategory314eVS.&#xA;&#xA;This profile also supports the ValueAttachment314e extension&#xA;for scenarios where the laboratory result cannot be represented&#xA;using structured Observation.value[x] datatypes or plain text."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/humanname-314e"/>
+      </reference>
+      <name value="314e HumanName"/>
+      <description value="314e profile of the FHIR HumanName datatype.&#xA;&#xA;This profile constrains the period element to use the 314e Period profile."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -625,13 +773,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/immunization-314e"/>
+      </reference>
+      <name value="314e Immunization"/>
+      <description value="314e-constrained Immunization profile derived from QI-Core Immunization.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:primitive-type"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/instant-314e"/>
       </reference>
       <name value="314e instant"/>
-      <description value="314e profile of the FHIR instant primitive datatype.&#xA;&#xA;All instant values SHALL be stored in UTC.&#xA;&#xA;An instant represents an exact point in time and therefore&#xA;does not support approximate or estimated accuracy semantics.&#xA;&#xA;If only a smaller degree of precision is usable&#xA;(for example, only minute precision is meaningful),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/datetime-precision-314e"/>
+      <description value="314e profile of the FHIR instant primitive datatype.&#xA;&#xA;All instant values SHALL be stored in UTC.&#xA;&#xA;An instant represents an exact point in time and therefore&#xA;does not support approximate or estimated accuracy semantics.&#xA;&#xA;If only a smaller degree of precision is usable&#xA;(for example, only minute precision is meaningful),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/datetime-precision"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -669,13 +828,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/value-attachment-314e"/>
+        <reference value="StructureDefinition/observation-314e"/>
       </reference>
-      <name value="314e Observation Value Attachment"/>
-      <description value="Extension used when an Observation result cannot be represented&#xA;using one of the standard structured Observation.value[x]&#xA;datatypes or as plain text.&#xA;&#xA;Typical use cases include:&#xA;- PDF laboratory reports&#xA;- proprietary binary result payloads&#xA;- waveform files&#xA;- image-based interpretations&#xA;- externally generated rendered documents&#xA;- rich formatted diagnostic content&#xA;&#xA;The attachment represents the clinically relevant result payload."/>
+      <name value="314e Observation"/>
+      <description value="314e-constrained Observation profile derived from QI-Core Simple Observation.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-314e"/>
+      </reference>
+      <name value="314e Patient"/>
+      <description value="314e-constrained Patient profile derived from QI-Core Patient.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -687,6 +857,17 @@
       </reference>
       <name value="314e Period"/>
       <description value="314e profile of the FHIR Period datatype.&#xA;&#xA;All dateTime values within the Period SHALL conform&#xA;to the 314e DateTime profile requirements,&#xA;including UTC normalization and precision handling."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitioner-314e"/>
+      </reference>
+      <name value="314e Practitioner"/>
+      <description value="314e-constrained Practitioner profile derived from QI-Core Practitioner.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -757,6 +938,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/relatedperson-314e"/>
+      </reference>
+      <name value="314e RelatedPerson"/>
+      <description value="314e-constrained RelatedPerson profile derived from QI-Core RelatedPerson.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -790,24 +982,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/specimen-314e"/>
+      </reference>
+      <name value="314e Specimen"/>
+      <description value="314e-constrained Specimen profile derived from US Core Specimen.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:primitive-type"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/time-314e"/>
       </reference>
       <name value="314e time"/>
-      <description value="314e profile of the FHIR time primitive datatype - a time during the day, &#xA;in the format hh:mm:ss. There is no date specified. &#xA;Seconds must be provided due to schema type constraints but may be zero-filled &#xA;and may be ignored at receiver discretion. The time &quot;24:00&quot; SHALL NOT be used. &#xA;A time zone SHALL NOT be present. Times can be converted to a Duration since midnight.&#xA;&#xA;If only a smaller degree of precision than syntactically recorded is usable&#xA;(for example, only hour and minute are known),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/time-precision-314e&#xA;&#xA;If all or part of the usable time value is approximate rather than exact,&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/time-accuracy-indicator-314e"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/time-accuracy-314e"/>
-      </reference>
-      <name value="314e Time Accuracy"/>
-      <description value="Specifies the accuracy or exactness of a time value when only some part of &#xA;the known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.&#xA;&#xA;This extension is intended to explicitly communicate the accuracy&#xA;of a time value."/>
+      <description value="314e profile of the FHIR time primitive datatype - a time during the day, &#xA;in the format hh:mm:ss. There is no date specified. &#xA;Seconds must be provided due to schema type constraints but may be zero-filled &#xA;and may be ignored at receiver discretion. The time &quot;24:00&quot; SHALL NOT be used. &#xA;A time zone SHALL NOT be present. Times can be converted to a Duration since midnight.&#xA;&#xA;If only a smaller degree of precision than syntactically recorded is usable&#xA;(for example, only hour and minute are known),&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/time-precision&#xA;&#xA;If all or part of the usable time value is approximate rather than exact,&#xA;the following extension SHALL be used:&#xA;&#xA;http://314e.com/fhir/StructureDefinition/time-accuracy"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -819,17 +1011,6 @@
       </reference>
       <name value="314e Time Exactness Units ValueSet"/>
       <description value="Allowed exactness/ accurate precision units for dateTime, time, and instant precision indicators."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/time-precision-314e"/>
-      </reference>
-      <name value="314e Time Precision"/>
-      <description value="Specifies the meaningful/ usable precision of a time value when the &#xA;datatype syntactically permits greater precision than is actually known or clinically usable.&#xA;&#xA;This extension is intended to explicitly communicate the usable precision&#xA;of a time value."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -933,6 +1114,116 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/carePlan-activity-targetDateTime"/>
+      </reference>
+      <name value="Care Plan Activity Target Date Time"/>
+      <description value="Applied to an individual activity element within a CarePlan resource.&#xA;Stores the target or goal date-time for completing that specific care plan&#xA;activity.&#xA;&#xA;Standard FHIR CarePlan.activity has no dedicated target date field separate&#xA;from scheduledTiming or scheduledPeriod."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/carePlan-targetDateTime"/>
+      </reference>
+      <name value="Care Plan Target Date Time"/>
+      <description value="Applied at the root level of the CarePlan resource. Specifies the intended&#xA;or expected target date-time for completion, review, or achievement of the&#xA;care plan or care plan objective."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cosigner"/>
+      </reference>
+      <name value="Cosigner"/>
+      <description value="Identifies an individual who reviewed, verified, or co-signed the associated&#xA;clinical document, note, order, or healthcare record."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/datetime-accuracy"/>
+      </reference>
+      <name value="Date/Time Accuracy"/>
+      <description value="Specifies the accuracy or exactness of a dateTime value when only some part of &#xA;the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate.&#xA;&#xA;This extension is intended to explicitly communicate the accuracy&#xA;of a dateTime value, such as full timestamp, year-only, year-month, date-only, or&#xA;none.&#xA;&#xA;For example:&#xA;- A birth year and month may be known exactly but the day might be an estimate&#xA;- Only the date may be verifiable as accurate with the time being approximate&#xA;&#xA;Note: All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/datetime-precision"/>
+      </reference>
+      <name value="Date/Time Precision"/>
+      <description value="Specifies the meaningful/ usable precision of a dateTime value when the &#xA;datatype syntactically permits greater precision than is actually known or clinically usable.&#xA;&#xA;This extension is intended to explicitly communicate the usable precision&#xA;of a dateTime value, such as year-only, year-month, date-only, or&#xA;full timestamp precision.&#xA;&#xA;All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentReference-author-dictationDateTime"/>
+      </reference>
+      <name value="Document Reference Author Dictation Date Time"/>
+      <description value="Applied to the author element of a DocumentReference resource. Captures&#xA;the exact date and time when the author dictated the document.&#xA;&#xA;This information is not available in the standard FHIR DocumentReference&#xA;resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentReference-context-cosigner"/>
+      </reference>
+      <name value="Document Reference Context Cosigner"/>
+      <description value="Applied to the context section of a DocumentReference resource. Captures the&#xA;co-signer of the document — a person who has jointly signed or authenticated&#xA;the document alongside the primary author."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentReference-context-dictationDateTime"/>
+      </reference>
+      <name value="Document Reference Context Dictation Date Time"/>
+      <description value="Applied to the context section of a DocumentReference resource. Stores the&#xA;date and time when the clinician dictated the document content — distinct&#xA;from when it was authored, transcribed, or signed.&#xA;&#xA;Standard FHIR DocumentReference context has no dictation timestamp field."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documentReference-context-reportDateTime"/>
+      </reference>
+      <name value="Document Reference Context Report Date Time"/>
+      <description value="Applied to the context section of a DocumentReference resource. Stores the&#xA;date and time when the finalized report was made available or released —&#xA;separate from dictation, transcription, or document creation time.&#xA;&#xA;Standard FHIR DocumentReference has no report release timestamp field."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/element-additionalInfo"/>
+      </reference>
+      <name value="Element Additional Info"/>
+      <description value="Applied to any FHIR element. Carries additional information associated&#xA;with a specific FHIR element that is not represented by the standard&#xA;element definition."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -969,6 +1260,72 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/observation-value-attachment"/>
+      </reference>
+      <name value="Observation Value Attachment"/>
+      <description value="Extension used when an Observation result cannot be represented&#xA;using one of the standard structured Observation.value[x]&#xA;datatypes or as plain text.&#xA;&#xA;Typical use cases include:&#xA;- PDF laboratory reports&#xA;- proprietary binary result payloads&#xA;- waveform files&#xA;- image-based interpretations&#xA;- externally generated rendered documents&#xA;- rich formatted diagnostic content&#xA;&#xA;The attachment represents the clinically relevant result payload."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-affiliation"/>
+      </reference>
+      <name value="Patient Affiliation"/>
+      <description value="Applied at the root level of the Patient resource. Stores the patient's&#xA;institutional or organizational affiliation (e.g., hospital network,&#xA;physician group) using an internal code.&#xA;&#xA;Standard FHIR Patient has no affiliation field."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-employmentStatus"/>
+      </reference>
+      <name value="Patient Employment Status"/>
+      <description value="Applied at the root level of the Patient resource. Stores the patient's&#xA;current employment status or occupation.&#xA;&#xA;This is a custom field added to the Patient record to capture what the&#xA;patient does for work or their current employment situation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-mothersName"/>
+      </reference>
+      <name value="Patient Mother's Name"/>
+      <description value="Applied directly at the root level of the Patient resource to store&#xA;the mother's name of the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-pharmacies"/>
+      </reference>
+      <name value="Patient Pharmacies"/>
+      <description value="Applied at the root level of the Patient resource. Stores one or more&#xA;preferred pharmacies linked to the patient as references to Organization&#xA;resources.&#xA;&#xA;A patient can have multiple pharmacies — each gets its own extension&#xA;instance. Standard FHIR Patient has no pharmacy preference field."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-preferredGenderPronoun"/>
+      </reference>
+      <name value="Patient Preferred Gender Pronoun"/>
+      <description value="Applied directly at the root level of the Patient resource to store the&#xA;patient's preferred gender pronoun."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/quantity-quantityString"/>
       </reference>
       <name value="Quantity Quantity String"/>
@@ -995,6 +1352,72 @@
       </reference>
       <name value="Reference Context"/>
       <description value="Provides additional semantic context describing the role,&#xA;capacity, purpose, or functional meaning of a Reference.&#xA;&#xA;This extension is intended for use in situations where the&#xA;base FHIR element is broadly defined and the precise meaning&#xA;or role of the referenced resource requires further clarification.&#xA;&#xA;For example, the performer element of an Observation may&#xA;reference practitioners participating in different capacities&#xA;such as technician, phlebotomist, or pathologist."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/relatedPerson-encounter"/>
+      </reference>
+      <name value="Related Person Encounter"/>
+      <description value="Applied at the root level of the RelatedPerson resource. References the&#xA;encounter with which a related person is associated."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/resource-additionalInfo"/>
+      </reference>
+      <name value="Resource Additional Info"/>
+      <description value="Applied at the root level of any resource. Used to capture supplementary&#xA;or non-standard information related to a FHIR resource that is not&#xA;represented by the core FHIR elements or existing profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/resource-episode"/>
+      </reference>
+      <name value="Resource Episode"/>
+      <description value="Applied directly at the root level of clinical resources to store an&#xA;EpisodeOfCare reference.&#xA;&#xA;This extension links a resource to its associated episode of care when&#xA;that association is not otherwise expressible through standard FHIR elements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/resource-lastEditedUser"/>
+      </reference>
+      <name value="Resource Last Edited User"/>
+      <description value="Applied at the root level of clinical resources. Stores the reference of the&#xA;person who last edited or modified the resource.&#xA;&#xA;Standard FHIR resources generally have no &quot;last edited by&quot; field — only&#xA;recorder (who first recorded it) and asserter (who asserted it clinically).&#xA;This extension captures an audit trail entry for the most recent editor."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/time-accuracy"/>
+      </reference>
+      <name value="Time Accuracy"/>
+      <description value="Specifies the accuracy or exactness of a time value when only some part of &#xA;the known/ usable precision of time can be verified as accurate or exact and the rest is estimated or approximate.&#xA;&#xA;This extension is intended to explicitly communicate the accuracy&#xA;of a time value."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/time-precision"/>
+      </reference>
+      <name value="Time Precision"/>
+      <description value="Specifies the meaningful/ usable precision of a time value when the &#xA;datatype syntactically permits greater precision than is actually known or clinically usable.&#xA;&#xA;This extension is intended to explicitly communicate the usable precision&#xA;of a time value."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

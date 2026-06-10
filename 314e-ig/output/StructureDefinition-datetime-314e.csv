@@ -9,7 +9,7 @@ it SHALL be UTC ('Z'). {matches('^([0-9]{4}(-[0-9]{2}(-[0-9]{2}(T[0-9]{2}:[0-9]{
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"dateTime.extension:timePrecision","dateTime.extension","timePrecision","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/datetime-precision-314e]]} {[]}
+"dateTime.extension:timePrecision","dateTime.extension","timePrecision","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/datetime-precision]]} {[]}
 ","Usable precision of the dateTime value","Specifies the degree of precision that is meaningful, usable
 or reliable for the dateTime value.
 
@@ -21,7 +21,7 @@ Example:
 - second","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"dateTime.extension:accuracyIndicator","dateTime.extension","accuracyIndicator","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/datetime-accuracy-314e]]} {[]}
+"dateTime.extension:accuracyIndicator","dateTime.extension","accuracyIndicator","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/datetime-accuracy]]} {[]}
 ","Indicates the precision that is verified as clinically exact or accurate","Specifies the accuracy or exactness of a dateTime value when only some part of 
 the known/ usable precision of dateTime can be verified as accurate or exact and the rest is estimated or approximate. 
 Examples include year-only, month-level, date-level, full timestamp precision or none.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1

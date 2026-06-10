@@ -52,7 +52,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.extension:valueAttachment","Observation.extension","valueAttachment","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/value-attachment-314e]]} {[]}
+"Observation.extension:valueAttachment","Observation.extension","valueAttachment","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/observation-valueAttachment]]} {[]}
 ","Attachment representation of the observation result","Used when the laboratory result cannot reasonably be represented
 using one of the structured Observation.value[x] datatypes
 or as plain text.
