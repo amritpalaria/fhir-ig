@@ -18,12 +18,20 @@
   * Description: 314e profile of the FHIR Coding datatype. This profile strengthens semantic interoperability expectations around population of system, code, and display. When display is populated, code SHALL also be populated. If source data lacks a formal coded value but provides textual display content, implementers SHOULD generate a surrogate code using the display text transformed as follows: - convert all letters to lower case - replace spaces with hyphens Example: Display: "Blood Culture" Generated code: "blood-culture" Whenever either code or display is populated, system SHALL also be populated. This data type supports: - standard terminology codings - optional customer-specific internal codings Internal codings are used to preserve customer, EHR, workflow, and source-system-native semantic classifications and source system fidelity. Any coding system intended to represent an internal coding system SHALL follow the required naming convention: [customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode Example: acme-epic-Observation-lab-code-Glucose-InternalCode
 * Name: [314e ContactPoint](StructureDefinition-contactpoint-314e.md)
   * Description: 314e profile of the FHIR ContactPoint datatype. This profile constrains the period element to use the 314e Period profile.
+* Name: [314e DataRequirement](StructureDefinition-datarequirement-314e.md)
+  * Description: 314e profile of the FHIR DataRequirement datatype. This profile constrains CodeableConcept, Reference, Coding, dateTime, Period, and Duration sub-elements to their corresponding 314e datatype profiles.
+* Name: [314e Dosage](StructureDefinition-dosage-314e.md)
+  * Description: 314e profile of the FHIR Dosage datatype. This profile constrains CodeableConcept, Timing, and quantity-related sub-elements to their corresponding 314e datatype profiles.
 * Name: [314e Duration](StructureDefinition-duration-314e.md)
   * Description: 314e profile of the FHIR Duration datatype. Derived from FHIR Duration and incorporates 314e Quantity datatype behavior including: - quantity precision support - quantity string support - value string support
 * Name: [314e HumanName](StructureDefinition-humanname-314e.md)
   * Description: 314e profile of the FHIR HumanName datatype. This profile constrains the period element to use the 314e Period profile.
 * Name: [314e Identifier](StructureDefinition-identifier-314e.md)
   * Description: 314e profile of the FHIR Identifier datatype. This profile requires Identifier.system whenever Identifier.value is populated. For customer-specific or internally defined identifiers, Identifier.system SHALL follow the naming convention: [customer]-[ehr]-[ResourceType]-[resource-subtype]-[eleMent]-[SourceSpecificString]-InternalIdentifier Example: acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier
+* Name: [314e Meta](StructureDefinition-meta-314e.md)
+  * Description: 314e profile of the FHIR Meta datatype. This profile constrains the lastUpdated (instant), security (Coding), and tag (Coding) sub-elements to their corresponding 314e datatype profiles.
+* Name: [314e Money](StructureDefinition-money-314e.md)
+  * Description: 314e profile of the FHIR Money datatype. This profile constrains the decimal value sub-element to the 314e decimal profile.
 * Name: [314e Period](StructureDefinition-period-314e.md)
   * Description: 314e profile of the FHIR Period datatype. All dateTime values within the Period SHALL conform to the 314e DateTime profile requirements, including UTC normalization and precision handling.
 * Name: [314e Quantity](StructureDefinition-quantity-314e.md)
@@ -34,8 +42,12 @@
   * Description: A 314e-constrained Ratio datatype using 314e Quantity profiles.
 * Name: [314e Reference](StructureDefinition-reference-314e.md)
   * Description: A constrained Reference datatype profile supporting semantic qualification of references using the reference-context extension. This profile enables references to carry additional information about the role, capacity, purpose, or contextual meaning of the referenced resource.
+* Name: [314e RelatedArtifact](StructureDefinition-relatedartifact-314e.md)
+  * Description: 314e profile of the FHIR RelatedArtifact datatype. This profile constrains the document (Attachment) sub-element to the 314e Attachment profile.
 * Name: [314e SampledData](StructureDefinition-sampleddata-314e.md)
   * Description: 314e profile of the FHIR SampledData datatype. This profile constrains numeric and quantity-related elements to corresponding 314e datatype profiles. SampledData is typically used for: - waveforms - physiological telemetry - ECG traces - continuous monitoring streams - device-generated measurements
+* Name: [314e Signature](StructureDefinition-signature-314e.md)
+  * Description: 314e profile of the FHIR Signature datatype. This profile constrains Coding, instant, and Reference sub-elements to their corresponding 314e datatype profiles.
 * Name: [314e SimpleQuantity](StructureDefinition-simplequantity-314e.md)
   * Description: A 314e-constrained SimpleQuantity datatype supporting precision metadata and alternate textual representations.
 * Name: [314e Timing](StructureDefinition-timing-314e.md)

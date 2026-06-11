@@ -11,7 +11,7 @@ http://314e.com/fhir/StructureDefinition/time-accuracy
 
 **Usages:**
 
-* Use this Primitive Type Profile: [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
+* Use this Primitive Type Profile: [314e HealthcareService](StructureDefinition-healthcareservice-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/time-314e)
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-time-314e.csv), [
   "name" : "time314e",
   "title" : "314e time",
   "status" : "active",
-  "date" : "2026-06-10T16:33:40+05:30",
+  "date" : "2026-06-11T14:17:09+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

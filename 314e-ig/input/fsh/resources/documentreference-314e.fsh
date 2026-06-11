@@ -78,3 +78,4 @@ where applicable.
 * context.practiceSetting only CodeableConcept314e
 * context.sourcePatientInfo only Reference314e
 * context.related only Reference314e
+* meta only Meta314e

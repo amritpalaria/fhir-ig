@@ -22,7 +22,7 @@ Example: acme-epic-Observation-lab-code-Glucose-InternalCode
 
 **Usages:**
 
-* Use this DataType Profile: [314e CodeableConcept](StructureDefinition-codeableconcept-314e.md), [314e DocumentReference](StructureDefinition-documentreference-314e.md) and [314e Encounter](StructureDefinition-encounter-314e.md)
+* Use this DataType Profile: [314e CodeableConcept](StructureDefinition-codeableconcept-314e.md), [314e Contract](StructureDefinition-contract-314e.md), [314e DataRequirement](StructureDefinition-datarequirement-314e.md), [314e DocumentReference](StructureDefinition-documentreference-314e.md)... Show 5 more, [314e Encounter](StructureDefinition-encounter-314e.md), [314e Endpoint](StructureDefinition-endpoint-314e.md), [314e ImagingStudy](StructureDefinition-imagingstudy-314e.md), [314e Meta](StructureDefinition-meta-314e.md) and [314e Signature](StructureDefinition-signature-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/coding-314e)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-coding-314e.csv),
   "name" : "Coding314e",
   "title" : "314e Coding",
   "status" : "active",
-  "date" : "2026-06-10T16:33:40+05:30",
+  "date" : "2026-06-11T14:17:09+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

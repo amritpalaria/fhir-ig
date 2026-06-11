@@ -29,6 +29,18 @@
   "differential": {
     "element": [
       {
+        "id": "Practitioner.meta",
+        "path": "Practitioner.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Practitioner.extension",
         "path": "Practitioner.extension",
         "slicing": {
@@ -133,6 +145,18 @@
         ]
       },
       {
+        "id": "Practitioner.photo",
+        "path": "Practitioner.photo",
+        "type": [
+          {
+            "code": "Attachment",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/attachment-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Practitioner.qualification.identifier",
         "path": "Practitioner.qualification.identifier",
         "type": [
@@ -152,6 +176,18 @@
             "code": "CodeableConcept",
             "profile": [
               "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.qualification.period",
+        "path": "Practitioner.qualification.period",
+        "type": [
+          {
+            "code": "Period",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/period-314e"
             ]
           }
         ]

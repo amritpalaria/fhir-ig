@@ -57,3 +57,4 @@ where applicable.
 * evidence.code only CodeableConcept314e
 * evidence.detail only Reference314e
 * note only Annotation314e
+* meta only Meta314e

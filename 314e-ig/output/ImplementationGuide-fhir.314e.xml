@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-06-10T16:33:40+05:30"/>
+  <date value="2026-06-11T14:17:09+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -487,6 +487,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/account-314e"/>
+      </reference>
+      <name value="314e Account"/>
+      <description value="314e-constrained Account profile derived from FHIR R4 Account.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -542,6 +553,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/appointment-314e"/>
+      </reference>
+      <name value="314e Appointment"/>
+      <description value="314e-constrained Appointment profile derived from FHIR R4 Appointment.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -575,6 +597,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careteam-314e"/>
+      </reference>
+      <name value="314e CareTeam"/>
+      <description value="314e-constrained CareTeam profile derived from US Core CareTeam.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/clinicalimpression-314e"/>
+      </reference>
+      <name value="314e ClinicalImpression"/>
+      <description value="314e-constrained ClinicalImpression profile derived from FHIR R4 ClinicalImpression.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -593,6 +637,17 @@
       </reference>
       <name value="314e Coding"/>
       <description value="314e profile of the FHIR Coding datatype.&#xA;&#xA;This profile strengthens semantic interoperability expectations&#xA;around population of system, code, and display.&#xA;&#xA;When display is populated, code SHALL also be populated.&#xA;&#xA;If source data lacks a formal coded value but provides textual&#xA;display content, implementers SHOULD generate a surrogate code&#xA;using the display text transformed as follows:&#xA;- convert all letters to lower case&#xA;- replace spaces with hyphens&#xA;&#xA;Example:&#xA;Display: &quot;Blood Culture&quot;&#xA;Generated code: &quot;blood-culture&quot;&#xA;&#xA;Whenever either code or display is populated, system SHALL&#xA;also be populated.&#xA;&#xA;This data type supports:&#xA;- standard terminology codings&#xA;- optional customer-specific internal codings&#xA;Internal codings are used to preserve customer, EHR,&#xA;workflow, and source-system-native semantic classifications and source system fidelity.&#xA;&#xA;Any coding system intended to represent an internal coding&#xA;system SHALL follow the required naming convention:&#xA;&#xA;[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode&#xA;&#xA;Example:&#xA;acme-epic-Observation-lab-code-Glucose-InternalCode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communicationrequest-314e"/>
+      </reference>
+      <name value="314e CommunicationRequest"/>
+      <description value="314e-constrained CommunicationRequest profile derived from FHIR R4 CommunicationRequest.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -641,6 +696,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/contract-314e"/>
+      </reference>
+      <name value="314e Contract"/>
+      <description value="314e-constrained Contract profile derived from FHIR R4 Contract.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/coverage-314e"/>
+      </reference>
+      <name value="314e Coverage"/>
+      <description value="314e-constrained Coverage profile derived from QI-Core Coverage.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/datarequirement-314e"/>
+      </reference>
+      <name value="314e DataRequirement"/>
+      <description value="314e profile of the FHIR DataRequirement datatype.&#xA;&#xA;This profile constrains CodeableConcept, Reference, Coding, dateTime,&#xA;Period, and Duration sub-elements to their corresponding 314e datatype profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:primitive-type"/>
       </extension>
       <reference>
@@ -659,6 +747,39 @@
       </reference>
       <name value="314e decimal"/>
       <description value="314e profile of the FHIR decimal primitive datatype.&#xA;&#xA;Supports explicit precision representation using:&#xA;&#xA;http://hl7.org/fhir/StructureDefinition/quantity-precision&#xA;&#xA;This extension specifies the intended or known precision&#xA;of the decimal value independently of the actual lexical form."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/detectedissue-314e"/>
+      </reference>
+      <name value="314e DetectedIssue"/>
+      <description value="314e-constrained DetectedIssue profile derived from FHIR R4 DetectedIssue.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/device-314e"/>
+      </reference>
+      <name value="314e Device"/>
+      <description value="314e-constrained Device profile derived from QI-Core Device.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/devicerequest-314e"/>
+      </reference>
+      <name value="314e DeviceRequest"/>
+      <description value="314e-constrained DeviceRequest profile derived from QI-Core DeviceRequest.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -710,6 +831,17 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/dosage-314e"/>
+      </reference>
+      <name value="314e Dosage"/>
+      <description value="314e profile of the FHIR Dosage datatype.&#xA;&#xA;This profile constrains CodeableConcept, Timing, and quantity-related&#xA;sub-elements to their corresponding 314e datatype profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/duration-314e"/>
       </reference>
       <name value="314e Duration"/>
@@ -732,6 +864,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/endpoint-314e"/>
+      </reference>
+      <name value="314e Endpoint"/>
+      <description value="314e-constrained Endpoint profile derived from FHIR R4 Endpoint.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/episodeofcare-314e"/>
       </reference>
       <name value="314e Episode Of Care"/>
@@ -747,6 +890,39 @@
       </reference>
       <name value="314e General Laboratory Observation"/>
       <description value="314e profile for general laboratory observations.&#xA;&#xA;This profile derives from the QI Core Laboratory Result Observation profile&#xA;and constrains datatypes to corresponding 314e datatype profiles where applicable.&#xA;&#xA;A required category slice SHALL identify the laboratory subcategory&#xA;using a code from LabCategorySubcategory314eVS.&#xA;&#xA;This profile also supports the ValueAttachment314e extension&#xA;for scenarios where the laboratory result cannot be represented&#xA;using structured Observation.value[x] datatypes or plain text."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/goal-314e"/>
+      </reference>
+      <name value="314e Goal"/>
+      <description value="314e-constrained Goal profile derived from QI-Core Goal.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/group-314e"/>
+      </reference>
+      <name value="314e Group"/>
+      <description value="314e-constrained Group profile derived from FHIR R4 Group.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/healthcareservice-314e"/>
+      </reference>
+      <name value="314e HealthcareService"/>
+      <description value="314e-constrained HealthcareService profile derived from FHIR R4 HealthcareService.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -776,10 +952,43 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/imagingstudy-314e"/>
+      </reference>
+      <name value="314e ImagingStudy"/>
+      <description value="314e-constrained ImagingStudy profile derived from QI-Core ImagingStudy.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/immunization-314e"/>
       </reference>
       <name value="314e Immunization"/>
       <description value="314e-constrained Immunization profile derived from QI-Core Immunization.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/immunizationevaluation-314e"/>
+      </reference>
+      <name value="314e ImmunizationEvaluation"/>
+      <description value="314e-constrained ImmunizationEvaluation profile derived from FHIR R4 ImmunizationEvaluation.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/immunizationrecommendation-314e"/>
+      </reference>
+      <name value="314e ImmunizationRecommendation"/>
+      <description value="314e-constrained ImmunizationRecommendation profile derived from QI-Core ImmunizationRecommendation.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -809,6 +1018,83 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/location-314e"/>
+      </reference>
+      <name value="314e Location"/>
+      <description value="314e-constrained Location profile derived from QI-Core Location.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/media-314e"/>
+      </reference>
+      <name value="314e Media"/>
+      <description value="314e-constrained Media profile derived from FHIR R4 Media.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medication-314e"/>
+      </reference>
+      <name value="314e Medication"/>
+      <description value="314e-constrained Medication profile derived from QI-Core Medication.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicationadministration-314e"/>
+      </reference>
+      <name value="314e MedicationAdministration"/>
+      <description value="314e-constrained MedicationAdministration profile derived from QI-Core MedicationAdministration.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicationdispense-314e"/>
+      </reference>
+      <name value="314e MedicationDispense"/>
+      <description value="314e-constrained MedicationDispense profile derived from QI-Core MedicationDispense.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicationrequest-314e"/>
+      </reference>
+      <name value="314e MedicationRequest"/>
+      <description value="314e-constrained MedicationRequest profile derived from QI-Core MedicationRequest.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/meta-314e"/>
+      </reference>
+      <name value="314e Meta"/>
+      <description value="314e profile of the FHIR Meta datatype.&#xA;&#xA;This profile constrains the lastUpdated (instant), security (Coding),&#xA;and tag (Coding) sub-elements to their corresponding 314e datatype profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/observation-microbiology-314e"/>
       </reference>
       <name value="314e Microbiology Observation"/>
@@ -831,10 +1117,54 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/molecularsequence-314e"/>
+      </reference>
+      <name value="314e MolecularSequence"/>
+      <description value="314e-constrained MolecularSequence profile derived from FHIR R4 MolecularSequence.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/money-314e"/>
+      </reference>
+      <name value="314e Money"/>
+      <description value="314e profile of the FHIR Money datatype.&#xA;&#xA;This profile constrains the decimal value sub-element&#xA;to the 314e decimal profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nutritionorder-314e"/>
+      </reference>
+      <name value="314e NutritionOrder"/>
+      <description value="314e-constrained NutritionOrder profile derived from QI-Core NutritionOrder.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/observation-314e"/>
       </reference>
       <name value="314e Observation"/>
       <description value="314e-constrained Observation profile derived from QI-Core Simple Observation.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/organization-314e"/>
+      </reference>
+      <name value="314e Organization"/>
+      <description value="314e-constrained Organization profile derived from US Core Organization.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -872,6 +1202,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitionerrole-314e"/>
+      </reference>
+      <name value="314e PractitionerRole"/>
+      <description value="314e-constrained PractitionerRole profile derived from QI-Core PractitionerRole.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/procedure-314e"/>
+      </reference>
+      <name value="314e Procedure"/>
+      <description value="314e-constrained Procedure profile derived from QI-Core Procedure.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -901,6 +1253,17 @@
       </reference>
       <name value="314e Quantity"/>
       <description value="An extended Quantity datatype supporting precision metadata and alternate textual representations.&#xA;&#xA;This profile SHALL be used so that the data can be faithfully represented in the following scenarios:&lt;br/&gt;&#xA;1. The quantity value, such as a vital sign reading or a lab result value, is limited to a defined number of digits &#xA;after the decimal in the source and this precision needs to be recorded with the value.&lt;br/&gt;&#xA;2. The display-oriented or source-oriented textual representation of a quantity needs to be recorded, either in addition &#xA;to the computable elements or because the original representation cannot be separated into distinct value and unit.&lt;br/&gt;&#xA;3. The original source representation of a quantity value needs to be preserved, either because the original &#xA;representation of value cannot be converted to numeric or for display or audit purposes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/questionnaireresponse-314e"/>
+      </reference>
+      <name value="314e QuestionnaireResponse"/>
+      <description value="314e-constrained QuestionnaireResponse profile derived from FHIR R4 QuestionnaireResponse.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -938,6 +1301,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/relatedartifact-314e"/>
+      </reference>
+      <name value="314e RelatedArtifact"/>
+      <description value="314e profile of the FHIR RelatedArtifact datatype.&#xA;&#xA;This profile constrains the document (Attachment) sub-element&#xA;to the 314e Attachment profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -945,6 +1319,17 @@
       </reference>
       <name value="314e RelatedPerson"/>
       <description value="314e-constrained RelatedPerson profile derived from QI-Core RelatedPerson.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/requestgroup-314e"/>
+      </reference>
+      <name value="314e RequestGroup"/>
+      <description value="314e-constrained RequestGroup profile derived from FHIR R4 RequestGroup.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -963,10 +1348,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/schedule-314e"/>
+      </reference>
+      <name value="314e Schedule"/>
+      <description value="314e-constrained Schedule profile derived from FHIR R4 Schedule.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/servicerequest-314e"/>
       </reference>
       <name value="314e ServiceRequest"/>
       <description value="A 314e-constrained ServiceRequest profile derived from&#xA;QI-Core ServiceRequest.&#xA;&#xA;This profile requires classification of the requested service&#xA;using standardized high-level service categories and uses&#xA;314e datatype profiles where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/signature-314e"/>
+      </reference>
+      <name value="314e Signature"/>
+      <description value="314e profile of the FHIR Signature datatype.&#xA;&#xA;This profile constrains Coding, instant, and Reference sub-elements&#xA;to their corresponding 314e datatype profiles."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -985,10 +1392,43 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/slot-314e"/>
+      </reference>
+      <name value="314e Slot"/>
+      <description value="314e-constrained Slot profile derived from FHIR R4 Slot.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/specimen-314e"/>
       </reference>
       <name value="314e Specimen"/>
       <description value="314e-constrained Specimen profile derived from US Core Specimen.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/substance-314e"/>
+      </reference>
+      <name value="314e Substance"/>
+      <description value="314e-constrained Substance profile derived from FHIR R4 Substance.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/task-314e"/>
+      </reference>
+      <name value="314e Task"/>
+      <description value="314e-constrained Task profile derived from QI-Core Task.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1044,6 +1484,17 @@
       </reference>
       <name value="314e Timing"/>
       <description value="Describes the occurrence of an event that may occur multiple times. Timing schedules are used &#xA;for specifying when events are expected or requested to occur and may also be used to represent &#xA;the summary of a past or ongoing event. For simplicity, the definitions of Timing components &#xA;are expressed as 'future' events, but such components can also be used to describe historic or ongoing events.&#xA;&#xA;A Timing schedule can be a list of events and/or criteria for when the event happens, which can &#xA;be expressed in a structured form and/or as a code. When both event and a repeating specification &#xA;are provided, the list of events should be understood as an interpretation of the information in the repeat structure.&#xA;&#xA;Note: The Timing data type allows modifier extensions.&#xA;&#xA;314e profile of the FHIR Timing datatype uses 314e datatype profiles &#xA;including DateTime314e, Period314e, CodeableConcept314e and Quantity314e."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/visionprescription-314e"/>
+      </reference>
+      <name value="314e VisionPrescription"/>
+      <description value="314e-constrained VisionPrescription profile derived from FHIR R4 VisionPrescription.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

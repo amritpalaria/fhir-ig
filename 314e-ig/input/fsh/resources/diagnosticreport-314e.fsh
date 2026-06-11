@@ -42,3 +42,4 @@ where applicable.
 * media.link only Reference314e
 * conclusionCode only CodeableConcept314e
 * presentedForm only Attachment314e
+* meta only Meta314e

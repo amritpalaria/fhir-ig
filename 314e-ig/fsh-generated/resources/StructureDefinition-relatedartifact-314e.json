@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "relatedartifact-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/relatedartifact-314e",
+  "name": "RelatedArtifact314e",
+  "title": "314e RelatedArtifact",
+  "status": "active",
+  "description": "314e profile of the FHIR RelatedArtifact datatype.\n\nThis profile constrains the document (Attachment) sub-element\nto the 314e Attachment profile.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "RelatedArtifact",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedArtifact",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedArtifact.document",
+        "path": "RelatedArtifact.document",
+        "type": [
+          {
+            "code": "Attachment",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/attachment-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

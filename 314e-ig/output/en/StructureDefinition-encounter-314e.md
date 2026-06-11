@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-encounter-314e.cs
   "name" : "Encounter314e",
   "title" : "314e Encounter",
   "status" : "active",
-  "date" : "2026-06-10T16:33:40+05:30",
+  "date" : "2026-06-11T14:17:09+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -89,6 +89,14 @@ Other representations of profile: [CSV](../StructureDefinition-encounter-314e.cs
     "element" : [{
       "id" : "Encounter",
       "path" : "Encounter"
+    },
+    {
+      "id" : "Encounter.meta",
+      "path" : "Encounter.meta",
+      "type" : [{
+        "code" : "Meta",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/meta-314e"]
+      }]
     },
     {
       "id" : "Encounter.extension",

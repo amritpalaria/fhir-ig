@@ -29,6 +29,18 @@
   "differential": {
     "element": [
       {
+        "id": "Patient.meta",
+        "path": "Patient.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:preferredGenderPronoun",
         "path": "Patient.extension",
         "sliceName": "preferredGenderPronoun",
@@ -180,6 +192,18 @@
             "code": "CodeableConcept",
             "profile": [
               "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "type": [
+          {
+            "code": "Attachment",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/attachment-314e"
             ]
           }
         ]

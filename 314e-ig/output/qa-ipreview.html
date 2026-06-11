@@ -59,6 +59,11 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
               </li>
 
               <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-coverage-class.html">Coverage Class Codes</a>
+:                 <a href="StructureDefinition-coverage-314e.html">Coverage314e</a>
+              </li>
+
+              <li>
                 <a href="http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>
 :                 <a href="StructureDefinition-observation-antimicrobial-susceptibility-314e.html">ObservationAntimicrobialSusceptibility314e</a>
 ,                 <a href="StructureDefinition-observation-lab-general-314e.html">ObservationLabGeneral314e</a>
@@ -69,6 +74,11 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
               <li>
                 <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v2-0074.html">diagnosticServiceSectionId</a>
 :                 <a href="StructureDefinition-diagnosticreport-lab-314e.html">DiagnosticReportLab314e</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html">identifierType</a>
+:                 <a href="StructureDefinition-coverage-314e.html">Coverage314e</a>
               </li>
 
               <li>
@@ -120,7 +130,7 @@ Used by permission of HL7 International, all rights reserved Creative Commons Li
           Package fhir.314e#1.0.0 based on FHIR 4.0.1.
           Generated 
   
-    2026-06-10
+    2026-06-11
   
 
           
@@ -143,6 +153,14 @@ Used by permission of HL7 International, all rights reserved Creative Commons Li
       </li>
       <li>
 314e FHIR Implementation Guide - Local Development build (v1.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
+)
+      </li>
+      <li>
+Code of Federal Regulation 21CFR&sect;1271.290(c) (        <a href="en\StructureDefinition-device-314e-definitions.html">src</a>
+)
+      </li>
+      <li>
+There are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, "Ondansetron 8mg orally or IV twice a day as needed for nausea" or "Compazine&reg; (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed. (        <a href="en\StructureDefinition-medicationrequest-314e-definitions.html">src</a>
 )
       </li>
     </ul>
@@ -176,8 +194,8 @@ Used by permission of HL7 International, all rights reserved Creative Commons Li
           Package fhir.314e#1.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
           Generated 
-            <span title="2026-06-10 16:33:00 +0530">
-    2026-06-10
+            <span title="2026-06-11 14:17:00 +0530">
+    2026-06-11
   </span>
 
 
@@ -193,6 +211,238 @@ Used by permission of HL7 International, all rights reserved Creative Commons Li
           </span>
 
         
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html">dicom.nema.org</a>
+        </td>
+        <td>
+If one or more series elements are present in the ImagingStudy, then there shall be one DICOM Study UID identifier (see           <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html">DICOM PS 3.3 C.7.2</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.rsna.org/RadLex_Playbook.aspx">www.rsna.org</a>
+        </td>
+        <td>
+          <a href="http://www.rsna.org/RadLex_Playbook.aspx">http://www.rsna.org/RadLex_Playbook.aspx</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.rsna.org/RadLex_Playbook.aspx">www.rsna.org</a>
+        </td>
+        <td>
+Unless not suitable, these codes SHALL be taken from            <a href="http://www.rsna.org/RadLex_Playbook.aspx">http://www.rsna.org/RadLex_Playbook.aspx</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://www.rsna.org/RadLex_Playbook.aspx</code><button data-clipboard-text="http://www.rsna.org/RadLex_Playbook.aspx" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.3.html">dicom.nema.org</a>
+        </td>
+        <td>
+See           <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.3.html">DICOM PS3.3 C.7.3</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.12.html#sect_C.12.1">dicom.nema.org</a>
+        </td>
+        <td>
+See            <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.12.html#sect_C.12.1">DICOM PS3.3 C.12.1</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1">dicom.nema.org</a>
+        </td>
+        <td>
+Unless not suitable, these codes SHALL be taken from            <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1">http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1</code><button data-clipboard-text="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.rsna.org/RadLex_Playbook.aspx">www.rsna.org</a>
+        </td>
+        <td>
+The performed procedure code          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://www.rsna.org/RadLex_Playbook.aspx" class="binding">http://www.rsna.org/RadLex_Playbook.aspx</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a>
+          <span title="null" class="binding">)</span>
+          <span title="null" class="binding">: </span>
+          <span title="null" class="binding">The performed procedure type.</span>
+          <br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.rsna.org/RadLex_Playbook.aspx">www.rsna.org</a>
+        </td>
+        <td>
+
+                <a style="opacity: 1.0" href="http://www.rsna.org/RadLex_Playbook.aspx">http://www.rsna.org/RadLex_Playbook.aspx</a>
+
+                <button data-clipboard-text="http://www.rsna.org/RadLex_Playbook.aspx" title="Click to copy URL" class="btn-copy"></button>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e.html">web</a>
+        </td>
+        <td>
+          <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1">dicom.nema.org</a>
+        </td>
+        <td>
+DICOM class type          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1" class="binding">http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a>
+          <span title="null" class="binding">)</span>
+          <span title="null" class="binding">: </span>
+          <span title="null" class="binding">The sopClass for the instance.</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-imagingstudy-314e.html">web</a>
+        </td>
+        <td>
+          <a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1">dicom.nema.org</a>
+        </td>
+        <td>
+
+                <a style="opacity: 1.0" href="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1">http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1</a>
+
+                <button data-clipboard-text="http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1" title="Click to copy URL" class="btn-copy"></button>
+
+    
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-molecularsequence-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0000340">www.sequenceontology.org</a>
+        </td>
+        <td>
+Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication (          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0000340">SO:0000340</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-molecularsequence-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.sequenceontology.org/browser/current_svn/term/variant_of">www.sequenceontology.org</a>
+        </td>
+        <td>
+The definition of variant here originates from Sequence ontology (          <a href="http://www.sequenceontology.org/browser/current_svn/term/variant_of">variant_of</a>
+). This element can represent amino acid or nucleic sequence change(including insertion,deletion,SNP,etc.)  It can represent some complex mutation or segment variation with the assist of CIGAR string.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-molecularsequence-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0001023">www.sequenceontology.org</a>
+        </td>
+        <td>
+An allele is one of a set of coexisting sequence variants of a gene (          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0001023">SO:0001023</a>
+).  Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed  sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-molecularsequence-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0001023">www.sequenceontology.org</a>
+        </td>
+        <td>
+An allele is one of a set of coexisting sequence variants of a gene (          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0001023">SO:0001023</a>
+). Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the reference sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-molecularsequence-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm">support.illumina.com</a>
+        </td>
+        <td>
+Extended CIGAR string for aligning the sequence with reference bases. See detailed documentation           <a href="http://support.illumina.com/help/SequencingAnalysisWorkflow/Content/Vault/Informatics/Sequencing_Analysis/CASAVA/swSEQ_mCA_ExtendedCIGARFormat.htm">here</a>
+.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-molecularsequence-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0001686">www.sequenceontology.org</a>
+        </td>
+        <td>
+An experimental feature attribute that defines the quality of the feature in a quantitative way, such as a phred quality score (          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0001686">SO:0001686</a>
+).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en\StructureDefinition-molecularsequence-314e-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0001685">www.sequenceontology.org</a>
+        </td>
+        <td>
+The score of an experimentally derived feature such as a p-value (          <a href="http://www.sequenceontology.org/browser/current_svn/term/SO:0001685">SO:0001685</a>
+).
         </td>
       </tr>
       <tr>

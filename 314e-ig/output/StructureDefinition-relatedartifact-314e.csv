@@ -1,0 +1,33 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"RelatedArtifact","RelatedArtifact","","","",0,*,"","","","null {[]} {[]}
+","Related artifacts for a knowledge resource","Related artifacts such as additional documentation, justification, or bibliographic references.","Each related artifact is either an attachment, or a reference to another knowledge resource, but not both.","","","","","","","","",,,,,"",,,,"RelatedArtifact",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"RelatedArtifact.id","RelatedArtifact.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"RelatedArtifact.extension","RelatedArtifact.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"RelatedArtifact.type","RelatedArtifact.type","","","",1,1,"","","Y","code {[]} {[]}
+","documentation | justification | citation | predecessor | successor | derived-from | depends-on | composed-of","The type of relationship to the related artifact.","","","","","","","","","",,"required","The type of relationship to the related artifact.","http://hl7.org/fhir/ValueSet/related-artifact-type|4.0.1","",,,,"RelatedArtifact.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RelatedArtifact.label","RelatedArtifact.label","","","",0,1,"","","Y","string {[]} {[]}
+","Short label","A short label that can be used to reference the citation from elsewhere in the containing artifact, such as a footnote index.","","","","","","","","","",,,,,"",,,,"RelatedArtifact.label",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RelatedArtifact.display","RelatedArtifact.display","","","",0,1,"","","Y","string {[]} {[]}
+","Brief description of the related artifact","A brief description of the document or knowledge resource being referenced, suitable for display to a consumer.","","","","","","","","","",,,,,"",,,,"RelatedArtifact.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RelatedArtifact.citation","RelatedArtifact.citation","","","",0,1,"","","Y","markdown {[]} {[]}
+","Bibliographic citation for the artifact","A bibliographic citation for the related artifact. This text SHOULD be formatted according to an accepted citation format.","Additional structured information about citations should be captured as extensions.","","","","","","","","",,,,,"",,,,"RelatedArtifact.citation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RelatedArtifact.url","RelatedArtifact.url","","","",0,1,"","","Y","url {[]} {[]}
+","Where the artifact can be accessed","A url for the artifact that can be followed to access the actual content.","If a document or resource element is present, this element SHALL NOT be provided (use the url or reference in the Attachment or resource reference).","","","","","","","","",,,,,"",,,,"RelatedArtifact.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RelatedArtifact.document","RelatedArtifact.document","","","",0,1,"","","Y","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
+","What document is being referenced","The document being referenced, represented as an attachment. This is exclusive with the resource element.","","","","","","","","","",,,,,"",,,,"RelatedArtifact.document",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"RelatedArtifact.resource","RelatedArtifact.resource","","","",0,1,"","","Y","canonical {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource|4.0.1]]}
+","What resource is being referenced","The related resource, such as a library, value set, profile, or other knowledge resource.","If the type is predecessor, this is a reference to the succeeding knowledge resource. If the type is successor, this is a reference to the prior knowledge resource.","","","","","","","","",,,,,"",,,,"RelatedArtifact.resource",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"

@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
   "name" : "ServiceRequest314e",
   "title" : "314e ServiceRequest",
   "status" : "draft",
-  "date" : "2026-06-10T16:33:40+05:30",
+  "date" : "2026-06-11T14:17:09+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -95,6 +95,14 @@ Other representations of profile: [CSV](../StructureDefinition-servicerequest-31
     "element" : [{
       "id" : "ServiceRequest",
       "path" : "ServiceRequest"
+    },
+    {
+      "id" : "ServiceRequest.meta",
+      "path" : "ServiceRequest.meta",
+      "type" : [{
+        "code" : "Meta",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/meta-314e"]
+      }]
     },
     {
       "id" : "ServiceRequest.identifier",

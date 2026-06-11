@@ -59,3 +59,4 @@ where applicable.
 * component.referenceRange.type only CodeableConcept314e
 * component.referenceRange.appliesTo only CodeableConcept314e
 * component.referenceRange.age only Range314e
+* meta only Meta314e

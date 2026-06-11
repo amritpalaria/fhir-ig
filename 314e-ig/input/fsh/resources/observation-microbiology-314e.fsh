@@ -37,3 +37,4 @@ for the observation.
 //* hasMember[childObservation] only Reference(Observation)
 * hasMember[childObservation] ^type.targetProfile =
     "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e"
+* meta only Meta314e

@@ -9,19 +9,4 @@
     you may need to use this schematron fragment to build a, 
     single schematron that validates contained resources (if you have any) 
   -->
-  <sch:pattern>
-    <sch:title>f:Duration</sch:title>
-    <sch:rule context="f:Duration">
-      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/quantity-quantityString']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/quantity-quantityString': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:Duration/f:value</sch:title>
-    <sch:rule context="f:Duration/f:value">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/quantity-precision']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/quantity-precision': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/quantity-valueString']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/quantity-valueString': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
 </sch:schema>

@@ -33,6 +33,18 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.meta",
+        "path": "Observation.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.extension",
         "path": "Observation.extension",
         "slicing": {

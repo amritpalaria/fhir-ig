@@ -74,3 +74,4 @@ where applicable.
 * activity.detail.quantity only SimpleQuantity314e
 * activity.detail.scheduled[x] only Timing314e or Period314e or string
 * note only Annotation314e
+* meta only Meta314e

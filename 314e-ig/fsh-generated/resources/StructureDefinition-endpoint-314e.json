@@ -1,0 +1,136 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "endpoint-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/endpoint-314e",
+  "name": "Endpoint314e",
+  "title": "314e Endpoint",
+  "status": "active",
+  "description": "314e-constrained Endpoint profile derived from FHIR R4 Endpoint.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Endpoint",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Endpoint",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Endpoint.meta",
+        "path": "Endpoint.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.extension",
+        "path": "Endpoint.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Endpoint.extension:additionalInfo",
+        "path": "Endpoint.extension",
+        "sliceName": "additionalInfo",
+        "short": "Supplementary information for this resource",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/resource-additionalInfo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.identifier",
+        "path": "Endpoint.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.connectionType",
+        "path": "Endpoint.connectionType",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/coding-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.managingOrganization",
+        "path": "Endpoint.managingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.contact",
+        "path": "Endpoint.contact",
+        "type": [
+          {
+            "code": "ContactPoint",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/contactpoint-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.period",
+        "path": "Endpoint.period",
+        "type": [
+          {
+            "code": "Period",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/period-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Endpoint.payloadType",
+        "path": "Endpoint.payloadType",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

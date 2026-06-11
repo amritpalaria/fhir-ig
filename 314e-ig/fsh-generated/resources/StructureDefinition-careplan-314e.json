@@ -33,6 +33,18 @@
   "differential": {
     "element": [
       {
+        "id": "CarePlan.meta",
+        "path": "CarePlan.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "CarePlan.extension",
         "path": "CarePlan.extension",
         "slicing": {

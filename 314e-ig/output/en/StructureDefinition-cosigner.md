@@ -10,7 +10,7 @@ Identifies an individual who reviewed, verified, or co-signed the associated cli
 
 **Usages:**
 
-* This Extension is not used by any profiles in this Implementation Guide
+* Use this Extension: [314e MedicationRequest](StructureDefinition-medicationrequest-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/cosigner)
 
@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-cosigner.csv), [E
   "name" : "Cosigner",
   "title" : "Cosigner",
   "status" : "active",
-  "date" : "2026-06-10T16:33:40+05:30",
+  "date" : "2026-06-11T14:17:09+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

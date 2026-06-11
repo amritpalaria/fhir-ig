@@ -28,3 +28,4 @@ Description: """
 
 * method.coding 1..*
 * method.coding from AntimicrobialSusceptibilityTestingVS (required)
+* meta only Meta314e

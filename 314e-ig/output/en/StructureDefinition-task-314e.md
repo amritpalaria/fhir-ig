@@ -1,0 +1,366 @@
+# 314e Task - 314e FHIR Implementation Guide v1.0.0
+
+## Resource Profile: 314e Task 
+
+ 
+314e-constrained Task profile derived from QI-Core Task. 
+This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable. 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Implementation Guide
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/task-314e)
+
+### Formal Views of Profile Content
+
+ [Description Differentials, Snapshots, and other representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-task-314e.csv), [Excel](../StructureDefinition-task-314e.xlsx), [Schematron](../StructureDefinition-task-314e.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "task-314e",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-primaryCodePath",
+    "valueString" : "code"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+    "valueString" : "Task"
+  }],
+  "url" : "http://314e.com/fhir/StructureDefinition/task-314e",
+  "version" : "1.0.0",
+  "name" : "Task314e",
+  "title" : "314e Task",
+  "status" : "active",
+  "date" : "2026-06-11T14:17:09+05:30",
+  "publisher" : "314e",
+  "contact" : [{
+    "name" : "314e",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://314e.com"
+    }]
+  }],
+  "description" : "314e-constrained Task profile derived from QI-Core Task.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Task",
+  "baseDefinition" : "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-task",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Task",
+      "path" : "Task"
+    },
+    {
+      "id" : "Task.meta",
+      "path" : "Task.meta",
+      "type" : [{
+        "code" : "Meta",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/meta-314e"]
+      }]
+    },
+    {
+      "id" : "Task.extension",
+      "path" : "Task.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Task.extension:additionalInfo",
+      "path" : "Task.extension",
+      "sliceName" : "additionalInfo",
+      "short" : "Supplementary information for this resource",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/resource-additionalInfo"]
+      }]
+    },
+    {
+      "id" : "Task.identifier",
+      "path" : "Task.identifier",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/identifier-314e"]
+      }]
+    },
+    {
+      "id" : "Task.basedOn",
+      "path" : "Task.basedOn",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Task.groupIdentifier",
+      "path" : "Task.groupIdentifier",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/identifier-314e"]
+      }]
+    },
+    {
+      "id" : "Task.partOf",
+      "path" : "Task.partOf",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Task|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Task.statusReason",
+      "path" : "Task.statusReason",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Task.businessStatus",
+      "path" : "Task.businessStatus",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Task.code",
+      "path" : "Task.code",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Task.focus",
+      "path" : "Task.focus",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+      }]
+    },
+    {
+      "id" : "Task.for",
+      "path" : "Task.for",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"]
+      }]
+    },
+    {
+      "id" : "Task.encounter",
+      "path" : "Task.encounter",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"]
+      }]
+    },
+    {
+      "id" : "Task.executionPeriod",
+      "path" : "Task.executionPeriod",
+      "type" : [{
+        "code" : "Period",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/period-314e"]
+      }]
+    },
+    {
+      "id" : "Task.authoredOn",
+      "path" : "Task.authoredOn",
+      "type" : [{
+        "code" : "dateTime",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
+      }]
+    },
+    {
+      "id" : "Task.lastModified",
+      "path" : "Task.lastModified",
+      "type" : [{
+        "code" : "dateTime",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
+      }]
+    },
+    {
+      "id" : "Task.requester",
+      "path" : "Task.requester",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Task.performerType",
+      "path" : "Task.performerType",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Task.owner",
+      "path" : "Task.owner",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/CareTeam|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/HealthcareService|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Task.location",
+      "path" : "Task.location",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Task.reasonCode",
+      "path" : "Task.reasonCode",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Task.reasonReference",
+      "path" : "Task.reasonReference",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Task.insurance",
+      "path" : "Task.insurance",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Coverage|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/ClaimResponse|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Task.note",
+      "path" : "Task.note",
+      "type" : [{
+        "code" : "Annotation",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/annotation-314e"]
+      }]
+    },
+    {
+      "id" : "Task.relevantHistory",
+      "path" : "Task.relevantHistory",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Provenance|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Task.restriction.period",
+      "path" : "Task.restriction.period",
+      "type" : [{
+        "code" : "Period",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/period-314e"]
+      }]
+    },
+    {
+      "id" : "Task.restriction.recipient",
+      "path" : "Task.restriction.recipient",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Group|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
+      }]
+    },
+    {
+      "id" : "Task.input.type",
+      "path" : "Task.input.type",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "Task.output.type",
+      "path" : "Task.output.type",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    }]
+  }
+}
+
+```

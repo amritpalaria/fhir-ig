@@ -66,8 +66,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-datetime-accuracy.html" : "Date/Time Accuracy",
-    "StructureDefinition-time-accuracy.html" : "Time Accuracy"
+    "StructureDefinition-time-accuracy.html" : "Time Accuracy",
+    "StructureDefinition-datetime-accuracy.html" : "Date/Time Accuracy"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/time-precision-units",

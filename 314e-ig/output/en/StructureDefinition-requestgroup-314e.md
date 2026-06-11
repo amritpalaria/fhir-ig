@@ -1,0 +1,281 @@
+# 314e RequestGroup - 314e FHIR Implementation Guide v1.0.0
+
+## Resource Profile: 314e RequestGroup 
+
+ 
+314e-constrained RequestGroup profile derived from FHIR R4 RequestGroup. 
+This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable. 
+
+**Usages:**
+
+* This Profile is not used by any profiles in this Implementation Guide
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/requestgroup-314e)
+
+### Formal Views of Profile Content
+
+ [Description Differentials, Snapshots, and other representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-requestgroup-314e.csv), [Excel](../StructureDefinition-requestgroup-314e.xlsx), [Schematron](../StructureDefinition-requestgroup-314e.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "requestgroup-314e",
+  "url" : "http://314e.com/fhir/StructureDefinition/requestgroup-314e",
+  "version" : "1.0.0",
+  "name" : "RequestGroup314e",
+  "title" : "314e RequestGroup",
+  "status" : "active",
+  "date" : "2026-06-11T14:17:09+05:30",
+  "publisher" : "314e",
+  "contact" : [{
+    "name" : "314e",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://314e.com"
+    }]
+  }],
+  "description" : "314e-constrained RequestGroup profile derived from FHIR R4 RequestGroup.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "RequestGroup",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/RequestGroup",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "RequestGroup",
+      "path" : "RequestGroup"
+    },
+    {
+      "id" : "RequestGroup.meta",
+      "path" : "RequestGroup.meta",
+      "type" : [{
+        "code" : "Meta",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/meta-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.extension",
+      "path" : "RequestGroup.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "RequestGroup.extension:additionalInfo",
+      "path" : "RequestGroup.extension",
+      "sliceName" : "additionalInfo",
+      "short" : "Supplementary information for this resource",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/resource-additionalInfo"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.identifier",
+      "path" : "RequestGroup.identifier",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/identifier-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.basedOn",
+      "path" : "RequestGroup.basedOn",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.replaces",
+      "path" : "RequestGroup.replaces",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.groupIdentifier",
+      "path" : "RequestGroup.groupIdentifier",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/identifier-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.code",
+      "path" : "RequestGroup.code",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.subject",
+      "path" : "RequestGroup.subject",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/Group"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.encounter",
+      "path" : "RequestGroup.encounter",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.authoredOn",
+      "path" : "RequestGroup.authoredOn",
+      "type" : [{
+        "code" : "dateTime",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.author",
+      "path" : "RequestGroup.author",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.reasonCode",
+      "path" : "RequestGroup.reasonCode",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.reasonReference",
+      "path" : "RequestGroup.reasonReference",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition",
+        "http://hl7.org/fhir/StructureDefinition/Observation",
+        "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+        "http://hl7.org/fhir/StructureDefinition/DocumentReference"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.note",
+      "path" : "RequestGroup.note",
+      "type" : [{
+        "code" : "Annotation",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/annotation-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.action.code",
+      "path" : "RequestGroup.action.code",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.action.documentation",
+      "path" : "RequestGroup.action.documentation",
+      "type" : [{
+        "code" : "RelatedArtifact",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/relatedartifact-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.action.timing[x]",
+      "path" : "RequestGroup.action.timing[x]",
+      "type" : [{
+        "code" : "dateTime",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/datetime-314e"]
+      },
+      {
+        "code" : "Age",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/age-314e"]
+      },
+      {
+        "code" : "Period",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/period-314e"]
+      },
+      {
+        "code" : "Duration",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/duration-314e"]
+      },
+      {
+        "code" : "Range",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/range-314e"]
+      },
+      {
+        "code" : "Timing",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/timing-314e"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.action.participant",
+      "path" : "RequestGroup.action.participant",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+        "http://hl7.org/fhir/StructureDefinition/Device"]
+      }]
+    },
+    {
+      "id" : "RequestGroup.action.resource",
+      "path" : "RequestGroup.action.resource",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+      }]
+    }]
+  }
+}
+
+```

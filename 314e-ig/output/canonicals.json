@@ -27,6 +27,13 @@
   "name" : "TimePrecisionUnits314E"
 },
 {
+  "id" : "account-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/account-314e",
+  "version" : "1.0.0",
+  "name" : "Account314e"
+},
+{
   "id" : "allergyintolerance-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e",
@@ -46,6 +53,13 @@
   "url" : "http://314e.com/fhir/StructureDefinition/annotation-attachment",
   "version" : "1.0.0",
   "name" : "AnnotationAttachment"
+},
+{
+  "id" : "appointment-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/appointment-314e",
+  "version" : "1.0.0",
+  "name" : "Appointment314e"
 },
 {
   "id" : "attachment-314e",
@@ -90,6 +104,27 @@
   "name" : "CarePlan314e"
 },
 {
+  "id" : "careteam-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/careteam-314e",
+  "version" : "1.0.0",
+  "name" : "CareTeam314e"
+},
+{
+  "id" : "clinicalimpression-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/clinicalimpression-314e",
+  "version" : "1.0.0",
+  "name" : "ClinicalImpression314e"
+},
+{
+  "id" : "communicationrequest-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/communicationrequest-314e",
+  "version" : "1.0.0",
+  "name" : "CommunicationRequest314e"
+},
+{
   "id" : "condition-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/condition-314e",
@@ -111,11 +146,32 @@
   "name" : "ConditionProblemHealthConcern314e"
 },
 {
+  "id" : "contract-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/contract-314e",
+  "version" : "1.0.0",
+  "name" : "Contract314e"
+},
+{
   "id" : "cosigner",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/cosigner",
   "version" : "1.0.0",
   "name" : "Cosigner"
+},
+{
+  "id" : "coverage-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/coverage-314e",
+  "version" : "1.0.0",
+  "name" : "Coverage314e"
+},
+{
+  "id" : "datarequirement-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/datarequirement-314e",
+  "version" : "1.0.0",
+  "name" : "DataRequirement314e"
 },
 {
   "id" : "datetime-accuracy",
@@ -130,6 +186,27 @@
   "url" : "http://314e.com/fhir/StructureDefinition/datetime-precision",
   "version" : "1.0.0",
   "name" : "DateTimePrecision"
+},
+{
+  "id" : "detectedissue-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/detectedissue-314e",
+  "version" : "1.0.0",
+  "name" : "DetectedIssue314e"
+},
+{
+  "id" : "device-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/device-314e",
+  "version" : "1.0.0",
+  "name" : "Device314e"
+},
+{
+  "id" : "devicerequest-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/devicerequest-314e",
+  "version" : "1.0.0",
+  "name" : "DeviceRequest314e"
 },
 {
   "id" : "diagnosticreport-314e",
@@ -188,6 +265,13 @@
   "name" : "DocumentReference314e"
 },
 {
+  "id" : "dosage-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/dosage-314e",
+  "version" : "1.0.0",
+  "name" : "Dosage314e"
+},
+{
   "id" : "element-additionalInfo",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/element-additionalInfo",
@@ -202,6 +286,13 @@
   "name" : "Encounter314e"
 },
 {
+  "id" : "endpoint-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/endpoint-314e",
+  "version" : "1.0.0",
+  "name" : "Endpoint314e"
+},
+{
   "id" : "episodeofcare-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/episodeofcare-314e",
@@ -209,11 +300,123 @@
   "name" : "EpisodeOfCare314e"
 },
 {
+  "id" : "goal-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/goal-314e",
+  "version" : "1.0.0",
+  "name" : "Goal314e"
+},
+{
+  "id" : "group-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/group-314e",
+  "version" : "1.0.0",
+  "name" : "Group314e"
+},
+{
+  "id" : "healthcareservice-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/healthcareservice-314e",
+  "version" : "1.0.0",
+  "name" : "HealthcareService314e"
+},
+{
+  "id" : "imagingstudy-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/imagingstudy-314e",
+  "version" : "1.0.0",
+  "name" : "ImagingStudy314e"
+},
+{
   "id" : "immunization-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/immunization-314e",
   "version" : "1.0.0",
   "name" : "Immunization314e"
+},
+{
+  "id" : "immunizationevaluation-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/immunizationevaluation-314e",
+  "version" : "1.0.0",
+  "name" : "ImmunizationEvaluation314e"
+},
+{
+  "id" : "immunizationrecommendation-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e",
+  "version" : "1.0.0",
+  "name" : "ImmunizationRecommendation314e"
+},
+{
+  "id" : "location-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/location-314e",
+  "version" : "1.0.0",
+  "name" : "Location314e"
+},
+{
+  "id" : "media-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/media-314e",
+  "version" : "1.0.0",
+  "name" : "Media314e"
+},
+{
+  "id" : "medication-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/medication-314e",
+  "version" : "1.0.0",
+  "name" : "Medication314e"
+},
+{
+  "id" : "medicationadministration-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/medicationadministration-314e",
+  "version" : "1.0.0",
+  "name" : "MedicationAdministration314e"
+},
+{
+  "id" : "medicationdispense-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/medicationdispense-314e",
+  "version" : "1.0.0",
+  "name" : "MedicationDispense314e"
+},
+{
+  "id" : "medicationrequest-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/medicationrequest-314e",
+  "version" : "1.0.0",
+  "name" : "MedicationRequest314e"
+},
+{
+  "id" : "meta-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/meta-314e",
+  "version" : "1.0.0",
+  "name" : "Meta314e"
+},
+{
+  "id" : "molecularsequence-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/molecularsequence-314e",
+  "version" : "1.0.0",
+  "name" : "MolecularSequence314e"
+},
+{
+  "id" : "money-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/money-314e",
+  "version" : "1.0.0",
+  "name" : "Money314e"
+},
+{
+  "id" : "nutritionorder-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/nutritionorder-314e",
+  "version" : "1.0.0",
+  "name" : "NutritionOrder314e"
 },
 {
   "id" : "observation-314e",
@@ -256,6 +459,13 @@
   "url" : "http://314e.com/fhir/StructureDefinition/observation-valueAttachment",
   "version" : "1.0.0",
   "name" : "ObservationValueAttachment"
+},
+{
+  "id" : "organization-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/organization-314e",
+  "version" : "1.0.0",
+  "name" : "Organization314e"
 },
 {
   "id" : "patient-314e",
@@ -307,6 +517,20 @@
   "name" : "Practitioner314e"
 },
 {
+  "id" : "practitionerrole-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+  "version" : "1.0.0",
+  "name" : "PractitionerRole314e"
+},
+{
+  "id" : "procedure-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/procedure-314e",
+  "version" : "1.0.0",
+  "name" : "Procedure314e"
+},
+{
   "id" : "quantity-quantityString",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/quantity-quantityString",
@@ -319,6 +543,13 @@
   "url" : "http://314e.com/fhir/StructureDefinition/quantity-valueString",
   "version" : "1.0.0",
   "name" : "QuantityValueString"
+},
+{
+  "id" : "questionnaireresponse-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e",
+  "version" : "1.0.0",
+  "name" : "QuestionnaireResponse314e"
 },
 {
   "id" : "range-314e",
@@ -356,11 +587,25 @@
   "name" : "RelatedPersonEncounter"
 },
 {
+  "id" : "relatedartifact-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/relatedartifact-314e",
+  "version" : "1.0.0",
+  "name" : "RelatedArtifact314e"
+},
+{
   "id" : "relatedperson-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
   "version" : "1.0.0",
   "name" : "RelatedPerson314e"
+},
+{
+  "id" : "requestgroup-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/requestgroup-314e",
+  "version" : "1.0.0",
+  "name" : "RequestGroup314e"
 },
 {
   "id" : "resource-additionalInfo",
@@ -377,11 +622,25 @@
   "name" : "ResourceLastEditedUser"
 },
 {
+  "id" : "schedule-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/schedule-314e",
+  "version" : "1.0.0",
+  "name" : "Schedule314e"
+},
+{
   "id" : "servicerequest-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
   "version" : "1.0.0",
   "name" : "ServiceRequest314e"
+},
+{
+  "id" : "signature-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/signature-314e",
+  "version" : "1.0.0",
+  "name" : "Signature314e"
 },
 {
   "id" : "simplequantity-314e",
@@ -391,11 +650,32 @@
   "name" : "SimpleQuantity314e"
 },
 {
+  "id" : "slot-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/slot-314e",
+  "version" : "1.0.0",
+  "name" : "Slot314e"
+},
+{
   "id" : "specimen-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/specimen-314e",
   "version" : "1.0.0",
   "name" : "Specimen314e"
+},
+{
+  "id" : "substance-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/substance-314e",
+  "version" : "1.0.0",
+  "name" : "Substance314e"
+},
+{
+  "id" : "task-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/task-314e",
+  "version" : "1.0.0",
+  "name" : "Task314e"
 },
 {
   "id" : "time-accuracy",
@@ -410,6 +690,13 @@
   "url" : "http://314e.com/fhir/StructureDefinition/time-precision",
   "version" : "1.0.0",
   "name" : "TimePrecision"
+},
+{
+  "id" : "visionprescription-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/visionprescription-314e",
+  "version" : "1.0.0",
+  "name" : "VisionPrescription314e"
 },
 {
   "id" : "attachment-tag",

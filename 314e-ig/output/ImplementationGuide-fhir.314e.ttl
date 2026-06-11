@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-10T16:33:40+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-11T14:17:09+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -1402,6 +1402,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/account-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/account-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Account" ] ;
+       fhir:description [ fhir:v "314e-constrained Account profile derived from FHIR R4 Account.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -1507,6 +1528,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/appointment-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/appointment-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Appointment" ] ;
+       fhir:description [ fhir:v "314e-constrained Appointment profile derived from FHIR R4 Appointment.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -1570,6 +1612,48 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/careteam-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/careteam-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e CareTeam" ] ;
+       fhir:description [ fhir:v "314e-constrained CareTeam profile derived from US Core CareTeam.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/clinicalimpression-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/clinicalimpression-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e ClinicalImpression" ] ;
+       fhir:description [ fhir:v "314e-constrained ClinicalImpression profile derived from FHIR R4 ClinicalImpression.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -1600,6 +1684,27 @@
        ] ;
        fhir:name [ fhir:v "314e Coding" ] ;
        fhir:description [ fhir:v "314e profile of the FHIR Coding datatype.\n\nThis profile strengthens semantic interoperability expectations\naround population of system, code, and display.\n\nWhen display is populated, code SHALL also be populated.\n\nIf source data lacks a formal coded value but provides textual\ndisplay content, implementers SHOULD generate a surrogate code\nusing the display text transformed as follows:\n- convert all letters to lower case\n- replace spaces with hyphens\n\nExample:\nDisplay: \"Blood Culture\"\nGenerated code: \"blood-culture\"\n\nWhenever either code or display is populated, system SHALL\nalso be populated.\n\nThis data type supports:\n- standard terminology codings\n- optional customer-specific internal codings\nInternal codings are used to preserve customer, EHR,\nworkflow, and source-system-native semantic classifications and source system fidelity.\n\nAny coding system intended to represent an internal coding\nsystem SHALL follow the required naming convention:\n\n[customer]-[ehr]-[ResourceType]-[resource-subtype]-[element]-[SourceSpecificString]-InternalCode\n\nExample:\nacme-epic-Observation-lab-code-Glucose-InternalCode" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/communicationrequest-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/communicationrequest-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e CommunicationRequest" ] ;
+       fhir:description [ fhir:v "314e-constrained CommunicationRequest profile derived from FHIR R4 CommunicationRequest.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1696,6 +1801,69 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/contract-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/contract-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Contract" ] ;
+       fhir:description [ fhir:v "314e-constrained Contract profile derived from FHIR R4 Contract.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/coverage-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/coverage-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Coverage" ] ;
+       fhir:description [ fhir:v "314e-constrained Coverage profile derived from QI-Core Coverage.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/datarequirement-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/datarequirement-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e DataRequirement" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR DataRequirement datatype.\n\nThis profile constrains CodeableConcept, Reference, Coding, dateTime,\nPeriod, and Duration sub-elements to their corresponding 314e datatype profiles." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:primitive-type"
          ]
        ] ) ;
@@ -1726,6 +1894,69 @@
        ] ;
        fhir:name [ fhir:v "314e decimal" ] ;
        fhir:description [ fhir:v "314e profile of the FHIR decimal primitive datatype.\n\nSupports explicit precision representation using:\n\nhttp://hl7.org/fhir/StructureDefinition/quantity-precision\n\nThis extension specifies the intended or known precision\nof the decimal value independently of the actual lexical form." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/detectedissue-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/detectedissue-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e DetectedIssue" ] ;
+       fhir:description [ fhir:v "314e-constrained DetectedIssue profile derived from FHIR R4 DetectedIssue.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/device-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/device-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Device" ] ;
+       fhir:description [ fhir:v "314e-constrained Device profile derived from QI-Core Device.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/devicerequest-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/devicerequest-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e DeviceRequest" ] ;
+       fhir:description [ fhir:v "314e-constrained DeviceRequest profile derived from QI-Core DeviceRequest.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1826,6 +2057,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/dosage-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/dosage-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Dosage" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR Dosage datatype.\n\nThis profile constrains CodeableConcept, Timing, and quantity-related\nsub-elements to their corresponding 314e datatype profiles." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/duration-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/duration-314e" ]
        ] ;
@@ -1868,6 +2120,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/endpoint-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/endpoint-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Endpoint" ] ;
+       fhir:description [ fhir:v "314e-constrained Endpoint profile derived from FHIR R4 Endpoint.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/episodeofcare-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/episodeofcare-314e" ]
        ] ;
@@ -1894,6 +2167,69 @@
        ] ;
        fhir:name [ fhir:v "314e General Laboratory Observation" ] ;
        fhir:description [ fhir:v "314e profile for general laboratory observations.\n\nThis profile derives from the QI Core Laboratory Result Observation profile\nand constrains datatypes to corresponding 314e datatype profiles where applicable.\n\nA required category slice SHALL identify the laboratory subcategory\nusing a code from LabCategorySubcategory314eVS.\n\nThis profile also supports the ValueAttachment314e extension\nfor scenarios where the laboratory result cannot be represented\nusing structured Observation.value[x] datatypes or plain text." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/goal-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/goal-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Goal" ] ;
+       fhir:description [ fhir:v "314e-constrained Goal profile derived from QI-Core Goal.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/group-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/group-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Group" ] ;
+       fhir:description [ fhir:v "314e-constrained Group profile derived from FHIR R4 Group.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/healthcareservice-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/healthcareservice-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e HealthcareService" ] ;
+       fhir:description [ fhir:v "314e-constrained HealthcareService profile derived from FHIR R4 HealthcareService.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1952,11 +2288,74 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/imagingstudy-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/imagingstudy-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e ImagingStudy" ] ;
+       fhir:description [ fhir:v "314e-constrained ImagingStudy profile derived from QI-Core ImagingStudy.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/immunization-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/immunization-314e" ]
        ] ;
        fhir:name [ fhir:v "314e Immunization" ] ;
        fhir:description [ fhir:v "314e-constrained Immunization profile derived from QI-Core Immunization.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/immunizationevaluation-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/immunizationevaluation-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e ImmunizationEvaluation" ] ;
+       fhir:description [ fhir:v "314e-constrained ImmunizationEvaluation profile derived from FHIR R4 ImmunizationEvaluation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/immunizationrecommendation-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/immunizationrecommendation-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e ImmunizationRecommendation" ] ;
+       fhir:description [ fhir:v "314e-constrained ImmunizationRecommendation profile derived from QI-Core ImmunizationRecommendation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2015,6 +2414,153 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/location-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/location-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Location" ] ;
+       fhir:description [ fhir:v "314e-constrained Location profile derived from QI-Core Location.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/media-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/media-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Media" ] ;
+       fhir:description [ fhir:v "314e-constrained Media profile derived from FHIR R4 Media.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/medication-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/medication-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Medication" ] ;
+       fhir:description [ fhir:v "314e-constrained Medication profile derived from QI-Core Medication.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/medicationadministration-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/medicationadministration-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e MedicationAdministration" ] ;
+       fhir:description [ fhir:v "314e-constrained MedicationAdministration profile derived from QI-Core MedicationAdministration.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/medicationdispense-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/medicationdispense-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e MedicationDispense" ] ;
+       fhir:description [ fhir:v "314e-constrained MedicationDispense profile derived from QI-Core MedicationDispense.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/medicationrequest-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/medicationrequest-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e MedicationRequest" ] ;
+       fhir:description [ fhir:v "314e-constrained MedicationRequest profile derived from QI-Core MedicationRequest.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/meta-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/meta-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Meta" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR Meta datatype.\n\nThis profile constrains the lastUpdated (instant), security (Coding),\nand tag (Coding) sub-elements to their corresponding 314e datatype profiles." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-microbiology-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/observation-microbiology-314e" ]
        ] ;
@@ -2057,11 +2603,95 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/molecularsequence-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/molecularsequence-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e MolecularSequence" ] ;
+       fhir:description [ fhir:v "314e-constrained MolecularSequence profile derived from FHIR R4 MolecularSequence.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/money-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/money-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Money" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR Money datatype.\n\nThis profile constrains the decimal value sub-element\nto the 314e decimal profile." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/nutritionorder-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/nutritionorder-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e NutritionOrder" ] ;
+       fhir:description [ fhir:v "314e-constrained NutritionOrder profile derived from QI-Core NutritionOrder.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/observation-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/observation-314e" ]
        ] ;
        fhir:name [ fhir:v "314e Observation" ] ;
        fhir:description [ fhir:v "314e-constrained Observation profile derived from QI-Core Simple Observation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/organization-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/organization-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Organization" ] ;
+       fhir:description [ fhir:v "314e-constrained Organization profile derived from US Core Organization.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2137,6 +2767,48 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/practitionerrole-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/practitionerrole-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e PractitionerRole" ] ;
+       fhir:description [ fhir:v "314e-constrained PractitionerRole profile derived from QI-Core PractitionerRole.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/procedure-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/procedure-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Procedure" ] ;
+       fhir:description [ fhir:v "314e-constrained Procedure profile derived from QI-Core Procedure.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CodeSystem"
          ]
        ] ) ;
@@ -2188,6 +2860,27 @@
        ] ;
        fhir:name [ fhir:v "314e Quantity" ] ;
        fhir:description [ fhir:v "An extended Quantity datatype supporting precision metadata and alternate textual representations.\n\nThis profile SHALL be used so that the data can be faithfully represented in the following scenarios:<br/>\n1. The quantity value, such as a vital sign reading or a lab result value, is limited to a defined number of digits \nafter the decimal in the source and this precision needs to be recorded with the value.<br/>\n2. The display-oriented or source-oriented textual representation of a quantity needs to be recorded, either in addition \nto the computable elements or because the original representation cannot be separated into distinct value and unit.<br/>\n3. The original source representation of a quantity value needs to be preserved, either because the original \nrepresentation of value cannot be converted to numeric or for display or audit purposes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/questionnaireresponse-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/questionnaireresponse-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e QuestionnaireResponse" ] ;
+       fhir:description [ fhir:v "314e-constrained QuestionnaireResponse profile derived from FHIR R4 QuestionnaireResponse.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2263,6 +2956,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/relatedartifact-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/relatedartifact-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e RelatedArtifact" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR RelatedArtifact datatype.\n\nThis profile constrains the document (Attachment) sub-element\nto the 314e Attachment profile." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -2272,6 +2986,27 @@
        ] ;
        fhir:name [ fhir:v "314e RelatedPerson" ] ;
        fhir:description [ fhir:v "314e-constrained RelatedPerson profile derived from QI-Core RelatedPerson.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/requestgroup-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/requestgroup-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e RequestGroup" ] ;
+       fhir:description [ fhir:v "314e-constrained RequestGroup profile derived from FHIR R4 RequestGroup.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2309,11 +3044,53 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/schedule-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/schedule-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Schedule" ] ;
+       fhir:description [ fhir:v "314e-constrained Schedule profile derived from FHIR R4 Schedule.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/servicerequest-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/servicerequest-314e" ]
        ] ;
        fhir:name [ fhir:v "314e ServiceRequest" ] ;
        fhir:description [ fhir:v "A 314e-constrained ServiceRequest profile derived from\nQI-Core ServiceRequest.\n\nThis profile requires classification of the requested service\nusing standardized high-level service categories and uses\n314e datatype profiles where applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/signature-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/signature-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Signature" ] ;
+       fhir:description [ fhir:v "314e profile of the FHIR Signature datatype.\n\nThis profile constrains Coding, instant, and Reference sub-elements\nto their corresponding 314e datatype profiles." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2351,11 +3128,74 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/slot-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/slot-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Slot" ] ;
+       fhir:description [ fhir:v "314e-constrained Slot profile derived from FHIR R4 Slot.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://314e.com/fhir/ig/StructureDefinition/specimen-314e> ;
          fhir:reference [ fhir:v "StructureDefinition/specimen-314e" ]
        ] ;
        fhir:name [ fhir:v "314e Specimen" ] ;
        fhir:description [ fhir:v "314e-constrained Specimen profile derived from US Core Specimen.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/substance-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/substance-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Substance" ] ;
+       fhir:description [ fhir:v "314e-constrained Substance profile derived from FHIR R4 Substance.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/task-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/task-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e Task" ] ;
+       fhir:description [ fhir:v "314e-constrained Task profile derived from QI-Core Task.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2461,6 +3301,27 @@
        ] ;
        fhir:name [ fhir:v "314e Timing" ] ;
        fhir:description [ fhir:v "Describes the occurrence of an event that may occur multiple times. Timing schedules are used \nfor specifying when events are expected or requested to occur and may also be used to represent \nthe summary of a past or ongoing event. For simplicity, the definitions of Timing components \nare expressed as 'future' events, but such components can also be used to describe historic or ongoing events.\n\nA Timing schedule can be a list of events and/or criteria for when the event happens, which can \nbe expressed in a structured form and/or as a code. When both event and a repeating specification \nare provided, the list of events should be understood as an interpretation of the information in the repeat structure.\n\nNote: The Timing data type allows modifier extensions.\n\n314e profile of the FHIR Timing datatype uses 314e datatype profiles \nincluding DateTime314e, Period314e, CodeableConcept314e and Quantity314e." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://314e.com/fhir/ig/StructureDefinition/visionprescription-314e> ;
+         fhir:reference [ fhir:v "StructureDefinition/visionprescription-314e" ]
+       ] ;
+       fhir:name [ fhir:v "314e VisionPrescription" ] ;
+       fhir:description [ fhir:v "314e-constrained VisionPrescription profile derived from FHIR R4 VisionPrescription.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

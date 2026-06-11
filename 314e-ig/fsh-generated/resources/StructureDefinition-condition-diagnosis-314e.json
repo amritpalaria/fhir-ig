@@ -33,6 +33,18 @@
   "differential": {
     "element": [
       {
+        "id": "Condition.meta",
+        "path": "Condition.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Condition.extension:lastEditedUser",
         "path": "Condition.extension",
         "sliceName": "lastEditedUser",

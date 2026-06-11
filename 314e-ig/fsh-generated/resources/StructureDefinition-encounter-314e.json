@@ -33,6 +33,18 @@
   "differential": {
     "element": [
       {
+        "id": "Encounter.meta",
+        "path": "Encounter.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Encounter.extension",
         "path": "Encounter.extension",
         "slicing": {

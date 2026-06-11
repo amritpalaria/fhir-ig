@@ -8,7 +8,7 @@ Age is a constrained Quantity used to express a duration of elapsed time, typica
 
 **Usages:**
 
-* Use this DataType Profile: [314e AllergyIntolerance](StructureDefinition-allergyintolerance-314e.md), [314e Condition](StructureDefinition-condition-314e.md), [314e Condition Encounter Diagnosis](StructureDefinition-condition-diagnosis-314e.md) and [314e Condition Problems Health Concerns](StructureDefinition-condition-problem-healthconcern-314e.md)
+* Use this DataType Profile: [314e AllergyIntolerance](StructureDefinition-allergyintolerance-314e.md), [314e Condition](StructureDefinition-condition-314e.md), [314e Condition Encounter Diagnosis](StructureDefinition-condition-diagnosis-314e.md), [314e Condition Problems Health Concerns](StructureDefinition-condition-problem-healthconcern-314e.md)... Show 2 more, [314e Procedure](StructureDefinition-procedure-314e.md) and [314e RequestGroup](StructureDefinition-requestgroup-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/age-314e)
 
@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-age-314e.csv), [E
   "name" : "Age314e",
   "title" : "314e Age",
   "status" : "active",
-  "date" : "2026-06-10T16:33:40+05:30",
+  "date" : "2026-06-11T14:17:09+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

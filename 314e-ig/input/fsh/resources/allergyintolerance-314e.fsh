@@ -59,3 +59,4 @@ where applicable.
 * reaction.severity only code
 * reaction.exposureRoute only CodeableConcept314e
 * reaction.note only Annotation314e
+* meta only Meta314e

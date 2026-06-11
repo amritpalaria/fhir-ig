@@ -33,6 +33,18 @@
   "differential": {
     "element": [
       {
+        "id": "RelatedPerson.meta",
+        "path": "RelatedPerson.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "RelatedPerson.extension",
         "path": "RelatedPerson.extension",
         "slicing": {

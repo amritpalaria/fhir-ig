@@ -63,3 +63,4 @@ where applicable.
 * protocolApplied.targetDisease only CodeableConcept314e
 * protocolApplied.doseNumber[x] only positiveInt or string
 * protocolApplied.seriesDoses[x] only positiveInt or string
+* meta only Meta314e

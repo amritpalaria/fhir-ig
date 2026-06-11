@@ -15,6 +15,18 @@
   "differential": {
     "element": [
       {
+        "id": "Specimen.meta",
+        "path": "Specimen.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Specimen.extension",
         "path": "Specimen.extension",
         "slicing": {

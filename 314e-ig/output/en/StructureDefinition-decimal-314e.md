@@ -10,7 +10,7 @@ This extension specifies the intended or known precision of the decimal value in
 
 **Usages:**
 
-* Use this Primitive Type Profile: [314e Duration](StructureDefinition-duration-314e.md), [314e Quantity](StructureDefinition-quantity-314e.md), [314e SampledData](StructureDefinition-sampleddata-314e.md), [314e SimpleQuantity](StructureDefinition-simplequantity-314e.md) and [314e Timing](StructureDefinition-timing-314e.md)
+* Use this Primitive Type Profile: [314e Contract](StructureDefinition-contract-314e.md), [314e MolecularSequence](StructureDefinition-molecularsequence-314e.md), [314e Money](StructureDefinition-money-314e.md), [314e Quantity](StructureDefinition-quantity-314e.md)... Show 4 more, [314e SampledData](StructureDefinition-sampleddata-314e.md), [314e SimpleQuantity](StructureDefinition-simplequantity-314e.md), [314e Timing](StructureDefinition-timing-314e.md) and [314e VisionPrescription](StructureDefinition-visionprescription-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/decimal-314e)
 
@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-decimal-314e.csv)
   "name" : "decimal314e",
   "title" : "314e decimal",
   "status" : "active",
-  "date" : "2026-06-10T16:33:40+05:30",
+  "date" : "2026-06-11T14:17:09+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

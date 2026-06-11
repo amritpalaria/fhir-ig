@@ -1,0 +1,76 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "datarequirement-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/datarequirement-314e",
+  "name": "DataRequirement314e",
+  "title": "314e DataRequirement",
+  "status": "active",
+  "description": "314e profile of the FHIR DataRequirement datatype.\n\nThis profile constrains CodeableConcept, Reference, Coding, dateTime,\nPeriod, and Duration sub-elements to their corresponding 314e datatype profiles.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "DataRequirement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DataRequirement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DataRequirement.subject[x]",
+        "path": "DataRequirement.subject[x]",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DataRequirement.codeFilter.code",
+        "path": "DataRequirement.codeFilter.code",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/coding-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DataRequirement.dateFilter.value[x]",
+        "path": "DataRequirement.dateFilter.value[x]",
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"
+            ]
+          },
+          {
+            "code": "Period",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/period-314e"
+            ]
+          },
+          {
+            "code": "Duration",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/duration-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

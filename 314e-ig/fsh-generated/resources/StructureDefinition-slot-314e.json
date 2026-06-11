@@ -1,0 +1,160 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "slot-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/slot-314e",
+  "name": "Slot314e",
+  "title": "314e Slot",
+  "status": "active",
+  "description": "314e-constrained Slot profile derived from FHIR R4 Slot.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Slot",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Slot",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Slot.meta",
+        "path": "Slot.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Slot.extension",
+        "path": "Slot.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Slot.extension:additionalInfo",
+        "path": "Slot.extension",
+        "sliceName": "additionalInfo",
+        "short": "Supplementary information for this resource",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/resource-additionalInfo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Slot.identifier",
+        "path": "Slot.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Slot.serviceCategory",
+        "path": "Slot.serviceCategory",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Slot.serviceType",
+        "path": "Slot.serviceType",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Slot.specialty",
+        "path": "Slot.specialty",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Slot.appointmentType",
+        "path": "Slot.appointmentType",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Slot.schedule",
+        "path": "Slot.schedule",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Schedule"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Slot.start",
+        "path": "Slot.start",
+        "type": [
+          {
+            "code": "instant",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/instant-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Slot.end",
+        "path": "Slot.end",
+        "type": [
+          {
+            "code": "instant",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/instant-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

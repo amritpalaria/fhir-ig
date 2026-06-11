@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "meta-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/meta-314e",
+  "name": "Meta314e",
+  "title": "314e Meta",
+  "status": "active",
+  "description": "314e profile of the FHIR Meta datatype.\n\nThis profile constrains the lastUpdated (instant), security (Coding),\nand tag (Coding) sub-elements to their corresponding 314e datatype profiles.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Meta",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Meta",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Meta.lastUpdated",
+        "path": "Meta.lastUpdated",
+        "type": [
+          {
+            "code": "instant",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/instant-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Meta.security",
+        "path": "Meta.security",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/coding-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Meta.tag",
+        "path": "Meta.tag",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/coding-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

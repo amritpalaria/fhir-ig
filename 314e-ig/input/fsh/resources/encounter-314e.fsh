@@ -55,3 +55,4 @@ where applicable.
 * location.physicalType only CodeableConcept314e
 * serviceProvider only Reference314e
 * partOf only Reference314e
+* meta only Meta314e

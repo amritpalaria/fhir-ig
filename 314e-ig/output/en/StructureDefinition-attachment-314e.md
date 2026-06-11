@@ -9,7 +9,7 @@ If attachment content originated as inline data/blob content and was subsequentl
 
 **Usages:**
 
-* Use this DataType Profile: [Annotation Attachment](StructureDefinition-annotation-attachment.md), [314e DiagnosticReport](StructureDefinition-diagnosticreport-314e.md), [314e DiagnosticReport Laboratory Results](StructureDefinition-diagnosticreport-lab-314e.md), [314e DiagnosticReport Note and Report](StructureDefinition-diagnosticreport-notereport-314e.md)... Show 3 more, [314e DocumentReference](StructureDefinition-documentreference-314e.md), [Observation Value Attachment](StructureDefinition-observation-value-attachment.md) and [314e RelatedPerson](StructureDefinition-relatedperson-314e.md)
+* Use this DataType Profile: [Annotation Attachment](StructureDefinition-annotation-attachment.md), [314e CommunicationRequest](StructureDefinition-communicationrequest-314e.md), [314e Contract](StructureDefinition-contract-314e.md), [314e DiagnosticReport](StructureDefinition-diagnosticreport-314e.md)... Show 9 more, [314e DiagnosticReport Laboratory Results](StructureDefinition-diagnosticreport-lab-314e.md), [314e DiagnosticReport Note and Report](StructureDefinition-diagnosticreport-notereport-314e.md), [314e DocumentReference](StructureDefinition-documentreference-314e.md), [314e Media](StructureDefinition-media-314e.md), [Observation Value Attachment](StructureDefinition-observation-value-attachment.md), [314e Patient](StructureDefinition-patient-314e.md), [314e Practitioner](StructureDefinition-practitioner-314e.md), [314e RelatedArtifact](StructureDefinition-relatedartifact-314e.md) and [314e RelatedPerson](StructureDefinition-relatedperson-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/attachment-314e)
 
@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-attachment-314e.c
   "name" : "Attachment314e",
   "title" : "314e Attachment",
   "status" : "draft",
-  "date" : "2026-06-10T16:33:40+05:30",
+  "date" : "2026-06-11T14:17:09+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

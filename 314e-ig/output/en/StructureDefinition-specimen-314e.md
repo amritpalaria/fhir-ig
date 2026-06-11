@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-specimen-314e.csv
   "name" : "Specimen314e",
   "title" : "314e Specimen",
   "status" : "active",
-  "date" : "2026-06-10T16:33:40+05:30",
+  "date" : "2026-06-11T14:17:09+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -68,6 +68,14 @@ Other representations of profile: [CSV](../StructureDefinition-specimen-314e.csv
     "element" : [{
       "id" : "Specimen",
       "path" : "Specimen"
+    },
+    {
+      "id" : "Specimen.meta",
+      "path" : "Specimen.meta",
+      "type" : [{
+        "code" : "Meta",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/meta-314e"]
+      }]
     },
     {
       "id" : "Specimen.extension",

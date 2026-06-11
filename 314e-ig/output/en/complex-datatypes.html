@@ -176,6 +176,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
     
     
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-address-314e.html">314e Address</a></td>
         <td>314e profile of the FHIR Address datatype.
@@ -216,6 +219,9 @@ Annotation.text content.</td>
 
     
     
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-attachment-314e.html">314e Attachment</a></td>
         <td>A constrained Attachment datatype profile in which Attachment.data
@@ -230,6 +236,12 @@ Attachment SHALL carry the tag
 'inline-data-externalized-to-file' using the attachment-tag
 extension.</td>
     </tr>
+    
+
+    
+    
+
+    
     
 
     
@@ -321,6 +333,9 @@ acme-epic-Observation-lab-code-Glucose-InternalCode</td>
 
     
     
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-contactpoint-314e.html">314e ContactPoint</a></td>
         <td>314e profile of the FHIR ContactPoint datatype.
@@ -340,6 +355,32 @@ This profile constrains the period element to use the 314e Period profile.</td>
 
     
     
+    <tr>
+        <td><a href="StructureDefinition-datarequirement-314e.html">314e DataRequirement</a></td>
+        <td>314e profile of the FHIR DataRequirement datatype.
+
+This profile constrains CodeableConcept, Reference, Coding, dateTime,
+Period, and Duration sub-elements to their corresponding 314e datatype profiles.</td>
+    </tr>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
 
     
     
@@ -371,6 +412,17 @@ This profile constrains the period element to use the 314e Period profile.</td>
     
     
     <tr>
+        <td><a href="StructureDefinition-dosage-314e.html">314e Dosage</a></td>
+        <td>314e profile of the FHIR Dosage datatype.
+
+This profile constrains CodeableConcept, Timing, and quantity-related
+sub-elements to their corresponding 314e datatype profiles.</td>
+    </tr>
+    
+
+    
+    
+    <tr>
         <td><a href="StructureDefinition-duration-314e.html">314e Duration</a></td>
         <td>314e profile of the FHIR Duration datatype.
 
@@ -381,6 +433,18 @@ Derived from FHIR Duration and incorporates
 - quantity string support
 - value string support</td>
     </tr>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
     
 
     
@@ -456,6 +520,64 @@ acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier</td>
 
     
     
+    <tr>
+        <td><a href="StructureDefinition-meta-314e.html">314e Meta</a></td>
+        <td>314e profile of the FHIR Meta datatype.
+
+This profile constrains the lastUpdated (instant), security (Coding),
+and tag (Coding) sub-elements to their corresponding 314e datatype profiles.</td>
+    </tr>
+    
+
+    
+    
+
+    
+    
+    <tr>
+        <td><a href="StructureDefinition-money-314e.html">314e Money</a></td>
+        <td>314e profile of the FHIR Money datatype.
+
+This profile constrains the decimal value sub-element
+to the 314e decimal profile.</td>
+    </tr>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
 
     
     
@@ -480,6 +602,12 @@ including UTC normalization and precision handling.</td>
 
     
     
+
+    
+    
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-quantity-314e.html">314e Quantity</a></td>
         <td>An extended Quantity datatype supporting precision metadata and alternate textual representations.
@@ -492,6 +620,9 @@ to the computable elements or because the original representation cannot be sepa
 3. The original source representation of a quantity value needs to be preserved, either because the original 
 representation of value cannot be converted to numeric or for display or audit purposes.</td>
     </tr>
+    
+
+    
     
 
     
@@ -538,6 +669,20 @@ the referenced resource.</td>
 
     
     
+    <tr>
+        <td><a href="StructureDefinition-relatedartifact-314e.html">314e RelatedArtifact</a></td>
+        <td>314e profile of the FHIR RelatedArtifact datatype.
+
+This profile constrains the document (Attachment) sub-element
+to the 314e Attachment profile.</td>
+    </tr>
+    
+
+    
+    
+
+    
+    
 
     
     
@@ -571,11 +716,34 @@ SampledData is typically used for:
 
     
     
+
+    
+    
+    <tr>
+        <td><a href="StructureDefinition-signature-314e.html">314e Signature</a></td>
+        <td>314e profile of the FHIR Signature datatype.
+
+This profile constrains Coding, instant, and Reference sub-elements
+to their corresponding 314e datatype profiles.</td>
+    </tr>
+    
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-simplequantity-314e.html">314e SimpleQuantity</a></td>
         <td>A 314e-constrained SimpleQuantity datatype supporting
 precision metadata and alternate textual representations.</td>
     </tr>
+    
+
+    
+    
+
+    
+    
+
+    
     
 
     
@@ -610,6 +778,9 @@ including DateTime314e, Period314e, CodeableConcept314e and Quantity314e.</td>
     </tr>
     
 
+    
+    
+
 </table>
 
 
@@ -640,8 +811,8 @@ including DateTime314e, Period314e, CodeableConcept314e and Quantity314e.</td>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-10 16:33:00 +0530">
-    2026-06-10
+  <span title="2026-06-11 14:17:00 +0530">
+    2026-06-11
   </span>
 
           <br/>

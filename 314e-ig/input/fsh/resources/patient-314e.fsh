@@ -63,6 +63,8 @@ where applicable.
 * maritalStatus only CodeableConcept314e
 * communication.language only CodeableConcept314e
 
+* photo only Attachment314e
 * generalPractitioner only Reference314e
 * managingOrganization only Reference314e
 * link.other only Reference314e
+* meta only Meta314e

@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "money-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/money-314e",
+  "name": "Money314e",
+  "title": "314e Money",
+  "status": "active",
+  "description": "314e profile of the FHIR Money datatype.\n\nThis profile constrains the decimal value sub-element\nto the 314e decimal profile.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Money",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Money",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Money.value",
+        "path": "Money.value",
+        "type": [
+          {
+            "code": "decimal",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/decimal-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

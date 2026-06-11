@@ -34,6 +34,18 @@
   "differential": {
     "element": [
       {
+        "id": "ServiceRequest.meta",
+        "path": "ServiceRequest.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "slicing": {

@@ -33,6 +33,18 @@
   "differential": {
     "element": [
       {
+        "id": "AllergyIntolerance.meta",
+        "path": "AllergyIntolerance.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "AllergyIntolerance.extension",
         "path": "AllergyIntolerance.extension",
         "slicing": {

@@ -49,3 +49,4 @@ where applicable.
 * container.additive[x] only CodeableConcept314e or Reference314e
 * condition only CodeableConcept314e
 * note only Annotation314e
+* meta only Meta314e
