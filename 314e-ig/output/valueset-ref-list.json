@@ -42,7 +42,9 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"],
     "uses" : {
     },
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e",
@@ -54,7 +56,11 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"],
     "uses" : {
     },
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report",
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/time-accuracy-units",
@@ -66,8 +72,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-time-accuracy.html" : "Time Accuracy",
-    "StructureDefinition-datetime-accuracy.html" : "Date/Time Accuracy"
+    "StructureDefinition-datetime-accuracy.html" : "Date/Time Accuracy",
+    "StructureDefinition-time-accuracy.html" : "Time Accuracy"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/time-precision-units",

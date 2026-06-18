@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-practitioner-314e
   "name" : "Practitioner314e",
   "title" : "314e Practitioner",
   "status" : "active",
-  "date" : "2026-06-18T14:15:04+05:30",
+  "date" : "2026-06-18T16:14:31+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

@@ -23,13 +23,51 @@ where applicable.
     "Supplementary information for this resource"
 
 // ======================================================
+// CATEGORY
+// ======================================================
+
+* category 1..*
+
+* category ^short =
+    "Operational procedure/service categories"
+
+* category ^definition = """
+Broad and optional subcategory classifications used
+for workflow, routing, analytics, and operational
+grouping of Observation resources.
+"""
+
+* category contains broadCategory 1..1
+* category[broadCategory] from ProcedureCategoryBroad314eVS (required)
+
+* category[broadCategory] ^short =
+    "Required broad procedure/service category"
+
+* category[broadCategory] ^definition = """
+Top-level operational classification of the
+observation.
+"""
+
+* category contains subCategory 0..1
+* category[subCategory] from ProcedureCategorySubcategory314eVS (required)
+
+* category[subCategory] ^short =
+    "Optional detailed subcategory"
+
+* category[subCategory] ^definition = """
+More granular operational sub-classification of the
+observation.
+"""
+
+* category only CodeableConcept314e
+
+// ======================================================
 // 314e DATATYPE CONSTRAINTS
 // ======================================================
 
 * identifier only Identifier314e
 * basedOn only Reference314e
 * partOf only Reference314e
-* category only CodeableConcept314e
 * code only CodeableConcept314e
 * subject only Reference314e
 * focus only Reference314e

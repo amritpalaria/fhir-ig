@@ -36,9 +36,9 @@ StructureDefinition-decimal-314e.json                                   decimal3
 StructureDefinition-detectedissue-314e.json                             DetectedIssue314e                           Profile     resources\detectedissue-314e.fsh                             1 - 40
 StructureDefinition-device-314e.json                                    Device314e                                  Profile     resources\device-314e.fsh                                    1 - 40
 StructureDefinition-devicerequest-314e.json                             DeviceRequest314e                           Profile     resources\devicerequest-314e.fsh                             1 - 48
-StructureDefinition-diagnosticreport-314e.json                          DiagnosticReport314e                        Profile     resources\diagnosticreport-314e.fsh                          1 - 55
-StructureDefinition-diagnosticreport-lab-314e.json                      DiagnosticReportLab314e                     Profile     resources\diagnosticreport-lab-314e.fsh                      1 - 56
-StructureDefinition-diagnosticreport-notereport-314e.json               DiagnosticReportNoteReport314e              Profile     resources\diagnosticreport-notereport-314e.fsh               1 - 56
+StructureDefinition-diagnosticreport-314e.json                          DiagnosticReport314e                        Profile     resources\diagnosticreport-314e.fsh                          1 - 96
+StructureDefinition-diagnosticreport-lab-314e.json                      DiagnosticReportLab314e                     Profile     resources\diagnosticreport-lab-314e.fsh                      1 - 72
+StructureDefinition-diagnosticreport-notereport-314e.json               DiagnosticReportNoteReport314e              Profile     resources\diagnosticreport-notereport-314e.fsh               1 - 72
 StructureDefinition-documentReference-context-cosigner.json             DocumentReferenceContextCosigner            Extension   extensions\documentreference-context-cosigner.fsh            1 - 19
 StructureDefinition-documentReference-context-dictationDateTime.json    DocumentReferenceContextDictationDateTime   Extension   extensions\documentreference-context-dictationdatetime.fsh   1 - 19
 StructureDefinition-documentReference-context-reportDateTime.json       DocumentReferenceContextReportDateTime      Extension   extensions\documentreference-context-reportdatetime.fsh      1 - 19
@@ -69,7 +69,7 @@ StructureDefinition-meta-314e.json                                      Meta314e
 StructureDefinition-molecularsequence-314e.json                         MolecularSequence314e                       Profile     resources\molecularsequence-314e.fsh                         1 - 49
 StructureDefinition-money-314e.json                                     Money314e                                   Profile     datatypes\money-314e.fsh                                     1 - 15
 StructureDefinition-nutritionorder-314e.json                            NutritionOrder314e                          Profile     resources\nutritionorder-314e.fsh                            1 - 55
-StructureDefinition-observation-314e.json                               Observation314e                             Profile     resources\observation-314e.fsh                               1 - 62
+StructureDefinition-observation-314e.json                               Observation314e                             Profile     resources\observation-314e.fsh                               1 - 100
 StructureDefinition-observation-antimicrobial-susceptibility-314e.json  ObservationAntimicrobialSusceptibility314e  Profile     resources\observation-antimicrobial-susceptibility-314e.fsh  1 - 31
 StructureDefinition-observation-lab-general-314e.json                   ObservationLabGeneral314e                   Profile     resources\observation-lab-general-314e.fsh                   1 - 201
 StructureDefinition-observation-microbiology-314e.json                  ObservationMicrobiology314e                 Profile     resources\observation-microbiology-314e.fsh                  1 - 40

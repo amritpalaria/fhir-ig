@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-quantity-314e.csv
   "name" : "Quantity314e",
   "title" : "314e Quantity",
   "status" : "draft",
-  "date" : "2026-06-18T14:15:04+05:30",
+  "date" : "2026-06-18T16:14:31+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

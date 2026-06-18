@@ -90,6 +90,11 @@ Sub-departmentServiceDiscipline","",1,1,"Y","","Y","CodeableConcept {[CanonicalT
   </coding>
 </valueCodeableConcept>","","","",,"preferred","Codes for diagnostic service sections.","http://hl7.org/fhir/ValueSet/diagnostic-service-sections","",,,,"DiagnosticReport.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBR-24","inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code < LabService].code","FiveWs.class"
+"DiagnosticReport.category:subCategory","DiagnosticReport.category","subCategory","Department
+Sub-departmentServiceDiscipline","",0,1,"Y","","Y","CodeableConcept {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e]]} {[]}
+","Optional detailed subcategory","More granular operational sub-classification of the
+diagnostic report.","Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code.","","","","","","","","",,"required","","http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e","",,,,"DiagnosticReport.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OBR-24","inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code < LabService].code","FiveWs.class"
 "DiagnosticReport.code","DiagnosticReport.code","","Type
 ","",1,1,"Y","","Y","CodeableConcept {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e]]} {[]}
 ","(QI) US Core Laboratory Report Order Code","The test, panel or battery that was ordered.","UsageNote= The typical patterns for codes are:  1)  a LOINC code either as a  translation from a ""local"" code or as a primary code, or 2)  a local code only if no suitable LOINC exists,  or 3)  both the local and the LOINC translation.   Systems SHALL be capable of sending the local code if one exists.","","","","","","","","",,"extensible","LOINC codes","http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

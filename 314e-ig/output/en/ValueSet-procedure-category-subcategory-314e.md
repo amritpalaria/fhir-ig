@@ -7,6 +7,10 @@ Procedure subcategories used for more granular operational classification.
 
  **References** 
 
+* [314e DiagnosticReport](StructureDefinition-diagnosticreport-314e.md)
+* [314e DiagnosticReport Laboratory Results](StructureDefinition-diagnosticreport-lab-314e.md)
+* [314e DiagnosticReport Note and Report](StructureDefinition-diagnosticreport-notereport-314e.md)
+* [314e Observation](StructureDefinition-observation-314e.md)
 * [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
 
 ### Logical Definition (CLD)
@@ -32,7 +36,7 @@ Procedure subcategories used for more granular operational classification.
   "name" : "ProcedureCategorySubcategory314eVS",
   "title" : "314e Procedure Subcategories",
   "status" : "draft",
-  "date" : "2026-06-18T14:15:04+05:30",
+  "date" : "2026-06-18T16:14:31+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

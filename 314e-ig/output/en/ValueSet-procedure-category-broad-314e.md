@@ -7,6 +7,8 @@ Top-level operational categories for procedures and service requests.
 
  **References** 
 
+* [314e DiagnosticReport](StructureDefinition-diagnosticreport-314e.md)
+* [314e Observation](StructureDefinition-observation-314e.md)
 * [314e ServiceRequest](StructureDefinition-servicerequest-314e.md)
 
 ### Logical Definition (CLD)
@@ -32,7 +34,7 @@ Top-level operational categories for procedures and service requests.
   "name" : "ProcedureCategoryBroad314eVS",
   "title" : "314e Broad Procedure Categories",
   "status" : "draft",
-  "date" : "2026-06-18T14:15:04+05:30",
+  "date" : "2026-06-18T16:14:31+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

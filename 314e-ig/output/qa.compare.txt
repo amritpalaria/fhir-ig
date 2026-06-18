@@ -1,7 +1,7 @@
 IG314e : Validation Results
 =========================================
 
-err = 221, warn = 194, info = 44
+err = 221, warn = 194, info = 46
 $--
 Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/fhir/ig)
  Build Errors : 15 / 8 / 0
@@ -43,7 +43,7 @@ Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/f
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-detectedissue-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-device-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-devicerequest-314e : 2 / 1 / 1
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-diagnosticreport-314e : 2 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-diagnosticreport-314e : 2 / 1 / 3
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-diagnosticreport-lab-314e : 2 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-diagnosticreport-notereport-314e : 2 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-documentReference-context-cosigner : 2 / 1 / 1
@@ -325,6 +325,8 @@ WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefiniti
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-devicerequest-314e: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/devicerequest-314e vs http://314e.com/fhir/StructureDefinition/devicerequest-314e
 == fsh-generated\resources\StructureDefinition-diagnosticreport-314e.json ==
 ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/diagnosticreport-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-diagnosticreport-314e.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/diagnosticreport-314e) does not match the URL (http://314e.com/fhir/StructureDefinition/diagnosticreport-314e). Use the special-url parameter if you really mean for it not to match
+INFORMATION: StructureDefinition/diagnosticreport-314e: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/diagnosticreport-314e: StructureDefinition.snapshot.element[13].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/diagnosticreport-314e'): The Implementation Guide contains no examples for this profile
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-diagnosticreport-314e: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/diagnosticreport-314e vs http://314e.com/fhir/StructureDefinition/diagnosticreport-314e
 == fsh-generated\resources\StructureDefinition-diagnosticreport-lab-314e.json ==

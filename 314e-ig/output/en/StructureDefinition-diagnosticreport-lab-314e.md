@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-diagnosticreport-
   "name" : "DiagnosticReportLab314e",
   "title" : "314e DiagnosticReport Laboratory Results",
   "status" : "active",
-  "date" : "2026-06-18T14:15:04+05:30",
+  "date" : "2026-06-18T16:14:31+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -159,6 +159,23 @@ Other representations of profile: [CSV](../StructureDefinition-diagnosticreport-
         "code" : "CodeableConcept",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
       }]
+    },
+    {
+      "id" : "DiagnosticReport.category:subCategory",
+      "path" : "DiagnosticReport.category",
+      "sliceName" : "subCategory",
+      "short" : "Optional detailed subcategory",
+      "definition" : "More granular operational sub-classification of the\ndiagnostic report.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e"
+      }
     },
     {
       "id" : "DiagnosticReport.code",

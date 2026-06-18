@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-observation-314e.
   "name" : "Observation314e",
   "title" : "314e Observation",
   "status" : "active",
-  "date" : "2026-06-18T14:15:04+05:30",
+  "date" : "2026-06-18T16:14:31+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -171,6 +171,8 @@ Other representations of profile: [CSV](../StructureDefinition-observation-314e.
     {
       "id" : "Observation.category",
       "path" : "Observation.category",
+      "short" : "Operational procedure/service categories",
+      "definition" : "Broad and optional subcategory classifications used\nfor workflow, routing, analytics, and operational\ngrouping of Observation resources.",
       "type" : [{
         "code" : "CodeableConcept",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
@@ -184,6 +186,40 @@ Other representations of profile: [CSV](../StructureDefinition-observation-314e.
         "code" : "CodeableConcept",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
       }]
+    },
+    {
+      "id" : "Observation.category:broadCategory",
+      "path" : "Observation.category",
+      "sliceName" : "broadCategory",
+      "short" : "Required broad procedure/service category",
+      "definition" : "Top-level operational classification of the\nobservation.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://314e.com/fhir/ValueSet/procedure-category-broad-314e"
+      }
+    },
+    {
+      "id" : "Observation.category:subCategory",
+      "path" : "Observation.category",
+      "sliceName" : "subCategory",
+      "short" : "Optional detailed subcategory",
+      "definition" : "More granular operational sub-classification of the\nobservation.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept",
+        "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e"
+      }
     },
     {
       "id" : "Observation.code",

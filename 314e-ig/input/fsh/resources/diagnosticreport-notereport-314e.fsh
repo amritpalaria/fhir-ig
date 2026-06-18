@@ -24,12 +24,28 @@ where applicable.
     "Supplementary information for this resource"
 
 // ======================================================
+// CATEGORY
+// ======================================================
+
+* category contains subCategory 0..1
+* category[subCategory] from ProcedureCategorySubcategory314eVS (required)
+
+* category[subCategory] ^short =
+    "Optional detailed subcategory"
+
+* category[subCategory] ^definition = """
+More granular operational sub-classification of the
+diagnostic report.
+"""
+
+* category only CodeableConcept314e
+
+// ======================================================
 // 314e DATATYPE CONSTRAINTS
 // ======================================================
 
 * identifier only Identifier314e
 * basedOn only Reference314e
-* category only CodeableConcept314e
 * code only CodeableConcept314e
 * subject only Reference314e
 * encounter only Reference314e

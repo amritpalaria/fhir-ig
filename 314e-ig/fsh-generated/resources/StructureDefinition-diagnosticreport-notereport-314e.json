@@ -131,6 +131,27 @@
         ]
       },
       {
+        "id": "DiagnosticReport.category:subCategory",
+        "path": "DiagnosticReport.category",
+        "sliceName": "subCategory",
+        "short": "Optional detailed subcategory",
+        "definition": "More granular operational sub-classification of the\ndiagnostic report.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e"
+        }
+      },
+      {
         "id": "DiagnosticReport.code",
         "path": "DiagnosticReport.code",
         "type": [
