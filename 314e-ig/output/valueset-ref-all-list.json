@@ -21,10 +21,10 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/procedure-category-314e"],
     "uses" : {
     },
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/observation-tag",
@@ -69,8 +69,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-time-accuracy.html" : "Time Accuracy",
-    "StructureDefinition-datetime-accuracy.html" : "Date/Time Accuracy"
+    "StructureDefinition-datetime-accuracy.html" : "Date/Time Accuracy",
+    "StructureDefinition-time-accuracy.html" : "Time Accuracy"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/time-precision-units",
@@ -82,8 +82,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-time-precision.html" : "Time Precision",
-    "StructureDefinition-datetime-precision.html" : "Date/Time Precision"
+    "StructureDefinition-datetime-precision.html" : "Date/Time Precision",
+    "StructureDefinition-time-precision.html" : "Time Precision"
   },
   {
     "url" : "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs",
@@ -122,9 +122,9 @@
     "uses" : {
     },
     "StructureDefinition-medicationadministration-314e.html" : "314e MedicationAdministration",
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
+    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
     "StructureDefinition-medication-314e.html" : "314e Medication",
-    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest"
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   },
   {
     "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
@@ -380,9 +380,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.95"],
     "uses" : {
     },
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
-    "StructureDefinition-dosage-314e.html" : "314e Dosage"
+    "StructureDefinition-dosage-314e.html" : "314e Dosage",
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/address-type",
@@ -396,11 +396,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.69"],
     "uses" : {
     },
-    "StructureDefinition-patient-314e.html" : "314e Patient",
-    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
-    "StructureDefinition-address-314e.html" : "314e Address",
     "StructureDefinition-location-314e.html" : "314e Location",
-    "StructureDefinition-organization-314e.html" : "314e Organization"
+    "StructureDefinition-organization-314e.html" : "314e Organization",
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-address-314e.html" : "314e Address",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -414,11 +414,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.67"],
     "uses" : {
     },
-    "StructureDefinition-patient-314e.html" : "314e Patient",
-    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
-    "StructureDefinition-address-314e.html" : "314e Address",
     "StructureDefinition-location-314e.html" : "314e Location",
-    "StructureDefinition-organization-314e.html" : "314e Organization"
+    "StructureDefinition-organization-314e.html" : "314e Organization",
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-address-314e.html" : "314e Address",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
@@ -433,9 +433,9 @@
     "uses" : {
     },
     "StructureDefinition-medicationadministration-314e.html" : "314e MedicationAdministration",
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
-    "StructureDefinition-dosage-314e.html" : "314e Dosage"
+    "StructureDefinition-dosage-314e.html" : "314e Dosage",
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -580,9 +580,9 @@
     "uses" : {
     },
     "StructureDefinition-medicationadministration-314e.html" : "314e MedicationAdministration",
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
-    "StructureDefinition-dosage-314e.html" : "314e Dosage"
+    "StructureDefinition-dosage-314e.html" : "314e Dosage",
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/asset-availability",
@@ -610,19 +610,19 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-specimen-314e.html" : "314e Specimen",
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-media-314e.html" : "314e Media",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-condition-314e.html" : "314e Condition",
     "StructureDefinition-procedure-314e.html" : "314e Procedure",
     "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
-    "StructureDefinition-media-314e.html" : "314e Media",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-condition-314e.html" : "314e Condition",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
     "StructureDefinition-imagingstudy-314e.html" : "314e ImagingStudy",
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
     "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
-    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-specimen-314e.html" : "314e Specimen",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/bodysite-laterality",
@@ -664,11 +664,11 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
     "uses" : {
     },
-    "StructureDefinition-healthcareservice-314e.html" : "314e HealthcareService",
-    "StructureDefinition-schedule-314e.html" : "314e Schedule",
-    "StructureDefinition-slot-314e.html" : "314e Slot",
     "StructureDefinition-appointment-314e.html" : "314e Appointment",
-    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference",
+    "StructureDefinition-slot-314e.html" : "314e Slot",
+    "StructureDefinition-healthcareservice-314e.html" : "314e HealthcareService",
+    "StructureDefinition-schedule-314e.html" : "314e Schedule"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
@@ -794,13 +794,13 @@
     "sources" : ["2.16.840.1.113883.4.642.3.232"],
     "uses" : {
     },
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
     "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance",
     "StructureDefinition-goal-314e.html" : "314e Goal",
-    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
     "StructureDefinition-careplan-314e.html" : "314e CarePlan",
-    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
-    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report",
-    "StructureDefinition-careteam-314e.html" : "314e CareTeam"
+    "StructureDefinition-careteam-314e.html" : "314e CareTeam",
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/clinicalimpression-prognosis",
@@ -842,13 +842,13 @@
     "sources" : ["2.16.840.1.113883.4.642.3.79"],
     "uses" : {
     },
-    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
-    "StructureDefinition-encounter-314e.html" : "314e Encounter",
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
     "StructureDefinition-meta-314e.html" : "314e Meta",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
     "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
     "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
   },
   {
@@ -892,8 +892,8 @@
     "uses" : {
     },
     "StructureDefinition-condition-314e.html" : "314e Condition",
-    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
-    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
@@ -908,8 +908,8 @@
     "uses" : {
     },
     "StructureDefinition-condition-314e.html" : "314e Condition",
-    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
-    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -923,10 +923,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.161"],
     "uses" : {
     },
-    "StructureDefinition-procedure-314e.html" : "314e Procedure",
     "StructureDefinition-condition-314e.html" : "314e Condition",
-    "StructureDefinition-clinicalimpression-314e.html" : "314e ClinicalImpression",
-    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest"
+    "StructureDefinition-procedure-314e.html" : "314e Procedure",
+    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest",
+    "StructureDefinition-clinicalimpression-314e.html" : "314e ClinicalImpression"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -941,8 +941,8 @@
     "uses" : {
     },
     "StructureDefinition-condition-314e.html" : "314e Condition",
-    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
-    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
@@ -957,8 +957,8 @@
     "uses" : {
     },
     "StructureDefinition-condition-314e.html" : "314e Condition",
-    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
-    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
@@ -973,8 +973,8 @@
     "uses" : {
     },
     "StructureDefinition-condition-314e.html" : "314e Condition",
-    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
-    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
@@ -989,8 +989,8 @@
     "uses" : {
     },
     "StructureDefinition-condition-314e.html" : "314e Condition",
-    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
-    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/consent-content-class",
@@ -1035,11 +1035,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.71"],
     "uses" : {
     },
-    "StructureDefinition-patient-314e.html" : "314e Patient",
-    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
-    "StructureDefinition-contactpoint-314e.html" : "314e ContactPoint",
     "StructureDefinition-practitionerrole-314e.html" : "314e PractitionerRole",
-    "StructureDefinition-organization-314e.html" : "314e Organization"
+    "StructureDefinition-contactpoint-314e.html" : "314e ContactPoint",
+    "StructureDefinition-organization-314e.html" : "314e Organization",
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -1053,11 +1053,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.73"],
     "uses" : {
     },
-    "StructureDefinition-patient-314e.html" : "314e Patient",
-    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
-    "StructureDefinition-contactpoint-314e.html" : "314e ContactPoint",
     "StructureDefinition-practitionerrole-314e.html" : "314e PractitionerRole",
-    "StructureDefinition-organization-314e.html" : "314e Organization"
+    "StructureDefinition-contactpoint-314e.html" : "314e ContactPoint",
+    "StructureDefinition-organization-314e.html" : "314e Organization",
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -1491,11 +1491,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.5"],
     "uses" : {
     },
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -1509,11 +1509,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.512"],
     "uses" : {
     },
-    "StructureDefinition-healthcareservice-314e.html" : "314e HealthcareService",
-    "StructureDefinition-timing-314e.html" : "314e Timing",
+    "StructureDefinition-location-314e.html" : "314e Location",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
     "StructureDefinition-practitionerrole-314e.html" : "314e PractitionerRole",
-    "StructureDefinition-location-314e.html" : "314e Location"
+    "StructureDefinition-timing-314e.html" : "314e Timing",
+    "StructureDefinition-healthcareservice-314e.html" : "314e HealthcareService"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/detectedissue-category",
@@ -1757,9 +1757,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.981"],
     "uses" : {
     },
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
-    "StructureDefinition-dosage-314e.html" : "314e Dosage"
+    "StructureDefinition-dosage-314e.html" : "314e Dosage",
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
@@ -1817,8 +1817,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.250"],
     "uses" : {
     },
-    "StructureDefinition-encounter-314e.html" : "314e Encounter",
-    "StructureDefinition-appointment-314e.html" : "314e Appointment"
+    "StructureDefinition-appointment-314e.html" : "314e Appointment",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -1832,8 +1832,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.261"],
     "uses" : {
     },
-    "StructureDefinition-encounter-314e.html" : "314e Encounter",
-    "StructureDefinition-appointment-314e.html" : "314e Appointment"
+    "StructureDefinition-appointment-314e.html" : "314e Appointment",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -2019,8 +2019,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.75"],
     "uses" : {
     },
-    "StructureDefinition-timing-314e.html" : "314e Timing",
-    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest"
+    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
+    "StructureDefinition-timing-314e.html" : "314e Timing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/fm-status",
@@ -2147,17 +2147,17 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-encounter-314e.html" : "314e Encounter",
-    "StructureDefinition-patient-314e.html" : "314e Patient",
-    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-coverage-314e.html" : "314e Coverage",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-coverage-314e.html" : "314e Coverage",
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-identifier-314e.html" : "314e Identifier",
     "StructureDefinition-practitionerrole-314e.html" : "314e PractitionerRole",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-identifier-314e.html" : "314e Identifier",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -2171,17 +2171,17 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-encounter-314e.html" : "314e Encounter",
-    "StructureDefinition-patient-314e.html" : "314e Patient",
-    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-coverage-314e.html" : "314e Coverage",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-coverage-314e.html" : "314e Coverage",
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-identifier-314e.html" : "314e Identifier",
     "StructureDefinition-practitionerrole-314e.html" : "314e PractitionerRole",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-identifier-314e.html" : "314e Identifier",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/imagingstudy-status",
@@ -2490,64 +2490,64 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-group-314e.html" : "314e Group",
-    "StructureDefinition-specimen-314e.html" : "314e Specimen",
-    "StructureDefinition-goal-314e.html" : "314e Goal",
-    "StructureDefinition-careteam-314e.html" : "314e CareTeam",
-    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference",
-    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
-    "StructureDefinition-organization-314e.html" : "314e Organization",
-    "StructureDefinition-relatedperson-314e.html" : "314e RelatedPerson",
-    "StructureDefinition-patient-314e.html" : "314e Patient",
-    "StructureDefinition-slot-314e.html" : "314e Slot",
-    "StructureDefinition-coverage-314e.html" : "314e Coverage",
-    "StructureDefinition-requestgroup-314e.html" : "314e RequestGroup",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-attachment-314e.html" : "314e Attachment",
-    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report",
-    "StructureDefinition-practitionerrole-314e.html" : "314e PractitionerRole",
     "StructureDefinition-account-314e.html" : "314e Account",
-    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest",
-    "StructureDefinition-location-314e.html" : "314e Location",
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
+    "StructureDefinition-medicationadministration-314e.html" : "314e MedicationAdministration",
+    "StructureDefinition-practitionerrole-314e.html" : "314e PractitionerRole",
+    "StructureDefinition-task-314e.html" : "314e Task",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
     "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
     "StructureDefinition-healthcareservice-314e.html" : "314e HealthcareService",
-    "StructureDefinition-nutritionorder-314e.html" : "314e NutritionOrder",
-    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
-    "StructureDefinition-immunization-314e.html" : "314e Immunization",
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report",
     "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-questionnaireresponse-314e.html" : "314e QuestionnaireResponse",
-    "StructureDefinition-appointment-314e.html" : "314e Appointment",
-    "StructureDefinition-clinicalimpression-314e.html" : "314e ClinicalImpression",
-    "StructureDefinition-media-314e.html" : "314e Media",
-    "StructureDefinition-detectedissue-314e.html" : "314e DetectedIssue",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
     "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance",
-    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
-    "StructureDefinition-encounter-314e.html" : "314e Encounter",
-    "StructureDefinition-medicationadministration-314e.html" : "314e MedicationAdministration",
-    "StructureDefinition-contract-314e.html" : "314e Contract",
-    "StructureDefinition-molecularsequence-314e.html" : "314e MolecularSequence",
-    "StructureDefinition-medication-314e.html" : "314e Medication",
-    "StructureDefinition-communicationrequest-314e.html" : "314e CommunicationRequest",
-    "StructureDefinition-endpoint-314e.html" : "314e Endpoint",
-    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
-    "StructureDefinition-condition-314e.html" : "314e Condition",
-    "StructureDefinition-task-314e.html" : "314e Task",
-    "StructureDefinition-visionprescription-314e.html" : "314e VisionPrescription",
-    "StructureDefinition-schedule-314e.html" : "314e Schedule",
-    "StructureDefinition-substance-314e.html" : "314e Substance",
-    "StructureDefinition-procedure-314e.html" : "314e Procedure",
-    "StructureDefinition-immunizationrecommendation-314e.html" : "314e ImmunizationRecommendation",
-    "StructureDefinition-immunizationevaluation-314e.html" : "314e ImmunizationEvaluation",
-    "StructureDefinition-device-314e.html" : "314e Device",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-attachment-314e.html" : "314e Attachment",
     "StructureDefinition-careplan-314e.html" : "314e CarePlan",
-    "StructureDefinition-episodeofcare-314e.html" : "314e Episode Of Care",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-appointment-314e.html" : "314e Appointment",
+    "StructureDefinition-immunizationevaluation-314e.html" : "314e ImmunizationEvaluation",
+    "StructureDefinition-media-314e.html" : "314e Media",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
+    "StructureDefinition-coverage-314e.html" : "314e Coverage",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
+    "StructureDefinition-condition-314e.html" : "314e Condition",
+    "StructureDefinition-communicationrequest-314e.html" : "314e CommunicationRequest",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-medication-314e.html" : "314e Medication",
+    "StructureDefinition-location-314e.html" : "314e Location",
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-detectedissue-314e.html" : "314e DetectedIssue",
+    "StructureDefinition-goal-314e.html" : "314e Goal",
+    "StructureDefinition-immunization-314e.html" : "314e Immunization",
+    "StructureDefinition-molecularsequence-314e.html" : "314e MolecularSequence",
+    "StructureDefinition-specimen-314e.html" : "314e Specimen",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
+    "StructureDefinition-immunizationrecommendation-314e.html" : "314e ImmunizationRecommendation",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-visionprescription-314e.html" : "314e VisionPrescription",
+    "StructureDefinition-substance-314e.html" : "314e Substance",
+    "StructureDefinition-requestgroup-314e.html" : "314e RequestGroup",
+    "StructureDefinition-endpoint-314e.html" : "314e Endpoint",
+    "StructureDefinition-relatedperson-314e.html" : "314e RelatedPerson",
+    "StructureDefinition-slot-314e.html" : "314e Slot",
+    "StructureDefinition-clinicalimpression-314e.html" : "314e ClinicalImpression",
+    "StructureDefinition-observation-314e.html" : "314e Observation",
+    "StructureDefinition-careteam-314e.html" : "314e CareTeam",
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference",
+    "StructureDefinition-procedure-314e.html" : "314e Procedure",
+    "StructureDefinition-questionnaireresponse-314e.html" : "314e QuestionnaireResponse",
+    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest",
     "StructureDefinition-imagingstudy-314e.html" : "314e ImagingStudy",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-nutritionorder-314e.html" : "314e NutritionOrder",
+    "StructureDefinition-schedule-314e.html" : "314e Schedule",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-organization-314e.html" : "314e Organization",
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-contract-314e.html" : "314e Contract",
+    "StructureDefinition-group-314e.html" : "314e Group",
+    "StructureDefinition-device-314e.html" : "314e Device",
+    "StructureDefinition-episodeofcare-314e.html" : "314e Episode Of Care"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -2589,8 +2589,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.328"],
     "uses" : {
     },
-    "StructureDefinition-encounter-314e.html" : "314e Encounter",
-    "StructureDefinition-location-314e.html" : "314e Location"
+    "StructureDefinition-location-314e.html" : "314e Location",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -2620,8 +2620,8 @@
     },
     "StructureDefinition-detectedissue-314e.html" : "314e DetectedIssue",
     "StructureDefinition-condition-314e.html" : "314e Condition",
-    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
-    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -2734,10 +2734,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.96"],
     "uses" : {
     },
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
-    "StructureDefinition-dosage-314e.html" : "314e Dosage"
+    "StructureDefinition-dosage-314e.html" : "314e Dosage",
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
@@ -2919,10 +2919,13 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1024"],
     "uses" : {
     },
+    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference",
     "StructureDefinition-signature-314e.html" : "314e Signature",
-    "StructureDefinition-endpoint-314e.html" : "314e Endpoint",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
     "StructureDefinition-attachment-314e.html" : "314e Attachment",
-    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+    "StructureDefinition-endpoint-314e.html" : "314e Endpoint",
+    "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/modified-foodtype",
@@ -2980,11 +2983,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.403"],
     "uses" : {
     },
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -2998,12 +3001,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.396"],
     "uses" : {
     },
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
     "StructureDefinition-goal-314e.html" : "314e Goal",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -3017,11 +3020,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.399"],
     "uses" : {
     },
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -3035,11 +3038,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.395"],
     "uses" : {
     },
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -3053,12 +3056,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.400"],
     "uses" : {
     },
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
     "StructureDefinition-detectedissue-314e.html" : "314e DetectedIssue",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -3157,8 +3160,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.433"],
     "uses" : {
     },
-    "StructureDefinition-procedure-314e.html" : "314e Procedure",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
+    "StructureDefinition-procedure-314e.html" : "314e Procedure",
     "StructureDefinition-task-314e.html" : "314e Task"
   },
   {
@@ -3314,10 +3317,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.59"],
     "uses" : {
     },
-    "StructureDefinition-simplequantity-314e.html" : "314e SimpleQuantity",
+    "StructureDefinition-age-314e.html" : "314e Age",
     "StructureDefinition-duration-314e.html" : "314e Duration",
-    "StructureDefinition-quantity-314e.html" : "314e Quantity",
-    "StructureDefinition-age-314e.html" : "314e Age"
+    "StructureDefinition-simplequantity-314e.html" : "314e SimpleQuantity",
+    "StructureDefinition-quantity-314e.html" : "314e Quantity"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers",
@@ -3402,11 +3405,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.407"],
     "uses" : {
     },
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -3420,11 +3423,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.397"],
     "uses" : {
     },
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
     "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
     "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/related-artifact-type",
@@ -3495,10 +3498,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.113"],
     "uses" : {
     },
-    "StructureDefinition-nutritionorder-314e.html" : "314e NutritionOrder",
-    "StructureDefinition-requestgroup-314e.html" : "314e RequestGroup",
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
-    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest"
+    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest",
+    "StructureDefinition-requestgroup-314e.html" : "314e RequestGroup",
+    "StructureDefinition-nutritionorder-314e.html" : "314e NutritionOrder"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -3512,12 +3515,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.115"],
     "uses" : {
     },
-    "StructureDefinition-communicationrequest-314e.html" : "314e CommunicationRequest",
-    "StructureDefinition-requestgroup-314e.html" : "314e RequestGroup",
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
     "StructureDefinition-task-314e.html" : "314e Task",
-    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest"
+    "StructureDefinition-communicationrequest-314e.html" : "314e CommunicationRequest",
+    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest",
+    "StructureDefinition-requestgroup-314e.html" : "314e RequestGroup"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -3531,12 +3534,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.111"],
     "uses" : {
     },
-    "StructureDefinition-nutritionorder-314e.html" : "314e NutritionOrder",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
     "StructureDefinition-communicationrequest-314e.html" : "314e CommunicationRequest",
     "StructureDefinition-careplan-314e.html" : "314e CarePlan",
+    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest",
     "StructureDefinition-requestgroup-314e.html" : "314e RequestGroup",
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
-    "StructureDefinition-devicerequest-314e.html" : "314e DeviceRequest"
+    "StructureDefinition-nutritionorder-314e.html" : "314e NutritionOrder"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -3550,8 +3553,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-reference-314e.html" : "314e Reference",
-    "StructureDefinition-documentreference-314e.html" : "314e DocumentReference"
+    "StructureDefinition-reference-314e.html" : "314e Reference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -3565,11 +3567,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.98"],
     "uses" : {
     },
-    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance",
     "StructureDefinition-medicationadministration-314e.html" : "314e MedicationAdministration",
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
-    "StructureDefinition-dosage-314e.html" : "314e Dosage"
+    "StructureDefinition-allergyintolerance-314e.html" : "314e AllergyIntolerance",
+    "StructureDefinition-dosage-314e.html" : "314e Dosage",
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -3587,14 +3589,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
-    "StructureDefinition-encounter-314e.html" : "314e Encounter",
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
-    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
     "StructureDefinition-documentreference-314e.html" : "314e DocumentReference",
     "StructureDefinition-meta-314e.html" : "314e Meta",
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
     "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
     "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
   },
   {
@@ -3681,10 +3683,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.516"],
     "uses" : {
     },
-    "StructureDefinition-healthcareservice-314e.html" : "314e HealthcareService",
-    "StructureDefinition-schedule-314e.html" : "314e Schedule",
+    "StructureDefinition-appointment-314e.html" : "314e Appointment",
     "StructureDefinition-slot-314e.html" : "314e Slot",
-    "StructureDefinition-appointment-314e.html" : "314e Appointment"
+    "StructureDefinition-healthcareservice-314e.html" : "314e HealthcareService",
+    "StructureDefinition-schedule-314e.html" : "314e Schedule"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/service-provision-conditions",
@@ -3726,11 +3728,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.518"],
     "uses" : {
     },
-    "StructureDefinition-healthcareservice-314e.html" : "314e HealthcareService",
-    "StructureDefinition-schedule-314e.html" : "314e Schedule",
-    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-appointment-314e.html" : "314e Appointment",
     "StructureDefinition-slot-314e.html" : "314e Slot",
-    "StructureDefinition-appointment-314e.html" : "314e Appointment"
+    "StructureDefinition-encounter-314e.html" : "314e Encounter",
+    "StructureDefinition-healthcareservice-314e.html" : "314e HealthcareService",
+    "StructureDefinition-schedule-314e.html" : "314e Schedule"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
@@ -4026,8 +4028,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.78"],
     "uses" : {
     },
-    "StructureDefinition-timing-314e.html" : "314e Timing",
-    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest"
+    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
+    "StructureDefinition-timing-314e.html" : "314e Timing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
@@ -4039,8 +4041,8 @@
     "systems" : ["http://unitsofmeasure.org"],
     "uses" : {
     },
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
-    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest"
+    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/udi-entry-type",
@@ -4068,8 +4070,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.77"],
     "uses" : {
     },
-    "StructureDefinition-timing-314e.html" : "314e Timing",
-    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest"
+    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
+    "StructureDefinition-timing-314e.html" : "314e Timing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/vaccine-code",
@@ -4153,10 +4155,10 @@
     "sources" : ["2.16.840.1.113883.4.642.40.2.48.6"],
     "uses" : {
     },
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code",
@@ -4173,10 +4175,10 @@
     "uses" : {
     },
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
-    "StructureDefinition-procedure-314e.html" : "314e Procedure",
     "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
-    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis",
-    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns"
+    "StructureDefinition-procedure-314e.html" : "314e Procedure",
+    "StructureDefinition-condition-problem-healthconcern-314e.html" : "314e Condition Problems Health Concerns",
+    "StructureDefinition-condition-diagnosis-314e.html" : "314e Condition Encounter Diagnosis"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-category",
@@ -4276,10 +4278,10 @@
     "uses" : {
     },
     "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
-    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
-    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation",
     "StructureDefinition-observation-antimicrobial-susceptibility-314e.html" : "314e Antimicrobial Susceptibility Observation",
-    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation"
+    "StructureDefinition-observation-microbiology-314e.html" : "314e Microbiology Observation",
+    "StructureDefinition-observation-microorganism-314e.html" : "314e Microorganism Observation",
+    "StructureDefinition-observation-lab-general-314e.html" : "314e General Laboratory Observation"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status",
@@ -4386,10 +4388,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.40"],
     "uses" : {
     },
-    "StructureDefinition-patient-314e.html" : "314e Patient",
-    "StructureDefinition-practitioner-314e.html" : "314e Practitioner",
     "StructureDefinition-location-314e.html" : "314e Location",
-    "StructureDefinition-organization-314e.html" : "314e Organization"
+    "StructureDefinition-organization-314e.html" : "314e Organization",
+    "StructureDefinition-patient-314e.html" : "314e Patient",
+    "StructureDefinition-practitioner-314e.html" : "314e Practitioner"
   },
   {
     "url" : "http://loinc.org/vs/LL379-9|4.0.1",
@@ -4455,8 +4457,8 @@
     "sources" : ["2.16.840.1.113883.21.181"],
     "uses" : {
     },
-    "StructureDefinition-slot-314e.html" : "314e Slot",
-    "StructureDefinition-appointment-314e.html" : "314e Appointment"
+    "StructureDefinition-appointment-314e.html" : "314e Appointment",
+    "StructureDefinition-slot-314e.html" : "314e Slot"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
@@ -4604,8 +4606,8 @@
     "sources" : ["2.16.840.1.113883.1.11.16621"],
     "uses" : {
     },
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
-    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest"
+    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes",
@@ -4662,8 +4664,8 @@
     "sources" : ["2.16.840.1.113883.1.11.17660"],
     "uses" : {
     },
-    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
-    "StructureDefinition-location-314e.html" : "314e Location"
+    "StructureDefinition-location-314e.html" : "314e Location",
+    "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
@@ -4677,7 +4679,7 @@
     "sources" : ["2.16.840.1.113883.1.11.19377"],
     "uses" : {
     },
-    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense",
-    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest"
+    "StructureDefinition-medicationrequest-314e.html" : "314e MedicationRequest",
+    "StructureDefinition-medicationdispense-314e.html" : "314e MedicationDispense"
   }]
 }

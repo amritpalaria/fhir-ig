@@ -14,7 +14,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -34,7 +34,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.1.0"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",
@@ -1842,7 +1842,7 @@
         "reference" : "StructureDefinition/carePlan-activity-targetDateTime"
       },
       "name" : "Care Plan Activity Target Date Time",
-      "description" : "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nStandard FHIR CarePlan.activity has no dedicated target date field separate\nfrom scheduledTiming or scheduledPeriod.",
+      "description" : "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nNote that the targetDateTime is separate from CarePlan.activity.scheduled[x].",
       "exampleBoolean" : false
     },
     {
@@ -1899,18 +1899,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/documentReference-author-dictationDateTime"
-      },
-      "name" : "Document Reference Author Dictation Date Time",
-      "description" : "Applied to the author element of a DocumentReference resource. Captures\nthe exact date and time when the author dictated the document.\n\nThis information is not available in the standard FHIR DocumentReference\nresource.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/documentReference-context-cosigner"
       },
       "name" : "Document Reference Context Cosigner",
@@ -1926,7 +1914,7 @@
         "reference" : "StructureDefinition/documentReference-context-dictationDateTime"
       },
       "name" : "Document Reference Context Dictation Date Time",
-      "description" : "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.\n\nStandard FHIR DocumentReference context has no dictation timestamp field.",
+      "description" : "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.",
       "exampleBoolean" : false
     },
     {
@@ -1938,7 +1926,7 @@
         "reference" : "StructureDefinition/documentReference-context-reportDateTime"
       },
       "name" : "Document Reference Context Report Date Time",
-      "description" : "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time.\n\nStandard FHIR DocumentReference has no report release timestamp field.",
+      "description" : "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time.",
       "exampleBoolean" : false
     },
     {
@@ -2010,7 +1998,7 @@
         "reference" : "StructureDefinition/patient-affiliation"
       },
       "name" : "Patient Affiliation",
-      "description" : "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.\n\nStandard FHIR Patient has no affiliation field.",
+      "description" : "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.",
       "exampleBoolean" : false
     },
     {
@@ -2046,7 +2034,7 @@
         "reference" : "StructureDefinition/patient-pharmacies"
       },
       "name" : "Patient Pharmacies",
-      "description" : "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance. Standard FHIR Patient has no pharmacy preference field.",
+      "description" : "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance.",
       "exampleBoolean" : false
     },
     {

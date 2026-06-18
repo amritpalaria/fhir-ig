@@ -633,8 +633,7 @@ with the attachment.","","","","","","","","","",,"extensible","","http://314e.c
 Stores the target or goal date-time for completing that specific care plan
 activity.
 
-Standard FHIR CarePlan.activity has no dedicated target date field separate
-from scheduledTiming or scheduledPeriod.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+Note that the targetDateTime is separate from CarePlan.activity.scheduled[x].","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "carePlan-activity-targetDateTime","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -817,8 +816,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Stores the target or goal date-time for completing that specific care plan
 activity.
 
-Standard FHIR CarePlan.activity has no dedicated target date field separate
-from scheduledTiming or scheduledPeriod.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+Note that the targetDateTime is separate from CarePlan.activity.scheduled[x].","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "careplan-314e","CarePlan.activity.modifierExtension","CarePlan.activity.modifierExtension","","extensions
@@ -3636,8 +3634,111 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "diagnosticreport-314e","DiagnosticReport.conclusionCode","DiagnosticReport.conclusionCode","","","",0,*,"","","","CodeableConcept {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e]]} {[]}
 ","Codes for the clinical conclusion of test results","One or more codes that represent the summary conclusion (interpretation/impression) of the diagnostic report.","","","","","","","","","",,"example","Diagnosis codes provided as adjuncts to the report.","http://hl7.org/fhir/ValueSet/clinical-findings|4.0.1","",,,,"DiagnosticReport.conclusionCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"diagnosticreport-314e","DiagnosticReport.presentedForm","DiagnosticReport.presentedForm","","","",0,*,"","","","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
+"diagnosticreport-314e","DiagnosticReport.presentedForm","DiagnosticReport.presentedForm","","","",0,*,"","","","Attachment {[]} {[]}
+","Entire report as issued","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"","value:title}
+","",,"open","DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report","DiagnosticReport.presentedForm","report","","",0,*,"","","","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
 ","Entire report as issued","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"",,,,"DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.id","DiagnosticReport.presentedForm.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.extension","DiagnosticReport.presentedForm.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.extension:tag","DiagnosticReport.presentedForm.extension","tag","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-tag]]} {[]}
+","Semantic categorization tag associated with the attachment","A categorization or semantic tag associated with an Attachment.
+
+This extension allows multiple tags to be associated with an
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.extension:helperFile","DiagnosticReport.presentedForm.extension","helperFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-helperFile]]} {[]}
+","Helper file associated with the attachment","Provides the path or filename of an auxiliary/helper file required
+for interpretation, transformation, rendering, or processing of
+the attachment content.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.contentType","DiagnosticReport.presentedForm.contentType","","","",0,1,"","","Y","code {[]} {[]}
+","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.language","DiagnosticReport.presentedForm.language","","","",0,1,"","","Y","code {[]} {[]}
+","Human language of the content (BCP-47)","The human language of the content. The value can be any valid value according to BCP 47.","","Users need to be able to choose between the languages in a set of attachments.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""en-AU""/>","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"Attachment.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.data","DiagnosticReport.presentedForm.data","","","",0,0,"","","","base64Binary {[]} {[]}
+","Inline attachment data is prohibited","Inline binary data SHALL NOT be populated.
+
+Attachment content SHALL instead be persisted externally
+and referenced using Attachment.url.","The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON.","The data needs to able to be transmitted inline.","","","","","","","",,,,,"",,,,"Attachment.data",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.url","DiagnosticReport.presentedForm.url","","","",1,1,"","","Y","url {[]} {[]}
+","Object storage path or external attachment location","Reference/path to the externally stored attachment content. Inline binary data in 
+Attachment.data SHALL NOT be populated. Inline content SHALL instead be persisted 
+externally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.size","DiagnosticReport.presentedForm.size","","","",0,1,"","","Y","unsignedInt {[]} {[]}
+","Number of bytes of content (if url provided)","The number of bytes of data that make up this attachment (before base64 encoding, if that is done).","The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.","Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.","","","","","","","",,,,,"",,,,"Attachment.size",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.hash","DiagnosticReport.presentedForm.hash","","","",0,1,"","","Y","base64Binary {[]} {[]}
+","Hash of the data (sha-1, base64ed)","The calculated hash of the data using SHA-1. Represented using base64.","The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature.","Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version).","","","","","","","",,,,,"",,,,"Attachment.hash",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.title","DiagnosticReport.presentedForm.title","","","",1,1,"","","Y","string {[]} {[]}
+","Label to display in place of the data","A label or set of text to display in place of the data.","","Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Entire report as issued""/>","<valueString xmlns=""http://hl7.org/fhir"" value=""Official Corporate Logo""/>","","",,,,,"",,,,"Attachment.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:report.creation","DiagnosticReport.presentedForm.creation","","","",0,1,"","","Y","dateTime {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/datetime-314e]]} {[]}
+","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes","DiagnosticReport.presentedForm","notes","","",0,*,"","","","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
+","Annotation/ notes associated with the diagnostic report","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"",,,,"DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.id","DiagnosticReport.presentedForm.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.extension","DiagnosticReport.presentedForm.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.extension:tag","DiagnosticReport.presentedForm.extension","tag","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-tag]]} {[]}
+","Semantic categorization tag associated with the attachment","A categorization or semantic tag associated with an Attachment.
+
+This extension allows multiple tags to be associated with an
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.extension:helperFile","DiagnosticReport.presentedForm.extension","helperFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-helperFile]]} {[]}
+","Helper file associated with the attachment","Provides the path or filename of an auxiliary/helper file required
+for interpretation, transformation, rendering, or processing of
+the attachment content.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.contentType","DiagnosticReport.presentedForm.contentType","","","",0,1,"","","Y","code {[]} {[]}
+","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.language","DiagnosticReport.presentedForm.language","","","",0,1,"","","Y","code {[]} {[]}
+","Human language of the content (BCP-47)","The human language of the content. The value can be any valid value according to BCP 47.","","Users need to be able to choose between the languages in a set of attachments.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""en-AU""/>","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"Attachment.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.data","DiagnosticReport.presentedForm.data","","","",0,0,"","","","base64Binary {[]} {[]}
+","Inline attachment data is prohibited","Inline binary data SHALL NOT be populated.
+
+Attachment content SHALL instead be persisted externally
+and referenced using Attachment.url.","The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON.","The data needs to able to be transmitted inline.","","","","","","","",,,,,"",,,,"Attachment.data",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.url","DiagnosticReport.presentedForm.url","","","",1,1,"","","Y","url {[]} {[]}
+","Object storage path or external attachment location","Reference/path to the externally stored attachment content. Inline binary data in 
+Attachment.data SHALL NOT be populated. Inline content SHALL instead be persisted 
+externally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.size","DiagnosticReport.presentedForm.size","","","",0,1,"","","Y","unsignedInt {[]} {[]}
+","Number of bytes of content (if url provided)","The number of bytes of data that make up this attachment (before base64 encoding, if that is done).","The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.","Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.","","","","","","","",,,,,"",,,,"Attachment.size",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.hash","DiagnosticReport.presentedForm.hash","","","",0,1,"","","Y","base64Binary {[]} {[]}
+","Hash of the data (sha-1, base64ed)","The calculated hash of the data using SHA-1. Represented using base64.","The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature.","Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version).","","","","","","","",,,,,"",,,,"Attachment.hash",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.title","DiagnosticReport.presentedForm.title","","","",1,1,"","","Y","string {[]} {[]}
+","Label to display in place of the data","A label or set of text to display in place of the data.","","Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Annotation/ notes associated with the diagnostic report""/>","<valueString xmlns=""http://hl7.org/fhir"" value=""Official Corporate Logo""/>","","",,,,,"",,,,"Attachment.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-314e","DiagnosticReport.presentedForm:notes.creation","DiagnosticReport.presentedForm.creation","","","",0,1,"","","Y","dateTime {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/datetime-314e]]} {[]}
+","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "diagnosticreport-lab-314e","DiagnosticReport","DiagnosticReport","","Report
 TestResultResultsLabsLaboratoryLab ResultLab Report","",0,*,"","","","null {[]} {[]}
@@ -3799,8 +3900,111 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "diagnosticreport-lab-314e","DiagnosticReport.conclusionCode","DiagnosticReport.conclusionCode","","","",0,*,"","","","CodeableConcept {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e]]} {[]}
 ","Codes for the clinical conclusion of test results","One or more codes that represent the summary conclusion (interpretation/impression) of the diagnostic report.","","","","","","","","","",,"example","Diagnosis codes provided as adjuncts to the report.","http://hl7.org/fhir/ValueSet/clinical-findings","",,,,"DiagnosticReport.conclusionCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"diagnosticreport-lab-314e","DiagnosticReport.presentedForm","DiagnosticReport.presentedForm","","","",0,*,"","","","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm","DiagnosticReport.presentedForm","","","",0,*,"","","","Attachment {[]} {[]}
+","Entire report as issued","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"","value:title}
+","",,"open","DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report","DiagnosticReport.presentedForm","report","","",0,*,"","","","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
 ","Entire report as issued","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"",,,,"DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.id","DiagnosticReport.presentedForm.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.extension","DiagnosticReport.presentedForm.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.extension:tag","DiagnosticReport.presentedForm.extension","tag","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-tag]]} {[]}
+","Semantic categorization tag associated with the attachment","A categorization or semantic tag associated with an Attachment.
+
+This extension allows multiple tags to be associated with an
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.extension:helperFile","DiagnosticReport.presentedForm.extension","helperFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-helperFile]]} {[]}
+","Helper file associated with the attachment","Provides the path or filename of an auxiliary/helper file required
+for interpretation, transformation, rendering, or processing of
+the attachment content.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.contentType","DiagnosticReport.presentedForm.contentType","","","",0,1,"","","Y","code {[]} {[]}
+","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.language","DiagnosticReport.presentedForm.language","","","",0,1,"","","Y","code {[]} {[]}
+","Human language of the content (BCP-47)","The human language of the content. The value can be any valid value according to BCP 47.","","Users need to be able to choose between the languages in a set of attachments.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""en-AU""/>","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"Attachment.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.data","DiagnosticReport.presentedForm.data","","","",0,0,"","","","base64Binary {[]} {[]}
+","Inline attachment data is prohibited","Inline binary data SHALL NOT be populated.
+
+Attachment content SHALL instead be persisted externally
+and referenced using Attachment.url.","The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON.","The data needs to able to be transmitted inline.","","","","","","","",,,,,"",,,,"Attachment.data",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.url","DiagnosticReport.presentedForm.url","","","",1,1,"","","Y","url {[]} {[]}
+","Object storage path or external attachment location","Reference/path to the externally stored attachment content. Inline binary data in 
+Attachment.data SHALL NOT be populated. Inline content SHALL instead be persisted 
+externally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.size","DiagnosticReport.presentedForm.size","","","",0,1,"","","Y","unsignedInt {[]} {[]}
+","Number of bytes of content (if url provided)","The number of bytes of data that make up this attachment (before base64 encoding, if that is done).","The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.","Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.","","","","","","","",,,,,"",,,,"Attachment.size",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.hash","DiagnosticReport.presentedForm.hash","","","",0,1,"","","Y","base64Binary {[]} {[]}
+","Hash of the data (sha-1, base64ed)","The calculated hash of the data using SHA-1. Represented using base64.","The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature.","Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version).","","","","","","","",,,,,"",,,,"Attachment.hash",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.title","DiagnosticReport.presentedForm.title","","","",1,1,"","","Y","string {[]} {[]}
+","Label to display in place of the data","A label or set of text to display in place of the data.","","Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Entire report as issued""/>","<valueString xmlns=""http://hl7.org/fhir"" value=""Official Corporate Logo""/>","","",,,,,"",,,,"Attachment.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:report.creation","DiagnosticReport.presentedForm.creation","","","",0,1,"","","Y","dateTime {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/datetime-314e]]} {[]}
+","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes","DiagnosticReport.presentedForm","notes","","",0,*,"","","","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
+","Annotation/ notes associated with the diagnostic report","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"",,,,"DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.id","DiagnosticReport.presentedForm.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.extension","DiagnosticReport.presentedForm.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.extension:tag","DiagnosticReport.presentedForm.extension","tag","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-tag]]} {[]}
+","Semantic categorization tag associated with the attachment","A categorization or semantic tag associated with an Attachment.
+
+This extension allows multiple tags to be associated with an
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.extension:helperFile","DiagnosticReport.presentedForm.extension","helperFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-helperFile]]} {[]}
+","Helper file associated with the attachment","Provides the path or filename of an auxiliary/helper file required
+for interpretation, transformation, rendering, or processing of
+the attachment content.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.contentType","DiagnosticReport.presentedForm.contentType","","","",0,1,"","","Y","code {[]} {[]}
+","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.language","DiagnosticReport.presentedForm.language","","","",0,1,"","","Y","code {[]} {[]}
+","Human language of the content (BCP-47)","The human language of the content. The value can be any valid value according to BCP 47.","","Users need to be able to choose between the languages in a set of attachments.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""en-AU""/>","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"Attachment.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.data","DiagnosticReport.presentedForm.data","","","",0,0,"","","","base64Binary {[]} {[]}
+","Inline attachment data is prohibited","Inline binary data SHALL NOT be populated.
+
+Attachment content SHALL instead be persisted externally
+and referenced using Attachment.url.","The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON.","The data needs to able to be transmitted inline.","","","","","","","",,,,,"",,,,"Attachment.data",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.url","DiagnosticReport.presentedForm.url","","","",1,1,"","","Y","url {[]} {[]}
+","Object storage path or external attachment location","Reference/path to the externally stored attachment content. Inline binary data in 
+Attachment.data SHALL NOT be populated. Inline content SHALL instead be persisted 
+externally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.size","DiagnosticReport.presentedForm.size","","","",0,1,"","","Y","unsignedInt {[]} {[]}
+","Number of bytes of content (if url provided)","The number of bytes of data that make up this attachment (before base64 encoding, if that is done).","The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.","Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.","","","","","","","",,,,,"",,,,"Attachment.size",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.hash","DiagnosticReport.presentedForm.hash","","","",0,1,"","","Y","base64Binary {[]} {[]}
+","Hash of the data (sha-1, base64ed)","The calculated hash of the data using SHA-1. Represented using base64.","The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature.","Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version).","","","","","","","",,,,,"",,,,"Attachment.hash",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.title","DiagnosticReport.presentedForm.title","","","",1,1,"","","Y","string {[]} {[]}
+","Label to display in place of the data","A label or set of text to display in place of the data.","","Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Annotation/ notes associated with the diagnostic report""/>","<valueString xmlns=""http://hl7.org/fhir"" value=""Official Corporate Logo""/>","","",,,,,"",,,,"Attachment.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-lab-314e","DiagnosticReport.presentedForm:notes.creation","DiagnosticReport.presentedForm.creation","","","",0,1,"","","Y","dateTime {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/datetime-314e]]} {[]}
+","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "diagnosticreport-notereport-314e","DiagnosticReport","DiagnosticReport","","Report
 TestResultResultsLabsLaboratoryImaging ReportRadiology ReportClinical Test Report","",0,*,"","","","null {[]} {[]}
@@ -3929,28 +4133,111 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "diagnosticreport-notereport-314e","DiagnosticReport.conclusionCode","DiagnosticReport.conclusionCode","","","",0,*,"","","","CodeableConcept {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e]]} {[]}
 ","Codes for the clinical conclusion of test results","One or more codes that represent the summary conclusion (interpretation/impression) of the diagnostic report.","","","","","","","","","",,"example","Diagnosis codes provided as adjuncts to the report.","http://hl7.org/fhir/ValueSet/clinical-findings","",,,,"DiagnosticReport.conclusionCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm","DiagnosticReport.presentedForm","","","",0,*,"Y","","","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm","DiagnosticReport.presentedForm","","","",0,*,"Y","","","Attachment {[]} {[]}
+","Entire report as issued","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"","value:title}
+","",,"open","DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report","DiagnosticReport.presentedForm","report","","",0,*,"Y","","","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
 ","Entire report as issued","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"",,,,"DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"documentReference-author-dictationDateTime","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Document Reference Author Dictation Date Time","Applied to the author element of a DocumentReference resource. Captures
-the exact date and time when the author dictated the document.
-
-This information is not available in the standard FHIR DocumentReference
-resource.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"documentReference-author-dictationDateTime","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.id","DiagnosticReport.presentedForm.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"documentReference-author-dictationDateTime","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.extension","DiagnosticReport.presentedForm.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"documentReference-author-dictationDateTime","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://314e.com/fhir/StructureDefinition/documentReference-author-dictationDateTime""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"documentReference-author-dictationDateTime","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","dateTime {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/datetime-314e]]} {[]}
-","Date and time the author dictated the document","The exact date and time at which the document author dictated the content
-of this document.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.extension:tag","DiagnosticReport.presentedForm.extension","tag","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-tag]]} {[]}
+","Semantic categorization tag associated with the attachment","A categorization or semantic tag associated with an Attachment.
+
+This extension allows multiple tags to be associated with an
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.extension:helperFile","DiagnosticReport.presentedForm.extension","helperFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-helperFile]]} {[]}
+","Helper file associated with the attachment","Provides the path or filename of an auxiliary/helper file required
+for interpretation, transformation, rendering, or processing of
+the attachment content.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.contentType","DiagnosticReport.presentedForm.contentType","","","",0,1,"","","Y","code {[]} {[]}
+","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.language","DiagnosticReport.presentedForm.language","","","",0,1,"","","Y","code {[]} {[]}
+","Human language of the content (BCP-47)","The human language of the content. The value can be any valid value according to BCP 47.","","Users need to be able to choose between the languages in a set of attachments.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""en-AU""/>","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"Attachment.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.data","DiagnosticReport.presentedForm.data","","","",0,0,"","","","base64Binary {[]} {[]}
+","Inline attachment data is prohibited","Inline binary data SHALL NOT be populated.
+
+Attachment content SHALL instead be persisted externally
+and referenced using Attachment.url.","The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON.","The data needs to able to be transmitted inline.","","","","","","","",,,,,"",,,,"Attachment.data",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.url","DiagnosticReport.presentedForm.url","","","",1,1,"","","Y","url {[]} {[]}
+","Object storage path or external attachment location","Reference/path to the externally stored attachment content. Inline binary data in 
+Attachment.data SHALL NOT be populated. Inline content SHALL instead be persisted 
+externally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.size","DiagnosticReport.presentedForm.size","","","",0,1,"","","Y","unsignedInt {[]} {[]}
+","Number of bytes of content (if url provided)","The number of bytes of data that make up this attachment (before base64 encoding, if that is done).","The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.","Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.","","","","","","","",,,,,"",,,,"Attachment.size",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.hash","DiagnosticReport.presentedForm.hash","","","",0,1,"","","Y","base64Binary {[]} {[]}
+","Hash of the data (sha-1, base64ed)","The calculated hash of the data using SHA-1. Represented using base64.","The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature.","Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version).","","","","","","","",,,,,"",,,,"Attachment.hash",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.title","DiagnosticReport.presentedForm.title","","","",1,1,"","","Y","string {[]} {[]}
+","Label to display in place of the data","A label or set of text to display in place of the data.","","Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Entire report as issued""/>","<valueString xmlns=""http://hl7.org/fhir"" value=""Official Corporate Logo""/>","","",,,,,"",,,,"Attachment.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:report.creation","DiagnosticReport.presentedForm.creation","","","",0,1,"","","Y","dateTime {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/datetime-314e]]} {[]}
+","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes","DiagnosticReport.presentedForm","notes","","",0,*,"Y","","","Attachment {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-314e]]} {[]}
+","Annotation/ notes associated with the diagnostic report","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"",,,,"DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.id","DiagnosticReport.presentedForm.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.extension","DiagnosticReport.presentedForm.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.extension:tag","DiagnosticReport.presentedForm.extension","tag","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-tag]]} {[]}
+","Semantic categorization tag associated with the attachment","A categorization or semantic tag associated with an Attachment.
+
+This extension allows multiple tags to be associated with an
+Attachment for workflow, classification, indexing, retrieval,
+processing, or application behavior purposes.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.extension:helperFile","DiagnosticReport.presentedForm.extension","helperFile","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/attachment-helperFile]]} {[]}
+","Helper file associated with the attachment","Provides the path or filename of an auxiliary/helper file required
+for interpretation, transformation, rendering, or processing of
+the attachment content.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.contentType","DiagnosticReport.presentedForm.contentType","","","",0,1,"","","Y","code {[]} {[]}
+","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.language","DiagnosticReport.presentedForm.language","","","",0,1,"","","Y","code {[]} {[]}
+","Human language of the content (BCP-47)","The human language of the content. The value can be any valid value according to BCP 47.","","Users need to be able to choose between the languages in a set of attachments.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""en-AU""/>","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"Attachment.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.data","DiagnosticReport.presentedForm.data","","","",0,0,"","","","base64Binary {[]} {[]}
+","Inline attachment data is prohibited","Inline binary data SHALL NOT be populated.
+
+Attachment content SHALL instead be persisted externally
+and referenced using Attachment.url.","The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON.","The data needs to able to be transmitted inline.","","","","","","","",,,,,"",,,,"Attachment.data",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.url","DiagnosticReport.presentedForm.url","","","",1,1,"","","Y","url {[]} {[]}
+","Object storage path or external attachment location","Reference/path to the externally stored attachment content. Inline binary data in 
+Attachment.data SHALL NOT be populated. Inline content SHALL instead be persisted 
+externally, referenced using this url element, and tagged as 'inline-data-externalized-to-file'.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.size","DiagnosticReport.presentedForm.size","","","",0,1,"","","Y","unsignedInt {[]} {[]}
+","Number of bytes of content (if url provided)","The number of bytes of data that make up this attachment (before base64 encoding, if that is done).","The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.","Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.","","","","","","","",,,,,"",,,,"Attachment.size",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.hash","DiagnosticReport.presentedForm.hash","","","",0,1,"","","Y","base64Binary {[]} {[]}
+","Hash of the data (sha-1, base64ed)","The calculated hash of the data using SHA-1. Represented using base64.","The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature.","Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version).","","","","","","","",,,,,"",,,,"Attachment.hash",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.title","DiagnosticReport.presentedForm.title","","","",1,1,"","","Y","string {[]} {[]}
+","Label to display in place of the data","A label or set of text to display in place of the data.","","Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Annotation/ notes associated with the diagnostic report""/>","<valueString xmlns=""http://hl7.org/fhir"" value=""Official Corporate Logo""/>","","",,,,,"",,,,"Attachment.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"diagnosticreport-notereport-314e","DiagnosticReport.presentedForm:notes.creation","DiagnosticReport.presentedForm.creation","","","",0,1,"","","Y","dateTime {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/datetime-314e]]} {[]}
+","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "documentReference-context-cosigner","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Document Reference Context Cosigner","Applied to the context section of a DocumentReference resource. Captures the
@@ -3973,9 +4260,7 @@ this document alongside the primary author.","","","","","","","","","",,,,,"",,
 "documentReference-context-dictationDateTime","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Document Reference Context Dictation Date Time","Applied to the context section of a DocumentReference resource. Stores the
 date and time when the clinician dictated the document content — distinct
-from when it was authored, transcribed, or signed.
-
-Standard FHIR DocumentReference context has no dictation timestamp field.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+from when it was authored, transcribed, or signed.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "documentReference-context-dictationDateTime","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -3993,9 +4278,7 @@ distinct from authoring, transcription, or signing timestamps.","","","","","","
 "documentReference-context-reportDateTime","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Document Reference Context Report Date Time","Applied to the context section of a DocumentReference resource. Stores the
 date and time when the finalized report was made available or released —
-separate from dictation, transcription, or document creation time.
-
-Standard FHIR DocumentReference has no report release timestamp field.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+separate from dictation, transcription, or document creation time.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "documentReference-context-reportDateTime","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -4082,45 +4365,6 @@ This element is labeled as a modifier because the status contains the codes that
 "
 "documentreference-314e","DocumentReference.author","DocumentReference.author","","","",0,*,"Y","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner], CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization], CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient], CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole], CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
 ","Who and/or what authored the document","Identifies who is responsible for adding the information to the document.","Not necessarily who did the actual data entry (i.e. typist) or who was the source (informant).","","","","","","","","",,,,,"",,,,"DocumentReference.author",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"documentreference-314e","DocumentReference.author.id","DocumentReference.author.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"documentreference-314e","DocumentReference.author.extension","DocumentReference.author.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"documentreference-314e","DocumentReference.author.extension:context","DocumentReference.author.extension","context","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-context]]} {[]}
-","Semantic role or contextual meaning of the reference","Provides additional semantic qualification for the reference,
-including role, capacity, or contextual purpose.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"documentreference-314e","DocumentReference.author.extension:dictationDateTime","DocumentReference.author.extension","dictationDateTime","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/documentReference-author-dictationDateTime]]} {[]}
-","Date and time the author dictated the document","Applied to the author element of a DocumentReference resource. Captures
-the exact date and time when the author dictated the document.
-
-This information is not available in the standard FHIR DocumentReference
-resource.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"documentreference-314e","DocumentReference.author.reference","DocumentReference.author.reference","","","",0,1,"","","Y","string {[]} {[]}
-","Literal reference, Relative, internal or absolute URL","A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.","Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure ""/[type]/[id]"" then it should be assumed that the reference is to a FHIR RESTful server.","","","","","","","","",,,,,"",,,,"Reference.reference",0,1,"ref-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"documentreference-314e","DocumentReference.author.type","DocumentReference.author.type","","","",0,1,"","","Y","uri {[]} {[]}
-","Type the reference refers to (e.g. ""Patient"")","The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.
-
-The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. ""Patient"" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).","This element is used to indicate the type of  the target of the reference. This may be used which ever of the other elements are populated (or not). In some cases, the type of the target may be determined by inspection of the reference (e.g. a RESTful URL) or by resolving the target of the reference; if both the type and a reference is provided, the reference SHALL resolve to a resource of the same type as that specified.","","","","","","","","",,"extensible","Aa resource (or, for logical models, the URI of the logical model).","http://hl7.org/fhir/ValueSet/resource-types|4.0.1","",,,,"Reference.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"documentreference-314e","DocumentReference.author.identifier","DocumentReference.author.identifier","","","",0,1,"","","Y","Identifier {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/identifier-314e]]} {[]}
-","Logical reference, when literal reference is not known","An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.","When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. 
-
-When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference
-
-Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it.
-
-Reference is intended to point to a structure that can potentially be expressed as a FHIR resource, though there is no need for it to exist as an actual FHIR resource instance - except in as much as an application wishes to actual find the target of the reference. The content referred to be the identifier must meet the logical constraints implied by any limitations on what resource types are permitted for the reference.  For example, it would not be legitimate to send the identifier for a drug prescription if the type were Reference(Observation|DiagnosticReport).  One of the use-cases for Reference.identifier is the situation where no FHIR representation exists (where the type is Reference (Any).","","","","","","","","",,,,,"",,,,"Reference.identifier",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"documentreference-314e","DocumentReference.author.display","DocumentReference.author.display","","","",0,1,"","","Y","string {[]} {[]}
-","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "documentreference-314e","DocumentReference.authenticator","DocumentReference.authenticator","","","",0,1,"","","","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Who/what authenticated the document","Which person or organization authenticates that this document is valid.","Represents a participant within the author institution who has legally authenticated or attested the document. Legal authentication implies that a document has been signed manually or electronically by the legal Authenticator.","","","","","","","","",,,,,"",,,,"DocumentReference.authenticator",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -4223,9 +4467,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "documentreference-314e","DocumentReference.context.extension:contextDictationDateTime","DocumentReference.context.extension","contextDictationDateTime","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime]]} {[]}
 ","Date and time the document content was dictated","Applied to the context section of a DocumentReference resource. Stores the
 date and time when the clinician dictated the document content — distinct
-from when it was authored, transcribed, or signed.
-
-Standard FHIR DocumentReference context has no dictation timestamp field.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+from when it was authored, transcribed, or signed.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "documentreference-314e","DocumentReference.context.extension:cosigner","DocumentReference.context.extension","cosigner","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner]]} {[]}
@@ -4237,9 +4479,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "documentreference-314e","DocumentReference.context.extension:reportDateTime","DocumentReference.context.extension","reportDateTime","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime]]} {[]}
 ","Date and time the finalized report was released","Applied to the context section of a DocumentReference resource. Stores the
 date and time when the finalized report was made available or released —
-separate from dictation, transcription, or document creation time.
-
-Standard FHIR DocumentReference has no report release timestamp field.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+separate from dictation, transcription, or document creation time.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "documentreference-314e","DocumentReference.context.modifierExtension","DocumentReference.context.modifierExtension","","extensions
@@ -9972,9 +10212,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "patient-314e","Patient.extension:affiliation","Patient.extension","affiliation","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/patient-affiliation]]} {[]}
 ","Patient's institutional or organizational affiliation","Applied at the root level of the Patient resource. Stores the patient's
 institutional or organizational affiliation (e.g., hospital network,
-physician group) using an internal code.
-
-Standard FHIR Patient has no affiliation field.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+physician group) using an internal code.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "patient-314e","Patient.extension:mothersName","Patient.extension","mothersName","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/patient-mothersName]]} {[]}
 ","Mother's name of the patient","Applied directly at the root level of the Patient resource to store
@@ -9986,7 +10224,7 @@ preferred pharmacies linked to the patient as references to Organization
 resources.
 
 A patient can have multiple pharmacies — each gets its own extension
-instance. Standard FHIR Patient has no pharmacy preference field.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+instance.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "patient-314e","Patient.extension:employmentStatus","Patient.extension","employmentStatus","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/patient-employmentStatus]]} {[]}
 ","Patient's current employment status","Applied at the root level of the Patient resource. Stores the patient's
@@ -10269,9 +10507,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "patient-affiliation","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Patient Affiliation","Applied at the root level of the Patient resource. Stores the patient's
 institutional or organizational affiliation (e.g., hospital network,
-physician group) using an internal code.
-
-Standard FHIR Patient has no affiliation field.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+physician group) using an internal code.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "patient-affiliation","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -10328,7 +10564,7 @@ preferred pharmacies linked to the patient as references to Organization
 resources.
 
 A patient can have multiple pharmacies — each gets its own extension
-instance. Standard FHIR Patient has no pharmacy preference field.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+instance.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "patient-pharmacies","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}

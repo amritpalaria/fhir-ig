@@ -5,7 +5,7 @@
   "name": "PatientAffiliation",
   "title": "Patient Affiliation",
   "status": "active",
-  "description": "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.\n\nStandard FHIR Patient has no affiliation field.",
+  "description": "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -24,7 +24,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Patient Affiliation",
-        "definition": "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.\n\nStandard FHIR Patient has no affiliation field."
+        "definition": "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code."
       },
       {
         "id": "Extension.extension",

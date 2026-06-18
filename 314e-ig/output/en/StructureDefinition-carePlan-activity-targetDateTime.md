@@ -4,7 +4,7 @@
 
 Applied to an individual activity element within a CarePlan resource. Stores the target or goal date-time for completing that specific care plan activity.
 
-Standard FHIR CarePlan.activity has no dedicated target date field separate from scheduledTiming or scheduledPeriod.
+Note that the targetDateTime is separate from CarePlan.activity.scheduled[x].
 
 **Context of Use**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-carePlan-activity
   "name" : "CarePlanActivityTargetDateTime",
   "title" : "Care Plan Activity Target Date Time",
   "status" : "active",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-carePlan-activity
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nStandard FHIR CarePlan.activity has no dedicated target date field separate\nfrom scheduledTiming or scheduledPeriod.",
+  "description" : "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nNote that the targetDateTime is separate from CarePlan.activity.scheduled[x].",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -67,7 +67,7 @@ Other representations of profile: [CSV](../StructureDefinition-carePlan-activity
       "id" : "Extension",
       "path" : "Extension",
       "short" : "Care Plan Activity Target Date Time",
-      "definition" : "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nStandard FHIR CarePlan.activity has no dedicated target date field separate\nfrom scheduledTiming or scheduledPeriod."
+      "definition" : "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nNote that the targetDateTime is separate from CarePlan.activity.scheduled[x]."
     },
     {
       "id" : "Extension.extension",

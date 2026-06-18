@@ -4,7 +4,7 @@
 
 Applied at the root level of the Patient resource. Stores one or more preferred pharmacies linked to the patient as references to Organization resources.
 
-A patient can have multiple pharmacies — each gets its own extension instance. Standard FHIR Patient has no pharmacy preference field.
+A patient can have multiple pharmacies — each gets its own extension instance.
 
 **Context of Use**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-patient-pharmacie
   "name" : "PatientPharmacies",
   "title" : "Patient Pharmacies",
   "status" : "active",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-patient-pharmacie
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance. Standard FHIR Patient has no pharmacy preference field.",
+  "description" : "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -67,7 +67,7 @@ Other representations of profile: [CSV](../StructureDefinition-patient-pharmacie
       "id" : "Extension",
       "path" : "Extension",
       "short" : "Patient Pharmacies",
-      "definition" : "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance. Standard FHIR Patient has no pharmacy preference field."
+      "definition" : "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance."
     },
     {
       "id" : "Extension.extension",

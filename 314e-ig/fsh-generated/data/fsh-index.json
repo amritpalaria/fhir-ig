@@ -117,7 +117,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\careplan-activity-targetdatetime.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-carePlan-targetDateTime.json",
@@ -301,7 +301,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\diagnosticreport-314e.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 56
   },
   {
     "outputFile": "StructureDefinition-diagnosticreport-lab-314e.json",
@@ -309,7 +309,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\diagnosticreport-lab-314e.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-diagnosticreport-notereport-314e.json",
@@ -317,15 +317,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\diagnosticreport-notereport-314e.fsh",
     "startLine": 1,
-    "endLine": 46
-  },
-  {
-    "outputFile": "StructureDefinition-documentReference-author-dictationDateTime.json",
-    "fshName": "DocumentReferenceAuthorDictationDateTime",
-    "fshType": "Extension",
-    "fshFile": "extensions\\documentreference-author-dictationdatetime.fsh",
-    "startLine": 1,
-    "endLine": 21
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-documentReference-context-cosigner.json",
@@ -341,7 +333,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\documentreference-context-dictationdatetime.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-documentReference-context-reportDateTime.json",
@@ -349,7 +341,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\documentreference-context-reportdatetime.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-documentreference-314e.json",
@@ -357,7 +349,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\documentreference-314e.fsh",
     "startLine": 1,
-    "endLine": 81
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-dosage-314e.json",
@@ -637,7 +629,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\patient-affiliation.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-patient-employmentStatus.json",

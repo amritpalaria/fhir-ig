@@ -7,7 +7,7 @@ preferred pharmacies linked to the patient as references to Organization
 resources.
 
 A patient can have multiple pharmacies — each gets its own extension
-instance. Standard FHIR Patient has no pharmacy preference field.
+instance.
 """
 
 Context: Patient

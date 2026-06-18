@@ -13,16 +13,6 @@ where applicable.
 * ^status = #active
 
 // ======================================================
-// 314e EXTENSIONS — AUTHOR
-// ======================================================
-
-* author.extension contains
-    DocumentReferenceAuthorDictationDateTime named dictationDateTime 0..1
-
-* author.extension[dictationDateTime] ^short =
-    "Date and time the author dictated the document"
-
-// ======================================================
 // 314e EXTENSIONS — CONTEXT
 // ======================================================
 

@@ -5,7 +5,7 @@
   "name": "DocumentReferenceContextDictationDateTime",
   "title": "Document Reference Context Dictation Date Time",
   "status": "active",
-  "description": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.\n\nStandard FHIR DocumentReference context has no dictation timestamp field.",
+  "description": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -24,7 +24,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Document Reference Context Dictation Date Time",
-        "definition": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.\n\nStandard FHIR DocumentReference context has no dictation timestamp field."
+        "definition": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed."
       },
       {
         "id": "Extension.extension",

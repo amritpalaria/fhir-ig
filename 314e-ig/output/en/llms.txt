@@ -8,6 +8,15 @@
 * [Extensions](extensions.md)
 * [Resource Profiles](resource-profiles.md)
 * [Simple Datatypes](simple-datatypes.md)
+* [](StructureDefinition-documentReference-author-dictationDateTime-definitions.md)
+* [](StructureDefinition-documentReference-author-dictationDateTime-mappings.md)
+* [](StructureDefinition-documentReference-author-dictationDateTime-testing.md)
+* [](StructureDefinition-documentReference-author-dictationDateTime.ai.md)
+* [](StructureDefinition-documentReference-author-dictationDateTime.md)
+* [](StructureDefinition-documentReference-author-dictationDateTime.profile.history.md)
+* [](StructureDefinition-documentReference-author-dictationDateTime.profile.json.md)
+* [](StructureDefinition-documentReference-author-dictationDateTime.profile.ttl.md)
+* [](StructureDefinition-documentReference-author-dictationDateTime.profile.xml.md)
 * [Terminology](terminology.md)
 
 ## Resources
@@ -135,7 +144,6 @@
 * [Cosigner](StructureDefinition-cosigner.md)
 * [Date/Time Accuracy](StructureDefinition-datetime-accuracy.md)
 * [Date/Time Precision](StructureDefinition-datetime-precision.md)
-* [Document Reference Author Dictation Date Time](StructureDefinition-documentReference-author-dictationDateTime.md)
 * [Document Reference Context Cosigner](StructureDefinition-documentReference-context-cosigner.md)
 * [Document Reference Context Dictation Date Time](StructureDefinition-documentReference-context-dictationDateTime.md)
 * [Document Reference Context Report Date Time](StructureDefinition-documentReference-context-reportDateTime.md)

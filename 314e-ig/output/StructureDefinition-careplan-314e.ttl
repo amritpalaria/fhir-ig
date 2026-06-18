@@ -58,7 +58,7 @@
   fhir:name [ fhir:v "CarePlan314e"] ; # 
   fhir:title [ fhir:v "314e CarePlan"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-11T14:17:09+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-18T13:36:33+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -2150,7 +2150,7 @@
        fhir:path [ fhir:v "CarePlan.activity.extension" ] ;
        fhir:sliceName [ fhir:v "activityTargetDateTime" ] ;
        fhir:short [ fhir:v "Target date-time for completing this care plan activity" ] ;
-       fhir:definition [ fhir:v "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nStandard FHIR CarePlan.activity has no dedicated target date field separate\nfrom scheduledTiming or scheduledPeriod." ] ;
+       fhir:definition [ fhir:v "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nNote that the targetDateTime is separate from CarePlan.activity.scheduled[x]." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [

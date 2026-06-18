@@ -1676,8 +1676,7 @@ processing, or application behavior purposes.</p>
 Stores the target or goal date-time for completing that specific care plan
 activity.</p>
 
-<p>Standard FHIR CarePlan.activity has no dedicated target date field separate
-from scheduledTiming or scheduledPeriod.</p>
+<p>Note that the targetDateTime is separate from CarePlan.activity.scheduled[x].</p>
 </td>
          </tr>
          <tr>
@@ -1753,22 +1752,6 @@ full timestamp precision.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-documentReference-author-dictationDateTime.html"
-                  title="StructureDefinition/documentReference-author-dictationDateTime">
-                  <span title="StructureDefinition/documentReference-author-dictationDateTime">Document Reference Author Dictation Date Time
-</span>
-               </a>
-            </td>
-            <td>
-<p>Applied to the author element of a DocumentReference resource. Captures
-the exact date and time when the author dictated the document.</p>
-
-<p>This information is not available in the standard FHIR DocumentReference
-resource.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-documentReference-context-cosigner.html"
                   title="StructureDefinition/documentReference-context-cosigner">
                   <span title="StructureDefinition/documentReference-context-cosigner">Document Reference Context Cosigner
@@ -1793,8 +1776,6 @@ the document alongside the primary author.</p>
 <p>Applied to the context section of a DocumentReference resource. Stores the
 date and time when the clinician dictated the document content — distinct
 from when it was authored, transcribed, or signed.</p>
-
-<p>Standard FHIR DocumentReference context has no dictation timestamp field.</p>
 </td>
          </tr>
          <tr>
@@ -1809,8 +1790,6 @@ from when it was authored, transcribed, or signed.</p>
 <p>Applied to the context section of a DocumentReference resource. Stores the
 date and time when the finalized report was made available or released —
 separate from dictation, transcription, or document creation time.</p>
-
-<p>Standard FHIR DocumentReference has no report release timestamp field.</p>
 </td>
          </tr>
          <tr>
@@ -1865,8 +1844,6 @@ datatypes or as plain text.</p>
 <p>Applied at the root level of the Patient resource. Stores the patient's
 institutional or organizational affiliation (e.g., hospital network,
 physician group) using an internal code.</p>
-
-<p>Standard FHIR Patient has no affiliation field.</p>
 </td>
          </tr>
          <tr>
@@ -1912,7 +1889,7 @@ preferred pharmacies linked to the patient as references to Organization
 resources.</p>
 
 <p>A patient can have multiple pharmacies — each gets its own extension
-instance. Standard FHIR Patient has no pharmacy preference field.</p>
+instance.</p>
 </td>
          </tr>
          <tr>
@@ -2298,8 +2275,8 @@ within hierarchical parent-child result/report structures.</p>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-11 14:17:00 +0530">
-    2026-06-11
+  <span title="2026-06-18 13:36:00 +0530">
+    2026-06-18
   </span>
 
           <br/>

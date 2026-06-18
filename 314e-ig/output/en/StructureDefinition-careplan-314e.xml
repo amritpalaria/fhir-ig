@@ -69,7 +69,7 @@
   <name value="CarePlan314e"/>
   <title value="314e CarePlan"/>
   <status value="active"/>
-  <date value="2026-06-11T14:17:09+05:30"/>
+  <date value="2026-06-18T13:36:33+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -1680,7 +1680,7 @@
       <path value="CarePlan.activity.extension"/>
       <sliceName value="activityTargetDateTime"/>
       <short value="Target date-time for completing this care plan activity"/>
-      <definition value="Applied to an individual activity element within a CarePlan resource.&#xA;Stores the target or goal date-time for completing that specific care plan&#xA;activity.&#xA;&#xA;Standard FHIR CarePlan.activity has no dedicated target date field separate&#xA;from scheduledTiming or scheduledPeriod."/>
+      <definition value="Applied to an individual activity element within a CarePlan resource.&#xA;Stores the target or goal date-time for completing that specific care plan&#xA;activity.&#xA;&#xA;Note that the targetDateTime is separate from CarePlan.activity.scheduled[x]."/>
       <min value="0"/>
       <max value="1"/>
       <base>

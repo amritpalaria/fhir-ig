@@ -101,7 +101,6 @@
 [Cosigner]: StructureDefinition-cosigner.html
 [DateTimeAccuracy]: StructureDefinition-datetime-accuracy.html
 [DateTimePrecision]: StructureDefinition-datetime-precision.html
-[DocumentReferenceAuthorDictationDateTime]: StructureDefinition-documentReference-author-dictationDateTime.html
 [DocumentReferenceContextCosigner]: StructureDefinition-documentReference-context-cosigner.html
 [DocumentReferenceContextDictationDateTime]: StructureDefinition-documentReference-context-dictationDateTime.html
 [DocumentReferenceContextReportDateTime]: StructureDefinition-documentReference-context-reportDateTime.html

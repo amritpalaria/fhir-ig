@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-06-11T14:17:09+05:30"/>
+  <date value="2026-06-18T13:36:33+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -29,7 +29,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.1.0"/>
+    <version value="7.2.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -1571,7 +1571,7 @@
         <reference value="StructureDefinition/carePlan-activity-targetDateTime"/>
       </reference>
       <name value="Care Plan Activity Target Date Time"/>
-      <description value="Applied to an individual activity element within a CarePlan resource.&#xA;Stores the target or goal date-time for completing that specific care plan&#xA;activity.&#xA;&#xA;Standard FHIR CarePlan.activity has no dedicated target date field separate&#xA;from scheduledTiming or scheduledPeriod."/>
+      <description value="Applied to an individual activity element within a CarePlan resource.&#xA;Stores the target or goal date-time for completing that specific care plan&#xA;activity.&#xA;&#xA;Note that the targetDateTime is separate from CarePlan.activity.scheduled[x]."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1623,17 +1623,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/documentReference-author-dictationDateTime"/>
-      </reference>
-      <name value="Document Reference Author Dictation Date Time"/>
-      <description value="Applied to the author element of a DocumentReference resource. Captures&#xA;the exact date and time when the author dictated the document.&#xA;&#xA;This information is not available in the standard FHIR DocumentReference&#xA;resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/documentReference-context-cosigner"/>
       </reference>
       <name value="Document Reference Context Cosigner"/>
@@ -1648,7 +1637,7 @@
         <reference value="StructureDefinition/documentReference-context-dictationDateTime"/>
       </reference>
       <name value="Document Reference Context Dictation Date Time"/>
-      <description value="Applied to the context section of a DocumentReference resource. Stores the&#xA;date and time when the clinician dictated the document content — distinct&#xA;from when it was authored, transcribed, or signed.&#xA;&#xA;Standard FHIR DocumentReference context has no dictation timestamp field."/>
+      <description value="Applied to the context section of a DocumentReference resource. Stores the&#xA;date and time when the clinician dictated the document content — distinct&#xA;from when it was authored, transcribed, or signed."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1659,7 +1648,7 @@
         <reference value="StructureDefinition/documentReference-context-reportDateTime"/>
       </reference>
       <name value="Document Reference Context Report Date Time"/>
-      <description value="Applied to the context section of a DocumentReference resource. Stores the&#xA;date and time when the finalized report was made available or released —&#xA;separate from dictation, transcription, or document creation time.&#xA;&#xA;Standard FHIR DocumentReference has no report release timestamp field."/>
+      <description value="Applied to the context section of a DocumentReference resource. Stores the&#xA;date and time when the finalized report was made available or released —&#xA;separate from dictation, transcription, or document creation time."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1725,7 +1714,7 @@
         <reference value="StructureDefinition/patient-affiliation"/>
       </reference>
       <name value="Patient Affiliation"/>
-      <description value="Applied at the root level of the Patient resource. Stores the patient's&#xA;institutional or organizational affiliation (e.g., hospital network,&#xA;physician group) using an internal code.&#xA;&#xA;Standard FHIR Patient has no affiliation field."/>
+      <description value="Applied at the root level of the Patient resource. Stores the patient's&#xA;institutional or organizational affiliation (e.g., hospital network,&#xA;physician group) using an internal code."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1758,7 +1747,7 @@
         <reference value="StructureDefinition/patient-pharmacies"/>
       </reference>
       <name value="Patient Pharmacies"/>
-      <description value="Applied at the root level of the Patient resource. Stores one or more&#xA;preferred pharmacies linked to the patient as references to Organization&#xA;resources.&#xA;&#xA;A patient can have multiple pharmacies — each gets its own extension&#xA;instance. Standard FHIR Patient has no pharmacy preference field."/>
+      <description value="Applied at the root level of the Patient resource. Stores one or more&#xA;preferred pharmacies linked to the patient as references to Organization&#xA;resources.&#xA;&#xA;A patient can have multiple pharmacies — each gets its own extension&#xA;instance."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

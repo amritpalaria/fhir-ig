@@ -62,9 +62,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.extension:affiliation","Patient.extension","affiliation","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/patient-affiliation]]} {[]}
 ","Patient's institutional or organizational affiliation","Applied at the root level of the Patient resource. Stores the patient's
 institutional or organizational affiliation (e.g., hospital network,
-physician group) using an internal code.
-
-Standard FHIR Patient has no affiliation field.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+physician group) using an internal code.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:mothersName","Patient.extension","mothersName","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/patient-mothersName]]} {[]}
 ","Mother's name of the patient","Applied directly at the root level of the Patient resource to store
@@ -76,7 +74,7 @@ preferred pharmacies linked to the patient as references to Organization
 resources.
 
 A patient can have multiple pharmacies — each gets its own extension
-instance. Standard FHIR Patient has no pharmacy preference field.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+instance.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:employmentStatus","Patient.extension","employmentStatus","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/patient-employmentStatus]]} {[]}
 ","Patient's current employment status","Applied at the root level of the Patient resource. Stores the patient's

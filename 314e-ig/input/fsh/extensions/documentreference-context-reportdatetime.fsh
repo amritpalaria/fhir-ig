@@ -5,8 +5,6 @@ Description: """
 Applied to the context section of a DocumentReference resource. Stores the
 date and time when the finalized report was made available or released —
 separate from dictation, transcription, or document creation time.
-
-Standard FHIR DocumentReference has no report release timestamp field.
 """
 
 Context: DocumentReference.context

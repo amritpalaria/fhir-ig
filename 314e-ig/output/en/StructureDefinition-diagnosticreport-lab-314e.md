@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-diagnosticreport-
   "name" : "DiagnosticReportLab314e",
   "title" : "314e DiagnosticReport Laboratory Results",
   "status" : "active",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -288,10 +288,48 @@ Other representations of profile: [CSV](../StructureDefinition-diagnosticreport-
     {
       "id" : "DiagnosticReport.presentedForm",
       "path" : "DiagnosticReport.presentedForm",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "title"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "DiagnosticReport.presentedForm:report",
+      "path" : "DiagnosticReport.presentedForm",
+      "sliceName" : "report",
+      "min" : 0,
+      "max" : "*",
       "type" : [{
         "code" : "Attachment",
         "profile" : ["http://314e.com/fhir/StructureDefinition/attachment-314e"]
       }]
+    },
+    {
+      "id" : "DiagnosticReport.presentedForm:report.title",
+      "path" : "DiagnosticReport.presentedForm.title",
+      "min" : 1,
+      "patternString" : "Entire report as issued"
+    },
+    {
+      "id" : "DiagnosticReport.presentedForm:notes",
+      "path" : "DiagnosticReport.presentedForm",
+      "sliceName" : "notes",
+      "short" : "Annotation/ notes associated with the diagnostic report",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Attachment",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/attachment-314e"]
+      }]
+    },
+    {
+      "id" : "DiagnosticReport.presentedForm:notes.title",
+      "path" : "DiagnosticReport.presentedForm.title",
+      "min" : 1,
+      "patternString" : "Annotation/ notes associated with the diagnostic report"
     }]
   }
 }

@@ -42,5 +42,16 @@ where applicable.
 * imagingStudy only Reference314e
 * media.link only Reference314e
 * conclusionCode only CodeableConcept314e
-* presentedForm only Attachment314e
+* presentedForm ^slicing.discriminator.type = #value
+* presentedForm ^slicing.discriminator.path = "title"
+* presentedForm ^slicing.rules = #open
+* presentedForm contains
+    report 0..* and
+    notes 0..*
+* presentedForm[report] only Attachment314e
+* presentedForm[report].title = "Entire report as issued"
+* presentedForm[report] ^short = "Entire report as issued"
+* presentedForm[notes] only Attachment314e
+* presentedForm[notes].title = "Annotation/ notes associated with the diagnostic report"
+* presentedForm[notes] ^short = "Annotation/ notes associated with the diagnostic report"
 * meta only Meta314e

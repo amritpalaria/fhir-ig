@@ -240,22 +240,6 @@
         ]
       },
       {
-        "id": "DocumentReference.author.extension:dictationDateTime",
-        "path": "DocumentReference.author.extension",
-        "sliceName": "dictationDateTime",
-        "short": "Date and time the author dictated the document",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://314e.com/fhir/StructureDefinition/documentReference-author-dictationDateTime"
-            ]
-          }
-        ]
-      },
-      {
         "id": "DocumentReference.authenticator",
         "path": "DocumentReference.authenticator",
         "type": [

@@ -230,13 +230,6 @@
   "name" : "DiagnosticReportNoteReport314e"
 },
 {
-  "id" : "documentReference-author-dictationDateTime",
-  "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/StructureDefinition/documentReference-author-dictationDateTime",
-  "version" : "1.0.0",
-  "name" : "DocumentReferenceAuthorDictationDateTime"
-},
-{
   "id" : "documentReference-context-cosigner",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner",

@@ -23,7 +23,7 @@
   "name" : "Patient314e",
   "title" : "314e Patient",
   "status" : "active",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -696,7 +696,7 @@
       "path" : "Patient.extension",
       "sliceName" : "affiliation",
       "short" : "Patient's institutional or organizational affiliation",
-      "definition" : "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.\n\nStandard FHIR Patient has no affiliation field.",
+      "definition" : "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.",
       "min" : 0,
       "max" : "*",
       "base" : {
@@ -768,7 +768,7 @@
       "path" : "Patient.extension",
       "sliceName" : "pharmacies",
       "short" : "Preferred pharmacy linked to the patient",
-      "definition" : "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance. Standard FHIR Patient has no pharmacy preference field.",
+      "definition" : "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance.",
       "min" : 0,
       "max" : "*",
       "base" : {

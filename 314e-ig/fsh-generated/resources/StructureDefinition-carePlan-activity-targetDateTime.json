@@ -5,7 +5,7 @@
   "name": "CarePlanActivityTargetDateTime",
   "title": "Care Plan Activity Target Date Time",
   "status": "active",
-  "description": "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nStandard FHIR CarePlan.activity has no dedicated target date field separate\nfrom scheduledTiming or scheduledPeriod.",
+  "description": "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nNote that the targetDateTime is separate from CarePlan.activity.scheduled[x].",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -24,7 +24,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Care Plan Activity Target Date Time",
-        "definition": "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nStandard FHIR CarePlan.activity has no dedicated target date field separate\nfrom scheduledTiming or scheduledPeriod."
+        "definition": "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nNote that the targetDateTime is separate from CarePlan.activity.scheduled[x]."
       },
       {
         "id": "Extension.extension",

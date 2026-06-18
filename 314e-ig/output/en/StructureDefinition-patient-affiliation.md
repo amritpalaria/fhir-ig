@@ -4,8 +4,6 @@
 
 Applied at the root level of the Patient resource. Stores the patient's institutional or organizational affiliation (e.g., hospital network, physician group) using an internal code.
 
-Standard FHIR Patient has no affiliation field.
-
 **Context of Use**
 
 **Usage info**
@@ -37,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-patient-affiliati
   "name" : "PatientAffiliation",
   "title" : "Patient Affiliation",
   "status" : "active",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -46,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-patient-affiliati
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.\n\nStandard FHIR Patient has no affiliation field.",
+  "description" : "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -67,7 +65,7 @@ Other representations of profile: [CSV](../StructureDefinition-patient-affiliati
       "id" : "Extension",
       "path" : "Extension",
       "short" : "Patient Affiliation",
-      "definition" : "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.\n\nStandard FHIR Patient has no affiliation field."
+      "definition" : "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code."
     },
     {
       "id" : "Extension.extension",

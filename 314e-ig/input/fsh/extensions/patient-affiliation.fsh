@@ -5,8 +5,6 @@ Description: """
 Applied at the root level of the Patient resource. Stores the patient's
 institutional or organizational affiliation (e.g., hospital network,
 physician group) using an internal code.
-
-Standard FHIR Patient has no affiliation field.
 """
 
 Context: Patient

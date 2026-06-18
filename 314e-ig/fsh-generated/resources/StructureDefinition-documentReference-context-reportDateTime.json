@@ -5,7 +5,7 @@
   "name": "DocumentReferenceContextReportDateTime",
   "title": "Document Reference Context Report Date Time",
   "status": "active",
-  "description": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time.\n\nStandard FHIR DocumentReference has no report release timestamp field.",
+  "description": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -24,7 +24,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Document Reference Context Report Date Time",
-        "definition": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time.\n\nStandard FHIR DocumentReference has no report release timestamp field."
+        "definition": "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the finalized report was made available or released —\nseparate from dictation, transcription, or document creation time."
       },
       {
         "id": "Extension.extension",

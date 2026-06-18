@@ -6,8 +6,7 @@ Applied to an individual activity element within a CarePlan resource.
 Stores the target or goal date-time for completing that specific care plan
 activity.
 
-Standard FHIR CarePlan.activity has no dedicated target date field separate
-from scheduledTiming or scheduledPeriod.
+Note that the targetDateTime is separate from CarePlan.activity.scheduled[x].
 """
 
 Context: CarePlan.activity

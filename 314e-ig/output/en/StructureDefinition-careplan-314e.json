@@ -27,7 +27,7 @@
   "name" : "CarePlan314e",
   "title" : "314e CarePlan",
   "status" : "active",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -1695,7 +1695,7 @@
       "path" : "CarePlan.activity.extension",
       "sliceName" : "activityTargetDateTime",
       "short" : "Target date-time for completing this care plan activity",
-      "definition" : "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nStandard FHIR CarePlan.activity has no dedicated target date field separate\nfrom scheduledTiming or scheduledPeriod.",
+      "definition" : "Applied to an individual activity element within a CarePlan resource.\nStores the target or goal date-time for completing that specific care plan\nactivity.\n\nNote that the targetDateTime is separate from CarePlan.activity.scheduled[x].",
       "min" : 0,
       "max" : "1",
       "base" : {

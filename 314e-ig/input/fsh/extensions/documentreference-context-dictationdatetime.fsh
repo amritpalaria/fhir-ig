@@ -5,8 +5,6 @@ Description: """
 Applied to the context section of a DocumentReference resource. Stores the
 date and time when the clinician dictated the document content — distinct
 from when it was authored, transcribed, or signed.
-
-Standard FHIR DocumentReference context has no dictation timestamp field.
 """
 
 Context: DocumentReference.context

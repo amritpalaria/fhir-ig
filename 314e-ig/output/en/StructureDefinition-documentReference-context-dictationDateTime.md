@@ -4,8 +4,6 @@
 
 Applied to the context section of a DocumentReference resource. Stores the date and time when the clinician dictated the document content — distinct from when it was authored, transcribed, or signed.
 
-Standard FHIR DocumentReference context has no dictation timestamp field.
-
 **Context of Use**
 
 **Usage info**
@@ -37,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-documentReference
   "name" : "DocumentReferenceContextDictationDateTime",
   "title" : "Document Reference Context Dictation Date Time",
   "status" : "active",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -46,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-documentReference
       "value" : "http://314e.com"
     }]
   }],
-  "description" : "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.\n\nStandard FHIR DocumentReference context has no dictation timestamp field.",
+  "description" : "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
@@ -67,7 +65,7 @@ Other representations of profile: [CSV](../StructureDefinition-documentReference
       "id" : "Extension",
       "path" : "Extension",
       "short" : "Document Reference Context Dictation Date Time",
-      "definition" : "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed.\n\nStandard FHIR DocumentReference context has no dictation timestamp field."
+      "definition" : "Applied to the context section of a DocumentReference resource. Stores the\ndate and time when the clinician dictated the document content — distinct\nfrom when it was authored, transcribed, or signed."
     },
     {
       "id" : "Extension.extension",

@@ -50,7 +50,7 @@
   fhir:name [ fhir:v "Patient314e"] ; # 
   fhir:title [ fhir:v "314e Patient"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-11T14:17:09+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-18T13:36:33+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -939,7 +939,7 @@
        fhir:path [ fhir:v "Patient.extension" ] ;
        fhir:sliceName [ fhir:v "affiliation" ] ;
        fhir:short [ fhir:v "Patient's institutional or organizational affiliation" ] ;
-       fhir:definition [ fhir:v "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code.\n\nStandard FHIR Patient has no affiliation field." ] ;
+       fhir:definition [ fhir:v "Applied at the root level of the Patient resource. Stores the patient's\ninstitutional or organizational affiliation (e.g., hospital network,\nphysician group) using an internal code." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -1031,7 +1031,7 @@
        fhir:path [ fhir:v "Patient.extension" ] ;
        fhir:sliceName [ fhir:v "pharmacies" ] ;
        fhir:short [ fhir:v "Preferred pharmacy linked to the patient" ] ;
-       fhir:definition [ fhir:v "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance. Standard FHIR Patient has no pharmacy preference field." ] ;
+       fhir:definition [ fhir:v "Applied at the root level of the Patient resource. Stores one or more\npreferred pharmacies linked to the patient as references to Organization\nresources.\n\nA patient can have multiple pharmacies — each gets its own extension\ninstance." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [

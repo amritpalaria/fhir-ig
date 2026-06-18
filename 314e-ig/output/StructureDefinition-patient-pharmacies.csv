@@ -5,7 +5,7 @@ preferred pharmacies linked to the patient as references to Organization
 resources.
 
 A patient can have multiple pharmacies — each gets its own extension
-instance. Standard FHIR Patient has no pharmacy preference field.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+instance.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}

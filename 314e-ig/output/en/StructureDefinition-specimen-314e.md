@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-specimen-314e.csv
   "name" : "Specimen314e",
   "title" : "314e Specimen",
   "status" : "active",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

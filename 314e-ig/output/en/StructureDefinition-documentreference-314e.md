@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-documentreference
   "name" : "DocumentReference314e",
   "title" : "314e DocumentReference",
   "status" : "active",
-  "date" : "2026-06-11T14:17:09+05:30",
+  "date" : "2026-06-18T13:36:33+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -246,18 +246,6 @@ Other representations of profile: [CSV](../StructureDefinition-documentreference
             "valueBoolean" : false
           }]
         }]
-      }]
-    },
-    {
-      "id" : "DocumentReference.author.extension:dictationDateTime",
-      "path" : "DocumentReference.author.extension",
-      "sliceName" : "dictationDateTime",
-      "short" : "Date and time the author dictated the document",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/documentReference-author-dictationDateTime"]
       }]
     },
     {
