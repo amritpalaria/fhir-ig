@@ -301,7 +301,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\diagnosticreport-314e.fsh",
     "startLine": 1,
-    "endLine": 56
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-diagnosticreport-lab-314e.json",
@@ -309,7 +309,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\diagnosticreport-lab-314e.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 56
   },
   {
     "outputFile": "StructureDefinition-diagnosticreport-notereport-314e.json",
@@ -317,7 +317,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\diagnosticreport-notereport-314e.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 56
   },
   {
     "outputFile": "StructureDefinition-documentReference-context-cosigner.json",

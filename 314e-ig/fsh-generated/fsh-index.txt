@@ -36,9 +36,9 @@ StructureDefinition-decimal-314e.json                                   decimal3
 StructureDefinition-detectedissue-314e.json                             DetectedIssue314e                           Profile     resources\detectedissue-314e.fsh                             1 - 40
 StructureDefinition-device-314e.json                                    Device314e                                  Profile     resources\device-314e.fsh                                    1 - 40
 StructureDefinition-devicerequest-314e.json                             DeviceRequest314e                           Profile     resources\devicerequest-314e.fsh                             1 - 48
-StructureDefinition-diagnosticreport-314e.json                          DiagnosticReport314e                        Profile     resources\diagnosticreport-314e.fsh                          1 - 56
-StructureDefinition-diagnosticreport-lab-314e.json                      DiagnosticReportLab314e                     Profile     resources\diagnosticreport-lab-314e.fsh                      1 - 57
-StructureDefinition-diagnosticreport-notereport-314e.json               DiagnosticReportNoteReport314e              Profile     resources\diagnosticreport-notereport-314e.fsh               1 - 57
+StructureDefinition-diagnosticreport-314e.json                          DiagnosticReport314e                        Profile     resources\diagnosticreport-314e.fsh                          1 - 55
+StructureDefinition-diagnosticreport-lab-314e.json                      DiagnosticReportLab314e                     Profile     resources\diagnosticreport-lab-314e.fsh                      1 - 56
+StructureDefinition-diagnosticreport-notereport-314e.json               DiagnosticReportNoteReport314e              Profile     resources\diagnosticreport-notereport-314e.fsh               1 - 56
 StructureDefinition-documentReference-context-cosigner.json             DocumentReferenceContextCosigner            Extension   extensions\documentreference-context-cosigner.fsh            1 - 19
 StructureDefinition-documentReference-context-dictationDateTime.json    DocumentReferenceContextDictationDateTime   Extension   extensions\documentreference-context-dictationdatetime.fsh   1 - 19
 StructureDefinition-documentReference-context-reportDateTime.json       DocumentReferenceContextReportDateTime      Extension   extensions\documentreference-context-reportdatetime.fsh      1 - 19

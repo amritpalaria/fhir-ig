@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-detectedissue-314
   "name" : "DetectedIssue314e",
   "title" : "314e DetectedIssue",
   "status" : "active",
-  "date" : "2026-06-18T13:36:33+05:30",
+  "date" : "2026-06-18T14:15:04+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

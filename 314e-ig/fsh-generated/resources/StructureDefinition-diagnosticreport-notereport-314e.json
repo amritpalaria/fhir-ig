@@ -354,12 +354,6 @@
         ]
       },
       {
-        "id": "DiagnosticReport.presentedForm:report.title",
-        "path": "DiagnosticReport.presentedForm.title",
-        "min": 1,
-        "patternString": "Entire report as issued"
-      },
-      {
         "id": "DiagnosticReport.presentedForm:notes",
         "path": "DiagnosticReport.presentedForm",
         "sliceName": "notes",
@@ -379,7 +373,7 @@
         "id": "DiagnosticReport.presentedForm:notes.title",
         "path": "DiagnosticReport.presentedForm.title",
         "min": 1,
-        "patternString": "Annotation/ notes associated with the diagnostic report"
+        "patternString": "Note"
       }
     ]
   }
