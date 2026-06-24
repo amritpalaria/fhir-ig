@@ -96,7 +96,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
             ]
           }
         ]
@@ -111,7 +111,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+              "http://314e.com/fhir/StructureDefinition/encounter-314e"
             ]
           }
         ]
@@ -138,8 +138,8 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-careplan"
+              "http://314e.com/fhir/StructureDefinition/careplan-314e",
+              "http://314e.com/fhir/StructureDefinition/servicerequest-314e"
             ]
           }
         ]
@@ -154,8 +154,8 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitionerrole"
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
             ]
           }
         ]
@@ -170,8 +170,8 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitionerrole"
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
             ]
           }
         ]
@@ -186,7 +186,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Endpoint|4.0.1"
+              "http://314e.com/fhir/StructureDefinition/endpoint-314e"
             ]
           }
         ]
@@ -201,7 +201,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"
+              "http://314e.com/fhir/StructureDefinition/procedure-314e"
             ]
           }
         ]
@@ -228,7 +228,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location"
+              "http://314e.com/fhir/StructureDefinition/location-314e"
             ]
           }
         ]
@@ -255,11 +255,11 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-simple-observation",
-              "http://hl7.org/fhir/StructureDefinition/Media",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-diagnosticreport-note",
-              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
+              "http://314e.com/fhir/StructureDefinition/documentreference-314e",
+              "http://314e.com/fhir/StructureDefinition/media-314e"
             ]
           }
         ]
@@ -298,7 +298,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Endpoint|4.0.1"
+              "http://314e.com/fhir/StructureDefinition/endpoint-314e"
             ]
           }
         ]
@@ -337,7 +337,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Specimen|4.0.1"
+              "http://314e.com/fhir/StructureDefinition/specimen-314e"
             ]
           }
         ]
@@ -376,13 +376,13 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitionerrole",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-careteam",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-device",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device",
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/careteam-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
               "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-relatedperson"
             ]
           }

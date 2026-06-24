@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-06-18T16:14:31+05:30"/>
+  <date value="2026-06-24T16:34:23+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -603,7 +603,7 @@
         <reference value="StructureDefinition/careteam-314e"/>
       </reference>
       <name value="314e CareTeam"/>
-      <description value="314e-constrained CareTeam profile derived from US Core CareTeam.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <description value="314e-constrained CareTeam profile derived from QI-Core CareTeam.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1164,7 +1164,7 @@
         <reference value="StructureDefinition/organization-314e"/>
       </reference>
       <name value="314e Organization"/>
-      <description value="314e-constrained Organization profile derived from US Core Organization.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <description value="314e-constrained Organization profile derived from QI-Core Organization.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

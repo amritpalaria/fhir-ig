@@ -120,7 +120,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
             ]
           }
         ]
@@ -135,7 +135,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter",
+              "http://314e.com/fhir/StructureDefinition/encounter-314e",
               "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
             ]
           }
@@ -181,11 +181,11 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
-              "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
-              "http://hl7.org/fhir/StructureDefinition/Device|4.0.1"
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e"
             ]
           }
         ]
@@ -212,9 +212,17 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition|4.0.1",
-              "http://hl7.org/fhir/StructureDefinition/Observation|4.0.1",
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport|4.0.1"
+              "http://314e.com/fhir/StructureDefinition/condition-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e"
             ]
           }
         ]
@@ -229,7 +237,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationrequest"
+              "http://314e.com/fhir/StructureDefinition/medicationrequest-314e"
             ]
           }
         ]
@@ -244,7 +252,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Device|4.0.1"
+              "http://314e.com/fhir/StructureDefinition/device-314e"
             ]
           }
         ]
@@ -337,7 +345,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Provenance|4.0.1"
+              "http://hl7.org/fhir/StructureDefinition/Provenance"
             ]
           }
         ]

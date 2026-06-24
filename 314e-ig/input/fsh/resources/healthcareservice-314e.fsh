@@ -28,12 +28,15 @@ where applicable.
 
 * identifier only Identifier314e
 * providedBy only Reference314e
+* providedBy ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * category only CodeableConcept314e
 * type only CodeableConcept314e
 * specialty only CodeableConcept314e
 * location only Reference314e
+* location ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/location-314e"
 * telecom only ContactPoint314e
 * coverageArea only Reference314e
+* coverageArea ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/location-314e"
 * serviceProvisionCode only CodeableConcept314e
 * eligibility.code only CodeableConcept314e
 * program only CodeableConcept314e
@@ -43,4 +46,5 @@ where applicable.
 * availableTime.availableStartTime only time314e
 * availableTime.availableEndTime only time314e
 * endpoint only Reference314e
+* endpoint ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/endpoint-314e"
 * meta only Meta314e

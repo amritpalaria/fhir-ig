@@ -37,7 +37,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\account-314e.fsh",
     "startLine": 1,
-    "endLine": 38
+    "endLine": 50
   },
   {
     "outputFile": "StructureDefinition-address-314e.json",
@@ -61,7 +61,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\allergyintolerance-314e.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 72
   },
   {
     "outputFile": "StructureDefinition-annotation-314e.json",
@@ -85,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\appointment-314e.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-attachment-314e.json",
@@ -133,7 +133,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\careplan-314e.fsh",
     "startLine": 1,
-    "endLine": 77
+    "endLine": 248
   },
   {
     "outputFile": "StructureDefinition-careteam-314e.json",
@@ -141,7 +141,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\careteam-314e.fsh",
     "startLine": 1,
-    "endLine": 43
+    "endLine": 56
   },
   {
     "outputFile": "StructureDefinition-clinicalimpression-314e.json",
@@ -149,7 +149,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\clinicalimpression-314e.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 81
   },
   {
     "outputFile": "StructureDefinition-codeableconcept-314e.json",
@@ -173,7 +173,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\communicationrequest-314e.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 89
   },
   {
     "outputFile": "StructureDefinition-condition-314e.json",
@@ -181,7 +181,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\condition-314e.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 81
   },
   {
     "outputFile": "StructureDefinition-condition-diagnosis-314e.json",
@@ -189,7 +189,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\condition-diagnosis-314e.fsh",
     "startLine": 1,
-    "endLine": 61
+    "endLine": 139
   },
   {
     "outputFile": "StructureDefinition-condition-problem-healthconcern-314e.json",
@@ -197,7 +197,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\condition-problem-healthconcern-314e.fsh",
     "startLine": 1,
-    "endLine": 61
+    "endLine": 139
   },
   {
     "outputFile": "StructureDefinition-contactpoint-314e.json",
@@ -213,7 +213,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\contract-314e.fsh",
     "startLine": 1,
-    "endLine": 76
+    "endLine": 136
   },
   {
     "outputFile": "StructureDefinition-cosigner.json",
@@ -229,7 +229,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\coverage-314e.fsh",
     "startLine": 1,
-    "endLine": 43
+    "endLine": 53
   },
   {
     "outputFile": "StructureDefinition-datarequirement-314e.json",
@@ -277,7 +277,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\detectedissue-314e.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 51
   },
   {
     "outputFile": "StructureDefinition-device-314e.json",
@@ -285,7 +285,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\device-314e.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-devicerequest-314e.json",
@@ -293,7 +293,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\devicerequest-314e.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 249
   },
   {
     "outputFile": "StructureDefinition-diagnosticreport-314e.json",
@@ -301,7 +301,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\diagnosticreport-314e.fsh",
     "startLine": 1,
-    "endLine": 96
+    "endLine": 123
   },
   {
     "outputFile": "StructureDefinition-diagnosticreport-lab-314e.json",
@@ -309,7 +309,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\diagnosticreport-lab-314e.fsh",
     "startLine": 1,
-    "endLine": 72
+    "endLine": 93
   },
   {
     "outputFile": "StructureDefinition-diagnosticreport-notereport-314e.json",
@@ -317,7 +317,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\diagnosticreport-notereport-314e.fsh",
     "startLine": 1,
-    "endLine": 72
+    "endLine": 103
   },
   {
     "outputFile": "StructureDefinition-documentReference-context-cosigner.json",
@@ -349,7 +349,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\documentreference-314e.fsh",
     "startLine": 1,
-    "endLine": 71
+    "endLine": 146
   },
   {
     "outputFile": "StructureDefinition-dosage-314e.json",
@@ -381,7 +381,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\encounter-314e.fsh",
     "startLine": 1,
-    "endLine": 58
+    "endLine": 80
   },
   {
     "outputFile": "StructureDefinition-endpoint-314e.json",
@@ -389,7 +389,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\endpoint-314e.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-episodeofcare-314e.json",
@@ -397,7 +397,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\episodeofcare-314e.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 50
   },
   {
     "outputFile": "StructureDefinition-goal-314e.json",
@@ -405,7 +405,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\goal-314e.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-group-314e.json",
@@ -413,7 +413,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\group-314e.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 47
   },
   {
     "outputFile": "StructureDefinition-healthcareservice-314e.json",
@@ -421,7 +421,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\healthcareservice-314e.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 50
   },
   {
     "outputFile": "StructureDefinition-humanname-314e.json",
@@ -445,7 +445,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\imagingstudy-314e.fsh",
     "startLine": 1,
-    "endLine": 52
+    "endLine": 77
   },
   {
     "outputFile": "StructureDefinition-immunization-314e.json",
@@ -453,7 +453,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\immunization-314e.fsh",
     "startLine": 1,
-    "endLine": 66
+    "endLine": 90
   },
   {
     "outputFile": "StructureDefinition-immunizationevaluation-314e.json",
@@ -461,7 +461,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\immunizationevaluation-314e.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-immunizationrecommendation-314e.json",
@@ -469,7 +469,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\immunizationrecommendation-314e.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 48
   },
   {
     "outputFile": "StructureDefinition-instant-314e.json",
@@ -485,7 +485,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\location-314e.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-media-314e.json",
@@ -493,7 +493,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\media-314e.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-medication-314e.json",
@@ -501,7 +501,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\medication-314e.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-medicationadministration-314e.json",
@@ -509,7 +509,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\medicationadministration-314e.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 101
   },
   {
     "outputFile": "StructureDefinition-medicationdispense-314e.json",
@@ -517,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\medicationdispense-314e.fsh",
     "startLine": 1,
-    "endLine": 52
+    "endLine": 129
   },
   {
     "outputFile": "StructureDefinition-medicationrequest-314e.json",
@@ -525,7 +525,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\medicationrequest-314e.fsh",
     "startLine": 1,
-    "endLine": 56
+    "endLine": 132
   },
   {
     "outputFile": "StructureDefinition-meta-314e.json",
@@ -541,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\molecularsequence-314e.fsh",
     "startLine": 1,
-    "endLine": 49
+    "endLine": 54
   },
   {
     "outputFile": "StructureDefinition-money-314e.json",
@@ -557,7 +557,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\nutritionorder-314e.fsh",
     "startLine": 1,
-    "endLine": 55
+    "endLine": 60
   },
   {
     "outputFile": "StructureDefinition-observation-314e.json",
@@ -565,7 +565,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\observation-314e.fsh",
     "startLine": 1,
-    "endLine": 100
+    "endLine": 193
   },
   {
     "outputFile": "StructureDefinition-observation-antimicrobial-susceptibility-314e.json",
@@ -581,7 +581,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\observation-lab-general-314e.fsh",
     "startLine": 1,
-    "endLine": 201
+    "endLine": 292
   },
   {
     "outputFile": "StructureDefinition-observation-microbiology-314e.json",
@@ -613,7 +613,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\organization-314e.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-patient-314e.json",
@@ -621,7 +621,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\patient-314e.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 75
   },
   {
     "outputFile": "StructureDefinition-patient-affiliation.json",
@@ -677,7 +677,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\practitioner-314e.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-practitionerrole-314e.json",
@@ -685,7 +685,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\practitionerrole-314e.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-procedure-314e.json",
@@ -693,7 +693,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\procedure-314e.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 97
   },
   {
     "outputFile": "StructureDefinition-quantity-314e.json",
@@ -725,7 +725,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\questionnaireresponse-314e.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 60
   },
   {
     "outputFile": "StructureDefinition-range-314e.json",
@@ -781,7 +781,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\relatedperson-314e.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-requestgroup-314e.json",
@@ -789,7 +789,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\requestgroup-314e.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 72
   },
   {
     "outputFile": "StructureDefinition-resource-additionalInfo.json",
@@ -829,7 +829,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\schedule-314e.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-servicerequest-314e.json",
@@ -837,7 +837,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\servicerequest-314e.fsh",
     "startLine": 1,
-    "endLine": 148
+    "endLine": 242
   },
   {
     "outputFile": "StructureDefinition-signature-314e.json",
@@ -861,7 +861,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\slot-314e.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-specimen-314e.json",
@@ -869,7 +869,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\specimen-314e.fsh",
     "startLine": 1,
-    "endLine": 52
+    "endLine": 62
   },
   {
     "outputFile": "StructureDefinition-substance-314e.json",
@@ -885,7 +885,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\task-314e.fsh",
     "startLine": 1,
-    "endLine": 55
+    "endLine": 255
   },
   {
     "outputFile": "StructureDefinition-time-314e.json",
@@ -925,7 +925,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\visionprescription-314e.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 48
   },
   {
     "outputFile": "ValueSet-antimicrobial-susceptibility-testing-vs.json",

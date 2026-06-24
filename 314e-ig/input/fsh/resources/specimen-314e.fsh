@@ -30,9 +30,18 @@ where applicable.
 * accessionIdentifier only Identifier314e
 * type only CodeableConcept314e
 * subject only Reference314e
+* subject ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* subject ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/device-314e"
+* subject ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/group-314e"
+* subject ^type.targetProfile[3] = "http://314e.com/fhir/StructureDefinition/location-314e"
+* subject ^type.targetProfile[4] = "http://314e.com/fhir/StructureDefinition/substance-314e"
 * parent only Reference314e
+* parent ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/specimen-314e"
 * request only Reference314e
+* request ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/servicerequest-314e"
 * collection.collector only Reference314e
+* collection.collector ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* collection.collector ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
 * collection.collected[x] only dateTime314e or Period314e
 * collection.duration only Duration314e
 * collection.quantity only SimpleQuantity314e
@@ -41,6 +50,7 @@ where applicable.
 * collection.fastingStatus[x] only CodeableConcept314e or Duration314e
 * processing.procedure only CodeableConcept314e
 * processing.additive only Reference314e
+* processing.additive ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/substance-314e"
 * processing.time[x] only dateTime314e or Period314e
 * container.identifier only Identifier314e
 * container.type only CodeableConcept314e

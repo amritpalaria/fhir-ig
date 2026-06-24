@@ -32,6 +32,9 @@ where applicable.
 * address only Address314e
 * physicalType only CodeableConcept314e
 * managingOrganization only Reference314e
+* managingOrganization ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * partOf only Reference314e
+* partOf ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/location-314e"
 * endpoint only Reference314e
+* endpoint ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/endpoint-314e"
 * meta only Meta314e

@@ -35,5 +35,6 @@ where applicable.
 * qualification.code only CodeableConcept314e
 * qualification.period only Period314e
 * qualification.issuer only Reference314e
+* qualification.issuer ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * communication only CodeableConcept314e
 * meta only Meta314e

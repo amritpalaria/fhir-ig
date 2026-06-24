@@ -108,7 +108,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization"
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
             ]
           }
         ]
@@ -142,19 +142,13 @@
         "path": "Medication.ingredient.item[x]",
         "type": [
           {
-            "code": "CodeableConcept",
-            "profile": [
-              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
-            ]
-          },
-          {
             "code": "Reference",
             "profile": [
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-substance",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medication"
+              "http://314e.com/fhir/StructureDefinition/medication-314e",
+              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-substance"
             ]
           }
         ]

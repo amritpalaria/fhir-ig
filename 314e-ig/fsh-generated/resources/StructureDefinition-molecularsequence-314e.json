@@ -78,7 +78,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
             ]
           }
         ]
@@ -93,7 +93,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Specimen"
+              "http://314e.com/fhir/StructureDefinition/specimen-314e"
             ]
           }
         ]
@@ -108,7 +108,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Device"
+              "http://314e.com/fhir/StructureDefinition/device-314e"
             ]
           }
         ]
@@ -123,7 +123,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
             ]
           }
         ]
@@ -294,7 +294,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/MolecularSequence"
+              "http://314e.com/fhir/StructureDefinition/molecularsequence-314e"
             ]
           }
         ]

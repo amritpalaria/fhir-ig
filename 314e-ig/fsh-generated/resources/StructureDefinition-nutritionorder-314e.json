@@ -96,7 +96,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
             ]
           }
         ]
@@ -111,7 +111,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"
+              "http://314e.com/fhir/StructureDefinition/encounter-314e"
             ]
           }
         ]
@@ -138,8 +138,8 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
             ]
           }
         ]
@@ -154,7 +154,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance|4.0.1"
+              "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e"
             ]
           }
         ]

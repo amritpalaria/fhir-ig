@@ -32,6 +32,7 @@ where applicable.
 * specialty only CodeableConcept314e
 * appointmentType only CodeableConcept314e
 * schedule only Reference314e
+* schedule ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/schedule-314e"
 * start only instant314e
 * end only instant314e
 * meta only Meta314e

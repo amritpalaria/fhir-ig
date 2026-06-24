@@ -102,8 +102,8 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group"
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/group-314e"
             ]
           }
         ]
@@ -118,7 +118,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
+              "http://314e.com/fhir/StructureDefinition/encounter-314e"
             ]
           }
         ]
@@ -163,8 +163,8 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
             ]
           }
         ]
@@ -179,7 +179,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/ClinicalImpression"
+              "http://314e.com/fhir/StructureDefinition/clinicalimpression-314e"
             ]
           }
         ]
@@ -194,8 +194,10 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition",
-              "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"
+              "http://314e.com/fhir/StructureDefinition/condition-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+              "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e"
             ]
           }
         ]
@@ -222,13 +224,19 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Observation",
-              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+              "http://314e.com/fhir/StructureDefinition/observation-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
+              "http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e",
               "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
               "http://hl7.org/fhir/StructureDefinition/RiskAssessment",
-              "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-              "http://hl7.org/fhir/StructureDefinition/Media"
+              "http://314e.com/fhir/StructureDefinition/imagingstudy-314e",
+              "http://314e.com/fhir/StructureDefinition/media-314e"
             ]
           }
         ]
@@ -255,9 +263,15 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition",
-              "http://hl7.org/fhir/StructureDefinition/Observation",
-              "http://hl7.org/fhir/StructureDefinition/Media"
+              "http://314e.com/fhir/StructureDefinition/condition-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
+              "http://314e.com/fhir/StructureDefinition/media-314e"
             ]
           }
         ]

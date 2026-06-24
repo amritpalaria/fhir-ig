@@ -34,6 +34,7 @@ where applicable.
 
 * identifier only Identifier314e
 * patient only Reference314e
+* patient ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * relationship only CodeableConcept314e
 * name only HumanName314e
 * telecom only ContactPoint314e

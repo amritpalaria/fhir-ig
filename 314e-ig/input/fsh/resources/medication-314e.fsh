@@ -29,8 +29,11 @@ where applicable.
 * identifier only Identifier314e
 * code only CodeableConcept314e
 * manufacturer only Reference314e
+* manufacturer ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * form only CodeableConcept314e
 * amount only Ratio314e
-* ingredient.item[x] only CodeableConcept314e or Reference314e
+* ingredient.item[x] only Reference314e
+* ingredient.item[x] ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/medication-314e"
+* ingredient.item[x] ^type.targetProfile[1] = "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-substance"
 * ingredient.strength only Ratio314e
 * meta only Meta314e

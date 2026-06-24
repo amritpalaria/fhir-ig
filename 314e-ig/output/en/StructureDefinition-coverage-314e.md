@@ -8,7 +8,7 @@ This profile applies 314e-defined extensions and uses 314e datatype profiles whe
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Refer to this Profile: [314e Account](StructureDefinition-account-314e.md), [314e CarePlan](StructureDefinition-careplan-314e.md), [314e Condition Encounter Diagnosis](StructureDefinition-condition-diagnosis-314e.md), [314e Condition Problems Health Concerns](StructureDefinition-condition-problem-healthconcern-314e.md)... Show 8 more, [314e DeviceRequest](StructureDefinition-devicerequest-314e.md), [314e DocumentReference](StructureDefinition-documentreference-314e.md), [314e MedicationDispense](StructureDefinition-medicationdispense-314e.md), [314e MedicationRequest](StructureDefinition-medicationrequest-314e.md), [314e Observation](StructureDefinition-observation-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md), [314e ServiceRequest](StructureDefinition-servicerequest-314e.md) and [314e Task](StructureDefinition-task-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/coverage-314e)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-coverage-314e.csv
   "name" : "Coverage314e",
   "title" : "314e Coverage",
   "status" : "active",
-  "date" : "2026-06-18T16:14:31+05:30",
+  "date" : "2026-06-24T16:34:23+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -163,9 +163,9 @@ Other representations of profile: [CSV](../StructureDefinition-coverage-314e.csv
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-relatedperson"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/patient-314e",
+        "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+        "http://314e.com/fhir/StructureDefinition/organization-314e"]
       }]
     },
     {
@@ -174,8 +174,8 @@ Other representations of profile: [CSV](../StructureDefinition-coverage-314e.csv
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/patient-314e",
+        "http://314e.com/fhir/StructureDefinition/relatedperson-314e"]
       }]
     },
     {
@@ -184,7 +184,7 @@ Other representations of profile: [CSV](../StructureDefinition-coverage-314e.csv
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/patient-314e"]
       }]
     },
     {
@@ -209,9 +209,9 @@ Other representations of profile: [CSV](../StructureDefinition-coverage-314e.csv
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-relatedperson"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/organization-314e",
+        "http://314e.com/fhir/StructureDefinition/patient-314e",
+        "http://314e.com/fhir/StructureDefinition/relatedperson-314e"]
       }]
     },
     {
@@ -294,7 +294,7 @@ Other representations of profile: [CSV](../StructureDefinition-coverage-314e.csv
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Contract"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/contract-314e"]
       }]
     }]
   }

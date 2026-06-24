@@ -96,7 +96,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
             ]
           }
         ]
@@ -123,7 +123,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization"
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
             ]
           }
         ]
@@ -222,8 +222,8 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-immunization",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-immunizationevaluation"
+              "http://314e.com/fhir/StructureDefinition/immunization-314e",
+              "http://314e.com/fhir/StructureDefinition/immunizationevaluation-314e"
             ]
           }
         ]
@@ -238,8 +238,8 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-simple-observation",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-allergyintolerance"
+              "http://314e.com/fhir/StructureDefinition/observation-314e",
+              "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e"
             ]
           }
         ]

@@ -13,7 +13,7 @@
 * Name: [314e CarePlan](StructureDefinition-careplan-314e.md)
   * Description: 314e-constrained CarePlan profile derived from QI-Core CarePlan. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
 * Name: [314e CareTeam](StructureDefinition-careteam-314e.md)
-  * Description: 314e-constrained CareTeam profile derived from US Core CareTeam. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
+  * Description: 314e-constrained CareTeam profile derived from QI-Core CareTeam. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
 * Name: [314e ClinicalImpression](StructureDefinition-clinicalimpression-314e.md)
   * Description: 314e-constrained ClinicalImpression profile derived from FHIR R4 ClinicalImpression. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
 * Name: [314e CommunicationRequest](StructureDefinition-communicationrequest-314e.md)
@@ -89,7 +89,7 @@
 * Name: [314e Microorganism Observation](StructureDefinition-observation-microorganism-314e.md)
   * Description: 314e profile for microorganism observations.
 * Name: [314e Organization](StructureDefinition-organization-314e.md)
-  * Description: 314e-constrained Organization profile derived from US Core Organization. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
+  * Description: 314e-constrained Organization profile derived from QI-Core Organization. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
 * Name: [314e Patient](StructureDefinition-patient-314e.md)
   * Description: 314e-constrained Patient profile derived from QI-Core Patient. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
 * Name: [314e Practitioner](StructureDefinition-practitioner-314e.md)

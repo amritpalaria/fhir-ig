@@ -45,16 +45,16 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MolecularSequence.coordinateSystem","MolecularSequence.coordinateSystem","","","",1,1,"","","Y","integer {[]} {[]}
 ","Base number of coordinate system (0 for 0-based numbering or coordinates, inclusive start, exclusive end, 1 for 1-based numbering, inclusive start, inclusive end)","Whether the sequence is numbered starting at 0 (0-based numbering or coordinates, inclusive start, exclusive end) or starting at 1 (1-based numbering, inclusive start and inclusive end).","","","","","","","","","",,,,,"",,,,"MolecularSequence.coordinateSystem",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.patient","MolecularSequence.patient","","","",0,1,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+"MolecularSequence.patient","MolecularSequence.patient","","","",0,1,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://314e.com/fhir/StructureDefinition/patient-314e]]}
 ","Who and/or what this is about","The patient whose sequencing results are described by this resource.","","","","","","","","","",,,,,"",,,,"MolecularSequence.patient",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.specimen","MolecularSequence.specimen","","","",0,1,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]}
+"MolecularSequence.specimen","MolecularSequence.specimen","","","",0,1,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://314e.com/fhir/StructureDefinition/specimen-314e]]}
 ","Specimen used for sequencing","Specimen used for sequencing.","","","","","","","","","",,,,,"",,,,"MolecularSequence.specimen",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.device","MolecularSequence.device","","","",0,1,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
+"MolecularSequence.device","MolecularSequence.device","","","",0,1,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://314e.com/fhir/StructureDefinition/device-314e]]}
 ","The method for sequencing","The method for sequencing, for example, chip information.","","","","","","","","","",,,,,"",,,,"MolecularSequence.device",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.performer","MolecularSequence.performer","","","",0,1,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+"MolecularSequence.performer","MolecularSequence.performer","","","",0,1,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://314e.com/fhir/StructureDefinition/organization-314e]]}
 ","Who should be responsible for test result","The organization or lab that should be responsible for this result.","","","","","","","","","",,,,,"",,,,"MolecularSequence.performer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MolecularSequence.quantity","MolecularSequence.quantity","","","",0,1,"","","Y","Quantity {[CanonicalType[http://314e.com/fhir/ig/StructureDefinition/quantity-314e]]} {[]}
@@ -267,7 +267,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MolecularSequence.repository.readsetId","MolecularSequence.repository.readsetId","","","",0,1,"","","Y","string {[]} {[]}
 ","Id of the read","Id of the read in this external repository.","","","","","","","","","",,,,,"",,,,"MolecularSequence.repository.readsetId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"MolecularSequence.pointer","MolecularSequence.pointer","","","",0,*,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/MolecularSequence]]}
+"MolecularSequence.pointer","MolecularSequence.pointer","","","",0,*,"","","Y","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://314e.com/fhir/StructureDefinition/molecularsequence-314e]]}
 ","Pointer to next atomic sequence","Pointer to next atomic sequence which at most contains one variant.","","","","","","","","","",,,,,"",,,,"MolecularSequence.pointer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MolecularSequence.structureVariant","MolecularSequence.structureVariant","","","",0,*,"","","Y","BackboneElement {[]} {[]}

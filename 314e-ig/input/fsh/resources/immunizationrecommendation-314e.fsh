@@ -28,8 +28,10 @@ where applicable.
 
 * identifier only Identifier314e
 * patient only Reference314e
+* patient ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * date only dateTime314e
 * authority only Reference314e
+* authority ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * recommendation.vaccineCode only CodeableConcept314e
 * recommendation.targetDisease only CodeableConcept314e
 * recommendation.contraindicatedVaccineCode only CodeableConcept314e
@@ -38,5 +40,9 @@ where applicable.
 * recommendation.dateCriterion.code only CodeableConcept314e
 * recommendation.dateCriterion.value only dateTime314e
 * recommendation.supportingImmunization only Reference314e
+* recommendation.supportingImmunization ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/immunization-314e"
+* recommendation.supportingImmunization ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/immunizationevaluation-314e"
 * recommendation.supportingPatientInformation only Reference314e
+* recommendation.supportingPatientInformation ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/observation-314e"
+* recommendation.supportingPatientInformation ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e"
 * meta only Meta314e

@@ -96,11 +96,11 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-careplan",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-immunizationrecommendation",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationrequest",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-nutritionorder",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest"
+              "http://314e.com/fhir/StructureDefinition/careplan-314e",
+              "http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e",
+              "http://314e.com/fhir/StructureDefinition/medicationrequest-314e",
+              "http://314e.com/fhir/StructureDefinition/nutritionorder-314e",
+              "http://314e.com/fhir/StructureDefinition/servicerequest-314e"
             ]
           }
         ]
@@ -173,7 +173,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
             ]
           }
         ]
@@ -188,7 +188,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"
+              "http://314e.com/fhir/StructureDefinition/encounter-314e"
             ]
           }
         ]
@@ -249,9 +249,9 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitionerrole",
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization"
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
             ]
           }
         ]
@@ -266,10 +266,10 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/CareTeam"
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/careteam-314e"
             ]
           }
         ]
@@ -284,7 +284,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Specimen"
+              "http://314e.com/fhir/StructureDefinition/specimen-314e"
             ]
           }
         ]
@@ -299,7 +299,10 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab"
+              "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e"
             ]
           }
         ]
@@ -314,7 +317,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
+              "http://314e.com/fhir/StructureDefinition/imagingstudy-314e"
             ]
           }
         ]
@@ -329,7 +332,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Media"
+              "http://314e.com/fhir/StructureDefinition/media-314e"
             ]
           }
         ]

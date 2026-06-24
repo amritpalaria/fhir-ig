@@ -28,11 +28,16 @@ where applicable.
 
 * identifier only Identifier314e
 * patient only Reference314e
+* patient ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * specimen only Reference314e
+* specimen ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/specimen-314e"
 * device only Reference314e
+* device ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/device-314e"
 * performer only Reference314e
+* performer ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * quantity only Quantity314e
 * pointer only Reference314e
+* pointer ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/molecularsequence-314e"
 * referenceSeq.chromosome only CodeableConcept314e
 * referenceSeq.referenceSeqId only CodeableConcept314e
 * quality.standardSequence only CodeableConcept314e

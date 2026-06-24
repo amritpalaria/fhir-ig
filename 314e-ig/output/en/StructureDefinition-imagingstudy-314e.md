@@ -8,7 +8,7 @@ This profile applies 314e-defined extensions and uses 314e datatype profiles whe
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Refer to this Profile: [314e CarePlan](StructureDefinition-careplan-314e.md), [314e ClinicalImpression](StructureDefinition-clinicalimpression-314e.md), [314e Condition Encounter Diagnosis](StructureDefinition-condition-diagnosis-314e.md), [314e Condition Problems Health Concerns](StructureDefinition-condition-problem-healthconcern-314e.md)... Show 11 more, [314e DeviceRequest](StructureDefinition-devicerequest-314e.md), [314e DiagnosticReport](StructureDefinition-diagnosticreport-314e.md), [314e DiagnosticReport Laboratory Results](StructureDefinition-diagnosticreport-lab-314e.md), [314e DiagnosticReport Note and Report](StructureDefinition-diagnosticreport-notereport-314e.md), [314e DocumentReference](StructureDefinition-documentreference-314e.md), [314e MedicationDispense](StructureDefinition-medicationdispense-314e.md), [314e MedicationRequest](StructureDefinition-medicationrequest-314e.md), [314e Observation](StructureDefinition-observation-314e.md), [314e General Laboratory Observation](StructureDefinition-observation-lab-general-314e.md), [314e ServiceRequest](StructureDefinition-servicerequest-314e.md) and [314e Task](StructureDefinition-task-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/imagingstudy-314e)
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
   "name" : "ImagingStudy314e",
   "title" : "314e ImagingStudy",
   "status" : "active",
-  "date" : "2026-06-18T16:14:31+05:30",
+  "date" : "2026-06-24T16:34:23+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -141,7 +141,7 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/patient-314e"]
       }]
     },
     {
@@ -150,7 +150,7 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/encounter-314e"]
       }]
     },
     {
@@ -167,8 +167,8 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-careplan"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/careplan-314e",
+        "http://314e.com/fhir/StructureDefinition/servicerequest-314e"]
       }]
     },
     {
@@ -177,8 +177,8 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitionerrole"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/practitioner-314e",
+        "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"]
       }]
     },
     {
@@ -187,8 +187,8 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitionerrole"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/practitioner-314e",
+        "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"]
       }]
     },
     {
@@ -197,7 +197,7 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Endpoint|4.0.1"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/endpoint-314e"]
       }]
     },
     {
@@ -206,7 +206,7 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/procedure-314e"]
       }]
     },
     {
@@ -223,7 +223,7 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/location-314e"]
       }]
     },
     {
@@ -240,11 +240,11 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-simple-observation",
-        "http://hl7.org/fhir/StructureDefinition/Media",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-diagnosticreport-note",
-        "http://hl7.org/fhir/StructureDefinition/DocumentReference"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+        "http://314e.com/fhir/StructureDefinition/observation-314e",
+        "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
+        "http://314e.com/fhir/StructureDefinition/documentreference-314e",
+        "http://314e.com/fhir/StructureDefinition/media-314e"]
       }]
     },
     {
@@ -269,7 +269,7 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Endpoint|4.0.1"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/endpoint-314e"]
       }]
     },
     {
@@ -294,7 +294,7 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Specimen|4.0.1"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/specimen-314e"]
       }]
     },
     {
@@ -319,13 +319,13 @@ Other representations of profile: [CSV](../StructureDefinition-imagingstudy-314e
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitionerrole",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-careteam",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient",
-        "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-device",
-        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device",
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/practitioner-314e",
+        "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+        "http://314e.com/fhir/StructureDefinition/organization-314e",
+        "http://314e.com/fhir/StructureDefinition/careteam-314e",
+        "http://314e.com/fhir/StructureDefinition/patient-314e",
+        "http://314e.com/fhir/StructureDefinition/device-314e",
+        "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
         "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-relatedperson"]
       }]
     },

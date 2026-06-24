@@ -28,9 +28,13 @@ where applicable.
 
 * identifier only Identifier314e
 * patient only Reference314e
+* patient ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * encounter only Reference314e
+* encounter ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/encounter-314e"
 * dateWritten only dateTime314e
 * prescriber only Reference314e
+* prescriber ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* prescriber ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
 * lensSpecification.product only CodeableConcept314e
 * lensSpecification.sphere only decimal314e
 * lensSpecification.cylinder only decimal314e

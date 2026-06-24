@@ -29,6 +29,7 @@ where applicable.
 * identifier only Identifier314e
 * connectionType only Coding314e
 * managingOrganization only Reference314e
+* managingOrganization ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * contact only ContactPoint314e
 * period only Period314e
 * payloadType only CodeableConcept314e

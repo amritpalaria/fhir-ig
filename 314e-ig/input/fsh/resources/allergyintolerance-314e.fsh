@@ -46,11 +46,21 @@ where applicable.
 * criticality only code
 * code only CodeableConcept314e
 * patient only Reference314e
+* patient ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * encounter only Reference314e
+* encounter ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/encounter-314e"
 * onset[x] only dateTime314e or Age314e or Period314e or Range314e
 * recordedDate only dateTime314e
 * recorder only Reference314e
+* recorder ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* recorder ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
+* recorder ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* recorder ^type.targetProfile[3] = "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
 * asserter only Reference314e
+* asserter ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* asserter ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
+* asserter ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* asserter ^type.targetProfile[3] = "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
 * lastOccurrence only dateTime314e
 * note only Annotation314e
 * reaction.substance only CodeableConcept314e

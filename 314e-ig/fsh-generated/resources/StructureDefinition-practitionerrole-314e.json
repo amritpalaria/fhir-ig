@@ -96,7 +96,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-practitioner"
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e"
             ]
           }
         ]
@@ -111,7 +111,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-organization"
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
             ]
           }
         ]
@@ -150,7 +150,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location"
+              "http://314e.com/fhir/StructureDefinition/location-314e"
             ]
           }
         ]
@@ -165,7 +165,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/HealthcareService"
+              "http://314e.com/fhir/StructureDefinition/healthcareservice-314e"
             ]
           }
         ]
@@ -204,7 +204,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Endpoint"
+              "http://314e.com/fhir/StructureDefinition/endpoint-314e"
             ]
           }
         ]

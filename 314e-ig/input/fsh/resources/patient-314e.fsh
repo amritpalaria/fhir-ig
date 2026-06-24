@@ -65,6 +65,11 @@ where applicable.
 
 * photo only Attachment314e
 * generalPractitioner only Reference314e
+* generalPractitioner ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/organization-314e"
+* generalPractitioner ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* generalPractitioner ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
 * managingOrganization only Reference314e
+* managingOrganization ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * link.other only Reference314e
+* link.other ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * meta only Meta314e

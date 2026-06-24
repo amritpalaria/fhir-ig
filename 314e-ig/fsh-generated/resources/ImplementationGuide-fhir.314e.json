@@ -123,7 +123,7 @@
           "reference": "StructureDefinition/careteam-314e"
         },
         "name": "314e CareTeam",
-        "description": "314e-constrained CareTeam profile derived from US Core CareTeam.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "description": "314e-constrained CareTeam profile derived from QI-Core CareTeam.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
@@ -531,7 +531,7 @@
           "reference": "StructureDefinition/organization-314e"
         },
         "name": "314e Organization",
-        "description": "314e-constrained Organization profile derived from US Core Organization.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "description": "314e-constrained Organization profile derived from QI-Core Organization.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {

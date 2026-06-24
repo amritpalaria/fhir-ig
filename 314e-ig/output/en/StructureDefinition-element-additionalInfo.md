@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-element-additiona
   "name" : "ElementAdditionalInfo",
   "title" : "Element Additional Info",
   "status" : "active",
-  "date" : "2026-06-18T16:14:31+05:30",
+  "date" : "2026-06-24T16:34:23+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

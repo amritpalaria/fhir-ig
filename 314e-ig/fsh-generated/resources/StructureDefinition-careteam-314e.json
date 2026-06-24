@@ -1,16 +1,34 @@
 {
   "resourceType": "StructureDefinition",
   "id": "careteam-314e",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-primaryCodePath",
+      "valueString": "participant.role"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+      "valueString": "CareTeam"
+    }
+  ],
   "url": "http://314e.com/fhir/StructureDefinition/careteam-314e",
   "name": "CareTeam314e",
   "title": "314e CareTeam",
   "status": "active",
-  "description": "314e-constrained CareTeam profile derived from US Core CareTeam.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "description": "314e-constrained CareTeam profile derived from QI-Core CareTeam.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "CareTeam",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam",
+  "baseDefinition": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-careteam",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -90,26 +108,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
-              "http://hl7.org/fhir/StructureDefinition/Group"
-            ],
-            "_targetProfile": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                    "valueBoolean": true
-                  }
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                    "valueBoolean": false
-                  }
-                ]
-              }
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
             ]
           }
         ]
@@ -124,7 +123,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
+              "http://314e.com/fhir/StructureDefinition/encounter-314e"
             ]
           }
         ]
@@ -163,62 +162,12 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"
-            ],
-            "_targetProfile": [
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                    "valueBoolean": true
-                  }
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                    "valueBoolean": false
-                  }
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                    "valueBoolean": false
-                  }
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                    "valueBoolean": true
-                  }
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                    "valueBoolean": false
-                  }
-                ]
-              },
-              {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                    "valueBoolean": true
-                  }
-                ]
-              }
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/careteam-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
             ]
           }
         ]
@@ -233,7 +182,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
             ]
           }
         ]
@@ -272,7 +221,9 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition"
+              "http://314e.com/fhir/StructureDefinition/condition-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e"
             ]
           }
         ]
@@ -287,7 +238,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
             ]
           }
         ]

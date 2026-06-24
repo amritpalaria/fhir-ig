@@ -112,7 +112,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CarePlan"
+              "http://314e.com/fhir/StructureDefinition/careplan-314e"
             ],
             "extension": [
               {
@@ -133,7 +133,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CarePlan"
+              "http://314e.com/fhir/StructureDefinition/careplan-314e"
             ],
             "extension": [
               {
@@ -154,7 +154,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CarePlan"
+              "http://314e.com/fhir/StructureDefinition/careplan-314e"
             ],
             "extension": [
               {
@@ -200,7 +200,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
             ]
           }
         ]
@@ -215,7 +215,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
+              "http://314e.com/fhir/StructureDefinition/encounter-314e"
             ]
           }
         ]
@@ -242,13 +242,13 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/CareTeam"
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e",
+              "http://314e.com/fhir/StructureDefinition/careteam-314e"
             ]
           }
         ]
@@ -263,13 +263,13 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/CareTeam"
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e",
+              "http://314e.com/fhir/StructureDefinition/careteam-314e"
             ]
           }
         ]
@@ -284,7 +284,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CareTeam"
+              "http://314e.com/fhir/StructureDefinition/careteam-314e"
             ]
           }
         ]
@@ -299,7 +299,9 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition"
+              "http://314e.com/fhir/StructureDefinition/condition-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e"
             ]
           }
         ]
@@ -314,7 +316,64 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Resource"
+              "http://hl7.org/fhir/StructureDefinition/Resource",
+              "http://314e.com/fhir/StructureDefinition/account-314e",
+              "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e",
+              "http://314e.com/fhir/StructureDefinition/appointment-314e",
+              "http://314e.com/fhir/StructureDefinition/careplan-314e",
+              "http://314e.com/fhir/StructureDefinition/careteam-314e",
+              "http://314e.com/fhir/StructureDefinition/clinicalimpression-314e",
+              "http://314e.com/fhir/StructureDefinition/communicationrequest-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+              "http://314e.com/fhir/StructureDefinition/contract-314e",
+              "http://314e.com/fhir/StructureDefinition/coverage-314e",
+              "http://314e.com/fhir/StructureDefinition/detectedissue-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e",
+              "http://314e.com/fhir/StructureDefinition/devicerequest-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
+              "http://314e.com/fhir/StructureDefinition/documentreference-314e",
+              "http://314e.com/fhir/StructureDefinition/encounter-314e",
+              "http://314e.com/fhir/StructureDefinition/endpoint-314e",
+              "http://314e.com/fhir/StructureDefinition/episodeofcare-314e",
+              "http://314e.com/fhir/StructureDefinition/goal-314e",
+              "http://314e.com/fhir/StructureDefinition/group-314e",
+              "http://314e.com/fhir/StructureDefinition/healthcareservice-314e",
+              "http://314e.com/fhir/StructureDefinition/imagingstudy-314e",
+              "http://314e.com/fhir/StructureDefinition/immunization-314e",
+              "http://314e.com/fhir/StructureDefinition/immunizationevaluation-314e",
+              "http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e",
+              "http://314e.com/fhir/StructureDefinition/location-314e",
+              "http://314e.com/fhir/StructureDefinition/media-314e",
+              "http://314e.com/fhir/StructureDefinition/medication-314e",
+              "http://314e.com/fhir/StructureDefinition/medicationadministration-314e",
+              "http://314e.com/fhir/StructureDefinition/medicationdispense-314e",
+              "http://314e.com/fhir/StructureDefinition/medicationrequest-314e",
+              "http://314e.com/fhir/StructureDefinition/molecularsequence-314e",
+              "http://314e.com/fhir/StructureDefinition/nutritionorder-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/procedure-314e",
+              "http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+              "http://314e.com/fhir/StructureDefinition/requestgroup-314e",
+              "http://314e.com/fhir/StructureDefinition/schedule-314e",
+              "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
+              "http://314e.com/fhir/StructureDefinition/slot-314e",
+              "http://314e.com/fhir/StructureDefinition/specimen-314e",
+              "http://314e.com/fhir/StructureDefinition/substance-314e",
+              "http://314e.com/fhir/StructureDefinition/task-314e",
+              "http://314e.com/fhir/StructureDefinition/visionprescription-314e"
             ]
           }
         ]
@@ -329,7 +388,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Goal"
+              "http://314e.com/fhir/StructureDefinition/goal-314e"
             ]
           }
         ]
@@ -386,7 +445,64 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Resource"
+              "http://hl7.org/fhir/StructureDefinition/Resource",
+              "http://314e.com/fhir/StructureDefinition/account-314e",
+              "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e",
+              "http://314e.com/fhir/StructureDefinition/appointment-314e",
+              "http://314e.com/fhir/StructureDefinition/careplan-314e",
+              "http://314e.com/fhir/StructureDefinition/careteam-314e",
+              "http://314e.com/fhir/StructureDefinition/clinicalimpression-314e",
+              "http://314e.com/fhir/StructureDefinition/communicationrequest-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+              "http://314e.com/fhir/StructureDefinition/contract-314e",
+              "http://314e.com/fhir/StructureDefinition/coverage-314e",
+              "http://314e.com/fhir/StructureDefinition/detectedissue-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e",
+              "http://314e.com/fhir/StructureDefinition/devicerequest-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
+              "http://314e.com/fhir/StructureDefinition/documentreference-314e",
+              "http://314e.com/fhir/StructureDefinition/encounter-314e",
+              "http://314e.com/fhir/StructureDefinition/endpoint-314e",
+              "http://314e.com/fhir/StructureDefinition/episodeofcare-314e",
+              "http://314e.com/fhir/StructureDefinition/goal-314e",
+              "http://314e.com/fhir/StructureDefinition/group-314e",
+              "http://314e.com/fhir/StructureDefinition/healthcareservice-314e",
+              "http://314e.com/fhir/StructureDefinition/imagingstudy-314e",
+              "http://314e.com/fhir/StructureDefinition/immunization-314e",
+              "http://314e.com/fhir/StructureDefinition/immunizationevaluation-314e",
+              "http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e",
+              "http://314e.com/fhir/StructureDefinition/location-314e",
+              "http://314e.com/fhir/StructureDefinition/media-314e",
+              "http://314e.com/fhir/StructureDefinition/medication-314e",
+              "http://314e.com/fhir/StructureDefinition/medicationadministration-314e",
+              "http://314e.com/fhir/StructureDefinition/medicationdispense-314e",
+              "http://314e.com/fhir/StructureDefinition/medicationrequest-314e",
+              "http://314e.com/fhir/StructureDefinition/molecularsequence-314e",
+              "http://314e.com/fhir/StructureDefinition/nutritionorder-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/procedure-314e",
+              "http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+              "http://314e.com/fhir/StructureDefinition/requestgroup-314e",
+              "http://314e.com/fhir/StructureDefinition/schedule-314e",
+              "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
+              "http://314e.com/fhir/StructureDefinition/slot-314e",
+              "http://314e.com/fhir/StructureDefinition/specimen-314e",
+              "http://314e.com/fhir/StructureDefinition/substance-314e",
+              "http://314e.com/fhir/StructureDefinition/task-314e",
+              "http://314e.com/fhir/StructureDefinition/visionprescription-314e"
             ]
           }
         ]
@@ -413,15 +529,15 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Appointment",
-              "http://hl7.org/fhir/StructureDefinition/CommunicationRequest",
-              "http://hl7.org/fhir/StructureDefinition/DeviceRequest",
-              "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-              "http://hl7.org/fhir/StructureDefinition/NutritionOrder",
-              "http://hl7.org/fhir/StructureDefinition/Task",
-              "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-              "http://hl7.org/fhir/StructureDefinition/VisionPrescription",
-              "http://hl7.org/fhir/StructureDefinition/RequestGroup"
+              "http://314e.com/fhir/StructureDefinition/appointment-314e",
+              "http://314e.com/fhir/StructureDefinition/communicationrequest-314e",
+              "http://314e.com/fhir/StructureDefinition/devicerequest-314e",
+              "http://314e.com/fhir/StructureDefinition/medicationrequest-314e",
+              "http://314e.com/fhir/StructureDefinition/nutritionorder-314e",
+              "http://314e.com/fhir/StructureDefinition/task-314e",
+              "http://314e.com/fhir/StructureDefinition/servicerequest-314e",
+              "http://314e.com/fhir/StructureDefinition/visionprescription-314e",
+              "http://314e.com/fhir/StructureDefinition/requestgroup-314e"
             ]
           }
         ]
@@ -460,10 +576,18 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition",
-              "http://hl7.org/fhir/StructureDefinition/Observation",
-              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+              "http://314e.com/fhir/StructureDefinition/condition-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
+              "http://314e.com/fhir/StructureDefinition/documentreference-314e"
             ]
           }
         ]
@@ -478,7 +602,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Goal"
+              "http://314e.com/fhir/StructureDefinition/goal-314e"
             ]
           }
         ]
@@ -526,7 +650,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Location"
+              "http://314e.com/fhir/StructureDefinition/location-314e"
             ]
           }
         ]
@@ -541,14 +665,14 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-              "http://hl7.org/fhir/StructureDefinition/Device"
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/careteam-314e",
+              "http://314e.com/fhir/StructureDefinition/healthcareservice-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e"
             ]
           }
         ]

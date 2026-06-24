@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "IG314e"] ; # 
   fhir:title [ fhir:v "314e FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-18T16:14:31+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-24T16:34:23+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -1620,7 +1620,7 @@
          fhir:reference [ fhir:v "StructureDefinition/careteam-314e" ]
        ] ;
        fhir:name [ fhir:v "314e CareTeam" ] ;
-       fhir:description [ fhir:v "314e-constrained CareTeam profile derived from US Core CareTeam.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:description [ fhir:v "314e-constrained CareTeam profile derived from QI-Core CareTeam.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2691,7 +2691,7 @@
          fhir:reference [ fhir:v "StructureDefinition/organization-314e" ]
        ] ;
        fhir:name [ fhir:v "314e Organization" ] ;
-       fhir:description [ fhir:v "314e-constrained Organization profile derived from US Core Organization.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
+       fhir:description [ fhir:v "314e-constrained Organization profile derived from QI-Core Organization.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

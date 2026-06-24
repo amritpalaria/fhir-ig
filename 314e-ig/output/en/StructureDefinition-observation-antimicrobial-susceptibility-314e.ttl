@@ -59,7 +59,7 @@
   fhir:name [ fhir:v "ObservationAntimicrobialSusceptibility314e"] ; # 
   fhir:title [ fhir:v "314e Antimicrobial Susceptibility Observation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-18T16:14:31+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-24T16:34:23+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -1515,23 +1515,23 @@
            fhir:l <http://314e.com/fhir/StructureDefinition/reference-314e>
          ] ) ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CarePlan"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/CarePlan>
+           fhir:v "http://314e.com/fhir/StructureDefinition/servicerequest-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/servicerequest-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceRequest"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceRequest>
+           fhir:v "http://314e.com/fhir/StructureDefinition/careplan-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/careplan-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation>
+           fhir:v "http://314e.com/fhir/StructureDefinition/devicerequest-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/devicerequest-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationRequest"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/MedicationRequest>
+           fhir:v "http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/NutritionOrder"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/NutritionOrder>
+           fhir:v "http://314e.com/fhir/StructureDefinition/medicationrequest-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/medicationrequest-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ServiceRequest"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/ServiceRequest>
+           fhir:v "http://314e.com/fhir/StructureDefinition/nutritionorder-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/nutritionorder-314e>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -1581,23 +1581,23 @@
            fhir:l <http://314e.com/fhir/StructureDefinition/reference-314e>
          ] ) ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/MedicationAdministration>
+           fhir:v "http://314e.com/fhir/StructureDefinition/medicationadministration-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/medicationadministration-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationDispense"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/MedicationDispense>
+           fhir:v "http://314e.com/fhir/StructureDefinition/medicationdispense-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/medicationdispense-314e>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/MedicationStatement"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/MedicationStatement>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Procedure>
+           fhir:v "http://314e.com/fhir/StructureDefinition/procedure-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/procedure-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Immunization"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Immunization>
+           fhir:v "http://314e.com/fhir/StructureDefinition/immunization-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/immunization-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/ImagingStudy>
+           fhir:v "http://314e.com/fhir/StructureDefinition/imagingstudy-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/imagingstudy-314e>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -3021,8 +3021,8 @@
            fhir:l <http://314e.com/fhir/StructureDefinition/reference-314e>
          ] ) ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient>
+           fhir:v "http://314e.com/fhir/StructureDefinition/patient-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/patient-314e>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -3080,6 +3080,177 @@
          fhir:targetProfile ( [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Resource"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/Resource>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/account-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/account-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/allergyintolerance-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/appointment-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/appointment-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/careplan-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/careplan-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/careteam-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/careteam-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/clinicalimpression-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/clinicalimpression-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/communicationrequest-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/communicationrequest-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/condition-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/condition-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/contract-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/contract-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/coverage-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/coverage-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/detectedissue-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/detectedissue-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/device-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/device-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/devicerequest-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/devicerequest-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/diagnosticreport-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/diagnosticreport-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/documentreference-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/documentreference-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/encounter-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/encounter-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/endpoint-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/endpoint-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/episodeofcare-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/episodeofcare-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/goal-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/goal-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/group-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/group-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/healthcareservice-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/healthcareservice-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/imagingstudy-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/imagingstudy-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/immunization-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/immunization-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/immunizationevaluation-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/immunizationevaluation-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/location-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/location-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/media-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/media-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/medication-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/medication-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/medicationadministration-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/medicationadministration-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/medicationdispense-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/medicationdispense-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/medicationrequest-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/medicationrequest-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/molecularsequence-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/molecularsequence-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/nutritionorder-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/nutritionorder-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-lab-general-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-microbiology-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-microorganism-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/organization-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/organization-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/patient-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/patient-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/practitioner-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/practitioner-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/practitionerrole-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/procedure-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/procedure-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/relatedperson-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/relatedperson-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/requestgroup-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/requestgroup-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/schedule-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/schedule-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/servicerequest-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/servicerequest-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/slot-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/slot-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/specimen-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/specimen-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/substance-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/substance-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/task-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/task-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/visionprescription-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/visionprescription-314e>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -3143,8 +3314,8 @@
            fhir:l <http://314e.com/fhir/StructureDefinition/reference-314e>
          ] ) ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter>
+           fhir:v "http://314e.com/fhir/StructureDefinition/encounter-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/encounter-314e>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -3372,23 +3543,23 @@
            fhir:l <http://314e.com/fhir/StructureDefinition/reference-314e>
          ] ) ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Practitioner"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Practitioner>
+           fhir:v "http://314e.com/fhir/StructureDefinition/practitioner-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/practitioner-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/PractitionerRole"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+           fhir:v "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/practitionerrole-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Organization>
+           fhir:v "http://314e.com/fhir/StructureDefinition/organization-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/organization-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/CareTeam"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/CareTeam>
+           fhir:v "http://314e.com/fhir/StructureDefinition/careteam-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/careteam-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:v "http://314e.com/fhir/StructureDefinition/patient-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/patient-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
+           fhir:v "http://314e.com/fhir/StructureDefinition/relatedperson-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/relatedperson-314e>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -4642,8 +4813,8 @@
            fhir:l <http://314e.com/fhir/StructureDefinition/reference-314e>
          ] ) ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen>
+           fhir:v "http://314e.com/fhir/StructureDefinition/specimen-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/specimen-314e>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -4696,8 +4867,8 @@
            fhir:l <http://314e.com/fhir/StructureDefinition/reference-314e>
          ] ) ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Device"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Device>
+           fhir:v "http://314e.com/fhir/StructureDefinition/device-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/device-314e>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/DeviceMetric"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/StructureDefinition/DeviceMetric>
@@ -5351,23 +5522,35 @@
            fhir:l <http://314e.com/fhir/StructureDefinition/reference-314e>
          ] ) ;
          fhir:targetProfile ( [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/DocumentReference"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/DocumentReference>
+           fhir:v "http://314e.com/fhir/StructureDefinition/documentreference-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/documentreference-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/ImagingStudy"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/ImagingStudy>
+           fhir:v "http://314e.com/fhir/StructureDefinition/imagingstudy-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/imagingstudy-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Media"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Media>
+           fhir:v "http://314e.com/fhir/StructureDefinition/media-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/media-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse>
+           fhir:v "http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/Observation>
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-314e>
          ] [
-           fhir:v "http://hl7.org/fhir/StructureDefinition/MolecularSequence"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/StructureDefinition/MolecularSequence>
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-lab-general-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-microbiology-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-microorganism-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e>
+         ] [
+           fhir:v "http://314e.com/fhir/StructureDefinition/molecularsequence-314e"^^xsd:anyURI ;
+           fhir:l <http://314e.com/fhir/StructureDefinition/molecularsequence-314e>
          ] )
        ] ) ;
        fhir:constraint ( [

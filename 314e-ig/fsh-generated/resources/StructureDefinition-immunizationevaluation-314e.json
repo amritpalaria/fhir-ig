@@ -1,6 +1,24 @@
 {
   "resourceType": "StructureDefinition",
   "id": "immunizationevaluation-314e",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-primaryCodePath",
+      "valueString": "targetDisease"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isIncluded",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-isRetrievable",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-modelInfo-label",
+      "valueString": "ImmunizationEvaluation"
+    }
+  ],
   "url": "http://314e.com/fhir/StructureDefinition/immunizationevaluation-314e",
   "name": "ImmunizationEvaluation314e",
   "title": "314e ImmunizationEvaluation",
@@ -10,7 +28,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "ImmunizationEvaluation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation",
+  "baseDefinition": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-immunizationevaluation",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -78,7 +96,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
             ]
           }
         ]
@@ -105,7 +123,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
             ]
           }
         ]
@@ -132,7 +150,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Immunization"
+              "http://314e.com/fhir/StructureDefinition/immunization-314e"
             ]
           }
         ]

@@ -1,5 +1,5 @@
 Profile: ImmunizationEvaluation314e
-Parent: ImmunizationEvaluation
+Parent: http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-immunizationevaluation
 Id: immunizationevaluation-314e
 Title: "314e ImmunizationEvaluation"
 Description: """
@@ -28,10 +28,13 @@ where applicable.
 
 * identifier only Identifier314e
 * patient only Reference314e
+* patient ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * date only dateTime314e
 * authority only Reference314e
+* authority ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * targetDisease only CodeableConcept314e
 * immunizationEvent only Reference314e
+* immunizationEvent ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/immunization-314e"
 * doseStatus only CodeableConcept314e
 * doseStatusReason only CodeableConcept314e
 * meta only Meta314e

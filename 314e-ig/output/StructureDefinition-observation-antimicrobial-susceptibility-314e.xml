@@ -32,7 +32,7 @@
   <name value="ObservationAntimicrobialSusceptibility314e"/>
   <title value="314e Antimicrobial Susceptibility Observation"/>
   <status value="active"/>
-  <date value="2026-06-18T16:14:31+05:30"/>
+  <date value="2026-06-24T16:34:23+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -1174,12 +1174,12 @@
       <type>
         <code value="Reference"/>
         <profile value="http://314e.com/fhir/StructureDefinition/reference-314e"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/servicerequest-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/careplan-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/devicerequest-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/medicationrequest-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/nutritionorder-314e"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1220,12 +1220,12 @@
       <type>
         <code value="Reference"/>
         <profile value="http://314e.com/fhir/StructureDefinition/reference-314e"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationDispense"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/medicationadministration-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/medicationdispense-314e"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/procedure-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/immunization-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/imagingstudy-314e"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2365,7 +2365,7 @@
       <type>
         <code value="Reference"/>
         <profile value="http://314e.com/fhir/StructureDefinition/reference-314e"/>
-        <targetProfile value="http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/patient-314e"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2415,6 +2415,63 @@
         <code value="Reference"/>
         <profile value="http://314e.com/fhir/StructureDefinition/reference-314e"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/account-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/allergyintolerance-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/appointment-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/careplan-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/careteam-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/clinicalimpression-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/communicationrequest-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/condition-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/contract-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/coverage-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/detectedissue-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/device-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/devicerequest-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/diagnosticreport-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/documentreference-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/encounter-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/endpoint-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/episodeofcare-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/goal-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/group-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/healthcareservice-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/imagingstudy-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/immunization-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/immunizationevaluation-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/location-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/media-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/medication-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/medicationadministration-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/medicationdispense-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/medicationrequest-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/molecularsequence-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/nutritionorder-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-lab-general-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-microbiology-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-microorganism-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/organization-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/patient-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/practitioner-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/practitionerrole-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/procedure-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/relatedperson-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/requestgroup-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/schedule-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/servicerequest-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/slot-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/specimen-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/substance-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/task-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/visionprescription-314e"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2463,7 +2520,7 @@
       <type>
         <code value="Reference"/>
         <profile value="http://314e.com/fhir/StructureDefinition/reference-314e"/>
-        <targetProfile value="http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/encounter-314e"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2626,12 +2683,12 @@
       <type>
         <code value="Reference"/>
         <profile value="http://314e.com/fhir/StructureDefinition/reference-314e"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/practitioner-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/practitionerrole-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/organization-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/careteam-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/patient-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/relatedperson-314e"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -3548,7 +3605,7 @@
       <type>
         <code value="Reference"/>
         <profile value="http://314e.com/fhir/StructureDefinition/reference-314e"/>
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/specimen-314e"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -3593,7 +3650,7 @@
       <type>
         <code value="Reference"/>
         <profile value="http://314e.com/fhir/StructureDefinition/reference-314e"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/device-314e"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceMetric"/>
       </type>
       <constraint>
@@ -4111,12 +4168,16 @@
       <type>
         <code value="Reference"/>
         <profile value="http://314e.com/fhir/StructureDefinition/reference-314e"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Media"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/documentreference-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/imagingstudy-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/media-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/questionnaireresponse-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-lab-general-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-microbiology-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-microorganism-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e"/>
+        <targetProfile value="http://314e.com/fhir/StructureDefinition/molecularsequence-314e"/>
       </type>
       <constraint>
         <key value="ele-1"/>

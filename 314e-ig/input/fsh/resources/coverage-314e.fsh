@@ -29,15 +29,25 @@ where applicable.
 * identifier only Identifier314e
 * type only CodeableConcept314e
 * policyHolder only Reference314e
+* policyHolder ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* policyHolder ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
+* policyHolder ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * subscriber only Reference314e
+* subscriber ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* subscriber ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
 * beneficiary only Reference314e
+* beneficiary ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * relationship only CodeableConcept314e
 * period only Period314e
 * payor only Reference314e
+* payor ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/organization-314e"
+* payor ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* payor ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
 * class.type only CodeableConcept314e
 * costToBeneficiary.type only CodeableConcept314e
 * costToBeneficiary.value[x] only Money314e or SimpleQuantity314e
 * costToBeneficiary.exception.type only CodeableConcept314e
 * costToBeneficiary.exception.period only Period314e
 * contract only Reference314e
+* contract ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/contract-314e"
 * meta only Meta314e

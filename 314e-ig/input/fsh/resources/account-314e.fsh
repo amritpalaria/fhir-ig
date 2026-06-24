@@ -29,10 +29,22 @@ where applicable.
 * identifier only Identifier314e
 * type only CodeableConcept314e
 * subject only Reference314e
+* subject ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* subject ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/device-314e"
+* subject ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* subject ^type.targetProfile[3] = "http://314e.com/fhir/StructureDefinition/location-314e"
+* subject ^type.targetProfile[4] = "http://314e.com/fhir/StructureDefinition/healthcareservice-314e"
+* subject ^type.targetProfile[5] = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * servicePeriod only Period314e
 * coverage.coverage only Reference314e
+* coverage.coverage ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/coverage-314e"
 * owner only Reference314e
+* owner ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * guarantor.party only Reference314e
+* guarantor.party ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* guarantor.party ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
+* guarantor.party ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * guarantor.period only Period314e
 * partOf only Reference314e
+* partOf ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/account-314e"
 * meta only Meta314e

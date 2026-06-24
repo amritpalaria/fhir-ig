@@ -31,10 +31,14 @@ where applicable.
 * specialization.systemType only CodeableConcept314e
 * property.type only CodeableConcept314e
 * patient only Reference314e
+* patient ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * owner only Reference314e
+* owner ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 * contact only ContactPoint314e
 * location only Reference314e
+* location ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/location-314e"
 * note only Annotation314e
 * safety only CodeableConcept314e
 * parent only Reference314e
+* parent ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/device-314e"
 * meta only Meta314e

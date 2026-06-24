@@ -29,8 +29,19 @@ where applicable.
 * identifier only Identifier314e
 * code only CodeableConcept314e
 * managingEntity only Reference314e
+* managingEntity ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/organization-314e"
+* managingEntity ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
+* managingEntity ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* managingEntity ^type.targetProfile[3] = "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
 * characteristic.code only CodeableConcept314e
 * characteristic.period only Period314e
 * member.entity only Reference314e
+* member.entity ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* member.entity ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* member.entity ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
+* member.entity ^type.targetProfile[3] = "http://314e.com/fhir/StructureDefinition/device-314e"
+* member.entity ^type.targetProfile[4] = "http://314e.com/fhir/StructureDefinition/medication-314e"
+* member.entity ^type.targetProfile[5] = "http://314e.com/fhir/StructureDefinition/substance-314e"
+* member.entity ^type.targetProfile[6] = "http://314e.com/fhir/StructureDefinition/group-314e"
 * member.period only Period314e
 * meta only Meta314e

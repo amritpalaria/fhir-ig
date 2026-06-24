@@ -126,7 +126,7 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Schedule"
+              "http://314e.com/fhir/StructureDefinition/schedule-314e"
             ]
           }
         ]

@@ -28,10 +28,15 @@ where applicable.
 
 * identifier only Identifier314e
 * patient only Reference314e
+* patient ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/patient-314e"
 * encounter only Reference314e
+* encounter ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/encounter-314e"
 * dateTime only dateTime314e
 * orderer only Reference314e
+* orderer ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* orderer ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
 * allergyIntolerance only Reference314e
+* allergyIntolerance ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/allergyintolerance-314e"
 * foodPreferenceModifier only CodeableConcept314e
 * excludeFoodModifier only CodeableConcept314e
 * oralDiet.type only CodeableConcept314e
