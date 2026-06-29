@@ -11,7 +11,7 @@
   "name" : "IG314e",
   "title" : "314e FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2026-06-24T16:34:23+05:30",
+  "date" : "2026-06-29T17:18:47+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -1420,6 +1420,18 @@
       },
       "name" : "314e Period",
       "description" : "314e profile of the FHIR Period datatype.\n\nAll dateTime values within the Period SHALL conform\nto the 314e DateTime profile requirements,\nincluding UTC normalization and precision handling.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/person-314e"
+      },
+      "name" : "314e Person",
+      "description" : "314e-constrained Person profile derived from FHIR R4 Person.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable. No QI Core or US Core Person profile exists; this profile\nconstrains the base FHIR R4 Person resource directly.",
       "exampleBoolean" : false
     },
     {

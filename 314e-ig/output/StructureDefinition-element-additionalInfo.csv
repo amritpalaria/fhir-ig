@@ -13,7 +13,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://314e.com/fhir/StructureDefinition/element-additionalInfo""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.value[x]","Extension.value[x]","","","",1,1,"","","","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[]}
+"Extension.value[x]","Extension.value[x]","","","",1,1,"","","","Reference {[CanonicalType[http://314e.com/fhir/StructureDefinition/reference-314e]]} {[CanonicalType[http://314e.com/fhir/StructureDefinition/observation-314e]]}
 ","Reference to additional information for this element","Reference to an Observation resource that carries additional or non-standard
 information associated with a specific FHIR element beyond what the standard
 element definition supports.","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

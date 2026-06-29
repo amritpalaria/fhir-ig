@@ -17,6 +17,11 @@ Context: DomainResource
 
 * value[x] only Reference314e
 * valueReference 1..1
+* valueReference ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* valueReference ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/practitionerrole-314e"
+* valueReference ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* valueReference ^type.targetProfile[3] = "http://314e.com/fhir/StructureDefinition/person-314e"
+* valueReference ^type.targetProfile[4] = "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
 
 * valueReference ^short = "Person who last edited the resource"
 * valueReference ^definition = """

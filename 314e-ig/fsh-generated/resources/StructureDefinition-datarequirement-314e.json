@@ -17,6 +17,16 @@
       {
         "id": "DataRequirement.subject[x]",
         "path": "DataRequirement.subject[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "CodeableConcept",
@@ -30,7 +40,25 @@
               "http://314e.com/fhir/StructureDefinition/reference-314e"
             ],
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Group"
+              "http://314e.com/fhir/StructureDefinition/group-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DataRequirement.subject[x]:subjectReference",
+        "path": "DataRequirement.subject[x]",
+        "sliceName": "subjectReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/group-314e"
             ]
           }
         ]

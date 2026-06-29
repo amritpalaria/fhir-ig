@@ -1,15 +1,15 @@
 IG314e : Validation Results
 =========================================
 
-err = 250, warn = 194, info = 46
+err = 256, warn = 191, info = 47
 $--
 Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/fhir/ig)
- Build Errors : 15 / 8 / 0
+ Build Errors : 4 / 4 / 0
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-attachment-tag-cs : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-observation-tag : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-procedure-category-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-time-precision-units-cs : 2 / 1 / 2
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ImplementationGuide-fhir.314e : 4 / 2 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ImplementationGuide-fhir.314e : 4 / 2 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-account-314e : 2 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-address-314e : 0 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-age-314e : 0 / 1 / 1
@@ -61,7 +61,7 @@ Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/f
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-healthcareservice-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-humanname-314e : 0 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-identifier-314e : 0 / 5 / 1
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-imagingstudy-314e : 2 / 4 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-imagingstudy-314e : 2 / 6 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-immunization-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-immunizationevaluation-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-immunizationrecommendation-314e : 2 / 1 / 1
@@ -73,14 +73,14 @@ Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/f
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-medicationdispense-314e : 2 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-medicationrequest-314e : 2 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-meta-314e : 2 / 1 / 1
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-molecularsequence-314e : 2 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-molecularsequence-314e : 2 / 2 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-money-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-nutritionorder-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-314e : 2 / 1 / 2
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-antimicrobial-susceptibility-314e : 2 / 8 / 5
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-antimicrobial-susceptibility-314e : 3 / 7 / 5
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-lab-general-314e : 2 / 5 / 4
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-microbiology-314e : 2 / 6 / 3
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-microorganism-314e : 2 / 8 / 5
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-microbiology-314e : 4 / 4 / 3
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-microorganism-314e : 3 / 7 / 5
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-observation-value-attachment : 2 / 2 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-organization-314e : 2 / 3 / 5
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-patient-314e : 2 / 1 / 2
@@ -90,6 +90,7 @@ Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/f
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-patient-pharmacies : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-patient-preferredGenderPronoun : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-period-314e : 0 / 1 / 2
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-person-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-practitioner-314e : 2 / 1 / 3
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-practitionerrole-314e : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-procedure-314e : 2 / 2 / 1
@@ -125,7 +126,7 @@ Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/f
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-antimicrobial-susceptibility-testing-vs : 0 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-attachment-tag : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-lab-category-subcategory-314e : 2 / 1 / 1
- C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-microorganism-by-method-vs : 0 / 1 / 1
+ C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-microorganism-by-method-vs : 0 / 3 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-observation-tag-vs : 2 / 1 / 1
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-broad-314e : 2 / 1 / 2
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-procedure-category-subcategory-314e : 2 / 1 / 1
@@ -133,21 +134,6 @@ Generated $--. FHIR version $-- for fhir.314e#$-- (canonical = http://314e.com/f
  C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-time-precision-units-vs : 2 / 0 / 1
 </table>
 == n/a ==
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime-definitions.html#/html/body/div/div/div/div/div/ul/li/a at Line 187, column 10: The link 'StructureDefinition-documentReference-author-dictationDateTime-examples.html' for "Examples" cannot be resolved
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime-mappings.html#/html/body/div/div/div/div/div/ul/li/a at Line 187, column 10: The link 'StructureDefinition-documentReference-author-dictationDateTime-examples.html' for "Examples" cannot be resolved
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime-testing.html#/html/body/div/div/div/div/div/ul/li/a at Line 187, column 10: The link 'StructureDefinition-documentReference-author-dictationDateTime-examples.html' for "Examples" cannot be resolved
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime.html#/html/body/div/div/div/div/div/ul/li/a at Line 186, column 10: The link 'StructureDefinition-documentReference-author-dictationDateTime-examples.html' for "Examples" cannot be resolved
-WARNING: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\output\en\StructureDefinition-documentReference-author-dictationDateTime.html#/html/body/div/div/div/div/div/div/div/div/div/table/script at Line 343, column 352: The <script> containing the javascript '// 64b44d78-5781-4c3'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
-WARNING: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\output\en\StructureDefinition-documentReference-author-dictationDateTime.html#/html/body/div/div/div/div/div/div/div/div/div/table/script at Line 400, column 352: The <script> containing the javascript '// 64b44d78-5781-4c3'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
-WARNING: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\output\en\StructureDefinition-documentReference-author-dictationDateTime.html#/html/body/div/div/div/div/div/div/div/div/div/table/script at Line 557, column 352: The <script> containing the javascript '// 64b44d78-5781-4c3'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
-WARNING: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\output\en\StructureDefinition-documentReference-author-dictationDateTime.html#/html/body/div/div/div/div/div/div/div/div/div/table/script at Line 610, column 352: The <script> containing the javascript '// 64b44d78-5781-4c3'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime.html#/html/body/div/div/div/div/div/p/a at Line 730, column 41: The link '../StructureDefinition-documentReference-author-dictationDateTime.csv' for "CSV" cannot be resolved
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime.html#/html/body/div/div/div/div/div/p/a at Line 730, column 130: The link '../StructureDefinition-documentReference-author-dictationDateTime.xlsx' for "Excel" cannot be resolved
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime.html#/html/body/div/div/div/div/div/p/a at Line 730, column 222: The link '../StructureDefinition-documentReference-author-dictationDateTime.sch' for "Schematron" cannot be resolved
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime.profile.history.html#/html/body/div/div/div/div/div/ul/li/a at Line 187, column 10: The link 'StructureDefinition-documentReference-author-dictationDateTime-examples.html' for "Examples" cannot be resolved
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime.profile.json.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 10: The link 'StructureDefinition-documentReference-author-dictationDateTime-examples.html' for "Examples" cannot be resolved
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime.profile.ttl.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 10: The link 'StructureDefinition-documentReference-author-dictationDateTime-examples.html' for "Examples" cannot be resolved
-ERROR: en\StructureDefinition-documentReference-author-dictationDateTime.profile.xml.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 10: The link 'StructureDefinition-documentReference-author-dictationDateTime-examples.html' for "Examples" cannot be resolved
 ERROR: en\StructureDefinition-imagingstudy-314e.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1172, column 8: The link '??' for "AcquisitionModality (missing link)" cannot be resolved
 ERROR: en\StructureDefinition-imagingstudy-314e.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1213, column 8: The link '??' for "AcquisitionModality (missing link)" cannot be resolved
 ERROR: en\StructureDefinition-imagingstudy-314e.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2367, column 8: The link '??' for "AcquisitionModality (missing link)" cannot be resolved
@@ -175,6 +161,7 @@ WARNING: CodeSystem/time-precision-units-cs: CodeSystem: Published code systems 
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\CodeSystem-time-precision-units-cs: URL Mismatch http://314e.com/fhir/ig/CodeSystem/time-precision-units-cs vs http://314e.com/fhir/CodeSystem/time-precision-units
 == fsh-generated\resources\ImplementationGuide-fhir.314e.json ==
 WARNING: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ImplementationGuide-fhir.314e: Unknown Parameters: [path-logo=images/314e-logo.png]
+INFORMATION: ImplementationGuide/fhir.314e: ImplementationGuide.language: The value provided ('en') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = Error from https://tx.fhir.org/r4: Error: The cache 'bbc89c0f-fb39-4219-903e-0af82a0e5468' is not known to this server. Caches are created with $cache-control?mode=start; this one was never created, or has expired or been released)
 ERROR: ImplementationGuide/fhir.314e: ImplementationGuide.definition.extension[2].extension[0].value.ofType(string): The System URI could not be determined for the code 'path-logo' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2'
 ERROR: ImplementationGuide/fhir.314e: ImplementationGuide.definition.extension[2].extension[0].value.ofType(string): The value provided ('path-logo') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2), and a code is required from this value set  (error message = The System URI could not be determined for the code 'path-logo' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2'; The provided code '#path-logo' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2')
 ERROR: ImplementationGuide/fhir.314e: ImplementationGuide.definition.extension[30].extension[0].value.ofType(code): The System URI could not be determined for the code 'path-logo' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|1.1.2'
@@ -436,7 +423,9 @@ WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefin
 ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/imagingstudy-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-imagingstudy-314e.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/imagingstudy-314e) does not match the URL (http://314e.com/fhir/StructureDefinition/imagingstudy-314e). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/imagingstudy-314e: StructureDefinition.snapshot.element[23].binding.valueSet: A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx'
 WARNING: StructureDefinition/imagingstudy-314e: StructureDefinition.snapshot.element[54].binding.valueSet: A definition could not be found for Canonical URL 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1'
+WARNING: StructureDefinition/imagingstudy-314e: StructureDefinition.snapshot.element[23].binding: The valueSet reference http://www.rsna.org/RadLex_Playbook.aspx on element ImagingStudy.procedureCode could not be resolved
 WARNING: StructureDefinition/imagingstudy-314e: StructureDefinition.snapshot.element[47].binding: The definition for the element 'ImagingStudy.series.performer.function' binds to the value set 'http://hl7.org/fhir/ValueSet/series-performer-function|4.0.1' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/imagingstudy-314e: StructureDefinition.snapshot.element[54].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1 on element ImagingStudy.series.instance.sopClass could not be resolved
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/imagingstudy-314e'): The Implementation Guide contains no examples for this profile
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-imagingstudy-314e: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/imagingstudy-314e vs http://314e.com/fhir/StructureDefinition/imagingstudy-314e
 == fsh-generated\resources\StructureDefinition-immunization-314e.json ==
@@ -487,6 +476,7 @@ WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefiniti
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-meta-314e: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/meta-314e vs http://314e.com/fhir/StructureDefinition/meta-314e
 == fsh-generated\resources\StructureDefinition-molecularsequence-314e.json ==
 ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/molecularsequence-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-molecularsequence-314e.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/molecularsequence-314e) does not match the URL (http://314e.com/fhir/StructureDefinition/molecularsequence-314e). Use the special-url parameter if you really mean for it not to match
+WARNING: StructureDefinition/molecularsequence-314e: StructureDefinition.snapshot.element[87].binding: The valueSet reference http://loinc.org/vs/LL379-9|4.0.1 on element MolecularSequence.structureVariant.variantType could not be resolved
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/molecularsequence-314e'): The Implementation Guide contains no examples for this profile
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-molecularsequence-314e: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/molecularsequence-314e vs http://314e.com/fhir/StructureDefinition/molecularsequence-314e
 == fsh-generated\resources\StructureDefinition-money-314e.json ==
@@ -507,7 +497,7 @@ ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition
 WARNING: StructureDefinition/observation-antimicrobial-susceptibility-314e: StructureDefinition.snapshot.element[24].example[1].value.ofType(uri): No definition could be found for URL value 'acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier'
 WARNING: StructureDefinition/observation-antimicrobial-susceptibility-314e: StructureDefinition.snapshot.element[24].example[2].value.ofType(uri): No definition could be found for URL value 'acme-epic-Patient--identifier-MRN-InternalIdentifier'
 WARNING: StructureDefinition/observation-antimicrobial-susceptibility-314e: StructureDefinition.snapshot.element[24].example[3].value.ofType(uri): No definition could be found for URL value 'acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier'
-WARNING: StructureDefinition/observation-antimicrobial-susceptibility-314e: StructureDefinition.snapshot.element[33].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://314e.com/fhir/CodeSystem/lab-category-subcategory-314e' could not be found, so the code cannot be validated
+ERROR: StructureDefinition/observation-antimicrobial-susceptibility-314e: StructureDefinition.snapshot.element[33].pattern.ofType(CodeableConcept).coding[0]: java.net.SocketTimeoutException: timeout
 WARNING: StructureDefinition/observation-antimicrobial-susceptibility-314e: StructureDefinition.snapshot.element[41].example[0].value.ofType(uri): No definition could be found for URL value 'acme-epic-Observation-lab-code-Glucose-InternalCode'
 WARNING: StructureDefinition/observation-antimicrobial-susceptibility-314e: StructureDefinition.snapshot.element[49].example[0].value.ofType(uri): No definition could be found for URL value 'acme-epic-Observation-lab-code-Glucose-InternalCode'
 WARNING: StructureDefinition/observation-antimicrobial-susceptibility-314e: StructureDefinition.snapshot.element[73].example[0].value.ofType(uri): No definition could be found for URL value 'acme-epic-Observation-lab-code-Glucose-InternalCode'
@@ -533,8 +523,8 @@ ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition
 WARNING: StructureDefinition/observation-microbiology-314e: StructureDefinition.snapshot.element[24].example[1].value.ofType(uri): No definition could be found for URL value 'acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier'
 WARNING: StructureDefinition/observation-microbiology-314e: StructureDefinition.snapshot.element[24].example[2].value.ofType(uri): No definition could be found for URL value 'acme-epic-Patient--identifier-MRN-InternalIdentifier'
 WARNING: StructureDefinition/observation-microbiology-314e: StructureDefinition.snapshot.element[24].example[3].value.ofType(uri): No definition could be found for URL value 'acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier'
-WARNING: StructureDefinition/observation-microbiology-314e: StructureDefinition.snapshot.element[33].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://314e.com/fhir/CodeSystem/lab-category-subcategory-314e' could not be found, so the code cannot be validated
-WARNING: StructureDefinition/observation-microbiology-314e: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://314e.com/fhir/CodeSystem/lab-category-subcategory-314e' could not be found, so the code cannot be validated
+ERROR: StructureDefinition/observation-microbiology-314e: StructureDefinition.snapshot.element[33].pattern.ofType(CodeableConcept).coding[0]: java.net.SocketTimeoutException: timeout
+ERROR: StructureDefinition/observation-microbiology-314e: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0]: java.net.SocketTimeoutException: timeout
 INFORMATION: StructureDefinition/observation-microbiology-314e: StructureDefinition.snapshot.element[18].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/observation-microbiology-314e: StructureDefinition.snapshot.element[31].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/observation-microbiology-314e'): The Implementation Guide contains no examples for this profile
@@ -544,7 +534,7 @@ ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition
 WARNING: StructureDefinition/observation-microorganism-314e: StructureDefinition.snapshot.element[24].example[1].value.ofType(uri): No definition could be found for URL value 'acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier'
 WARNING: StructureDefinition/observation-microorganism-314e: StructureDefinition.snapshot.element[24].example[2].value.ofType(uri): No definition could be found for URL value 'acme-epic-Patient--identifier-MRN-InternalIdentifier'
 WARNING: StructureDefinition/observation-microorganism-314e: StructureDefinition.snapshot.element[24].example[3].value.ofType(uri): No definition could be found for URL value 'acme-cerner-Observation-lab-identifier-AccessionNumber-InternalIdentifier'
-WARNING: StructureDefinition/observation-microorganism-314e: StructureDefinition.snapshot.element[33].pattern.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://314e.com/fhir/CodeSystem/lab-category-subcategory-314e' could not be found, so the code cannot be validated
+ERROR: StructureDefinition/observation-microorganism-314e: StructureDefinition.snapshot.element[33].pattern.ofType(CodeableConcept).coding[0]: java.net.SocketTimeoutException: timeout
 WARNING: StructureDefinition/observation-microorganism-314e: StructureDefinition.snapshot.element[41].example[0].value.ofType(uri): No definition could be found for URL value 'acme-epic-Observation-lab-code-Glucose-InternalCode'
 WARNING: StructureDefinition/observation-microorganism-314e: StructureDefinition.snapshot.element[49].example[0].value.ofType(uri): No definition could be found for URL value 'acme-epic-Observation-lab-code-Glucose-InternalCode'
 WARNING: StructureDefinition/observation-microorganism-314e: StructureDefinition.snapshot.element[73].example[0].value.ofType(uri): No definition could be found for URL value 'acme-epic-Observation-lab-code-Glucose-InternalCode'
@@ -597,6 +587,10 @@ ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\
 == fsh-generated\resources\StructureDefinition-period-314e.json ==
 INFORMATION: StructureDefinition/period-314e: StructureDefinition.snapshot.element[0].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/ig/StructureDefinition/period-314e'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated\resources\StructureDefinition-person-314e.json ==
+ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/person-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-person-314e.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/person-314e) does not match the URL (http://314e.com/fhir/StructureDefinition/person-314e). Use the special-url parameter if you really mean for it not to match
+WARNING: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/person-314e'): The Implementation Guide contains no examples for this profile
+ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-person-314e: URL Mismatch http://314e.com/fhir/ig/StructureDefinition/person-314e vs http://314e.com/fhir/StructureDefinition/person-314e
 == fsh-generated\resources\StructureDefinition-practitioner-314e.json ==
 ERROR: StructureDefinition.where(url = 'http://314e.com/fhir/StructureDefinition/practitioner-314e'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\StructureDefinition-practitioner-314e.json - the canonical URL (http://314e.com/fhir/ig/StructureDefinition/practitioner-314e) does not match the URL (http://314e.com/fhir/StructureDefinition/practitioner-314e). Use the special-url parameter if you really mean for it not to match
 INFORMATION: StructureDefinition/practitioner-314e: StructureDefinition.snapshot.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
@@ -747,6 +741,7 @@ WARNING: ValueSet/lab-category-subcategory-314e: ValueSet: Published value sets 
 ERROR: C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-lab-category-subcategory-314e: URL Mismatch http://314e.com/fhir/ig/ValueSet/lab-category-subcategory-314e vs http://314e.com/fhir/ValueSet/lab-category-subcategory-314e
 == fsh-generated\resources\ValueSet-microorganism-by-method-vs.json ==
 WARNING: ValueSet/microorganism-by-method-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'microorganism-by-method-vs'): Error from https://tx.fhir.org/r4: Error: The cache 'bbc89c0f-fb39-4219-903e-0af82a0e5468' is not known to this server. Caches are created with $cache-control?mode=start; this one was never created, or has expired or been released
 == fsh-generated\resources\ValueSet-observation-tag-vs.json ==
 ERROR: ValueSet.where(url = 'http://314e.com/fhir/ValueSet/observation-tag'): Conformance resource C:\Users\amrit.palaria\Documents\code\IG\314e-ig\fsh-generated\resources\ValueSet-observation-tag-vs.json - the canonical URL (http://314e.com/fhir/ig/ValueSet/observation-tag-vs) does not match the URL (http://314e.com/fhir/ValueSet/observation-tag). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/observation-tag-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

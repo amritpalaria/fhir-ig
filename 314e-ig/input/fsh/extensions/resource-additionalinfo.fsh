@@ -14,6 +14,7 @@ Context: DomainResource
 
 * value[x] only Reference314e
 * valueReference 1..1
+* valueReference ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/observation-314e"
 
 * valueReference ^short = "Reference to supplementary information for this resource"
 * valueReference ^definition = """

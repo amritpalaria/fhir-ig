@@ -15,6 +15,8 @@ LOINC methods used to identify microorganisms.
 
 ### Expansion
 
+No Expansion for this valueset (Unknown Code System)
+
 -------
 
  [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
@@ -32,7 +34,7 @@ LOINC methods used to identify microorganisms.
   "name" : "MicroorganismByMethodVS",
   "title" : "Microorganism by Method",
   "status" : "active",
-  "date" : "2026-06-24T16:34:23+05:30",
+  "date" : "2026-06-29T17:18:47+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

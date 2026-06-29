@@ -62,6 +62,7 @@
 [Organization314e]: StructureDefinition-organization-314e.html
 [Patient314e]: StructureDefinition-patient-314e.html
 [Period314e]: StructureDefinition-period-314e.html
+[Person314e]: StructureDefinition-person-314e.html
 [Practitioner314e]: StructureDefinition-practitioner-314e.html
 [PractitionerRole314e]: StructureDefinition-practitionerrole-314e.html
 [Procedure314e]: StructureDefinition-procedure-314e.html

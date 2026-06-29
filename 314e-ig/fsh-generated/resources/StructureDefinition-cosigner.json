@@ -47,6 +47,14 @@
             "code": "Reference",
             "profile": [
               "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/person-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
             ]
           }
         ]

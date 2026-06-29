@@ -32,7 +32,7 @@ Procedure subcategories of Lab category used for more granular operational class
   "name" : "LabCategorySubcategory314eVS",
   "title" : "314e Lab Subcategories",
   "status" : "draft",
-  "date" : "2026-06-24T16:34:23+05:30",
+  "date" : "2026-06-29T17:18:47+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

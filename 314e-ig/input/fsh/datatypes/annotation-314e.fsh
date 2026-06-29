@@ -19,7 +19,10 @@ be externally stored and referenced through attachments.
 """
 
 * authorReference only Reference314e
-* authorReference only Reference(Practitioner or Patient or RelatedPerson or Organization)
+* authorReference ^type.targetProfile[0] = "http://314e.com/fhir/StructureDefinition/practitioner-314e"
+* authorReference ^type.targetProfile[1] = "http://314e.com/fhir/StructureDefinition/patient-314e"
+* authorReference ^type.targetProfile[2] = "http://314e.com/fhir/StructureDefinition/relatedperson-314e"
+* authorReference ^type.targetProfile[3] = "http://314e.com/fhir/StructureDefinition/organization-314e"
 
 * time only dateTime314e
 

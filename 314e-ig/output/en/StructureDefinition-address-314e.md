@@ -8,7 +8,7 @@ This profile constrains the period element to use the 314e Period profile.
 
 **Usages:**
 
-* Use this DataType Profile: [314e Location](StructureDefinition-location-314e.md), [314e Organization](StructureDefinition-organization-314e.md), [314e Patient](StructureDefinition-patient-314e.md), [314e Practitioner](StructureDefinition-practitioner-314e.md) and [314e RelatedPerson](StructureDefinition-relatedperson-314e.md)
+* Use this DataType Profile: [314e Location](StructureDefinition-location-314e.md), [314e Organization](StructureDefinition-organization-314e.md), [314e Patient](StructureDefinition-patient-314e.md), [314e Person](StructureDefinition-person-314e.md)... Show 2 more, [314e Practitioner](StructureDefinition-practitioner-314e.md) and [314e RelatedPerson](StructureDefinition-relatedperson-314e.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fhir.314e|current/StructureDefinition/address-314e)
 
@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-address-314e.csv)
   "name" : "Address314e",
   "title" : "314e Address",
   "status" : "active",
-  "date" : "2026-06-24T16:34:23+05:30",
+  "date" : "2026-06-29T17:18:47+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

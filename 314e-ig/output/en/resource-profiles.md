@@ -92,6 +92,8 @@
   * Description: 314e-constrained Organization profile derived from QI-Core Organization. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
 * Name: [314e Patient](StructureDefinition-patient-314e.md)
   * Description: 314e-constrained Patient profile derived from QI-Core Patient. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
+* Name: [314e Person](StructureDefinition-person-314e.md)
+  * Description: 314e-constrained Person profile derived from FHIR R4 Person. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable. No QI Core or US Core Person profile exists; this profile constrains the base FHIR R4 Person resource directly.
 * Name: [314e Practitioner](StructureDefinition-practitioner-314e.md)
   * Description: 314e-constrained Practitioner profile derived from QI-Core Practitioner. This profile applies 314e-defined extensions and uses 314e datatype profiles where applicable.
 * Name: [314e PractitionerRole](StructureDefinition-practitionerrole-314e.md)

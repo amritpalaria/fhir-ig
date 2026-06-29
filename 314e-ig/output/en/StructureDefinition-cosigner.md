@@ -35,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-cosigner.csv), [E
   "name" : "Cosigner",
   "title" : "Cosigner",
   "status" : "active",
-  "date" : "2026-06-24T16:34:23+05:30",
+  "date" : "2026-06-29T17:18:47+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -85,7 +85,13 @@ Other representations of profile: [CSV](../StructureDefinition-cosigner.csv), [E
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"]
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/practitioner-314e",
+        "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+        "http://314e.com/fhir/StructureDefinition/patient-314e",
+        "http://314e.com/fhir/StructureDefinition/person-314e",
+        "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+        "http://314e.com/fhir/StructureDefinition/organization-314e"]
       }]
     }]
   }

@@ -17,6 +17,7 @@ Context: Patient
 
 * value[x] only Reference314e
 * valueReference 1..1
+* valueReference ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/organization-314e"
 
 * valueReference ^short = "Preferred pharmacy linked to the patient"
 * valueReference ^definition = """

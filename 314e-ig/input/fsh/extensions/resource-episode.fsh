@@ -16,6 +16,7 @@ Context: DomainResource
 
 * value[x] only Reference314e
 * valueReference 1..1
+* valueReference ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/episodeofcare-314e"
 
 * valueReference ^short = "Associated episode of care"
 * valueReference ^definition = """

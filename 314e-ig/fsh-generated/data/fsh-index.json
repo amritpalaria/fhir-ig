@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\annotation-314e.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-annotation-attachment.json",
@@ -221,7 +221,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\cosigner.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-coverage-314e.json",
@@ -237,7 +237,7 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\datarequirement-314e.fsh",
     "startLine": 1,
-    "endLine": 17
+    "endLine": 18
   },
   {
     "outputFile": "StructureDefinition-datetime-314e.json",
@@ -373,7 +373,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\element-additionalinfo.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-encounter-314e.json",
@@ -653,7 +653,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\patient-pharmacies.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-patient-preferredGenderPronoun.json",
@@ -670,6 +670,14 @@
     "fshFile": "datatypes\\period-314e.fsh",
     "startLine": 1,
     "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-person-314e.json",
+    "fshName": "Person314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\person-314e.fsh",
+    "startLine": 1,
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-practitioner-314e.json",
@@ -765,7 +773,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\relatedperson-encounter.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-relatedartifact-314e.json",
@@ -797,7 +805,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\resource-additionalinfo.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-resource-episode.json",
@@ -805,7 +813,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\resource-episode.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-resource-lastEditedUser.json",
@@ -813,7 +821,7 @@
     "fshType": "Extension",
     "fshFile": "extensions\\resource-lastediteduser.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-sampleddata-314e.json",
@@ -845,7 +853,7 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\signature-314e.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-simplequantity-314e.json",

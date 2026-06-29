@@ -13,5 +13,6 @@ Period, and Duration sub-elements to their corresponding 314e datatype profiles.
 * ^status = #active
 
 * subject[x] only CodeableConcept314e or Reference314e
+* subjectReference ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/group-314e"
 * codeFilter.code only Coding314e
 * dateFilter.value[x] only dateTime314e or Period314e or Duration314e

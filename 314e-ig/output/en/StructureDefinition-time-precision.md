@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-time-precision.cs
   "title" : "Time Precision",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-24T16:34:23+05:30",
+  "date" : "2026-06-29T17:18:47+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",

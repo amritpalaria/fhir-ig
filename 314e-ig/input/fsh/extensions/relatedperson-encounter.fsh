@@ -13,6 +13,7 @@ Context: RelatedPerson
 
 * value[x] only Reference314e
 * valueReference 1..1
+* valueReference ^type.targetProfile = "http://314e.com/fhir/StructureDefinition/encounter-314e"
 
 * valueReference ^short = "Encounter associated with the related person"
 * valueReference ^definition = """

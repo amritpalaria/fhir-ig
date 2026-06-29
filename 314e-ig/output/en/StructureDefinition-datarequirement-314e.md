@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-datarequirement-3
   "name" : "DataRequirement314e",
   "title" : "314e DataRequirement",
   "status" : "active",
-  "date" : "2026-06-24T16:34:23+05:30",
+  "date" : "2026-06-29T17:18:47+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -62,6 +62,14 @@ Other representations of profile: [CSV](../StructureDefinition-datarequirement-3
     {
       "id" : "DataRequirement.subject[x]",
       "path" : "DataRequirement.subject[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      },
       "type" : [{
         "code" : "CodeableConcept",
         "profile" : ["http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"]
@@ -69,7 +77,19 @@ Other representations of profile: [CSV](../StructureDefinition-datarequirement-3
       {
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Group"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/group-314e"]
+      }]
+    },
+    {
+      "id" : "DataRequirement.subject[x]:subjectReference",
+      "path" : "DataRequirement.subject[x]",
+      "sliceName" : "subjectReference",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/group-314e"]
       }]
     },
     {

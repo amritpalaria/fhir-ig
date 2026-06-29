@@ -8,15 +8,6 @@
 * [Extensions](en/extensions.md)
 * [Resource Profiles](en/resource-profiles.md)
 * [Simple Datatypes](en/simple-datatypes.md)
-* [](en/StructureDefinition-documentReference-author-dictationDateTime-definitions.md)
-* [](en/StructureDefinition-documentReference-author-dictationDateTime-mappings.md)
-* [](en/StructureDefinition-documentReference-author-dictationDateTime-testing.md)
-* [](en/StructureDefinition-documentReference-author-dictationDateTime.ai.md)
-* [](en/StructureDefinition-documentReference-author-dictationDateTime.md)
-* [](en/StructureDefinition-documentReference-author-dictationDateTime.profile.history.md)
-* [](en/StructureDefinition-documentReference-author-dictationDateTime.profile.json.md)
-* [](en/StructureDefinition-documentReference-author-dictationDateTime.profile.ttl.md)
-* [](en/StructureDefinition-documentReference-author-dictationDateTime.profile.xml.md)
 * [Terminology](en/terminology.md)
 
 ## Resources
@@ -120,6 +111,7 @@
 * [314e Microorganism Observation](en/StructureDefinition-observation-microorganism-314e.md)
 * [314e Organization](en/StructureDefinition-organization-314e.md)
 * [314e Patient](en/StructureDefinition-patient-314e.md)
+* [314e Person](en/StructureDefinition-person-314e.md)
 * [314e Practitioner](en/StructureDefinition-practitioner-314e.md)
 * [314e PractitionerRole](en/StructureDefinition-practitionerrole-314e.md)
 * [314e Procedure](en/StructureDefinition-procedure-314e.md)

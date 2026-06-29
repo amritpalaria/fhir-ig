@@ -442,6 +442,12 @@
         "title": "314e Patient"
       }
     ],
+    "Person": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/person-314e",
+        "title": "314e Person"
+      }
+    ],
     "Practitioner": [
       {
         "url": "http://314e.com/fhir/StructureDefinition/practitioner-314e",
@@ -625,6 +631,7 @@
       "Observation",
       "Organization",
       "Patient",
+      "Person",
       "Practitioner",
       "PractitionerRole",
       "Procedure",

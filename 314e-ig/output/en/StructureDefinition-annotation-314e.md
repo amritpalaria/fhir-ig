@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-annotation-314e.c
   "name" : "Annotation314e",
   "title" : "314e Annotation",
   "status" : "draft",
-  "date" : "2026-06-24T16:34:23+05:30",
+  "date" : "2026-06-29T17:18:47+05:30",
   "publisher" : "314e",
   "contact" : [{
     "name" : "314e",
@@ -95,10 +95,10 @@ Other representations of profile: [CSV](../StructureDefinition-annotation-314e.c
       "type" : [{
         "code" : "Reference",
         "profile" : ["http://314e.com/fhir/StructureDefinition/reference-314e"],
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://314e.com/fhir/StructureDefinition/practitioner-314e",
+        "http://314e.com/fhir/StructureDefinition/patient-314e",
+        "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+        "http://314e.com/fhir/StructureDefinition/organization-314e"]
       }]
     },
     {

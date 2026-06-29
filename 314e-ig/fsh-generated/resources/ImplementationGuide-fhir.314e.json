@@ -552,6 +552,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/person-314e"
+        },
+        "name": "314e Person",
+        "description": "314e-constrained Person profile derived from FHIR R4 Person.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable. No QI Core or US Core Person profile exists; this profile\nconstrains the base FHIR R4 Person resource directly.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/practitioner-314e"
         },
         "name": "314e Practitioner",

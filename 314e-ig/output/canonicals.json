@@ -503,6 +503,13 @@
   "name" : "PatientPreferredGenderPronoun"
 },
 {
+  "id" : "person-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/person-314e",
+  "version" : "1.0.0",
+  "name" : "Person314e"
+},
+{
   "id" : "practitioner-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/practitioner-314e",
