@@ -5,7 +5,7 @@
   "name": "EpisodeOfCare314e",
   "title": "314e Episode Of Care",
   "status": "active",
-  "description": "314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "description": "314e-constrained EpisodeOfCare profile derived from FHIR R4 EpisodeOfCare.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

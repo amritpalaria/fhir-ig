@@ -75,6 +75,22 @@
         ]
       },
       {
+        "id": "Encounter.extension:modeOfArrival",
+        "path": "Encounter.extension",
+        "sliceName": "modeOfArrival",
+        "short": "How the patient arrived at the reporting facility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/encounter-modeOfArrival-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Encounter.identifier",
         "path": "Encounter.identifier",
         "type": [

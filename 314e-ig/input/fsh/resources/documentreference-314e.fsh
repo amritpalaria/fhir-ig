@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreferenc
 Id: documentreference-314e
 Title: "314e DocumentReference"
 Description: """
-314e-constrained DocumentReference profile derived from QI-Core DocumentReference.
+314e-constrained DocumentReference profile derived from US Core DocumentReference.
 
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.
@@ -23,12 +23,6 @@ where applicable.
     "Date and time the document content was dictated"
 
 * context.extension contains
-    DocumentReferenceContextCosigner named cosigner 0..1
-
-* context.extension[cosigner] ^short =
-    "Co-signer of the document"
-
-* context.extension contains
     DocumentReferenceContextReportDateTime named reportDateTime 0..1
 
 * context.extension[reportDateTime] ^short =
@@ -37,6 +31,12 @@ where applicable.
 // ======================================================
 // 314e EXTENSIONS — ROOT
 // ======================================================
+
+* extension contains
+    ResourceCosigner named cosigner 0..1
+
+* extension[cosigner] ^short =
+    "Individual who co-signed or verified this document"
 
 * extension contains
     ResourceAdditionalInfo named additionalInfo 0..*

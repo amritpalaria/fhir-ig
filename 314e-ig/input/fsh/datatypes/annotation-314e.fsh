@@ -45,3 +45,13 @@ Precision and approximation extensions may be used.
 * extension[attachment] ^definition = """
 Provides attachment-backed annotation or note content.
 """
+
+* extension contains
+    AnnotationType314e named type 0..1
+
+* extension[type] ^short =
+    "The type of annotation"
+
+* extension[type] ^definition = """
+The type of annotation. This extension can be used to map the v2 NTE-4 comment type field.
+"""

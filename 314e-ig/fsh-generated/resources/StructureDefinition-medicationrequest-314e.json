@@ -55,7 +55,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://314e.com/fhir/StructureDefinition/cosigner"
+              "http://314e.com/fhir/StructureDefinition/resource-cosigner"
             ]
           }
         ]

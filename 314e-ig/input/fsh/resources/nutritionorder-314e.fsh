@@ -17,6 +17,12 @@ where applicable.
 // ======================================================
 
 * extension contains
+    ResourceCosigner named cosigner 0..1
+
+* extension[cosigner] ^short =
+    "Individual who co-signed or verified this nutrition order"
+
+* extension contains
     ResourceAdditionalInfo named additionalInfo 0..*
 
 * extension[additionalInfo] ^short =

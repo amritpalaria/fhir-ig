@@ -75,6 +75,22 @@
         ]
       },
       {
+        "id": "Coverage.extension:note",
+        "path": "Coverage.extension",
+        "sliceName": "note",
+        "short": "Additional notes that apply to this resource",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/coverage-note-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Coverage.identifier",
         "path": "Coverage.identifier",
         "type": [

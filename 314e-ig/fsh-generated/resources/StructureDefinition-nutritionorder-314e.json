@@ -59,6 +59,22 @@
         }
       },
       {
+        "id": "NutritionOrder.extension:cosigner",
+        "path": "NutritionOrder.extension",
+        "sliceName": "cosigner",
+        "short": "Individual who co-signed or verified this nutrition order",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/resource-cosigner"
+            ]
+          }
+        ]
+      },
+      {
         "id": "NutritionOrder.extension:additionalInfo",
         "path": "NutritionOrder.extension",
         "sliceName": "additionalInfo",

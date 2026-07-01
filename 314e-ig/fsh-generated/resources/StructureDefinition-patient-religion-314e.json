@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "patient-religion-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/patient-religion-314e",
+  "name": "PatientReligion314e",
+  "title": "314e Patient Religion",
+  "status": "active",
+  "description": "The patient's professed religious affiliations.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Patient",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "314e Patient Religion",
+        "definition": "The patient's professed religious affiliations."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/patient-religion-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -19,6 +19,16 @@ profile for clinical workflows.
 """
 
 // ======================================================
+// 314e EXTENSIONS
+// ======================================================
+
+* extension contains
+    ResourceCosigner named cosigner 0..1
+
+* extension[cosigner] ^short =
+    "Individual who co-signed or verified this service request"
+
+// ======================================================
 // INTERNAL IDENTIFIER SLICE
 // ======================================================
 * identifier 0..*

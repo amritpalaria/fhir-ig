@@ -34,6 +34,12 @@ where applicable.
 * extension[additionalInfo] ^short =
     "Supplementary information for this resource"
 
+* extension contains
+    ConditionAssertedDate314e named assertedDate 0..1
+
+* extension[assertedDate] ^short =
+    "Date the condition, problem, or diagnosis was asserted"
+
 // ======================================================
 // 314e DATATYPE CONSTRAINTS
 // ======================================================

@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "patient-importance-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/patient-importance-314e",
+  "name": "PatientImportance314e",
+  "title": "314e Patient Importance",
+  "status": "active",
+  "description": "The importance of the patient (e.g. VIP). When considering using this extension you should also consider if using any or all of the following is also appropriate:\n\n* `Encounter.specialCourtesy` which provides a simple flag indicating additional `benefits` that the patient might be entitled to during a visit *(e.g. special room types)*.\n* `Resource.meta.security` with codes such as `VIP`. These might be used by actual data level security controls within the system, potentially requiring specific user permissions to access the data.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Patient",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "314e Patient Importance",
+        "definition": "The importance of the patient (e.g. VIP). When considering using this extension you should also consider if using any or all of the following is also appropriate:\n\n* `Encounter.specialCourtesy` which provides a simple flag indicating additional `benefits` that the patient might be entitled to during a visit *(e.g. special room types)*.\n* `Resource.meta.security` with codes such as `VIP`. These might be used by actual data level security controls within the system, potentially requiring specific user permissions to access the data."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/patient-importance-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "annotationType-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/annotationType-314e",
+  "name": "AnnotationType314e",
+  "title": "314e Annotation Type",
+  "status": "active",
+  "description": "The type of annotation.  This extension can be used to map the v2 NTE-4 comment type field.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Annotation",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "314e Annotation Type",
+        "definition": "The type of annotation.  This extension can be used to map the v2 NTE-4 comment type field."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/annotationType-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "resource-cosigner",
+  "url": "http://314e.com/fhir/StructureDefinition/resource-cosigner",
+  "name": "ResourceCosigner",
+  "title": "Resource Cosigner",
+  "status": "active",
+  "description": "Identifies an individual who reviewed, verified, or co-signed the associated\nclinical document, note, order, or healthcare record, alongside the primary author or requester.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "MedicationRequest",
+      "type": "element"
+    },
+    {
+      "expression": "ServiceRequest",
+      "type": "element"
+    },
+    {
+      "expression": "DocumentReference",
+      "type": "element"
+    },
+    {
+      "expression": "NutritionOrder",
+      "type": "element"
+    },
+    {
+      "expression": "SupplyRequest",
+      "type": "element"
+    },
+    {
+      "expression": "DeviceRequest",
+      "type": "element"
+    },
+    {
+      "expression": "VisionPrescription",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Resource Cosigner",
+        "definition": "Identifies an individual who reviewed, verified, or co-signed the associated\nclinical document, note, order, or healthcare record, alongside the primary author or requester."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/resource-cosigner"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Individual who co-signed the record",
+        "definition": "Reference to the practitioner who reviewed, verified, or co-signed\nthe associated clinical document, note, order, or healthcare record.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/person-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

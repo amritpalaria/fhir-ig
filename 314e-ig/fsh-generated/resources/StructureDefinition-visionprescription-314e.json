@@ -41,6 +41,22 @@
         }
       },
       {
+        "id": "VisionPrescription.extension:cosigner",
+        "path": "VisionPrescription.extension",
+        "sliceName": "cosigner",
+        "short": "Individual who co-signed or verified this vision prescription",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/resource-cosigner"
+            ]
+          }
+        ]
+      },
+      {
         "id": "VisionPrescription.extension:additionalInfo",
         "path": "VisionPrescription.extension",
         "sliceName": "additionalInfo",

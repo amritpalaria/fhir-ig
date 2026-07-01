@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "coverage-note-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/coverage-note-314e",
+  "name": "CoverageNote314e",
+  "title": "314e Coverage Note",
+  "status": "active",
+  "description": "Additional notes that apply to this resource or element.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Coverage",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "314e Coverage Note",
+        "definition": "Additional notes that apply to this resource or element."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/coverage-note-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/annotation-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

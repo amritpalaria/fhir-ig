@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:MedicationRequest</sch:title>
     <sch:rule context="f:MedicationRequest">
-      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/cosigner']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/cosigner': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/resource-cosigner']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/resource-cosigner': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

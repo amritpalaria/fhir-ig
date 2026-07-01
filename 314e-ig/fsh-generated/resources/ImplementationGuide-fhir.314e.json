@@ -80,6 +80,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/annotationType-314e"
+        },
+        "name": "314e Annotation Type",
+        "description": "The type of annotation.  This extension can be used to map the v2 NTE-4 comment type field.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/observation-antimicrobial-susceptibility-314e"
         },
         "name": "314e Antimicrobial Susceptibility Observation",
@@ -128,6 +136,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/claimresponse-314e"
+        },
+        "name": "314e ClaimResponse",
+        "description": "314e-constrained ClaimResponse profile derived from FHIR R4 ClaimResponse.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/claimresponse-reviewAction-314e"
+        },
+        "name": "314e ClaimResponse Review Action",
+        "description": "The details of the review action that is necessary for the authorization.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/clinicalimpression-314e"
         },
         "name": "314e ClinicalImpression",
@@ -168,6 +192,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/condition-assertedDate-314e"
+        },
+        "name": "314e Condition Asserted Date",
+        "description": "When the asserter identified the allergy, intolerance, condition, problem, or diagnosis or other event, situation, issue, or clinical concept that may have risen to a level of or remains a concern.  For example, when the patient experiences chest pain, the asserted date represents when the clinician began following the chest pain - not when the patient experienced the chest pain.  Asserted date supports the recognition that information is not always entered in a system immediately.  Assertion and recording are different acts, so asserted date and recorded date are semantically different. However, they may be the same date and close in time.  If this difference is significant for your use case, assertion date may be useful.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/condition-diagnosis-314e"
         },
         "name": "314e Condition Encounter Diagnosis",
@@ -204,6 +236,14 @@
         },
         "name": "314e Coverage",
         "description": "314e-constrained Coverage profile derived from QI-Core Coverage.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/coverage-note-314e"
+        },
+        "name": "314e Coverage Note",
+        "description": "Additional notes that apply to this resource or element.",
         "exampleBoolean": false
       },
       {
@@ -283,7 +323,7 @@
           "reference": "StructureDefinition/documentreference-314e"
         },
         "name": "314e DocumentReference",
-        "description": "314e-constrained DocumentReference profile derived from QI-Core DocumentReference.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "description": "314e-constrained DocumentReference profile derived from US Core DocumentReference.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
@@ -312,6 +352,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/encounter-modeOfArrival-314e"
+        },
+        "name": "314e Encounter Mode Of Arrival",
+        "description": "Identifies how the patient arrives at the reporting facility, for example via an ambulance or other mode of transport.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/endpoint-314e"
         },
         "name": "314e Endpoint",
@@ -323,7 +371,7 @@
           "reference": "StructureDefinition/episodeofcare-314e"
         },
         "name": "314e Episode Of Care",
-        "description": "314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "description": "314e-constrained EpisodeOfCare profile derived from FHIR R4 EpisodeOfCare.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
@@ -395,7 +443,7 @@
           "reference": "StructureDefinition/immunizationevaluation-314e"
         },
         "name": "314e ImmunizationEvaluation",
-        "description": "314e-constrained ImmunizationEvaluation profile derived from FHIR R4 ImmunizationEvaluation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "description": "314e-constrained ImmunizationEvaluation profile derived from QI-Core ImmunizationEvaluation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
@@ -404,6 +452,14 @@
         },
         "name": "314e ImmunizationRecommendation",
         "description": "314e-constrained ImmunizationRecommendation profile derived from QI-Core ImmunizationRecommendation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/individual-genderIdentity-314e"
+        },
+        "name": "314e Individual Gender Identity",
+        "description": "An individual's personal sense of being a man, woman, boy, girl, nonbinary, or something else. This represents an individual's identity, ascertained by asking them what that identity is.\n In the case where the gender identity is communicated by a third party, for example, if a spouse indicates the gender identity of their partner on an intake form, a Provenance resource can be used with a Provenance.target referring to the Patient, with a targetElement extension identifying the gender identity extension as the target element within the Patient resource.  When exchanging this concept, refer to the guidance in the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).",
         "exampleBoolean": false
       },
       {
@@ -540,6 +596,62 @@
         },
         "name": "314e Patient",
         "description": "314e-constrained Patient profile derived from QI-Core Patient.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-adoptionInfo-314e"
+        },
+        "name": "314e Patient Adoption Info",
+        "description": "Code indication the adoption status of the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-animal-314e"
+        },
+        "name": "314e Patient Animal",
+        "description": "This patient is known to be an animal.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-birthTime-314e"
+        },
+        "name": "314e Patient Birth Time",
+        "description": "The time of day that the Patient/Person/RelatedPerson/Practitioner was born. This includes the date to ensure that the timezone information can be communicated effectively.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-citizenship-314e"
+        },
+        "name": "314e Patient Citizenship",
+        "description": "The patient's legal status as citizen of a country.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-disability-314e"
+        },
+        "name": "314e Patient Disability",
+        "description": "Value(s) identifying physical or mental condition(s) that limits a person's movements, senses, or activities. Deprecated: Use the [[[Flag]]] resource to represent disability information intended for administrative use, and to use [[[Condition]]] for clinical diagnoses that correspond to disabilities",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-importance-314e"
+        },
+        "name": "314e Patient Importance",
+        "description": "The importance of the patient (e.g. VIP). When considering using this extension you should also consider if using any or all of the following is also appropriate:\n\n* `Encounter.specialCourtesy` which provides a simple flag indicating additional `benefits` that the patient might be entitled to during a visit *(e.g. special room types)*.\n* `Resource.meta.security` with codes such as `VIP`. These might be used by actual data level security controls within the system, potentially requiring specific user permissions to access the data.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-religion-314e"
+        },
+        "name": "314e Patient Religion",
+        "description": "The patient's professed religious affiliations.",
         "exampleBoolean": false
       },
       {
@@ -720,10 +832,34 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/specimen-collectionPriority-314e"
+        },
+        "name": "314e Specimen Collection Priority",
+        "description": "The urgency of sample collection, such as STAT, ASAP, ASAP-ED, ROUTINE, ROUTINE-AM, etc.…",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/specimen-specialHandling-314e"
+        },
+        "name": "314e Specimen Special Handling",
+        "description": "Special handling during the collection, transport, or storage of the specimen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/substance-314e"
         },
         "name": "314e Substance",
         "description": "314e-constrained Substance profile derived from FHIR R4 Substance.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/supplyrequest-314e"
+        },
+        "name": "314e SupplyRequest",
+        "description": "314e-constrained SupplyRequest profile derived from FHIR R4 SupplyRequest.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
         "exampleBoolean": false
       },
       {
@@ -848,14 +984,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cosigner"
-        },
-        "name": "Cosigner",
-        "description": "Identifies an individual who reviewed, verified, or co-signed the associated\nclinical document, note, order, or healthcare record.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/datetime-accuracy"
         },
         "name": "Date/Time Accuracy",
@@ -868,14 +996,6 @@
         },
         "name": "Date/Time Precision",
         "description": "Specifies the meaningful/ usable precision of a dateTime value when the \ndatatype syntactically permits greater precision than is actually known or clinically usable.\n\nThis extension is intended to explicitly communicate the usable precision\nof a dateTime value, such as year-only, year-month, date-only, or\nfull timestamp precision.\n\nAll dateTime values in the 314e implementation guide SHALL be stored in UTC.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/documentReference-context-cosigner"
-        },
-        "name": "Document Reference Context Cosigner",
-        "description": "Applied to the context section of a DocumentReference resource. Captures the\nco-signer of the document — a person who has jointly signed or authenticated\nthe document alongside the primary author.",
         "exampleBoolean": false
       },
       {
@@ -1012,6 +1132,14 @@
         },
         "name": "Resource Additional Info",
         "description": "Applied at the root level of any resource. Used to capture supplementary\nor non-standard information related to a FHIR resource that is not\nrepresented by the core FHIR elements or existing profiles.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/resource-cosigner"
+        },
+        "name": "Resource Cosigner",
+        "description": "Identifies an individual who reviewed, verified, or co-signed the associated\nclinical document, note, order, or healthcare record, alongside the primary author or requester.",
         "exampleBoolean": false
       },
       {

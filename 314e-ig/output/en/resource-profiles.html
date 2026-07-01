@@ -146,7 +146,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">314e FHIR Implementation Guide - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://314e.com/fhir/ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   <h2>Resource Profiles</h2>
   
 
@@ -210,6 +210,9 @@ where applicable.</td>
 
     
     
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-appointment-314e.html">314e Appointment</a></td>
         <td>314e-constrained Appointment profile derived from FHIR R4 Appointment.
@@ -259,6 +262,20 @@ where applicable.</td>
     
     
     <tr>
+        <td><a href="StructureDefinition-claimresponse-314e.html">314e ClaimResponse</a></td>
+        <td>314e-constrained ClaimResponse profile derived from FHIR R4 ClaimResponse.
+
+This profile applies 314e-defined extensions and uses 314e datatype profiles
+where applicable.</td>
+    </tr>
+    
+
+    
+    
+
+    
+    
+    <tr>
         <td><a href="StructureDefinition-clinicalimpression-314e.html">314e ClinicalImpression</a></td>
         <td>314e-constrained ClinicalImpression profile derived from FHIR R4 ClinicalImpression.
 
@@ -293,6 +310,9 @@ where applicable.</td>
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</td>
     </tr>
+    
+
+    
     
 
     
@@ -335,9 +355,6 @@ where applicable.</td>
 
     
     
-
-    
-    
     <tr>
         <td><a href="StructureDefinition-coverage-314e.html">314e Coverage</a></td>
         <td>314e-constrained Coverage profile derived from QI-Core Coverage.
@@ -345,6 +362,9 @@ where applicable.</td>
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</td>
     </tr>
+    
+
+    
     
 
     
@@ -438,12 +458,9 @@ where applicable.</td>
 
     
     
-
-    
-    
     <tr>
         <td><a href="StructureDefinition-documentreference-314e.html">314e DocumentReference</a></td>
-        <td>314e-constrained DocumentReference profile derived from QI-Core DocumentReference.
+        <td>314e-constrained DocumentReference profile derived from US Core DocumentReference.
 
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</td>
@@ -472,6 +489,9 @@ where applicable.</td>
 
     
     
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-endpoint-314e.html">314e Endpoint</a></td>
         <td>314e-constrained Endpoint profile derived from FHIR R4 Endpoint.
@@ -485,7 +505,7 @@ where applicable.</td>
     
     <tr>
         <td><a href="StructureDefinition-episodeofcare-314e.html">314e Episode Of Care</a></td>
-        <td>314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.
+        <td>314e-constrained EpisodeOfCare profile derived from FHIR R4 EpisodeOfCare.
 
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</td>
@@ -557,7 +577,7 @@ where applicable.</td>
     
     <tr>
         <td><a href="StructureDefinition-immunizationevaluation-314e.html">314e ImmunizationEvaluation</a></td>
-        <td>314e-constrained ImmunizationEvaluation profile derived from FHIR R4 ImmunizationEvaluation.
+        <td>314e-constrained ImmunizationEvaluation profile derived from QI-Core ImmunizationEvaluation.
 
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</td>
@@ -573,6 +593,9 @@ where applicable.</td>
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</td>
     </tr>
+    
+
+    
     
 
     
@@ -770,6 +793,27 @@ where applicable.</td>
 
     
     
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-person-314e.html">314e Person</a></td>
         <td>314e-constrained Person profile derived from FHIR R4 Person.
@@ -887,6 +931,9 @@ where applicable.</td>
 
     
     
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-schedule-314e.html">314e Schedule</a></td>
         <td>314e-constrained Schedule profile derived from FHIR R4 Schedule.
@@ -939,9 +986,26 @@ where applicable.</td>
 
     
     
+
+    
+    
+
+    
+    
     <tr>
         <td><a href="StructureDefinition-substance-314e.html">314e Substance</a></td>
         <td>314e-constrained Substance profile derived from FHIR R4 Substance.
+
+This profile applies 314e-defined extensions and uses 314e datatype profiles
+where applicable.</td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td><a href="StructureDefinition-supplyrequest-314e.html">314e SupplyRequest</a></td>
+        <td>314e-constrained SupplyRequest profile derived from FHIR R4 SupplyRequest.
 
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</td>
@@ -1012,8 +1076,8 @@ where applicable.</td>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-29 17:18:00 +0530">
-    2026-06-29
+  <span title="2026-07-01 18:18:00 +0530">
+    2026-07-01
   </span>
 
           <br/>

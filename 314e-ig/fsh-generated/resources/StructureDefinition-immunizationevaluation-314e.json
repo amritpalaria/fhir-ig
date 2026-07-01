@@ -23,7 +23,7 @@
   "name": "ImmunizationEvaluation314e",
   "title": "314e ImmunizationEvaluation",
   "status": "active",
-  "description": "314e-constrained ImmunizationEvaluation profile derived from FHIR R4 ImmunizationEvaluation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "description": "314e-constrained ImmunizationEvaluation profile derived from QI-Core ImmunizationEvaluation.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

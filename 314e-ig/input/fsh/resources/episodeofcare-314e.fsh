@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/StructureDefinition/EpisodeOfCare
 Id: episodeofcare-314e
 Title: "314e Episode Of Care"
 Description: """
-314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.
+314e-constrained EpisodeOfCare profile derived from FHIR R4 EpisodeOfCare.
 
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.

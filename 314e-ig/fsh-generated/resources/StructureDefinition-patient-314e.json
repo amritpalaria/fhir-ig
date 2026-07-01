@@ -137,6 +137,150 @@
         ]
       },
       {
+        "id": "Patient.extension:disability",
+        "path": "Patient.extension",
+        "sliceName": "disability",
+        "short": "Physical or mental condition(s) that limit the patient's movements, senses, or activities",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/patient-disability-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:citizenship",
+        "path": "Patient.extension",
+        "sliceName": "citizenship",
+        "short": "The patient's legal status as citizen of a country",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/patient-citizenship-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:adoptionInfo",
+        "path": "Patient.extension",
+        "sliceName": "adoptionInfo",
+        "short": "Code indicating the adoption status of the patient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/patient-adoptionInfo-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:religion",
+        "path": "Patient.extension",
+        "sliceName": "religion",
+        "short": "The patient's professed religious affiliation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/patient-religion-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:importance",
+        "path": "Patient.extension",
+        "sliceName": "importance",
+        "short": "The importance of the patient (e.g. VIP)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/patient-importance-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:animal",
+        "path": "Patient.extension",
+        "sliceName": "animal",
+        "short": "Indicates this patient is known to be an animal",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/patient-animal-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:individualGenderIdentity",
+        "path": "Patient.extension",
+        "sliceName": "individualGenderIdentity",
+        "short": "The individual's gender identity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/individual-genderIdentity-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:mothersMaidenName",
+        "path": "Patient.extension",
+        "sliceName": "mothersMaidenName",
+        "short": "Mother's maiden (unmarried) name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:cadavericDonor",
+        "path": "Patient.extension",
+        "sliceName": "cadavericDonor",
+        "short": "Flag indicating whether the patient authorized the donation of body parts after death",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
         "type": [
@@ -168,6 +312,36 @@
             "code": "ContactPoint",
             "profile": [
               "http://314e.com/fhir/ig/StructureDefinition/contactpoint-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.birthDate.extension",
+        "path": "Patient.birthDate.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.birthDate.extension:birthTime",
+        "path": "Patient.birthDate.extension",
+        "sliceName": "birthTime",
+        "short": "The time of day that the patient was born",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/patient-birthTime-314e"
             ]
           }
         ]

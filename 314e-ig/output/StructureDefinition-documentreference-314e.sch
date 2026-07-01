@@ -10,10 +10,15 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:DocumentReference</sch:title>
+    <sch:rule context="f:DocumentReference">
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/resource-cosigner']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/resource-cosigner': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:DocumentReference/f:context</sch:title>
     <sch:rule context="f:DocumentReference/f:context">
       <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

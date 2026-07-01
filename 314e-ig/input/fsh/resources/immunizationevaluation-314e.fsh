@@ -3,7 +3,7 @@ Parent: http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-immunizationeva
 Id: immunizationevaluation-314e
 Title: "314e ImmunizationEvaluation"
 Description: """
-314e-constrained ImmunizationEvaluation profile derived from FHIR R4 ImmunizationEvaluation.
+314e-constrained ImmunizationEvaluation profile derived from QI-Core ImmunizationEvaluation.
 
 This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.

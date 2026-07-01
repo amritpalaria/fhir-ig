@@ -11,7 +11,7 @@
   <name value="IG314e"/>
   <title value="314e FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-06-29T17:18:47+05:30"/>
+  <date value="2026-07-01T18:18:44+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -542,6 +542,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/annotationType-314e"/>
+      </reference>
+      <name value="314e Annotation Type"/>
+      <description value="The type of annotation.  This extension can be used to map the v2 NTE-4 comment type field."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -611,6 +622,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/claimresponse-314e"/>
+      </reference>
+      <name value="314e ClaimResponse"/>
+      <description value="314e-constrained ClaimResponse profile derived from FHIR R4 ClaimResponse.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/claimresponse-reviewAction-314e"/>
+      </reference>
+      <name value="314e ClaimResponse Review Action"/>
+      <description value="The details of the review action that is necessary for the authorization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/clinicalimpression-314e"/>
       </reference>
       <name value="314e ClinicalImpression"/>
@@ -659,6 +692,17 @@
       </reference>
       <name value="314e Condition"/>
       <description value="314e-constrained Condition profile derived from R4B Condition.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-assertedDate-314e"/>
+      </reference>
+      <name value="314e Condition Asserted Date"/>
+      <description value="When the asserter identified the allergy, intolerance, condition, problem, or diagnosis or other event, situation, issue, or clinical concept that may have risen to a level of or remains a concern.  For example, when the patient experiences chest pain, the asserted date represents when the clinician began following the chest pain - not when the patient experienced the chest pain.  Asserted date supports the recognition that information is not always entered in a system immediately.  Assertion and recording are different acts, so asserted date and recorded date are semantically different. However, they may be the same date and close in time.  If this difference is significant for your use case, assertion date may be useful."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -714,6 +758,17 @@
       </reference>
       <name value="314e Coverage"/>
       <description value="314e-constrained Coverage profile derived from QI-Core Coverage.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/coverage-note-314e"/>
+      </reference>
+      <name value="314e Coverage Note"/>
+      <description value="Additional notes that apply to this resource or element."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -823,7 +878,7 @@
         <reference value="StructureDefinition/documentreference-314e"/>
       </reference>
       <name value="314e DocumentReference"/>
-      <description value="314e-constrained DocumentReference profile derived from QI-Core DocumentReference.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <description value="314e-constrained DocumentReference profile derived from US Core DocumentReference.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -861,6 +916,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/encounter-modeOfArrival-314e"/>
+      </reference>
+      <name value="314e Encounter Mode Of Arrival"/>
+      <description value="Identifies how the patient arrives at the reporting facility, for example via an ambulance or other mode of transport."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -878,7 +944,7 @@
         <reference value="StructureDefinition/episodeofcare-314e"/>
       </reference>
       <name value="314e Episode Of Care"/>
-      <description value="314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <description value="314e-constrained EpisodeOfCare profile derived from FHIR R4 EpisodeOfCare.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -977,7 +1043,7 @@
         <reference value="StructureDefinition/immunizationevaluation-314e"/>
       </reference>
       <name value="314e ImmunizationEvaluation"/>
-      <description value="314e-constrained ImmunizationEvaluation profile derived from FHIR R4 ImmunizationEvaluation.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <description value="314e-constrained ImmunizationEvaluation profile derived from QI-Core ImmunizationEvaluation.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -989,6 +1055,17 @@
       </reference>
       <name value="314e ImmunizationRecommendation"/>
       <description value="314e-constrained ImmunizationRecommendation profile derived from QI-Core ImmunizationRecommendation.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/individual-genderIdentity-314e"/>
+      </reference>
+      <name value="314e Individual Gender Identity"/>
+      <description value="An individual's personal sense of being a man, woman, boy, girl, nonbinary, or something else. This represents an individual's identity, ascertained by asking them what that identity is.&#xA; In the case where the gender identity is communicated by a third party, for example, if a spouse indicates the gender identity of their partner on an intake form, a Provenance resource can be used with a Provenance.target referring to the Patient, with a targetElement extension identifying the gender identity extension as the target element within the Patient resource.  When exchanging this concept, refer to the guidance in the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1176,6 +1253,83 @@
       </reference>
       <name value="314e Patient"/>
       <description value="314e-constrained Patient profile derived from QI-Core Patient.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-adoptionInfo-314e"/>
+      </reference>
+      <name value="314e Patient Adoption Info"/>
+      <description value="Code indication the adoption status of the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-animal-314e"/>
+      </reference>
+      <name value="314e Patient Animal"/>
+      <description value="This patient is known to be an animal."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-birthTime-314e"/>
+      </reference>
+      <name value="314e Patient Birth Time"/>
+      <description value="The time of day that the Patient/Person/RelatedPerson/Practitioner was born. This includes the date to ensure that the timezone information can be communicated effectively."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-citizenship-314e"/>
+      </reference>
+      <name value="314e Patient Citizenship"/>
+      <description value="The patient's legal status as citizen of a country."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-disability-314e"/>
+      </reference>
+      <name value="314e Patient Disability"/>
+      <description value="Value(s) identifying physical or mental condition(s) that limits a person's movements, senses, or activities. Deprecated: Use the [[[Flag]]] resource to represent disability information intended for administrative use, and to use [[[Condition]]] for clinical diagnoses that correspond to disabilities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-importance-314e"/>
+      </reference>
+      <name value="314e Patient Importance"/>
+      <description value="The importance of the patient (e.g. VIP). When considering using this extension you should also consider if using any or all of the following is also appropriate:&#xA;&#xA;* `Encounter.specialCourtesy` which provides a simple flag indicating additional `benefits` that the patient might be entitled to during a visit *(e.g. special room types)*.&#xA;* `Resource.meta.security` with codes such as `VIP`. These might be used by actual data level security controls within the system, potentially requiring specific user permissions to access the data."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-religion-314e"/>
+      </reference>
+      <name value="314e Patient Religion"/>
+      <description value="The patient's professed religious affiliations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1422,6 +1576,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/specimen-collectionPriority-314e"/>
+      </reference>
+      <name value="314e Specimen Collection Priority"/>
+      <description value="The urgency of sample collection, such as STAT, ASAP, ASAP-ED, ROUTINE, ROUTINE-AM, etc.…"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/specimen-specialHandling-314e"/>
+      </reference>
+      <name value="314e Specimen Special Handling"/>
+      <description value="Special handling during the collection, transport, or storage of the specimen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1429,6 +1605,17 @@
       </reference>
       <name value="314e Substance"/>
       <description value="314e-constrained Substance profile derived from FHIR R4 Substance.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/supplyrequest-314e"/>
+      </reference>
+      <name value="314e SupplyRequest"/>
+      <description value="314e-constrained SupplyRequest profile derived from FHIR R4 SupplyRequest.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1601,17 +1788,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/cosigner"/>
-      </reference>
-      <name value="Cosigner"/>
-      <description value="Identifies an individual who reviewed, verified, or co-signed the associated&#xA;clinical document, note, order, or healthcare record."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/datetime-accuracy"/>
       </reference>
       <name value="Date/Time Accuracy"/>
@@ -1627,17 +1803,6 @@
       </reference>
       <name value="Date/Time Precision"/>
       <description value="Specifies the meaningful/ usable precision of a dateTime value when the &#xA;datatype syntactically permits greater precision than is actually known or clinically usable.&#xA;&#xA;This extension is intended to explicitly communicate the usable precision&#xA;of a dateTime value, such as year-only, year-month, date-only, or&#xA;full timestamp precision.&#xA;&#xA;All dateTime values in the 314e implementation guide SHALL be stored in UTC."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/documentReference-context-cosigner"/>
-      </reference>
-      <name value="Document Reference Context Cosigner"/>
-      <description value="Applied to the context section of a DocumentReference resource. Captures the&#xA;co-signer of the document — a person who has jointly signed or authenticated&#xA;the document alongside the primary author."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1825,6 +1990,17 @@
       </reference>
       <name value="Resource Additional Info"/>
       <description value="Applied at the root level of any resource. Used to capture supplementary&#xA;or non-standard information related to a FHIR resource that is not&#xA;represented by the core FHIR elements or existing profiles."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/resource-cosigner"/>
+      </reference>
+      <name value="Resource Cosigner"/>
+      <description value="Identifies an individual who reviewed, verified, or co-signed the associated&#xA;clinical document, note, order, or healthcare record, alongside the primary author or requester."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -146,7 +146,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">314e FHIR Implementation Guide - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://314e.com/fhir/ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -269,6 +269,21 @@ where applicable.</p>
             </td>
             <td>
 <p>314e-constrained CareTeam profile derived from QI-Core CareTeam.</p>
+
+<p>This profile applies 314e-defined extensions and uses 314e datatype profiles
+where applicable.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-claimresponse-314e.html"
+                  title="StructureDefinition/claimresponse-314e">
+                  <span title="StructureDefinition/claimresponse-314e">314e ClaimResponse
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e-constrained ClaimResponse profile derived from FHIR R4 ClaimResponse.</p>
 
 <p>This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</p>
@@ -482,7 +497,7 @@ where applicable.</p>
                </a>
             </td>
             <td>
-<p>314e-constrained DocumentReference profile derived from QI-Core DocumentReference.</p>
+<p>314e-constrained DocumentReference profile derived from US Core DocumentReference.</p>
 
 <p>This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</p>
@@ -527,7 +542,7 @@ where applicable.</p>
                </a>
             </td>
             <td>
-<p>314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.</p>
+<p>314e-constrained EpisodeOfCare profile derived from FHIR R4 EpisodeOfCare.</p>
 
 <p>This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</p>
@@ -639,7 +654,7 @@ where applicable.</p>
                </a>
             </td>
             <td>
-<p>314e-constrained ImmunizationEvaluation profile derived from FHIR R4 ImmunizationEvaluation.</p>
+<p>314e-constrained ImmunizationEvaluation profile derived from QI-Core ImmunizationEvaluation.</p>
 
 <p>This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</p>
@@ -1027,6 +1042,21 @@ where applicable.</p>
             </td>
             <td>
 <p>314e-constrained Substance profile derived from FHIR R4 Substance.</p>
+
+<p>This profile applies 314e-defined extensions and uses 314e datatype profiles
+where applicable.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-supplyrequest-314e.html"
+                  title="StructureDefinition/supplyrequest-314e">
+                  <span title="StructureDefinition/supplyrequest-314e">314e SupplyRequest
+</span>
+               </a>
+            </td>
+            <td>
+<p>314e-constrained SupplyRequest profile derived from FHIR R4 SupplyRequest.</p>
 
 <p>This profile applies 314e-defined extensions and uses 314e datatype profiles
 where applicable.</p>
@@ -1622,6 +1652,192 @@ the following extension SHALL be used:</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-annotationType-314e.html"
+                  title="StructureDefinition/annotationType-314e">
+                  <span title="StructureDefinition/annotationType-314e">314e Annotation Type
+</span>
+               </a>
+            </td>
+            <td>
+<p>The type of annotation.  This extension can be used to map the v2 NTE-4 comment type field.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-claimresponse-reviewAction-314e.html"
+                  title="StructureDefinition/claimresponse-reviewAction-314e">
+                  <span title="StructureDefinition/claimresponse-reviewAction-314e">314e ClaimResponse Review Action
+</span>
+               </a>
+            </td>
+            <td>
+<p>The details of the review action that is necessary for the authorization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-assertedDate-314e.html"
+                  title="StructureDefinition/condition-assertedDate-314e">
+                  <span title="StructureDefinition/condition-assertedDate-314e">314e Condition Asserted Date
+</span>
+               </a>
+            </td>
+            <td>
+<p>When the asserter identified the allergy, intolerance, condition, problem, or diagnosis or other event, situation, issue, or clinical concept that may have risen to a level of or remains a concern.  For example, when the patient experiences chest pain, the asserted date represents when the clinician began following the chest pain - not when the patient experienced the chest pain.  Asserted date supports the recognition that information is not always entered in a system immediately.  Assertion and recording are different acts, so asserted date and recorded date are semantically different. However, they may be the same date and close in time.  If this difference is significant for your use case, assertion date may be useful.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-coverage-note-314e.html"
+                  title="StructureDefinition/coverage-note-314e">
+                  <span title="StructureDefinition/coverage-note-314e">314e Coverage Note
+</span>
+               </a>
+            </td>
+            <td>
+<p>Additional notes that apply to this resource or element.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-encounter-modeOfArrival-314e.html"
+                  title="StructureDefinition/encounter-modeOfArrival-314e">
+                  <span title="StructureDefinition/encounter-modeOfArrival-314e">314e Encounter Mode Of Arrival
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifies how the patient arrives at the reporting facility, for example via an ambulance or other mode of transport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-individual-genderIdentity-314e.html"
+                  title="StructureDefinition/individual-genderIdentity-314e">
+                  <span title="StructureDefinition/individual-genderIdentity-314e">314e Individual Gender Identity
+</span>
+               </a>
+            </td>
+            <td>
+<p>An individual's personal sense of being a man, woman, boy, girl, nonbinary, or something else. This represents an individual's identity, ascertained by asking them what that identity is.
+ In the case where the gender identity is communicated by a third party, for example, if a spouse indicates the gender identity of their partner on an intake form, a Provenance resource can be used with a Provenance.target referring to the Patient, with a targetElement extension identifying the gender identity extension as the target element within the Patient resource.  When exchanging this concept, refer to the guidance in the <a href="http://hl7.org/xprod/ig/uv/gender-harmony/">Gender Harmony Implementation Guide</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-adoptionInfo-314e.html"
+                  title="StructureDefinition/patient-adoptionInfo-314e">
+                  <span title="StructureDefinition/patient-adoptionInfo-314e">314e Patient Adoption Info
+</span>
+               </a>
+            </td>
+            <td>
+<p>Code indication the adoption status of the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-animal-314e.html"
+                  title="StructureDefinition/patient-animal-314e">
+                  <span title="StructureDefinition/patient-animal-314e">314e Patient Animal
+</span>
+               </a>
+            </td>
+            <td>
+<p>This patient is known to be an animal.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-birthTime-314e.html"
+                  title="StructureDefinition/patient-birthTime-314e">
+                  <span title="StructureDefinition/patient-birthTime-314e">314e Patient Birth Time
+</span>
+               </a>
+            </td>
+            <td>
+<p>The time of day that the Patient/Person/RelatedPerson/Practitioner was born. This includes the date to ensure that the timezone information can be communicated effectively.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-citizenship-314e.html"
+                  title="StructureDefinition/patient-citizenship-314e">
+                  <span title="StructureDefinition/patient-citizenship-314e">314e Patient Citizenship
+</span>
+               </a>
+            </td>
+            <td>
+<p>The patient's legal status as citizen of a country.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-disability-314e.html"
+                  title="StructureDefinition/patient-disability-314e">
+                  <span title="StructureDefinition/patient-disability-314e">314e Patient Disability
+</span>
+               </a>
+            </td>
+            <td>
+<p>Value(s) identifying physical or mental condition(s) that limits a person's movements, senses, or activities. Deprecated: Use the <a href="http://hl7.org/fhir/R4/flag.html">Flag</a> resource to represent disability information intended for administrative use, and to use <a href="http://hl7.org/fhir/R4/condition.html">Condition</a> for clinical diagnoses that correspond to disabilities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-importance-314e.html"
+                  title="StructureDefinition/patient-importance-314e">
+                  <span title="StructureDefinition/patient-importance-314e">314e Patient Importance
+</span>
+               </a>
+            </td>
+            <td>
+<p>The importance of the patient (e.g. VIP). When considering using this extension you should also consider if using any or all of the following is also appropriate:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Encounter.specialCourtesy</code> which provides a simple flag indicating additional <code class="language-plaintext highlighter-rouge">benefits</code> that the patient might be entitled to during a visit <em>(e.g. special room types)</em>.</li>
+  <li><code class="language-plaintext highlighter-rouge">Resource.meta.security</code> with codes such as <code class="language-plaintext highlighter-rouge">VIP</code>. These might be used by actual data level security controls within the system, potentially requiring specific user permissions to access the data.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-religion-314e.html"
+                  title="StructureDefinition/patient-religion-314e">
+                  <span title="StructureDefinition/patient-religion-314e">314e Patient Religion
+</span>
+               </a>
+            </td>
+            <td>
+<p>The patient's professed religious affiliations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-specimen-collectionPriority-314e.html"
+                  title="StructureDefinition/specimen-collectionPriority-314e">
+                  <span title="StructureDefinition/specimen-collectionPriority-314e">314e Specimen Collection Priority
+</span>
+               </a>
+            </td>
+            <td>
+<p>The urgency of sample collection, such as STAT, ASAP, ASAP-ED, ROUTINE, ROUTINE-AM, etc.â€¦</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-specimen-specialHandling-314e.html"
+                  title="StructureDefinition/specimen-specialHandling-314e">
+                  <span title="StructureDefinition/specimen-specialHandling-314e">314e Specimen Special Handling
+</span>
+               </a>
+            </td>
+            <td>
+<p>Special handling during the collection, transport, or storage of the specimen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-annotation-attachment.html"
                   title="StructureDefinition/annotation-attachment">
                   <span title="StructureDefinition/annotation-attachment">Annotation Attachment
@@ -1711,19 +1927,6 @@ care plan or care plan objective.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-cosigner.html"
-                  title="StructureDefinition/cosigner">
-                  <span title="StructureDefinition/cosigner">Cosigner
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identifies an individual who reviewed, verified, or co-signed the associated
-clinical document, note, order, or healthcare record.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-datetime-accuracy.html"
                   title="StructureDefinition/datetime-accuracy">
                   <span title="StructureDefinition/datetime-accuracy">Date/Time Accuracy
@@ -1768,20 +1971,6 @@ full timestamp precision.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-documentReference-context-cosigner.html"
-                  title="StructureDefinition/documentReference-context-cosigner">
-                  <span title="StructureDefinition/documentReference-context-cosigner">Document Reference Context Cosigner
-</span>
-               </a>
-            </td>
-            <td>
-<p>Applied to the context section of a DocumentReference resource. Captures the
-co-signer of the document — a person who has jointly signed or authenticated
-the document alongside the primary author.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-documentReference-context-dictationDateTime.html"
                   title="StructureDefinition/documentReference-context-dictationDateTime">
                   <span title="StructureDefinition/documentReference-context-dictationDateTime">Document Reference Context Dictation Date Time
@@ -1790,7 +1979,7 @@ the document alongside the primary author.</p>
             </td>
             <td>
 <p>Applied to the context section of a DocumentReference resource. Stores the
-date and time when the clinician dictated the document content — distinct
+date and time when the clinician dictated the document content â€” distinct
 from when it was authored, transcribed, or signed.</p>
 </td>
          </tr>
@@ -1804,7 +1993,7 @@ from when it was authored, transcribed, or signed.</p>
             </td>
             <td>
 <p>Applied to the context section of a DocumentReference resource. Stores the
-date and time when the finalized report was made available or released —
+date and time when the finalized report was made available or released â€”
 separate from dictation, transcription, or document creation time.</p>
 </td>
          </tr>
@@ -1904,7 +2093,7 @@ the mother's name of the patient.</p>
 preferred pharmacies linked to the patient as references to Organization
 resources.</p>
 
-<p>A patient can have multiple pharmacies — each gets its own extension
+<p>A patient can have multiple pharmacies â€” each gets its own extension
 instance.</p>
 </td>
          </tr>
@@ -1955,8 +2144,8 @@ and this extension if either representation is modified.</p>
             <td>
 <p>A string/ textual representation associated with Quantity.value.</p>
 
-<p>In scenarios where the ‘value’ of Quantity datatype cannot be expressed as a numerical value 
-even though a distinct unit can be represented in the ‘unit’ element, this 
+<p>In scenarios where the â€˜valueâ€™ of Quantity datatype cannot be expressed as a numerical value 
+even though a distinct unit can be represented in the â€˜unitâ€™ element, this 
 extension SHALL be used on the value field of Quantity.</p>
 
 <p>The presence of this extension does not alter the numeric semantics
@@ -2019,6 +2208,19 @@ represented by the core FHIR elements or existing profiles.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-resource-cosigner.html"
+                  title="StructureDefinition/resource-cosigner">
+                  <span title="StructureDefinition/resource-cosigner">Resource Cosigner
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifies an individual who reviewed, verified, or co-signed the associated
+clinical document, note, order, or healthcare record, alongside the primary author or requester.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-resource-episode.html"
                   title="StructureDefinition/resource-episode">
                   <span title="StructureDefinition/resource-episode">Resource Episode
@@ -2045,7 +2247,7 @@ that association is not otherwise expressible through standard FHIR elements.</p
 <p>Applied at the root level of clinical resources. Stores the reference of the
 person who last edited or modified the resource.</p>
 
-<p>Standard FHIR resources generally have no "last edited by" field — only
+<p>Standard FHIR resources generally have no "last edited by" field â€” only
 recorder (who first recorded it) and asserter (who asserted it clinically).
 This extension captures an audit trail entry for the most recent editor.</p>
 </td>
@@ -2291,8 +2493,8 @@ within hierarchical parent-child result/report structures.</p>
           IG (C) 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://314e.com">314e</a>.  
           Package fhir.314e#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-29 17:18:00 +0530">
-    2026-06-29
+  <span title="2026-07-01 18:18:00 +0530">
+    2026-07-01
   </span>
 
           <br/>

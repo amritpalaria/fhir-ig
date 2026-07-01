@@ -33,6 +33,23 @@
         ]
       },
       {
+        "id": "Annotation.extension:type",
+        "path": "Annotation.extension",
+        "sliceName": "type",
+        "short": "The type of annotation",
+        "definition": "The type of annotation. This extension can be used to map the v2 NTE-4 comment type field.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/annotationType-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Annotation.author[x]",
         "path": "Annotation.author[x]",
         "slicing": {

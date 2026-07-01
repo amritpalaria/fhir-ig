@@ -35,7 +35,7 @@
   <name value="ImmunizationEvaluation314e"/>
   <title value="314e ImmunizationEvaluation"/>
   <status value="active"/>
-  <date value="2026-06-29T17:18:47+05:30"/>
+  <date value="2026-07-01T18:18:44+05:30"/>
   <publisher value="314e"/>
   <contact>
     <name value="314e"/>
@@ -44,7 +44,7 @@
       <value value="http://314e.com"/>
     </telecom>
   </contact>
-  <description value="314e-constrained ImmunizationEvaluation profile derived from FHIR R4 ImmunizationEvaluation.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
+  <description value="314e-constrained ImmunizationEvaluation profile derived from QI-Core ImmunizationEvaluation.&#xA;&#xA;This profile applies 314e-defined extensions and uses 314e datatype profiles&#xA;where applicable."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="argonaut-dq-dstu2"/>

@@ -17,7 +17,7 @@ where applicable.
 // ======================================================
 
 * extension contains
-    Cosigner named cosigner 0..1
+    ResourceCosigner named cosigner 0..1
 
 * extension[cosigner] ^short =
     "Individual who co-signed or verified this medication request"

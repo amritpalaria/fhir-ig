@@ -22,6 +22,12 @@ where applicable.
 * extension[additionalInfo] ^short =
     "Supplementary information for this resource"
 
+* extension contains
+    CoverageNote314e named note 0..*
+
+* extension[note] ^short =
+    "Additional notes that apply to this resource"
+
 // ======================================================
 // 314e DATATYPE CONSTRAINTS
 // ======================================================

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "EpisodeOfCare314e"] ; # 
   fhir:title [ fhir:v "314e Episode Of Care"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-06-29T17:18:47+05:30"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-07-01T18:18:44+05:30"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "314e"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "314e" ] ;
@@ -30,7 +30,7 @@
        fhir:value [ fhir:v "http://314e.com" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "314e-constrained EpisodeOfCare profile derived from QI-Core EpisodeOfCare.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable."] ; # 
+  fhir:description [ fhir:v "314e-constrained EpisodeOfCare profile derived from FHIR R4 EpisodeOfCare.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable."] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "workflow" ] ;

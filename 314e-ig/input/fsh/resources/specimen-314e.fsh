@@ -22,6 +22,18 @@ where applicable.
 * extension[additionalInfo] ^short =
     "Supplementary information for this resource"
 
+* collection.extension contains
+    SpecimenCollectionPriority314e named collectionPriority 0..1
+
+* collection.extension[collectionPriority] ^short =
+    "The urgency of sample collection"
+
+* collection.extension contains
+    SpecimenSpecialHandling314e named specialHandling 0..*
+
+* collection.extension[specialHandling] ^short =
+    "Special handling during the collection, transport, or storage of the specimen"
+
 // ======================================================
 // 314e DATATYPE CONSTRAINTS
 // ======================================================

@@ -1,0 +1,157 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "claimresponse-reviewAction-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/claimresponse-reviewAction-314e",
+  "name": "ClaimResponseReviewAction314e",
+  "title": "314e ClaimResponse Review Action",
+  "status": "active",
+  "description": "The details of the review action that is necessary for the authorization.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ClaimResponse.item.adjudication",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "314e ClaimResponse Review Action",
+        "definition": "The details of the review action that is necessary for the authorization."
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "Healthcare Services Outcome",
+        "definition": "The code describing the result of the review.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:code.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:number",
+        "path": "Extension.extension",
+        "sliceName": "number",
+        "short": "Item Level Review Number",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:number.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:number.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "number"
+      },
+      {
+        "id": "Extension.extension:number.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reasonCode",
+        "path": "Extension.extension",
+        "sliceName": "reasonCode",
+        "short": "Explanation of the review denial or partial approval",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:reasonCode.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reasonCode.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reasonCode"
+      },
+      {
+        "id": "Extension.extension:reasonCode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:secondSurgicalOpinionFlag",
+        "path": "Extension.extension",
+        "sliceName": "secondSurgicalOpinionFlag",
+        "short": "Whether a second surgical opinion is need for approval",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:secondSurgicalOpinionFlag.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:secondSurgicalOpinionFlag.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "secondSurgicalOpinionFlag"
+      },
+      {
+        "id": "Extension.extension:secondSurgicalOpinionFlag.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/claimresponse-reviewAction-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

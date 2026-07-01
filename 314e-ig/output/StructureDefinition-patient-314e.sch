@@ -19,6 +19,22 @@
       <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/patient-mothersName']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/patient-mothersName': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/patient-employmentStatus']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/patient-employmentStatus': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/patient-disability-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/patient-disability-314e': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/patient-adoptionInfo-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/patient-adoptionInfo-314e': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/patient-religion-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/patient-religion-314e': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/patient-importance-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/patient-importance-314e': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/patient-animal-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/patient-animal-314e': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/individual-genderIdentity-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/individual-genderIdentity-314e': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Patient/f:birthDate</sch:title>
+    <sch:rule context="f:Patient/f:birthDate">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/patient-birthTime-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/patient-birthTime-314e': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -24,6 +24,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"DocumentReference.extension:cosigner","DocumentReference.extension","cosigner","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/resource-cosigner]]} {[]}
+","Individual who co-signed or verified this document","Identifies an individual who reviewed, verified, or co-signed the associated
+clinical document, note, order, or healthcare record, alongside the primary author or requester.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "DocumentReference.extension:additionalInfo","DocumentReference.extension","additionalInfo","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/resource-additionalInfo]]} {[]}
 ","Supplementary information for this resource","Applied at the root level of any resource. Used to capture supplementary
 or non-standard information related to a FHIR resource that is not
@@ -178,12 +183,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Date and time the document content was dictated","Applied to the context section of a DocumentReference resource. Stores the
 date and time when the clinician dictated the document content — distinct
 from when it was authored, transcribed, or signed.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"DocumentReference.context.extension:cosigner","DocumentReference.context.extension","cosigner","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner]]} {[]}
-","Co-signer of the document","Applied to the context section of a DocumentReference resource. Captures the
-co-signer of the document — a person who has jointly signed or authenticated
-the document alongside the primary author.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "DocumentReference.context.extension:reportDateTime","DocumentReference.context.extension","reportDateTime","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime]]} {[]}

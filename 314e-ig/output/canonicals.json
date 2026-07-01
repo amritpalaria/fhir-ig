@@ -55,6 +55,13 @@
   "name" : "AnnotationAttachment"
 },
 {
+  "id" : "annotationType-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/annotationType-314e",
+  "version" : "1.0.0",
+  "name" : "AnnotationType314e"
+},
+{
   "id" : "appointment-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/appointment-314e",
@@ -111,6 +118,20 @@
   "name" : "CareTeam314e"
 },
 {
+  "id" : "claimresponse-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/claimresponse-314e",
+  "version" : "1.0.0",
+  "name" : "ClaimResponse314e"
+},
+{
+  "id" : "claimresponse-reviewAction-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/claimresponse-reviewAction-314e",
+  "version" : "1.0.0",
+  "name" : "ClaimResponseReviewAction314e"
+},
+{
   "id" : "clinicalimpression-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/clinicalimpression-314e",
@@ -130,6 +151,13 @@
   "url" : "http://314e.com/fhir/StructureDefinition/condition-314e",
   "version" : "1.0.0",
   "name" : "Condition314e"
+},
+{
+  "id" : "condition-assertedDate-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/condition-assertedDate-314e",
+  "version" : "1.0.0",
+  "name" : "ConditionAssertedDate314e"
 },
 {
   "id" : "condition-diagnosis-314e",
@@ -153,18 +181,18 @@
   "name" : "Contract314e"
 },
 {
-  "id" : "cosigner",
-  "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/StructureDefinition/cosigner",
-  "version" : "1.0.0",
-  "name" : "Cosigner"
-},
-{
   "id" : "coverage-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/coverage-314e",
   "version" : "1.0.0",
   "name" : "Coverage314e"
+},
+{
+  "id" : "coverage-note-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/coverage-note-314e",
+  "version" : "1.0.0",
+  "name" : "CoverageNote314e"
 },
 {
   "id" : "datarequirement-314e",
@@ -230,13 +258,6 @@
   "name" : "DiagnosticReportNoteReport314e"
 },
 {
-  "id" : "documentReference-context-cosigner",
-  "type" : "StructureDefinition",
-  "url" : "http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner",
-  "version" : "1.0.0",
-  "name" : "DocumentReferenceContextCosigner"
-},
-{
   "id" : "documentReference-context-dictationDateTime",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime",
@@ -277,6 +298,13 @@
   "url" : "http://314e.com/fhir/StructureDefinition/encounter-314e",
   "version" : "1.0.0",
   "name" : "Encounter314e"
+},
+{
+  "id" : "encounter-modeOfArrival-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/encounter-modeOfArrival-314e",
+  "version" : "1.0.0",
+  "name" : "EncounterModeOfArrival314e"
 },
 {
   "id" : "endpoint-314e",
@@ -340,6 +368,13 @@
   "url" : "http://314e.com/fhir/StructureDefinition/immunizationrecommendation-314e",
   "version" : "1.0.0",
   "name" : "ImmunizationRecommendation314e"
+},
+{
+  "id" : "individual-genderIdentity-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/individual-genderIdentity-314e",
+  "version" : "1.0.0",
+  "name" : "IndividualGenderIdentity314e"
 },
 {
   "id" : "location-314e",
@@ -468,6 +503,13 @@
   "name" : "Patient314e"
 },
 {
+  "id" : "patient-adoptionInfo-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-adoptionInfo-314e",
+  "version" : "1.0.0",
+  "name" : "PatientAdoptionInfo314e"
+},
+{
   "id" : "patient-affiliation",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/patient-affiliation",
@@ -475,11 +517,46 @@
   "name" : "PatientAffiliation"
 },
 {
+  "id" : "patient-animal-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-animal-314e",
+  "version" : "1.0.0",
+  "name" : "PatientAnimal314e"
+},
+{
+  "id" : "patient-birthTime-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-birthTime-314e",
+  "version" : "1.0.0",
+  "name" : "PatientBirthTime314e"
+},
+{
+  "id" : "patient-citizenship-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-citizenship-314e",
+  "version" : "1.0.0",
+  "name" : "PatientCitizenship314e"
+},
+{
+  "id" : "patient-disability-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-disability-314e",
+  "version" : "1.0.0",
+  "name" : "PatientDisability314e"
+},
+{
   "id" : "patient-employmentStatus",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/patient-employmentStatus",
   "version" : "1.0.0",
   "name" : "PatientEmploymentStatus"
+},
+{
+  "id" : "patient-importance-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-importance-314e",
+  "version" : "1.0.0",
+  "name" : "PatientImportance314e"
 },
 {
   "id" : "patient-mothersName",
@@ -501,6 +578,13 @@
   "url" : "http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun",
   "version" : "1.0.0",
   "name" : "PatientPreferredGenderPronoun"
+},
+{
+  "id" : "patient-religion-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/patient-religion-314e",
+  "version" : "1.0.0",
+  "name" : "PatientReligion314e"
 },
 {
   "id" : "person-314e",
@@ -615,6 +699,13 @@
   "name" : "ResourceAdditionalInfo"
 },
 {
+  "id" : "resource-cosigner",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/resource-cosigner",
+  "version" : "1.0.0",
+  "name" : "ResourceCosigner"
+},
+{
   "id" : "resource-lastEditedUser",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/resource-lastEditedUser",
@@ -664,11 +755,32 @@
   "name" : "Specimen314e"
 },
 {
+  "id" : "specimen-collectionPriority-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/specimen-collectionPriority-314e",
+  "version" : "1.0.0",
+  "name" : "SpecimenCollectionPriority314e"
+},
+{
+  "id" : "specimen-specialHandling-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/specimen-specialHandling-314e",
+  "version" : "1.0.0",
+  "name" : "SpecimenSpecialHandling314e"
+},
+{
   "id" : "substance-314e",
   "type" : "StructureDefinition",
   "url" : "http://314e.com/fhir/StructureDefinition/substance-314e",
   "version" : "1.0.0",
   "name" : "Substance314e"
+},
+{
+  "id" : "supplyrequest-314e",
+  "type" : "StructureDefinition",
+  "url" : "http://314e.com/fhir/StructureDefinition/supplyrequest-314e",
+  "version" : "1.0.0",
+  "name" : "SupplyRequest314e"
 },
 {
   "id" : "task-314e",

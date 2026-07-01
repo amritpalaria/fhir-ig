@@ -10,6 +10,12 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:ServiceRequest</sch:title>
+    <sch:rule context="f:ServiceRequest">
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/resource-cosigner']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/resource-cosigner': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:ServiceRequest/f:identifier</sch:title>
     <sch:rule context="f:ServiceRequest/f:identifier">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>

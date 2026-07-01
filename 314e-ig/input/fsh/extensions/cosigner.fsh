@@ -1,14 +1,14 @@
-Extension: Cosigner
-Id: cosigner
-Title: "Cosigner"
+Extension: ResourceCosigner
+Id: resource-cosigner
+Title: "Resource Cosigner"
 Description: """
 Identifies an individual who reviewed, verified, or co-signed the associated
-clinical document, note, order, or healthcare record.
+clinical document, note, order, or healthcare record, alongside the primary author or requester.
 """
 
-Context: DomainResource
+Context: MedicationRequest, ServiceRequest, DocumentReference, NutritionOrder, SupplyRequest, DeviceRequest, VisionPrescription
 
-* ^url = "http://314e.com/fhir/StructureDefinition/cosigner"
+* ^url = "http://314e.com/fhir/StructureDefinition/resource-cosigner"
 * ^status = #active
 
 * value[x] only Reference314e

@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "specimen-specialHandling-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/specimen-specialHandling-314e",
+  "name": "SpecimenSpecialHandling314e",
+  "title": "314e Specimen Special Handling",
+  "status": "active",
+  "description": "Special handling during the collection, transport, or storage of the specimen.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Specimen.collection",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "314e Specimen Special Handling",
+        "definition": "Special handling during the collection, transport, or storage of the specimen."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/specimen-specialHandling-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

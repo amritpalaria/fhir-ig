@@ -1,0 +1,66 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "patient-birthTime-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/patient-birthTime-314e",
+  "name": "PatientBirthTime314e",
+  "title": "314e Patient Birth Time",
+  "status": "active",
+  "description": "The time of day that the Patient/Person/RelatedPerson/Practitioner was born. This includes the date to ensure that the timezone information can be communicated effectively.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Patient.birthDate",
+      "type": "element"
+    },
+    {
+      "expression": "Person.birthDate",
+      "type": "element"
+    },
+    {
+      "expression": "RelatedPerson.birthDate",
+      "type": "element"
+    },
+    {
+      "expression": "Practitioner.birthDate",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "314e Patient Birth Time",
+        "definition": "The time of day that the Patient/Person/RelatedPerson/Practitioner was born. This includes the date to ensure that the timezone information can be communicated effectively."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/patient-birthTime-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

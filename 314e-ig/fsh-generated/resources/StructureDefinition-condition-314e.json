@@ -89,6 +89,22 @@
         ]
       },
       {
+        "id": "Condition.extension:assertedDate",
+        "path": "Condition.extension",
+        "sliceName": "assertedDate",
+        "short": "Date the condition, problem, or diagnosis was asserted",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/condition-assertedDate-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Condition.identifier",
         "path": "Condition.identifier",
         "type": [

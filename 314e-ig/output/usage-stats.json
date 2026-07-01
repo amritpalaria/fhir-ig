@@ -11,6 +11,13 @@
       ]
     },
     {
+      "url": "http://314e.com/fhir/StructureDefinition/annotationType-314e",
+      "title": "314e Annotation Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://314e.com/fhir/StructureDefinition/attachment-helperFile",
       "title": "Attachment Helper File",
       "types": [
@@ -39,10 +46,77 @@
       ]
     },
     {
-      "url": "http://314e.com/fhir/StructureDefinition/cosigner",
-      "title": "Cosigner",
+      "url": "http://314e.com/fhir/StructureDefinition/claimresponse-reviewAction-314e",
+      "title": "314e ClaimResponse Review Action",
       "types": [
-        "Reference"
+        "CodeableConcept",
+        "string",
+        "CodeableConcept",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/condition-assertedDate-314e",
+      "title": "314e Condition Asserted Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/coverage-note-314e",
+      "title": "314e Coverage Note",
+      "types": [
+        "Annotation"
       ]
     },
     {
@@ -57,13 +131,6 @@
       "title": "Date/Time Precision",
       "types": [
         "code"
-      ]
-    },
-    {
-      "url": "http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner",
-      "title": "Document Reference Context Cosigner",
-      "types": [
-        "string"
       ]
     },
     {
@@ -88,10 +155,83 @@
       ]
     },
     {
+      "url": "http://314e.com/fhir/StructureDefinition/encounter-modeOfArrival-314e",
+      "title": "314e Encounter Mode Of Arrival",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/individual-genderIdentity-314e",
+      "title": "314e Individual Gender Identity",
+      "types": [
+        "CodeableConcept",
+        "Period",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "http://314e.com/fhir/StructureDefinition/observation-valueAttachment",
       "title": "Observation Value Attachment",
       "types": [
         "Attachment"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-adoptionInfo-314e",
+      "title": "314e Patient Adoption Info",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -102,8 +242,146 @@
       ]
     },
     {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-animal-314e",
+      "title": "314e Patient Animal",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-birthTime-314e",
+      "title": "314e Patient Birth Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-citizenship-314e",
+      "title": "314e Patient Citizenship",
+      "types": [
+        "CodeableConcept",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-disability-314e",
+      "title": "314e Patient Disability",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://314e.com/fhir/StructureDefinition/patient-employmentStatus",
       "title": "Patient Employment Status",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-importance-314e",
+      "title": "314e Patient Importance",
       "types": [
         "CodeableConcept"
       ]
@@ -125,6 +403,13 @@
     {
       "url": "http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun",
       "title": "Patient Preferred Gender Pronoun",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/patient-religion-314e",
+      "title": "314e Patient Religion",
       "types": [
         "CodeableConcept"
       ]
@@ -165,10 +450,31 @@
       ]
     },
     {
+      "url": "http://314e.com/fhir/StructureDefinition/resource-cosigner",
+      "title": "Resource Cosigner",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "http://314e.com/fhir/StructureDefinition/resource-lastEditedUser",
       "title": "Resource Last Edited User",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/specimen-collectionPriority-314e",
+      "title": "314e Specimen Collection Priority",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://314e.com/fhir/StructureDefinition/specimen-specialHandling-314e",
+      "title": "314e Specimen Special Handling",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -222,6 +528,12 @@
       {
         "url": "http://314e.com/fhir/StructureDefinition/careteam-314e",
         "title": "314e CareTeam"
+      }
+    ],
+    "ClaimResponse": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/claimresponse-314e",
+        "title": "314e ClaimResponse"
       }
     ],
     "ClinicalImpression": [
@@ -514,6 +826,12 @@
         "title": "314e Substance"
       }
     ],
+    "SupplyRequest": [
+      {
+        "url": "http://314e.com/fhir/StructureDefinition/supplyrequest-314e",
+        "title": "314e SupplyRequest"
+      }
+    ],
     "Task": [
       {
         "url": "http://314e.com/fhir/StructureDefinition/task-314e",
@@ -531,6 +849,9 @@
     "http://314e.com/fhir/StructureDefinition/annotation-attachment": [
       "Annotation"
     ],
+    "http://314e.com/fhir/StructureDefinition/annotationType-314e": [
+      "Annotation"
+    ],
     "http://314e.com/fhir/StructureDefinition/attachment-helperFile": [
       "Attachment",
       "DiagnosticReport.presentedForm"
@@ -545,8 +866,14 @@
     "http://314e.com/fhir/StructureDefinition/carePlan-targetDateTime": [
       "CarePlan"
     ],
-    "http://314e.com/fhir/StructureDefinition/cosigner": [
-      "MedicationRequest"
+    "http://314e.com/fhir/StructureDefinition/claimresponse-reviewAction-314e": [
+      "ClaimResponse.item.adjudication"
+    ],
+    "http://314e.com/fhir/StructureDefinition/condition-assertedDate-314e": [
+      "Condition"
+    ],
+    "http://314e.com/fhir/StructureDefinition/coverage-note-314e": [
+      "Coverage"
     ],
     "http://314e.com/fhir/StructureDefinition/datetime-accuracy": [
       "dateTime"
@@ -555,22 +882,43 @@
       "dateTime",
       "instant"
     ],
-    "http://314e.com/fhir/StructureDefinition/documentReference-context-cosigner": [
-      "DocumentReference.context"
-    ],
     "http://314e.com/fhir/StructureDefinition/documentReference-context-dictationDateTime": [
       "DocumentReference.context"
     ],
     "http://314e.com/fhir/StructureDefinition/documentReference-context-reportDateTime": [
       "DocumentReference.context"
     ],
+    "http://314e.com/fhir/StructureDefinition/encounter-modeOfArrival-314e": [
+      "Encounter"
+    ],
+    "http://314e.com/fhir/StructureDefinition/individual-genderIdentity-314e": [
+      "Patient"
+    ],
     "http://314e.com/fhir/StructureDefinition/observation-valueAttachment": [
       "Observation"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-adoptionInfo-314e": [
+      "Patient"
     ],
     "http://314e.com/fhir/StructureDefinition/patient-affiliation": [
       "Patient"
     ],
+    "http://314e.com/fhir/StructureDefinition/patient-animal-314e": [
+      "Patient"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-birthTime-314e": [
+      "Patient.birthDate"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-citizenship-314e": [
+      "Patient"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-disability-314e": [
+      "Patient"
+    ],
     "http://314e.com/fhir/StructureDefinition/patient-employmentStatus": [
+      "Patient"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-importance-314e": [
       "Patient"
     ],
     "http://314e.com/fhir/StructureDefinition/patient-mothersName": [
@@ -580,6 +928,9 @@
       "Patient"
     ],
     "http://314e.com/fhir/StructureDefinition/patient-preferredGenderPronoun": [
+      "Patient"
+    ],
+    "http://314e.com/fhir/StructureDefinition/patient-religion-314e": [
       "Patient"
     ],
     "http://314e.com/fhir/StructureDefinition/quantity-quantityString": [
@@ -642,13 +993,29 @@
       "Slot",
       "Specimen",
       "Substance",
+      "SupplyRequest",
       "Task",
+      "VisionPrescription"
+    ],
+    "http://314e.com/fhir/StructureDefinition/resource-cosigner": [
+      "DeviceRequest",
+      "DocumentReference",
+      "MedicationRequest",
+      "NutritionOrder",
+      "ServiceRequest",
+      "SupplyRequest",
       "VisionPrescription"
     ],
     "http://314e.com/fhir/StructureDefinition/resource-lastEditedUser": [
       "AllergyIntolerance",
       "Condition",
       "Immunization"
+    ],
+    "http://314e.com/fhir/StructureDefinition/specimen-collectionPriority-314e": [
+      "Specimen.collection"
+    ],
+    "http://314e.com/fhir/StructureDefinition/specimen-specialHandling-314e": [
+      "Specimen.collection"
     ],
     "http://314e.com/fhir/StructureDefinition/time-accuracy": [
       "time"
@@ -721,6 +1088,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-preferred|5.2.0-ballot": [
       "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/quantity-precision": [
       "Quantity.value",

@@ -1,0 +1,142 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "patient-animal-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/patient-animal-314e",
+  "name": "PatientAnimal314e",
+  "title": "314e Patient Animal",
+  "status": "active",
+  "description": "This patient is known to be an animal.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Patient",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "314e Patient Animal",
+        "definition": "This patient is known to be an animal."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:species",
+        "path": "Extension.extension",
+        "sliceName": "species",
+        "short": "The animal species.  E.g. Dog, Cow.",
+        "definition": "Identifies the high level taxonomic categorization of the kind of animal.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:species.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:species.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "species"
+      },
+      {
+        "id": "Extension.extension:species.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:breed",
+        "path": "Extension.extension",
+        "sliceName": "breed",
+        "short": "The animal breed.  E.g. Poodle, Angus.",
+        "definition": "Identifies the detailed categorization of the kind of animal.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:breed.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:breed.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "breed"
+      },
+      {
+        "id": "Extension.extension:breed.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:genderStatus",
+        "path": "Extension.extension",
+        "sliceName": "genderStatus",
+        "short": "The status of the animal's reproductive parts.  E.g. Neutered, Intact.",
+        "definition": "Indicates the current state of the animal's reproductive organs.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:genderStatus.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:genderStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "genderStatus"
+      },
+      {
+        "id": "Extension.extension:genderStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/patient-animal-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

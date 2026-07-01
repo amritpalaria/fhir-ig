@@ -44,8 +44,8 @@
     },
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
     "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
-    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport"
+    "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/procedure-category-subcategory-314e",
@@ -59,9 +59,9 @@
     },
     "StructureDefinition-servicerequest-314e.html" : "314e ServiceRequest",
     "StructureDefinition-diagnosticreport-notereport-314e.html" : "314e DiagnosticReport Note and Report",
-    "StructureDefinition-observation-314e.html" : "314e Observation",
     "StructureDefinition-diagnosticreport-314e.html" : "314e DiagnosticReport",
-    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results"
+    "StructureDefinition-diagnosticreport-lab-314e.html" : "314e DiagnosticReport Laboratory Results",
+    "StructureDefinition-observation-314e.html" : "314e Observation"
   },
   {
     "url" : "http://314e.com/fhir/ValueSet/time-accuracy-units",
@@ -86,8 +86,8 @@
     "systems" : ["http://314e.com/fhir/CodeSystem/time-precision-units"],
     "uses" : {
     },
-    "StructureDefinition-time-precision.html" : "Time Precision",
-    "StructureDefinition-datetime-precision.html" : "Date/Time Precision"
+    "StructureDefinition-datetime-precision.html" : "Date/Time Precision",
+    "StructureDefinition-time-precision.html" : "Time Precision"
   },
   {
     "url" : "http://314e.com/fhir/ig/ValueSet/antimicrobial-susceptibility-testing-vs",

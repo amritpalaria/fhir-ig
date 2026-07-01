@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "datatypes\\annotation-314e.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-annotation-attachment.json",
@@ -78,6 +78,14 @@
     "fshFile": "extensions\\annotation-attachment.fsh",
     "startLine": 1,
     "endLine": 34
+  },
+  {
+    "outputFile": "StructureDefinition-annotationType-314e.json",
+    "fshName": "AnnotationType314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\annotationtype-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-appointment-314e.json",
@@ -144,6 +152,22 @@
     "endLine": 56
   },
   {
+    "outputFile": "StructureDefinition-claimresponse-314e.json",
+    "fshName": "ClaimResponse314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\claimresponse-314e.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "StructureDefinition-claimresponse-reviewAction-314e.json",
+    "fshName": "ClaimResponseReviewAction314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\claimresponse-reviewaction-314e.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
     "outputFile": "StructureDefinition-clinicalimpression-314e.json",
     "fshName": "ClinicalImpression314e",
     "fshType": "Profile",
@@ -181,7 +205,15 @@
     "fshType": "Profile",
     "fshFile": "resources\\condition-314e.fsh",
     "startLine": 1,
-    "endLine": 81
+    "endLine": 87
+  },
+  {
+    "outputFile": "StructureDefinition-condition-assertedDate-314e.json",
+    "fshName": "ConditionAssertedDate314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\condition-asserteddate-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-condition-diagnosis-314e.json",
@@ -216,20 +248,20 @@
     "endLine": 136
   },
   {
-    "outputFile": "StructureDefinition-cosigner.json",
-    "fshName": "Cosigner",
-    "fshType": "Extension",
-    "fshFile": "extensions\\cosigner.fsh",
-    "startLine": 1,
-    "endLine": 24
-  },
-  {
     "outputFile": "StructureDefinition-coverage-314e.json",
     "fshName": "Coverage314e",
     "fshType": "Profile",
     "fshFile": "resources\\coverage-314e.fsh",
     "startLine": 1,
-    "endLine": 53
+    "endLine": 59
+  },
+  {
+    "outputFile": "StructureDefinition-coverage-note-314e.json",
+    "fshName": "CoverageNote314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\coverage-note-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-datarequirement-314e.json",
@@ -293,7 +325,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\devicerequest-314e.fsh",
     "startLine": 1,
-    "endLine": 249
+    "endLine": 255
   },
   {
     "outputFile": "StructureDefinition-diagnosticreport-314e.json",
@@ -318,14 +350,6 @@
     "fshFile": "resources\\diagnosticreport-notereport-314e.fsh",
     "startLine": 1,
     "endLine": 103
-  },
-  {
-    "outputFile": "StructureDefinition-documentReference-context-cosigner.json",
-    "fshName": "DocumentReferenceContextCosigner",
-    "fshType": "Extension",
-    "fshFile": "extensions\\documentreference-context-cosigner.fsh",
-    "startLine": 1,
-    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-documentReference-context-dictationDateTime.json",
@@ -381,7 +405,15 @@
     "fshType": "Profile",
     "fshFile": "resources\\encounter-314e.fsh",
     "startLine": 1,
-    "endLine": 80
+    "endLine": 86
+  },
+  {
+    "outputFile": "StructureDefinition-encounter-modeOfArrival-314e.json",
+    "fshName": "EncounterModeOfArrival314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\encounter-modeofarrival-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-endpoint-314e.json",
@@ -472,6 +504,14 @@
     "endLine": 48
   },
   {
+    "outputFile": "StructureDefinition-individual-genderIdentity-314e.json",
+    "fshName": "IndividualGenderIdentity314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\individual-genderidentity-314e.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
     "outputFile": "StructureDefinition-instant-314e.json",
     "fshName": "instant314e",
     "fshType": "Profile",
@@ -557,7 +597,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\nutritionorder-314e.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-observation-314e.json",
@@ -621,7 +661,15 @@
     "fshType": "Profile",
     "fshFile": "resources\\patient-314e.fsh",
     "startLine": 1,
-    "endLine": 75
+    "endLine": 135
+  },
+  {
+    "outputFile": "StructureDefinition-patient-adoptionInfo-314e.json",
+    "fshName": "PatientAdoptionInfo314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-adoptioninfo-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-patient-affiliation.json",
@@ -632,12 +680,52 @@
     "endLine": 19
   },
   {
+    "outputFile": "StructureDefinition-patient-animal-314e.json",
+    "fshName": "PatientAnimal314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-animal-314e.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-patient-birthTime-314e.json",
+    "fshName": "PatientBirthTime314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-birthtime-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-patient-citizenship-314e.json",
+    "fshName": "PatientCitizenship314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-citizenship-314e.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-patient-disability-314e.json",
+    "fshName": "PatientDisability314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-disability-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
     "outputFile": "StructureDefinition-patient-employmentStatus.json",
     "fshName": "PatientEmploymentStatus",
     "fshType": "Extension",
     "fshFile": "extensions\\patient-employmentstatus.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-patient-importance-314e.json",
+    "fshName": "PatientImportance314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-importance-314e.fsh",
+    "startLine": 1,
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-patient-mothersName.json",
@@ -662,6 +750,14 @@
     "fshFile": "extensions\\patient-preferredgenderpronoun.fsh",
     "startLine": 1,
     "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-patient-religion-314e.json",
+    "fshName": "PatientReligion314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\patient-religion-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-period-314e.json",
@@ -808,6 +904,14 @@
     "endLine": 20
   },
   {
+    "outputFile": "StructureDefinition-resource-cosigner.json",
+    "fshName": "ResourceCosigner",
+    "fshType": "Extension",
+    "fshFile": "extensions\\cosigner.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
     "outputFile": "StructureDefinition-resource-episode.json",
     "fshName": "ResourceEpisode",
     "fshType": "Extension",
@@ -845,7 +949,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\servicerequest-314e.fsh",
     "startLine": 1,
-    "endLine": 242
+    "endLine": 252
   },
   {
     "outputFile": "StructureDefinition-signature-314e.json",
@@ -877,7 +981,23 @@
     "fshType": "Profile",
     "fshFile": "resources\\specimen-314e.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 74
+  },
+  {
+    "outputFile": "StructureDefinition-specimen-collectionPriority-314e.json",
+    "fshName": "SpecimenCollectionPriority314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\specimen-collectionpriority-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-specimen-specialHandling-314e.json",
+    "fshName": "SpecimenSpecialHandling314e",
+    "fshType": "Extension",
+    "fshFile": "extensions\\specimen-specialhandling-314e.fsh",
+    "startLine": 1,
+    "endLine": 14
   },
   {
     "outputFile": "StructureDefinition-substance-314e.json",
@@ -886,6 +1006,14 @@
     "fshFile": "resources\\substance-314e.fsh",
     "startLine": 1,
     "endLine": 37
+  },
+  {
+    "outputFile": "StructureDefinition-supplyrequest-314e.json",
+    "fshName": "SupplyRequest314e",
+    "fshType": "Profile",
+    "fshFile": "resources\\supplyrequest-314e.fsh",
+    "startLine": 1,
+    "endLine": 95
   },
   {
     "outputFile": "StructureDefinition-task-314e.json",
@@ -933,7 +1061,7 @@
     "fshType": "Profile",
     "fshFile": "resources\\visionprescription-314e.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 54
   },
   {
     "outputFile": "ValueSet-antimicrobial-susceptibility-testing-vs.json",

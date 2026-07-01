@@ -14,6 +14,7 @@
     <sch:rule context="f:Condition">
       <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/resource-lastEditedUser']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/resource-lastEditedUser': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://314ecorp.com/fhir/StructureDefinition/resource-episode']) &lt;= 1">extension with URL = 'http://314ecorp.com/fhir/StructureDefinition/resource-episode': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://314e.com/fhir/StructureDefinition/condition-assertedDate-314e']) &lt;= 1">extension with URL = 'http://314e.com/fhir/StructureDefinition/condition-assertedDate-314e': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

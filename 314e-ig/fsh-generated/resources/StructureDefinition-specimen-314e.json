@@ -184,6 +184,52 @@
         ]
       },
       {
+        "id": "Specimen.collection.extension",
+        "path": "Specimen.collection.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Specimen.collection.extension:collectionPriority",
+        "path": "Specimen.collection.extension",
+        "sliceName": "collectionPriority",
+        "short": "The urgency of sample collection",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/specimen-collectionPriority-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.extension:specialHandling",
+        "path": "Specimen.collection.extension",
+        "sliceName": "specialHandling",
+        "short": "Special handling during the collection, transport, or storage of the specimen",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/specimen-specialHandling-314e"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Specimen.collection.collector",
         "path": "Specimen.collection.collector",
         "type": [

@@ -1,0 +1,348 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "supplyrequest-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/supplyrequest-314e",
+  "name": "SupplyRequest314e",
+  "title": "314e SupplyRequest",
+  "status": "active",
+  "description": "314e-constrained SupplyRequest profile derived from FHIR R4 SupplyRequest.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "SupplyRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/SupplyRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "SupplyRequest.meta",
+        "path": "SupplyRequest.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.extension",
+        "path": "SupplyRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "SupplyRequest.extension:cosigner",
+        "path": "SupplyRequest.extension",
+        "sliceName": "cosigner",
+        "short": "Individual who co-signed or verified this supply request",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/resource-cosigner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.extension:additionalInfo",
+        "path": "SupplyRequest.extension",
+        "sliceName": "additionalInfo",
+        "short": "Supplementary information for this resource",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/resource-additionalInfo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.identifier",
+        "path": "SupplyRequest.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/identifier-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.category",
+        "path": "SupplyRequest.category",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.item[x]",
+        "path": "SupplyRequest.item[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          },
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/medication-314e",
+              "http://314e.com/fhir/StructureDefinition/substance-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.item[x]:itemReference",
+        "path": "SupplyRequest.item[x]",
+        "sliceName": "itemReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/medication-314e",
+              "http://314e.com/fhir/StructureDefinition/substance-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.quantity",
+        "path": "SupplyRequest.quantity",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/quantity-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.parameter.code",
+        "path": "SupplyRequest.parameter.code",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.parameter.value[x]",
+        "path": "SupplyRequest.parameter.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          },
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/quantity-314e"
+            ]
+          },
+          {
+            "code": "Range",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/range-314e"
+            ]
+          },
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.occurrence[x]",
+        "path": "SupplyRequest.occurrence[x]",
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"
+            ]
+          },
+          {
+            "code": "Period",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/period-314e"
+            ]
+          },
+          {
+            "code": "Timing",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/timing-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.authoredOn",
+        "path": "SupplyRequest.authoredOn",
+        "type": [
+          {
+            "code": "dateTime",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/datetime-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.requester",
+        "path": "SupplyRequest.requester",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/practitioner-314e",
+              "http://314e.com/fhir/StructureDefinition/practitionerrole-314e",
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e",
+              "http://314e.com/fhir/StructureDefinition/relatedperson-314e",
+              "http://314e.com/fhir/StructureDefinition/device-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.supplier",
+        "path": "SupplyRequest.supplier",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/healthcareservice-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.reasonCode",
+        "path": "SupplyRequest.reasonCode",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/codeableconcept-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.reasonReference",
+        "path": "SupplyRequest.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/condition-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-diagnosis-314e",
+              "http://314e.com/fhir/StructureDefinition/condition-problem-healthconcern-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-lab-general-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microbiology-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-microorganism-314e",
+              "http://314e.com/fhir/StructureDefinition/observation-antimicrobial-susceptibility-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-lab-314e",
+              "http://314e.com/fhir/StructureDefinition/diagnosticreport-notereport-314e",
+              "http://314e.com/fhir/StructureDefinition/documentreference-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.deliverFrom",
+        "path": "SupplyRequest.deliverFrom",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/location-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "SupplyRequest.deliverTo",
+        "path": "SupplyRequest.deliverTo",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/reference-314e"
+            ],
+            "targetProfile": [
+              "http://314e.com/fhir/StructureDefinition/organization-314e",
+              "http://314e.com/fhir/StructureDefinition/location-314e",
+              "http://314e.com/fhir/StructureDefinition/patient-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

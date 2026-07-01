@@ -29,9 +29,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","(QI) Reported adherence to prescribed medication instructions.","Reported adherence to prescribed medication instructions.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MedicationRequest.extension:cosigner","MedicationRequest.extension","cosigner","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/cosigner]]} {[]}
+"MedicationRequest.extension:cosigner","MedicationRequest.extension","cosigner","","",0,1,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/resource-cosigner]]} {[]}
 ","Individual who co-signed or verified this medication request","Identifies an individual who reviewed, verified, or co-signed the associated
-clinical document, note, order, or healthcare record.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+clinical document, note, order, or healthcare record, alongside the primary author or requester.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "MedicationRequest.extension:additionalInfo","MedicationRequest.extension","additionalInfo","","",0,*,"","","","Extension {[CanonicalType[http://314e.com/fhir/StructureDefinition/resource-additionalInfo]]} {[]}
 ","Supplementary information for this resource","Applied at the root level of any resource. Used to capture supplementary

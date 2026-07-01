@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "claimresponse-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/claimresponse-314e",
+  "name": "ClaimResponse314e",
+  "title": "314e ClaimResponse",
+  "status": "active",
+  "description": "314e-constrained ClaimResponse profile derived from FHIR R4 ClaimResponse.\n\nThis profile applies 314e-defined extensions and uses 314e datatype profiles\nwhere applicable.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ClaimResponse",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ClaimResponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ClaimResponse.meta",
+        "path": "ClaimResponse.meta",
+        "type": [
+          {
+            "code": "Meta",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/meta-314e"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ClaimResponse.item.adjudication.extension",
+        "path": "ClaimResponse.item.adjudication.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ClaimResponse.item.adjudication.extension:reviewAction",
+        "path": "ClaimResponse.item.adjudication.extension",
+        "sliceName": "reviewAction",
+        "short": "Details of the review action necessary for the authorization",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://314e.com/fhir/StructureDefinition/claimresponse-reviewAction-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

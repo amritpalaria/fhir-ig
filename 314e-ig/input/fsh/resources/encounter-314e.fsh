@@ -22,6 +22,12 @@ where applicable.
 * extension[additionalInfo] ^short =
     "Supplementary information for this resource"
 
+* extension contains
+    EncounterModeOfArrival314e named modeOfArrival 0..1
+
+* extension[modeOfArrival] ^short =
+    "How the patient arrived at the reporting facility"
+
 // ======================================================
 // 314e DATATYPE CONSTRAINTS
 // ======================================================

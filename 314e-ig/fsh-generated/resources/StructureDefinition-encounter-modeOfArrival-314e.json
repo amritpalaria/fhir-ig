@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "encounter-modeOfArrival-314e",
+  "url": "http://314e.com/fhir/StructureDefinition/encounter-modeOfArrival-314e",
+  "name": "EncounterModeOfArrival314e",
+  "title": "314e Encounter Mode Of Arrival",
+  "status": "active",
+  "description": "Identifies how the patient arrives at the reporting facility, for example via an ambulance or other mode of transport.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Encounter",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "314e Encounter Mode Of Arrival",
+        "definition": "Identifies how the patient arrives at the reporting facility, for example via an ambulance or other mode of transport."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://314e.com/fhir/StructureDefinition/encounter-modeOfArrival-314e"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "http://314e.com/fhir/ig/StructureDefinition/coding-314e"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
